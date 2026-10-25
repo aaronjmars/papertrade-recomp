@@ -1,4 +1,4 @@
-# Papertrade - Bytecode Analysis
+# Papertrade Recomp
 
 Independent security and transparency research on the Papertrade contract suite deployed on HyperEVM (chain 999). The main pin is block **48,902,346** (2026-10-18 21:02:21 UTC, hash `0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab`), with a second pin at block **49,265,286** (2026-10-23) for the code that is live after the contract-set-2 upgrade.
 
