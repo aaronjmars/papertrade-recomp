@@ -1,0 +1,27 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "runtime_hashes": {
+    "Proxy": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "Implementation": "480375f798fccf20fd79fd4fedefdd3377dd44af4dd559a3310a87c5bc048ae8"
+  },
+  "test_names": [
+    "testFreshFiveArgumentInitialization",
+    "testFreshTwoArgumentInitialization",
+    "testFreshTwoArgumentRequiresAdmin",
+    "testOwnershipTransfer",
+    "testPinnedGetters",
+    "testPinnedInitializationReverts",
+    "testRelayerOutsider",
+    "testRelayerSetter",
+    "testThreeArgFresh",
+    "testThreeArgPinned"
+  ],
+  "forge_result": "10 passed, 0 failed",
+  "test_source_sha256": "a8adf3621205e2f4c8f340137b6af7dc797119e9ba8f1db263219699f0e5b7c6",
+  "historic_relayer_tx": "0x303956400b3cd1c4ed86cf3644975a5f8b1ea2f3e487bad7da21d49689d52b6f",
+  "historic_owner_tx": "0xd928f58d081c09d5600715814814b78ed5256ae3b1a54f11d822deaa9c0e2049",
+  "archived_batch_slot0": "0x000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a20001",
+  "archived_slot0_source": "../../artifacts/exchange_negative_close/original_prestate.json",
+  "method": "port-free Forge tests with exact pinned proxy and implementation bytecode; archived packed slot 0 and pinned getter values installed locally; fresh initialization states are synthetic"
+}

@@ -1,0 +1,2005 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "method": "cast disassemble of the pinned runtime bytes plus local keccak name checks",
+  "runtimes": {
+    "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee": {
+      "role": "exchange_implementation",
+      "sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "runtime_bytes": 23052
+    },
+    "0xcd617f984158a4f5d287ddee0e8eb0fed204916d": {
+      "role": "exchange_linked_library_live",
+      "sha256": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2",
+      "runtime_bytes": 5790
+    }
+  },
+  "rows": {
+    "0x01681a62": {
+      "role": "exchange_implementation",
+      "runtime_address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 16016,
+      "calldata_min_bytes": 36,
+      "calldata_words": 1,
+      "calldata_offsets_read": [
+        4
+      ],
+      "guard": {
+        "role": "no_caller_check",
+        "checks": [],
+        "note": "no CALLER instruction reachable from this entry inside the pinned runtime"
+      },
+      "sstore_sites": [
+        {
+          "pc": 18458,
+          "slot": null
+        }
+      ],
+      "sload_sites": [
+        {
+          "pc": 16435,
+          "slot": null
+        },
+        {
+          "pc": 16521,
+          "slot": 22
+        },
+        {
+          "pc": 18423,
+          "slot": null
+        },
+        {
+          "pc": 18440,
+          "slot": null
+        },
+        {
+          "pc": 18795,
+          "slot": null
+        },
+        {
+          "pc": 20745,
+          "slot": 30
+        }
+      ],
+      "log_sites": [],
+      "topic_constants": [],
+      "external_calls": [
+        {
+          "pc": 20796,
+          "kind": "STATICCALL",
+          "target": null,
+          "selector": "0x183534a1"
+        },
+        {
+          "pc": 21020,
+          "kind": "STATICCALL",
+          "target": null,
+          "selector": null
+        },
+        {
+          "pc": 21162,
+          "kind": "STATICCALL",
+          "target": null,
+          "selector": null
+        }
+      ],
+      "prologue_error_selectors": [
+        "0x4e487b71"
+      ],
+      "prologue_helpers": [
+        3453,
+        4061,
+        8181,
+        16051,
+        16411,
+        16451,
+        16495,
+        16690,
+        18386,
+        18757,
+        19110
+      ],
+      "region_instruction_count": 712
+    },
+    "0x2d2451d1": {
+      "role": "exchange_implementation",
+      "runtime_address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 12113,
+      "calldata_min_bytes": 36,
+      "calldata_words": 1,
+      "calldata_offsets_read": [
+        4
+      ],
+      "guard": {
+        "role": "owner+pauseGuardian",
+        "checks": [
+          {
+            "caller_pc": 12154,
+            "slot": null,
+            "shift": 16,
+            "comparison_ops": [
+              "EQ",
+              "SUB"
+            ]
+          },
+          {
+            "caller_pc": 12542,
+            "slot": 1,
+            "shift": null,
+            "comparison_ops": [
+              "EQ"
+            ]
+          }
+        ],
+        "note": ""
+      },
+      "sstore_sites": [
+        {
+          "pc": 12354,
+          "slot": null
+        }
+      ],
+      "sload_sites": [
+        {
+          "pc": 12149,
+          "slot": null
+        },
+        {
+          "pc": 12198,
+          "slot": null
+        },
+        {
+          "pc": 12222,
+          "slot": null
+        },
+        {
+          "pc": 12230,
+          "slot": 2
+        },
+        {
+          "pc": 12540,
+          "slot": 1
+        },
+        {
+          "pc": 19197,
+          "slot": 8
+        }
+      ],
+      "log_sites": [
+        {
+          "pc": 12406,
+          "log_n": 2
+        }
+      ],
+      "topic_constants": [],
+      "external_calls": [
+        {
+          "pc": 12257,
+          "kind": "STATICCALL",
+          "target": null,
+          "selector": "0xfb466481"
+        }
+      ],
+      "prologue_error_selectors": [
+        "0x0ce40f51",
+        "0x0d240815",
+        "0x248ccfdb",
+        "0x4e487b71",
+        "0xfb466481",
+        "0xffffffff"
+      ],
+      "prologue_helpers": [
+        1131,
+        4061,
+        6904,
+        12162,
+        12409,
+        12425,
+        12498,
+        12506,
+        12517,
+        12535,
+        16073,
+        16690,
+        19188,
+        19208
+      ],
+      "region_instruction_count": 372
+    },
+    "0x415f1240": {
+      "role": "exchange_implementation",
+      "runtime_address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 10772,
+      "calldata_min_bytes": 36,
+      "calldata_words": 1,
+      "calldata_offsets_read": [
+        4
+      ],
+      "guard": {
+        "role": "no_caller_check",
+        "checks": [],
+        "note": "no CALLER instruction reachable from this entry inside the pinned runtime"
+      },
+      "sstore_sites": [],
+      "sload_sites": [
+        {
+          "pc": 10839,
+          "slot": null
+        },
+        {
+          "pc": 10860,
+          "slot": 10909
+        },
+        {
+          "pc": 10900,
+          "slot": null
+        },
+        {
+          "pc": 16521,
+          "slot": 22
+        },
+        {
+          "pc": 22604,
+          "slot": null
+        },
+        {
+          "pc": 22616,
+          "slot": 2
+        }
+      ],
+      "log_sites": [],
+      "topic_constants": [],
+      "external_calls": [
+        {
+          "pc": 22659,
+          "kind": "STATICCALL",
+          "target": null,
+          "selector": null
+        }
+      ],
+      "prologue_error_selectors": [
+        "0x4e487b71",
+        "0x94e88a21",
+        "0xffffffff"
+      ],
+      "prologue_helpers": [
+        1131,
+        3453,
+        11798,
+        16636
+      ],
+      "region_instruction_count": 410
+    },
+    "0x4a4d9eea": {
+      "role": "exchange_implementation",
+      "runtime_address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 10514,
+      "calldata_min_bytes": 100,
+      "calldata_words": 3,
+      "calldata_offsets_read": [
+        4,
+        36,
+        68
+      ],
+      "guard": {
+        "role": "no_caller_check",
+        "checks": [],
+        "note": "no CALLER instruction reachable from this entry inside the pinned runtime"
+      },
+      "sstore_sites": [],
+      "sload_sites": [],
+      "log_sites": [],
+      "topic_constants": [],
+      "external_calls": [
+        {
+          "pc": 10607,
+          "kind": "DELEGATECALL",
+          "target": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+          "selector": null
+        }
+      ],
+      "prologue_error_selectors": [
+        "0x4e487b71",
+        "0xca02ff91"
+      ],
+      "prologue_helpers": [
+        1131,
+        3453,
+        4061,
+        7119,
+        7144,
+        16301,
+        16690,
+        16959
+      ],
+      "region_instruction_count": 232
+    },
+    "0x5ca4c0ea": {
+      "role": "exchange_implementation",
+      "runtime_address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 9690,
+      "calldata_min_bytes": 164,
+      "calldata_words": 5,
+      "calldata_offsets_read": [
+        4,
+        36,
+        68,
+        100,
+        132
+      ],
+      "guard": {
+        "role": "owner",
+        "checks": [
+          {
+            "caller_pc": 19042,
+            "slot": null,
+            "shift": 16,
+            "comparison_ops": [
+              "SUB"
+            ]
+          }
+        ],
+        "note": ""
+      },
+      "sstore_sites": [
+        {
+          "pc": 9913,
+          "slot": null
+        },
+        {
+          "pc": 17061,
+          "slot": null
+        }
+      ],
+      "sload_sites": [
+        {
+          "pc": 9909,
+          "slot": null
+        },
+        {
+          "pc": 17024,
+          "slot": null
+        },
+        {
+          "pc": 19029,
+          "slot": 0
+        },
+        {
+          "pc": 19197,
+          "slot": 8
+        }
+      ],
+      "log_sites": [],
+      "topic_constants": [
+        {
+          "pc": 9845,
+          "topic": "0x76a319771459e5329ebc7830ef30b80fc54d20327f8b4946a9539e53c46018c9",
+          "matched_signature": ""
+        }
+      ],
+      "external_calls": [],
+      "prologue_error_selectors": [
+        "0x30cd7471",
+        "0xb0cb274d",
+        "0xffffffff"
+      ],
+      "prologue_helpers": [
+        1131,
+        4061,
+        16073,
+        16167,
+        19027,
+        19049
+      ],
+      "region_instruction_count": 278
+    },
+    "0x6a3214c9": {
+      "role": "exchange_implementation",
+      "runtime_address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 9296,
+      "calldata_min_bytes": 68,
+      "calldata_words": 2,
+      "calldata_offsets_read": [
+        4,
+        36
+      ],
+      "guard": {
+        "role": "owner",
+        "checks": [
+          {
+            "caller_pc": 19042,
+            "slot": null,
+            "shift": 16,
+            "comparison_ops": [
+              "SUB"
+            ]
+          }
+        ],
+        "note": ""
+      },
+      "sstore_sites": [
+        {
+          "pc": 20364,
+          "slot": null
+        },
+        {
+          "pc": 20409,
+          "slot": 22
+        }
+      ],
+      "sload_sites": [
+        {
+          "pc": 17128,
+          "slot": null
+        },
+        {
+          "pc": 17138,
+          "slot": 3
+        },
+        {
+          "pc": 19029,
+          "slot": 0
+        },
+        {
+          "pc": 20357,
+          "slot": 20362
+        },
+        {
+          "pc": 20367,
+          "slot": 22
+        }
+      ],
+      "log_sites": [],
+      "topic_constants": [
+        {
+          "pc": 17159,
+          "topic": "0x8da9931e615ce9dfd2d7914e0cee3246839757203d34810cde64e0d0026f75c3",
+          "matched_signature": ""
+        }
+      ],
+      "external_calls": [],
+      "prologue_error_selectors": [
+        "0x0a3bd0c5",
+        "0x30cd7471",
+        "0x4e487b71"
+      ],
+      "prologue_helpers": [
+        1131,
+        4061,
+        16051,
+        16495,
+        17104,
+        17224,
+        17229,
+        17247,
+        19027,
+        19049,
+        20332
+      ],
+      "region_instruction_count": 255
+    },
+    "0x753a369c": {
+      "role": "exchange_implementation",
+      "runtime_address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 9054,
+      "calldata_min_bytes": 132,
+      "calldata_words": 4,
+      "calldata_offsets_read": [
+        4,
+        36,
+        68,
+        100
+      ],
+      "guard": {
+        "role": "no_caller_check",
+        "checks": [],
+        "note": "no CALLER instruction reachable from this entry inside the pinned runtime"
+      },
+      "sstore_sites": [],
+      "sload_sites": [],
+      "log_sites": [],
+      "topic_constants": [],
+      "external_calls": [
+        {
+          "pc": 9166,
+          "kind": "DELEGATECALL",
+          "target": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+          "selector": null
+        }
+      ],
+      "prologue_error_selectors": [
+        "0x3cf4208d",
+        "0x4e487b71"
+      ],
+      "prologue_helpers": [
+        1131,
+        3453,
+        4061,
+        7119,
+        7144,
+        16365,
+        16690,
+        16959
+      ],
+      "region_instruction_count": 244
+    },
+    "0x827ad94c": {
+      "role": "exchange_implementation",
+      "runtime_address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 8730,
+      "calldata_min_bytes": 132,
+      "calldata_words": 4,
+      "calldata_offsets_read": [
+        4,
+        36,
+        68,
+        100
+      ],
+      "guard": {
+        "role": "no_caller_check",
+        "checks": [],
+        "note": "no CALLER instruction reachable from this entry inside the pinned runtime"
+      },
+      "sstore_sites": [],
+      "sload_sites": [],
+      "log_sites": [],
+      "topic_constants": [],
+      "external_calls": [
+        {
+          "pc": 8828,
+          "kind": "DELEGATECALL",
+          "target": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+          "selector": null
+        }
+      ],
+      "prologue_error_selectors": [
+        "0x32db40c9",
+        "0x4e487b71"
+      ],
+      "prologue_helpers": [
+        1131,
+        3453,
+        4061,
+        7119,
+        7144,
+        16365,
+        16690,
+        16959
+      ],
+      "region_instruction_count": 239
+    },
+    "0xae4daf4e": {
+      "role": "exchange_implementation",
+      "runtime_address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 6953,
+      "calldata_min_bytes": 100,
+      "calldata_words": 3,
+      "calldata_offsets_read": [
+        4,
+        36,
+        68
+      ],
+      "guard": {
+        "role": "no_caller_check",
+        "checks": [],
+        "note": "no CALLER instruction reachable from this entry inside the pinned runtime"
+      },
+      "sstore_sites": [],
+      "sload_sites": [],
+      "log_sites": [],
+      "topic_constants": [],
+      "external_calls": [
+        {
+          "pc": 7060,
+          "kind": "DELEGATECALL",
+          "target": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+          "selector": null
+        }
+      ],
+      "prologue_error_selectors": [
+        "0x2448a553",
+        "0x4e487b71"
+      ],
+      "prologue_helpers": [
+        1131,
+        4061,
+        16301
+      ],
+      "region_instruction_count": 238
+    },
+    "0xae69b95b": {
+      "role": "exchange_implementation",
+      "runtime_address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 6780,
+      "calldata_min_bytes": 36,
+      "calldata_words": 1,
+      "calldata_offsets_read": [
+        4
+      ],
+      "guard": {
+        "role": "owner+pauseGuardian",
+        "checks": [
+          {
+            "caller_pc": 6828,
+            "slot": null,
+            "shift": 16,
+            "comparison_ops": [
+              "EQ",
+              "SUB"
+            ]
+          },
+          {
+            "caller_pc": 6927,
+            "slot": 1,
+            "shift": null,
+            "comparison_ops": [
+              "EQ"
+            ]
+          }
+        ],
+        "note": ""
+      },
+      "sstore_sites": [
+        {
+          "pc": 6894,
+          "slot": 29
+        }
+      ],
+      "sload_sites": [
+        {
+          "pc": 6823,
+          "slot": null
+        },
+        {
+          "pc": 6885,
+          "slot": 29
+        },
+        {
+          "pc": 6925,
+          "slot": 1
+        }
+      ],
+      "log_sites": [
+        {
+          "pc": 6901,
+          "log_n": 1
+        }
+      ],
+      "topic_constants": [
+        {
+          "pc": 6846,
+          "topic": "0xa4abec9259618fb7d014c89824b2887f61e3ab2b382d4a48a42dfde43cec5d6e",
+          "matched_signature": "TradingPausedUpdated(bool)"
+        }
+      ],
+      "external_calls": [],
+      "prologue_error_selectors": [
+        "0x248ccfdb"
+      ],
+      "prologue_helpers": [
+        1131,
+        4061,
+        6837,
+        6904,
+        6922,
+        6937,
+        6945
+      ],
+      "region_instruction_count": 112
+    },
+    "0xc0c53b8b": {
+      "role": "exchange_implementation",
+      "runtime_address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 6105,
+      "calldata_min_bytes": 100,
+      "calldata_words": 3,
+      "calldata_offsets_read": [
+        4,
+        36,
+        68
+      ],
+      "guard": {
+        "role": "no_caller_check",
+        "checks": [],
+        "note": "no CALLER instruction reachable from this entry inside the pinned runtime"
+      },
+      "sstore_sites": [
+        {
+          "pc": 6237,
+          "slot": null
+        },
+        {
+          "pc": 6262,
+          "slot": null
+        },
+        {
+          "pc": 6275,
+          "slot": null
+        },
+        {
+          "pc": 6288,
+          "slot": 23
+        },
+        {
+          "pc": 6293,
+          "slot": 24
+        },
+        {
+          "pc": 6296,
+          "slot": 25
+        },
+        {
+          "pc": 6322,
+          "slot": null
+        },
+        {
+          "pc": 6393,
+          "slot": 3
+        },
+        {
+          "pc": 6421,
+          "slot": 4
+        },
+        {
+          "pc": 6431,
+          "slot": 5
+        },
+        {
+          "pc": 6436,
+          "slot": 17
+        },
+        {
+          "pc": 6475,
+          "slot": null
+        },
+        {
+          "pc": 6590,
+          "slot": null
+        }
+      ],
+      "sload_sites": [
+        {
+          "pc": 6169,
+          "slot": null
+        },
+        {
+          "pc": 6203,
+          "slot": null
+        },
+        {
+          "pc": 6241,
+          "slot": 1
+        },
+        {
+          "pc": 6266,
+          "slot": 2
+        },
+        {
+          "pc": 6300,
+          "slot": 28
+        },
+        {
+          "pc": 6416,
+          "slot": 4
+        }
+      ],
+      "log_sites": [
+        {
+          "pc": 6453,
+          "log_n": 2
+        }
+      ],
+      "topic_constants": [],
+      "external_calls": [
+        {
+          "pc": 6353,
+          "kind": "STATICCALL",
+          "target": null,
+          "selector": null
+        }
+      ],
+      "prologue_error_selectors": [
+        "0x313ce567",
+        "0x4e487b71",
+        "0x6a426315"
+      ],
+      "prologue_helpers": [
+        1131,
+        4061,
+        6182,
+        6200,
+        6367,
+        6407,
+        6461,
+        6481,
+        6488,
+        6506,
+        6514,
+        6529,
+        6571,
+        6579,
+        6596,
+        6613,
+        16051,
+        16690
+      ],
+      "region_instruction_count": 412
+    },
+    "0xd7c7e5fb": {
+      "role": "exchange_implementation",
+      "runtime_address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 4733,
+      "calldata_min_bytes": 100,
+      "calldata_words": 3,
+      "calldata_offsets_read": [
+        4,
+        36,
+        68
+      ],
+      "guard": {
+        "role": "owner",
+        "checks": [
+          {
+            "caller_pc": 19042,
+            "slot": null,
+            "shift": 16,
+            "comparison_ops": [
+              "SUB"
+            ]
+          }
+        ],
+        "note": ""
+      },
+      "sstore_sites": [
+        {
+          "pc": 4910,
+          "slot": null
+        },
+        {
+          "pc": 17786,
+          "slot": null
+        }
+      ],
+      "sload_sites": [
+        {
+          "pc": 4891,
+          "slot": null
+        },
+        {
+          "pc": 17755,
+          "slot": null
+        },
+        {
+          "pc": 19029,
+          "slot": 0
+        },
+        {
+          "pc": 19197,
+          "slot": 8
+        }
+      ],
+      "log_sites": [
+        {
+          "pc": 4921,
+          "log_n": 2
+        }
+      ],
+      "topic_constants": [
+        {
+          "pc": 4832,
+          "topic": "0x62db1b2b923b6f20043c492d3586df1a823e447c63e44d15dbc90c1a3bc9fcc5",
+          "matched_signature": ""
+        }
+      ],
+      "external_calls": [],
+      "prologue_error_selectors": [
+        "0x0ce40f51",
+        "0x30cd7471",
+        "0xb0cb274d",
+        "0xffffffff"
+      ],
+      "prologue_helpers": [
+        1131,
+        4061,
+        4807,
+        4924,
+        4942,
+        16073,
+        16111,
+        17753,
+        19027,
+        19049,
+        19188,
+        19208
+      ],
+      "region_instruction_count": 238
+    },
+    "0xe538b280": {
+      "role": "exchange_implementation",
+      "runtime_address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 4224,
+      "calldata_min_bytes": 100,
+      "calldata_words": 3,
+      "calldata_offsets_read": [
+        4,
+        36,
+        68
+      ],
+      "guard": {
+        "role": "owner",
+        "checks": [
+          {
+            "caller_pc": 19042,
+            "slot": null,
+            "shift": 16,
+            "comparison_ops": [
+              "SUB"
+            ]
+          }
+        ],
+        "note": ""
+      },
+      "sstore_sites": [
+        {
+          "pc": 4332,
+          "slot": 23
+        },
+        {
+          "pc": 4336,
+          "slot": 24
+        },
+        {
+          "pc": 4340,
+          "slot": 25
+        }
+      ],
+      "sload_sites": [
+        {
+          "pc": 19029,
+          "slot": 0
+        }
+      ],
+      "log_sites": [],
+      "topic_constants": [
+        {
+          "pc": 4295,
+          "topic": "0xe4af0531d4ba8c578b5076b042e4505372fb4f4986aea8ebf77f4ff1585e3e75",
+          "matched_signature": "FeeRatesUpdated(uint256,uint256,uint256)"
+        }
+      ],
+      "external_calls": [],
+      "prologue_error_selectors": [
+        "0x30cd7471",
+        "0xcd4e6167"
+      ],
+      "prologue_helpers": [
+        1131,
+        4279,
+        4286,
+        4358,
+        4376,
+        4386,
+        16343,
+        19027,
+        19049
+      ],
+      "region_instruction_count": 137
+    },
+    "0x18958ce2": {
+      "role": "exchange_linked_library_live",
+      "runtime_address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "runtime_sha256": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2",
+      "entry_pc": 2616,
+      "calldata_min_bytes": 100,
+      "calldata_words": 3,
+      "calldata_offsets_read": [
+        4,
+        36,
+        68
+      ],
+      "guard": {
+        "role": "no_caller_check",
+        "checks": [],
+        "note": "no CALLER instruction reachable from this entry inside the pinned runtime"
+      },
+      "sstore_sites": [
+        {
+          "pc": 2873,
+          "slot": null
+        },
+        {
+          "pc": 2945,
+          "slot": null
+        },
+        {
+          "pc": 3132,
+          "slot": null
+        }
+      ],
+      "sload_sites": [
+        {
+          "pc": 2838,
+          "slot": null
+        },
+        {
+          "pc": 2938,
+          "slot": null
+        },
+        {
+          "pc": 2991,
+          "slot": null
+        },
+        {
+          "pc": 3128,
+          "slot": null
+        }
+      ],
+      "log_sites": [],
+      "topic_constants": [
+        {
+          "pc": 3035,
+          "topic": "0xb2f6a0be3228032ab1a6e4d114ab0a4b8277ef32d9bd9b666e8537200aed4dc7",
+          "matched_signature": "Enqueued(address,uint256,uint256)"
+        }
+      ],
+      "external_calls": [],
+      "prologue_error_selectors": [
+        "0x7504bdf3"
+      ],
+      "prologue_helpers": [
+        279,
+        2663,
+        2923,
+        3297,
+        3315
+      ],
+      "region_instruction_count": 250
+    },
+    "0x2448a553": {
+      "role": "exchange_linked_library_live",
+      "runtime_address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "runtime_sha256": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2",
+      "entry_pc": 2587,
+      "calldata_min_bytes": 164,
+      "calldata_words": 5,
+      "calldata_offsets_read": [
+        4,
+        36,
+        68,
+        100,
+        132
+      ],
+      "guard": {
+        "role": "no_caller_check",
+        "checks": [],
+        "note": "no CALLER instruction reachable from this entry inside the pinned runtime"
+      },
+      "sstore_sites": [
+        {
+          "pc": 2873,
+          "slot": null
+        },
+        {
+          "pc": 2908,
+          "slot": null
+        },
+        {
+          "pc": 3746,
+          "slot": null
+        },
+        {
+          "pc": 3831,
+          "slot": null
+        },
+        {
+          "pc": 3858,
+          "slot": null
+        },
+        {
+          "pc": 5604,
+          "slot": null
+        },
+        {
+          "pc": 5635,
+          "slot": null
+        }
+      ],
+      "sload_sites": [
+        {
+          "pc": 2838,
+          "slot": null
+        },
+        {
+          "pc": 2877,
+          "slot": null
+        },
+        {
+          "pc": 3402,
+          "slot": null
+        },
+        {
+          "pc": 3425,
+          "slot": null
+        },
+        {
+          "pc": 3502,
+          "slot": null
+        },
+        {
+          "pc": 3504,
+          "slot": null
+        },
+        {
+          "pc": 3579,
+          "slot": null
+        },
+        {
+          "pc": 3642,
+          "slot": null
+        },
+        {
+          "pc": 3739,
+          "slot": null
+        },
+        {
+          "pc": 3814,
+          "slot": 281474976710655
+        },
+        {
+          "pc": 3829,
+          "slot": 0
+        },
+        {
+          "pc": 3844,
+          "slot": null
+        }
+      ],
+      "log_sites": [
+        {
+          "pc": 3784,
+          "log_n": 4
+        },
+        {
+          "pc": 3886,
+          "log_n": 4
+        }
+      ],
+      "topic_constants": [],
+      "external_calls": [],
+      "prologue_error_selectors": [
+        "0x4e487b71"
+      ],
+      "prologue_helpers": [
+        279,
+        725,
+        2705,
+        3320,
+        4019,
+        4064,
+        4070,
+        4079,
+        4090
+      ],
+      "region_instruction_count": 815
+    },
+    "0x32db40c9": {
+      "role": "exchange_linked_library_live",
+      "runtime_address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "runtime_sha256": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2",
+      "entry_pc": 2146,
+      "calldata_min_bytes": 164,
+      "calldata_words": 5,
+      "calldata_offsets_read": [
+        4,
+        36,
+        68,
+        100,
+        132
+      ],
+      "guard": {
+        "role": "no_caller_check",
+        "checks": [],
+        "note": "no CALLER instruction reachable from this entry inside the pinned runtime"
+      },
+      "sstore_sites": [
+        {
+          "pc": 2454,
+          "slot": null
+        },
+        {
+          "pc": 2463,
+          "slot": null
+        },
+        {
+          "pc": 2485,
+          "slot": null
+        },
+        {
+          "pc": 2873,
+          "slot": null
+        },
+        {
+          "pc": 2908,
+          "slot": null
+        },
+        {
+          "pc": 5604,
+          "slot": null
+        },
+        {
+          "pc": 5635,
+          "slot": null
+        }
+      ],
+      "sload_sites": [
+        {
+          "pc": 2249,
+          "slot": null
+        },
+        {
+          "pc": 2394,
+          "slot": null
+        },
+        {
+          "pc": 2412,
+          "slot": null
+        },
+        {
+          "pc": 2451,
+          "slot": null
+        },
+        {
+          "pc": 2482,
+          "slot": null
+        },
+        {
+          "pc": 2530,
+          "slot": null
+        },
+        {
+          "pc": 2561,
+          "slot": null
+        },
+        {
+          "pc": 2838,
+          "slot": null
+        },
+        {
+          "pc": 2877,
+          "slot": null
+        },
+        {
+          "pc": 5505,
+          "slot": null
+        }
+      ],
+      "log_sites": [
+        {
+          "pc": 2371,
+          "log_n": 4
+        },
+        {
+          "pc": 2517,
+          "log_n": 4
+        }
+      ],
+      "topic_constants": [],
+      "external_calls": [],
+      "prologue_error_selectors": [
+        "0x2db695bd",
+        "0x4e487b71"
+      ],
+      "prologue_helpers": [
+        279,
+        725,
+        1790,
+        2185,
+        2192,
+        2199,
+        2213,
+        2219,
+        2274,
+        2290,
+        2313,
+        2327,
+        2378,
+        2400,
+        2410,
+        2524,
+        2536,
+        2544,
+        2555,
+        2569,
+        2579,
+        2705,
+        2755,
+        4098,
+        5492
+      ],
+      "region_instruction_count": 599
+    },
+    "0x3cf4208d": {
+      "role": "exchange_linked_library_live",
+      "runtime_address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "runtime_sha256": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2",
+      "entry_pc": 1579,
+      "calldata_min_bytes": 196,
+      "calldata_words": 6,
+      "calldata_offsets_read": [
+        4,
+        36,
+        68,
+        100,
+        132,
+        164
+      ],
+      "guard": {
+        "role": "no_caller_check",
+        "checks": [],
+        "note": "no CALLER instruction reachable from this entry inside the pinned runtime"
+      },
+      "sstore_sites": [
+        {
+          "pc": 1937,
+          "slot": null
+        },
+        {
+          "pc": 2038,
+          "slot": null
+        },
+        {
+          "pc": 2873,
+          "slot": null
+        },
+        {
+          "pc": 2908,
+          "slot": null
+        },
+        {
+          "pc": 5604,
+          "slot": null
+        },
+        {
+          "pc": 5635,
+          "slot": null
+        }
+      ],
+      "sload_sites": [
+        {
+          "pc": 1732,
+          "slot": null
+        },
+        {
+          "pc": 1734,
+          "slot": null
+        },
+        {
+          "pc": 1874,
+          "slot": null
+        },
+        {
+          "pc": 1930,
+          "slot": null
+        },
+        {
+          "pc": 2017,
+          "slot": null
+        },
+        {
+          "pc": 2036,
+          "slot": null
+        },
+        {
+          "pc": 2070,
+          "slot": null
+        },
+        {
+          "pc": 2838,
+          "slot": null
+        },
+        {
+          "pc": 2877,
+          "slot": null
+        },
+        {
+          "pc": 5505,
+          "slot": null
+        }
+      ],
+      "log_sites": [
+        {
+          "pc": 1965,
+          "log_n": 4
+        }
+      ],
+      "topic_constants": [],
+      "external_calls": [],
+      "prologue_error_selectors": [
+        "0x2db695bd",
+        "0x4e487b71"
+      ],
+      "prologue_helpers": [
+        279,
+        1649,
+        1656,
+        1663,
+        1684,
+        1690,
+        1699,
+        1709,
+        1747,
+        1754,
+        1790,
+        1808,
+        1818,
+        1826,
+        1845,
+        1852,
+        1885,
+        1977,
+        2064,
+        2077,
+        2085,
+        2093,
+        2102,
+        2111,
+        2122,
+        2130,
+        2138,
+        2641,
+        2755,
+        2910,
+        5492
+      ],
+      "region_instruction_count": 632
+    },
+    "0x3f4e3626": {
+      "role": "exchange_linked_library_live",
+      "runtime_address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "runtime_sha256": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2",
+      "entry_pc": 1303,
+      "calldata_min_bytes": 100,
+      "calldata_words": 3,
+      "calldata_offsets_read": [
+        4,
+        36,
+        68
+      ],
+      "guard": {
+        "role": "no_caller_check",
+        "checks": [],
+        "note": "no CALLER instruction reachable from this entry inside the pinned runtime"
+      },
+      "sstore_sites": [
+        {
+          "pc": 1437,
+          "slot": null
+        },
+        {
+          "pc": 1473,
+          "slot": null
+        },
+        {
+          "pc": 1528,
+          "slot": null
+        },
+        {
+          "pc": 1538,
+          "slot": null
+        },
+        {
+          "pc": 1564,
+          "slot": null
+        },
+        {
+          "pc": 2873,
+          "slot": null
+        },
+        {
+          "pc": 2908,
+          "slot": null
+        },
+        {
+          "pc": 5604,
+          "slot": null
+        },
+        {
+          "pc": 5635,
+          "slot": null
+        }
+      ],
+      "sload_sites": [
+        {
+          "pc": 1349,
+          "slot": null
+        },
+        {
+          "pc": 1357,
+          "slot": null
+        },
+        {
+          "pc": 1371,
+          "slot": null
+        },
+        {
+          "pc": 1402,
+          "slot": 1
+        },
+        {
+          "pc": 1410,
+          "slot": null
+        },
+        {
+          "pc": 1561,
+          "slot": null
+        },
+        {
+          "pc": 2838,
+          "slot": null
+        },
+        {
+          "pc": 2877,
+          "slot": null
+        },
+        {
+          "pc": 5505,
+          "slot": null
+        }
+      ],
+      "log_sites": [
+        {
+          "pc": 1552,
+          "log_n": 2
+        }
+      ],
+      "topic_constants": [
+        {
+          "pc": 1486,
+          "topic": "0x4c672bd1e7444966ce521bc0f053d4f359f1fad9cfe6a43011c00baac6278e4d",
+          "matched_signature": ""
+        }
+      ],
+      "external_calls": [],
+      "prologue_error_selectors": [
+        "0x4e487b71"
+      ],
+      "prologue_helpers": [
+        279,
+        1373,
+        1382,
+        1444,
+        1453,
+        1484,
+        1544,
+        1554,
+        1570,
+        2663,
+        4098,
+        5492
+      ],
+      "region_instruction_count": 413
+    },
+    "0xb67f3dd7": {
+      "role": "exchange_linked_library_live",
+      "runtime_address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "runtime_sha256": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2",
+      "entry_pc": 349,
+      "calldata_min_bytes": 228,
+      "calldata_words": 7,
+      "calldata_offsets_read": [
+        4,
+        36,
+        68,
+        100,
+        132,
+        164,
+        196
+      ],
+      "guard": {
+        "role": "no_caller_check",
+        "checks": [],
+        "note": "no CALLER instruction reachable from this entry inside the pinned runtime"
+      },
+      "sstore_sites": [],
+      "sload_sites": [],
+      "log_sites": [],
+      "topic_constants": [],
+      "external_calls": [],
+      "prologue_error_selectors": [
+        "0x4e487b71"
+      ],
+      "prologue_helpers": [
+        279,
+        725,
+        745,
+        2777,
+        4136,
+        4254,
+        4264,
+        4589,
+        4600
+      ],
+      "region_instruction_count": 405
+    },
+    "0xca02ff91": {
+      "role": "exchange_linked_library_live",
+      "runtime_address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "runtime_sha256": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2",
+      "entry_pc": 283,
+      "calldata_min_bytes": 132,
+      "calldata_words": 4,
+      "calldata_offsets_read": [
+        4,
+        36,
+        68,
+        100
+      ],
+      "guard": {
+        "role": "no_caller_check",
+        "checks": [],
+        "note": "no CALLER instruction reachable from this entry inside the pinned runtime"
+      },
+      "sstore_sites": [
+        {
+          "pc": 2873,
+          "slot": null
+        },
+        {
+          "pc": 2908,
+          "slot": null
+        },
+        {
+          "pc": 4845,
+          "slot": null
+        },
+        {
+          "pc": 4854,
+          "slot": null
+        },
+        {
+          "pc": 4876,
+          "slot": null
+        },
+        {
+          "pc": 5604,
+          "slot": null
+        },
+        {
+          "pc": 5635,
+          "slot": null
+        }
+      ],
+      "sload_sites": [
+        {
+          "pc": 2838,
+          "slot": null
+        },
+        {
+          "pc": 2877,
+          "slot": null
+        },
+        {
+          "pc": 4688,
+          "slot": null
+        },
+        {
+          "pc": 4711,
+          "slot": null
+        },
+        {
+          "pc": 4760,
+          "slot": null
+        },
+        {
+          "pc": 4799,
+          "slot": null
+        },
+        {
+          "pc": 4808,
+          "slot": null
+        },
+        {
+          "pc": 4840,
+          "slot": null
+        },
+        {
+          "pc": 4873,
+          "slot": null
+        },
+        {
+          "pc": 5043,
+          "slot": null
+        },
+        {
+          "pc": 5505,
+          "slot": null
+        }
+      ],
+      "log_sites": [
+        {
+          "pc": 4908,
+          "log_n": 4
+        },
+        {
+          "pc": 4979,
+          "log_n": 4
+        }
+      ],
+      "topic_constants": [],
+      "external_calls": [],
+      "prologue_error_selectors": [
+        "0x4e487b71"
+      ],
+      "prologue_helpers": [
+        279,
+        2641,
+        3898,
+        4615,
+        5049,
+        5055,
+        5064
+      ],
+      "region_instruction_count": 606
+    }
+  },
+  "limits": [
+    "Statically reachable regions follow direct jumps; a caller check reached only through a jump whose target comes from a stack value would be missed.",
+    "Absence of CALLER instructions is exact only for the whole runtime, not per function."
+  ],
+  "caller_census": {
+    "library_caller_instructions": 0,
+    "exchange_caller_instructions": 19,
+    "library_note": "zero CALLER instructions in the whole linked-library runtime"
+  },
+  "runtime_topic_census": {
+    "exchange": {
+      "0xe4af0531d4ba8c578b5076b042e4505372fb4f4986aea8ebf77f4ff1585e3e75": {
+        "label": "FeeRatesUpdated(uint256,uint256,uint256)",
+        "runtime_byte_offset": 4296
+      },
+      "0xa4abec9259618fb7d014c89824b2887f61e3ab2b382d4a48a42dfde43cec5d6e": {
+        "label": "TradingPausedUpdated(bool)",
+        "runtime_byte_offset": 6847
+      },
+      "0x6b3ffd50ed0810416007b5dbbae587b9d8801c50bf8065cda8eb82011bed314e": {
+        "label": "PauseGuardianUpdated(address)",
+        "runtime_byte_offset": 10735
+      },
+      "0x62db1b2b923b6f20043c492d3586df1a823e447c63e44d15dbc90c1a3bc9fcc5": {
+        "label": "unnamed instrument-field event",
+        "runtime_byte_offset": 4833
+      },
+      "0x76a319771459e5329ebc7830ef30b80fc54d20327f8b4946a9539e53c46018c9": {
+        "label": "unnamed instrument admin event",
+        "runtime_byte_offset": 9846
+      },
+      "0x25e933a27e6487478d7617f2f4ef2f5c77355faf6cad2e6fd7c4b8d029930d9f": {
+        "label": "unnamed market pause event",
+        "runtime_byte_offset": 22935
+      }
+    },
+    "library": {
+      "0xb8c6723c829f797c1498cb75af97462c6cb9f3784fe7c0c47bcd42cf42ca94fb": {
+        "label": "queue move",
+        "runtime_byte_offset": 5705
+      },
+      "0xf949f11686e63f08cadf672fb6db7f7b859cb0fe11f2bf80c57db5429453f0cc": {
+        "label": "queue merge summary",
+        "runtime_byte_offset": 5673
+      },
+      "0xb2f6a0be3228032ab1a6e4d114ab0a4b8277ef32d9bd9b666e8537200aed4dc7": {
+        "label": "Enqueued(address,uint256,uint256), hash-checked and present in the library runtime",
+        "runtime_byte_offset": 3036
+      }
+    }
+  },
+  "name_checks": {
+    "0x01681a62": {
+      "signature": "sweep(address)",
+      "hash_checked": true,
+      "status": "hash_matches_selector",
+      "source": "behaviour_reconstruction: exchange_sweep_behavior.json"
+    },
+    "0x2d2451d1": {
+      "signature": "pauseMarket(uint32)",
+      "hash_checked": true,
+      "status": "hash_matches_selector",
+      "source": "behaviour_reconstruction: exchange_pause_behavior.json"
+    },
+    "0x415f1240": {
+      "signature": "liquidate(uint256)",
+      "hash_checked": true,
+      "status": "hash_matches_selector",
+      "source": "public_abi_fixture: exchange_interface_evidence.json"
+    },
+    "0x4a4d9eea": {
+      "signature": "",
+      "hash_checked": false,
+      "status": "unresolved",
+      "source": "unresolved"
+    },
+    "0x5ca4c0ea": {
+      "signature": "",
+      "hash_checked": false,
+      "status": "unresolved",
+      "source": "unresolved"
+    },
+    "0x6a3214c9": {
+      "signature": "reconcileSweepCredit(address,uint256)",
+      "hash_checked": true,
+      "status": "hash_matches_selector",
+      "source": "behaviour_reconstruction: exchange_sweep_behavior.json"
+    },
+    "0x753a369c": {
+      "signature": "",
+      "hash_checked": false,
+      "status": "unresolved",
+      "source": "unresolved"
+    },
+    "0x827ad94c": {
+      "signature": "",
+      "hash_checked": false,
+      "status": "unresolved",
+      "source": "unresolved"
+    },
+    "0xae4daf4e": {
+      "signature": "",
+      "hash_checked": false,
+      "status": "unresolved",
+      "source": "unresolved"
+    },
+    "0xae69b95b": {
+      "signature": "setTradingPaused(bool)",
+      "hash_checked": true,
+      "status": "hash_matches_selector",
+      "source": "behaviour_reconstruction: exchange_pause_behavior.json"
+    },
+    "0xc0c53b8b": {
+      "signature": "initialize(address,address,address)",
+      "hash_checked": true,
+      "status": "hash_matches_selector",
+      "source": "public_abi_fixture: guardian_report_lead"
+    },
+    "0xd7c7e5fb": {
+      "signature": "",
+      "hash_checked": false,
+      "status": "unresolved",
+      "source": "unresolved"
+    },
+    "0xe538b280": {
+      "signature": "setFeeRates(uint256,uint256,uint256)",
+      "hash_checked": true,
+      "status": "hash_matches_selector",
+      "source": "behaviour_reconstruction: exchange_fee_rates_behavior.json"
+    },
+    "0x18958ce2": {
+      "signature": "",
+      "hash_checked": false,
+      "status": "unresolved",
+      "source": "unresolved"
+    },
+    "0x2448a553": {
+      "signature": "",
+      "hash_checked": false,
+      "status": "unresolved",
+      "source": "unresolved"
+    },
+    "0x32db40c9": {
+      "signature": "",
+      "hash_checked": false,
+      "status": "unresolved",
+      "source": "unresolved"
+    },
+    "0x3cf4208d": {
+      "signature": "",
+      "hash_checked": false,
+      "status": "unresolved",
+      "source": "unresolved"
+    },
+    "0x3f4e3626": {
+      "signature": "",
+      "hash_checked": false,
+      "status": "unresolved",
+      "source": "unresolved"
+    },
+    "0xb67f3dd7": {
+      "signature": "",
+      "hash_checked": false,
+      "status": "unresolved",
+      "source": "unresolved"
+    },
+    "0xca02ff91": {
+      "signature": "",
+      "hash_checked": false,
+      "status": "unresolved",
+      "source": "unresolved"
+    }
+  },
+  "error_name_checks": {
+    "0x30cd7471": {
+      "signature": "NotOwner()",
+      "name_source": "registry"
+    },
+    "0x49199fb6": {
+      "signature": "NotPauseAuthority()",
+      "name_source": "registry"
+    },
+    "0xcd4e6167": {
+      "signature": "FeeTooHigh()",
+      "name_source": "registry"
+    },
+    "0x67207a88": {
+      "signature": "InvalidInstrumentId()",
+      "name_source": "registry"
+    },
+    "0x0dc149f0": {
+      "signature": "AlreadyInitialized()",
+      "name_source": "registry"
+    },
+    "0x6a426315": {
+      "signature": "UnsupportedCollateralDecimals()",
+      "name_source": "registry"
+    },
+    "0x94e88a21": {
+      "signature": "PositionNotOpen()",
+      "name_source": "registry"
+    },
+    "0x0984a617": {
+      "signature": "NoPendingSweep()",
+      "name_source": "registry"
+    },
+    "0x28ef4314": {
+      "signature": "SweepAlreadyPending()",
+      "name_source": "registry"
+    },
+    "0x0d240815": {
+      "signature": "MarketAlreadyPaused()",
+      "name_source": "registry"
+    },
+    "0xddeb79ba": {
+      "signature": "NotLiquidatable()",
+      "name_source": "behaviour"
+    },
+    "0x329c2b0f": {
+      "signature": "SweepBelowMinimum()",
+      "name_source": "behaviour"
+    },
+    "0x0a9e0180": {
+      "signature": "NoCoreBalance()",
+      "name_source": "behaviour"
+    }
+  },
+  "unnamed_error_selectors": {
+    "0x5b6d2b7a": "library queue-range or merge-limit error",
+    "0x0ce40f51": "instrument ID bound error at helper 0x4af4",
+    "0xb0cb274d": "instrument field validation error"
+  },
+  "topic_name_checks": {
+    "FeeRatesUpdated(uint256,uint256,uint256)": "0xe4af0531d4ba8c578b5076b042e4505372fb4f4986aea8ebf77f4ff1585e3e75",
+    "TradingPausedUpdated(bool)": "0xa4abec9259618fb7d014c89824b2887f61e3ab2b382d4a48a42dfde43cec5d6e",
+    "PauseGuardianUpdated(address)": "0x6b3ffd50ed0810416007b5dbbae587b9d8801c50bf8065cda8eb82011bed314e",
+    "OwnerUpdated(address)": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+    "MarketKeeperUpdated(address)": "0xc76a9da20bd06b6b26d0826dab481a66785c609c15fae99817a557e61229e9c5",
+    "Enqueued(address,uint256,uint256)": "0xb2f6a0be3228032ab1a6e4d114ab0a4b8277ef32d9bd9b666e8537200aed4dc7",
+    "Dequeued(address,uint256,uint256)": "0x17e5f89ddc4a2a208ecf5a676c99f0ed3eca685baa201dbedb47618b34ac3559",
+    "SweepRequested(address,address,uint64,uint64,uint32)": "0x02d61879cd72906e0951e3a96096407dd2b1f2cd2d063dae983bb20216cf3025",
+    "Swept(address,uint256)": "0xc36b5179cb9c303b200074996eab2b3473eac370fdd7eba3bec636fe35109696",
+    "PendingSweepCleared(address,address)": "0x28f3adb5fa23ae5c83c811e67caf2ec192a816e4ef898c7f90d1484f65a9717e",
+    "Harvested(address,uint256)": "0x121c5042302bae5fc561fbc64368f297ca60a880878e1e3a7f7e9380377260bf",
+    "Liquidated(address,uint256,uint256,uint256,uint256)": "0x7abe212d4944ae75cf0a0477af92aa0db98c15aaf21d06c37c97c641427b8eb3",
+    "Transfer(address,address,uint256)": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+  }
+}

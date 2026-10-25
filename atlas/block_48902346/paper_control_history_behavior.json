@@ -1,0 +1,47 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "token": "0xe40f17915daa230324030003a197cdaef2261c0e",
+  "admin_event_count": 5,
+  "admin_signature_counts": {
+    "OwnerUpdated(address)": 2,
+    "MinterUpdated(address)": 1,
+    "AutoApprovedSpenderUpdated(address)": 1,
+    "StakingContractUpdated(address)": 1
+  },
+  "admin_events": [
+    {
+      "signature": "OwnerUpdated(address)",
+      "tx": "0x5e75d563d789f1007d03b187dd2f646b1912aeaf2ff43ac69f9bd2a77cabed74",
+      "block": 47855130,
+      "indexed_address": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29"
+    },
+    {
+      "signature": "MinterUpdated(address)",
+      "tx": "0x5e75d563d789f1007d03b187dd2f646b1912aeaf2ff43ac69f9bd2a77cabed74",
+      "block": 47855130,
+      "indexed_address": "0x75174549dbbd44497d31a47e2e2d7406408d63d9"
+    },
+    {
+      "signature": "AutoApprovedSpenderUpdated(address)",
+      "tx": "0x3e080969215f85d41865c022dcad457d02c510aa100d9b737adf107fbb7cebab",
+      "block": 47855212,
+      "indexed_address": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016"
+    },
+    {
+      "signature": "StakingContractUpdated(address)",
+      "tx": "0x8a64598fa90a06cdcd95f581db350c00da9cd829f8b5cb865c24118bee6fe0b0",
+      "block": 47855278,
+      "indexed_address": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016"
+    },
+    {
+      "signature": "OwnerUpdated(address)",
+      "tx": "0x66c836fe26fbc6d8b4e66cf035cc9a831a1cd4af05b4861ef7e2174b01a30742",
+      "block": 47855510,
+      "indexed_address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f"
+    }
+  ],
+  "burn_event_count": 0,
+  "burn_events": [],
+  "limit": "Complete event scans prove emitted admin and burn events through the pin, not absence of reverted calls or unlogged writes."
+}

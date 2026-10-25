@@ -1,0 +1,30 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "proxy": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+  "implementation": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+  "runtime_sha256": {
+    "Proxy": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "Implementation": "480375f798fccf20fd79fd4fedefdd3377dd44af4dd559a3310a87c5bc048ae8"
+  },
+  "source_sha256": "70989c957db9638c8f79bda25bbcd7725ab478d90dcd541d9355fa470b29d79b",
+  "field4_values": [
+    "zero",
+    "one",
+    "keccak256(success return uint256 42)",
+    "keccak256(inner calldata)",
+    "uint128 max"
+  ],
+  "successful_call_cases": 5,
+  "continued_failure_cases": 5,
+  "rejected_call_cases": 5,
+  "noncontinuing_failure_cases": 1,
+  "test_count": 4,
+  "passed_tests": [
+    "testField4FailureVariants",
+    "testField4NonContinuingFailure",
+    "testField4RejectedVariants",
+    "testField4SuccessVariants"
+  ],
+  "finding": "For these sampled branches, field4 changes only the batch ID because it is part of calldata; call targets, return data, result events, and summary counters remain the same. This does not prove the field is globally unused."
+}

@@ -1,0 +1,48 @@
+{
+  "archive_matched": {
+    "testLiveReplayMatchesArchive": true,
+    "testPinnedReplayMatchesArchive": true,
+    "testRecoveryReplayMatchesArchive": true
+  },
+  "candidate_code_sha256": "a20ee31db1ffff1103c01d967f1b44fdcff84d7d023b389cc1784bb0e4579a6f",
+  "candidate_implementation": "0x560611d19c93fbcd3200557658a6f83c48b200ad",
+  "forge_result": "4 passed, 0 failed",
+  "historical_block": 48902111,
+  "historical_block_hash": "0xc40b029567b4d75d70ba91f52e918abf8ecd53fb65f6704e31cda535b96c1640",
+  "limits": [
+    "The candidate and the live implementation are installed counterfactually at the historical block.",
+    "The BBO precompile returns its archived observed response.",
+    "The prestate tracer captures storage accessed by this transaction, not all historical state.",
+    "One signed open does not establish other trading paths, upgrade safety, or Core settlement.",
+    "The archive reference describes the pinned implementation; a live mismatch is a live-set change, not a candidate defect."
+  ],
+  "live_implementation": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+  "mocked_bbo_output": "0x00000000000000000000000000000000000000000000000000000000000c596800000000000000000000000000000000000000000000000000000000000c5972",
+  "pinned_implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "post_storage_words_matched_each": 11,
+  "prestate_sha256": "1332879f6a29882ddf04b76f657cf086f75dc6aa4cf11224fcc81260fd6bcc7e",
+  "receipt_logs_matched_each": 4,
+  "relaxed_rerun": false,
+  "replay_tests": {
+    "testLiveAndRecoveryReplayAgree": true,
+    "testLiveReplayMatchesArchive": true,
+    "testPinnedReplayMatchesArchive": true,
+    "testRecoveryReplayMatchesArchive": true
+  },
+  "runtime_sha256": {
+    "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723": "fc7374f3969381160732fe98c5e3145e00c3f167f168d61d65bb4972e9a6b268",
+    "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+    "0x233ff29b239abc1d7748605da9b205c3e008626e": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a": "8e452a76ac1b28c05d220451d837c3758bd41180526940752f89047bc0dd22ed",
+    "0x560611d19c93fbcd3200557658a6f83c48b200ad": "a20ee31db1ffff1103c01d967f1b44fdcff84d7d023b389cc1784bb0e4579a6f",
+    "0x6cd5661646289fb6e65ea5c032310fded797d0a2": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "0x8326eb8896e358717f10502ec73ce8d28e37b108": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "0x8a5069fe303e8f81e91825436e956d595032e558": "630c02b0c693c47760554a3f0fed68b72db5df601f887d2edaaa3106e6308e63",
+    "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262": "480375f798fccf20fd79fd4fedefdd3377dd44af4dd559a3310a87c5bc048ae8"
+  },
+  "source_sha256": "0b190e69221cdb4053af99797e0d42c52a61ed1e74ee4590ea513fa7dabe14ea",
+  "source_transaction": "0xbfdbeb1a73a25264e1467b0f5be6646fb26f8ece631b1e2181133a49e2d0484c",
+  "strict_candidate_archive": true,
+  "strict_live_archive": true
+}

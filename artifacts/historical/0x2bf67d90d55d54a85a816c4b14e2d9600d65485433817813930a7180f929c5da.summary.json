@@ -1,0 +1,22 @@
+{
+  "hash": "0x2bf67d90d55d54a85a816c4b14e2d9600d65485433817813930a7180f929c5da",
+  "block": 48378917,
+  "status": 1,
+  "calls": [
+    {
+      "depth": 0,
+      "type": "CALL",
+      "from": "0xe9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+      "to": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+      "selector": "0x735631ad",
+      "gas_used": "0xd0a3",
+      "error": null
+    }
+  ],
+  "logs": [
+    {
+      "address": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+      "topic0": "0x4c4e829c9b8c87162e976ab955be6db24dace1afaa0ebe4308b6c273a92f5875"
+    }
+  ]
+}

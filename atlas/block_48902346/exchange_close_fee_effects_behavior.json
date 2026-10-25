@@ -1,0 +1,136 @@
+{
+  "block": 48173880,
+  "block_hash": "0xc4e06ae5048b4457d3df2b1f9658abd429a233649f617c2eb73a67f5f06a48b3",
+  "source_tx": "0x3bc7029ee0d72c5dbacfb74dddc183ddb6206adca6ed702014eb90c28cf2d39e",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "raw_evidence": "../../artifacts/exchange_close_fee_effects/local_probes.json",
+  "direct_raw_evidence": "../../artifacts/exchange_close_fee_effects/direct_local_probes.json",
+  "case_count": 16,
+  "queued_case_count": 8,
+  "direct_case_count": 8,
+  "historical_baseline_matches": true,
+  "direct_historical_baseline_matches": true,
+  "slot23_and_25_variants_same_exchange_logs_and_storage": true,
+  "formula": "fee = floor(adjusted positive PnL * slot24 / 10^18); queued profit or direct payout subtracts fee; direct fee is split floor(fee/2) and remainder",
+  "cases": {
+    "baseline": {
+      "slot24_rate": "20000000000000000",
+      "adjusted_profit": "7779532839134513866",
+      "fee": "155590656782690277",
+      "queued_profit": "7623942182351823589"
+    },
+    "slot23_zero": {
+      "slot24_rate": "20000000000000000",
+      "adjusted_profit": "7779532839134513866",
+      "fee": "155590656782690277",
+      "queued_profit": "7623942182351823589"
+    },
+    "slot23_double": {
+      "slot24_rate": "20000000000000000",
+      "adjusted_profit": "7779532839134513866",
+      "fee": "155590656782690277",
+      "queued_profit": "7623942182351823589"
+    },
+    "slot24_zero": {
+      "slot24_rate": "0",
+      "adjusted_profit": "7779532839134513866",
+      "fee": "0",
+      "queued_profit": "7779532839134513866"
+    },
+    "slot24_one": {
+      "slot24_rate": "1",
+      "adjusted_profit": "7779532839134513866",
+      "fee": "7",
+      "queued_profit": "7779532839134513859"
+    },
+    "slot24_three": {
+      "slot24_rate": "3",
+      "adjusted_profit": "7779532839134513866",
+      "fee": "23",
+      "queued_profit": "7779532839134513843"
+    },
+    "slot24_double": {
+      "slot24_rate": "40000000000000000",
+      "adjusted_profit": "7779532839134513866",
+      "fee": "311181313565380554",
+      "queued_profit": "7468351525569133312"
+    },
+    "slot25_zero": {
+      "slot24_rate": "20000000000000000",
+      "adjusted_profit": "7779532839134513866",
+      "fee": "155590656782690277",
+      "queued_profit": "7623942182351823589"
+    }
+  },
+  "direct_cases": {
+    "baseline": {
+      "slot24_rate": "20000000000000000",
+      "adjusted_profit": "6866671242413173194",
+      "fee": "137333424848263463",
+      "payout": "2506729337817564909731",
+      "staker_fee": "68666712424131731",
+      "dev_fee": "68666712424131732"
+    },
+    "slot23_zero": {
+      "slot24_rate": "20000000000000000",
+      "adjusted_profit": "6866671242413173194",
+      "fee": "137333424848263463",
+      "payout": "2506729337817564909731",
+      "staker_fee": "68666712424131731",
+      "dev_fee": "68666712424131732"
+    },
+    "slot23_double": {
+      "slot24_rate": "20000000000000000",
+      "adjusted_profit": "6866671242413173194",
+      "fee": "137333424848263463",
+      "payout": "2506729337817564909731",
+      "staker_fee": "68666712424131731",
+      "dev_fee": "68666712424131732"
+    },
+    "slot24_zero": {
+      "slot24_rate": "0",
+      "adjusted_profit": "6866671242413173194",
+      "fee": "0",
+      "payout": "2506866671242413173194",
+      "staker_fee": "0",
+      "dev_fee": "0"
+    },
+    "slot24_one": {
+      "slot24_rate": "1",
+      "adjusted_profit": "6866671242413173194",
+      "fee": "6",
+      "payout": "2506866671242413173188",
+      "staker_fee": "3",
+      "dev_fee": "3"
+    },
+    "slot24_three": {
+      "slot24_rate": "3",
+      "adjusted_profit": "6866671242413173194",
+      "fee": "20",
+      "payout": "2506866671242413173174",
+      "staker_fee": "10",
+      "dev_fee": "10"
+    },
+    "slot24_double": {
+      "slot24_rate": "40000000000000000",
+      "adjusted_profit": "6866671242413173194",
+      "fee": "274666849696526927",
+      "payout": "2506592004392716646267",
+      "staker_fee": "137333424848263463",
+      "dev_fee": "137333424848263464"
+    },
+    "slot25_zero": {
+      "slot24_rate": "20000000000000000",
+      "adjusted_profit": "6866671242413173194",
+      "fee": "137333424848263463",
+      "payout": "2506729337817564909731",
+      "staker_fee": "68666712424131731",
+      "dev_fee": "68666712424131732"
+    }
+  },
+  "limits": [
+    "The isolated fee paths cover one queued-profit close and one direct-payout close.",
+    "The local fork replays historical calldata and BBO but the changed-rate cases are simulations.",
+    "Slot 23 and the effect of slot 24 on negative PnL or other settlement branches still need separate tests."
+  ]
+}

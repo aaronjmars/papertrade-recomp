@@ -1,0 +1,256 @@
+{
+  "pin_block": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "staking_proxy": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+  "implementation": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+  "selector_reconstructions": {
+    "0x13dd495b": "authorizedExecutor()",
+    "0x2b6fdc7e": "unallocatedRewards()",
+    "0x3644e515": "DOMAIN_SEPARATOR()",
+    "0x51ed6a30": "stakeToken()",
+    "0x817b1cd2": "totalStaked()",
+    "0x8da5cb5b": "owner()",
+    "0x939d6237": "accRewardPerShare()",
+    "0xcab64bcd": "rewardReserve()",
+    "0xd2f7265a": "exchange()",
+    "0xf7c618c1": "rewardToken()",
+    "0x0700cc42": "UNSTAKE_TYPEHASH()",
+    "0x5638b3e5": "DISTRIBUTE_TYPEHASH()",
+    "0x6b0509b1": "CLAIM_TYPEHASH()",
+    "0x89ee09f0": "STAKE_TYPEHASH()",
+    "0x31d7a262": "pendingRewards(address)",
+    "0x5873eb9b": "rewardDebt(address)",
+    "0x60217267": "stakedBalance(address)",
+    "0x7ecebe00": "nonces(address)",
+    "0x78e890ba": "domainSeparatorV4()",
+    "0xf40f0f52": "pendingReward(address)"
+  },
+  "direct_slot_getters": [
+    {
+      "selector": "0x13dd495b",
+      "signature": "authorizedExecutor()",
+      "slot": 16,
+      "type": "address",
+      "storage_word": "0x000000000000000000000001233ff29b239abc1d7748605da9b205c3e008626e",
+      "output": "0x000000000000000000000000233ff29b239abc1d7748605da9b205c3e008626e"
+    },
+    {
+      "selector": "0x2b6fdc7e",
+      "signature": "unallocatedRewards()",
+      "slot": 8,
+      "type": "uint256",
+      "storage_word": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "output": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "selector": "0x3644e515",
+      "signature": "DOMAIN_SEPARATOR()",
+      "slot": 1,
+      "type": "bytes32",
+      "storage_word": "0x71706d56c8b436981e93987cd97df512528491b243c6d8d1614cad52659e7eb0",
+      "output": "0x71706d56c8b436981e93987cd97df512528491b243c6d8d1614cad52659e7eb0"
+    },
+    {
+      "selector": "0x51ed6a30",
+      "signature": "stakeToken()",
+      "slot": 3,
+      "type": "address",
+      "storage_word": "0x000000000000000000000000e40f17915daa230324030003a197cdaef2261c0e",
+      "output": "0x000000000000000000000000e40f17915daa230324030003a197cdaef2261c0e"
+    },
+    {
+      "selector": "0x817b1cd2",
+      "signature": "totalStaked()",
+      "slot": 5,
+      "type": "uint256",
+      "storage_word": "0x00000000000000000000000000000000000000001ba4de81b4dc2bd7e4f36736",
+      "output": "0x00000000000000000000000000000000000000001ba4de81b4dc2bd7e4f36736"
+    },
+    {
+      "selector": "0x8da5cb5b",
+      "signature": "owner()",
+      "slot": 15,
+      "type": "address",
+      "storage_word": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "output": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f"
+    },
+    {
+      "selector": "0x939d6237",
+      "signature": "accRewardPerShare()",
+      "slot": 6,
+      "type": "uint256",
+      "storage_word": "0x0000000000000000000000000000000000000000000b26c8fa567c14fc8b31e4",
+      "output": "0x0000000000000000000000000000000000000000000b26c8fa567c14fc8b31e4"
+    },
+    {
+      "selector": "0xcab64bcd",
+      "signature": "rewardReserve()",
+      "slot": 7,
+      "type": "uint256",
+      "storage_word": "0x0000000000000000000000000000000000000000000466a49f3cb6cfc62fa66e",
+      "output": "0x0000000000000000000000000000000000000000000466a49f3cb6cfc62fa66e"
+    },
+    {
+      "selector": "0xd2f7265a",
+      "signature": "exchange()",
+      "slot": 2,
+      "type": "address",
+      "storage_word": "0x0000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a2",
+      "output": "0x0000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a2"
+    },
+    {
+      "selector": "0xf7c618c1",
+      "signature": "rewardToken()",
+      "slot": 4,
+      "type": "address",
+      "storage_word": "0x0000000000000000000000006b9e773128f453f5c2c60935ee2de2cbc5390a24",
+      "output": "0x0000000000000000000000006b9e773128f453f5c2c60935ee2de2cbc5390a24"
+    }
+  ],
+  "mapping_getter_samples": [
+    {
+      "selector": "0x31d7a262",
+      "user": "0x50652414f490853dc3ba30a25c49eb6ed7bdebc2",
+      "base_slot": 11,
+      "storage_slot": "0x661130530d208ca0444c759f15f3d53fc9f81f2ebf396af608ff9504fc9afe31",
+      "storage_value": "0x00000000000000000000000000000000000000000000000017c30bd8da7c49f1",
+      "getter_output": "0x00000000000000000000000000000000000000000000000017c30bd8da7c49f1"
+    },
+    {
+      "selector": "0x31d7a262",
+      "user": "0xf417448e1e73d4b31610a6e23ade1437c1c99970",
+      "base_slot": 11,
+      "storage_slot": "0xea3448d6ea346f8e6361cd18f8949f01d497b5d9a1b537fcd993348e9a58649a",
+      "storage_value": "0x0000000000000000000000000000000000000000000000067a0110c57caafbb2",
+      "getter_output": "0x0000000000000000000000000000000000000000000000067a0110c57caafbb2"
+    },
+    {
+      "selector": "0x31d7a262",
+      "user": "0x98438465100a198798b1add373784323c67a8a26",
+      "base_slot": 11,
+      "storage_slot": "0x28c7131ebabac925f19161c7fa806c0bab7dba7b21aaae80bb89cbe3460f1c30",
+      "storage_value": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "getter_output": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "selector": "0x5873eb9b",
+      "user": "0x50652414f490853dc3ba30a25c49eb6ed7bdebc2",
+      "base_slot": 10,
+      "storage_slot": "0xfda117caee92a4b0ca06b84cfd866612d5615bb02cdf649761f4f4f7df9c98cd",
+      "storage_value": "0x000000000000000000000000000000000000000000000005e1b26a9745931082",
+      "getter_output": "0x000000000000000000000000000000000000000000000005e1b26a9745931082"
+    },
+    {
+      "selector": "0x5873eb9b",
+      "user": "0xf417448e1e73d4b31610a6e23ade1437c1c99970",
+      "base_slot": 10,
+      "storage_slot": "0x958fbb0ff00f85da55d45380524d6b96f9e2b4386dbc758094abdd5de0d9c08e",
+      "storage_value": "0x0000000000000000000000000000000000000000000000c7e5a41353d41abb3f",
+      "getter_output": "0x0000000000000000000000000000000000000000000000c7e5a41353d41abb3f"
+    },
+    {
+      "selector": "0x5873eb9b",
+      "user": "0x98438465100a198798b1add373784323c67a8a26",
+      "base_slot": 10,
+      "storage_slot": "0x0ab28cbe35da1c902f090e60c8bd53dac58fa4fc3fcb70f2fc2867089873a51a",
+      "storage_value": "0x000000000000000000000000000000000000000000000003063fbd659fc9c2ea",
+      "getter_output": "0x000000000000000000000000000000000000000000000003063fbd659fc9c2ea"
+    },
+    {
+      "selector": "0x60217267",
+      "user": "0x50652414f490853dc3ba30a25c49eb6ed7bdebc2",
+      "base_slot": 9,
+      "storage_slot": "0xd97fe43063f8a7f4755d0c880db8f64f609816ac03a87ae4ce3006fb090359ca",
+      "storage_value": "0x0000000000000000000000000000000000000000000001b4510f66d8aad579a6",
+      "getter_output": "0x0000000000000000000000000000000000000000000001b4510f66d8aad579a6"
+    },
+    {
+      "selector": "0x60217267",
+      "user": "0xf417448e1e73d4b31610a6e23ade1437c1c99970",
+      "base_slot": 9,
+      "storage_slot": "0xc1e4fa0f61a4fbea76e8d5816e0b3529363298a660b6a847f7d4098d66374ce8",
+      "storage_value": "0x0000000000000000000000000000000000000000000039ecca0725423afbc5ad",
+      "getter_output": "0x0000000000000000000000000000000000000000000039ecca0725423afbc5ad"
+    },
+    {
+      "selector": "0x60217267",
+      "user": "0x98438465100a198798b1add373784323c67a8a26",
+      "base_slot": 9,
+      "storage_slot": "0xf0b878f890abdb96e63b131fe26732bf0a3e0fad3be878e299feb97771de72e9",
+      "storage_value": "0x0000000000000000000000000000000000000000000000e05c156927c53bfdb1",
+      "getter_output": "0x0000000000000000000000000000000000000000000000e05c156927c53bfdb1"
+    },
+    {
+      "selector": "0x7ecebe00",
+      "user": "0x89ab620bee7e1ec675eec5291cba3686d9e059bf",
+      "base_slot": 12,
+      "storage_slot": "0xbcb13f8676ff8da50b16e431161f7db0adf1929f7d7ee63e6316b8054cfa18b3",
+      "storage_value": "0x000000000000000000000000000000000000000000000000000001a150d25496",
+      "getter_output": "0x000000000000000000000000000000000000000000000000000001a150d25496"
+    },
+    {
+      "selector": "0x7ecebe00",
+      "user": "0x50652414f490853dc3ba30a25c49eb6ed7bdebc2",
+      "base_slot": 12,
+      "storage_slot": "0x8fbd78f5e5dd6e65cb9f6f8113f358c356e60e04f429dd9ebabd2e0424f852e5",
+      "storage_value": "0x00000000000000000000000000000000000000000000000000000000a89ea718",
+      "getter_output": "0x00000000000000000000000000000000000000000000000000000000a89ea718"
+    },
+    {
+      "selector": "0x7ecebe00",
+      "user": "0x59bbb293cd24c7a194035028aef7fe31a11ec0d7",
+      "base_slot": 12,
+      "storage_slot": "0xd6a55b47346b4513b3c135b0113018df9d035208b10874043898ceeb8e795bb0",
+      "storage_value": "0x00000000000000000000000000000000000000000000000000000000e1f1621a",
+      "getter_output": "0x00000000000000000000000000000000000000000000000000000000e1f1621a"
+    }
+  ],
+  "typehash_getters": [
+    {
+      "selector": "0x0700cc42",
+      "signature": "UNSTAKE_TYPEHASH()",
+      "type_string": "Unstake(address user,uint256 amount,uint256 nonce,uint64 deadline)",
+      "output": "0x1ecc9b0f79f4bb74abad4adb49babe57570219b3bc83a569a9b25299f833a9ce"
+    },
+    {
+      "selector": "0x5638b3e5",
+      "signature": "DISTRIBUTE_TYPEHASH()",
+      "type_string": "Distribute(address user,uint256 nonce,uint64 deadline)",
+      "output": "0x23f3bc470a64f8283203a55adc575bcd5f81b7c537b6831c6886e4a0e2101e5a"
+    },
+    {
+      "selector": "0x6b0509b1",
+      "signature": "CLAIM_TYPEHASH()",
+      "type_string": "Claim(address user,uint256 nonce,uint64 deadline)",
+      "output": "0x98df9450683706f5e3c8e5a81515893081ae7460248fbba60c7781957adc9f8f"
+    },
+    {
+      "selector": "0x89ee09f0",
+      "signature": "STAKE_TYPEHASH()",
+      "type_string": "Stake(address user,uint256 amount,uint256 nonce,uint64 deadline)",
+      "output": "0x0e9469f2731f138fe05733a3ab1961961d9def010d73419c3f5b55ae6d64e8b0"
+    }
+  ],
+  "domain_separator_alias": {
+    "selector": "0x78e890ba",
+    "output": "0x71706d56c8b436981e93987cd97df512528491b243c6d8d1614cad52659e7eb0"
+  },
+  "pending_reward_sample_count": 3,
+  "unnamed_packed_getter": {
+    "selector": "0x6090cf16",
+    "storage_slot": 16,
+    "byte_offset": 20,
+    "meaning": "whether byte 20 is nonzero",
+    "probe_outputs": {
+      "off": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "on": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "high": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    }
+  },
+  "limitations": [
+    "Names are exact selector hashes with matching storage or typehash behavior; original Solidity source is unavailable.",
+    "The domainSeparatorV4 alias was checked at the pinned chain state only.",
+    "Selector 0x6090cf16 has a verified packed-flag meaning but no source name.",
+    "The derived pendingReward formula is checked in staking_behavior.json for three pinned users and 26 historical claims; extreme arithmetic boundaries remain open."
+  ]
+}

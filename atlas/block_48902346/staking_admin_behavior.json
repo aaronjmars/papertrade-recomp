@@ -1,0 +1,72 @@
+{
+  "pin_block": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "staking_proxy": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+  "implementation": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+  "selector_reconstructions": {
+    "0xd188c049": "setAuthorizedExecutor(address)",
+    "0xf2fde38b": "transferOwnership(address)"
+  },
+  "historical_transactions": [
+    {
+      "tx": "0x271fae19ee96703d8ffaab2bb72ce03f167fb7d8fb866bab34c8ed35f3b19d8d",
+      "block": 47855280,
+      "selector": "0xd188c049",
+      "signature": "setAuthorizedExecutor(address)",
+      "caller": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+      "new_address": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "storage_slot": 16,
+      "pre_word": "0x10000000000000000000000000000000000000000",
+      "post_word": "0x1233ff29b239abc1d7748605da9b205c3e008626e",
+      "event_topic": "0x3cfda8ee6e20b237d2949c3d16b6f12822b6f1bc0580f188f932c0771cac729d"
+    },
+    {
+      "tx": "0x4391f966aa09e883317bc3970e4160e9e6971d7c6f6760c40c3635a1d1298645",
+      "block": 47855569,
+      "selector": "0xf2fde38b",
+      "signature": "transferOwnership(address)",
+      "caller": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+      "new_address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "storage_slot": 15,
+      "pre_word": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+      "post_word": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "event_topic": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b"
+    }
+  ],
+  "read_only_probes": [
+    {
+      "name": "executor_outsider",
+      "selector": "0xd188c049",
+      "error": "execution reverted",
+      "revert_data": "0x30cd7471",
+      "log_count": 0
+    },
+    {
+      "name": "executor_zero",
+      "selector": "0xd188c049",
+      "error": null,
+      "revert_data": "0x",
+      "log_count": 1
+    },
+    {
+      "name": "owner_outsider",
+      "selector": "0xf2fde38b",
+      "error": "execution reverted",
+      "revert_data": "0x30cd7471",
+      "log_count": 0
+    },
+    {
+      "name": "owner_zero",
+      "selector": "0xf2fde38b",
+      "error": null,
+      "revert_data": "0x",
+      "log_count": 1
+    }
+  ],
+  "checked_behavior": "owner-only address setters, slot-15 owner and slot-16 executor low-160-bit writes, indexed update events, zero-address acceptance at pin",
+  "limitations": [
+    "The zero-address successes are read-only simulations, not historical configuration changes.",
+    "These samples do not prove behavior after setting owner to zero or all possible input states.",
+    "Original Solidity source is unavailable; names are exact selector hashes backed by observed behavior."
+  ]
+}

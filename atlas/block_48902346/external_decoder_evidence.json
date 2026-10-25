@@ -1,0 +1,252 @@
+{
+  "pin": 48902346,
+  "source": "https://github.com/nirholas/papertrade-explorer/blob/5912298a6f66247607891c6dab0a42f6ebd2f976/src/calldata.ts",
+  "source_status": "unofficial community decoder; names and layouts are independent hypotheses",
+  "limits": [
+    "Selector presence proves bytecode dispatch, not a Solidity function name.",
+    "Most local traces duplicate external calls at the proxy and implementation delegatecall layers.",
+    "Calldata length and dynamic offset checks support a layout but do not prove argument meaning or authorization branches.",
+    "The decoder distinguishes some intent kinds by EIP-712 signature recovery; this script does not independently verify those signatures.",
+    "The BatchExecutor tuple flags and event tail fields are not semantically decoded here."
+  ],
+  "selectors": {
+    "0x251fb27d": {
+      "role": "batch_executor_implementation",
+      "independent_decoder_meaning": "batch of target/data/flagA/flagB/intentId tuples",
+      "pinned_dispatcher_present": true,
+      "local_decompiler_arguments": "uint256[]",
+      "reconstructed_signature": "execute((address,bytes,bool,bytes32,bytes32)[])",
+      "local_decompiler_mutability": "nonpayable",
+      "historical_transactions": [
+        "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+        "0x18da697c130733e097aac9bba5457949c1aa2f275fe1b292538d873c4cab1cd7",
+        "0x1fc54a082055d35c0b79b6fc5f6c2a7004840531f5bcb9b6ec4450a93be2384f",
+        "0x20ee69d9f4191bff17d45a850a584d5803ca477986fd1684af985765d64d794b",
+        "0x30639f82f9eb58fc815fb48b302ea732eed1bff5e755a92835b0b1f97c818acf",
+        "0x3bc7029ee0d72c5dbacfb74dddc183ddb6206adca6ed702014eb90c28cf2d39e",
+        "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+        "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+        "0xc7ba4aaf1bdda8e24c2c8a228e315f39a879e7c9c87786eb260fa07c09b99940",
+        "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d",
+        "0xe3b515b06932d1f98867772b645367f3924ec239ae2e047fa0a15e3f11152e45"
+      ],
+      "historical_trace_call_count_including_proxy_delegatecall": 22,
+      "historical_calldata_lengths_bytes": {
+        "612": 8,
+        "1092": 2,
+        "1604": 2,
+        "1892": 2,
+        "2116": 2,
+        "2180": 2,
+        "2692": 2,
+        "3716": 2
+      },
+      "shape_checks": [],
+      "shape_check_status": "no_historical_call_or_no_shape_check"
+    },
+    "0x2792e706": {
+      "role": "exchange_implementation",
+      "independent_decoder_meaning": "signed close intent",
+      "pinned_dispatcher_present": true,
+      "local_decompiler_arguments": "address,uint256[],uint256,uint64,uint8,uint256,uint256",
+      "reconstructed_signature": "closeBySig(address,uint256[],uint256,uint64,uint8,bytes32,bytes32)",
+      "local_decompiler_mutability": "nonpayable",
+      "historical_transactions": [
+        "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+        "0x1fc54a082055d35c0b79b6fc5f6c2a7004840531f5bcb9b6ec4450a93be2384f",
+        "0x20ee69d9f4191bff17d45a850a584d5803ca477986fd1684af985765d64d794b",
+        "0x30639f82f9eb58fc815fb48b302ea732eed1bff5e755a92835b0b1f97c818acf",
+        "0x3bc7029ee0d72c5dbacfb74dddc183ddb6206adca6ed702014eb90c28cf2d39e",
+        "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+        "0xc7ba4aaf1bdda8e24c2c8a228e315f39a879e7c9c87786eb260fa07c09b99940",
+        "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d",
+        "0xe3b515b06932d1f98867772b645367f3924ec239ae2e047fa0a15e3f11152e45"
+      ],
+      "historical_trace_call_count_including_proxy_delegatecall": 30,
+      "historical_calldata_lengths_bytes": {
+        "292": 28,
+        "356": 2
+      },
+      "shape_checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "shape_check_status": "all_sampled_calls_match"
+    },
+    "0xec6783f0": {
+      "role": "exchange_implementation",
+      "independent_decoder_meaning": "signed open-position intent",
+      "pinned_dispatcher_present": true,
+      "local_decompiler_arguments": "address,uint32,bool,uint128,uint32,bool,uint256,uint64,uint8,uint256,uint256",
+      "reconstructed_signature": "openPositionBySig(address,uint32,bool,uint128,uint32,bool,uint256,uint64,uint8,bytes32,bytes32)",
+      "local_decompiler_mutability": "nonpayable",
+      "historical_transactions": [
+        "0x18da697c130733e097aac9bba5457949c1aa2f275fe1b292538d873c4cab1cd7",
+        "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539"
+      ],
+      "historical_trace_call_count_including_proxy_delegatecall": 18,
+      "historical_calldata_lengths_bytes": {
+        "356": 18
+      },
+      "shape_checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "shape_check_status": "all_sampled_calls_match"
+    },
+    "0x8d09f23f": {
+      "role": "exchange_implementation",
+      "independent_decoder_meaning": "signed withdraw-to-Core intent",
+      "pinned_dispatcher_present": true,
+      "local_decompiler_arguments": "address,uint256,uint256,uint64,uint8",
+      "reconstructed_signature": "withdrawToCoreBySig(address,uint256,uint256,uint64,uint8,bytes32,bytes32)",
+      "local_decompiler_mutability": "nonpayable",
+      "historical_transactions": [
+        "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+        "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+        "0xe3b515b06932d1f98867772b645367f3924ec239ae2e047fa0a15e3f11152e45"
+      ],
+      "historical_trace_call_count_including_proxy_delegatecall": 6,
+      "historical_calldata_lengths_bytes": {
+        "228": 6
+      },
+      "shape_checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "shape_check_status": "all_sampled_calls_match"
+    },
+    "0x83115825": {
+      "role": "staking_implementation",
+      "independent_decoder_meaning": "signed stake or unstake intent",
+      "pinned_dispatcher_present": true,
+      "local_decompiler_arguments": "address,uint256,uint256,uint64,uint8,uint256,uint256",
+      "reconstructed_signature": "stakeBySig(address,uint256,uint256,uint64,uint8,bytes32,bytes32)",
+      "local_decompiler_mutability": "nonpayable",
+      "historical_transactions": [
+        "0x30639f82f9eb58fc815fb48b302ea732eed1bff5e755a92835b0b1f97c818acf",
+        "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5"
+      ],
+      "historical_trace_call_count_including_proxy_delegatecall": 4,
+      "historical_calldata_lengths_bytes": {
+        "228": 4
+      },
+      "shape_checks": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "shape_check_status": "all_sampled_calls_match"
+    },
+    "0x9c96d4a1": {
+      "role": "staking_implementation",
+      "independent_decoder_meaning": "signed claim or distribute intent",
+      "pinned_dispatcher_present": true,
+      "local_decompiler_arguments": "address,uint256,uint64,uint8,uint256,uint256",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "local_decompiler_mutability": "nonpayable",
+      "historical_transactions": [
+        "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+        "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d"
+      ],
+      "historical_trace_call_count_including_proxy_delegatecall": 4,
+      "historical_calldata_lengths_bytes": {
+        "196": 4
+      },
+      "shape_checks": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "shape_check_status": "all_sampled_calls_match"
+    },
+    "0x5f76a1d6": {
+      "role": "session_key_manager_implementation",
+      "independent_decoder_meaning": "signed register-session-key intent",
+      "pinned_dispatcher_present": true,
+      "local_decompiler_arguments": "address,address,uint64,address,uint256,uint64,uint8",
+      "reconstructed_signature": "registerSessionKeyBySig(address,address,uint64,address,uint256,uint64,uint8,bytes32,bytes32)",
+      "local_decompiler_mutability": "nonpayable",
+      "historical_transactions": [],
+      "historical_trace_call_count_including_proxy_delegatecall": 0,
+      "historical_calldata_lengths_bytes": {},
+      "shape_checks": [],
+      "shape_check_status": "no_historical_call_or_no_shape_check"
+    }
+  },
+  "batch_intent_result_event": {
+    "topic0": "0x8a23ef1120f3e42e722a0c0a599a66d55ab2650ecc39716f57e625684e349cad",
+    "decoder_claim": "topics [signature,batchId,index,intentId]; first data word is success flag",
+    "historical_transactions": [
+      "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+      "0x18da697c130733e097aac9bba5457949c1aa2f275fe1b292538d873c4cab1cd7",
+      "0x1fc54a082055d35c0b79b6fc5f6c2a7004840531f5bcb9b6ec4450a93be2384f",
+      "0x20ee69d9f4191bff17d45a850a584d5803ca477986fd1684af985765d64d794b",
+      "0x30639f82f9eb58fc815fb48b302ea732eed1bff5e755a92835b0b1f97c818acf",
+      "0x3bc7029ee0d72c5dbacfb74dddc183ddb6206adca6ed702014eb90c28cf2d39e",
+      "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+      "0xc7ba4aaf1bdda8e24c2c8a228e315f39a879e7c9c87786eb260fa07c09b99940",
+      "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d",
+      "0xe3b515b06932d1f98867772b645367f3924ec239ae2e047fa0a15e3f11152e45"
+    ],
+    "observed_topic_count_and_data_bytes": {
+      "4 topics, 96 data bytes": 20,
+      "4 topics, 128 data bytes": 11
+    },
+    "observed_first_data_words": {
+      "0": 3,
+      "1": 28
+    }
+  }
+}

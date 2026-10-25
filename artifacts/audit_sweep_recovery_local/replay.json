@@ -1,0 +1,31 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "runtime_hashes": {
+    "Proxy": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "Implementation": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1"
+  },
+  "stalled_user": "0x56cbe78a5cdfa10147927aec550aa7f2fb3d3d01",
+  "stalled_pending_word": "0x2df9fbf0000000000000000000000012a53a310",
+  "second_stalled_user": "0x9c8599c32224d7d9956a7def18f7314162f77baf",
+  "second_stalled_pending_word": "0x2ddd166000000000000000000000000481f2280",
+  "clear_selector": "0x2362f4de",
+  "reconcile_selector": "0x6a3214c9",
+  "reconcile_input_micro_usdc": 50050916,
+  "reconcile_credit_internal": 50050916000000000000,
+  "test_names": [
+    "testAbsentClearSelector",
+    "testOutsiderCannotReconcile",
+    "testOwnerReconcileAfterSyntheticClear",
+    "testOwnerReconcilePendingRejected",
+    "testSecondPendingReconcileRejected"
+  ],
+  "test_source_sha256": "fc162abee73b74de2e2e0e95c9864c3cfb45e928f311d478bc0c7b4e65d9624b",
+  "forge_result": "5 passed, 0 failed",
+  "limits": [
+    "Local state uses the pinned pending word but constructed owner, accounting, and user-balance slots.",
+    "The successful owner reconciliation uses a simulated direct storage clear; no deployed clear transaction was executed.",
+    "No HyperCore transfer executes in this port-free replay; Core delivery and later governance actions are not tested.",
+    "Absence is established for clearPendingSweep(address), not for every possible alternative recovery selector."
+  ]
+}

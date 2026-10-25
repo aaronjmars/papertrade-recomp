@@ -1,0 +1,40 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "selector": "0xfb9f1009",
+  "public_signature_candidate": "unpauseMarket(uint32)",
+  "source_name_status": "unverified; selector hash match only",
+  "raw_evidence": "../../artifacts/exchange_disabled_selector/pinned_probes.json",
+  "local_replay_evidence": "../../artifacts/fixed_revert_local/replay.json",
+  "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+  "function_body_pc": [
+    1273,
+    1318
+  ],
+  "abi_helper_pc": [
+    16073,
+    16092
+  ],
+  "canonical_probe_count": 4,
+  "behavior": "For nonpayable, canonically encoded uint32 calls, ABI validation returns directly to a four-byte revert with 0xd9d193d3. The function body has no caller, storage, or external-call dependency.",
+  "malformed_behavior": "Short calldata and a noncanonical uint32 revert without error data.",
+  "error_name_status": "unresolved",
+  "simulated_error_catalog": [
+    {
+      "selector": "0xd9d193d3",
+      "probe_paths": [
+        "owner_market_0",
+        "owner_market_1",
+        "owner_market_max",
+        "outsider_market_0"
+      ],
+      "public_signature_candidates": []
+    }
+  ],
+  "limits": [
+    "The public signature candidate has the correct selector hash, but the original source name is unverified.",
+    "The bytecode conclusion applies to the live implementation at the pinned block; it says nothing about an upgrade or a different implementation."
+  ]
+}

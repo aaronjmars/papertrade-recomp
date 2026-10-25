@@ -1,0 +1,54 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "local_replay": "../../artifacts/remaining_initializers_local/replay.json",
+  "tokenomics_proxy": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+  "implementation": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+  "runtime_sha256": "ed9d18151a9365c347ac7a9da7e83b53ecedac235d9e67c4b2699503a6bd4a97",
+  "selector_reconstructions": {
+    "0x485cc955": "initialize(address,address)"
+  },
+  "selector_behaviors": {
+    "0x485cc955": "Fresh state accepts either arbitrary user or proxy admin as caller, sets owner and second address, writes four default mint parameter words, emits OwnerUpdated and MintParamsUpdated; repeat returns AlreadyInitialized()"
+  },
+  "fresh_state": {
+    "owner_slot": 0,
+    "owner_bits": [
+      16,
+      175
+    ],
+    "initialized_flag_bit": 0,
+    "second_address_slot": 1,
+    "default_parameter_slots": {
+      "5": "0x1a784379d99db42000000",
+      "6": "0x422ca8b0a00a425000000",
+      "7": "0x56bc75e2d63100000",
+      "8": "0x6342fd08f00f6378000000"
+    }
+  },
+  "event_catalog": [
+    {
+      "topic0": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+      "reconstructed_signature": "OwnerUpdated(address)",
+      "status": "simulated_log_only"
+    },
+    {
+      "topic0": "0xdbf6f1878073adede0b153c63f457c1c601a056124755086092f973f19550176",
+      "reconstructed_signature": "MintParamsUpdated(uint256,uint256,uint256,uint256)",
+      "status": "simulated_log_only"
+    }
+  ],
+  "simulated_error_catalog": [
+    {
+      "selector": "0x0dc149f0",
+      "probe_paths": [
+        "tokenomics-admin"
+      ],
+      "public_signature_candidates": [
+        "AlreadyInitialized()"
+      ]
+    }
+  ],
+  "historical_calls_for_selector": 0,
+  "source_name_status": "signature hash and behavior verified; original source unavailable"
+}

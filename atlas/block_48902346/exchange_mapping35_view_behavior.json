@@ -1,0 +1,29 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "selector": "0xc8372577",
+  "source_name_status": "unresolved",
+  "raw_evidence": "storage_trace_catalog.json",
+  "mapping_base_slot": 35,
+  "sample_key": 1,
+  "sample_storage_slot": "0xb361aea33a0348d043deace4a562cb920ac10508397ad80f12dfe9a2a063e047",
+  "sample_return_prefix": "0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+  "dispatcher_entry_pc": 5933,
+  "return_layout": [
+    "bool(word & 0xff)",
+    "uint64((word >> 8) & (2^64 - 1))",
+    "uint64((word >> 72) & (2^64 - 1))",
+    "uint64((word >> 136) & (2^64 - 1))"
+  ],
+  "return_bytes": 128,
+  "saved_state_write_count_for_keys_0_and_1": 0,
+  "saved_key_0_zero_prestates": 9,
+  "limits": [
+    "The pinned probe records only the first 63 return bytes; the full four-word return and layout come from pinned runtime instructions.",
+    "The sampled key 1 and saved key 0 prestates are zero. Field names and the function that writes mapping slot 35 remain unresolved.",
+    "The absence of writes in the saved trace sample does not prove the mapping is never written."
+  ]
+}

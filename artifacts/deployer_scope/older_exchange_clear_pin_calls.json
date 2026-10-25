@@ -1,0 +1,59 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "target": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+  "selector": "0x2362f4de",
+  "user": "0xfb94d3404c1d3d9d6f08f79e58041d5ea95accfa",
+  "cases": [
+    {
+      "sender": "0x69b4b92f02ff415e0c966686e00d2783b395d690",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_call",
+        "params": [
+          {
+            "from": "0x69b4b92f02ff415e0c966686e00d2783b395d690",
+            "to": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+            "data": "0x2362f4de000000000000000000000000fb94d3404c1d3d9d6f08f79e58041d5ea95accfa"
+          },
+          "0x2ea30ca"
+        ]
+      },
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "error": {
+          "code": -32603,
+          "message": "Failed to call: InvalidTransaction(Revert(RevertError { output: Some(0x0984a617) }))",
+          "data": null
+        }
+      }
+    },
+    {
+      "sender": "0x000000000000000000000000000000000000beef",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "eth_call",
+        "params": [
+          {
+            "from": "0x000000000000000000000000000000000000beef",
+            "to": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+            "data": "0x2362f4de000000000000000000000000fb94d3404c1d3d9d6f08f79e58041d5ea95accfa"
+          },
+          "0x2ea30ca"
+        ]
+      },
+      "response": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "error": {
+          "code": -32603,
+          "message": "Failed to call: InvalidTransaction(Revert(RevertError { output: Some(0x30cd7471) }))",
+          "data": null
+        }
+      }
+    }
+  ]
+}

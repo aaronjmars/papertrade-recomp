@@ -1,0 +1,184 @@
+{
+  "historical_open": {
+    "tx": "0x07449714737e6a7a1a980e1dbd2fc2683e542ff8902e293e9b4d66c7c336cc10",
+    "block": 47721329,
+    "position_id": 398939,
+    "user": "0x057d2403654b2ba82d4d95d0e0ffa2550e8140f4",
+    "margin": 25000000000000000000,
+    "leverage": 75,
+    "use_debt": false,
+    "bbo": [
+      271710,
+      271720
+    ],
+    "receipt_logs": 3,
+    "later_historical_close": {
+      "tx": "0x3959528af2533bfbd9334ccebfc633a5ac7dd6f566f15f5915b0559c9b992c04",
+      "block": 47721622,
+      "position_ids": [
+        398939,
+        398938
+      ]
+    }
+  },
+  "bounded_batch_sample": {
+    "pages": [
+      {
+        "page": 1,
+        "transactions": 100,
+        "transactions_with_opens": 69,
+        "open_payloads": 170,
+        "use_debt_true": 0,
+        "first_block": 47723656,
+        "last_block": 47502945
+      },
+      {
+        "page": 2,
+        "transactions": 100,
+        "transactions_with_opens": 63,
+        "open_payloads": 147,
+        "use_debt_true": 0,
+        "first_block": 47502941,
+        "last_block": 47376934
+      },
+      {
+        "page": 3,
+        "transactions": 100,
+        "transactions_with_opens": 76,
+        "open_payloads": 174,
+        "use_debt_true": 0,
+        "first_block": 47376933,
+        "last_block": 47306946
+      }
+    ],
+    "transactions": 300,
+    "transactions_with_opens": 208,
+    "open_payloads": 491,
+    "use_debt_true": 0
+  },
+  "fork_replay": {
+    "fork_block": 47721328,
+    "test_sha256": "b3578887ea86add0d0d20ff30291e848f1a73dc67650f46e508c586d6a5f9fa2",
+    "trace_sha256": "3ecc0f8f02edbe4024c8e659681a60ad78215b0c86b5895f3bad00c5ba406aa1",
+    "tests": [
+      {
+        "name": "testBelowCreditReverts",
+        "gas": 134977
+      },
+      {
+        "name": "testDebtCloseHigherPriceQueuesLoss",
+        "gas": 716324
+      },
+      {
+        "name": "testDebtCloseLowerPriceQueuesProfit",
+        "gas": 676489
+      },
+      {
+        "name": "testDebtOpenCloseHarvestWithdrawToCore",
+        "gas": 1079612
+      },
+      {
+        "name": "testExactCreditSetsFlagAndConsumesQueue",
+        "gas": 273742
+      },
+      {
+        "name": "testNoQueueCreditReverts",
+        "gas": 133711
+      },
+      {
+        "name": "testNonDebtOpenDebitsBalance",
+        "gas": 249367
+      },
+      {
+        "name": "testOpenThenCloseDebtQueuesPayout",
+        "gas": 628819
+      },
+      {
+        "name": "testPartialQueueCreditLeavesRemainder",
+        "gas": 277794
+      },
+      {
+        "name": "testSecondOpenCannotReuseQueueCredit",
+        "gas": 383396
+      },
+      {
+        "name": "testSignatureMutationRejected",
+        "gas": 97884
+      }
+    ],
+    "suite_passed": true,
+    "method": "Forge archive fork; real EIP-712 open and close signatures, constructed authorized session key and queue state; exact Exchange, Session and old library runtime codehash assertions; constructed Core response and CoreWriter boundary mocks",
+    "trace_artifact": "older_exchange_debt_open_forge_trace.txt.gz"
+  },
+  "price_cases": [
+    {
+      "test": "testDebtCloseLowerPriceQueuesProfit",
+      "entry_price": 271715,
+      "close_price": 271615,
+      "math_input": [
+        "271715",
+        "271615",
+        "25000000000000000000",
+        "75",
+        "0",
+        "100000000000000000",
+        "15000000000000000000000",
+        "483979000000000000000",
+        "100000000000000000000000"
+      ],
+      "math_output": [
+        "655558213569364959",
+        "331156061910525405"
+      ],
+      "adjusted_pnl": "331156061910525405",
+      "queued_amount": "25331156061910525405"
+    },
+    {
+      "test": "testDebtCloseHigherPriceQueuesLoss",
+      "entry_price": 271715,
+      "close_price": 271815,
+      "math_input": [
+        "271715",
+        "271815",
+        "25000000000000000000",
+        "75",
+        "0",
+        "100000000000000000",
+        "15000000000000000000000",
+        "483979000000000000000",
+        "100000000000000000000000"
+      ],
+      "math_output": [
+        "-690061277441436799",
+        "-690061277441436799"
+      ],
+      "adjusted_pnl": "-690061277441436799",
+      "queued_amount": "24309938722558563201"
+    }
+  ],
+  "withdrawal_boundary": {
+    "test": "testDebtOpenCloseHarvestWithdrawToCore",
+    "raw_withdrawal_amount": 25000000,
+    "user_balance_debit": "25000000000000000000",
+    "core_writer_selector": "0x17938e13",
+    "action_payload": "0x01000006000000000000000000000000057d2403654b2ba82d4d95d0e0ffa2550e8140f40000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009502f900",
+    "action_length": 100,
+    "core_amount": 2500000000,
+    "core_withdrawal_event_checked": true,
+    "hypercore_execution_or_delivery_proven": false
+  },
+  "conclusions": [
+    "The signed useDebt argument controls the first older Exchange position flag at bits 232 to 239.",
+    "A valid useDebt open requires queue credit at least equal to margin and consumes exactly that credit from global and user totals and the queue node; a partial node retains the remainder.",
+    "A second signed open cannot reuse queue credit consumed by the first.",
+    "A valid signed close of the constructed debt-funded position enqueues the flat-price 25e18 margin; harvest debits the queue and credits the ordinary user balance by 25e18.",
+    "A direct 25 USDC withdrawal then debits that harvested balance to zero and calls CoreWriter with a 100-byte action for the user and 2.5 billion Core units.",
+    "At two constructed close prices, the old PnL library output matches the independent integer model and the queue receives margin plus adjusted PnL."
+  ],
+  "limits": [
+    "The only archived open in this capture uses useDebt=false; the 491 sampled open payloads are a bounded three-page BatchExecutor sample, not a full historical census.",
+    "The useDebt=true opens use a constructed session-key registration and queue node, but real signatures and exact deployed runtime bytecode. No historical useDebt=true execution is proven.",
+    "The close, harvest and direct withdrawal use constructed authorization, queue, and Core precompile responses. CoreWriter is replaced with a recording mock; actual HyperCore execution and delivery are not proven.",
+    "Other price and rate boundaries, real debt repayment, and full older-set liabilities remain unresolved."
+  ]
+}

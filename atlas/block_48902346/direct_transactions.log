@@ -1,0 +1,11 @@
+deposit_proxy_factory_proxy 1999 2
+batch_executor_proxy 1999 3
+one_of_two_multisig 13 3
+exchange_proxy 1999 17
+tokenomics_proxy 2 2
+session_key_manager_proxy 532 3
+oracle_proxy 1 1
+staking_proxy 3 3
+timelock 0 0
+paper_token_proxy 106 5
+proxy_admin 1 1

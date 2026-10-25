@@ -1,0 +1,24 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "selector": "0xd7c7e5fb",
+  "event_topic": "0x62db1b2b923b6f20043c492d3586df1a823e447c63e44d15dbc90c1a3bc9fcc5",
+  "runtime_hashes": {
+    "Proxy": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "Implementation": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1"
+  },
+  "test_names": [
+    "testFirstMax",
+    "testInvalidInstrument",
+    "testKeeperRejected",
+    "testNonOwnerRejected",
+    "testOwnerSecondInstrument",
+    "testOwnerUpdatesPackedFields",
+    "testSecondMax",
+    "testThirdValueAbove120Bits",
+    "testZeroFirstValue",
+    "testZeroSecondValue"
+  ],
+  "forge_result": "10 passed, 0 failed",
+  "test_source_sha256": "b60b935d281c397a8c64ded89facfa8bc3640bf4de342b220aa738737367299e"
+}

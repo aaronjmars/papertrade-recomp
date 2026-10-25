@@ -1,0 +1,63 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "proxy": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+  "implementation": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+  "runtime_sha256": "3e006d0daee1fcbaa71c160a72291374783da5f720a33db0a51c8f84bde3aa04",
+  "selector_behaviors": {
+    "0x2e17de78": {
+      "entry_pc": 1768,
+      "body_pc": 3713,
+      "minimum_argument_words": 1,
+      "behavior": "canonical zero-value input reaches fixed revert"
+    },
+    "0x4e71d92d": {
+      "entry_pc": 1469,
+      "body_pc": 3748,
+      "minimum_argument_words": 0,
+      "behavior": "canonical zero-value input reaches fixed revert"
+    },
+    "0xa694fc3a": {
+      "entry_pc": 1768,
+      "body_pc": 3713,
+      "minimum_argument_words": 1,
+      "behavior": "canonical zero-value input reaches fixed revert"
+    },
+    "0xe4fc6b6d": {
+      "entry_pc": 1469,
+      "body_pc": 3748,
+      "minimum_argument_words": 0,
+      "behavior": "canonical zero-value input reaches fixed revert"
+    }
+  },
+  "error_selector": "0xa15ce1ba",
+  "error_name_status": "unresolved",
+  "error_construction": "PUSH4 0x50ae70dd shifted left 225 bits yields 0xa15ce1ba",
+  "effect_free_body_byte_ranges": [
+    [
+      3713,
+      3748
+    ],
+    [
+      3748,
+      3782
+    ]
+  ],
+  "pinned_probe_count": 7,
+  "pinned_probe_names": {
+    "stake_one": "0xa694fc3a",
+    "stake_zero": "0xa694fc3a",
+    "unstake_one": "0x2e17de78",
+    "unstake_zero": "0x2e17de78",
+    "claim_user": "0x4e71d92d",
+    "claim_outsider": "0x4e71d92d",
+    "distribute_user": "0xe4fc6b6d"
+  },
+  "historical_revert_tx": "0xaff42aa42819e057cb5b94db7093a7b220041353e8159bb60a85daa17abe7fb4",
+  "source_name_status": "unresolved; public stake, unstake, claim, and distribute signatures remain candidates",
+  "limits": [
+    "The proof covers the four dispatcher entries and their canonical ABI paths at the pinned runtime.",
+    "Malformed calldata or nonzero value can take generic empty-data revert branches.",
+    "The custom error and source function names remain unresolved."
+  ]
+}

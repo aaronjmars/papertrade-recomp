@@ -1,0 +1,14 @@
+{
+  "post": {
+    "0x7b70881367a7b102fe77a326d44faa4e89a11728": {
+      "balance": "0xd1d92103cad2",
+      "nonce": 20
+    }
+  },
+  "pre": {
+    "0x7b70881367a7b102fe77a326d44faa4e89a11728": {
+      "balance": "0xd43f4a2594d2",
+      "nonce": 19
+    }
+  }
+}

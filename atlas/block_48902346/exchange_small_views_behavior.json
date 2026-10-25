@@ -1,0 +1,33 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "raw_evidence": "../../artifacts/exchange_small_views/pinned_calls.json",
+  "selector_reconstructions": {
+    "0x18715c9a": "stakerLpExcessToDistribute()"
+  },
+  "source_name_evidence": "https://www.guardian.security/portfolio/papertrade/protocol-review-2026-10-09/",
+  "excess_formula": "max(Tokenomics.slot3 - Tokenomics.slot6, 0)",
+  "excess_nested_selector": "0xae745703",
+  "slot4_formula": "Exchange.slot4 & 0xff",
+  "constant_outputs": {
+    "0x6d60ae8e": "1000000000",
+    "0xaf210ecc": "25",
+    "0xfdfd905d": "1000000000000000000",
+    "0xff3bc415": "64"
+  },
+  "pinned_outputs": {
+    "0x18715c9a": "0x00000000000000000000000000000000000000000000003482b726ba07fd56e7",
+    "0x6d60ae8e": "0x000000000000000000000000000000000000000000000000000000003b9aca00",
+    "0xaf210ecc": "0x0000000000000000000000000000000000000000000000000000000000000019",
+    "0xfdfd905d": "0x0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+    "0xff3bc415": "0x0000000000000000000000000000000000000000000000000000000000000040",
+    "0xc43fbc8c": "0x0000000000000000000000000000000000000000000000000000000000000008"
+  },
+  "override_case_count": 5,
+  "limits": [
+    "The audited source commit is not matched to the pinned runtime; the excess wrapper name is supported by its hash, report context, and live call path.",
+    "The four literal getters and slot-4 getter have verified outputs but unresolved source names and economic labels."
+  ]
+}

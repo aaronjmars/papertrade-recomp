@@ -1,0 +1,407 @@
+{
+  "captured_at_utc": "2026-10-23T00:07:03.533141+00:00",
+  "cases": [
+    {
+      "balance_storage_slot": "0xfdf89e400f8eb5e394a11d61f34a8b65b1b90cda95ba41cbb3e96ed16a536214",
+      "balance_storage_word": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "balances_call": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "get_pending_sweep_call": "0x0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000012a53a31000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002df9fbf",
+      "last_sweep_block_call": "0x0000000000000000000000000000000000000000000000000000000002df9fbf",
+      "last_sweep_block_storage_slot": "0xdc7871888bc87ae15709fb5b02591f5c520b5793b59f0722a2bf3a27abc65ed2",
+      "last_sweep_block_storage_word": "0x0000000000000000000000000000000000000000000000000000000002df9fbf",
+      "pending_storage_slot": "0xc68cb9dde481ccd65563f5c76f6179bec89e3ac5ae3b1247a1878456630d8648",
+      "pending_storage_word": "0x00000000000000000000000002df9fbf0000000000000000000000012a53a310",
+      "pending_sweep_word_call": "0x00000000000000000000000002df9fbf0000000000000000000000012a53a310",
+      "proxy": "0x1e8a704179cc6221592c362daa52a341ae20084d",
+      "proxy_code_sha256": "405e5bfee919c2dcb84ca0854ec56966a8212b322aae41c610e05de235b6b68f",
+      "public_core_spot_state": {
+        "balances": [
+          {
+            "coin": "USDC",
+            "entryNtl": "0.0",
+            "hold": "0.0",
+            "token": 0,
+            "total": "50.050916"
+          }
+        ]
+      },
+      "spot_precompile": "0x000000000000000000000000000000000000000000000000000000012a53a31000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "user": "0x56cbe78a5cdfa10147927aec550aa7f2fb3d3d01"
+    },
+    {
+      "balance_storage_slot": "0x64fe7146cca6e16b47a1a45d89e545c29dca4300df08a958a5156c9852181306",
+      "balance_storage_word": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "balances_call": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "get_pending_sweep_call": "0x000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000481f228000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002ddd166",
+      "last_sweep_block_call": "0x0000000000000000000000000000000000000000000000000000000002ddd166",
+      "last_sweep_block_storage_slot": "0xbcc3d71627684cc3fc06fb1007c6fb897b14d5f6f88551b4e798321f699ad355",
+      "last_sweep_block_storage_word": "0x0000000000000000000000000000000000000000000000000000000002ddd166",
+      "pending_storage_slot": "0xe6bc0aa9d652dc83eeb1926fc4e16195cd146b5a111ab0a576260dc2705603c0",
+      "pending_storage_word": "0x00000000000000000000000002ddd166000000000000000000000000481f2280",
+      "pending_sweep_word_call": "0x00000000000000000000000002ddd166000000000000000000000000481f2280",
+      "proxy": "0xf6b60cdf359af5538495831a9f2bbcada23e10e6",
+      "proxy_code_sha256": "07f9f589f271f1fa58e8a5990bec257eac46c8e0e7b44577d73666ac0a26511d",
+      "public_core_spot_state": {
+        "balances": [
+          {
+            "coin": "USDC",
+            "entryNtl": "0.0",
+            "hold": "0.0",
+            "token": 0,
+            "total": "12.1"
+          },
+          {
+            "coin": "USDE",
+            "entryNtl": "1.49985",
+            "hold": "0.0",
+            "token": 235,
+            "total": "1.5"
+          }
+        ]
+      },
+      "spot_precompile": "0x00000000000000000000000000000000000000000000000000000000481f228000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "user": "0x9c8599c32224d7d9956a7def18f7314162f77baf"
+    }
+  ],
+  "chain_id": "0x3e7",
+  "core_info": "https://api.hyperliquid.xyz/info",
+  "core_ledger_since_pin": [
+    [],
+    []
+  ],
+  "dispatcher": {
+    "added_selectors": [
+      "69f9a5f0",
+      "9d346583",
+      "cbce7532",
+      "d970fad5",
+      "e6ac4a74",
+      "f009ac03"
+    ],
+    "method": "scan runtime for PUSH4 followed by EQ; reproduces all 98 pinned catalog selectors of the old implementation with no false positives",
+    "named_absence_preimages": {
+      "adminSweep(address)": "0xb7bf46af",
+      "approveSweep(address)": "0x954ab7d3",
+      "cancelPendingSweep(address)": "0xd6c3f90a",
+      "clearPendingSweep(address)": "0x2362f4de",
+      "clearPendingSweeps(address)": "0x9a7f1729",
+      "clearSweep(address)": "0x24681c5a",
+      "forceSweep(address)": "0xff55eda1",
+      "reconcileSweep(address)": "0xb78891b4",
+      "rescueSweep(address)": "0xff512968",
+      "retrySweep(address)": "0xd3df89c2",
+      "setPendingSweep(address,uint256)": "0x9a3fbad6",
+      "sweepAll(address)": "0xc18cfe86",
+      "sweepBatch(address[])": "0xa2a3fbc6"
+    },
+    "named_absences_confirmed": [
+      "adminSweep(address)",
+      "approveSweep(address)",
+      "cancelPendingSweep(address)",
+      "clearPendingSweep(address)",
+      "clearPendingSweeps(address)",
+      "clearSweep(address)",
+      "forceSweep(address)",
+      "reconcileSweep(address)",
+      "rescueSweep(address)",
+      "retrySweep(address)",
+      "setPendingSweep(address,uint256)",
+      "sweepAll(address)",
+      "sweepBatch(address[])"
+    ],
+    "new_implementation": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+    "new_runtime_sha256": "fc7374f3969381160732fe98c5e3145e00c3f167f168d61d65bb4972e9a6b268",
+    "new_selector_count": 103,
+    "old_implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+    "old_runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+    "old_selector_count": 98,
+    "public_signature_matches": {
+      "69f9a5f0": {
+        "lookup": "public signature database (4byte); unverified name match",
+        "matches": [
+          "claimBuilderFees()"
+        ]
+      },
+      "9d346583": {
+        "lookup": "public signature database (4byte); unverified name match",
+        "matches": [
+          "builderFees(address)"
+        ]
+      },
+      "cbce7532": {
+        "lookup": "no public match",
+        "matches": []
+      },
+      "d970fad5": {
+        "lookup": "no public match",
+        "matches": []
+      },
+      "e6ac4a74": {
+        "lookup": "no public match",
+        "matches": []
+      },
+      "f009ac03": {
+        "lookup": "no public match",
+        "matches": []
+      }
+    },
+    "removed_selectors": [
+      "415f1240"
+    ],
+    "sweep_family_present_in_new": [
+      "01681a62",
+      "27e235e3",
+      "31a4956c",
+      "61d027b3",
+      "6a3214c9",
+      "6d142da1",
+      "7e4174fc",
+      "8da5cb5b",
+      "a69a2ad1",
+      "e0189108",
+      "ec0bdcfc",
+      "f84a74d3"
+    ]
+  },
+  "exchange": {
+    "admin_slot": "0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103",
+    "admin_word": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f",
+    "collateral_decimals_storage_word": "0x00000000000000000000000000000000000000000000000000000002540be400",
+    "collateral_scale_call": "0x000000000000000000000000000000000000000000000000000000e8d4a51000",
+    "collateral_scale_storage_word": "0x000000000000000000000000000000000000000000000000000000e8d4a51000",
+    "implementation": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+    "implementation_code_bytes": 23959,
+    "implementation_code_sha256": "fc7374f3969381160732fe98c5e3145e00c3f167f168d61d65bb4972e9a6b268",
+    "implementation_runtime_file": "runtime/0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723.hex",
+    "implementation_slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+    "implementation_word": "0x0000000000000000000000000a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+    "linked_getter_slots": {
+      "oracle()": [
+        "2"
+      ],
+      "paperTokenomics()": [
+        "6"
+      ],
+      "proxyFactory()": [
+        "30"
+      ],
+      "sessionKeyManager()": []
+    },
+    "linked_getters": {
+      "oracle()": "0x000000000000000000000000a9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+      "paperTokenomics()": "0x00000000000000000000000075174549dbbd44497d31a47e2e2d7406408d63d9",
+      "proxyFactory()": "0x0000000000000000000000001629b7d46bef6e13ff754174fc9f32dea309b38f",
+      "sessionKeyManager()": "0x0000000000000000000000008326eb8896e358717f10502ec73ce8d28e37b108"
+    },
+    "owner_call": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "owner_slot_word": "0x00000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f0001",
+    "proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+    "proxy_admin": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+    "reconcile_sweep_credit_selector_call": {
+      "code": 3,
+      "data": "0x30cd7471",
+      "message": "execution reverted",
+      "status": "error"
+    },
+    "recovery_active_slot": "0xa773427fd35c220ba78eecdf51b705e39f3fb595b1d2a72f469ae0b9b21f6ab7",
+    "recovery_active_value": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "singleton_slots": {
+      "0": "0x00000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f0001",
+      "1": "0x000000000000000000000000696292762fd5ac3677a45edbe54eaece4194d1f6",
+      "10": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "11": "0x00000000000000000000000000000000000000000000000000000000001b6b79",
+      "12": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "13": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "14": "0x000000000000000000000000000000000000000000206c8fc6883bb4d8d61800",
+      "15": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "16": "0x0000000000000000000000000000000000000000000000000000000000000004",
+      "17": "0x0000000000000000000000000000000000000000000000000000000000000004",
+      "18": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "19": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "2": "0x000000000000000000000000a9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+      "20": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "21": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "22": "0x0000000000051c0e524732f9fbc3c0b10000000000174bf07ce33739fecceb70",
+      "23": "0x00000000000000000000000000000000000000000000000000470de4df820000",
+      "24": "0x00000000000000000000000000000000000000000000000000470de4df820000",
+      "25": "0x00000000000000000000000000000000000000000000000000470de4df820000",
+      "26": "0x000000000000058ca23ef326b5ee4ee900000000000000005a9746acb60f34c1",
+      "27": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "28": "0x000000000000001b1ae4d6e2ef50000000000000000000008ac7230489e80000",
+      "29": "0x00000000000000000000008326eb8896e358717f10502ec73ce8d28e37b10800",
+      "3": "0x000000000000000000000000000000000000000000000000000000e8d4a51000",
+      "30": "0x0000000000000000000000001629b7d46bef6e13ff754174fc9f32dea309b38f",
+      "31": "0x000000000000000000000000aad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+      "4": "0x0000000000000000000000000000000000000000000000000000000000000008",
+      "5": "0x00000000000000000000000000000000000000000000000000000002540be400",
+      "6": "0x00000000000000000000000075174549dbbd44497d31a47e2e2d7406408d63d9",
+      "7": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "8": "0x0000000000000000000000000000000000000000000000000000000100000002",
+      "9": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "total_balances_call": "0x000000000000000000000000000000000000000000174bf21d38a0479c84eb70",
+    "total_balances_slot_candidates": [],
+    "total_balances_storage_word": "0x0000000000051c0cb1f1c9ec5e0bc0b10000000000174bf21d38a0479c84eb70",
+    "treasury_call": "0x000000000000000000000000000000000000000000206c8fc6883bb4d8d61800",
+    "treasury_storage_word": "0x000000000000000000000000000000000000000000206c8fc6883bb4d8d61800"
+  },
+  "governance": {
+    "delay_change_operation_slot": "0xac951066febc9de76c764c7a9c9861efd117045b5306e20b37ea75c14896e944",
+    "delay_change_operation_word": "0x0000000000000000000000000000000000000000000000000000000000000001",
+    "multisig": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+    "multisig_epoch_word": "0x0000000000000000000000000000000000000000000000000000000000000001",
+    "multisig_signer_slots": [
+      "0x000000000000000000000000aa7577a7a27aa7fcf6d0ec481b87df3ad0f6a88e",
+      "0x000000000000000000000000e9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+      "0x0000000000000000000000009028f3b5b6b0d69e4e84ff555ade17114c3d1e72"
+    ],
+    "multisig_transaction_count_word": "0x000000000000000000000000000000000000000000000000000000000000000c",
+    "proxy_admin": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+    "proxy_admin_owner_call": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "proxy_admin_owner_slot": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "timelock": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "timelock_min_delay_word": "0x0000000000000000000000000000000000000000000000000000000000015180",
+    "timelock_owner_slot": "0x000000000000000000000000696292762fd5ac3677a45edbe54eaece4194d1f6"
+  },
+  "head": {
+    "hash": "0x3c6ff370b327aad6d9410ffd4d1b17007502d2f7dd281d5cd5576c6a250abb50",
+    "number": "0x2efb812",
+    "timestamp": "0x6adaa3f2"
+  },
+  "methods": [
+    "eth_blockNumber/latest",
+    "eth_getCode",
+    "eth_getStorageAt",
+    "eth_call",
+    "eth_getLogs (1000-block chunks)",
+    "POST /info"
+  ],
+  "pinned": {
+    "last_sweep_words": [
+      "0x0000000000000000000000000000000000000000000000000000000002df9fbf",
+      "0x0000000000000000000000000000000000000000000000000000000002ddd166"
+    ],
+    "old_implementation_runtime_file": "runtime/0x0f3febfc94876b0c895f7acecdc8f5c863b549ee.hex",
+    "old_implementation_runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+    "pending_words": [
+      "0x00000000000000000000000002df9fbf0000000000000000000000012a53a310",
+      "0x00000000000000000000000002ddd166000000000000000000000000481f2280"
+    ],
+    "pin": 48902346,
+    "pin_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+    "proxy_runtime_sha256": [
+      "405e5bfee919c2dcb84ca0854ec56966a8212b322aae41c610e05de235b6b68f",
+      "07f9f589f271f1fa58e8a5990bec257eac46c8e0e7b44577d73666ac0a26511d"
+    ]
+  },
+  "rpc_url": "https://rpc.hyperliquid.xyz/evm",
+  "selectors": {
+    "balances(address)": "0x27e235e3",
+    "collateralScale()": "0xec0bdcfc",
+    "finalizeSweep(address)": "0x6d142da1",
+    "getPendingSweep(address)": "0x31a4956c",
+    "lastSweepBlock(address)": "0xf84a74d3",
+    "owner()": "0x8da5cb5b",
+    "pendingSweepWord(address)": "0x7e4174fc",
+    "reconcileSweepCredit(address,uint256)": "0x6a3214c9",
+    "requestSweep(address)": "0xe0189108",
+    "sweep(address)": "0x01681a62",
+    "totalBalances()": "0xa69a2ad1",
+    "treasury()": "0x61d027b3"
+  },
+  "sweep_log_scan": {
+    "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+    "chain_topics": [
+      "0x02d61879cd72906e0951e3a96096407dd2b1f2cd2d063dae983bb20216cf3025",
+      "0xc36b5179cb9c303b200074996eab2b3473eac370fdd7eba3bec636fe35109696",
+      "0x28f3adb5fa23ae5c83c811e67caf2ec192a816e4ef898c7f90d1484f65a9717e"
+    ],
+    "chunks": [
+      {
+        "fromBlock": "0x2ef959f",
+        "logs": [],
+        "toBlock": "0x2ef9986"
+      },
+      {
+        "fromBlock": "0x2ef9987",
+        "logs": [],
+        "toBlock": "0x2ef9d6e"
+      },
+      {
+        "fromBlock": "0x2ef9d6f",
+        "logs": [],
+        "toBlock": "0x2efa156"
+      },
+      {
+        "fromBlock": "0x2efa157",
+        "logs": [],
+        "toBlock": "0x2efa53e"
+      },
+      {
+        "fromBlock": "0x2efa53f",
+        "logs": [],
+        "toBlock": "0x2efa926"
+      },
+      {
+        "fromBlock": "0x2efa927",
+        "logs": [],
+        "toBlock": "0x2efad0e"
+      },
+      {
+        "fromBlock": "0x2efad0f",
+        "logs": [],
+        "toBlock": "0x2efb0f6"
+      },
+      {
+        "fromBlock": "0x2efb0f7",
+        "logs": [],
+        "toBlock": "0x2efb4de"
+      },
+      {
+        "fromBlock": "0x2efb4df",
+        "logs": [],
+        "toBlock": "0x2efb812"
+      }
+    ],
+    "first_block": "0x2ea30cb",
+    "gaps": [
+      {
+        "first_block": "0x2ea30cb",
+        "last_block": "0x2ea30ca"
+      },
+      {
+        "first_block": "0x2ef959f",
+        "last_block": "0x2efb812"
+      }
+    ],
+    "last_block": "0x2efb812",
+    "log_count": 0,
+    "logs": [],
+    "middle_evidence": [
+      {
+        "filter": "the three recorded sweep-family topics and both affected users",
+        "first_block": 48902347,
+        "last_block": 49063456,
+        "log_count": 0,
+        "path": "artifacts/pt01_postpin/status_20261020_1703.json"
+      },
+      {
+        "filter": "every log from the Exchange proxy (proxy_0x6cd5661646289fb6e65ea5c032310fded797d0a2)",
+        "first_block": 49063457,
+        "last_block": 49255838,
+        "log_count": 0,
+        "path": "artifacts/postpin_suite/governance_logs.json.gz"
+      }
+    ],
+    "topics": [
+      "0x02d61879cd72906e0951e3a96096407dd2b1f2cd2d063dae983bb20216cf3025",
+      "0xc36b5179cb9c303b200074996eab2b3473eac370fdd7eba3bec636fe35109696",
+      "0x28f3adb5fa23ae5c83c811e67caf2ec192a816e4ef898c7f90d1484f65a9717e",
+      "0x8da9931e615ce9dfd2d7914e0cee3246839757203d34810cde64e0d0026f75c3"
+    ],
+    "users": [
+      "0x00000000000000000000000056cbe78a5cdfa10147927aec550aa7f2fb3d3d01",
+      "0x0000000000000000000000009c8599c32224d7d9956a7def18f7314162f77baf"
+    ]
+  }
+}

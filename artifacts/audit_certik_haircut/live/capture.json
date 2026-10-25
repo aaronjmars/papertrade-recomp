@@ -1,0 +1,67 @@
+{
+  "chain_id": 999,
+  "head_block": 49258776,
+  "head_hash": "0x094ffbf5b4786fa3a5a9b2ec7b8de3c2f29af76a8ca70a425df267ab5cd692fe",
+  "head_timestamp": 1792707928,
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "eip1967_implementation_slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+  "implementation": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+  "implementation_runtime_bytes": 23959,
+  "implementation_sha256": "fc7374f3969381160732fe98c5e3145e00c3f167f168d61d65bb4972e9a6b268",
+  "proxy_runtime_bytes": 925,
+  "proxy_sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+  "linked_libraries": {
+    "0x583d0bd818c991c5830fea93aef04e474b272459": {
+      "runtime_bytes": 6286,
+      "sha256": "ced8e434ebd5379c4acc1fba809a5b18f531c676a264308c9a0a1a76d9641440",
+      "push20_offsets": [
+        2721,
+        2809,
+        7249,
+        8997,
+        9335,
+        10801,
+        16268,
+        19148,
+        21872,
+        22043
+      ],
+      "selector_set": [
+        "0x06c5308a",
+        "0x18958ce2",
+        "0x2448a553",
+        "0x32db40c9",
+        "0x3cf4208d",
+        "0x3f4e3626",
+        "0x79810ffe",
+        "0xb67f3dd7",
+        "0xb9370332",
+        "0xca02ff91"
+      ]
+    },
+    "0x3333333333333333333333333333333333333333": {
+      "runtime_bytes": 544,
+      "sha256": "fd053fae53aa5ff797c8de9d38f5180d3c280228ae2d669ef9a83ab7834dac83",
+      "push20_offsets": [
+        21166
+      ],
+      "selector_set": [
+        "0x17938e13"
+      ]
+    }
+  },
+  "linked_library": "0x583d0bd818c991c5830fea93aef04e474b272459",
+  "session_key_manager_proxy": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+  "session_key_manager_implementation": "0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946",
+  "session_key_manager_implementation_bytes": 4521,
+  "session_manager_implementation_sha256": "7df05c33597c04820a314fae015aab01b5566aff53e9bded8446962cfd4ad2c9",
+  "raw_files": [
+    "exchange_proxy_code.json",
+    "implementation_code.json",
+    "linked_3333333333333333333333333333333333333333_code.json",
+    "linked_583d0bd818c991c5830fea93aef04e474b272459_code.json",
+    "session_manager_implementation_code.json",
+    "storage_probes.json"
+  ],
+  "method": "single-poll eth_blockNumber/eth_getBlockByNumber/eth_getStorageAt/eth_getCode at latest; the public RPC ignores block parameters"
+}

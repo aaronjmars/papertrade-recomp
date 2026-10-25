@@ -1,0 +1,4494 @@
+{
+  "baseline": {
+    "catalog": "atlas/block_48902346/selector_catalog.json",
+    "manifest": "atlas/block_48902346/manifest.json",
+    "pin": 48902346
+  },
+  "block": 49265286,
+  "block_hash": "0x82c2900c25f8e980ff7159d18ebd70c428c4801c3e6fbac80460723d8eedb9c9",
+  "catalogs": {
+    "0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946": {
+      "cast_warnings": [],
+      "counts": {
+        "hash_matched_name_candidates": 2,
+        "in_pinned_counterpart": 24,
+        "names_carried_from_baseline": 22,
+        "observed_calldatasize_guard": 20,
+        "selectors": 27,
+        "unresolved_names": 3
+      },
+      "functions": [
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "WITHDRAW_TO_CORE_TYPEHASH()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 3117,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_typehash_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 2787,
+          "selector": "0x0b4c3a82",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 3,
+          "baseline_signature_status": "hash_matched_guardian_report_and_bytecode_layout",
+          "candidate_signature": "registerSessionKeyDirect(address,uint64,address)",
+          "cast_inferred_arguments": "address,uint64,address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 3041,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 96,
+          "pinned_entry_pc": 2711,
+          "selector": "0x17a1678f",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "CLOSE_TYPEHASH()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 2983,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_typehash_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 2653,
+          "selector": "0x208e24fc",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "REGISTER_SESSION_KEY_TYPEHASH()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 2944,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_key_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 2614,
+          "selector": "0x2bc9ed54",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "DOMAIN_SEPARATOR()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 2914,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 2584,
+          "selector": "0x3644e515",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32
+          ],
+          "argument_word_count": 2,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "setAuthorizedSubmitter(address,bool)",
+          "cast_inferred_arguments": "address,bool",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 2767,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_key_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 2437,
+          "selector": "0x5197a0d3",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 9,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "registerSessionKeyBySig(address,address,uint64,address,uint256,uint64,uint8,bytes32,bytes32)",
+          "cast_inferred_arguments": "address,address,uint64,address,uint256,uint64,uint8",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 2068,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_key_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 288,
+          "pinned_entry_pc": 1912,
+          "selector": "0x5f76a1d6",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "OPEN_POSITION_TYPEHASH()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 2010,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_typehash_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 1854,
+          "selector": "0x6525a680",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 5,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "initialize(address,string,string,uint256,address)",
+          "cast_inferred_arguments": "address,bytes,bytes,uint256,address",
+          "cast_inferred_dynamic_types": [
+            "bytes",
+            "bytes"
+          ],
+          "entry_pc": 1643,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_initializer_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 160,
+          "pinned_entry_pc": 1487,
+          "selector": "0x747b8a1c",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "domainSeparatorV4()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1593,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 1437,
+          "selector": "0x78e890ba",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "nonces(address)|_$_$$_$__$$$$$$$$__$__$$_$$$_$$$(address)|transfer_attention_tg_invmru_5811b86(uint256,address,address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1538,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_key_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 1382,
+          "selector": "0x7ecebe00",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 5,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "address,uint256,uint8,uint256,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1490,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_signer_expanded_behavior.json",
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 1222,
+          "selector": "0x7f608253",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "authorizedSubmitters(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1430,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 1162,
+          "selector": "0x7f6e9d4b",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "revokeSessionKey(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1334,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_key_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 1066,
+          "selector": "0x84f4fc6a",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "owner()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1294,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 1026,
+          "selector": "0x8da5cb5b",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32
+          ],
+          "argument_word_count": 2,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "sessionKeys(address,address)",
+          "cast_inferred_arguments": "address,address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1198,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_key_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 930,
+          "selector": "0x96ade1f9",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "authorizedCaller()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1158,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 890,
+          "selector": "0x97dc97cb",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 3,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "consumeNonce(address,uint256,uint64)",
+          "cast_inferred_arguments": "address,uint8,uint64",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1045,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_key_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 96,
+          "pinned_entry_pc": 777,
+          "selector": "0xb002b9fa",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": null,
+          "candidate_signature": "setBuilderRegistry(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 936,
+          "in_pinned_counterpart": false,
+          "name_evidence": "atlas_suite_sets.py NEW_SELECTORS",
+          "name_status": "public_registry_candidate_hash_matched",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": null,
+          "selector": "0xbd322efa",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32
+          ],
+          "argument_word_count": 2,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "address,address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 858,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_key_behavior.json",
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 699,
+          "selector": "0xc1e6613d",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32
+          ],
+          "argument_word_count": 2,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "isNonceUsed(address,uint256)",
+          "cast_inferred_arguments": "address,uint8",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 782,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_key_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 623,
+          "selector": "0xcab7e8eb",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "setAuthorizedCaller(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 692,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_key_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 533,
+          "selector": "0xcf8fbec9",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 4,
+          "baseline_signature_status": "candidate_from_public_signature_database",
+          "candidate_signature": "recoverSigner(bytes32,uint8,bytes32,bytes32)",
+          "cast_inferred_arguments": "uint256,uint8,uint256,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 622,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_direct_signer_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 128,
+          "pinned_entry_pc": 463,
+          "selector": "0xd45167d0",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 5,
+          "baseline_signature_status": null,
+          "candidate_signature": "",
+          "cast_inferred_arguments": "address,uint256,uint8,uint256,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 536,
+          "in_pinned_counterpart": false,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": null,
+          "selector": "0xd95208cd",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": null,
+          "candidate_signature": "builderRegistry()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 496,
+          "in_pinned_counterpart": false,
+          "name_evidence": "atlas_suite_sets.py NEW_SELECTORS",
+          "name_status": "public_registry_candidate_hash_matched",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": null,
+          "selector": "0xe737de13",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32
+          ],
+          "argument_word_count": 2,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "nonceBitmapWord(address,uint256)",
+          "cast_inferred_arguments": "address,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 432,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_key_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 399,
+          "selector": "0xf2f59776",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "transferOwnership(address)|_SIMONdotBLACK_(int8[],uint256,address,bytes8,int96)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 328,
+          "in_pinned_counterpart": true,
+          "name_evidence": "session_key_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 295,
+          "selector": "0xf2fde38b",
+          "state_mutability": "nonpayable"
+        }
+      ],
+      "pinned_counterpart": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "role": "session_key_manager_implementation_2",
+      "runtime_bytes": 4521,
+      "runtime_file": "atlas/block_49265286/runtime/0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946.hex",
+      "sha256": "7df05c33597c04820a314fae015aab01b5566aff53e9bded8446962cfd4ad2c9"
+    },
+    "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723": {
+      "cast_warnings": [],
+      "counts": {
+        "hash_matched_name_candidates": 2,
+        "in_pinned_counterpart": 97,
+        "names_carried_from_baseline": 73,
+        "observed_calldatasize_guard": 65,
+        "selectors": 103,
+        "unresolved_names": 28
+      },
+      "functions": [
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "sweep(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 13926,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_sweep_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 16016,
+          "selector": "0x01681a62",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "totalLockedMargin()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 13894,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 15984,
+          "selector": "0x01ad056f",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "setMarketKeeper(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 13792,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_market_keeper_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 15882,
+          "selector": "0x060447aa",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "sessionKeyManager()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 13748,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 15838,
+          "selector": "0x0b826190",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "lpBankrollAvailable()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 13722,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_report_names_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 15812,
+          "selector": "0x0cdd5fc4",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "queueHarvestAvailable()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 13696,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_report_names_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 15786,
+          "selector": "0x138e9de2",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "authorizedExecutor()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 13656,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 15746,
+          "selector": "0x13dd495b",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "stakerLpExcessToDistribute()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 13630,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_small_views_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 15720,
+          "selector": "0x18715c9a",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 4,
+          "baseline_signature_status": "hash_matched_guardian_report_and_bytecode_layout",
+          "candidate_signature": "openPosition(uint32,bool,uint128,uint32)",
+          "cast_inferred_arguments": "uint32,bool,uint128,uint32",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 13559,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 128,
+          "pinned_entry_pc": 15649,
+          "selector": "0x1afd17e9",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 13509,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 15599,
+          "selector": "0x1b7c1009",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "marketKeeper()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 13469,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_market_keeper_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 15559,
+          "selector": "0x21f55a6c",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "pauseGuardian()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 13429,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 15519,
+          "selector": "0x24a3d622",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 7,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "closeBySig(address,uint256[],uint256,uint64,uint8,bytes32,bytes32)",
+          "cast_inferred_arguments": "address,uint256[],uint256,uint64,uint8,uint256,uint256",
+          "cast_inferred_dynamic_types": [
+            "uint256[]"
+          ],
+          "entry_pc": 11778,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_library_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 224,
+          "pinned_entry_pc": 12606,
+          "selector": "0x2792e706",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "balances(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 11721,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 12549,
+          "selector": "0x27e235e3",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "pauseMarket(uint32)",
+          "cast_inferred_arguments": "uint32",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 11285,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 12113,
+          "selector": "0x2d2451d1",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 11239,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 12067,
+          "selector": "0x2dcc7fce",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 11209,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 12037,
+          "selector": "0x31a39849",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "getPendingSweep(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 11102,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 11930,
+          "selector": "0x31a4956c",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "lastCoreWithdrawalBlock(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 11045,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 11873,
+          "selector": "0x32faa570",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "userQueueTail(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 10988,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 11816,
+          "selector": "0x3a21be03",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "setPauseGuardian(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 10884,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 10668,
+          "selector": "0x48bde20c",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "hash_matched_guardian_report_and_bytecode_layout",
+          "candidate_signature": "winFeeRate()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 10854,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_fee_rates_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 10638,
+          "selector": "0x48ee5e08",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 3,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "address,uint256,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 10730,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 10514,
+          "selector": "0x4a4d9eea",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 10616,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 10400,
+          "selector": "0x50c23fab",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "totalQueued()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 10586,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 10370,
+          "selector": "0x53ac4b66",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "tradingPaused()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 10551,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 10335,
+          "selector": "0x53e23e2e",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "userQueuedTotal(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 10494,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 10278,
+          "selector": "0x551306f3",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "hash_matched_guardian_report_and_bytecode_layout",
+          "candidate_signature": "close(uint256[])",
+          "cast_inferred_arguments": "uint256[]",
+          "cast_inferred_dynamic_types": [
+            "uint256[]"
+          ],
+          "entry_pc": 10425,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 10209,
+          "selector": "0x58d3ec6a",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "liquidateBatch(uint256[])",
+          "cast_inferred_arguments": "uint256[]",
+          "cast_inferred_dynamic_types": [
+            "uint256[]"
+          ],
+          "entry_pc": 10206,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_batch_summary_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 9990,
+          "selector": "0x599dc539",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 5,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint32,uint128,uint96,uint96,uint64",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 9906,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_instrument_admin_behavior.json",
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 160,
+          "pinned_entry_pc": 9690,
+          "selector": "0x5ca4c0ea",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "liquidationFeeRate()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 9876,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_fee_rates_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 9660,
+          "selector": "0x5fb3b1b5",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "treasury()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 9846,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 9630,
+          "selector": "0x61d027b3",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 3,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint32,uint128,uint128",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 9641,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 96,
+          "pinned_entry_pc": 9425,
+          "selector": "0x628a9fd6",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 5,
+          "baseline_signature_status": "hash_matched_guardian_report_and_bytecode_layout",
+          "candidate_signature": "openPosition(uint32,bool,uint128,uint32,bool)",
+          "cast_inferred_arguments": "uint32,bool,uint128,uint32,bool",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 9558,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 160,
+          "pinned_entry_pc": 9342,
+          "selector": "0x63ca348f",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": null,
+          "candidate_signature": "claimBuilderFees()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 9533,
+          "in_pinned_counterpart": false,
+          "name_evidence": "atlas_suite_sets.py NEW_SELECTORS",
+          "name_status": "public_registry_candidate_hash_matched",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": null,
+          "selector": "0x69f9a5f0",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32
+          ],
+          "argument_word_count": 2,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "reconcileSweepCredit(address,uint256)",
+          "cast_inferred_arguments": "address,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 9487,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_sweep_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 64,
+          "pinned_entry_pc": 9296,
+          "selector": "0x6a3214c9",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "finalizeSweep(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 9453,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_sweep_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 9262,
+          "selector": "0x6d142da1",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 9422,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 9231,
+          "selector": "0x6d60ae8e",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 9388,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 9197,
+          "selector": "0x70f75ff5",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 4,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "address,uint256,uint256,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 9245,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 9054,
+          "selector": "0x753a369c",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "pushStakerFees()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 9220,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_staker_fee_push_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 9029,
+          "selector": "0x7b9f5264",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "devFeeAccumulator()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 9187,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 8996,
+          "selector": "0x7d004aeb",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "oracle()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 9146,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 8955,
+          "selector": "0x7dc0d1d0",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "pendingSweepWord(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 9089,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 8898,
+          "selector": "0x7e4174fc",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "withdrawToCore(uint256)",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 9050,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 8859,
+          "selector": "0x7f99545a",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 4,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "address,uint256,uint256,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 8921,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 8730,
+          "selector": "0x827ad94c",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32
+          ],
+          "argument_word_count": 2,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint128,uint128",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 8705,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 64,
+          "pinned_entry_pc": 8514,
+          "selector": "0x82f47a3f",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "setSessionKeyManager(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 8590,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_admin_setters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 8399,
+          "selector": "0x837fa3fd",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "changeDevFeeAddress(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 8486,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_admin_setters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 8295,
+          "selector": "0x86d506db",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "claimDevFees()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 8461,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_dev_fee_claim_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 8270,
+          "selector": "0x88f2aea5",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "nextPositionId()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 8431,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 8240,
+          "selector": "0x899346c7",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 7,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "withdrawToCoreBySig(address,uint256,uint256,uint64,uint8,bytes32,bytes32)",
+          "cast_inferred_arguments": "address,uint256,uint256,uint64,uint8",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 8059,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_core_withdrawal_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 224,
+          "pinned_entry_pc": 7791,
+          "selector": "0x8d09f23f",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "owner()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 8016,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 7748,
+          "selector": "0x8da5cb5b",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "sideBucket()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 7975,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_side_bucket_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 7707,
+          "selector": "0x9274682e",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "queueHead()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 7945,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 7677,
+          "selector": "0x96523644",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "positions(uint256)",
+          "cast_inferred_arguments": "uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 7779,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_mapping_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 7511,
+          "selector": "0x99fbab88",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": null,
+          "candidate_signature": "builderFees(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 7722,
+          "in_pinned_counterpart": false,
+          "name_evidence": "atlas_suite_sets.py NEW_SELECTORS",
+          "name_status": "public_registry_candidate_hash_matched",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": null,
+          "selector": "0x9d346583",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "authorizedKeeper()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 7681,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 7470,
+          "selector": "0x9d47d4d3",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "setPaperTokenomics(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 7577,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_admin_setters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 7366,
+          "selector": "0xa0bf0f75",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "getUserOpenPositionIds(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 7403,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_mapping_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 7192,
+          "selector": "0xa25dc87f",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "totalBalances()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 7362,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 7151,
+          "selector": "0xa69a2ad1",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 3,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "address,uint256,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 7164,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 6953,
+          "selector": "0xae4daf4e",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "setTradingPaused(bool)",
+          "cast_inferred_arguments": "bool",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 6998,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 6780,
+          "selector": "0xae69b95b",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 6970,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 6752,
+          "selector": "0xaf210ecc",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "stakerFeeAccumulator()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 6929,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 6711,
+          "selector": "0xafdf6702",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "positionOwner(uint256)",
+          "cast_inferred_arguments": "uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 6878,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_mapping_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 6660,
+          "selector": "0xb3060d36",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 6844,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 6626,
+          "selector": "0xbacd9ea0",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 3,
+          "baseline_signature_status": "hash_matched_guardian_report_and_bytecode_layout",
+          "candidate_signature": "initialize(address,address,address)",
+          "cast_inferred_arguments": "address,address,address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 6320,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 96,
+          "pinned_entry_pc": 6105,
+          "selector": "0xc0c53b8b",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "proxyFactory()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 6279,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 6064,
+          "selector": "0xc10f1a75",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "hash_matched_guardian_report_and_bytecode_layout",
+          "candidate_signature": "coreCollateralDecimals()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 6246,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_small_views_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 6031,
+          "selector": "0xc43fbc8c",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint32",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 6148,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 5933,
+          "selector": "0xc8372577",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 9,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint256,uint256,uint256,uint32,uint256,uint256,uint256,uint256,uint64",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 5569,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 5358,
+          "selector": "0xc88bbcf3",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint32",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 5460,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 5249,
+          "selector": "0xcb163b03",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": null,
+          "candidate_signature": "",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 5427,
+          "in_pinned_counterpart": false,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": null,
+          "selector": "0xcbce7532",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "devFeeRecipient()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 5386,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 5208,
+          "selector": "0xcbeb5f3d",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "setStakerFeeRecipient(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 5232,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_report_names_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 5054,
+          "selector": "0xcd2d3811",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "setAuthorizedExecutor(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 5128,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_admin_setters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 4950,
+          "selector": "0xd188c049",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 3,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint32,uint32,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 4911,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 96,
+          "pinned_entry_pc": 4733,
+          "selector": "0xd7c7e5fb",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32
+          ],
+          "argument_word_count": 2,
+          "baseline_signature_status": null,
+          "candidate_signature": "",
+          "cast_inferred_arguments": "address,address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 4860,
+          "in_pinned_counterpart": false,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 64,
+          "pinned_entry_pc": null,
+          "selector": "0xd970fad5",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "instruments(uint32)",
+          "cast_inferred_arguments": "uint32",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 4694,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_instruments_getter_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 4567,
+          "selector": "0xdc8a47ef",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "userQueueHead(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 4637,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_mapping_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 4510,
+          "selector": "0xdcab7f6a",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "harvest(uint256)",
+          "cast_inferred_arguments": "uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 4598,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_library_harvest_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 4471,
+          "selector": "0xddc63262",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "requestSweep(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 4564,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_sweep_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 4437,
+          "selector": "0xe0189108",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "stakerFeeRecipient()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 4523,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_report_names_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 4396,
+          "selector": "0xe1f9209b",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 3,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "setFeeRates(uint256,uint256,uint256)",
+          "cast_inferred_arguments": "uint256,uint256,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 4351,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_fee_rates_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 96,
+          "pinned_entry_pc": 4224,
+          "selector": "0xe538b280",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32
+          ],
+          "argument_word_count": 2,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "creditStakingReward(address,uint256)",
+          "cast_inferred_arguments": "address,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 4310,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_staking_credit_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 64,
+          "pinned_entry_pc": 4183,
+          "selector": "0xe53e3de6",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "queueNode(uint256)",
+          "cast_inferred_arguments": "uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 4222,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_mapping_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 4095,
+          "selector": "0xe634384f",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": null,
+          "candidate_signature": "",
+          "cast_inferred_arguments": "bool",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 4108,
+          "in_pinned_counterpart": false,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": null,
+          "selector": "0xe6ac4a74",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "collateralScale()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 4078,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 4065,
+          "selector": "0xec0bdcfc",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 11,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "openPositionBySig(address,uint32,bool,uint128,uint32,bool,uint256,uint64,uint8,bytes32,bytes32)",
+          "cast_inferred_arguments": "address,uint32,bool,uint128,uint32,bool,uint256,uint64,uint8,uint256,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1925,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_event_paths.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 352,
+          "pinned_entry_pc": 1833,
+          "selector": "0xec6783f0",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "paperTokenomics()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1884,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 1792,
+          "selector": "0xed410ee1",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "setAuthorizedKeeper(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1780,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_admin_setters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 1688,
+          "selector": "0xefc1bd46",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": null,
+          "candidate_signature": "",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1743,
+          "in_pinned_counterpart": false,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": null,
+          "selector": "0xf009ac03",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1713,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 1658,
+          "selector": "0xf1a8786c",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "instrumentCount()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1677,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_instrument_creation_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 1622,
+          "selector": "0xf28bbdb2",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "transferOwnership(address)|_SIMONdotBLACK_(int8[],uint256,address,bytes8,int96)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1581,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_admin_setters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 1526,
+          "selector": "0xf2fde38b",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint32",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1471,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 1416,
+          "selector": "0xf37d3c4f",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1429,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_position_index_behavior.json",
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 1374,
+          "selector": "0xf728fc98",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "lastSweepBlock(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1373,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_sweep_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 1318,
+          "selector": "0xf84a74d3",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "hash_matched_guardian_report_and_bytecode_layout",
+          "candidate_signature": "unpauseMarket(uint32)",
+          "cast_inferred_arguments": "uint32",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1328,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 1273,
+          "selector": "0xfb9f1009",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "setProxyFactory(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1224,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_admin_setters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 1169,
+          "selector": "0xfbddd751",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1189,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 1134,
+          "selector": "0xfdfd905d",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1159,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 1104,
+          "selector": "0xff3bc415",
+          "state_mutability": "view"
+        }
+      ],
+      "pinned_counterpart": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "role": "exchange_implementation_2",
+      "runtime_bytes": 23959,
+      "runtime_file": "atlas/block_49265286/runtime/0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723.hex",
+      "sha256": "fc7374f3969381160732fe98c5e3145e00c3f167f168d61d65bb4972e9a6b268"
+    },
+    "0x583d0bd818c991c5830fea93aef04e474b272459": {
+      "cast_warnings": [],
+      "counts": {
+        "hash_matched_name_candidates": 0,
+        "in_pinned_counterpart": 8,
+        "names_carried_from_baseline": 0,
+        "observed_calldatasize_guard": 6,
+        "selectors": 10,
+        "unresolved_names": 10
+      },
+      "functions": [
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 10,
+          "baseline_signature_status": null,
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint64,uint64,int256,uint32,bool,uint256,uint256,uint256,uint256,bool",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 2213,
+          "in_pinned_counterpart": false,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 320,
+          "pinned_entry_pc": null,
+          "selector": "0x06c5308a",
+          "state_mutability": "payable"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 3,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint256,address,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 2188,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 2616,
+          "selector": "0x18958ce2",
+          "state_mutability": "payable"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 5,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint256,address,uint256,uint256,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 2159,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 2587,
+          "selector": "0x2448a553",
+          "state_mutability": "payable"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 5,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint256,address,uint256,uint256,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1698,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 2146,
+          "selector": "0x32db40c9",
+          "state_mutability": "payable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 6,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint256,address,uint256,uint256,uint256,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1131,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 192,
+          "pinned_entry_pc": 1579,
+          "selector": "0x3cf4208d",
+          "state_mutability": "payable"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 3,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint256,address,bool",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 855,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 1303,
+          "selector": "0x3f4e3626",
+          "state_mutability": "payable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 5,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint256,uint256,uint256,uint256,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 441,
+          "in_pinned_counterpart": true,
+          "name_evidence": "exchange_library_harvest_behavior.json",
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 160,
+          "pinned_entry_pc": 889,
+          "selector": "0x79810ffe",
+          "state_mutability": "payable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 7,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint256,uint64,uint64,uint256,uint256,uint256,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 362,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 224,
+          "pinned_entry_pc": 349,
+          "selector": "0xb67f3dd7",
+          "state_mutability": "payable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 9,
+          "baseline_signature_status": null,
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint256,address,uint128,uint256,bool,uint256,uint256,uint256,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 239,
+          "in_pinned_counterpart": false,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 288,
+          "pinned_entry_pc": null,
+          "selector": "0xb9370332",
+          "state_mutability": "payable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 4,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "uint256,address,uint256,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 170,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 128,
+          "pinned_entry_pc": 283,
+          "selector": "0xca02ff91",
+          "state_mutability": "payable"
+        }
+      ],
+      "pinned_counterpart": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "role": "exchange_linked_library_2",
+      "runtime_bytes": 6286,
+      "runtime_file": "atlas/block_49265286/runtime/0x583d0bd818c991c5830fea93aef04e474b272459.hex",
+      "sha256": "ced8e434ebd5379c4acc1fba809a5b18f531c676a264308c9a0a1a76d9641440"
+    },
+    "0x7c0a72a788cff4d68cfe9586aecb98e21eb58a03": {
+      "cast_warnings": [],
+      "counts": {
+        "hash_matched_name_candidates": 2,
+        "in_pinned_counterpart": 21,
+        "names_carried_from_baseline": 19,
+        "observed_calldatasize_guard": 25,
+        "selectors": 26,
+        "unresolved_names": 5
+      },
+      "functions": [
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 5,
+          "baseline_signature_status": "hash_matched_guardian_report_and_bytecode_layout",
+          "candidate_signature": "onLoss(address,uint256,bool,uint256,uint256)",
+          "cast_inferred_arguments": "address,uint256,bool,uint256,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 2333,
+          "in_pinned_counterpart": true,
+          "name_evidence": "liquidation_tokenomics_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 160,
+          "pinned_entry_pc": 1639,
+          "selector": "0x0efdf838",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": null,
+          "candidate_signature": "",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 2293,
+          "in_pinned_counterpart": false,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": null,
+          "selector": "0x122b6689",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 4,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "setMintParams(uint256,uint256,uint256,uint256)",
+          "cast_inferred_arguments": "bool,uint256,uint256,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 2097,
+          "in_pinned_counterpart": true,
+          "name_evidence": "tokenomics_params_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 128,
+          "pinned_entry_pc": 1431,
+          "selector": "0x12baae3b",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "flatRate()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 2067,
+          "in_pinned_counterpart": true,
+          "name_evidence": "tokenomics_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 1401,
+          "selector": "0x1c3972ba",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 593,
+          "in_pinned_counterpart": true,
+          "name_evidence": "tokenomics_getter_alias_behavior.json",
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 503,
+          "selector": "0x3886cade",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": null,
+          "candidate_signature": "insolventSince()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 2023,
+          "in_pinned_counterpart": false,
+          "name_evidence": "atlas_suite_sets.py NEW_SELECTORS",
+          "name_status": "public_registry_candidate_hash_matched",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": null,
+          "selector": "0x456db972",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "cast_inference_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32
+          ],
+          "argument_word_count": 2,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "initialize(address,address)|watch_tg_invmru_7bd442a(uint256,address,uint256)|watch_tg_invmru_10757d42(bool,bool)",
+          "cast_inferred_arguments": "address,address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1702,
+          "in_pinned_counterpart": true,
+          "name_evidence": "tokenomics_initializer_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": null,
+          "pinned_entry_pc": 1080,
+          "selector": "0x485cc955",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": null,
+          "candidate_signature": "",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1610,
+          "in_pinned_counterpart": false,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": null,
+          "selector": "0x4ec7182e",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 7,
+          "baseline_signature_status": "unresolved",
+          "candidate_signature": "",
+          "cast_inferred_arguments": "address,uint256,uint256,uint64,uint8",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1540,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 224,
+          "pinned_entry_pc": 1010,
+          "selector": "0x7c7df7b4",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": null,
+          "candidate_signature": "activateRebate()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1093,
+          "in_pinned_counterpart": false,
+          "name_evidence": "atlas_suite_sets.py NEW_SELECTORS",
+          "name_status": "public_registry_candidate_hash_matched",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": null,
+          "selector": "0x85eb2a08",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "trackedLpUsd()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1063,
+          "in_pinned_counterpart": true,
+          "name_evidence": "tokenomics_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 980,
+          "selector": "0x8cf554a7",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "owner()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1020,
+          "in_pinned_counterpart": true,
+          "name_evidence": "tokenomics_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 937,
+          "selector": "0x8da5cb5b",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "paperToken()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 980,
+          "in_pinned_counterpart": true,
+          "name_evidence": "tokenomics_paper_admin_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 897,
+          "selector": "0x98255e15",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "stakerLpDistributableExcessUsd()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 952,
+          "in_pinned_counterpart": true,
+          "name_evidence": "tokenomics_params_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 862,
+          "selector": "0xae745703",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "hash_matched_guardian_report_and_bytecode_layout",
+          "candidate_signature": "stakerLpRewardCapUsd()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 922,
+          "in_pinned_counterpart": true,
+          "name_evidence": "tokenomics_getter_alias_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 832,
+          "selector": "0xc16017ca",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "distributeLpToStakers(uint256)",
+          "cast_inferred_arguments": "uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 863,
+          "in_pinned_counterpart": true,
+          "name_evidence": "tokenomics_params_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 773,
+          "selector": "0xc218c676",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "tailDecayScaleUsd()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 833,
+          "in_pinned_counterpart": true,
+          "name_evidence": "tokenomics_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 743,
+          "selector": "0xcbb451da",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "exchange()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 793,
+          "in_pinned_counterpart": true,
+          "name_evidence": "tokenomics_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 703,
+          "selector": "0xd2f7265a",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "redeem(uint256)",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 762,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 672,
+          "selector": "0xdb006a75",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "tailProgressUsd()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 734,
+          "in_pinned_counterpart": true,
+          "name_evidence": "tokenomics_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 644,
+          "selector": "0xdc5682d2",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "setPaperToken(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 623,
+          "in_pinned_counterpart": true,
+          "name_evidence": "tokenomics_paper_admin_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 533,
+          "selector": "0xe6ee2285",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "lpFlatThresholdUsd()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 593,
+          "in_pinned_counterpart": true,
+          "name_evidence": "tokenomics_direct_getters_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": 503,
+          "selector": "0xe9ed73e9",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32,
+            32,
+            32,
+            32
+          ],
+          "argument_word_count": 4,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "onCloseBatch(address,uint256,uint256,uint256)",
+          "cast_inferred_arguments": "address,uint256,uint256,uint256",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 511,
+          "in_pinned_counterpart": true,
+          "name_evidence": "tokenomics_observed_paths.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 128,
+          "pinned_entry_pc": 421,
+          "selector": "0xed722c96",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": null,
+          "candidate_signature": "",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 476,
+          "in_pinned_counterpart": false,
+          "name_evidence": null,
+          "name_status": "unresolved",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": null,
+          "selector": "0xeedf4c43",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "transferOwnership(address)|_SIMONdotBLACK_(int8[],uint256,address,bytes8,int96)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 351,
+          "in_pinned_counterpart": true,
+          "name_evidence": "tokenomics_owner_transfer_behavior.json",
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 296,
+          "selector": "0xf2fde38b",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": "reconstructed_from_bytecode_and_behavior",
+          "candidate_signature": "quoteRedemption(uint256)",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 317,
+          "in_pinned_counterpart": true,
+          "name_evidence": null,
+          "name_status": "baseline_name_carried_not_reproven_on_this_runtime",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": 262,
+          "selector": "0xfe16eae8",
+          "state_mutability": "view"
+        }
+      ],
+      "pinned_counterpart": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "role": "tokenomics_implementation_2",
+      "runtime_bytes": 6452,
+      "runtime_file": "atlas/block_49265286/runtime/0x7c0a72a788cff4d68cfe9586aecb98e21eb58a03.hex",
+      "sha256": "56caf868c73dbc33b94725972fc101dbcec0fb7b017c4f2f9e8cda49516992e9"
+    },
+    "0xfdc6550436dd75ce8a0b145f935b7d3a64f53248": {
+      "cast_warnings": [],
+      "counts": {
+        "hash_matched_name_candidates": 10,
+        "in_pinned_counterpart": 0,
+        "names_carried_from_baseline": 0,
+        "observed_calldatasize_guard": 10,
+        "selectors": 10,
+        "unresolved_names": 0
+      },
+      "functions": [
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": null,
+          "candidate_signature": "guardian()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 1121,
+          "in_pinned_counterpart": false,
+          "name_evidence": "atlas_suite_sets.py NEW_SELECTORS",
+          "name_status": "public_registry_candidate_hash_matched",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": null,
+          "selector": "0x452a9320",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": null,
+          "candidate_signature": "setFeeRate(uint64)",
+          "cast_inferred_arguments": "uint64",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 942,
+          "in_pinned_counterpart": false,
+          "name_evidence": "atlas_suite_sets.py NEW_SELECTORS",
+          "name_status": "public_registry_candidate_hash_matched",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": null,
+          "selector": "0x459770f6",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": null,
+          "candidate_signature": "approveBuilder(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 799,
+          "in_pinned_counterpart": false,
+          "name_evidence": "atlas_suite_sets.py NEW_SELECTORS",
+          "name_status": "public_registry_candidate_hash_matched",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": null,
+          "selector": "0x54dc2a02",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": null,
+          "candidate_signature": "isApproved(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 735,
+          "in_pinned_counterpart": false,
+          "name_evidence": "atlas_suite_sets.py NEW_SELECTORS",
+          "name_status": "public_registry_candidate_hash_matched",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": null,
+          "selector": "0x673448dd",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": null,
+          "candidate_signature": "setGuardian(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 615,
+          "in_pinned_counterpart": false,
+          "name_evidence": "atlas_suite_sets.py NEW_SELECTORS",
+          "name_status": "public_registry_candidate_hash_matched",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": null,
+          "selector": "0x8a0dac4a",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": null,
+          "candidate_signature": "owner()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 576,
+          "in_pinned_counterpart": false,
+          "name_evidence": "atlas_suite_sets.py NEW_SELECTORS",
+          "name_status": "public_registry_candidate_hash_matched",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": null,
+          "selector": "0x8da5cb5b",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [],
+          "argument_word_count": 0,
+          "baseline_signature_status": null,
+          "candidate_signature": "feeRate()",
+          "cast_inferred_arguments": "",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 532,
+          "in_pinned_counterpart": false,
+          "name_evidence": "atlas_suite_sets.py NEW_SELECTORS",
+          "name_status": "public_registry_candidate_hash_matched",
+          "observed_calldatasize_guard_bytes": 0,
+          "pinned_entry_pc": null,
+          "selector": "0x978bbdb9",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": null,
+          "candidate_signature": "feeRateOf(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 431,
+          "in_pinned_counterpart": false,
+          "name_evidence": "atlas_suite_sets.py NEW_SELECTORS",
+          "name_status": "public_registry_candidate_hash_matched",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": null,
+          "selector": "0xd779e270",
+          "state_mutability": "view"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": null,
+          "candidate_signature": "removeBuilder(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 286,
+          "in_pinned_counterpart": false,
+          "name_evidence": "atlas_suite_sets.py NEW_SELECTORS",
+          "name_status": "public_registry_candidate_hash_matched",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": null,
+          "selector": "0xec969386",
+          "state_mutability": "nonpayable"
+        },
+        {
+          "argument_width_source": "observed_calldatasize_guard_on_saved_bytes",
+          "argument_widths_bytes": [
+            32
+          ],
+          "argument_word_count": 1,
+          "baseline_signature_status": null,
+          "candidate_signature": "transferOwnership(address)",
+          "cast_inferred_arguments": "address",
+          "cast_inferred_dynamic_types": [],
+          "entry_pc": 141,
+          "in_pinned_counterpart": false,
+          "name_evidence": "atlas_suite_sets.py NEW_SELECTORS",
+          "name_status": "public_registry_candidate_hash_matched",
+          "observed_calldatasize_guard_bytes": 32,
+          "pinned_entry_pc": null,
+          "selector": "0xf2fde38b",
+          "state_mutability": "nonpayable"
+        }
+      ],
+      "pinned_counterpart": null,
+      "role": "builder_registry",
+      "runtime_bytes": 1210,
+      "runtime_file": "atlas/block_49265286/runtime/0xfdc6550436dd75ce8a0b145f935b7d3a64f53248.hex",
+      "sha256": "f459de55cb0463912417650fbca7e18109f3820551e4071234109e1e72801d2f"
+    }
+  },
+  "chain_id": 999,
+  "counts": {
+    "added": 26,
+    "changed_entry_pc": 150,
+    "removed": 3,
+    "runtimes": 5,
+    "same_entry_pc": 0,
+    "selectors": 176,
+    "unresolved_added": [
+      "0x06c5308a",
+      "0x122b6689",
+      "0x4ec7182e",
+      "0xb9370332",
+      "0xcbce7532",
+      "0xd95208cd",
+      "0xd970fad5",
+      "0xe6ac4a74",
+      "0xeedf4c43",
+      "0xf009ac03"
+    ],
+    "unresolved_added_selectors": 10,
+    "unresolved_removed": [
+      "0x82296364",
+      "0xef1a27a9"
+    ],
+    "unresolved_removed_selectors": 2
+  },
+  "delta": {
+    "0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946": {
+      "added": [
+        {
+          "candidate_signature": "setBuilderRegistry(address)",
+          "entry_pc": 936,
+          "selector": "0xbd322efa"
+        },
+        {
+          "candidate_signature": "",
+          "entry_pc": 536,
+          "selector": "0xd95208cd"
+        },
+        {
+          "candidate_signature": "builderRegistry()",
+          "entry_pc": 496,
+          "selector": "0xe737de13"
+        }
+      ],
+      "changed_entry_pc": [
+        {
+          "entry_pc": 3117,
+          "pinned_entry_pc": 2787,
+          "selector": "0x0b4c3a82"
+        },
+        {
+          "entry_pc": 3041,
+          "pinned_entry_pc": 2711,
+          "selector": "0x17a1678f"
+        },
+        {
+          "entry_pc": 2983,
+          "pinned_entry_pc": 2653,
+          "selector": "0x208e24fc"
+        },
+        {
+          "entry_pc": 2944,
+          "pinned_entry_pc": 2614,
+          "selector": "0x2bc9ed54"
+        },
+        {
+          "entry_pc": 2914,
+          "pinned_entry_pc": 2584,
+          "selector": "0x3644e515"
+        },
+        {
+          "entry_pc": 2767,
+          "pinned_entry_pc": 2437,
+          "selector": "0x5197a0d3"
+        },
+        {
+          "entry_pc": 2068,
+          "pinned_entry_pc": 1912,
+          "selector": "0x5f76a1d6"
+        },
+        {
+          "entry_pc": 2010,
+          "pinned_entry_pc": 1854,
+          "selector": "0x6525a680"
+        },
+        {
+          "entry_pc": 1643,
+          "pinned_entry_pc": 1487,
+          "selector": "0x747b8a1c"
+        },
+        {
+          "entry_pc": 1593,
+          "pinned_entry_pc": 1437,
+          "selector": "0x78e890ba"
+        },
+        {
+          "entry_pc": 1538,
+          "pinned_entry_pc": 1382,
+          "selector": "0x7ecebe00"
+        },
+        {
+          "entry_pc": 1490,
+          "pinned_entry_pc": 1222,
+          "selector": "0x7f608253"
+        },
+        {
+          "entry_pc": 1430,
+          "pinned_entry_pc": 1162,
+          "selector": "0x7f6e9d4b"
+        },
+        {
+          "entry_pc": 1334,
+          "pinned_entry_pc": 1066,
+          "selector": "0x84f4fc6a"
+        },
+        {
+          "entry_pc": 1294,
+          "pinned_entry_pc": 1026,
+          "selector": "0x8da5cb5b"
+        },
+        {
+          "entry_pc": 1198,
+          "pinned_entry_pc": 930,
+          "selector": "0x96ade1f9"
+        },
+        {
+          "entry_pc": 1158,
+          "pinned_entry_pc": 890,
+          "selector": "0x97dc97cb"
+        },
+        {
+          "entry_pc": 1045,
+          "pinned_entry_pc": 777,
+          "selector": "0xb002b9fa"
+        },
+        {
+          "entry_pc": 858,
+          "pinned_entry_pc": 699,
+          "selector": "0xc1e6613d"
+        },
+        {
+          "entry_pc": 782,
+          "pinned_entry_pc": 623,
+          "selector": "0xcab7e8eb"
+        },
+        {
+          "entry_pc": 692,
+          "pinned_entry_pc": 533,
+          "selector": "0xcf8fbec9"
+        },
+        {
+          "entry_pc": 622,
+          "pinned_entry_pc": 463,
+          "selector": "0xd45167d0"
+        },
+        {
+          "entry_pc": 432,
+          "pinned_entry_pc": 399,
+          "selector": "0xf2f59776"
+        },
+        {
+          "entry_pc": 328,
+          "pinned_entry_pc": 295,
+          "selector": "0xf2fde38b"
+        }
+      ],
+      "counts": {
+        "added": 3,
+        "changed_entry_pc": 24,
+        "removed": 0,
+        "same_entry_pc": 0
+      },
+      "pinned_counterpart": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "pinned_selectors": 24,
+      "removed": [],
+      "runtime": "0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946",
+      "same_entry_pc": [],
+      "selectors": 27
+    },
+    "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723": {
+      "added": [
+        {
+          "candidate_signature": "claimBuilderFees()",
+          "entry_pc": 9533,
+          "selector": "0x69f9a5f0"
+        },
+        {
+          "candidate_signature": "builderFees(address)",
+          "entry_pc": 7722,
+          "selector": "0x9d346583"
+        },
+        {
+          "candidate_signature": "",
+          "entry_pc": 5427,
+          "selector": "0xcbce7532"
+        },
+        {
+          "candidate_signature": "",
+          "entry_pc": 4860,
+          "selector": "0xd970fad5"
+        },
+        {
+          "candidate_signature": "",
+          "entry_pc": 4108,
+          "selector": "0xe6ac4a74"
+        },
+        {
+          "candidate_signature": "",
+          "entry_pc": 1743,
+          "selector": "0xf009ac03"
+        }
+      ],
+      "changed_entry_pc": [
+        {
+          "entry_pc": 13926,
+          "pinned_entry_pc": 16016,
+          "selector": "0x01681a62"
+        },
+        {
+          "entry_pc": 13894,
+          "pinned_entry_pc": 15984,
+          "selector": "0x01ad056f"
+        },
+        {
+          "entry_pc": 13792,
+          "pinned_entry_pc": 15882,
+          "selector": "0x060447aa"
+        },
+        {
+          "entry_pc": 13748,
+          "pinned_entry_pc": 15838,
+          "selector": "0x0b826190"
+        },
+        {
+          "entry_pc": 13722,
+          "pinned_entry_pc": 15812,
+          "selector": "0x0cdd5fc4"
+        },
+        {
+          "entry_pc": 13696,
+          "pinned_entry_pc": 15786,
+          "selector": "0x138e9de2"
+        },
+        {
+          "entry_pc": 13656,
+          "pinned_entry_pc": 15746,
+          "selector": "0x13dd495b"
+        },
+        {
+          "entry_pc": 13630,
+          "pinned_entry_pc": 15720,
+          "selector": "0x18715c9a"
+        },
+        {
+          "entry_pc": 13559,
+          "pinned_entry_pc": 15649,
+          "selector": "0x1afd17e9"
+        },
+        {
+          "entry_pc": 13509,
+          "pinned_entry_pc": 15599,
+          "selector": "0x1b7c1009"
+        },
+        {
+          "entry_pc": 13469,
+          "pinned_entry_pc": 15559,
+          "selector": "0x21f55a6c"
+        },
+        {
+          "entry_pc": 13429,
+          "pinned_entry_pc": 15519,
+          "selector": "0x24a3d622"
+        },
+        {
+          "entry_pc": 11778,
+          "pinned_entry_pc": 12606,
+          "selector": "0x2792e706"
+        },
+        {
+          "entry_pc": 11721,
+          "pinned_entry_pc": 12549,
+          "selector": "0x27e235e3"
+        },
+        {
+          "entry_pc": 11285,
+          "pinned_entry_pc": 12113,
+          "selector": "0x2d2451d1"
+        },
+        {
+          "entry_pc": 11239,
+          "pinned_entry_pc": 12067,
+          "selector": "0x2dcc7fce"
+        },
+        {
+          "entry_pc": 11209,
+          "pinned_entry_pc": 12037,
+          "selector": "0x31a39849"
+        },
+        {
+          "entry_pc": 11102,
+          "pinned_entry_pc": 11930,
+          "selector": "0x31a4956c"
+        },
+        {
+          "entry_pc": 11045,
+          "pinned_entry_pc": 11873,
+          "selector": "0x32faa570"
+        },
+        {
+          "entry_pc": 10988,
+          "pinned_entry_pc": 11816,
+          "selector": "0x3a21be03"
+        },
+        {
+          "entry_pc": 10884,
+          "pinned_entry_pc": 10668,
+          "selector": "0x48bde20c"
+        },
+        {
+          "entry_pc": 10854,
+          "pinned_entry_pc": 10638,
+          "selector": "0x48ee5e08"
+        },
+        {
+          "entry_pc": 10730,
+          "pinned_entry_pc": 10514,
+          "selector": "0x4a4d9eea"
+        },
+        {
+          "entry_pc": 10616,
+          "pinned_entry_pc": 10400,
+          "selector": "0x50c23fab"
+        },
+        {
+          "entry_pc": 10586,
+          "pinned_entry_pc": 10370,
+          "selector": "0x53ac4b66"
+        },
+        {
+          "entry_pc": 10551,
+          "pinned_entry_pc": 10335,
+          "selector": "0x53e23e2e"
+        },
+        {
+          "entry_pc": 10494,
+          "pinned_entry_pc": 10278,
+          "selector": "0x551306f3"
+        },
+        {
+          "entry_pc": 10425,
+          "pinned_entry_pc": 10209,
+          "selector": "0x58d3ec6a"
+        },
+        {
+          "entry_pc": 10206,
+          "pinned_entry_pc": 9990,
+          "selector": "0x599dc539"
+        },
+        {
+          "entry_pc": 9906,
+          "pinned_entry_pc": 9690,
+          "selector": "0x5ca4c0ea"
+        },
+        {
+          "entry_pc": 9876,
+          "pinned_entry_pc": 9660,
+          "selector": "0x5fb3b1b5"
+        },
+        {
+          "entry_pc": 9846,
+          "pinned_entry_pc": 9630,
+          "selector": "0x61d027b3"
+        },
+        {
+          "entry_pc": 9641,
+          "pinned_entry_pc": 9425,
+          "selector": "0x628a9fd6"
+        },
+        {
+          "entry_pc": 9558,
+          "pinned_entry_pc": 9342,
+          "selector": "0x63ca348f"
+        },
+        {
+          "entry_pc": 9487,
+          "pinned_entry_pc": 9296,
+          "selector": "0x6a3214c9"
+        },
+        {
+          "entry_pc": 9453,
+          "pinned_entry_pc": 9262,
+          "selector": "0x6d142da1"
+        },
+        {
+          "entry_pc": 9422,
+          "pinned_entry_pc": 9231,
+          "selector": "0x6d60ae8e"
+        },
+        {
+          "entry_pc": 9388,
+          "pinned_entry_pc": 9197,
+          "selector": "0x70f75ff5"
+        },
+        {
+          "entry_pc": 9245,
+          "pinned_entry_pc": 9054,
+          "selector": "0x753a369c"
+        },
+        {
+          "entry_pc": 9220,
+          "pinned_entry_pc": 9029,
+          "selector": "0x7b9f5264"
+        },
+        {
+          "entry_pc": 9187,
+          "pinned_entry_pc": 8996,
+          "selector": "0x7d004aeb"
+        },
+        {
+          "entry_pc": 9146,
+          "pinned_entry_pc": 8955,
+          "selector": "0x7dc0d1d0"
+        },
+        {
+          "entry_pc": 9089,
+          "pinned_entry_pc": 8898,
+          "selector": "0x7e4174fc"
+        },
+        {
+          "entry_pc": 9050,
+          "pinned_entry_pc": 8859,
+          "selector": "0x7f99545a"
+        },
+        {
+          "entry_pc": 8921,
+          "pinned_entry_pc": 8730,
+          "selector": "0x827ad94c"
+        },
+        {
+          "entry_pc": 8705,
+          "pinned_entry_pc": 8514,
+          "selector": "0x82f47a3f"
+        },
+        {
+          "entry_pc": 8590,
+          "pinned_entry_pc": 8399,
+          "selector": "0x837fa3fd"
+        },
+        {
+          "entry_pc": 8486,
+          "pinned_entry_pc": 8295,
+          "selector": "0x86d506db"
+        },
+        {
+          "entry_pc": 8461,
+          "pinned_entry_pc": 8270,
+          "selector": "0x88f2aea5"
+        },
+        {
+          "entry_pc": 8431,
+          "pinned_entry_pc": 8240,
+          "selector": "0x899346c7"
+        },
+        {
+          "entry_pc": 8059,
+          "pinned_entry_pc": 7791,
+          "selector": "0x8d09f23f"
+        },
+        {
+          "entry_pc": 8016,
+          "pinned_entry_pc": 7748,
+          "selector": "0x8da5cb5b"
+        },
+        {
+          "entry_pc": 7975,
+          "pinned_entry_pc": 7707,
+          "selector": "0x9274682e"
+        },
+        {
+          "entry_pc": 7945,
+          "pinned_entry_pc": 7677,
+          "selector": "0x96523644"
+        },
+        {
+          "entry_pc": 7779,
+          "pinned_entry_pc": 7511,
+          "selector": "0x99fbab88"
+        },
+        {
+          "entry_pc": 7681,
+          "pinned_entry_pc": 7470,
+          "selector": "0x9d47d4d3"
+        },
+        {
+          "entry_pc": 7577,
+          "pinned_entry_pc": 7366,
+          "selector": "0xa0bf0f75"
+        },
+        {
+          "entry_pc": 7403,
+          "pinned_entry_pc": 7192,
+          "selector": "0xa25dc87f"
+        },
+        {
+          "entry_pc": 7362,
+          "pinned_entry_pc": 7151,
+          "selector": "0xa69a2ad1"
+        },
+        {
+          "entry_pc": 7164,
+          "pinned_entry_pc": 6953,
+          "selector": "0xae4daf4e"
+        },
+        {
+          "entry_pc": 6998,
+          "pinned_entry_pc": 6780,
+          "selector": "0xae69b95b"
+        },
+        {
+          "entry_pc": 6970,
+          "pinned_entry_pc": 6752,
+          "selector": "0xaf210ecc"
+        },
+        {
+          "entry_pc": 6929,
+          "pinned_entry_pc": 6711,
+          "selector": "0xafdf6702"
+        },
+        {
+          "entry_pc": 6878,
+          "pinned_entry_pc": 6660,
+          "selector": "0xb3060d36"
+        },
+        {
+          "entry_pc": 6844,
+          "pinned_entry_pc": 6626,
+          "selector": "0xbacd9ea0"
+        },
+        {
+          "entry_pc": 6320,
+          "pinned_entry_pc": 6105,
+          "selector": "0xc0c53b8b"
+        },
+        {
+          "entry_pc": 6279,
+          "pinned_entry_pc": 6064,
+          "selector": "0xc10f1a75"
+        },
+        {
+          "entry_pc": 6246,
+          "pinned_entry_pc": 6031,
+          "selector": "0xc43fbc8c"
+        },
+        {
+          "entry_pc": 6148,
+          "pinned_entry_pc": 5933,
+          "selector": "0xc8372577"
+        },
+        {
+          "entry_pc": 5569,
+          "pinned_entry_pc": 5358,
+          "selector": "0xc88bbcf3"
+        },
+        {
+          "entry_pc": 5460,
+          "pinned_entry_pc": 5249,
+          "selector": "0xcb163b03"
+        },
+        {
+          "entry_pc": 5386,
+          "pinned_entry_pc": 5208,
+          "selector": "0xcbeb5f3d"
+        },
+        {
+          "entry_pc": 5232,
+          "pinned_entry_pc": 5054,
+          "selector": "0xcd2d3811"
+        },
+        {
+          "entry_pc": 5128,
+          "pinned_entry_pc": 4950,
+          "selector": "0xd188c049"
+        },
+        {
+          "entry_pc": 4911,
+          "pinned_entry_pc": 4733,
+          "selector": "0xd7c7e5fb"
+        },
+        {
+          "entry_pc": 4694,
+          "pinned_entry_pc": 4567,
+          "selector": "0xdc8a47ef"
+        },
+        {
+          "entry_pc": 4637,
+          "pinned_entry_pc": 4510,
+          "selector": "0xdcab7f6a"
+        },
+        {
+          "entry_pc": 4598,
+          "pinned_entry_pc": 4471,
+          "selector": "0xddc63262"
+        },
+        {
+          "entry_pc": 4564,
+          "pinned_entry_pc": 4437,
+          "selector": "0xe0189108"
+        },
+        {
+          "entry_pc": 4523,
+          "pinned_entry_pc": 4396,
+          "selector": "0xe1f9209b"
+        },
+        {
+          "entry_pc": 4351,
+          "pinned_entry_pc": 4224,
+          "selector": "0xe538b280"
+        },
+        {
+          "entry_pc": 4310,
+          "pinned_entry_pc": 4183,
+          "selector": "0xe53e3de6"
+        },
+        {
+          "entry_pc": 4222,
+          "pinned_entry_pc": 4095,
+          "selector": "0xe634384f"
+        },
+        {
+          "entry_pc": 4078,
+          "pinned_entry_pc": 4065,
+          "selector": "0xec0bdcfc"
+        },
+        {
+          "entry_pc": 1925,
+          "pinned_entry_pc": 1833,
+          "selector": "0xec6783f0"
+        },
+        {
+          "entry_pc": 1884,
+          "pinned_entry_pc": 1792,
+          "selector": "0xed410ee1"
+        },
+        {
+          "entry_pc": 1780,
+          "pinned_entry_pc": 1688,
+          "selector": "0xefc1bd46"
+        },
+        {
+          "entry_pc": 1713,
+          "pinned_entry_pc": 1658,
+          "selector": "0xf1a8786c"
+        },
+        {
+          "entry_pc": 1677,
+          "pinned_entry_pc": 1622,
+          "selector": "0xf28bbdb2"
+        },
+        {
+          "entry_pc": 1581,
+          "pinned_entry_pc": 1526,
+          "selector": "0xf2fde38b"
+        },
+        {
+          "entry_pc": 1471,
+          "pinned_entry_pc": 1416,
+          "selector": "0xf37d3c4f"
+        },
+        {
+          "entry_pc": 1429,
+          "pinned_entry_pc": 1374,
+          "selector": "0xf728fc98"
+        },
+        {
+          "entry_pc": 1373,
+          "pinned_entry_pc": 1318,
+          "selector": "0xf84a74d3"
+        },
+        {
+          "entry_pc": 1328,
+          "pinned_entry_pc": 1273,
+          "selector": "0xfb9f1009"
+        },
+        {
+          "entry_pc": 1224,
+          "pinned_entry_pc": 1169,
+          "selector": "0xfbddd751"
+        },
+        {
+          "entry_pc": 1189,
+          "pinned_entry_pc": 1134,
+          "selector": "0xfdfd905d"
+        },
+        {
+          "entry_pc": 1159,
+          "pinned_entry_pc": 1104,
+          "selector": "0xff3bc415"
+        }
+      ],
+      "counts": {
+        "added": 6,
+        "changed_entry_pc": 97,
+        "removed": 1,
+        "same_entry_pc": 0
+      },
+      "pinned_counterpart": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "pinned_selectors": 98,
+      "removed": [
+        {
+          "candidate_signature": "liquidate(uint256)",
+          "selector": "0x415f1240"
+        }
+      ],
+      "runtime": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+      "same_entry_pc": [],
+      "selectors": 103
+    },
+    "0x583d0bd818c991c5830fea93aef04e474b272459": {
+      "added": [
+        {
+          "candidate_signature": "",
+          "entry_pc": 2213,
+          "selector": "0x06c5308a"
+        },
+        {
+          "candidate_signature": "",
+          "entry_pc": 239,
+          "selector": "0xb9370332"
+        }
+      ],
+      "changed_entry_pc": [
+        {
+          "entry_pc": 2188,
+          "pinned_entry_pc": 2616,
+          "selector": "0x18958ce2"
+        },
+        {
+          "entry_pc": 2159,
+          "pinned_entry_pc": 2587,
+          "selector": "0x2448a553"
+        },
+        {
+          "entry_pc": 1698,
+          "pinned_entry_pc": 2146,
+          "selector": "0x32db40c9"
+        },
+        {
+          "entry_pc": 1131,
+          "pinned_entry_pc": 1579,
+          "selector": "0x3cf4208d"
+        },
+        {
+          "entry_pc": 855,
+          "pinned_entry_pc": 1303,
+          "selector": "0x3f4e3626"
+        },
+        {
+          "entry_pc": 441,
+          "pinned_entry_pc": 889,
+          "selector": "0x79810ffe"
+        },
+        {
+          "entry_pc": 362,
+          "pinned_entry_pc": 349,
+          "selector": "0xb67f3dd7"
+        },
+        {
+          "entry_pc": 170,
+          "pinned_entry_pc": 283,
+          "selector": "0xca02ff91"
+        }
+      ],
+      "counts": {
+        "added": 2,
+        "changed_entry_pc": 8,
+        "removed": 2,
+        "same_entry_pc": 0
+      },
+      "pinned_counterpart": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "pinned_selectors": 10,
+      "removed": [
+        {
+          "candidate_signature": "",
+          "selector": "0x82296364"
+        },
+        {
+          "candidate_signature": "",
+          "selector": "0xef1a27a9"
+        }
+      ],
+      "runtime": "0x583d0bd818c991c5830fea93aef04e474b272459",
+      "same_entry_pc": [],
+      "selectors": 10
+    },
+    "0x7c0a72a788cff4d68cfe9586aecb98e21eb58a03": {
+      "added": [
+        {
+          "candidate_signature": "",
+          "entry_pc": 2293,
+          "selector": "0x122b6689"
+        },
+        {
+          "candidate_signature": "insolventSince()",
+          "entry_pc": 2023,
+          "selector": "0x456db972"
+        },
+        {
+          "candidate_signature": "",
+          "entry_pc": 1610,
+          "selector": "0x4ec7182e"
+        },
+        {
+          "candidate_signature": "activateRebate()",
+          "entry_pc": 1093,
+          "selector": "0x85eb2a08"
+        },
+        {
+          "candidate_signature": "",
+          "entry_pc": 476,
+          "selector": "0xeedf4c43"
+        }
+      ],
+      "changed_entry_pc": [
+        {
+          "entry_pc": 2333,
+          "pinned_entry_pc": 1639,
+          "selector": "0x0efdf838"
+        },
+        {
+          "entry_pc": 2097,
+          "pinned_entry_pc": 1431,
+          "selector": "0x12baae3b"
+        },
+        {
+          "entry_pc": 2067,
+          "pinned_entry_pc": 1401,
+          "selector": "0x1c3972ba"
+        },
+        {
+          "entry_pc": 593,
+          "pinned_entry_pc": 503,
+          "selector": "0x3886cade"
+        },
+        {
+          "entry_pc": 1702,
+          "pinned_entry_pc": 1080,
+          "selector": "0x485cc955"
+        },
+        {
+          "entry_pc": 1540,
+          "pinned_entry_pc": 1010,
+          "selector": "0x7c7df7b4"
+        },
+        {
+          "entry_pc": 1063,
+          "pinned_entry_pc": 980,
+          "selector": "0x8cf554a7"
+        },
+        {
+          "entry_pc": 1020,
+          "pinned_entry_pc": 937,
+          "selector": "0x8da5cb5b"
+        },
+        {
+          "entry_pc": 980,
+          "pinned_entry_pc": 897,
+          "selector": "0x98255e15"
+        },
+        {
+          "entry_pc": 952,
+          "pinned_entry_pc": 862,
+          "selector": "0xae745703"
+        },
+        {
+          "entry_pc": 922,
+          "pinned_entry_pc": 832,
+          "selector": "0xc16017ca"
+        },
+        {
+          "entry_pc": 863,
+          "pinned_entry_pc": 773,
+          "selector": "0xc218c676"
+        },
+        {
+          "entry_pc": 833,
+          "pinned_entry_pc": 743,
+          "selector": "0xcbb451da"
+        },
+        {
+          "entry_pc": 793,
+          "pinned_entry_pc": 703,
+          "selector": "0xd2f7265a"
+        },
+        {
+          "entry_pc": 762,
+          "pinned_entry_pc": 672,
+          "selector": "0xdb006a75"
+        },
+        {
+          "entry_pc": 734,
+          "pinned_entry_pc": 644,
+          "selector": "0xdc5682d2"
+        },
+        {
+          "entry_pc": 623,
+          "pinned_entry_pc": 533,
+          "selector": "0xe6ee2285"
+        },
+        {
+          "entry_pc": 593,
+          "pinned_entry_pc": 503,
+          "selector": "0xe9ed73e9"
+        },
+        {
+          "entry_pc": 511,
+          "pinned_entry_pc": 421,
+          "selector": "0xed722c96"
+        },
+        {
+          "entry_pc": 351,
+          "pinned_entry_pc": 296,
+          "selector": "0xf2fde38b"
+        },
+        {
+          "entry_pc": 317,
+          "pinned_entry_pc": 262,
+          "selector": "0xfe16eae8"
+        }
+      ],
+      "counts": {
+        "added": 5,
+        "changed_entry_pc": 21,
+        "removed": 0,
+        "same_entry_pc": 0
+      },
+      "pinned_counterpart": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "pinned_selectors": 21,
+      "removed": [],
+      "runtime": "0x7c0a72a788cff4d68cfe9586aecb98e21eb58a03",
+      "same_entry_pc": [],
+      "selectors": 26
+    },
+    "0xfdc6550436dd75ce8a0b145f935b7d3a64f53248": {
+      "added": [
+        {
+          "candidate_signature": "guardian()",
+          "entry_pc": 1121,
+          "selector": "0x452a9320"
+        },
+        {
+          "candidate_signature": "setFeeRate(uint64)",
+          "entry_pc": 942,
+          "selector": "0x459770f6"
+        },
+        {
+          "candidate_signature": "approveBuilder(address)",
+          "entry_pc": 799,
+          "selector": "0x54dc2a02"
+        },
+        {
+          "candidate_signature": "isApproved(address)",
+          "entry_pc": 735,
+          "selector": "0x673448dd"
+        },
+        {
+          "candidate_signature": "setGuardian(address)",
+          "entry_pc": 615,
+          "selector": "0x8a0dac4a"
+        },
+        {
+          "candidate_signature": "owner()",
+          "entry_pc": 576,
+          "selector": "0x8da5cb5b"
+        },
+        {
+          "candidate_signature": "feeRate()",
+          "entry_pc": 532,
+          "selector": "0x978bbdb9"
+        },
+        {
+          "candidate_signature": "feeRateOf(address)",
+          "entry_pc": 431,
+          "selector": "0xd779e270"
+        },
+        {
+          "candidate_signature": "removeBuilder(address)",
+          "entry_pc": 286,
+          "selector": "0xec969386"
+        },
+        {
+          "candidate_signature": "transferOwnership(address)",
+          "entry_pc": 141,
+          "selector": "0xf2fde38b"
+        }
+      ],
+      "changed_entry_pc": [],
+      "counts": {
+        "added": 10,
+        "changed_entry_pc": 0,
+        "removed": 0,
+        "same_entry_pc": 0
+      },
+      "pinned_counterpart": null,
+      "pinned_selectors": 0,
+      "removed": [],
+      "runtime": "0xfdc6550436dd75ce8a0b145f935b7d3a64f53248",
+      "same_entry_pc": [],
+      "selectors": 10
+    }
+  },
+  "method": "dispatcher decoded on the exact saved runtime bytes as PUSH4 <selector> EQ PUSH2 <entry> JUMPI; argument widths from the entry's own calldatasize guard, falling back to cast inference on the same bytes",
+  "runtime_file_base": "repo_root",
+  "unknowns": [
+    "12 selectors the refresh moved have no hash-matched public name: 0x06c5308a, 0x122b6689, 0x4ec7182e, 0xb9370332, 0xcbce7532, 0xd95208cd, 0xd970fad5, 0xe6ac4a74, 0xeedf4c43, 0xf009ac03 added, 0x82296364, 0xef1a27a9 dropped",
+    "no verified source exists for any post-refresh runtime; candidate names only hash-match the selector bytes",
+    "the baseline's reconstructed names are carried as hypotheses for the new runtimes; they were derived from the pinned bytes and are not re-proven here"
+  ]
+}

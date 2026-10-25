@@ -1,0 +1,43 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+  "implementation": "0x557c853e100600e0ee91e0df88fcf4af0097ff89",
+  "factory": "0x36365dc6bd9513692978e4ea8f3117a7bae55f28",
+  "clear_selector": "0x2362f4de",
+  "reconcile_selector": "0x6a3214c9",
+  "static_checks": {
+    "older_implementation_sha256": "c638df78f1a2957b5cdab1d7f33a162cdfeaba06926fbfdfd6f325c6ccf466c3",
+    "newest_implementation_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+    "older_selector_count": 96,
+    "newer_selector_count": 98,
+    "older_only_selectors": [
+      "0x2362f4de",
+      "0x6155be59",
+      "0xb29af6b0",
+      "0xf92576b1"
+    ],
+    "newer_only_selectors": [
+      "0x1b7c1009",
+      "0x6d60ae8e",
+      "0x82f47a3f",
+      "0x86d506db",
+      "0x88f2aea5",
+      "0xcbeb5f3d"
+    ],
+    "clear_dispatch_pc": 14373
+  },
+  "test_names": [
+    "testClearThenReconcile",
+    "testNoPendingRejects",
+    "testOutsiderCannotClear",
+    "testOwnerClearsPending"
+  ],
+  "test_source_sha256": "8f2bac02a3e31063b6d23070cef20e4b40243c8754a375d85f668cb3a22cad9e",
+  "forge_result": "4 passed, 0 failed",
+  "limits": [
+    "The owner, proxy, and factory addresses are pinned, while the pending word and accounting amounts are constructed local state.",
+    "The factory proxyOf(address) response is mocked to the recorded older user proxy.",
+    "The replay proves the older implementation path; it does not add clearPendingSweep to the newest deployed implementation or test a historical clear transaction."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "implementation": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+  "runtime_sha256": "ed9d18151a9365c347ac7a9da7e83b53ecedac235d9e67c4b2699503a6bd4a97",
+  "selector": "0x7c7df7b4",
+  "source_name_status": "unresolved",
+  "minimum_calldata_bytes": 228,
+  "validated_words": {
+    "0x04": "address",
+    "0x64": "uint64",
+    "0x84": "uint8"
+  },
+  "other_word_types": "unresolved; selector tool inferred only five arguments despite the 224-byte argument-length check",
+  "error_selector": "0x32aa90b0",
+  "error_name_status": "unresolved",
+  "entry_pc": 1010,
+  "revert_pc": 1079,
+  "behavior": "canonical seven-word calls revert without storage reads, writes, logs, or external calls",
+  "local_replay_evidence": "../../artifacts/fixed_revert_local/replay.json",
+  "limits": [
+    "No archived pinned probe was saved for this selector.",
+    "The result applies to the pinned live implementation; a later upgrade could change behavior."
+  ]
+}

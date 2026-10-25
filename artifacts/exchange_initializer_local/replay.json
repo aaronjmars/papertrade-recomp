@@ -1,0 +1,19 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "selector": "0xc0c53b8b",
+  "test_names": [
+    "testFreshBadToken",
+    "testFreshCall",
+    "testFreshEightDecimals",
+    "testFreshEighteenDecimals",
+    "testFreshNineteenDecimals",
+    "testInitializedCall"
+  ],
+  "forge_result": "6 passed, 0 failed",
+  "runtime_hashes": {
+    "Proxy": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "Implementation": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1"
+  },
+  "test_source_sha256": "7422616c8ea4f72a0b86918b2cfbdd8fa77d1649eb0fead75f4397f227f31643"
+}

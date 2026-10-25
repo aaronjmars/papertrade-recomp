@@ -1,0 +1,258 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "raw_words": "exchange_storage_words.json",
+  "layout": {
+    "11": "nextPositionId() uint256",
+    "14": "treasury() numeric accounting amount; source integer width unresolved",
+    "16": "queueHead() uint256",
+    "18": "totalQueued() uint256",
+    "22": "totalBalances() low 128 bits; totalLockedMargin() high 128 bits",
+    "26": "stakerFeeAccumulator() low 128 bits; devFeeAccumulator() high 128 bits"
+  },
+  "getter_values": {
+    "nextPositionId()": 1394595,
+    "treasury()": 64930262855215540000000000,
+    "queueHead()": 4,
+    "totalQueued()": 0,
+    "totalBalances()": 50566343541298993602517829,
+    "totalLockedMargin()": 9361610942219029227606376,
+    "stakerFeeAccumulator()": 99505349031080845747,
+    "devFeeAccumulator()": 1240216616927083848377
+  },
+  "lpBankrollAvailable_formula": "0 if totalQueued > 0 else max(treasury - totalBalances - totalLockedMargin - stakerFeeAccumulator - devFeeAccumulator, 0)",
+  "lpBankrollAvailable_at_pin": 5000968649731559005181671,
+  "availability_override_evidence": "exchange_availability_behavior.json",
+  "fixture_correction": "treasury() returns an amount; the third-party ABI address output and prior state-address link are contradicted by pinned storage and exact accounting arithmetic",
+  "historical_transition_count": 14,
+  "historical_transitions": [
+    {
+      "tx": "0x08ef99988867832607e4d50d8eab4b08651b1f89664eeb5fa2ddab89b23761e3",
+      "block": 48901667,
+      "root_selector": "0x88f2aea5",
+      "root_role": "exchange_proxy",
+      "exchange_events": {
+        "DevFeesClaimed": 1
+      },
+      "deltas": {
+        "totalBalances()": 114890275671617164291236,
+        "totalLockedMargin()": 0,
+        "stakerFeeAccumulator()": 0,
+        "devFeeAccumulator()": -114890275671617164291236
+      }
+    },
+    {
+      "tx": "0x18da697c130733e097aac9bba5457949c1aa2f275fe1b292538d873c4cab1cd7",
+      "block": 48901640,
+      "root_selector": "0x251fb27d",
+      "root_role": "batch_executor_proxy",
+      "exchange_events": {
+        "PositionOpened": 3
+      },
+      "deltas": {
+        "nextPositionId()": 3,
+        "totalBalances()": -650000000000000000000,
+        "totalLockedMargin()": 650000000000000000000
+      }
+    },
+    {
+      "tx": "0x1fc54a082055d35c0b79b6fc5f6c2a7004840531f5bcb9b6ec4450a93be2384f",
+      "block": 48173887,
+      "root_selector": "0x251fb27d",
+      "root_role": "batch_executor_proxy",
+      "exchange_events": {
+        "PositionClosed": 1,
+        "PositionsClosed": 1,
+        "unknown": 1
+      },
+      "deltas": {
+        "totalQueued()": 7623942182351823589,
+        "totalBalances()": 45000000000000000000000,
+        "totalLockedMargin()": -45000000000000000000000
+      }
+    },
+    {
+      "tx": "0x20ee69d9f4191bff17d45a850a584d5803ca477986fd1684af985765d64d794b",
+      "block": 48173889,
+      "root_selector": "0x251fb27d",
+      "root_role": "batch_executor_proxy",
+      "exchange_events": {
+        "PositionClosed": 1,
+        "PositionsClosed": 1,
+        "unknown": 1
+      },
+      "deltas": {
+        "totalBalances()": 9599703780797790364871,
+        "totalLockedMargin()": -10000000000000000000000
+      }
+    },
+    {
+      "tx": "0x2f9333500c9e715e4c974f2c6bc7bb20ad3897ad6135d6d9788805fec95dc4e8",
+      "block": 48902093,
+      "root_selector": "0x6d142da1",
+      "root_role": "exchange_proxy",
+      "exchange_events": {
+        "Swept": 1
+      },
+      "deltas": {
+        "treasury()": 4999000000000000000000,
+        "totalBalances()": 4999000000000000000000,
+        "totalLockedMargin()": 0
+      }
+    },
+    {
+      "tx": "0x30639f82f9eb58fc815fb48b302ea732eed1bff5e755a92835b0b1f97c818acf",
+      "block": 48902090,
+      "root_selector": "0x251fb27d",
+      "root_role": "batch_executor_proxy",
+      "exchange_events": {
+        "PositionClosed": 1,
+        "PositionsClosed": 1
+      },
+      "deltas": {
+        "totalBalances()": 2506729337817564909731,
+        "totalLockedMargin()": -2500000000000000000000,
+        "stakerFeeAccumulator()": 68666712424131731,
+        "devFeeAccumulator()": 68666712424131732
+      }
+    },
+    {
+      "tx": "0x34b7ae5b487e74118446994402ec8f4651a1414ad1de75dcfe1f8267cc9854b9",
+      "block": 48902104,
+      "root_selector": "0x599dc539",
+      "root_role": "exchange_proxy",
+      "exchange_events": {
+        "Liquidated": 3,
+        "unknown": 1
+      },
+      "deltas": {
+        "totalBalances()": 0,
+        "totalLockedMargin()": -5110300000000000000000,
+        "stakerFeeAccumulator()": 51103000000000000000,
+        "devFeeAccumulator()": 51103000000000000000
+      }
+    },
+    {
+      "tx": "0x3bc7029ee0d72c5dbacfb74dddc183ddb6206adca6ed702014eb90c28cf2d39e",
+      "block": 48173881,
+      "root_selector": "0x251fb27d",
+      "root_role": "batch_executor_proxy",
+      "exchange_events": {
+        "PositionClosed": 1,
+        "PositionsClosed": 1,
+        "unknown": 1
+      },
+      "deltas": {
+        "queueHead()": 1,
+        "totalQueued()": 7623942182351823589,
+        "totalBalances()": 45000000000000000000000,
+        "totalLockedMargin()": -45000000000000000000000
+      }
+    },
+    {
+      "tx": "0x4214fa14d9c5bf46fade1c7f3ca8d242baefaa52426395b1840f43b626ee8a99",
+      "block": 48173890,
+      "root_selector": "0xddc63262",
+      "root_role": "exchange_proxy",
+      "exchange_events": {
+        "unknown": 4
+      },
+      "deltas": {
+        "queueHead()": 3,
+        "totalQueued()": -22871826547055470767,
+        "totalBalances()": 22871826547055470767,
+        "totalLockedMargin()": 0
+      }
+    },
+    {
+      "tx": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+      "block": 48901631,
+      "root_selector": "0x251fb27d",
+      "root_role": "batch_executor_proxy",
+      "exchange_events": {
+        "PositionClosed": 2,
+        "PositionsClosed": 2,
+        "unknown": 1
+      },
+      "deltas": {
+        "treasury()": -200000000000000000000,
+        "totalBalances()": 6567928557300228115213,
+        "totalLockedMargin()": -6750000000000000000000,
+        "stakerFeeAccumulator()": 857475611997304681,
+        "devFeeAccumulator()": 857475611997304683
+      }
+    },
+    {
+      "tx": "0xc7ba4aaf1bdda8e24c2c8a228e315f39a879e7c9c87786eb260fa07c09b99940",
+      "block": 48173885,
+      "root_selector": "0x251fb27d",
+      "root_role": "batch_executor_proxy",
+      "exchange_events": {
+        "PositionClosed": 1,
+        "PositionsClosed": 1,
+        "unknown": 1
+      },
+      "deltas": {
+        "totalQueued()": 7623942182351823589,
+        "totalBalances()": 45000000000000000000000,
+        "totalLockedMargin()": -45000000000000000000000
+      }
+    },
+    {
+      "tx": "0xe0ea5b8a58372efb4073ea804f4bef5a2a078805f0d9058fd451925ac8f47bfc",
+      "block": 48173989,
+      "root_selector": "0x7b9f5264",
+      "root_role": "exchange_proxy",
+      "exchange_events": {
+        "unknown": 1
+      },
+      "deltas": {
+        "totalBalances()": 139854022874080319504,
+        "totalLockedMargin()": 0,
+        "stakerFeeAccumulator()": -139854022874080319504,
+        "devFeeAccumulator()": 0
+      }
+    },
+    {
+      "tx": "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d",
+      "block": 48901640,
+      "root_selector": "0x251fb27d",
+      "root_role": "batch_executor_proxy",
+      "exchange_events": {
+        "PositionClosed": 2,
+        "PositionsClosed": 2,
+        "StakingRewardCredited": 1
+      },
+      "deltas": {
+        "totalBalances()": 305962283422573696841,
+        "totalLockedMargin()": -304968121105980250774,
+        "stakerFeeAccumulator()": 10144513434627000,
+        "devFeeAccumulator()": 10144513434627001
+      }
+    },
+    {
+      "tx": "0xfd38402f39c844a944aa8a9aa8b3b7d89fb45a101593273b17b14a2f8b0fdc04",
+      "block": 48901631,
+      "root_selector": "0x599dc539",
+      "root_role": "exchange_proxy",
+      "exchange_events": {
+        "Liquidated": 3,
+        "unknown": 1
+      },
+      "deltas": {
+        "totalBalances()": 0,
+        "totalLockedMargin()": -2054750000000000000000,
+        "stakerFeeAccumulator()": 20547500000000000000,
+        "devFeeAccumulator()": 20547500000000000000
+      }
+    }
+  ],
+  "limits": [
+    "Raw storage and return values prove the six-slot layout at the pin, not the Solidity variable names or types in source.",
+    "Pinned storage establishes the base reserve identity; 11 separate storage-override states test the queue gate and saturation branches in exchange_availability_behavior.json.",
+    "Transaction deltas are decoded only for saved historical state diffs; they do not establish every write path or update ordering.",
+    "A pre or post word omitted by the diff-mode tracer is decoded as zero; this occurs in three saved slot transitions.",
+    "Exchange event names are hash-checked against a third-party ABI fixture; some indexed declarations in that fixture are wrong."
+  ]
+}

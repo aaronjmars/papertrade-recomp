@@ -1,0 +1,37 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "runtime_hashes": {
+    "Proxy": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "Implementation": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1"
+  },
+  "test_names": [
+    "testGuardianPause",
+    "testGuardianResume",
+    "testInvalidBoolEncoding",
+    "testMarketPauseGuardian",
+    "testMarketPauseInvalidId",
+    "testMarketPauseOutsider",
+    "testMarketPauseOwner",
+    "testMarketPauseRepeat",
+    "testOutsiderCannotChangeGuardian",
+    "testOutsiderPause",
+    "testOwnerPauseAndResume",
+    "testOwnerUpdatesGuardian",
+    "testPinnedGetters"
+  ],
+  "forge_result": "13 passed, 0 failed",
+  "test_source_sha256": "2aed9b807bc05f472c12516cbe85e40df63f4b9c6e1516c1cf0465e531306865",
+  "archived_slot29": "0x00000000000000000000008326eb8896e358717f10502ec73ce8d28e37b10800",
+  "historical_guardian_transaction": "0x24b978eacabde6c6b459011ce8c78b25bf97a74a41d51a486324492fdba48c21",
+  "mock_oracle_getBBO_asset": 0,
+  "mock_oracle_bid_ask": [
+    1000000000,
+    1100000000
+  ],
+  "method": "port-free Forge tests with exact pinned proxy and implementation bytecode, pinned getter values, and archived packed pause slot",
+  "limits": [
+    "No historical setTradingPaused or pauseMarket call is in the saved transaction sample.",
+    "Market-pause success used a mock Oracle; effects on subsequent trading were not tested."
+  ]
+}

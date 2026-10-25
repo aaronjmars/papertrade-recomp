@@ -1,0 +1,49 @@
+{
+  "hash": "0xe0ea5b8a58372efb4073ea804f4bef5a2a078805f0d9058fd451925ac8f47bfc",
+  "block": 48173989,
+  "status": 1,
+  "calls": [
+    {
+      "depth": 0,
+      "type": "CALL",
+      "from": "0x89ab620bee7e1ec675eec5291cba3686d9e059bf",
+      "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "selector": "0x7b9f5264",
+      "gas_used": "0x14453",
+      "error": null
+    },
+    {
+      "depth": 1,
+      "type": "DELEGATECALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x7b9f5264",
+      "gas_used": "0xde9e",
+      "error": null
+    },
+    {
+      "depth": 2,
+      "type": "STATICCALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+      "selector": "0xae745703",
+      "gas_used": "0x2586",
+      "error": null
+    },
+    {
+      "depth": 3,
+      "type": "DELEGATECALL",
+      "from": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+      "to": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "selector": "0xae745703",
+      "gas_used": "0x1216",
+      "error": null
+    }
+  ],
+  "logs": [
+    {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "topic0": "0x18d8b7951a20bbcb2b5f45b29bb62a81963f4b1f75dac5e2493a885a6de74291"
+    }
+  ]
+}

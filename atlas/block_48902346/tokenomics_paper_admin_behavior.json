@@ -1,0 +1,38 @@
+{
+  "pin_block": 48902346,
+  "tokenomics_proxy": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+  "implementation": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+  "historical_transaction": "0xbc7591dde3758def9f7e8c9453f1626e7bbb171c76b29c49f45b10cb270ee15f",
+  "selector_reconstructions": {
+    "0xe6ee2285": "setPaperToken(address)",
+    "0x98255e15": "paperToken()"
+  },
+  "event_catalog": [
+    {
+      "topic0": "0x430bfdc2fc284dd0409a30c5119cc184eb9971421e45c37bc9904ce47fb2ffef",
+      "reconstructed_signature": "PaperTokenUpdated(address)",
+      "status": "observed_historical",
+      "indexed_fields": [
+        "paperToken"
+      ],
+      "data_fields": []
+    }
+  ],
+  "storage_slot": 2,
+  "current_value": "0xe40f17915daa230324030003a197cdaef2261c0e",
+  "probe_count": 4,
+  "owner_can_set_zero_at_pin": true,
+  "simulated_error_catalog": [
+    {
+      "selector": "0x30cd7471",
+      "reconstructed_signature": "NotOwner()",
+      "probe_paths": [
+        "outsider_other"
+      ]
+    }
+  ],
+  "limits": [
+    "Zero-address acceptance is a pinned read-only simulation, not an on-chain update.",
+    "The setter's downstream behavior after changing the token address was not replayed."
+  ]
+}

@@ -1,0 +1,821 @@
+{
+  "0x1629b7d46bef6e13ff754174fc9f32dea309b38f": {
+    "role": "deposit_proxy_factory_proxy",
+    "pages": [
+      {
+        "order": "asc",
+        "count": 1000,
+        "first_block": 47855071,
+        "last_block": 48030176
+      },
+      {
+        "order": "desc",
+        "count": 1000,
+        "first_block": 48902289,
+        "last_block": 48776005
+      }
+    ],
+    "sampled_unique_transactions": 1999,
+    "selectors": {
+      "0xcbd433f4": {
+        "sample_count": 1998,
+        "first": {
+          "hash": "0x19ea567c276c8a4ec2265a1ba78d0eed2aef06504ff5184957500e1f3173b8e5",
+          "block": 47920886,
+          "selector": "0xcbd433f4",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x1a6ac761fc4de29c2a4a8478c529786d08092fc388eb58abc4bf1b9f4b9d8497",
+          "block": 48902289,
+          "selector": "0xcbd433f4",
+          "status": 1
+        }
+      },
+      "0xf2fde38b": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0xe355a2b7873bb10fb86397e5a069d0ded85ebcefcae3f44354226d11b7974b3c",
+          "block": 47855567,
+          "selector": "0xf2fde38b",
+          "status": 1
+        },
+        "last": {
+          "hash": "0xe355a2b7873bb10fb86397e5a069d0ded85ebcefcae3f44354226d11b7974b3c",
+          "block": 47855567,
+          "selector": "0xf2fde38b",
+          "status": 1
+        }
+      }
+    }
+  },
+  "0x233ff29b239abc1d7748605da9b205c3e008626e": {
+    "role": "batch_executor_proxy",
+    "pages": [
+      {
+        "order": "asc",
+        "count": 1000,
+        "first_block": 47855140,
+        "last_block": 48042511
+      },
+      {
+        "order": "desc",
+        "count": 1000,
+        "first_block": 48902346,
+        "last_block": 48901828
+      }
+    ],
+    "sampled_unique_transactions": 1999,
+    "selectors": {
+      "0x251fb27d": {
+        "sample_count": 1996,
+        "first": {
+          "hash": "0xe72ee5dbc68b569e138e3c316fa5500da9273a65f5bf687fccd4cabfc8de9e18",
+          "block": 47920920,
+          "selector": "0x251fb27d",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x517028f1b1e9e52407123af9b45f09624545ddb41c4c0a2b70ab26823fec565c",
+          "block": 48902346,
+          "selector": "0x251fb27d",
+          "status": 1
+        }
+      },
+      "0x9011e5f9": {
+        "sample_count": 2,
+        "first": {
+          "hash": "0x303956400b3cd1c4ed86cf3644975a5f8b1ea2f3e487bad7da21d49689d52b6f",
+          "block": 47855336,
+          "selector": "0x9011e5f9",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x733d855d778b9d972a6949af705f094da657f84f2b71381539095086f913e4e4",
+          "block": 47855338,
+          "selector": "0x9011e5f9",
+          "status": 1
+        }
+      },
+      "0xf2fde38b": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0xd928f58d081c09d5600715814814b78ed5256ae3b1a54f11d822deaa9c0e2049",
+          "block": 47855572,
+          "selector": "0xf2fde38b",
+          "status": 1
+        },
+        "last": {
+          "hash": "0xd928f58d081c09d5600715814814b78ed5256ae3b1a54f11d822deaa9c0e2049",
+          "block": 47855572,
+          "selector": "0xf2fde38b",
+          "status": 1
+        }
+      }
+    }
+  },
+  "0x696292762fd5ac3677a45edbe54eaece4194d1f6": {
+    "role": "one_of_two_multisig",
+    "pages": [
+      {
+        "order": "asc",
+        "count": 14,
+        "first_block": 47855493,
+        "last_block": 48424260
+      },
+      {
+        "order": "desc",
+        "count": 14,
+        "first_block": 48424260,
+        "last_block": 47855493
+      }
+    ],
+    "sampled_unique_transactions": 13,
+    "selectors": {
+      "0x735631ad": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0x2bf67d90d55d54a85a816c4b14e2d9600d65485433817813930a7180f929c5da",
+          "block": 48378917,
+          "selector": "0x735631ad",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x2bf67d90d55d54a85a816c4b14e2d9600d65485433817813930a7180f929c5da",
+          "block": 48378917,
+          "selector": "0x735631ad",
+          "status": 1
+        }
+      },
+      "0x7b1106de": {
+        "sample_count": 5,
+        "first": {
+          "hash": "0x91a5aceb71f4206f06ec4296bf72f30fba5e06c1821e0b7922903f42074f4338",
+          "block": 47938364,
+          "selector": "0x7b1106de",
+          "status": 1
+        },
+        "last": {
+          "hash": "0xaf249b3026095cf88596606c20939e02f20d75c3d160b4353422d0d3cd5d2d61",
+          "block": 48424260,
+          "selector": "0x7b1106de",
+          "status": 1
+        }
+      },
+      "0xc6427474": {
+        "sample_count": 7,
+        "first": {
+          "hash": "0x6b2e72c03cf0ca16b43cd9ee8c3123ef088e4a466ae421a8a63e43aaa2e8f7db",
+          "block": 47938188,
+          "selector": "0xc6427474",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x4175f8acef9a17ac2da927c8e0a0545b2476be58660b5963f5b9b390469ea795",
+          "block": 48424028,
+          "selector": "0xc6427474",
+          "status": 1
+        }
+      }
+    }
+  },
+  "0x6cd5661646289fb6e65ea5c032310fded797d0a2": {
+    "role": "exchange_proxy",
+    "pages": [
+      {
+        "order": "asc",
+        "count": 1000,
+        "first_block": 47854719,
+        "last_block": 48011120
+      },
+      {
+        "order": "desc",
+        "count": 1000,
+        "first_block": 48902344,
+        "last_block": 48898703
+      }
+    ],
+    "sampled_unique_transactions": 1999,
+    "selectors": {
+      "0x060447aa": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0x3b3eab1fccbd0600aa196edc066d57f2d7a64b5c691f8fb9078457fe9199c79a",
+          "block": 47855442,
+          "selector": "0x060447aa",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x3b3eab1fccbd0600aa196edc066d57f2d7a64b5c691f8fb9078457fe9199c79a",
+          "block": 47855442,
+          "selector": "0x060447aa",
+          "status": 1
+        }
+      },
+      "0x48bde20c": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0x24b978eacabde6c6b459011ce8c78b25bf97a74a41d51a486324492fdba48c21",
+          "block": 47855498,
+          "selector": "0x48bde20c",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x24b978eacabde6c6b459011ce8c78b25bf97a74a41d51a486324492fdba48c21",
+          "block": 47855498,
+          "selector": "0x48bde20c",
+          "status": 1
+        }
+      },
+      "0x599dc539": {
+        "sample_count": 297,
+        "first": {
+          "hash": "0x066d8f6fa351bbc4c7cd6fdb7dd7934d83efee06ce4da678e6d11e5238497f79",
+          "block": 48898703,
+          "selector": "0x599dc539",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x5a7351bf8dab4ba6b95f17962817bc89a04515a089f8b56b81b288e8495842a4",
+          "block": 48902314,
+          "selector": "0x599dc539",
+          "status": 1
+        }
+      },
+      "0x628a9fd6": {
+        "sample_count": 412,
+        "first": {
+          "hash": "0x15a8a1f172b025bc67a3253df62e6f4d006d343cf57085a08cb9b7cc978977d9",
+          "block": 47855436,
+          "selector": "0x628a9fd6",
+          "status": 1
+        },
+        "last": {
+          "hash": "0xc87a6606aa41877c019cb20d9de7ef130a804e0912b4836b3b5603cb70094db7",
+          "block": 48902332,
+          "selector": "0x628a9fd6",
+          "status": 1
+        }
+      },
+      "0x6d142da1": {
+        "sample_count": 629,
+        "first": {
+          "hash": "0x3a6cfeee95eab1ef132923059a54be100941db3d40a0c08f192e40a1ff09f33e",
+          "block": 47920889,
+          "selector": "0x6d142da1",
+          "status": 1
+        },
+        "last": {
+          "hash": "0xe1b2a8aeb7922bbc71c3c57c72c2bcff0c964d670975353617ecaaf75956f88d",
+          "block": 48902344,
+          "selector": "0x6d142da1",
+          "status": 1
+        }
+      },
+      "0x82f47a3f": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0xacb4196d218190144cf1c12c5a2316e4e053cec274ac3981f79f733cb2857d1a",
+          "block": 47925886,
+          "selector": "0x82f47a3f",
+          "status": 1
+        },
+        "last": {
+          "hash": "0xacb4196d218190144cf1c12c5a2316e4e053cec274ac3981f79f733cb2857d1a",
+          "block": 47925886,
+          "selector": "0x82f47a3f",
+          "status": 1
+        }
+      },
+      "0x837fa3fd": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0x5a3718a88ed429d6f78cc5c1da8b6c8be71affee484abb4e7c6ae443a901504e",
+          "block": 47855202,
+          "selector": "0x837fa3fd",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x5a3718a88ed429d6f78cc5c1da8b6c8be71affee484abb4e7c6ae443a901504e",
+          "block": 47855202,
+          "selector": "0x837fa3fd",
+          "status": 1
+        }
+      },
+      "0x86d506db": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0x73788a28abaa20839821e2422bc132ba674c541552ef940bf91d7a89144177c3",
+          "block": 47855209,
+          "selector": "0x86d506db",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x73788a28abaa20839821e2422bc132ba674c541552ef940bf91d7a89144177c3",
+          "block": 47855209,
+          "selector": "0x86d506db",
+          "status": 1
+        }
+      },
+      "0x88f2aea5": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0x08ef99988867832607e4d50d8eab4b08651b1f89664eeb5fa2ddab89b23761e3",
+          "block": 48901667,
+          "selector": "0x88f2aea5",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x08ef99988867832607e4d50d8eab4b08651b1f89664eeb5fa2ddab89b23761e3",
+          "block": 48901667,
+          "selector": "0x88f2aea5",
+          "status": 1
+        }
+      },
+      "0xa0bf0f75": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0xa0db98ac81a320b71f9d981a75defe15d3fc5356570240b9db3fc7741ce42f4f",
+          "block": 47855204,
+          "selector": "0xa0bf0f75",
+          "status": 1
+        },
+        "last": {
+          "hash": "0xa0db98ac81a320b71f9d981a75defe15d3fc5356570240b9db3fc7741ce42f4f",
+          "block": 47855204,
+          "selector": "0xa0bf0f75",
+          "status": 1
+        }
+      },
+      "0xc88bbcf3": {
+        "sample_count": 2,
+        "first": {
+          "hash": "0xab0322e685e608455d03f0f3a4eeabafee85785f0bcaf0a91ef7d8ae6728c115",
+          "block": 47855385,
+          "selector": "0xc88bbcf3",
+          "status": 1
+        },
+        "last": {
+          "hash": "0xa527dea1cef73784e42ba989c8763f103fce30432b25c423921cb8f04d3d71c5",
+          "block": 47855387,
+          "selector": "0xc88bbcf3",
+          "status": 1
+        }
+      },
+      "0xcd2d3811": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0xb357f09ef042c99d383e702118230d8fde098a78ab433b7a5a06e1b2c6a0bccd",
+          "block": 47855206,
+          "selector": "0xcd2d3811",
+          "status": 1
+        },
+        "last": {
+          "hash": "0xb357f09ef042c99d383e702118230d8fde098a78ab433b7a5a06e1b2c6a0bccd",
+          "block": 47855206,
+          "selector": "0xcd2d3811",
+          "status": 1
+        }
+      },
+      "0xd188c049": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0xe7884c0dfbba9add8498b40d556dd3a1f87238a8a6a187d9748b15cc94b039b9",
+          "block": 47855271,
+          "selector": "0xd188c049",
+          "status": 1
+        },
+        "last": {
+          "hash": "0xe7884c0dfbba9add8498b40d556dd3a1f87238a8a6a187d9748b15cc94b039b9",
+          "block": 47855271,
+          "selector": "0xd188c049",
+          "status": 1
+        }
+      },
+      "0xe0189108": {
+        "sample_count": 647,
+        "first": {
+          "hash": "0xb7541b93bfa9f3dde4900a0ee37a196d6e0a458792caa8653cbb96919b726b3b",
+          "block": 47920888,
+          "selector": "0xe0189108",
+          "status": 1
+        },
+        "last": {
+          "hash": "0xb068824143ff08d87c91ee6f1630b40a00022a7965a1f2bbfe34aee136ff6c89",
+          "block": 48902343,
+          "selector": "0xe0189108",
+          "status": 1
+        }
+      },
+      "0xefc1bd46": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0x090d1123adf2240dfb6117c9c7c5edc2f1893885772b1355fec0a435ef7df4b4",
+          "block": 47855273,
+          "selector": "0xefc1bd46",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x090d1123adf2240dfb6117c9c7c5edc2f1893885772b1355fec0a435ef7df4b4",
+          "block": 47855273,
+          "selector": "0xefc1bd46",
+          "status": 1
+        }
+      },
+      "0xf2fde38b": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0x47668f45e06f17fa75fe4674fbe3f84f7544d6b70ff9741be00983dd23ab1d28",
+          "block": 47855503,
+          "selector": "0xf2fde38b",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x47668f45e06f17fa75fe4674fbe3f84f7544d6b70ff9741be00983dd23ab1d28",
+          "block": 47855503,
+          "selector": "0xf2fde38b",
+          "status": 1
+        }
+      },
+      "0xfbddd751": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0x0f0cd47de910abffe0add759c86e3f874ef7fb4c849177e2b33d179e4e04f619",
+          "block": 47855217,
+          "selector": "0xfbddd751",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x0f0cd47de910abffe0add759c86e3f874ef7fb4c849177e2b33d179e4e04f619",
+          "block": 47855217,
+          "selector": "0xfbddd751",
+          "status": 1
+        }
+      }
+    }
+  },
+  "0x75174549dbbd44497d31a47e2e2d7406408d63d9": {
+    "role": "tokenomics_proxy",
+    "pages": [
+      {
+        "order": "asc",
+        "count": 3,
+        "first_block": 47855075,
+        "last_block": 47855507
+      },
+      {
+        "order": "desc",
+        "count": 3,
+        "first_block": 47855507,
+        "last_block": 47855075
+      }
+    ],
+    "sampled_unique_transactions": 2,
+    "selectors": {
+      "0xe6ee2285": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0xbc7591dde3758def9f7e8c9453f1626e7bbb171c76b29c49f45b10cb270ee15f",
+          "block": 47855214,
+          "selector": "0xe6ee2285",
+          "status": 1
+        },
+        "last": {
+          "hash": "0xbc7591dde3758def9f7e8c9453f1626e7bbb171c76b29c49f45b10cb270ee15f",
+          "block": 47855214,
+          "selector": "0xe6ee2285",
+          "status": 1
+        }
+      },
+      "0xf2fde38b": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0x507fde69627d8ac0a1eabbb5024c226076406bf2866d4d4f9a9f474eb6403f7f",
+          "block": 47855507,
+          "selector": "0xf2fde38b",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x507fde69627d8ac0a1eabbb5024c226076406bf2866d4d4f9a9f474eb6403f7f",
+          "block": 47855507,
+          "selector": "0xf2fde38b",
+          "status": 1
+        }
+      }
+    }
+  },
+  "0x8326eb8896e358717f10502ec73ce8d28e37b108": {
+    "role": "session_key_manager_proxy",
+    "pages": [
+      {
+        "order": "asc",
+        "count": 534,
+        "first_block": 47855066,
+        "last_block": 48893397
+      },
+      {
+        "order": "desc",
+        "count": 534,
+        "first_block": 48893397,
+        "last_block": 47855066
+      }
+    ],
+    "sampled_unique_transactions": 532,
+    "selectors": {
+      "0x5197a0d3": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0x9adf6092169b38b21ff764acd71e57b575d5182bca390ea7002c24c1d622648b",
+          "block": 47855275,
+          "selector": "0x5197a0d3",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x9adf6092169b38b21ff764acd71e57b575d5182bca390ea7002c24c1d622648b",
+          "block": 47855275,
+          "selector": "0x5197a0d3",
+          "status": 1
+        }
+      },
+      "0x84f4fc6a": {
+        "sample_count": 530,
+        "first": {
+          "hash": "0x9f01a632f7262f067542a1df78892453e17c1304c431d0cc5b4d80c26adf99cc",
+          "block": 48085806,
+          "selector": "0x84f4fc6a",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x550d1da75d844d61991dfe37fb6a865580e55ebccc095d2c0a4c5568b36980d3",
+          "block": 48893397,
+          "selector": "0x84f4fc6a",
+          "status": 1
+        }
+      },
+      "0xf2fde38b": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0x8e2f5ebbecd7f6fc9fc32315fb9dea2f1f578c7ab921e99f519a9f4cc3561c6b",
+          "block": 47855505,
+          "selector": "0xf2fde38b",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x8e2f5ebbecd7f6fc9fc32315fb9dea2f1f578c7ab921e99f519a9f4cc3561c6b",
+          "block": 47855505,
+          "selector": "0xf2fde38b",
+          "status": 1
+        }
+      }
+    }
+  },
+  "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e": {
+    "role": "oracle_proxy",
+    "pages": [
+      {
+        "order": "asc",
+        "count": 2,
+        "first_block": 47854597,
+        "last_block": 47855500
+      },
+      {
+        "order": "desc",
+        "count": 2,
+        "first_block": 47855500,
+        "last_block": 47854597
+      }
+    ],
+    "sampled_unique_transactions": 1,
+    "selectors": {
+      "0xf2fde38b": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0xac56a54f03ee74fcdefca55f69a680f39856c5f5730fc1045fd591aa68e8a290",
+          "block": 47855500,
+          "selector": "0xf2fde38b",
+          "status": 1
+        },
+        "last": {
+          "hash": "0xac56a54f03ee74fcdefca55f69a680f39856c5f5730fc1045fd591aa68e8a290",
+          "block": 47855500,
+          "selector": "0xf2fde38b",
+          "status": 1
+        }
+      }
+    }
+  },
+  "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016": {
+    "role": "staking_proxy",
+    "pages": [
+      {
+        "order": "asc",
+        "count": 4,
+        "first_block": 47855135,
+        "last_block": 48830574
+      },
+      {
+        "order": "desc",
+        "count": 4,
+        "first_block": 48830574,
+        "last_block": 47855135
+      }
+    ],
+    "sampled_unique_transactions": 3,
+    "selectors": {
+      "0x4e71d92d": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0xaff42aa42819e057cb5b94db7093a7b220041353e8159bb60a85daa17abe7fb4",
+          "block": 48830574,
+          "selector": "0x4e71d92d",
+          "status": 0
+        },
+        "last": {
+          "hash": "0xaff42aa42819e057cb5b94db7093a7b220041353e8159bb60a85daa17abe7fb4",
+          "block": 48830574,
+          "selector": "0x4e71d92d",
+          "status": 0
+        }
+      },
+      "0xd188c049": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0x271fae19ee96703d8ffaab2bb72ce03f167fb7d8fb866bab34c8ed35f3b19d8d",
+          "block": 47855280,
+          "selector": "0xd188c049",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x271fae19ee96703d8ffaab2bb72ce03f167fb7d8fb866bab34c8ed35f3b19d8d",
+          "block": 47855280,
+          "selector": "0xd188c049",
+          "status": 1
+        }
+      },
+      "0xf2fde38b": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0x4391f966aa09e883317bc3970e4160e9e6971d7c6f6760c40c3635a1d1298645",
+          "block": 47855569,
+          "selector": "0xf2fde38b",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x4391f966aa09e883317bc3970e4160e9e6971d7c6f6760c40c3635a1d1298645",
+          "block": 47855569,
+          "selector": "0xf2fde38b",
+          "status": 1
+        }
+      }
+    }
+  },
+  "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f": {
+    "role": "timelock",
+    "pages": [
+      {
+        "order": "asc",
+        "count": 1,
+        "first_block": 47855496,
+        "last_block": 47855496
+      },
+      {
+        "order": "desc",
+        "count": 1,
+        "first_block": 47855496,
+        "last_block": 47855496
+      }
+    ],
+    "sampled_unique_transactions": 0,
+    "selectors": {}
+  },
+  "0xe40f17915daa230324030003a197cdaef2261c0e": {
+    "role": "paper_token_proxy",
+    "pages": [
+      {
+        "order": "asc",
+        "count": 107,
+        "first_block": 47855130,
+        "last_block": 48902196
+      },
+      {
+        "order": "desc",
+        "count": 107,
+        "first_block": 48902196,
+        "last_block": 47855130
+      }
+    ],
+    "sampled_unique_transactions": 106,
+    "selectors": {
+      "0x095ea7b3": {
+        "sample_count": 25,
+        "first": {
+          "hash": "0xd8e30f94feaf9904972745d3c6b807cf68d626fc0ee6a8dabbc86b4075f4214a",
+          "block": 48185432,
+          "selector": "0x095ea7b3",
+          "status": 1
+        },
+        "last": {
+          "hash": "0xc6a5c27f6be82e15d1e1654888e0957ee67475a3de5deee56a95fd685033462b",
+          "block": 48902196,
+          "selector": "0x095ea7b3",
+          "status": 1
+        }
+      },
+      "0x9dd373b9": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0x8a64598fa90a06cdcd95f581db350c00da9cd829f8b5cb865c24118bee6fe0b0",
+          "block": 47855278,
+          "selector": "0x9dd373b9",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x8a64598fa90a06cdcd95f581db350c00da9cd829f8b5cb865c24118bee6fe0b0",
+          "block": 47855278,
+          "selector": "0x9dd373b9",
+          "status": 1
+        }
+      },
+      "0xa9059cbb": {
+        "sample_count": 78,
+        "first": {
+          "hash": "0xad90270d8b847fd073f00ec47db381e121ac7f09d28d75d9554a682f48e3e71e",
+          "block": 48187156,
+          "selector": "0xa9059cbb",
+          "status": 0
+        },
+        "last": {
+          "hash": "0x44e5261573d094f2dbe91fbec674acad2f3a6e80b02eb8bc55466ffb2c13fe42",
+          "block": 48890480,
+          "selector": "0xa9059cbb",
+          "status": 0
+        }
+      },
+      "0xd311b1a9": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0x3e080969215f85d41865c022dcad457d02c510aa100d9b737adf107fbb7cebab",
+          "block": 47855212,
+          "selector": "0xd311b1a9",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x3e080969215f85d41865c022dcad457d02c510aa100d9b737adf107fbb7cebab",
+          "block": 47855212,
+          "selector": "0xd311b1a9",
+          "status": 1
+        }
+      },
+      "0xf2fde38b": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0x66c836fe26fbc6d8b4e66cf035cc9a831a1cd4af05b4861ef7e2174b01a30742",
+          "block": 47855510,
+          "selector": "0xf2fde38b",
+          "status": 1
+        },
+        "last": {
+          "hash": "0x66c836fe26fbc6d8b4e66cf035cc9a831a1cd4af05b4861ef7e2174b01a30742",
+          "block": 47855510,
+          "selector": "0xf2fde38b",
+          "status": 1
+        }
+      }
+    }
+  },
+  "0xe79c91cc682f1bb401a9cab74c900470190f0f8f": {
+    "role": "proxy_admin",
+    "pages": [
+      {
+        "order": "asc",
+        "count": 2,
+        "first_block": 47854475,
+        "last_block": 47855575
+      },
+      {
+        "order": "desc",
+        "count": 2,
+        "first_block": 47855575,
+        "last_block": 47854475
+      }
+    ],
+    "sampled_unique_transactions": 1,
+    "selectors": {
+      "0xf2fde38b": {
+        "sample_count": 1,
+        "first": {
+          "hash": "0xd0e33b23f464c5ae6089ad86d9c2bb1cd8f627dc5eef5f756ae598225f93e145",
+          "block": 47855575,
+          "selector": "0xf2fde38b",
+          "status": 1
+        },
+        "last": {
+          "hash": "0xd0e33b23f464c5ae6089ad86d9c2bb1cd8f627dc5eef5f756ae598225f93e145",
+          "block": 47855575,
+          "selector": "0xf2fde38b",
+          "status": 1
+        }
+      }
+    }
+  }
+}

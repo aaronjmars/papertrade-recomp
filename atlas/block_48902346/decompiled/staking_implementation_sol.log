@@ -1,0 +1,15 @@
+[2m2026-10-18T21:32:13.980959Z[0m [33m WARN[0m calldata is not a standard size. if decoding fails, consider using the `--truncate-calldata` flag.
+[2m2026-10-18T21:32:13.980991Z[0m [33m WARN[0m couldn't find any resolved matches for '23b872dd'
+[2m2026-10-18T21:32:13.981261Z[0m [33m WARN[0m calldata is not a standard size. if decoding fails, consider using the `--truncate-calldata` flag.
+[2m2026-10-18T21:32:13.981269Z[0m [33m WARN[0m couldn't find any resolved matches for '80f9162b'
+[2m2026-10-18T21:32:13.982763Z[0m [33m WARN[0m calldata is not a standard size. if decoding fails, consider using the `--truncate-calldata` flag.
+[2m2026-10-18T21:32:13.982769Z[0m [33m WARN[0m couldn't find any resolved matches for '21097183'
+[2m2026-10-18T21:32:13.985667Z[0m [33m WARN[0m calldata is not a standard size. if decoding fails, consider using the `--truncate-calldata` flag.
+[2m2026-10-18T21:32:13.985673Z[0m [33m WARN[0m couldn't find any resolved matches for 'cf3ec239'
+[2m2026-10-18T21:32:13.987608Z[0m [33m WARN[0m calldata is not a standard size. if decoding fails, consider using the `--truncate-calldata` flag.
+[2m2026-10-18T21:32:13.987614Z[0m [33m WARN[0m couldn't find any resolved matches for '7b9f5264'
+[2m2026-10-18T21:32:13.987648Z[0m [33m WARN[0m calldata is not a standard size. if decoding fails, consider using the `--truncate-calldata` flag.
+[2m2026-10-18T21:32:13.987650Z[0m [33m WARN[0m couldn't find any resolved matches for '27e235e3'
+[2m2026-10-18T21:32:13.988002Z[0m [33m WARN[0m calldata is not a standard size. if decoding fails, consider using the `--truncate-calldata` flag.
+[2m2026-10-18T21:32:13.988007Z[0m [33m WARN[0m couldn't find any resolved matches for '3f9648a8'
+

@@ -1,0 +1,26 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "tokenomics_proxy": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+  "implementation": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+  "selector_reconstructions": {
+    "0xf2fde38b": "transferOwnership(address)"
+  },
+  "event_catalog": [
+    {
+      "topic0": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+      "reconstructed_signature": "OwnerUpdated(address)"
+    }
+  ],
+  "historical_tx": "0x507fde69627d8ac0a1eabbb5024c226076406bf2866d4d4f9a9f474eb6403f7f",
+  "old_owner": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+  "new_owner": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+  "storage_slot": 0,
+  "owner_bit_offset": 16,
+  "initialized_flag_low16_unchanged": true,
+  "pinned_owner_getter_matches": true,
+  "limits": [
+    "One successful historical owner call is checked; outsider and zero-address branches remain untested here.",
+    "The event's indexed address and packed storage are exact for this transaction."
+  ]
+}

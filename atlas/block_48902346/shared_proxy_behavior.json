@@ -1,0 +1,54 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "address": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+  "runtime_role": "deposit_proxy_factory_proxy",
+  "runtime_sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+  "proxy_addresses": [
+    "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+    "0x233ff29b239abc1d7748605da9b205c3e008626e",
+    "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+    "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+    "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+    "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+    "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+    "0xe40f17915daa230324030003a197cdaef2261c0e"
+  ],
+  "selector_reconstructions": {
+    "0x4f1ef286": "upgradeToAndCall(address,bytes)",
+    "0x5c60da1b": "implementation()",
+    "0x8f283970": "changeAdmin(address)",
+    "0xf851a440": "admin()"
+  },
+  "admin_slot": "0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103",
+  "implementation_slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+  "executable_log_instruction_count": 0,
+  "local_replay_evidence": "../../artifacts/proxy_admin_local/replay.json",
+  "fallback_replay_evidence": "../../artifacts/fixed_revert_local/replay.json",
+  "selector_behaviors": {
+    "0xf851a440": "admin-only getter returns admin slot",
+    "0x5c60da1b": "admin-only getter returns implementation slot",
+    "0x8f283970": "admin-only setter changes admin slot; zero address reverts with 0xe6c4247b",
+    "0x4f1ef286": "admin-only upgrade changes implementation slot; nonempty data delegatecalls into proxy storage; empty data accepts no-code target"
+  },
+  "simulated_error_catalog": [
+    {
+      "selector": "0x7bfa4b9f",
+      "reconstructed_signature": "NotAdmin()",
+      "probe_paths": [
+        "testProxyNonAdminSelectors"
+      ]
+    },
+    {
+      "selector": "0xe6c4247b",
+      "probe_paths": [
+        "testRejectZeroProxyAdmin"
+      ]
+    }
+  ],
+  "limits": [
+    "The source name of error 0xe6c4247b is unresolved.",
+    "Upgrade and admin-change successes are local simulations, not historical transactions.",
+    "The mock upgrade target is not a Papertrade deployment."
+  ]
+}

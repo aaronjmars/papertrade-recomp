@@ -1,0 +1,56 @@
+{
+  "from": "0xdf1bda875c9393a663ce69bf6a7fbaa73dfd053d",
+  "gas": "0x1000000",
+  "gasUsed": "0xf814cc",
+  "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "input": "0x6d142da10000000000000000000000001730a930cfd0da43255081801bf1a3eb0b69ec83",
+  "output": "0x0a9e0180",
+  "error": "execution reverted",
+  "calls": [
+    {
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "gas": "0xfb9a93",
+      "gasUsed": "0xf7ada0",
+      "to": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "input": "0x6d142da10000000000000000000000001730a930cfd0da43255081801bf1a3eb0b69ec83",
+      "output": "0x0a9e0180",
+      "error": "execution reverted",
+      "calls": [
+        {
+          "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+          "gas": "0xf795aa",
+          "gasUsed": "0x1d5b",
+          "to": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+          "input": "0xc1a9a5080000000000000000000000001730a930cfd0da43255081801bf1a3eb0b69ec83",
+          "output": "0x0000000000000000000000002e38ce35e63bfae2a85bf6db885ffcedaa76e18e",
+          "calls": [
+            {
+              "from": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+              "gas": "0xf3a44f",
+              "gasUsed": "0x9e8",
+              "to": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+              "input": "0xc1a9a5080000000000000000000000001730a930cfd0da43255081801bf1a3eb0b69ec83",
+              "output": "0x0000000000000000000000002e38ce35e63bfae2a85bf6db885ffcedaa76e18e",
+              "value": "0x0",
+              "type": "DELEGATECALL"
+            }
+          ],
+          "type": "STATICCALL"
+        },
+        {
+          "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+          "gas": "0xf76d40",
+          "gasUsed": "0xf76d40",
+          "to": "0x0000000000000000000000000000000000000801",
+          "input": "0x0000000000000000000000002e38ce35e63bfae2a85bf6db885ffcedaa76e18e0000000000000000000000000000000000000000000000000000000000000000",
+          "error": "out of gas",
+          "type": "STATICCALL"
+        }
+      ],
+      "value": "0x0",
+      "type": "DELEGATECALL"
+    }
+  ],
+  "value": "0x0",
+  "type": "CALL"
+}

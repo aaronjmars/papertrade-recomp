@@ -1,0 +1,14 @@
+{
+  "pin_block": 48902346,
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "case_count": 11,
+  "call_count": 22,
+  "queue_formula": "max(treasury - balances - locked - staker_fee - dev_fee, 0)",
+  "lp_formula": "0 if totalQueued > 0 else queueHarvestAvailable()",
+  "evidence": "../../artifacts/exchange_availability/pinned_overrides.json",
+  "limitations": [
+    "The formulas match 11 pinned states with overrides, not every reachable state.",
+    "No transaction was sent; storage changes are read-only simulations."
+  ]
+}

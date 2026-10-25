@@ -1,0 +1,950 @@
+{
+  "adds": {
+    "addresses": [
+      "0x583d0bd818c991c5830fea93aef04e474b272459",
+      "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+      "0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946",
+      "0x7c0a72a788cff4d68cfe9586aecb98e21eb58a03",
+      "0xfdc6550436dd75ce8a0b145f935b7d3a64f53248"
+    ],
+    "note": "three implementations, one linked library and one registry the refresh added; every other address here is the baseline's",
+    "selector_catalog": "atlas/block_49265286/selector_catalog.json"
+  },
+  "block": 49265286,
+  "block_hash": "0x82c2900c25f8e980ff7159d18ebd70c428c4801c3e6fbac80460723d8eedb9c9",
+  "capture_window_blocks": [
+    49265286,
+    49265288
+  ],
+  "captured_at_utc": "2026-10-23T00:12:14.857213+00:00",
+  "chain_id": 999,
+  "contracts": {
+    "0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946": {
+      "added_note": "supersedes the pinned target recorded in `replaces`",
+      "address": "0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946",
+      "address_status": "added_by_the_post_refresh_governance_batch",
+      "code_present": true,
+      "current_implementation": null,
+      "eip1967_reads": {},
+      "eip1967_slots": {
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "keccak256": "0x355fdf781d45cd30af88fbaa29d9efc2e60ee010659c1fa3278057e914ba2d2b",
+      "origin": {
+        "block": 49067452,
+        "deployer": "0x13cb7a200d081094d23ebf07f4d708410a9c488b",
+        "deployer_nonce": 3,
+        "kind": "deployer_creation",
+        "timestamp": 1792519740,
+        "tx": "0x2bc8eb6e9f65edac140d8223d56bb92971a2dded12af89b0450edf0a23e9fcbf"
+      },
+      "pinned_implementation": null,
+      "replaces": {
+        "address": "0x8a5069fe303e8f81e91825436e956d595032e558",
+        "role": "session_key_manager_implementation",
+        "runtime_file": "atlas/block_48902346/runtime/0x8a5069fe303e8f81e91825436e956d595032e558.hex",
+        "sha256": "630c02b0c693c47760554a3f0fed68b72db5df601f887d2edaaa3106e6308e63"
+      },
+      "role": "session_key_manager_implementation_2",
+      "runtime_bytes": 4521,
+      "runtime_file": "atlas/block_49265286/runtime/0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "captured eth_getCode at this pin (see runtime_verified_against_live_code_read)",
+      "runtime_verified_against_live_code_read": "code:0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946",
+      "sha256": "7df05c33597c04820a314fae015aab01b5566aff53e9bded8446962cfd4ad2c9"
+    },
+    "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723": {
+      "added_note": "supersedes the pinned target recorded in `replaces`",
+      "address": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+      "address_status": "added_by_the_post_refresh_governance_batch",
+      "code_present": true,
+      "current_implementation": null,
+      "eip1967_reads": {},
+      "eip1967_slots": {
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "keccak256": "0x1fcb80437ee76e0a495223b0aef8aecf74a4742b9fb7df18752354cd7e2877e0",
+      "origin": {
+        "block": 49067391,
+        "deployer": "0x13cb7a200d081094d23ebf07f4d708410a9c488b",
+        "deployer_nonce": 2,
+        "kind": "deployer_creation",
+        "timestamp": 1792519680,
+        "tx": "0x64642bea4442ff2191053822ece9b0a91124c3affd3f247020741abccea014bc"
+      },
+      "pinned_implementation": null,
+      "replaces": {
+        "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+        "role": "exchange_implementation",
+        "runtime_file": "atlas/block_48902346/runtime/0x0f3febfc94876b0c895f7acecdc8f5c863b549ee.hex",
+        "sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1"
+      },
+      "role": "exchange_implementation_2",
+      "runtime_bytes": 23959,
+      "runtime_file": "atlas/block_49265286/runtime/0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "captured eth_getCode at this pin (see runtime_verified_against_live_code_read)",
+      "runtime_verified_against_live_code_read": "code:0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+      "sha256": "fc7374f3969381160732fe98c5e3145e00c3f167f168d61d65bb4972e9a6b268"
+    },
+    "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee": {
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": null,
+      "eip1967_reads": {},
+      "eip1967_slots": {
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "keccak256": "0x9d20287df886415035d53344a0dc8a1044949308cc3283ee0fe7ea5f3ea28d92",
+      "origin": {
+        "block": 47854658,
+        "kind": "deployer_creation",
+        "tx": "0x643b352161abb59624f9fcf3f779706f9d073f03b122086663f18a1301b54421"
+      },
+      "pinned_implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "exchange_implementation",
+      "runtime_bytes": 23052,
+      "runtime_file": "atlas/block_48902346/runtime/0x0f3febfc94876b0c895f7acecdc8f5c863b549ee.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": null,
+      "sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1"
+    },
+    "0x1629b7d46bef6e13ff754174fc9f32dea309b38f": {
+      "address": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "current_implementation_role": "deposit_proxy_factory_implementation",
+      "eip1967_reads": {
+        "admin": "admin_word:0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+        "implementation": "implementation_word:0x1629b7d46bef6e13ff754174fc9f32dea309b38f"
+      },
+      "eip1967_slots": {
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000008f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0"
+      },
+      "implementation_role": "deposit_proxy_factory_implementation",
+      "keccak256": "0x93076ef48e1d48172af505f739606cf1fa8425dbf9dbc6bee6743307bd4bd63b",
+      "origin": {
+        "block": 47855071,
+        "kind": "deployer_creation",
+        "tx": "0xdf3909a903c5e15a5ac770bdcb6cccef77399094b4b99f759ecd4521ed86ae7d"
+      },
+      "pinned_implementation": "0x0000000000000000000000008f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "role": "deposit_proxy_factory_proxy",
+      "runtime_bytes": 925,
+      "runtime_file": "atlas/block_48902346/runtime/0x1629b7d46bef6e13ff754174fc9f32dea309b38f.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": "code:0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+    },
+    "0x233ff29b239abc1d7748605da9b205c3e008626e": {
+      "address": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "current_implementation_role": "batch_executor_implementation",
+      "eip1967_reads": {
+        "admin": "admin_word:0x233ff29b239abc1d7748605da9b205c3e008626e",
+        "implementation": "implementation_word:0x233ff29b239abc1d7748605da9b205c3e008626e"
+      },
+      "eip1967_slots": {
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x000000000000000000000000e0bc9cc7b067060aafccbaa3e250700c9cdd7262"
+      },
+      "implementation_role": "batch_executor_implementation",
+      "keccak256": "0x93076ef48e1d48172af505f739606cf1fa8425dbf9dbc6bee6743307bd4bd63b",
+      "origin": {
+        "block": 47855140,
+        "kind": "deployer_creation",
+        "tx": "0xa1cce64c11078d19a9bd7df04fc9300b19bd4be5f01e72f64e635c59909b71ae"
+      },
+      "pinned_implementation": "0x000000000000000000000000e0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "role": "batch_executor_proxy",
+      "runtime_bytes": 925,
+      "runtime_file": "atlas/block_48902346/runtime/0x233ff29b239abc1d7748605da9b205c3e008626e.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": "code:0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+    },
+    "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a": {
+      "address": "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": null,
+      "eip1967_reads": {},
+      "eip1967_slots": {
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "keccak256": "0x75f094dab1fb771fc5ed5953a02be453a5d35dc4878b53a9e6a11c7d9e4e679c",
+      "origin": {
+        "block": 47854536,
+        "kind": "deployer_creation",
+        "tx": "0x44933368624ddd7d850364a7bf50fb88f220a282cef05a3b898f711457765b74"
+      },
+      "pinned_implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "oracle_implementation",
+      "runtime_bytes": 2475,
+      "runtime_file": "atlas/block_48902346/runtime/0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": null,
+      "sha256": "8e452a76ac1b28c05d220451d837c3758bd41180526940752f89047bc0dd22ed"
+    },
+    "0x433bd418ec92818a960585f4d5fae563e735bb4a": {
+      "address": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": null,
+      "eip1967_reads": {},
+      "eip1967_slots": {
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "keccak256": "0x087aaaf8472c1ca9bb313493a83fca6f5497d639ef46e6ca2ed0ef4cab85a590",
+      "origin": {
+        "block": 47855127,
+        "kind": "deployer_creation",
+        "tx": "0x1d519202cf0803805420b5a077fe6142cc5b7c1f3a27735713561f976443094a"
+      },
+      "pinned_implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "paper_token_implementation",
+      "runtime_bytes": 3528,
+      "runtime_file": "atlas/block_48902346/runtime/0x433bd418ec92818a960585f4d5fae563e735bb4a.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": null,
+      "sha256": "f77b91537421a0092f1c068f85af316caf7fd8d8461e8b0305022ee6f5f0faae"
+    },
+    "0x4f859b790d34767ea325b4888c8c420c34cf85af": {
+      "address": "0x4f859b790d34767ea325b4888c8c420c34cf85af",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": null,
+      "eip1967_reads": {},
+      "eip1967_slots": {
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "keccak256": "0xbcf63409daffba4d6138b2b656eaccf201612e942f48b1fa1ef2b473d6d728e7",
+      "origin": {
+        "block": 48094997,
+        "kind": "deployer_creation",
+        "tx": "0x80107da21b2d7f261e9b0bb0a6727dc2c7e05d53a50028d21ba83445a4e2560a"
+      },
+      "pinned_implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "exchange_implementation_variant_b",
+      "runtime_bytes": 23529,
+      "runtime_file": "atlas/block_48902346/runtime/0x4f859b790d34767ea325b4888c8c420c34cf85af.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": null,
+      "sha256": "19e0334bff9247132ed4f3beaf5ecdab1dfc1708c4832d61c0f0a34c9b2faed0"
+    },
+    "0x583d0bd818c991c5830fea93aef04e474b272459": {
+      "added_note": "supersedes the pinned target recorded in `replaces`",
+      "address": "0x583d0bd818c991c5830fea93aef04e474b272459",
+      "address_status": "added_by_the_post_refresh_governance_batch",
+      "code_present": true,
+      "current_implementation": null,
+      "eip1967_reads": {},
+      "eip1967_slots": {
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "keccak256": "0x5f2ca1ddda760ceff465c01e7bab7b033a4a8f004e5580b9be9892ea6eca1657",
+      "origin": {
+        "block": 49067330,
+        "deployer": "0x13cb7a200d081094d23ebf07f4d708410a9c488b",
+        "deployer_nonce": 1,
+        "kind": "deployer_creation",
+        "timestamp": 1792519620,
+        "tx": "0x5d17bc5ee374d0e6fcb28cb9b8683f5b4e7041b1a3718b4f60b119bc936b4602"
+      },
+      "pinned_implementation": null,
+      "replaces": {
+        "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+        "role": "exchange_linked_library_live",
+        "runtime_file": "atlas/block_48902346/runtime/0xcd617f984158a4f5d287ddee0e8eb0fed204916d.hex",
+        "sha256": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2"
+      },
+      "role": "exchange_linked_library_2",
+      "runtime_bytes": 6286,
+      "runtime_file": "atlas/block_49265286/runtime/0x583d0bd818c991c5830fea93aef04e474b272459.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "captured eth_getCode at this pin (see runtime_verified_against_live_code_read)",
+      "runtime_verified_against_live_code_read": "code:0x583d0bd818c991c5830fea93aef04e474b272459",
+      "sha256": "ced8e434ebd5379c4acc1fba809a5b18f531c676a264308c9a0a1a76d9641440"
+    },
+    "0x5a4bda2dcc82749258d9e5cdd49cd52c3cd16388": {
+      "address": "0x5a4bda2dcc82749258d9e5cdd49cd52c3cd16388",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": null,
+      "eip1967_reads": {},
+      "eip1967_slots": {
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "keccak256": "0xf6c75f2c3c97c7b58197fabcea41d6ee0a1b5a58902410dec0788182499dead3",
+      "origin": {
+        "from": "exchange_implementation_variant_a",
+        "kind": "push20_linked_library"
+      },
+      "pinned_implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "exchange_linked_library_variant_a",
+      "runtime_bytes": 5790,
+      "runtime_file": "atlas/block_48902346/runtime/0x5a4bda2dcc82749258d9e5cdd49cd52c3cd16388.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": null,
+      "sha256": "93cabc1ccb68ddbcb98160bd5023f27377bc8d77dc154c11863a9a91cf1e5b35"
+    },
+    "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f": {
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": null,
+      "eip1967_reads": {},
+      "eip1967_slots": {
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "keccak256": "0xd9fbc7091e10f4d56188f3097454bd8464ed4b77b5f44d1c6391be72b9362169",
+      "origin": {
+        "block": 47855073,
+        "kind": "deployer_creation",
+        "tx": "0xd1ec955f9a0cb926b76dd5d70ddc5560efa12151edd7c2ed6de882ce22949508"
+      },
+      "pinned_implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "tokenomics_implementation",
+      "runtime_bytes": 3324,
+      "runtime_file": "atlas/block_48902346/runtime/0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": null,
+      "sha256": "ed9d18151a9365c347ac7a9da7e83b53ecedac235d9e67c4b2699503a6bd4a97"
+    },
+    "0x696292762fd5ac3677a45edbe54eaece4194d1f6": {
+      "address": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": null,
+      "eip1967_reads": {},
+      "eip1967_slots": {
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "keccak256": "0xdb27a12cb89210a9e6f1aad59bbee6c32f69efd56f6c91fd9d07128bf7f04720",
+      "origin": {
+        "block": 47855493,
+        "kind": "deployer_creation",
+        "tx": "0x7f02102d7c251058f4b0d9b440f53e28e79920807ebd7c2f16727a201c384e02"
+      },
+      "pinned_implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "one_of_two_multisig",
+      "runtime_bytes": 3134,
+      "runtime_file": "atlas/block_48902346/runtime/0x696292762fd5ac3677a45edbe54eaece4194d1f6.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": null,
+      "sha256": "25c3204acbd096d8407b2253cc2d59b920e89be24be8fd897ad299db09f8f513"
+    },
+    "0x6cd5661646289fb6e65ea5c032310fded797d0a2": {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+      "current_implementation_role": "exchange_implementation_2",
+      "eip1967_reads": {
+        "admin": "admin_word:0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "implementation": "implementation_word:0x6cd5661646289fb6e65ea5c032310fded797d0a2"
+      },
+      "eip1967_slots": {
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000a44049dbbb6b4762a6ba37aa0f7548c0b4a3723"
+      },
+      "implementation_role": "exchange_implementation",
+      "keccak256": "0x93076ef48e1d48172af505f739606cf1fa8425dbf9dbc6bee6743307bd4bd63b",
+      "origin": {
+        "block": 47854719,
+        "kind": "deployer_creation",
+        "tx": "0x6f6c80fd5052bbf85e0e55b3bbe1102a1dbf764396fe4c2d4447e150b16579ce"
+      },
+      "pinned_implementation": "0x0000000000000000000000000f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "role": "exchange_proxy",
+      "runtime_bytes": 925,
+      "runtime_file": "atlas/block_48902346/runtime/0x6cd5661646289fb6e65ea5c032310fded797d0a2.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": "code:0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+    },
+    "0x75174549dbbd44497d31a47e2e2d7406408d63d9": {
+      "address": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": "0x7c0a72a788cff4d68cfe9586aecb98e21eb58a03",
+      "current_implementation_role": "tokenomics_implementation_2",
+      "eip1967_reads": {
+        "admin": "admin_word:0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "implementation": "implementation_word:0x75174549dbbd44497d31a47e2e2d7406408d63d9"
+      },
+      "eip1967_slots": {
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000007c0a72a788cff4d68cfe9586aecb98e21eb58a03"
+      },
+      "implementation_role": "tokenomics_implementation",
+      "keccak256": "0x93076ef48e1d48172af505f739606cf1fa8425dbf9dbc6bee6743307bd4bd63b",
+      "origin": {
+        "block": 47855075,
+        "kind": "deployer_creation",
+        "tx": "0x8f0fcad98f87bd8a42fde8d399f470f239975b55eb26025932caf08a357c5747"
+      },
+      "pinned_implementation": "0x000000000000000000000000600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "role": "tokenomics_proxy",
+      "runtime_bytes": 925,
+      "runtime_file": "atlas/block_48902346/runtime/0x75174549dbbd44497d31a47e2e2d7406408d63d9.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": "code:0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+    },
+    "0x7c0a72a788cff4d68cfe9586aecb98e21eb58a03": {
+      "added_note": "supersedes the pinned target recorded in `replaces`",
+      "address": "0x7c0a72a788cff4d68cfe9586aecb98e21eb58a03",
+      "address_status": "added_by_the_post_refresh_governance_batch",
+      "code_present": true,
+      "current_implementation": null,
+      "eip1967_reads": {},
+      "eip1967_slots": {
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "keccak256": "0x7d62af455409263c5307ac4f3d053d32d29225232e6f34946a4549927f203aac",
+      "origin": {
+        "block": 49075809,
+        "deployer": "0x13cb7a200d081094d23ebf07f4d708410a9c488b",
+        "deployer_nonce": 6,
+        "kind": "deployer_creation",
+        "timestamp": 1792527960,
+        "tx": "0x4f7c517ff763186706add6f022c2e8f54967c483c0c264652d955e854a8e7786"
+      },
+      "pinned_implementation": null,
+      "replaces": {
+        "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+        "role": "tokenomics_implementation",
+        "runtime_file": "atlas/block_48902346/runtime/0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f.hex",
+        "sha256": "ed9d18151a9365c347ac7a9da7e83b53ecedac235d9e67c4b2699503a6bd4a97"
+      },
+      "role": "tokenomics_implementation_2",
+      "runtime_bytes": 6452,
+      "runtime_file": "atlas/block_49265286/runtime/0x7c0a72a788cff4d68cfe9586aecb98e21eb58a03.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "captured eth_getCode at this pin (see runtime_verified_against_live_code_read)",
+      "runtime_verified_against_live_code_read": "code:0x7c0a72a788cff4d68cfe9586aecb98e21eb58a03",
+      "sha256": "56caf868c73dbc33b94725972fc101dbcec0fb7b017c4f2f9e8cda49516992e9"
+    },
+    "0x8326eb8896e358717f10502ec73ce8d28e37b108": {
+      "address": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": "0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946",
+      "current_implementation_role": "session_key_manager_implementation_2",
+      "eip1967_reads": {
+        "admin": "admin_word:0x8326eb8896e358717f10502ec73ce8d28e37b108",
+        "implementation": "implementation_word:0x8326eb8896e358717f10502ec73ce8d28e37b108"
+      },
+      "eip1967_slots": {
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x00000000000000000000000004b5ea4cdd8d6de4bd6e0ef3865266947f043946"
+      },
+      "implementation_role": "session_key_manager_implementation",
+      "keccak256": "0x93076ef48e1d48172af505f739606cf1fa8425dbf9dbc6bee6743307bd4bd63b",
+      "origin": {
+        "block": 47855066,
+        "kind": "deployer_creation",
+        "tx": "0xe055509195f0ea1b9e30c366c3350d10470d8c1d145bfa51686b49134d36ffbe"
+      },
+      "pinned_implementation": "0x0000000000000000000000008a5069fe303e8f81e91825436e956d595032e558",
+      "role": "session_key_manager_proxy",
+      "runtime_bytes": 925,
+      "runtime_file": "atlas/block_48902346/runtime/0x8326eb8896e358717f10502ec73ce8d28e37b108.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": "code:0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+    },
+    "0x8a5069fe303e8f81e91825436e956d595032e558": {
+      "address": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": null,
+      "eip1967_reads": {},
+      "eip1967_slots": {
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "keccak256": "0x337787e630c4fe48e2cea45e1dbd7cb12be2254d158042ee1cd446e706d5c484",
+      "origin": {
+        "block": 47855064,
+        "kind": "deployer_creation",
+        "tx": "0x98510ecde6e5808fdc50b224dfc1031dac24a9d94f107a43ff75a6d15c8ee35f"
+      },
+      "pinned_implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "session_key_manager_implementation",
+      "runtime_bytes": 3764,
+      "runtime_file": "atlas/block_48902346/runtime/0x8a5069fe303e8f81e91825436e956d595032e558.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": null,
+      "sha256": "630c02b0c693c47760554a3f0fed68b72db5df601f887d2edaaa3106e6308e63"
+    },
+    "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0": {
+      "address": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": null,
+      "eip1967_reads": {},
+      "eip1967_slots": {
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "keccak256": "0xb8ab2884da3e386fc6a5e27971a39247ea6285f35160e85b304be742c0f28812",
+      "origin": {
+        "block": 47855068,
+        "kind": "deployer_creation",
+        "tx": "0xbce9a7c2e1eee761420668e8d1995706943b41e6e2de7f392a18bd4e9262b831"
+      },
+      "pinned_implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "deposit_proxy_factory_implementation",
+      "runtime_bytes": 3917,
+      "runtime_file": "atlas/block_48902346/runtime/0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": null,
+      "sha256": "808c1f14f7d7811b32fedb672fcfa0b5095f96faa20ec8413556875b4ace9efd"
+    },
+    "0x93a8e8d647f6c1e7b0f9bf4bd86eff3a9f20c3fb": {
+      "address": "0x93a8e8d647f6c1e7b0f9bf4bd86eff3a9f20c3fb",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": null,
+      "eip1967_reads": {},
+      "eip1967_slots": {
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "keccak256": "0x7a010e2b4e71c1349b036ea7e4d4732fde6c08d38cc6fc75d0b4a861c90237ee",
+      "origin": {
+        "block": 48092801,
+        "kind": "deployer_creation",
+        "tx": "0xb478b9195521a8ef41f26f69936de3be0bac7949ed678d45ce4ff0d9e9e0f39c"
+      },
+      "pinned_implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "exchange_implementation_variant_a",
+      "runtime_bytes": 23529,
+      "runtime_file": "atlas/block_48902346/runtime/0x93a8e8d647f6c1e7b0f9bf4bd86eff3a9f20c3fb.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": null,
+      "sha256": "c755794c2d6cf6077dded83c91067b4e9e07fc386e63c322ff7e4389cd697f4d"
+    },
+    "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e": {
+      "address": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+      "current_implementation_role": "oracle_implementation",
+      "eip1967_reads": {
+        "admin": "admin_word:0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+        "implementation": "implementation_word:0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e"
+      },
+      "eip1967_slots": {
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000003997ffc8cbd281d4fc8d0548e505ae2fbbbd985a"
+      },
+      "implementation_role": "oracle_implementation",
+      "keccak256": "0x93076ef48e1d48172af505f739606cf1fa8425dbf9dbc6bee6743307bd4bd63b",
+      "origin": {
+        "block": 47854597,
+        "kind": "deployer_creation",
+        "tx": "0x9b66014c5dfeb4d4fe9bd45bbc681f8628edbbbd8a3a2dbe19d155ed5de63f9d"
+      },
+      "pinned_implementation": "0x0000000000000000000000003997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+      "role": "oracle_proxy",
+      "runtime_bytes": 925,
+      "runtime_file": "atlas/block_48902346/runtime/0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": "code:0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+    },
+    "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016": {
+      "address": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "current_implementation_role": "staking_implementation",
+      "eip1967_reads": {
+        "admin": "admin_word:0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "implementation": "implementation_word:0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016"
+      },
+      "eip1967_slots": {
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x000000000000000000000000e6e3519455170913c5c3bfe541dd918a2d0cbb15"
+      },
+      "implementation_role": "staking_implementation",
+      "keccak256": "0x93076ef48e1d48172af505f739606cf1fa8425dbf9dbc6bee6743307bd4bd63b",
+      "origin": {
+        "block": 47855135,
+        "kind": "deployer_creation",
+        "tx": "0xcd107566d243dc4984e0e157b5384018532e8f1b2b2495ebbc720c8e8aca955d"
+      },
+      "pinned_implementation": "0x000000000000000000000000e6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "role": "staking_proxy",
+      "runtime_bytes": 925,
+      "runtime_file": "atlas/block_48902346/runtime/0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": "code:0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+    },
+    "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f": {
+      "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": null,
+      "eip1967_reads": {},
+      "eip1967_slots": {
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "keccak256": "0x500bf24105ab07da3a7b9dd08f74d14d24c8ae82c81b204dcb5755eb7f798716",
+      "origin": {
+        "block": 47855496,
+        "kind": "deployer_creation",
+        "tx": "0xc6fd85ec337d08e9e6caffee4b26d74b60406883661c18673b1427f4934d2e0b"
+      },
+      "pinned_implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "timelock",
+      "runtime_bytes": 3207,
+      "runtime_file": "atlas/block_48902346/runtime/0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": null,
+      "sha256": "f391dcb36b34b4b2fb1ffd42015cd4832a56ed8b40545eb3df41b58d7b38443e"
+    },
+    "0xcd617f984158a4f5d287ddee0e8eb0fed204916d": {
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": null,
+      "eip1967_reads": {},
+      "eip1967_slots": {
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "keccak256": "0x6dd521e90deaa283432285694770360cf42830025b2b1e6916a3c41799160792",
+      "origin": {
+        "from": "exchange_implementation",
+        "kind": "push20_linked_library"
+      },
+      "pinned_implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "exchange_linked_library_live",
+      "runtime_bytes": 5790,
+      "runtime_file": "atlas/block_48902346/runtime/0xcd617f984158a4f5d287ddee0e8eb0fed204916d.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": null,
+      "sha256": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2"
+    },
+    "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262": {
+      "address": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": null,
+      "eip1967_reads": {},
+      "eip1967_slots": {
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "keccak256": "0xe926c659aca61daaaf9e68267817be4dae5152f11320a6ba970549dfdd15f62a",
+      "origin": {
+        "block": 47855137,
+        "kind": "deployer_creation",
+        "tx": "0xc68a34be37d766c4f932bd3e867962069b98d38ef1138a4ad602ac6195adf775"
+      },
+      "pinned_implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "batch_executor_implementation",
+      "runtime_bytes": 3451,
+      "runtime_file": "atlas/block_48902346/runtime/0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": null,
+      "sha256": "480375f798fccf20fd79fd4fedefdd3377dd44af4dd559a3310a87c5bc048ae8"
+    },
+    "0xe40f17915daa230324030003a197cdaef2261c0e": {
+      "address": "0xe40f17915daa230324030003a197cdaef2261c0e",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+      "current_implementation_role": "paper_token_implementation",
+      "eip1967_reads": {
+        "admin": "admin_word:0xe40f17915daa230324030003a197cdaef2261c0e",
+        "implementation": "implementation_word:0xe40f17915daa230324030003a197cdaef2261c0e"
+      },
+      "eip1967_slots": {
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x000000000000000000000000433bd418ec92818a960585f4d5fae563e735bb4a"
+      },
+      "implementation_role": "paper_token_implementation",
+      "keccak256": "0x93076ef48e1d48172af505f739606cf1fa8425dbf9dbc6bee6743307bd4bd63b",
+      "origin": {
+        "block": 47855130,
+        "kind": "deployer_creation",
+        "tx": "0x5e75d563d789f1007d03b187dd2f646b1912aeaf2ff43ac69f9bd2a77cabed74"
+      },
+      "pinned_implementation": "0x000000000000000000000000433bd418ec92818a960585f4d5fae563e735bb4a",
+      "role": "paper_token_proxy",
+      "runtime_bytes": 925,
+      "runtime_file": "atlas/block_48902346/runtime/0xe40f17915daa230324030003a197cdaef2261c0e.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": "code:0xe40f17915daa230324030003a197cdaef2261c0e",
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+    },
+    "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15": {
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": null,
+      "eip1967_reads": {},
+      "eip1967_slots": {
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "keccak256": "0x54573c497e5109e353cf5330343323915e0c0f26e1b410fd3cb2cd8d1460f154",
+      "origin": {
+        "block": 47855133,
+        "kind": "deployer_creation",
+        "tx": "0xf3e8a793259ca557c5b297206d15cb29484710076124bcd0d551bea87e3a38d6"
+      },
+      "pinned_implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "staking_implementation",
+      "runtime_bytes": 6054,
+      "runtime_file": "atlas/block_48902346/runtime/0xe6e3519455170913c5c3bfe541dd918a2d0cbb15.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": null,
+      "sha256": "3e006d0daee1fcbaa71c160a72291374783da5f720a33db0a51c8f84bde3aa04"
+    },
+    "0xe79c91cc682f1bb401a9cab74c900470190f0f8f": {
+      "address": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": null,
+      "eip1967_reads": {},
+      "eip1967_slots": {
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "keccak256": "0xff475c0f38702282fc531a92b1d200a6672924ea0c8b211844da318ffa793d73",
+      "origin": {
+        "block": 47854475,
+        "kind": "deployer_creation",
+        "tx": "0xe766e65a3f827ec843ac62a66c1f1b3665ccedf6ec480ac21fa39711d4a97682"
+      },
+      "pinned_implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "proxy_admin",
+      "runtime_bytes": 943,
+      "runtime_file": "atlas/block_48902346/runtime/0xe79c91cc682f1bb401a9cab74c900470190f0f8f.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": null,
+      "sha256": "238bb08777bab344b1e4090bd3a64fd26e48ef9ebaaf075234274e1c06129066"
+    },
+    "0xe991817199363046da0a28da6fbad0284e4aa492": {
+      "address": "0xe991817199363046da0a28da6fbad0284e4aa492",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": null,
+      "eip1967_reads": {},
+      "eip1967_slots": {
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "keccak256": "0xa13304bc6fdad736a3ee6ad77d713c6077f1b130501d577be1bf9487d005388d",
+      "origin": {
+        "kind": "linked_library_from_tokenomics_trace"
+      },
+      "pinned_implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "paper_math_library",
+      "runtime_bytes": 585,
+      "runtime_file": "atlas/block_48902346/runtime/0xe991817199363046da0a28da6fbad0284e4aa492.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": null,
+      "sha256": "8f1de6ca76cfd6f0186e9f4472dd53fab6dfa1a53a7c3a2a3700d641fec7c5da"
+    },
+    "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce": {
+      "address": "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+      "address_status": "unchanged_from_pinned_manifest",
+      "code_present": true,
+      "current_implementation": null,
+      "eip1967_reads": {},
+      "eip1967_slots": {
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "keccak256": "0xe8b46a7790b9711b544cf6a4388bb67f02ce596267045b33e7268ac32cc45c76",
+      "origin": {
+        "family_file": "deposit_proxy_family.json",
+        "kind": "factory_create2_representative"
+      },
+      "pinned_implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "user_deposit_proxy_representative",
+      "runtime_bytes": 1646,
+      "runtime_file": "atlas/block_48902346/runtime/0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "atlas/block_48902346/runtime (pinned baseline, not copied)",
+      "runtime_verified_against_live_code_read": null,
+      "sha256": "0c2f88b4bd4a6225e291a27e63601a50355f9f563c27da85d6df17c5431c3ffb"
+    },
+    "0xfdc6550436dd75ce8a0b145f935b7d3a64f53248": {
+      "added_note": "no pinned counterpart: the newest suite had no BuilderRegistry before the 2026-10-21 batch",
+      "address": "0xfdc6550436dd75ce8a0b145f935b7d3a64f53248",
+      "address_status": "added_by_the_post_refresh_governance_batch",
+      "code_present": true,
+      "current_implementation": null,
+      "eip1967_reads": {},
+      "eip1967_slots": {
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "keccak256": "0xd94a4371d1b14f6a69325c70952c6def4c60c4f038b03614853ab9eacc12f463",
+      "origin": {
+        "block": 49075870,
+        "deployer": "0x13cb7a200d081094d23ebf07f4d708410a9c488b",
+        "deployer_nonce": 7,
+        "kind": "deployer_creation",
+        "timestamp": 1792528020,
+        "tx": "0xe05dd0d193dd9cb0cbb3eff7762e3942541e06a15aab464d7ddfdfb837878fdd"
+      },
+      "pinned_implementation": null,
+      "replaces": null,
+      "role": "builder_registry",
+      "runtime_bytes": 1210,
+      "runtime_file": "atlas/block_49265286/runtime/0xfdc6550436dd75ce8a0b145f935b7d3a64f53248.hex",
+      "runtime_file_base": "repo_root",
+      "runtime_source": "captured eth_getCode at this pin (see runtime_verified_against_live_code_read)",
+      "runtime_verified_against_live_code_read": "code:0xfdc6550436dd75ce8a0b145f935b7d3a64f53248",
+      "sha256": "f459de55cb0463912417650fbca7e18109f3820551e4071234109e1e72801d2f"
+    }
+  },
+  "deposit_proxy_family": {
+    "factory": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+    "instance_count": 22586,
+    "instance_file": "deposit_proxy_instances.json",
+    "sample_template_file": "deposit_proxy_family.json"
+  },
+  "pin_kind": "current_state_head_pin_additive_to_the_audited_baseline",
+  "read_time_span_utc": [
+    "2026-10-22T23:21:29.760415+00:00",
+    "2026-10-23T00:12:14.857129+00:00"
+  ],
+  "rpc": "https://rpc.hyperliquid.xyz/evm",
+  "runtime_file_base": "repo_root",
+  "scope_note": "The newest suite (docs contract set 1) as it stands after the 2026-10-21 contract-set-2 batch: its own 19 direct contracts, the governance contracts behind it, the linked libraries, and the five contracts the refresh added. Unchanged runtimes are not duplicated; their runtime_file points at the audited baseline. Proxy implementation and admin words are current-state reads, not archive state, and the two implementation variants never installed are carried from the baseline.",
+  "sources": [
+    "artifacts/postpin_pin/raw_reads.json",
+    "artifacts/postpin_pin/state_reads.json",
+    "artifacts/postpin_pin/code/*.hex",
+    "atlas/block_48902346/manifest.json",
+    "atlas/block_48902346/selector_catalog.json",
+    "atlas/block_48902346/suite_sets.json",
+    "artifacts/postpin_suite/runtime/*.hex",
+    "artifacts/postpin_suite/explorer_facts.json"
+  ],
+  "state_read_note": "Every read under this pin is a current-state `latest` read; the public RPC ignores the block parameter, so no value here is archive state.",
+  "supersedes": {
+    "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+    "manifest": "atlas/block_48902346/manifest.json",
+    "pin": 48902346,
+    "previous_pin_implementation_change": {
+      "0x6cd5661646289fb6e65ea5c032310fded797d0a2": {
+        "from": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+        "implementation_role": "exchange_implementation",
+        "role": "exchange_proxy",
+        "to": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+        "to_runtime_bytes": 23959,
+        "to_sha256": "fc7374f3969381160732fe98c5e3145e00c3f167f168d61d65bb4972e9a6b268"
+      },
+      "0x75174549dbbd44497d31a47e2e2d7406408d63d9": {
+        "from": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+        "implementation_role": "tokenomics_implementation",
+        "role": "tokenomics_proxy",
+        "to": "0x7c0a72a788cff4d68cfe9586aecb98e21eb58a03",
+        "to_runtime_bytes": 6452,
+        "to_sha256": "56caf868c73dbc33b94725972fc101dbcec0fb7b017c4f2f9e8cda49516992e9"
+      },
+      "0x8326eb8896e358717f10502ec73ce8d28e37b108": {
+        "from": "0x8a5069fe303e8f81e91825436e956d595032e558",
+        "implementation_role": "session_key_manager_implementation",
+        "role": "session_key_manager_proxy",
+        "to": "0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946",
+        "to_runtime_bytes": 4521,
+        "to_sha256": "7df05c33597c04820a314fae015aab01b5566aff53e9bded8446962cfd4ad2c9"
+      }
+    },
+    "relationship": "additive pin; the audited baseline is not replaced or rewritten",
+    "unchanged_proxy_implementations": {
+      "batch_executor_proxy": "0x000000000000000000000000e0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "deposit_proxy_factory_proxy": "0x0000000000000000000000008f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "oracle_proxy": "0x0000000000000000000000003997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+      "paper_token_proxy": "0x000000000000000000000000433bd418ec92818a960585f4d5fae563e735bb4a",
+      "staking_proxy": "0x000000000000000000000000e6e3519455170913c5c3bfe541dd918a2d0cbb15"
+    }
+  },
+  "timestamp": 1792714331,
+  "timestamp_utc": "2026-10-23T00:12:11Z",
+  "unchanged_code_read_note": "this pin re-read code only for the five post-refresh addresses and the eight proxies; the 25 unchanged implementations keep the audited baseline's captured runtime files, whose hashes are recomputed here rather than re-read from the chain"
+}

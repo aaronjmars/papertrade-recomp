@@ -1,0 +1,43 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "linked_library": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+  "enqueue_library_selector": "0x18958ce2",
+  "forward_merge_selectors": {
+    "exchange": "0x753a369c",
+    "library": "0x3cf4208d"
+  },
+  "reverse_merge_selectors": {
+    "exchange": "0x827ad94c",
+    "library": "0x32db40c9"
+  },
+  "harvest_selectors": {
+    "exchange": "0xddc63262",
+    "library": "0x79810ffe"
+  },
+  "local_replay": "../../artifacts/exchange_library_queue_interleaved_local/replay.json",
+  "case_count": 7,
+  "forward_effect": "For node owners A,B,A and A user links 101->103, forward merge moves 300 from 101 to 103 without reading B node 102; harvest processes empty 101, then pays B 700, then A 1400 as limits increase.",
+  "reverse_effect": "For A,B,A, reverse merge from 101 to 103 reverts 0x5b6d2b7a at limits 1-3 without writes; limits 2-3 read B node 102 before reverting. A,A,B contiguous control succeeds from 101 to 102 at limit 1.",
+  "source_name_status": "Merge source names and raw error name unresolved.",
+  "simulated_error_catalog": [
+    {
+      "selector": "0x5b6d2b7a",
+      "probe_paths": [
+        "testQueueInterleavedReverseLimitOne",
+        "testQueueInterleavedReverseLimitTwo",
+        "testQueueInterleavedReverseLimitThree"
+      ],
+      "public_signature_candidates": [],
+      "reconstructed_signature": "",
+      "local_replay_evidence": "../../artifacts/exchange_library_queue_interleaved_local/replay.json"
+    }
+  ],
+  "limits": [
+    "Synthetic two-user interleaving is reachable through the pinned library but was not observed on chain at the pin.",
+    "The reverse rejection is supported by exact runtime and storage reads; the original source-level precondition is unknown.",
+    "More than three queue nodes, partial funding, and interleaved users with other orderings remain open."
+  ]
+}

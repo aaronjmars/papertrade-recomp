@@ -1,0 +1,37 @@
+{
+  "pin": 48902346,
+  "library": "0xac8ba1307815f74bd13d4d039c96f7b97e81aa49",
+  "test_names": [
+    "testFlat",
+    "testNegative",
+    "testOverLoss",
+    "testPositive",
+    "testZeroNet"
+  ],
+  "test_source_sha256": "d17dad7854c8f353af189bf95d33d745be60c862a955f8fa8eb4507ab6469448",
+  "selector": "0xacbc814f",
+  "margin": 500,
+  "constructed_cases": [
+    {
+      "pnl": 100,
+      "returned_and_queued": 600
+    },
+    {
+      "pnl": -100,
+      "returned_and_queued": 400
+    },
+    {
+      "pnl": 0,
+      "returned_and_queued": 500
+    },
+    {
+      "pnl": -500,
+      "returned_and_queued": 0
+    },
+    {
+      "pnl": -501,
+      "returned_and_queued": 0
+    }
+  ],
+  "limits": "Exact library runtime with constructed queue storage and delegatecall harness; no historical invocation or Exchange wrapper path is proven."
+}

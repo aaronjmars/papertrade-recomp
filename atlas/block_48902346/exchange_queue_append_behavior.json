@@ -1,0 +1,114 @@
+{
+  "pin_block": 48902346,
+  "pre_close_block": 48173880,
+  "pre_close_block_hash": "0xc4e06ae5048b4457d3df2b1f9658abd429a233649f617c2eb73a67f5f06a48b3",
+  "historical_close_tx": "0x3bc7029ee0d72c5dbacfb74dddc183ddb6206adca6ed702014eb90c28cf2d39e",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "historical_bbo": [
+    249820,
+    249830
+  ],
+  "baseline_replay": {
+    "exchange_storage_diff_equal": true,
+    "all_ordered_logs_equal": true
+  },
+  "synthetic_existing_amount": "5000000000000000000",
+  "append": {
+    "new_node_id": 2,
+    "new_amount": "7623942182351823589",
+    "global_head": 1,
+    "next_id_after": 3,
+    "total_queued_after": "12623942182351823589",
+    "user_head_after": 1,
+    "user_tail_after": 2,
+    "packed_node_word": "owner address in low 160 bits; next ID in bits 160-207; previous ID in bits 208-255"
+  },
+  "same_user_harvest": [
+    {
+      "limit": 1,
+      "returned_amount": "5000000000000000000",
+      "user_head_after": 2,
+      "user_tail_after": 2,
+      "user_queued_after": "7623942182351823589"
+    },
+    {
+      "limit": 2,
+      "returned_amount": "12623942182351823589",
+      "user_head_after": 0,
+      "user_tail_after": 0,
+      "user_queued_after": "0"
+    }
+  ],
+  "partial_node_payouts": [
+    {
+      "available": "0",
+      "max_entries": 1,
+      "returned_amount": "0",
+      "first_node_remaining": "5000000000000000000",
+      "second_node_remaining": "7623942182351823589",
+      "harvest_events": 0
+    },
+    {
+      "available": "0",
+      "max_entries": 2,
+      "returned_amount": "0",
+      "first_node_remaining": "5000000000000000000",
+      "second_node_remaining": "7623942182351823589",
+      "harvest_events": 0
+    },
+    {
+      "available": "3000000000000000000",
+      "max_entries": 1,
+      "returned_amount": "3000000000000000000",
+      "first_node_remaining": "2000000000000000000",
+      "second_node_remaining": "7623942182351823589",
+      "harvest_events": 1
+    },
+    {
+      "available": "3000000000000000000",
+      "max_entries": 2,
+      "returned_amount": "3000000000000000000",
+      "first_node_remaining": "2000000000000000000",
+      "second_node_remaining": "7623942182351823589",
+      "harvest_events": 1
+    },
+    {
+      "available": "5000000000000000000",
+      "max_entries": 1,
+      "returned_amount": "5000000000000000000",
+      "first_node_remaining": "0",
+      "second_node_remaining": "7623942182351823589",
+      "harvest_events": 1
+    },
+    {
+      "available": "5000000000000000000",
+      "max_entries": 2,
+      "returned_amount": "5000000000000000000",
+      "first_node_remaining": "0",
+      "second_node_remaining": "7623942182351823589",
+      "harvest_events": 1
+    },
+    {
+      "available": "7000000000000000000",
+      "max_entries": 1,
+      "returned_amount": "5000000000000000000",
+      "first_node_remaining": "0",
+      "second_node_remaining": "7623942182351823589",
+      "harvest_events": 1
+    },
+    {
+      "available": "7000000000000000000",
+      "max_entries": 2,
+      "returned_amount": "7000000000000000000",
+      "first_node_remaining": "0",
+      "second_node_remaining": "5623942182351823589",
+      "harvest_events": 2
+    }
+  ],
+  "limitations": [
+    "The append and same-user harvest are local fork simulations with a synthetic existing node.",
+    "The fork uses the historical BBO return words as mock HyperCore precompile code.",
+    "Same-user harvest needed a synthetic treasury increase to pass its availability gate.",
+    "No underfunded harvest or same-user append was observed on chain; larger lists and concurrent enqueues remain untested."
+  ]
+}

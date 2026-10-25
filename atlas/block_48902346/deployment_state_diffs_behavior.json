@@ -1,0 +1,81 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "verified_creations": {
+    "staking": {
+      "transaction_hash": "0xcd107566d243dc4984e0e157b5384018532e8f1b2b2495ebbc720c8e8aca955d",
+      "block": 47855135,
+      "proxy": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+      "implementation": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "selector": "0x9ccae24e",
+      "proxy_runtime_sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+      "direct_slot_values": {
+        "0": "0x1",
+        "1": "0x71706d56c8b436981e93987cd97df512528491b243c6d8d1614cad52659e7eb0",
+        "2": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "3": "0xe40f17915daa230324030003a197cdaef2261c0e",
+        "4": "0x6b9e773128f453f5c2c60935ee2de2cbc5390a24",
+        "13": "0x1",
+        "15": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+        "16": "0x10000000000000000000000000000000000000000"
+      },
+      "implementation_slot_value": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "admin_slot_value": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+      "event_count": 2,
+      "artifacts": {
+        "calls": "../../artifacts/staking/deployment.calls.json",
+        "receipt": "../../artifacts/staking/deployment.receipt.json",
+        "state_diff": "../../artifacts/staking/deployment.state_diff.json"
+      },
+      "state_diff_sha256": "13cd0ae4891700292ec21f616788a0f148b2fc83e55970e3872922835bb8b60e"
+    },
+    "paper_token": {
+      "transaction_hash": "0x5e75d563d789f1007d03b187dd2f646b1912aeaf2ff43ac69f9bd2a77cabed74",
+      "block": 47855130,
+      "proxy": "0xe40f17915daa230324030003a197cdaef2261c0e",
+      "implementation": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+      "selector": "0x8f15b414",
+      "proxy_runtime_sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+      "direct_slot_values": {
+        "0": "0x1",
+        "1": "0x506170657200000000000000000000000000000000000000000000000000000a",
+        "2": "0x504150455200000000000000000000000000000000000000000000000000000a",
+        "3": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+        "4": "0x75174549dbbd44497d31a47e2e2d7406408d63d9"
+      },
+      "implementation_slot_value": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+      "admin_slot_value": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+      "event_count": 2,
+      "artifacts": {
+        "calls": "../../artifacts/paper_token/deployment.calls.json",
+        "receipt": "../../artifacts/paper_token/deployment.receipt.json",
+        "state_diff": "../../artifacts/paper_token/deployment.state_diff.json"
+      },
+      "state_diff_sha256": "cea20fcb708db6655ba708154517921969f38d6730703a1c39ea09abf83a32eb"
+    },
+    "session_creation": {
+      "transaction_hash": "0xe055509195f0ea1b9e30c366c3350d10470d8c1d145bfa51686b49134d36ffbe",
+      "block": 47855066,
+      "proxy": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "implementation": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "selector": "0x747b8a1c",
+      "proxy_runtime_sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+      "direct_slot_values": {
+        "0": "0x1",
+        "1": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+        "2": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+        "3": "0x6cd5661646289fb6e65ea5c032310fded797d0a2"
+      },
+      "implementation_slot_value": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "admin_slot_value": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+      "event_count": 2,
+      "artifacts": {
+        "calls": "../../artifacts/session_creation/0xe055509195f0ea1b9e30c366c3350d10470d8c1d145bfa51686b49134d36ffbe.calls.json",
+        "receipt": "../../artifacts/session_creation/0xe055509195f0ea1b9e30c366c3350d10470d8c1d145bfa51686b49134d36ffbe.receipt.json",
+        "state_diff": "../../artifacts/session_creation/0xe055509195f0ea1b9e30c366c3350d10470d8c1d145bfa51686b49134d36ffbe.state_diff.json"
+      },
+      "state_diff_sha256": "3b7a8f240e55e4e4c06b1e509d7399979da8a76dcca6ad0dbc4bb43fa2ec7753"
+    }
+  },
+  "scope": "Three archived successful creations with saved call traces, receipts, and prestateTracer state diffs; exact created proxy code and every written proxy slot checked"
+}

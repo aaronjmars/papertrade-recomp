@@ -1,0 +1,1 @@
+bank_at_close=0 queued_delta=25331156061910525405 global_queued=25331156061910525405 fee_staker_delta=0 fee_dev_delta=0 treasury_delta=0 

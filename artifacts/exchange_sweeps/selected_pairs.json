@@ -1,0 +1,96 @@
+{
+  "sampling": "12 evenly spaced recent pairs plus saved pair",
+  "pairs": [
+    {
+      "user": "0xb2dadf36151fb51fad1b66a09d56749a3578e532",
+      "request_tx": "0x6b6a484eb01500ccdf4dca00f01f836974f36914a2ba14957c362716a0b4a8ea",
+      "request_block": 48899002,
+      "finalize_tx": "0xab9b28628bccd0a7b586e73f180f50e0759bc342e94937e0051296baeaf6b354",
+      "finalize_block": 48899003
+    },
+    {
+      "user": "0x96904577d2e5460c0ebe53f2e923287c79e64260",
+      "request_tx": "0xd69bd5badee0fbfc7c61ac3978d90b682e201bbf051878790deb93161a5628fe",
+      "request_block": 48899164,
+      "finalize_tx": "0x6804d510d9a7943c0087380228a87343a1cb7299287413f4d2ce98461b95d7fa",
+      "finalize_block": 48899165
+    },
+    {
+      "user": "0xb48e45c76e7442d9944790085399e26b7d89b1ed",
+      "request_tx": "0x5bcaa95581cfd36c42d2fc2222f3f4b4c34434b9c47a0d24c29ca0a97752a728",
+      "request_block": 48899575,
+      "finalize_tx": "0x47975fa4ef55dcb36799b4f55a3a156108c7e70f31020b850a1350415105c3e5",
+      "finalize_block": 48899576
+    },
+    {
+      "user": "0x8191bed0d4d1352198ea4d0103c345a6a6156cd4",
+      "request_tx": "0x5cb41a6a23e89f2e1c830bb7f3e5f9a40038be4851fa511f09bb50e68b000d99",
+      "request_block": 48899758,
+      "finalize_tx": "0xd321a642f2616b04e4764b5ca250b2df519ccf7421990de97c2bd9397c8d16ca",
+      "finalize_block": 48899759
+    },
+    {
+      "user": "0x856f7cb643fca326f475039702b10a9cbc2bd31a",
+      "request_tx": "0x349ce33796a5dac880969c59d2603476cc18d68313593577416248ea3efde6cb",
+      "request_block": 48899933,
+      "finalize_tx": "0xd0d95eeb9aba23ea750f37f57b347e46dae4ef5938b5487e4a4964cc8261cc7d",
+      "finalize_block": 48899934
+    },
+    {
+      "user": "0x3e234eb00a76e943c18cbc81b205da1ecdbd83fb",
+      "request_tx": "0xf78640389c6af15b5b11989c6ea51204e31abd726fdd2587f6c22ce34909f0fd",
+      "request_block": 48900115,
+      "finalize_tx": "0x94f0ed636890c42b28c45ce0b2b7bf1079de510259eb8ab43b18d0b3498cfcec",
+      "finalize_block": 48900116
+    },
+    {
+      "user": "0x34725731507037eedee460942d562202fb72dd1a",
+      "request_tx": "0x332bdad63e3c4ba731288b7967ed5a220c95dd83ba345de34c638d8e8bee0a8c",
+      "request_block": 48900345,
+      "finalize_tx": "0x4934c90ef02317108a91ae489d465b51d823e95d89eeea12b253687e92ff91c9",
+      "finalize_block": 48900346
+    },
+    {
+      "user": "0xb4ed077a20f0bfb8b72bb1729a5e96cf0b39af52",
+      "request_tx": "0x25884c19d35d5f437d7ff651265282bba62574e8fb60f1f6d2149beae02dba78",
+      "request_block": 48900620,
+      "finalize_tx": "0x12669c9c4b45eed8aafa452f2cb00b2d8be8562d4193b9ac8a1044fbc21f73b9",
+      "finalize_block": 48900621
+    },
+    {
+      "user": "0x3268b9682e10d2f798c6b1e09fa927bbf9162b7e",
+      "request_tx": "0xc8cdc9bdc9fb912fc79f39ad401807ccbed692cbd79394ffae630d149e0b1762",
+      "request_block": 48900812,
+      "finalize_tx": "0xea2ce7d90a1add6c11f942b311ce94dbbcede6c1d97500607da635144de72d96",
+      "finalize_block": 48900814
+    },
+    {
+      "user": "0xcf319f7005a2354bfe92cb6659edcb6aa8b260bc",
+      "request_tx": "0x0fdf762c5ac3afddfa004b79e4fc2d837d85e6a23fb1bc81d8719b5f4edb6c12",
+      "request_block": 48901286,
+      "finalize_tx": "0x7a4f79e2aa99a6141c4a1ba7b622ca9cffa3e91ddd29ebabc74ef113333c3144",
+      "finalize_block": 48901287
+    },
+    {
+      "user": "0xfb7ba9503faf29313a83ab5eed551895cd13a88f",
+      "request_tx": "0x1452b705238d132b920fc75e06e118cf7f1a278891a67551f7c68effd333007e",
+      "request_block": 48901539,
+      "finalize_tx": "0xc6b248b584de7bf8b8def404a0c2db51da7b89f36471713f191ef2a45fda581a",
+      "finalize_block": 48901540
+    },
+    {
+      "user": "0xe1ef1c7272f8c4d863f999370649a95aff485803",
+      "request_tx": "0x44de36306a0a544fb9e9f4e062ec9817565d24d06d58645410d435a223bcb002",
+      "request_block": 48901965,
+      "finalize_tx": "0xed9df6a76a54523153b81890d869e2af6538ac7c8a98a5f0ecf593b738853c5b",
+      "finalize_block": 48901966
+    },
+    {
+      "user": "0x1730a930cfd0da43255081801bf1a3eb0b69ec83",
+      "request_tx": "0xd4ee56dd5d1e271b8fc142e340362d3ab1eede92a9810ab33de4d90a9f798257",
+      "request_block": 48902092,
+      "finalize_tx": "0x2f9333500c9e715e4c974f2c6bc7bb20ad3897ad6135d6d9788805fec95dc4e8",
+      "finalize_block": 48902093
+    }
+  ]
+}

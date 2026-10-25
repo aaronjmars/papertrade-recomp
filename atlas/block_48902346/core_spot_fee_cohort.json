@@ -1,0 +1,62 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "proxy_count": 38,
+  "outgoing_spot_transfer_count": 112,
+  "outgoing_by_exchange": [
+    96,
+    16
+  ],
+  "fee_raw_spot_counts": {
+    "0": 110,
+    "100000000": 2
+  },
+  "first_captured_inbound_mode_counts": {
+    "perp_send": 2,
+    "spot_send": 22,
+    "spot_transfer": 14
+  },
+  "first_outgoing_fee_by_inbound_mode": [
+    {
+      "mode": "perp_send",
+      "fee_raw_spot": 100000000,
+      "proxy_count": 2
+    },
+    {
+      "mode": "spot_send",
+      "fee_raw_spot": 0,
+      "proxy_count": 22
+    },
+    {
+      "mode": "spot_transfer",
+      "fee_raw_spot": 0,
+      "proxy_count": 14
+    }
+  ],
+  "one_usdc_fee_cases": [
+    {
+      "proxy": "0x5fa0a115d5f6f56d1b1c7f1df51d88adcb860a6d",
+      "first_captured_inbound_mode": "perp_send",
+      "first_outgoing_fee_raw": 100000000,
+      "first_outgoing_hash": "0xb82ae0d5623603bbb9a40446313757000065f8bafd39228d5bf38c282139dda6"
+    },
+    {
+      "proxy": "0x07d38b03587edade651ee1520dfb619809992337",
+      "first_captured_inbound_mode": "perp_send",
+      "first_outgoing_fee_raw": 100000000,
+      "first_outgoing_hash": "0xc025caf52fd47ee2c19f04463e2b2c010100e2dacad79db463ee7647eed858cd"
+    }
+  ],
+  "later_zero_fee_transfer_after_one_usdc_fee": [
+    "0x2899e1a47c3f375e2a1304463139770000d4f98a17325630cc628cf73b331148"
+  ],
+  "account_activation_gas_entry_count": 12,
+  "earlier_same_destination_transfers_before_fee_cases": [
+    13,
+    15
+  ],
+  "sources": {
+    "core_ledger": "../../artifacts/deployer_scope/older_proxy_core.json.gz",
+    "retry_trace": "../../artifacts/deployer_scope/older_sweep_retry_history.json.gz"
+  }
+}

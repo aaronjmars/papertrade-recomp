@@ -1,0 +1,123 @@
+{
+ "fork_url": "https://rpc.hyperliquid.xyz/evm",
+ "test_sources": {
+  "Ledger.t.sol": "7d1cea5c18e16df2cf3e53aa6984ca50ccaa62105154fd9b50cc6ce1e890cb77",
+  "OlderFork.t.sol": "677462012fb88ef5d61af2b6981209a12d5f8d3e53814894adc7d561e27f8717"
+ },
+ "outputs": {
+  "cleandebt": {
+   "queued_before": 25000000000000000000,
+   "locked_before": 27815598618510431633825980,
+   "tb_before": 84448601522052004894103251,
+   "bank_before": 0,
+   "open_ok": 1,
+   "queued_after": 0,
+   "locked_after": 27815598618510431633825980,
+   "tb_after": 84448601522052004894103251,
+   "bank_after": 4737319753728874410631818,
+   "plain_open_ok": 1,
+   "plain_locked_delta": 25000000000000000000
+  },
+  "debtclosebank": {
+   "bank_at_close": 0,
+   "queued_delta": 25331156061910525405,
+   "global_queued": 25331156061910525405,
+   "fee_staker_delta": 0,
+   "fee_dev_delta": 0,
+   "treasury_delta": 0
+  },
+  "debtcycle": {
+   "open_ok": 1,
+   "open_userQueued": 0,
+   "open_global": 0,
+   "open_head": 0,
+   "open_tail": 0,
+   "open_nodeAmount": 0,
+   "open_balance_delta": 0,
+   "debt_close_queued": 25331156061910525405,
+   "bank_at_harvest": 0,
+   "harvest_ok": 1,
+   "harvest_paid": 25331156061910525405,
+   "harvest_balance_delta": 25331156061910525405
+  },
+  "harvestgate": {
+   "queued_before_harvest": 25331156061910525405,
+   "drained_harvest_ok": 1,
+   "drained_harvest_paid": 0,
+   "drained_queued_after": 25331156061910525405,
+   "drained_balance_delta": 0,
+   "funded_harvest_ok": 1,
+   "funded_harvest_paid": 25331156061910525405,
+   "funded_queued_after": 0,
+   "funded_balance_delta": 25331156061910525405
+  },
+  "linkage": {
+   "n1_node": 8453,
+   "n1_userQueued": 331156061910525405,
+   "n1_userHead": 8453,
+   "n1_userTail": 8453,
+   "n1_nodeWord0_lo": 31335684201718504952183847893050532264786608372,
+   "n1_nodeWord0_hi": 0,
+   "n1_nodeAmount": 331156061910525405,
+   "n1_nextCounter": 8454,
+   "n2_node": 8454,
+   "n2_userQueued": 662312123821050810,
+   "n2_globalQueued": 662312123821050810,
+   "n2_userHead": 8453,
+   "n2_userTail": 8454,
+   "n2_globalHead": 8453,
+   "n2_node1Word0_hi": 8454,
+   "n2_node2Word0_hi": 141817806848
+  },
+  "negative_control_reversed_linkage": {
+   "pre_userQueued": 35000000000000000000,
+   "pre_userHead": 8453,
+   "pre_userTail": 8454,
+   "open_ok": 1,
+   "post_userQueued": 25000000000000000000,
+   "post_global": 25000000000000000000,
+   "post_userHead": 0,
+   "post_userTail": 0,
+   "post_head_amount": 25000000000000000000
+  },
+  "outsider": {
+   "outsider_ok": 0,
+   "outsider_retlen": 4,
+   "outsider_err": 2746852204,
+   "user_balance_after": 1000000000000000000000,
+   "outsider_balance_after": 0
+  },
+  "plainclose": {
+   "plain_locked_delta": 25000000000000000000,
+   "plain_balance_after_open": 75000000000000000000,
+   "plain_balance_delta": 324532940672314897,
+   "plain_queued": 0,
+   "plain_fee_staker": 3311560619105254,
+   "plain_fee_dev": 3311560619105254,
+   "bank": 4737319422572812500106413
+  },
+  "twonode": {
+   "head": 8453,
+   "tail": 8454,
+   "head_next": 8454,
+   "library_amount_per_node": 331156061910525405,
+   "open_ok": 1,
+   "post_userQueued": 10000000000000000000,
+   "post_global": 10000000000000000000,
+   "post_head": 8453,
+   "post_tail": 8453,
+   "post_head_amount": 10000000000000000000,
+   "post_tail_amount": 0,
+   "sum_remaining": 10000000000000000000
+  },
+  "userwithdraw": {
+   "user_ok": 1,
+   "user_balance_after": 0,
+   "treasury_after": 117183028077123000000000000,
+   "log_count": 2,
+   "writer_action_len": 288,
+   "event_topic0": 67765053407499933956756939398894238837967943672223161754477093898911894888053
+  }
+ },
+ "notes": "Exact pinned runtime bytes for the first older Exchange proxy and implementation; the fork is the live chain state, HyperCore read precompiles are mocked and labelled as mocks, signatures are locally generated with a constructed session key."
+}

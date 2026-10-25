@@ -1,0 +1,99 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "raw_evidence": "../../artifacts/exchange_fee_effects/local_probes.json",
+  "case_count": 10,
+  "prior_baseline_logs_match": true,
+  "prior_baseline_storage_match": true,
+  "slot23_or_24_zero_same_as_baseline": true,
+  "fee_formula": "total = floor(margin * slot25 / 10^18); staker = floor(total / 2); dev = total - staker",
+  "slot26": "low 128 bits staker fee accumulator; high 128 bits dev fee accumulator",
+  "cases": {
+    "long_baseline": {
+      "position_id": 1394473,
+      "margin": "50000000000000000000",
+      "slot25_rate": "20000000000000000",
+      "total_fee": "1000000000000000000",
+      "staker_fee": "500000000000000000",
+      "dev_fee": "500000000000000000"
+    },
+    "long_slot23_zero": {
+      "position_id": 1394473,
+      "margin": "50000000000000000000",
+      "slot25_rate": "20000000000000000",
+      "total_fee": "1000000000000000000",
+      "staker_fee": "500000000000000000",
+      "dev_fee": "500000000000000000"
+    },
+    "long_slot24_zero": {
+      "position_id": 1394473,
+      "margin": "50000000000000000000",
+      "slot25_rate": "20000000000000000",
+      "total_fee": "1000000000000000000",
+      "staker_fee": "500000000000000000",
+      "dev_fee": "500000000000000000"
+    },
+    "long_slot25_zero": {
+      "position_id": 1394473,
+      "margin": "50000000000000000000",
+      "slot25_rate": "0",
+      "total_fee": "0",
+      "staker_fee": "0",
+      "dev_fee": "0"
+    },
+    "long_slot25_double": {
+      "position_id": 1394473,
+      "margin": "50000000000000000000",
+      "slot25_rate": "40000000000000000",
+      "total_fee": "2000000000000000000",
+      "staker_fee": "1000000000000000000",
+      "dev_fee": "1000000000000000000"
+    },
+    "short_slot25_zero": {
+      "position_id": 1394060,
+      "margin": "315340000000000000000",
+      "slot25_rate": "0",
+      "total_fee": "0",
+      "staker_fee": "0",
+      "dev_fee": "0"
+    },
+    "short_slot25_one": {
+      "position_id": 1394060,
+      "margin": "315340000000000000000",
+      "slot25_rate": "1",
+      "total_fee": "315",
+      "staker_fee": "157",
+      "dev_fee": "158"
+    },
+    "short_slot25_three": {
+      "position_id": 1394060,
+      "margin": "315340000000000000000",
+      "slot25_rate": "3",
+      "total_fee": "946",
+      "staker_fee": "473",
+      "dev_fee": "473"
+    },
+    "short_slot25_odd": {
+      "position_id": 1394060,
+      "margin": "315340000000000000000",
+      "slot25_rate": "10000000000000001",
+      "total_fee": "3153400000000000315",
+      "staker_fee": "1576700000000000157",
+      "dev_fee": "1576700000000000158"
+    },
+    "short_baseline": {
+      "position_id": 1394060,
+      "margin": "315340000000000000000",
+      "slot25_rate": "20000000000000000",
+      "total_fee": "6306800000000000000",
+      "staker_fee": "3153400000000000000",
+      "dev_fee": "3153400000000000000"
+    }
+  },
+  "limits": [
+    "The observed fee split covers two active positions and synthetic prices on an archive-backed fork.",
+    "Changing slots 23 and 24 did not alter the tested liquidation path, but may affect other paths.",
+    "No live transaction changed the three fee rates in the saved history."
+  ]
+}

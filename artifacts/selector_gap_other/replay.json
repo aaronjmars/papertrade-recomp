@@ -1,0 +1,98 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "method": "port-free in-process Forge EVM; exact pinned proxy, implementation, timelock and ProxyAdmin runtimes injected with vm.etch; pinned owner and EIP-1967 slots set with vm.store; fresh initialization states are synthetic; no transaction sent",
+  "runtime_hashes": {
+    "SharedProxy": {
+      "address": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+    },
+    "PaperProxy": {
+      "address": "0xe40f17915daa230324030003a197cdaef2261c0e",
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+    },
+    "PaperImplementation": {
+      "address": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+      "sha256": "f77b91537421a0092f1c068f85af316caf7fd8d8461e8b0305022ee6f5f0faae"
+    },
+    "SessionImplementation": {
+      "address": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "sha256": "630c02b0c693c47760554a3f0fed68b72db5df601f887d2edaaa3106e6308e63"
+    },
+    "FactoryImplementation": {
+      "address": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "sha256": "808c1f14f7d7811b32fedb672fcfa0b5095f96faa20ec8413556875b4ace9efd"
+    },
+    "TokenomicsImplementation": {
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "sha256": "ed9d18151a9365c347ac7a9da7e83b53ecedac235d9e67c4b2699503a6bd4a97"
+    },
+    "Timelock": {
+      "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "sha256": "f391dcb36b34b4b2fb1ffd42015cd4832a56ed8b40545eb3df41b58d7b38443e"
+    },
+    "BatchProxy": {
+      "address": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+    },
+    "BatchImplementation": {
+      "address": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "sha256": "480375f798fccf20fd79fd4fedefdd3377dd44af4dd559a3310a87c5bc048ae8"
+    },
+    "ProxyAdmin": {
+      "address": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+      "sha256": "238bb08777bab344b1e4090bd3a64fd26e48ef9ebaaf075234274e1c06129066"
+    }
+  },
+  "test_names": [
+    "testDecodeGuards",
+    "testFactoryAdminInitializer",
+    "testFactorySetAuthorizedDeployer",
+    "testPaperBurnFromMinter",
+    "testPaperBurnRejections",
+    "testPaperSetMinter",
+    "testSessionSetAuthorizedCaller",
+    "testTimelockCancel",
+    "testTimelockScheduleBatchAndExecuteBatch",
+    "testTimelockScheduleSingleAndExecute",
+    "testTimelockSelfGatedSetters",
+    "testTokenomicsSetMintParams"
+  ],
+  "passed_tests": [
+    "testDecodeGuards",
+    "testFactoryAdminInitializer",
+    "testFactorySetAuthorizedDeployer",
+    "testPaperBurnFromMinter",
+    "testPaperBurnRejections",
+    "testPaperSetMinter",
+    "testSessionSetAuthorizedCaller",
+    "testTimelockCancel",
+    "testTimelockScheduleBatchAndExecuteBatch",
+    "testTimelockScheduleSingleAndExecute",
+    "testTimelockSelfGatedSetters",
+    "testTokenomicsSetMintParams"
+  ],
+  "forge_result": "12 passed, 0 failed",
+  "source_sha256": "f90a8f67e88070388aefba031d4bf022b7368c5e2430172b421748418af9487e",
+  "test_source_sha256": "f90a8f67e88070388aefba031d4bf022b7368c5e2430172b421748418af9487e",
+  "covered_selectors": [
+    "0x0f71c8bc",
+    "0x12baae3b",
+    "0x485cc955",
+    "0x88aa4c12",
+    "0x8a99d586",
+    "0x8b07f62b",
+    "0x9ccae24e",
+    "0x9dc29fac",
+    "0xa6cc2c8c",
+    "0xc4d252f5",
+    "0xc6f881bc",
+    "0xcf8fbec9",
+    "0xf2fde38b",
+    "0xfca3b5aa"
+  ],
+  "limits": [
+    "Synthetic local state: the fresh-state initializer paths were never executed on chain.",
+    "No historical transaction is replayed by this harness; it exercises exact runtime code only."
+  ]
+}

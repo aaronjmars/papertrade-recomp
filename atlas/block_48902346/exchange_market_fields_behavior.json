@@ -1,0 +1,71 @@
+{
+  "pin_block": 48902346,
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "historical_transaction": "0x324a3b9eb75351965b220c16095b56b053f91fbda37525202051604fbd618f7d",
+  "historical_instrument": 0,
+  "historical_values": [
+    "2533537756243869928879",
+    "2040719088309057190368"
+  ],
+  "recent_event_call_count": 29,
+  "setter_selector": "0x628a9fd6",
+  "getter_selectors": [
+    "0xcb163b03",
+    "0xf37d3c4f"
+  ],
+  "event_topic0": "0xa065d6ba54c5124cd73ce640fd3fbc0ce6eb8a4f4c9d5155347dcc461ad0cffe",
+  "event_layout": "indexed uint32 instrument; unindexed uint128 first, uint128 second",
+  "event_catalog": [
+    {
+      "topic0": "0xa065d6ba54c5124cd73ce640fd3fbc0ce6eb8a4f4c9d5155347dcc461ad0cffe",
+      "reconstructed_signature": null,
+      "status": "observed_historical",
+      "indexed_fields": [
+        "instrument"
+      ],
+      "data_fields": [
+        "first",
+        "second"
+      ]
+    }
+  ],
+  "storage_layout": {
+    "instrument_count_slot": 8,
+    "market_keeper_slot": 37,
+    "mapping_base_slot": 36,
+    "updated_word_offset": 1,
+    "updated_word_packing": "first + (second << 128)"
+  },
+  "pinned_instrument_count": 2,
+  "historical_post_word": "0x000000000000006ea0aa9e9fbc5d79e0000000000000008957e63e0ba4118daf",
+  "setter_probe_count": 5,
+  "getter_instruments_checked": [
+    0,
+    1,
+    2
+  ],
+  "revert_selectors": {
+    "unauthorized": "0x989c4c7c",
+    "invalid_instrument": "0x67207a88"
+  },
+  "simulated_error_catalog": [
+    {
+      "selector": "0x989c4c7c",
+      "probe_paths": [
+        "outsider_instrument_0"
+      ]
+    },
+    {
+      "selector": "0x67207a88",
+      "probe_paths": [
+        "keeper_instrument_2"
+      ]
+    }
+  ],
+  "limits": [
+    "The setter and getter names and economic meaning of the five mapping fields remain unknown.",
+    "The five setter cases are read-only pinned simulations; the historical transaction is separate observed execution.",
+    "The sampled bounds do not prove every possible input and role transition."
+  ]
+}

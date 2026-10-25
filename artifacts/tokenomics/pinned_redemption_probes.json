@@ -1,0 +1,206 @@
+{
+  "pin_block": 48902346,
+  "pin_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "holder": "0x1e48c2f130a95d75b01d1caf4cec7c49c5eb2aab",
+  "holder_balance": "109200730024963668560289",
+  "probes": [
+    {
+      "name": "quote_zero",
+      "call": {
+        "from": "0x1e48c2f130a95d75b01d1caf4cec7c49c5eb2aab",
+        "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "data": "0xfe16eae80000000000000000000000000000000000000000000000000000000000000000",
+        "value": "0x0"
+      },
+      "trace": {
+        "from": "0x1e48c2f130a95d75b01d1caf4cec7c49c5eb2aab",
+        "gas": "0xffffffffffffffff",
+        "gasUsed": "0x6894",
+        "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "input": "0xfe16eae80000000000000000000000000000000000000000000000000000000000000000",
+        "output": "0x32aa90b0",
+        "error": "execution reverted",
+        "calls": [
+          {
+            "from": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+            "gas": "0xfbffffffffff9b7e",
+            "gasUsed": "0x258",
+            "to": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+            "input": "0xfe16eae80000000000000000000000000000000000000000000000000000000000000000",
+            "output": "0x32aa90b0",
+            "error": "execution reverted",
+            "value": "0x0",
+            "type": "DELEGATECALL"
+          }
+        ],
+        "value": "0x0",
+        "type": "CALL"
+      }
+    },
+    {
+      "name": "quote_one_wei",
+      "call": {
+        "from": "0x1e48c2f130a95d75b01d1caf4cec7c49c5eb2aab",
+        "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "data": "0xfe16eae80000000000000000000000000000000000000000000000000000000000000001",
+        "value": "0x0"
+      },
+      "trace": {
+        "from": "0x1e48c2f130a95d75b01d1caf4cec7c49c5eb2aab",
+        "gas": "0xffffffffffffffff",
+        "gasUsed": "0x68a0",
+        "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "input": "0xfe16eae80000000000000000000000000000000000000000000000000000000000000001",
+        "output": "0x32aa90b0",
+        "error": "execution reverted",
+        "calls": [
+          {
+            "from": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+            "gas": "0xfbffffffffff9b72",
+            "gasUsed": "0x258",
+            "to": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+            "input": "0xfe16eae80000000000000000000000000000000000000000000000000000000000000001",
+            "output": "0x32aa90b0",
+            "error": "execution reverted",
+            "value": "0x0",
+            "type": "DELEGATECALL"
+          }
+        ],
+        "value": "0x0",
+        "type": "CALL"
+      }
+    },
+    {
+      "name": "quote_one_paper",
+      "call": {
+        "from": "0x1e48c2f130a95d75b01d1caf4cec7c49c5eb2aab",
+        "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "data": "0xfe16eae80000000000000000000000000000000000000000000000000de0b6b3a7640000",
+        "value": "0x0"
+      },
+      "trace": {
+        "from": "0x1e48c2f130a95d75b01d1caf4cec7c49c5eb2aab",
+        "gas": "0xffffffffffffffff",
+        "gasUsed": "0x68dc",
+        "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "input": "0xfe16eae80000000000000000000000000000000000000000000000000de0b6b3a7640000",
+        "output": "0x32aa90b0",
+        "error": "execution reverted",
+        "calls": [
+          {
+            "from": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+            "gas": "0xfbffffffffff9b37",
+            "gasUsed": "0x258",
+            "to": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+            "input": "0xfe16eae80000000000000000000000000000000000000000000000000de0b6b3a7640000",
+            "output": "0x32aa90b0",
+            "error": "execution reverted",
+            "value": "0x0",
+            "type": "DELEGATECALL"
+          }
+        ],
+        "value": "0x0",
+        "type": "CALL"
+      }
+    },
+    {
+      "name": "redeem_zero",
+      "call": {
+        "from": "0x1e48c2f130a95d75b01d1caf4cec7c49c5eb2aab",
+        "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "data": "0xdb006a750000000000000000000000000000000000000000000000000000000000000000",
+        "value": "0x0"
+      },
+      "trace": {
+        "from": "0x1e48c2f130a95d75b01d1caf4cec7c49c5eb2aab",
+        "gas": "0xffffffffffffffff",
+        "gasUsed": "0x6809",
+        "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "input": "0xdb006a750000000000000000000000000000000000000000000000000000000000000000",
+        "output": "0x32aa90b0",
+        "error": "execution reverted",
+        "calls": [
+          {
+            "from": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+            "gas": "0xfbffffffffff9b8a",
+            "gasUsed": "0x1d9",
+            "to": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+            "input": "0xdb006a750000000000000000000000000000000000000000000000000000000000000000",
+            "output": "0x32aa90b0",
+            "error": "execution reverted",
+            "value": "0x0",
+            "type": "DELEGATECALL"
+          }
+        ],
+        "value": "0x0",
+        "type": "CALL"
+      }
+    },
+    {
+      "name": "redeem_one_paper",
+      "call": {
+        "from": "0x1e48c2f130a95d75b01d1caf4cec7c49c5eb2aab",
+        "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "data": "0xdb006a750000000000000000000000000000000000000000000000000de0b6b3a7640000",
+        "value": "0x0"
+      },
+      "trace": {
+        "from": "0x1e48c2f130a95d75b01d1caf4cec7c49c5eb2aab",
+        "gas": "0xffffffffffffffff",
+        "gasUsed": "0x6851",
+        "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "input": "0xdb006a750000000000000000000000000000000000000000000000000de0b6b3a7640000",
+        "output": "0x32aa90b0",
+        "error": "execution reverted",
+        "calls": [
+          {
+            "from": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+            "gas": "0xfbffffffffff9b43",
+            "gasUsed": "0x1d9",
+            "to": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+            "input": "0xdb006a750000000000000000000000000000000000000000000000000de0b6b3a7640000",
+            "output": "0x32aa90b0",
+            "error": "execution reverted",
+            "value": "0x0",
+            "type": "DELEGATECALL"
+          }
+        ],
+        "value": "0x0",
+        "type": "CALL"
+      }
+    },
+    {
+      "name": "redeem_outsider",
+      "call": {
+        "from": "0x3333333333333333333333333333333333333333",
+        "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "data": "0xdb006a750000000000000000000000000000000000000000000000000de0b6b3a7640000",
+        "value": "0x0"
+      },
+      "trace": {
+        "from": "0x3333333333333333333333333333333333333333",
+        "gas": "0xffffffffffffffff",
+        "gasUsed": "0x6851",
+        "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "input": "0xdb006a750000000000000000000000000000000000000000000000000de0b6b3a7640000",
+        "output": "0x32aa90b0",
+        "error": "execution reverted",
+        "calls": [
+          {
+            "from": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+            "gas": "0xfbffffffffff9b43",
+            "gasUsed": "0x1d9",
+            "to": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+            "input": "0xdb006a750000000000000000000000000000000000000000000000000de0b6b3a7640000",
+            "output": "0x32aa90b0",
+            "error": "execution reverted",
+            "value": "0x0",
+            "type": "DELEGATECALL"
+          }
+        ],
+        "value": "0x0",
+        "type": "CALL"
+      }
+    }
+  ]
+}

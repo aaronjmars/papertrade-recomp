@@ -1,0 +1,13 @@
+[2m2026-10-18T21:32:09.152389Z[0m [33m WARN[0m calldata is not a standard size. if decoding fails, consider using the `--truncate-calldata` flag.
+[2m2026-10-18T21:32:09.152404Z[0m [33m WARN[0m couldn't find any resolved matches for '00000000'
+[2m2026-10-18T21:32:09.153055Z[0m [33m WARN[0m calldata is not a standard size. if decoding fails, consider using the `--truncate-calldata` flag.
+[2m2026-10-18T21:32:09.153060Z[0m [33m WARN[0m couldn't find any resolved matches for '00000000'
+[2m2026-10-18T21:32:09.153482Z[0m [33m WARN[0m calldata is not a standard size. if decoding fails, consider using the `--truncate-calldata` flag.
+[2m2026-10-18T21:32:09.153486Z[0m [33m WARN[0m couldn't find any resolved matches for '00000000'
+[2m2026-10-18T21:32:09.154306Z[0m [33m WARN[0m calldata is not a standard size. if decoding fails, consider using the `--truncate-calldata` flag.
+[2m2026-10-18T21:32:09.154309Z[0m [33m WARN[0m couldn't find any resolved matches for '00000000'
+[2m2026-10-18T21:32:09.154950Z[0m [33m WARN[0m calldata is not a standard size. if decoding fails, consider using the `--truncate-calldata` flag.
+[2m2026-10-18T21:32:09.154957Z[0m [33m WARN[0m couldn't find any resolved matches for '00000000'
+[2m2026-10-18T21:32:09.155233Z[0m [33m WARN[0m calldata is not a standard size. if decoding fails, consider using the `--truncate-calldata` flag.
+[2m2026-10-18T21:32:09.155238Z[0m [33m WARN[0m couldn't find any resolved matches for '00000000'
+

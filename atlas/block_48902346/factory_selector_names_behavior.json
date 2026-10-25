@@ -1,0 +1,67 @@
+{
+  "pin_block": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "factory_proxy": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+  "implementation": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+  "selector_reconstructions": {
+    "0x03b802b6": "authorizedDeployer()",
+    "0x29710388": "isProxy(address)",
+    "0x8da5cb5b": "owner()",
+    "0xc1a9a508": "proxyOf(address)",
+    "0xc6f881bc": "setAuthorizedDeployer(address)",
+    "0xcbd433f4": "deployProxy(address)",
+    "0xd2f7265a": "exchange()",
+    "0xd600539a": "computeProxyAddress(address)",
+    "0xf2fde38b": "transferOwnership(address)"
+  },
+  "direct_getter_count": 3,
+  "deployed_mapping_samples": [
+    {
+      "user": "0xfb94d3404c1d3d9d6f08f79e58041d5ea95accfa",
+      "proxy": "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+      "proxy_of_slot": "0x48dd0033796868de1a9f116af383661906dc8b4601e52fdd5e6512f3078caef4",
+      "proxy_of_storage": "0x000000000000000000000000f1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+      "proxy_of_output": "0x000000000000000000000000f1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+      "is_proxy_slot": "0xc5cab4b1444e8889694cd277feaec2fb0b89ac50324156d2d28c775b6ec2b274",
+      "is_proxy_storage": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "is_proxy_output": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "computed_output": "0x000000000000000000000000f1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce"
+    },
+    {
+      "user": "0x78c1518c2538191e835b9e4f51d9cb11817ffb8f",
+      "proxy": "0xa55a50ad5bc0fd57fdea157ddeae100edced97eb",
+      "proxy_of_slot": "0x200f530186fb8a5c9a31c4d134dd0525c9e1ce3759420ebf35542a38dc048be9",
+      "proxy_of_storage": "0x000000000000000000000000a55a50ad5bc0fd57fdea157ddeae100edced97eb",
+      "proxy_of_output": "0x000000000000000000000000a55a50ad5bc0fd57fdea157ddeae100edced97eb",
+      "is_proxy_slot": "0xa7adc389231b2013ca7523ed78e9df8f639eee07c3efa048ae79a119fda7e283",
+      "is_proxy_storage": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "is_proxy_output": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "computed_output": "0x000000000000000000000000a55a50ad5bc0fd57fdea157ddeae100edced97eb"
+    },
+    {
+      "user": "0x520aac3e2f8cc78cc5c65d0fb94a5243c2f0a1dd",
+      "proxy": "0x6e92e230653df5a23611bcf64d39752b902fe703",
+      "proxy_of_slot": "0x411dae8c91c4a11fefa5a3f509c78a72ed1c63baba91137eb41865e1eeb3a70f",
+      "proxy_of_storage": "0x0000000000000000000000006e92e230653df5a23611bcf64d39752b902fe703",
+      "proxy_of_output": "0x0000000000000000000000006e92e230653df5a23611bcf64d39752b902fe703",
+      "is_proxy_slot": "0x4c0dde18d307ba986a901586daf5b2fe2f4ed079129cdbede22f4943d045c685",
+      "is_proxy_storage": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "is_proxy_output": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "computed_output": "0x0000000000000000000000006e92e230653df5a23611bcf64d39752b902fe703"
+    }
+  ],
+  "read_only_owner_transfer": {
+    "new_owner": "0x1111111111111111111111111111111111111111",
+    "event_topic": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+    "old_owner": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f"
+  },
+  "remaining_unnamed_selectors": [
+    "0x0f71c8bc",
+    "0x56e8d85b",
+    "0xc4d66de8"
+  ],
+  "limits": [
+    "The three initializer names remain candidates because success or revert behavior does not establish source spelling.",
+    "Three deployed users sample getter behavior; the separate factory event ledger verifies all 22,586 deployment addresses."
+  ]
+}

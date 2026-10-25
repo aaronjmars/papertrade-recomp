@@ -1,0 +1,117 @@
+{
+  "admin_word": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f",
+  "candidate": "0x560611d19c93fbcd3200557658a6f83c48b200ad",
+  "candidate_code_sha256": "a20ee31db1ffff1103c01d967f1b44fdcff84d7d023b389cc1784bb0e4579a6f",
+  "candidate_deployment_call_length": 9227,
+  "candidate_deployment_call_sha256": "a20ee31db1ffff1103c01d967f1b44fdcff84d7d023b389cc1784bb0e4579a6f",
+  "captured_at_utc": "2026-10-23T00:13:35.934677+00:00",
+  "cases": [
+    {
+      "balance_call": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "balance_storage": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "core_ledger_since_live_facts": [],
+      "pending_call": "0x00000000000000000000000002df9fbf0000000000000000000000012a53a310",
+      "pending_storage": "0x00000000000000000000000002df9fbf0000000000000000000000012a53a310",
+      "proxy": "0x1e8a704179cc6221592c362daa52a341ae20084d",
+      "proxy_code_sha256": "405e5bfee919c2dcb84ca0854ec56966a8212b322aae41c610e05de235b6b68f",
+      "public_core_spot_state": {
+        "balances": [
+          {
+            "coin": "USDC",
+            "entryNtl": "0.0",
+            "hold": "0.0",
+            "token": 0,
+            "total": "50.050916"
+          }
+        ]
+      },
+      "spot_precompile": "0x000000000000000000000000000000000000000000000000000000012a53a31000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "user": "0x56cbe78a5cdfa10147927aec550aa7f2fb3d3d01"
+    },
+    {
+      "balance_call": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "balance_storage": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "core_ledger_since_live_facts": [],
+      "pending_call": "0x00000000000000000000000002ddd166000000000000000000000000481f2280",
+      "pending_storage": "0x00000000000000000000000002ddd166000000000000000000000000481f2280",
+      "proxy": "0xf6b60cdf359af5538495831a9f2bbcada23e10e6",
+      "proxy_code_sha256": "07f9f589f271f1fa58e8a5990bec257eac46c8e0e7b44577d73666ac0a26511d",
+      "public_core_spot_state": {
+        "balances": [
+          {
+            "coin": "USDC",
+            "entryNtl": "0.0",
+            "hold": "0.0",
+            "token": 0,
+            "total": "12.1"
+          },
+          {
+            "coin": "USDE",
+            "entryNtl": "1.49985",
+            "hold": "0.0",
+            "token": 235,
+            "total": "1.5"
+          }
+        ]
+      },
+      "spot_precompile": "0x00000000000000000000000000000000000000000000000000000000481f228000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "user": "0x9c8599c32224d7d9956a7def18f7314162f77baf"
+    }
+  ],
+  "core_info": "https://api.hyperliquid.xyz/info",
+  "governance": {
+    "exchange_owner_call": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "multisig_epoch_word": "0x0000000000000000000000000000000000000000000000000000000000000001",
+    "multisig_signer_slots": [
+      "0x000000000000000000000000aa7577a7a27aa7fcf6d0ec481b87df3ad0f6a88e",
+      "0x000000000000000000000000e9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+      "0x0000000000000000000000009028f3b5b6b0d69e4e84ff555ade17114c3d1e72"
+    ],
+    "multisig_transaction_count_word": "0x000000000000000000000000000000000000000000000000000000000000000c",
+    "proxy_admin_owner_call": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "timelock_min_delay_word": "0x0000000000000000000000000000000000000000000000000000000000015180",
+    "timelock_owner_slot": "0x000000000000000000000000696292762fd5ac3677a45edbe54eaece4194d1f6"
+  },
+  "head": {
+    "hash": "0x5aeae5508174508d1ca1a4dd9d85cdfb79480fcf5852247a2d1eee9b1f11d8ea",
+    "number": "0x2efbad0",
+    "timestamp": "0x6adaa6a4"
+  },
+  "implementation_word": "0x0000000000000000000000000a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+  "live_facts": "artifacts/recovery_redrive/live_facts.json",
+  "live_implementation": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+  "live_words": "artifacts/recovery_redrive/live_words.json",
+  "previous_head": {
+    "hash": "0x3c6ff370b327aad6d9410ffd4d1b17007502d2f7dd281d5cd5576c6a250abb50",
+    "number": "0x2efb812",
+    "timestamp": "0x6adaa3f2"
+  },
+  "proxy_code_sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+  "recovery_active_slot": "0xa773427fd35c220ba78eecdf51b705e39f3fb595b1d2a72f469ae0b9b21f6ab7",
+  "recovery_active_value": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "rpc_url": "https://rpc.hyperliquid.xyz/evm",
+  "sweep_log_scan": {
+    "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+    "chunks": [
+      {
+        "fromBlock": "0x2efb813",
+        "logs": [],
+        "toBlock": "0x2efbad0"
+      }
+    ],
+    "first_block": "0x2efb813",
+    "last_block": "0x2efbad0",
+    "log_count": 0,
+    "logs": [],
+    "topics": [
+      "0x02d61879cd72906e0951e3a96096407dd2b1f2cd2d063dae983bb20216cf3025",
+      "0xc36b5179cb9c303b200074996eab2b3473eac370fdd7eba3bec636fe35109696",
+      "0x28f3adb5fa23ae5c83c811e67caf2ec192a816e4ef898c7f90d1484f65a9717e",
+      "0x8da9931e615ce9dfd2d7914e0cee3246839757203d34810cde64e0d0026f75c3"
+    ],
+    "users": [
+      "0x00000000000000000000000056cbe78a5cdfa10147927aec550aa7f2fb3d3d01",
+      "0x0000000000000000000000009c8599c32224d7d9956a7def18f7314162f77baf"
+    ]
+  }
+}

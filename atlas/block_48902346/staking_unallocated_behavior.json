@@ -1,0 +1,62 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "transaction": "0xd5a907988c178cb4fe55b8f3a8b87080eb3869e16ac548a8b9f7aa4a871a17c0",
+  "transaction_block": 48902147,
+  "transaction_block_hash": "0x500782a8f1dcba7592cb310d7613f4677cc0cde38b44a0b21108c7a970025319",
+  "transaction_index": 0,
+  "staking_proxy": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+  "selector": "0xf0355460",
+  "baseline_root_call_count": 88,
+  "baseline_root_log_count": 28,
+  "isolated_child_call_count": 13,
+  "isolated_child_log_count": 5,
+  "baseline_distributed_event_words": [
+    5311296759402108713312350,
+    137694484665860080888,
+    137694484665860080888,
+    13480200235105919415480168
+  ],
+  "unallocated_override": 1000000000000000000,
+  "override_distributed_event_words": [
+    5311296759402108713312350,
+    137694484665860080888,
+    138694484665860080888,
+    13480200351992428566004573
+  ],
+  "total_staked_prestate": 8555307257163591551372085349,
+  "acc_reward_per_share_extra": 116886509150524405,
+  "unallocated_cleared": true,
+  "zero_staker_distributed_event_words": [
+    5311296759402108713312350,
+    137694484665860080888,
+    0,
+    13480184140478277542683339
+  ],
+  "zero_staker_with_prior_distributed_event_words": [
+    5311296759402108713312350,
+    137694484665860080888,
+    0,
+    13480184140478277542683339
+  ],
+  "zero_staker_deferred_rewards": 137694484665860080888,
+  "zero_staker_with_prior_deferred_rewards": 138694484665860080888,
+  "other_contract_post_storage_equal": true,
+  "limits": [
+    "Positive unallocated and zero-staker balances are read-only synthetic storage overrides, not historical on-chain distributions.",
+    "One nonzero amount and one first-in-block transaction were checked; other boundaries remain open.",
+    "The isolated Staking call avoids unrelated BatchExecutor calls in the transaction."
+  ],
+  "evidence": {
+    "baseline_root": "../../artifacts/staking_unallocated/baseline_replay.json",
+    "baseline_child": "../../artifacts/staking_unallocated/base_child.json",
+    "override_child": "../../artifacts/staking_unallocated/alt_child.json",
+    "baseline_diff": "../../artifacts/staking_unallocated/base_child_diff.json",
+    "override_diff": "../../artifacts/staking_unallocated/alt_child_diff.json",
+    "zero_stakers_child": "../../artifacts/staking_unallocated/zero_stakers_child.json",
+    "zero_stakers_diff": "../../artifacts/staking_unallocated/zero_stakers_diff.json",
+    "zero_stakers_with_prior_child": "../../artifacts/staking_unallocated/zero_stakers_with_prior_child.json",
+    "zero_stakers_with_prior_diff": "../../artifacts/staking_unallocated/zero_stakers_with_prior_diff.json",
+    "zero_stakers_getter": "../../artifacts/staking_unallocated/zero_stakers_getter.json"
+  }
+}

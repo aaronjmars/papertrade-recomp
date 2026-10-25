@@ -1,0 +1,286 @@
+{
+  "source": {
+    "evm_rpc": "https://rpc.hyperliquid.xyz/evm",
+    "core_info": "https://api.hyperliquid.xyz/info",
+    "core_info_type": "userNonFundingLedgerUpdates"
+  },
+  "captured_at_utc": "2026-10-19T16:46:34.843526+00:00",
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "samples": [
+    {
+      "kind": "direct",
+      "tx": "0x7c69ba558b4076ef20f880f89d910168cbd92e3cc0a2f70a564b2117f46fa6ac",
+      "block": 48014383,
+      "user": "0xa90f96b5fcd5bdc0aae788c0485786b0e546d950",
+      "raw_amount_6": 10000000,
+      "core_amount_8": 1000000000,
+      "internal_debit_18": 11000000000000000000,
+      "extra_debit_18": 1000000000000000000,
+      "core_user_exists": false,
+      "header": {
+        "number": "0x2dca42f",
+        "hash": "0x393946a3ab12c405482b47bef8f9ce5f44cc786263ea87ab392af0cff608e439",
+        "timestamp": "0x6ac7dfdb"
+      },
+      "query_window_ms": [
+        1791483865000,
+        1791483872000
+      ],
+      "recipient_ledger": [
+        {
+          "time": 1791483867423,
+          "hash": "0x44fc7680b7a499f74676044620c3fa0000378e6652a7b8c9e8c521d376a873e1",
+          "delta": {
+            "type": "spotTransfer",
+            "token": "USDC",
+            "amount": "10.0",
+            "usdcValue": "10.0",
+            "user": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+            "destination": "0xa90f96b5fcd5bdc0aae788c0485786b0e546d950",
+            "fee": "1.0",
+            "nativeTokenFee": "0.0",
+            "nonce": 3957107,
+            "feeToken": "USDC"
+          }
+        }
+      ],
+      "exchange_ledger": [
+        {
+          "time": 1791483867423,
+          "hash": "0x44fc7680b7a499f74676044620c3fa0000378e6652a7b8c9e8c521d376a873e1",
+          "delta": {
+            "type": "spotTransfer",
+            "token": "USDC",
+            "amount": "10.0",
+            "usdcValue": "10.0",
+            "user": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+            "destination": "0xa90f96b5fcd5bdc0aae788c0485786b0e546d950",
+            "fee": "1.0",
+            "nativeTokenFee": "0.0",
+            "nonce": 3957107,
+            "feeToken": "USDC"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "direct",
+      "tx": "0xd11efba2b91838576b957f7297677b46676ec7a27db60331377212f4de8ba771",
+      "block": 48014628,
+      "user": "0xa90f96b5fcd5bdc0aae788c0485786b0e546d950",
+      "raw_amount_6": 1581398913,
+      "core_amount_8": 158139891300,
+      "internal_debit_18": 1581398913000000000000,
+      "extra_debit_18": 0,
+      "core_user_exists": true,
+      "header": {
+        "number": "0x2dca524",
+        "hash": "0x39fbf91f68be3b8261016d0fec2cea3db9e1426f3a3e1629ec11f8f79bf3d1f4",
+        "timestamp": "0x6ac7e0cc"
+      },
+      "query_window_ms": [
+        1791484106000,
+        1791484113000
+      ],
+      "recipient_ledger": [
+        {
+          "time": 1791484108384,
+          "hash": "0x4267b6bfbf440baf43e1044620d0fc0000a2cea55a472a81e63062127e47e599",
+          "delta": {
+            "type": "spotTransfer",
+            "token": "USDC",
+            "amount": "1581.398913",
+            "usdcValue": "1581.398913",
+            "user": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+            "destination": "0xa90f96b5fcd5bdc0aae788c0485786b0e546d950",
+            "fee": "0.0",
+            "nativeTokenFee": "0.0",
+            "nonce": 3957262,
+            "feeToken": ""
+          }
+        }
+      ],
+      "exchange_ledger": [
+        {
+          "time": 1791484108384,
+          "hash": "0x4267b6bfbf440baf43e1044620d0fc0000a2cea55a472a81e63062127e47e599",
+          "delta": {
+            "type": "spotTransfer",
+            "token": "USDC",
+            "amount": "1581.398913",
+            "usdcValue": "1581.398913",
+            "user": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+            "destination": "0xa90f96b5fcd5bdc0aae788c0485786b0e546d950",
+            "fee": "0.0",
+            "nativeTokenFee": "0.0",
+            "nonce": 3957262,
+            "feeToken": ""
+          }
+        },
+        {
+          "time": 1791484109353,
+          "hash": "0x9be3ae511e31b7f79d5d044620d10a010100c636b934d6c93fac59a3dd3591e2",
+          "delta": {
+            "type": "spotTransfer",
+            "token": "USDC",
+            "amount": "9998.8",
+            "usdcValue": "9998.8",
+            "user": "0x2a0c69ae39fc6a6261442d4c35a4ffb3841abadd",
+            "destination": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+            "fee": "0.0",
+            "nativeTokenFee": "0.0",
+            "nonce": 3957265,
+            "feeToken": ""
+          }
+        },
+        {
+          "time": 1791484112381,
+          "hash": "0x097b838eaa2c6aa30af5044620d1350101009b74452f8975ad442ee16920448d",
+          "delta": {
+            "type": "spotTransfer",
+            "token": "USDC",
+            "amount": "10.92392",
+            "usdcValue": "10.92392",
+            "user": "0x89f5b5b0738c53b1b5853c3c9027799f23f20221",
+            "destination": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+            "fee": "0.0",
+            "nativeTokenFee": "0.0",
+            "nonce": 3957271,
+            "feeToken": ""
+          }
+        }
+      ]
+    },
+    {
+      "kind": "signed",
+      "tx": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+      "block": 48901631,
+      "user": "0x7a5a61a05a0bd2d1723d595803c47e494304f791",
+      "raw_amount_6": 199000000,
+      "core_amount_8": 19900000000,
+      "internal_debit_18": 200000000000000000000,
+      "extra_debit_18": 1000000000000000000,
+      "core_user_exists": false,
+      "header": {
+        "number": "0x2ea2dff",
+        "hash": "0xc4ee9b9a002b0f2d7d3ad686ef129f8c6196edd477b3fb3f4e3937e9560d9ae9",
+        "timestamp": "0x6ad5311e"
+      },
+      "query_window_ms": [
+        1792356636000,
+        1792356643000
+      ],
+      "recipient_ledger": [
+        {
+          "time": 1792356638431,
+          "hash": "0xeabbe7d5974a5879ec350446dabc7c0000f6ffbb324d774b8e849328564e3264",
+          "delta": {
+            "type": "spotTransfer",
+            "token": "USDC",
+            "amount": "199.0",
+            "usdcValue": "199.0",
+            "user": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+            "destination": "0x7a5a61a05a0bd2d1723d595803c47e494304f791",
+            "fee": "1.0",
+            "nativeTokenFee": "0.0",
+            "nonce": 4294582,
+            "feeToken": "USDC"
+          }
+        },
+        {
+          "time": 1792356641826,
+          "hash": "0xaa4bd22e24728708abc50446dabcae01d100ea13bf75a5da4e147d80e37660f3",
+          "delta": {
+            "type": "send",
+            "user": "0x7a5a61a05a0bd2d1723d595803c47e494304f791",
+            "destination": "0x2000000000000000000000000000000000000000",
+            "sourceDex": "spot",
+            "destinationDex": "spot",
+            "token": "USDC",
+            "amount": "198.9",
+            "usdcValue": "198.9",
+            "fee": "0.003857",
+            "nativeTokenFee": "0.0",
+            "nonce": 1792356629177,
+            "feeToken": "USDC"
+          }
+        }
+      ],
+      "exchange_ledger": [
+        {
+          "time": 1792356638431,
+          "hash": "0xeabbe7d5974a5879ec350446dabc7c0000f6ffbb324d774b8e849328564e3264",
+          "delta": {
+            "type": "spotTransfer",
+            "token": "USDC",
+            "amount": "199.0",
+            "usdcValue": "199.0",
+            "user": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+            "destination": "0x7a5a61a05a0bd2d1723d595803c47e494304f791",
+            "fee": "1.0",
+            "nativeTokenFee": "0.0",
+            "nonce": 4294582,
+            "feeToken": "USDC"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "signed",
+      "tx": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+      "block": 48902137,
+      "user": "0x5554e4d307e6f24ee868e31fcf3effedba20e457",
+      "raw_amount_6": 18270000,
+      "core_amount_8": 1827000000,
+      "internal_debit_18": 18270000000000000000,
+      "extra_debit_18": 0,
+      "core_user_exists": true,
+      "header": {
+        "number": "0x2ea2ff9",
+        "hash": "0x1e31e3861f25ad5d7903c00501602a1390e4f2c29699da15cd0f25f914bc36d8",
+        "timestamp": "0x6ad53310"
+      },
+      "query_window_ms": [
+        1792357134000,
+        1792357141000
+      ],
+      "recipient_ledger": [
+        {
+          "time": 1792357136399,
+          "hash": "0x56da9473ecf78cdc58540446dad773000015ac5987faabaefaa33fc6abfb66c6",
+          "delta": {
+            "type": "spotTransfer",
+            "token": "USDC",
+            "amount": "18.27",
+            "usdcValue": "18.27",
+            "user": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+            "destination": "0x5554e4d307e6f24ee868e31fcf3effedba20e457",
+            "fee": "0.0",
+            "nativeTokenFee": "0.0",
+            "nonce": 4294763,
+            "feeToken": ""
+          }
+        }
+      ],
+      "exchange_ledger": [
+        {
+          "time": 1792357136399,
+          "hash": "0x56da9473ecf78cdc58540446dad773000015ac5987faabaefaa33fc6abfb66c6",
+          "delta": {
+            "type": "spotTransfer",
+            "token": "USDC",
+            "amount": "18.27",
+            "usdcValue": "18.27",
+            "user": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+            "destination": "0x5554e4d307e6f24ee868e31fcf3effedba20e457",
+            "fee": "0.0",
+            "nativeTokenFee": "0.0",
+            "nonce": 4294763,
+            "feeToken": ""
+          }
+        }
+      ]
+    }
+  ]
+}

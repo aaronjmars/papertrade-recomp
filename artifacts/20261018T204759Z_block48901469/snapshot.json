@@ -1,0 +1,77 @@
+{
+  "rpc": "https://rpc.hyperliquid.xyz/evm",
+  "chain_id": 999,
+  "started_utc": "2026-10-18T20:47:59.834450+00:00",
+  "ended_utc": "2026-10-18T20:48:03.165450+00:00",
+  "start_block": 48901469,
+  "end_block": 48901473,
+  "end_block_hash": "0x5d684883178092b48d130327325b84f57be96c7c264aebc4301d01fd8c50deaf",
+  "note": "Official RPC provides latest-state eth_getCode and eth_getStorageAt only; calls span the recorded block interval.",
+  "contracts": {
+    "exchange": {
+      "proxy": {
+        "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "bytes": 925,
+        "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+        "keccak256": "0x93076ef48e1d48172af505f739606cf1fa8425dbf9dbc6bee6743307bd4bd63b",
+        "file": "exchange_proxy.hex"
+      },
+      "implementation_slot": "0x0000000000000000000000000f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "implementation": {
+        "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+        "bytes": 23052,
+        "sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+        "keccak256": "0x9d20287df886415035d53344a0dc8a1044949308cc3283ee0fe7ea5f3ea28d92",
+        "file": "exchange_implementation.hex"
+      }
+    },
+    "tokenomics": {
+      "proxy": {
+        "address": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "bytes": 925,
+        "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+        "keccak256": "0x93076ef48e1d48172af505f739606cf1fa8425dbf9dbc6bee6743307bd4bd63b",
+        "file": "tokenomics_proxy.hex"
+      },
+      "implementation_slot": "0x000000000000000000000000600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "implementation": {
+        "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+        "bytes": 3324,
+        "sha256": "ed9d18151a9365c347ac7a9da7e83b53ecedac235d9e67c4b2699503a6bd4a97",
+        "keccak256": "0xd9fbc7091e10f4d56188f3097454bd8464ed4b77b5f44d1c6391be72b9362169",
+        "file": "tokenomics_implementation.hex"
+      }
+    },
+    "oracle": {
+      "proxy": {
+        "address": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+        "bytes": 925,
+        "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+        "keccak256": "0x93076ef48e1d48172af505f739606cf1fa8425dbf9dbc6bee6743307bd4bd63b",
+        "file": "oracle_proxy.hex"
+      },
+      "implementation_slot": "0x0000000000000000000000003997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+      "implementation": {
+        "address": "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+        "bytes": 2475,
+        "sha256": "8e452a76ac1b28c05d220451d837c3758bd41180526940752f89047bc0dd22ed",
+        "keccak256": "0x75f094dab1fb771fc5ed5953a02be453a5d35dc4878b53a9e6a11c7d9e4e679c",
+        "file": "oracle_implementation.hex"
+      }
+    },
+    "timelock": {
+      "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "bytes": 3207,
+      "sha256": "f391dcb36b34b4b2fb1ffd42015cd4832a56ed8b40545eb3df41b58d7b38443e",
+      "keccak256": "0x500bf24105ab07da3a7b9dd08f74d14d24c8ae82c81b204dcb5755eb7f798716",
+      "file": "timelock.hex"
+    },
+    "governor": {
+      "address": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+      "bytes": 3134,
+      "sha256": "25c3204acbd096d8407b2253cc2d59b920e89be24be8fd897ad299db09f8f513",
+      "keccak256": "0xdb27a12cb89210a9e6f1aad59bbee6c32f69efd56f6c91fd9d07128bf7f04720",
+      "file": "governor.hex"
+    }
+  }
+}

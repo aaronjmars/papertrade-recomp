@@ -1,0 +1,38 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "selector_reconstructions": {
+    "0x060447aa": "setMarketKeeper(address)",
+    "0x21f55a6c": "marketKeeper()"
+  },
+  "event_catalog": [
+    {
+      "topic0": "0xc76a9da20bd06b6b26d0826dab481a66785c609c15fae99817a557e61229e9c5",
+      "reconstructed_signature": "MarketKeeperUpdated(address)",
+      "status": "observed_historical_topic",
+      "indexed_arguments": [
+        "address marketKeeper"
+      ]
+    }
+  ],
+  "historical_tx": "0x3b3eab1fccbd0600aa196edc066d57f2d7a64b5c691f8fb9078457fe9199c79a",
+  "historical_block": 47855442,
+  "historical_caller": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+  "historical_argument": "0x3721476de31190dc1af8908026abe20efe25cf99",
+  "historical_slot_37_post": "0x0000000000000000000000003721476de31190dc1af8908026abe20efe25cf99",
+  "pinned_getter_output": "0x0000000000000000000000003721476de31190dc1af8908026abe20efe25cf99",
+  "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+  "dispatcher_pc": 15882,
+  "address_decoder_pc": 16051,
+  "owner_check_pc": 19027,
+  "slot": 37,
+  "owner_error_selector": "0x30cd7471",
+  "behavior": "nonpayable; canonical address argument; caller must equal owner packed in slot 0; write argument into low 160 bits of slot 37, preserve high bits, emit indexed MarketKeeperUpdated(address)",
+  "zero_address_rule": "No zero-address check occurs after ABI decoding and owner validation in the pinned runtime.",
+  "limits": [
+    "One successful historical transaction is saved. Owner and zero-address branches are derived from pinned bytecode and have no saved dynamic probe.",
+    "A later implementation upgrade could change this behavior."
+  ]
+}

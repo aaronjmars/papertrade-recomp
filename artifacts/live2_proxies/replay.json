@@ -1,0 +1,27 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "source_sha256": "7d3ccf8ca66d19852efda2c6c1235e397c4296ad4235b792c3832d349db53593",
+  "test_count": 11,
+  "passed_tests": [
+    "testCopyOfTheCreationCodeIsPermissionless",
+    "testCreate2TripleBindingControls",
+    "testCrossSuiteRegistrationIsRejected",
+    "testDomainFormulaAndCrossSuiteEcrecover",
+    "testGuardMasksTheEmbeddedWordTo160Bits",
+    "testImmutableGetters",
+    "testRegistrationBindsTheSignedExpiry",
+    "testRescueAtACoreFacingTargetReverts",
+    "testRescueAtBookkeepingOrTheExchangeReverts",
+    "testSweepDestinationIsTheEmbeddedWord",
+    "testTokenReentrancyCannotReachEitherGuard"
+  ],
+  "runtime_sha256": {
+    "Proxy.hex": "7c7da82e0fcd70a849be8bd35609a3eb2546d2a87dd4fcfc17f9757566fcc465",
+    "Session.hex": "73a83b9d97e5234ce53d2d2c2b8f5f4eb143cb8ff37c190812b8fd6984de8d39",
+    "CoreWriter.hex": "7dbdb39425a2730b2ee926b59031d7a896ace2566a640c8e658eb29852d304ca",
+    "Prefix.hex": "311c6b002669f2b7bf830a51bff22e1c53fa6ef9f70db91cd1d54d6980b9f5e3",
+    "Body.hex": "2d0eb1f34b33f3f88f134c77877b2c4f036a24f2131f058ceca1f5bb1b0ab4c2"
+  },
+  "scope": "exact captured runtimes etched locally; HyperCore reads and settlement are mocked, never observed"
+}

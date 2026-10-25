@@ -1,0 +1,560 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "method": "port-free Forge tests that etch the pinned proxy, implementations and linked library and seed pinned storage words; the 0x080e HyperCore BBO read address is replaced by a two-word mock",
+  "test_count": 73,
+  "test_names": [
+    "test_boundary_0x415f1240",
+    "test_cap_0xe538b280",
+    "test_delegate_0x18958ce2",
+    "test_delegate_0x2448a553",
+    "test_delegate_0x32db40c9",
+    "test_delegate_0x3cf4208d",
+    "test_delegate_0x3f4e3626",
+    "test_delegate_0xb67f3dd7",
+    "test_delegate_0xca02ff91",
+    "test_farprice_0x415f1240",
+    "test_guardian_0xae69b95b",
+    "test_guardian_false_0xae69b95b",
+    "test_inactive_0x415f1240",
+    "test_initialized_0xc0c53b8b",
+    "test_invalid_0x2d2451d1",
+    "test_invalid_0x5ca4c0ea",
+    "test_keeper_0x01681a62",
+    "test_merge_0x4a4d9eea",
+    "test_merge_0x753a369c",
+    "test_merge_0x827ad94c",
+    "test_merge_0xae4daf4e",
+    "test_merge_delegate_0x2448a553",
+    "test_merge_delegate_0x32db40c9",
+    "test_merge_delegate_0x3cf4208d",
+    "test_merge_delegate_0xca02ff91",
+    "test_out_of_bound_0x415f1240",
+    "test_outsider_0x01681a62",
+    "test_outsider_0x18958ce2",
+    "test_outsider_0x2448a553",
+    "test_outsider_0x2d2451d1",
+    "test_outsider_0x32db40c9",
+    "test_outsider_0x3cf4208d",
+    "test_outsider_0x3f4e3626",
+    "test_outsider_0x415f1240",
+    "test_outsider_0x4a4d9eea",
+    "test_outsider_0x5ca4c0ea",
+    "test_outsider_0x6a3214c9",
+    "test_outsider_0x753a369c",
+    "test_outsider_0x827ad94c",
+    "test_outsider_0xae4daf4e",
+    "test_outsider_0xae69b95b",
+    "test_outsider_0xb67f3dd7",
+    "test_outsider_0xc0c53b8b",
+    "test_outsider_0xca02ff91",
+    "test_outsider_0xd7c7e5fb",
+    "test_outsider_0xe538b280",
+    "test_owner_0x2d2451d1",
+    "test_owner_0x5ca4c0ea",
+    "test_owner_0x6a3214c9",
+    "test_owner_0xae69b95b",
+    "test_owner_0xd7c7e5fb",
+    "test_owner_0xe538b280",
+    "test_short_0x01681a62",
+    "test_short_0x18958ce2",
+    "test_short_0x2448a553",
+    "test_short_0x2d2451d1",
+    "test_short_0x32db40c9",
+    "test_short_0x3cf4208d",
+    "test_short_0x3f4e3626",
+    "test_short_0x415f1240",
+    "test_short_0x4a4d9eea",
+    "test_short_0x5ca4c0ea",
+    "test_short_0x6a3214c9",
+    "test_short_0x753a369c",
+    "test_short_0x827ad94c",
+    "test_short_0xae4daf4e",
+    "test_short_0xae69b95b",
+    "test_short_0xb67f3dd7",
+    "test_short_0xc0c53b8b",
+    "test_short_0xca02ff91",
+    "test_short_0xd7c7e5fb",
+    "test_short_0xe538b280",
+    "test_zero_0xd7c7e5fb"
+  ],
+  "test_source_sha256": "4b4ffbc41e9e576f2c9bdb3f6ef63a121437801e02c15d94d48c217c618342f9",
+  "runtime_hashes": {
+    "Proxy": {
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+    },
+    "Implementation": {
+      "sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1"
+    },
+    "Library": {
+      "sha256": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2"
+    },
+    "Oracle": {
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+    },
+    "OracleImplementation": {
+      "sha256": "8e452a76ac1b28c05d220451d837c3758bd41180526940752f89047bc0dd22ed"
+    },
+    "Tokenomics": {
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+    },
+    "TokenomicsImplementation": {
+      "sha256": "ed9d18151a9365c347ac7a9da7e83b53ecedac235d9e67c4b2699503a6bd4a97"
+    },
+    "Paper": {
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+    },
+    "PaperImplementation": {
+      "sha256": "f77b91537421a0092f1c068f85af316caf7fd8d8461e8b0305022ee6f5f0faae"
+    },
+    "PaperMath": {
+      "sha256": "8f1de6ca76cfd6f0186e9f4472dd53fab6dfa1a53a7c3a2a3700d641fec7c5da"
+    }
+  },
+  "synthetic": true,
+  "expectations_frozen": {
+    "boundary_0x415f1240": {
+      "status": "revert",
+      "data": "0x924d25e6",
+      "state_changed": false,
+      "logs": ""
+    },
+    "cap_0xe538b280": {
+      "status": "revert",
+      "data": "0xcd4e6167",
+      "state_changed": false,
+      "logs": ""
+    },
+    "delegate_0x18958ce2": {
+      "status": "ok",
+      "data": "0x",
+      "state_changed": true,
+      "logs": "491460923342184218035706888008750043977755113263:0xb2f6a0be3228032ab1a6e4d114ab0a4b8277ef32d9bd9b666e8537200aed4dc7:3:32"
+    },
+    "delegate_0x2448a553": {
+      "status": "ok",
+      "data": "0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "state_changed": false,
+      "logs": ""
+    },
+    "delegate_0x32db40c9": {
+      "status": "revert",
+      "data": "0x5b6d2b7a",
+      "state_changed": false,
+      "logs": ""
+    },
+    "delegate_0x3cf4208d": {
+      "status": "revert",
+      "data": "0x5b6d2b7a",
+      "state_changed": false,
+      "logs": ""
+    },
+    "delegate_0x3f4e3626": {
+      "status": "ok",
+      "data": "0x",
+      "state_changed": true,
+      "logs": "491460923342184218035706888008750043977755113263:0x4c672bd1e7444966ce521bc0f053d4f359f1fad9cfe6a43011c00baac6278e4d:2:32"
+    },
+    "delegate_0xb67f3dd7": {
+      "status": "ok",
+      "data": "0x0000000000000000000000000000000000000000000000000000001748753a50",
+      "state_changed": false,
+      "logs": ""
+    },
+    "delegate_0xca02ff91": {
+      "status": "ok",
+      "data": "0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "state_changed": false,
+      "logs": ""
+    },
+    "farprice_0x415f1240": {
+      "status": "revert",
+      "data": "0xddeb79ba",
+      "state_changed": false,
+      "logs": ""
+    },
+    "guardian_0xae69b95b": {
+      "status": "ok",
+      "data": "0x",
+      "state_changed": true,
+      "logs": "621329955008895694125364835068175551477650542754:0xa4abec9259618fb7d014c89824b2887f61e3ab2b382d4a48a42dfde43cec5d6e:1:32"
+    },
+    "guardian_false_0xae69b95b": {
+      "status": "revert",
+      "data": "0x49199fb6",
+      "state_changed": false,
+      "logs": ""
+    },
+    "inactive_0x415f1240": {
+      "status": "revert",
+      "data": "0x94e88a21",
+      "state_changed": false,
+      "logs": ""
+    },
+    "initialized_0xc0c53b8b": {
+      "status": "revert",
+      "data": "0x0dc149f0",
+      "state_changed": false,
+      "logs": ""
+    },
+    "invalid_0x2d2451d1": {
+      "status": "revert",
+      "data": "0x67207a88",
+      "state_changed": false,
+      "logs": ""
+    },
+    "invalid_0x5ca4c0ea": {
+      "status": "revert",
+      "data": "0x67207a88",
+      "state_changed": false,
+      "logs": ""
+    },
+    "keeper_0x01681a62": {
+      "status": "revert",
+      "data": "0x967d697b",
+      "state_changed": false,
+      "logs": ""
+    },
+    "merge_0x4a4d9eea": {
+      "status": "ok",
+      "data": "0x000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000002bc0000000000000000000000000000000000000000000000000000000000000065",
+      "state_changed": true,
+      "logs": "621329955008895694125364835068175551477650542754:0xb8c6723c829f797c1498cb75af97462c6cb9f3784fe7c0c47bcd42cf42ca94fb:4:32;621329955008895694125364835068175551477650542754:0xf949f11686e63f08cadf672fb6db7f7b859cb0fe11f2bf80c57db5429453f0cc:4:64"
+    },
+    "merge_0x753a369c": {
+      "status": "ok",
+      "data": "0x0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000012c0000000000000000000000000000000000000000000000000000000000000066",
+      "state_changed": true,
+      "logs": "621329955008895694125364835068175551477650542754:0xb8c6723c829f797c1498cb75af97462c6cb9f3784fe7c0c47bcd42cf42ca94fb:4:32;621329955008895694125364835068175551477650542754:0xf949f11686e63f08cadf672fb6db7f7b859cb0fe11f2bf80c57db5429453f0cc:4:64"
+    },
+    "merge_0x827ad94c": {
+      "status": "ok",
+      "data": "0x000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000002bc0000000000000000000000000000000000000000000000000000000000000065",
+      "state_changed": true,
+      "logs": "621329955008895694125364835068175551477650542754:0xb8c6723c829f797c1498cb75af97462c6cb9f3784fe7c0c47bcd42cf42ca94fb:4:32;621329955008895694125364835068175551477650542754:0xf949f11686e63f08cadf672fb6db7f7b859cb0fe11f2bf80c57db5429453f0cc:4:64"
+    },
+    "merge_0xae4daf4e": {
+      "status": "ok",
+      "data": "0x0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000012c0000000000000000000000000000000000000000000000000000000000000066",
+      "state_changed": true,
+      "logs": "621329955008895694125364835068175551477650542754:0xb8c6723c829f797c1498cb75af97462c6cb9f3784fe7c0c47bcd42cf42ca94fb:4:32;621329955008895694125364835068175551477650542754:0xf949f11686e63f08cadf672fb6db7f7b859cb0fe11f2bf80c57db5429453f0cc:4:64"
+    },
+    "merge_delegate_0x2448a553": {
+      "status": "ok",
+      "data": "0x0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000012c0000000000000000000000000000000000000000000000000000000000000066",
+      "state_changed": true,
+      "logs": "491460923342184218035706888008750043977755113263:0xb8c6723c829f797c1498cb75af97462c6cb9f3784fe7c0c47bcd42cf42ca94fb:4:32;491460923342184218035706888008750043977755113263:0xf949f11686e63f08cadf672fb6db7f7b859cb0fe11f2bf80c57db5429453f0cc:4:64"
+    },
+    "merge_delegate_0x32db40c9": {
+      "status": "ok",
+      "data": "0x000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000002bc0000000000000000000000000000000000000000000000000000000000000065",
+      "state_changed": true,
+      "logs": "491460923342184218035706888008750043977755113263:0xb8c6723c829f797c1498cb75af97462c6cb9f3784fe7c0c47bcd42cf42ca94fb:4:32;491460923342184218035706888008750043977755113263:0xf949f11686e63f08cadf672fb6db7f7b859cb0fe11f2bf80c57db5429453f0cc:4:64"
+    },
+    "merge_delegate_0x3cf4208d": {
+      "status": "ok",
+      "data": "0x0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000012c0000000000000000000000000000000000000000000000000000000000000066",
+      "state_changed": true,
+      "logs": "491460923342184218035706888008750043977755113263:0xb8c6723c829f797c1498cb75af97462c6cb9f3784fe7c0c47bcd42cf42ca94fb:4:32;491460923342184218035706888008750043977755113263:0xf949f11686e63f08cadf672fb6db7f7b859cb0fe11f2bf80c57db5429453f0cc:4:64"
+    },
+    "merge_delegate_0xca02ff91": {
+      "status": "ok",
+      "data": "0x000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000002bc0000000000000000000000000000000000000000000000000000000000000065",
+      "state_changed": true,
+      "logs": "491460923342184218035706888008750043977755113263:0xb8c6723c829f797c1498cb75af97462c6cb9f3784fe7c0c47bcd42cf42ca94fb:4:32;491460923342184218035706888008750043977755113263:0xf949f11686e63f08cadf672fb6db7f7b859cb0fe11f2bf80c57db5429453f0cc:4:64"
+    },
+    "out_of_bound_0x415f1240": {
+      "status": "revert",
+      "data": "0x94e88a21",
+      "state_changed": false,
+      "logs": ""
+    },
+    "outsider_0x01681a62": {
+      "status": "revert",
+      "data": "0x967d697b",
+      "state_changed": false,
+      "logs": ""
+    },
+    "outsider_0x18958ce2": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "outsider_0x2448a553": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "outsider_0x2d2451d1": {
+      "status": "revert",
+      "data": "0x49199fb6",
+      "state_changed": false,
+      "logs": ""
+    },
+    "outsider_0x32db40c9": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "outsider_0x3cf4208d": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "outsider_0x3f4e3626": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "outsider_0x415f1240": {
+      "status": "revert",
+      "data": "0xddeb79ba",
+      "state_changed": false,
+      "logs": ""
+    },
+    "outsider_0x4a4d9eea": {
+      "status": "ok",
+      "data": "0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "state_changed": false,
+      "logs": ""
+    },
+    "outsider_0x5ca4c0ea": {
+      "status": "revert",
+      "data": "0x30cd7471",
+      "state_changed": false,
+      "logs": ""
+    },
+    "outsider_0x6a3214c9": {
+      "status": "revert",
+      "data": "0x30cd7471",
+      "state_changed": false,
+      "logs": ""
+    },
+    "outsider_0x753a369c": {
+      "status": "revert",
+      "data": "0x5b6d2b7a",
+      "state_changed": false,
+      "logs": ""
+    },
+    "outsider_0x827ad94c": {
+      "status": "revert",
+      "data": "0x5b6d2b7a",
+      "state_changed": false,
+      "logs": ""
+    },
+    "outsider_0xae4daf4e": {
+      "status": "ok",
+      "data": "0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "state_changed": false,
+      "logs": ""
+    },
+    "outsider_0xae69b95b": {
+      "status": "revert",
+      "data": "0x49199fb6",
+      "state_changed": false,
+      "logs": ""
+    },
+    "outsider_0xb67f3dd7": {
+      "status": "ok",
+      "data": "0x0000000000000000000000000000000000000000000000000000001748753a50",
+      "state_changed": false,
+      "logs": ""
+    },
+    "outsider_0xc0c53b8b": {
+      "status": "revert",
+      "data": "0x0dc149f0",
+      "state_changed": false,
+      "logs": ""
+    },
+    "outsider_0xca02ff91": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "outsider_0xd7c7e5fb": {
+      "status": "revert",
+      "data": "0x30cd7471",
+      "state_changed": false,
+      "logs": ""
+    },
+    "outsider_0xe538b280": {
+      "status": "revert",
+      "data": "0x30cd7471",
+      "state_changed": false,
+      "logs": ""
+    },
+    "owner_0x2d2451d1": {
+      "status": "ok",
+      "data": "0x",
+      "state_changed": true,
+      "logs": "621329955008895694125364835068175551477650542754:0x25e933a27e6487478d7617f2f4ef2f5c77355faf6cad2e6fd7c4b8d029930d9f:2:96"
+    },
+    "owner_0x5ca4c0ea": {
+      "status": "ok",
+      "data": "0x",
+      "state_changed": true,
+      "logs": "621329955008895694125364835068175551477650542754:0x76a319771459e5329ebc7830ef30b80fc54d20327f8b4946a9539e53c46018c9:2:128"
+    },
+    "owner_0x6a3214c9": {
+      "status": "ok",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "owner_0xae69b95b": {
+      "status": "ok",
+      "data": "0x",
+      "state_changed": true,
+      "logs": "621329955008895694125364835068175551477650542754:0xa4abec9259618fb7d014c89824b2887f61e3ab2b382d4a48a42dfde43cec5d6e:1:32"
+    },
+    "owner_0xd7c7e5fb": {
+      "status": "ok",
+      "data": "0x",
+      "state_changed": true,
+      "logs": "621329955008895694125364835068175551477650542754:0x62db1b2b923b6f20043c492d3586df1a823e447c63e44d15dbc90c1a3bc9fcc5:2:64"
+    },
+    "owner_0xe538b280": {
+      "status": "ok",
+      "data": "0x",
+      "state_changed": true,
+      "logs": "621329955008895694125364835068175551477650542754:0xe4af0531d4ba8c578b5076b042e4505372fb4f4986aea8ebf77f4ff1585e3e75:1:96"
+    },
+    "short_0x01681a62": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "short_0x18958ce2": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "short_0x2448a553": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "short_0x2d2451d1": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "short_0x32db40c9": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "short_0x3cf4208d": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "short_0x3f4e3626": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "short_0x415f1240": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "short_0x4a4d9eea": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "short_0x5ca4c0ea": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "short_0x6a3214c9": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "short_0x753a369c": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "short_0x827ad94c": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "short_0xae4daf4e": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "short_0xae69b95b": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "short_0xb67f3dd7": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "short_0xc0c53b8b": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "short_0xca02ff91": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "short_0xd7c7e5fb": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "short_0xe538b280": {
+      "status": "revert",
+      "data": "0x",
+      "state_changed": false,
+      "logs": ""
+    },
+    "zero_0xd7c7e5fb": {
+      "status": "revert",
+      "data": "0xb0cb274d",
+      "state_changed": false,
+      "logs": ""
+    }
+  },
+  "limits": [
+    "Every probe is synthetic: no historical transaction was executed.",
+    "The 0x080e price address is a mock; live HyperCore prices are not reproduced.",
+    "The liquidation success path needs more pinned state than the archived diff holds, so its settlement writes come from the archive-backed probe."
+  ]
+}

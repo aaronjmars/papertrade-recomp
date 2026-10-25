@@ -1,0 +1,16 @@
+exchange_implementation False
+oracle_implementation False
+paper_token_implementation False
+exchange_implementation_variant_b None
+exchange_linked_library_variant_a False
+tokenomics_implementation False
+one_of_two_multisig False
+session_key_manager_implementation None
+deposit_proxy_factory_implementation None
+exchange_implementation_variant_a False
+timelock False
+exchange_linked_library_live False
+batch_executor_implementation None
+staking_implementation None
+proxy_admin False
+paper_math_library False

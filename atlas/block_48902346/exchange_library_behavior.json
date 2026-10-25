@@ -1,0 +1,1713 @@
+{
+  "pin_block": 48902346,
+  "library": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+  "exchange_parent_implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "exchange_parent_selector_reconstructions": {
+    "0x2792e706": "closeBySig(address,uint256[],uint256,uint64,uint8,bytes32,bytes32)"
+  },
+  "signed_close_call_count": 43,
+  "signed_close_position_id_count": 49,
+  "historical_transaction_count": 23,
+  "historical_library_call_count": 99,
+  "pnl_call_count": 49,
+  "settlement_call_count": 49,
+  "other_observed_call_count": 1,
+  "pinned_math_probe_count": 24,
+  "settlement_branches": {
+    "nonzero_tail_loss": 21,
+    "nonzero_tail_profit": 19,
+    "nonzero_tail_flat": 5,
+    "zero_tail_profit": 3,
+    "zero_tail_loss": 1
+  },
+  "selector_behaviors": {
+    "0x82296364": "two-word signed raw and adjusted PnL calculation",
+    "0xef1a27a9": "six-word close-settlement calculation using adjusted PnL",
+    "0x79810ffe": "queue harvest: first word is total user credit; second is input word 4 plus that credit; one historical and thirteen simulated calls check events and storage"
+  },
+  "observed_abi_arguments": {
+    "0x82296364": "uint64,uint64,uint128,uint32,bool,uint256,uint256,uint256,uint256",
+    "0xef1a27a9": "uint256,address,uint128,int256,bool,uint256,uint256,uint256"
+  },
+  "other_observed_call": {
+    "tx": "0x4214fa14d9c5bf46fade1c7f3ca8d242baefaa52426395b1840f43b626ee8a99",
+    "parent_selector": "0xddc63262",
+    "arguments": [
+      "15",
+      "32",
+      "400296219202209635129",
+      "9",
+      "136555767282873451612902920"
+    ],
+    "returns": [
+      "22871826547055470767",
+      "136555790154699998668373687"
+    ]
+  },
+  "signed_close_calls": [
+    {
+      "tx": "0x04b0da9f141aba59584b82b6f41fb4362734e35010374008db08e634bbf993e9",
+      "user": "0x156ca001f260e0b318c57f3b679c04a97f0be075",
+      "position_ids": [
+        1393982
+      ],
+      "nonce": 2238987232,
+      "deadline": 1792360701,
+      "signature_v": 27,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0x04b0da9f141aba59584b82b6f41fb4362734e35010374008db08e634bbf993e9",
+      "user": "0xdd25a96f431412ac75dd4153d5a26b55fcdddc3d",
+      "position_ids": [
+        1393966
+      ],
+      "nonce": 281618373009441,
+      "deadline": 1792360701,
+      "signature_v": 27,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0x04b0da9f141aba59584b82b6f41fb4362734e35010374008db08e634bbf993e9",
+      "user": "0xfe3cbc627aed4317c108baddd72b904a4657b924",
+      "position_ids": [
+        1393058,
+        1393050
+      ],
+      "nonce": 8426883,
+      "deadline": 1792360722,
+      "signature_v": 28,
+      "library_pairs": 2
+    },
+    {
+      "tx": "0x04b0da9f141aba59584b82b6f41fb4362734e35010374008db08e634bbf993e9",
+      "user": "0x156ca001f260e0b318c57f3b679c04a97f0be075",
+      "position_ids": [
+        1393958
+      ],
+      "nonce": 2238987229,
+      "deadline": 1792360701,
+      "signature_v": 27,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+      "user": "0x2d67993bc65711bc72651c0c67ea7b447b441f65",
+      "position_ids": [
+        1391235
+      ],
+      "nonce": 1877275693,
+      "deadline": 1792360733,
+      "signature_v": 27,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+      "user": "0xe2a3f336d02435c2c9ec823114acbd98e51035ae",
+      "position_ids": [
+        1394057,
+        1394042,
+        1394047
+      ],
+      "nonce": 3372306680,
+      "deadline": 1792360729,
+      "signature_v": 28,
+      "library_pairs": 3
+    },
+    {
+      "tx": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+      "user": "0xe794d63b3144d4614563759cb844ad19f6733d5b",
+      "position_ids": [
+        1394072
+      ],
+      "nonce": 109395939,
+      "deadline": 1792357429,
+      "signature_v": 27,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0x1b19ea2e3ff121d620a728a0a88564c318a9615fe902b464b998cd9cfb92f186",
+      "user": "0x7822efb68be9e458efa6307d3386921b23ac3ade",
+      "position_ids": [
+        1394103
+      ],
+      "nonce": 1201871612073524193561841183196493015336519477970,
+      "deadline": 1792358034,
+      "signature_v": 27,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0x1b19ea2e3ff121d620a728a0a88564c318a9615fe902b464b998cd9cfb92f186",
+      "user": "0xb39e7020300c93e30c9e13f6ef89a16537bd3191",
+      "position_ids": [
+        1393862
+      ],
+      "nonce": 1192369164,
+      "deadline": 1792360736,
+      "signature_v": 28,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0x1fc54a082055d35c0b79b6fc5f6c2a7004840531f5bcb9b6ec4450a93be2384f",
+      "user": "0x10ec78af7c91799e48c93c3b0eff024fbe0fbeb0",
+      "position_ids": [
+        11
+      ],
+      "nonce": 2998638340,
+      "deadline": 1791644416,
+      "signature_v": 27,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0x20ee69d9f4191bff17d45a850a584d5803ca477986fd1684af985765d64d794b",
+      "user": "0x691f3b008d13dba927ca32ad5df2cc30fa085d7b",
+      "position_ids": [
+        22
+      ],
+      "nonce": 1897568001,
+      "deadline": 1791644423,
+      "signature_v": 27,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0x23757e8ca58c9f544dacddedbd7be835020f5bc87e151ca7788dc0fd7613f4c6",
+      "user": "0xaea093e6319d22f8e3c14719bc33872361ab3f81",
+      "position_ids": [
+        1394000
+      ],
+      "nonce": 1792357101002381055,
+      "deadline": 1792360101,
+      "signature_v": 27,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0x2d6be13d729def3f6c5346e951db5a8cab0f88bf4ea35191864e9026ac0e6b6d",
+      "user": "0xa8e1f0c62e83e8fd0e148a4cbe850da1dfc2444f",
+      "position_ids": [
+        1394165,
+        1394168
+      ],
+      "nonce": 282418122980147,
+      "deadline": 1792360759,
+      "signature_v": 27,
+      "library_pairs": 2
+    },
+    {
+      "tx": "0x2d6be13d729def3f6c5346e951db5a8cab0f88bf4ea35191864e9026ac0e6b6d",
+      "user": "0xf13bb905b08e6a7035c4a577fa0c70f201acd014",
+      "position_ids": [
+        1394210
+      ],
+      "nonce": 304718432,
+      "deadline": 1792360761,
+      "signature_v": 28,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0x30639f82f9eb58fc815fb48b302ea732eed1bff5e755a92835b0b1f97c818acf",
+      "user": "0x0a017c108f4bce037fcca5b4f428e59748fa623d",
+      "position_ids": [
+        1393736
+      ],
+      "nonce": 258250091,
+      "deadline": 1792360665,
+      "signature_v": 28,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0x3b56a71e00561f356eace90ce1a0b2845540aca891cc092cde3b4452567948b7",
+      "user": "0x50fe50c21112457edb2409bf4861ac9bfca2b546",
+      "position_ids": [
+        1160665
+      ],
+      "nonce": 1792240546825000000,
+      "deadline": 1792240561,
+      "signature_v": 28,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0x3bc7029ee0d72c5dbacfb74dddc183ddb6206adca6ed702014eb90c28cf2d39e",
+      "user": "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+      "position_ids": [
+        12
+      ],
+      "nonce": 1739104003,
+      "deadline": 1791644416,
+      "signature_v": 28,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0x44d34a2ac0a36042f6ecd850ebc63f738b708d0a27d5993f8b7d9250e77c88cb",
+      "user": "0x0cc73605ee668a7a2a485f7265e0767b50bca6f2",
+      "position_ids": [
+        1383242
+      ],
+      "nonce": 966143868,
+      "deadline": 1792360903,
+      "signature_v": 28,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0x44d34a2ac0a36042f6ecd850ebc63f738b708d0a27d5993f8b7d9250e77c88cb",
+      "user": "0x9973f8abbe3e2aaeeecc64c0f3e802fd14dbd56f",
+      "position_ids": [
+        1383804
+      ],
+      "nonce": 4033325613658552596,
+      "deadline": 1792360900,
+      "signature_v": 28,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0x44d34a2ac0a36042f6ecd850ebc63f738b708d0a27d5993f8b7d9250e77c88cb",
+      "user": "0x9973f8abbe3e2aaeeecc64c0f3e802fd14dbd56f",
+      "position_ids": [
+        1383805
+      ],
+      "nonce": 9357740697156830140,
+      "deadline": 1792360901,
+      "signature_v": 27,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0x44d34a2ac0a36042f6ecd850ebc63f738b708d0a27d5993f8b7d9250e77c88cb",
+      "user": "0x9175e1964a4242f2a2348b874da51d2f0fbc54e6",
+      "position_ids": [
+        1388978
+      ],
+      "nonce": 44379908,
+      "deadline": 1792359102,
+      "signature_v": 27,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0x726340c233749d1bdb8bea903e4c8cc6ab17923527ed51abc77c91f0e7b3e22e",
+      "user": "0xe794d63b3144d4614563759cb844ad19f6733d5b",
+      "position_ids": [
+        1394285
+      ],
+      "nonce": 109395944,
+      "deadline": 1792357493,
+      "signature_v": 27,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0xa44fc9a0773a442541d3704bceec1d989a0db3a26e5b8faf8c3d1693a1352b4e",
+      "user": "0x4d02909ead5660beccfa2ac19ded5903465b70f7",
+      "position_ids": [
+        1392985
+      ],
+      "nonce": 3240425629,
+      "deadline": 1792360752,
+      "signature_v": 28,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0xa44fc9a0773a442541d3704bceec1d989a0db3a26e5b8faf8c3d1693a1352b4e",
+      "user": "0x4d02909ead5660beccfa2ac19ded5903465b70f7",
+      "position_ids": [
+        1389646
+      ],
+      "nonce": 3240425628,
+      "deadline": 1792360752,
+      "signature_v": 28,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0xa4beb0358ddb119f50f087a2bd293035751c479a06dda5bef2fb31529d985740",
+      "user": "0x0018b0102df3f0613f56120f7f2e4110a095bc05",
+      "position_ids": [
+        1390999
+      ],
+      "nonce": 3895301682,
+      "deadline": 1792360904,
+      "signature_v": 28,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0xac4e0883756cb4912c51f20d7d8ce84d798ccdda4e455c2c6242af5a8f139009",
+      "user": "0x290643c5ac91571d2b7f511d56bedf700c40cec9",
+      "position_ids": [
+        1394024
+      ],
+      "nonce": 1926842590,
+      "deadline": 1792360695,
+      "signature_v": 27,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0xac4e0883756cb4912c51f20d7d8ce84d798ccdda4e455c2c6242af5a8f139009",
+      "user": "0xaabb2a7f13f0994d377e63044277f2597ead5500",
+      "position_ids": [
+        1393953
+      ],
+      "nonce": 3118660391,
+      "deadline": 1792360701,
+      "signature_v": 27,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+      "user": "0x78274a46400c83c91b7ad35dea11f01ec3894756",
+      "position_ids": [
+        1392206
+      ],
+      "nonce": 911003902,
+      "deadline": 1792360236,
+      "signature_v": 28,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+      "user": "0x764274793ee9fdae1a2567667df698fd5bd4eff6",
+      "position_ids": [
+        1392921
+      ],
+      "nonce": 3789945196,
+      "deadline": 1792360232,
+      "signature_v": 27,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0xc7ba4aaf1bdda8e24c2c8a228e315f39a879e7c9c87786eb260fa07c09b99940",
+      "user": "0x177344b0f45102a5fb7b2dc72470650e84f3ef77",
+      "position_ids": [
+        13
+      ],
+      "nonce": 3,
+      "deadline": 1791644416,
+      "signature_v": 27,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0xd5a907988c178cb4fe55b8f3a8b87080eb3869e16ac548a8b9f7aa4a871a17c0",
+      "user": "0xb1ab2d13e9092ef561869f3c7ff201c7422f92e5",
+      "position_ids": [
+        1394032
+      ],
+      "nonce": 2912666164,
+      "deadline": 1792360740,
+      "signature_v": 27,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0xd5a907988c178cb4fe55b8f3a8b87080eb3869e16ac548a8b9f7aa4a871a17c0",
+      "user": "0xa191d80a5cd7109c66a89faed3bdaa9df8a951de",
+      "position_ids": [
+        1394048
+      ],
+      "nonce": 3347909071,
+      "deadline": 1792360740,
+      "signature_v": 28,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0xd5a907988c178cb4fe55b8f3a8b87080eb3869e16ac548a8b9f7aa4a871a17c0",
+      "user": "0x32f3c0ec5581030ea57d0e86eddbbc92fbabb89b",
+      "position_ids": [
+        1394054
+      ],
+      "nonce": 2759574394,
+      "deadline": 1792360740,
+      "signature_v": 28,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0xd5a907988c178cb4fe55b8f3a8b87080eb3869e16ac548a8b9f7aa4a871a17c0",
+      "user": "0xb5b76f56f99eccde33ce9ba193f8b42b8952626f",
+      "position_ids": [
+        1394039
+      ],
+      "nonce": 3053651564,
+      "deadline": 1792360740,
+      "signature_v": 27,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0xd5a907988c178cb4fe55b8f3a8b87080eb3869e16ac548a8b9f7aa4a871a17c0",
+      "user": "0xaabb2a7f13f0994d377e63044277f2597ead5500",
+      "position_ids": [
+        1393942
+      ],
+      "nonce": 3118660395,
+      "deadline": 1792360725,
+      "signature_v": 28,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0xe14a79ff975269d0edfe9ac85d84b4f081016f70a55e47727cd084189eb18ac9",
+      "user": "0x0e42d7887e4dfd681fe295bec85729c0420e0ae0",
+      "position_ids": [
+        1390429,
+        1390236
+      ],
+      "nonce": 313988773,
+      "deadline": 1792360709,
+      "signature_v": 28,
+      "library_pairs": 2
+    },
+    {
+      "tx": "0xe14a79ff975269d0edfe9ac85d84b4f081016f70a55e47727cd084189eb18ac9",
+      "user": "0xaabb2a7f13f0994d377e63044277f2597ead5500",
+      "position_ids": [
+        1393969
+      ],
+      "nonce": 3118660390,
+      "deadline": 1792360701,
+      "signature_v": 28,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0xe2e6318b494325c8ea46b79d450622a320ce43180286c4347b9405d7775b67e1",
+      "user": "0x34725731507037eedee460942d562202fb72dd1a",
+      "position_ids": [
+        1394022,
+        1391792
+      ],
+      "nonce": 1132897569,
+      "deadline": 1792360773,
+      "signature_v": 28,
+      "library_pairs": 2
+    },
+    {
+      "tx": "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d",
+      "user": "0xe4dae68a7657cbb57285b937c12fe2a1fab49768",
+      "position_ids": [
+        1392977
+      ],
+      "nonce": 291864414,
+      "deadline": 1792356727,
+      "signature_v": 28,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d",
+      "user": "0x230c4c8c4d33d7d6c25448ec115c2b837f5d3eb5",
+      "position_ids": [
+        1392974
+      ],
+      "nonce": 311852506246530581152504258742548141449623968527810661615587,
+      "deadline": 1792360241,
+      "signature_v": 28,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0xe3b515b06932d1f98867772b645367f3924ec239ae2e047fa0a15e3f11152e45",
+      "user": "0xad77adb339736e72d42ec3e9684989036d655120",
+      "position_ids": [
+        1393898
+      ],
+      "nonce": 4180137557,
+      "deadline": 1792360690,
+      "signature_v": 27,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0xe3b515b06932d1f98867772b645367f3924ec239ae2e047fa0a15e3f11152e45",
+      "user": "0x41f499bd00e61616e9311caa70e872138b41192c",
+      "position_ids": [
+        1393967
+      ],
+      "nonce": 282505019467508,
+      "deadline": 1792360686,
+      "signature_v": 27,
+      "library_pairs": 1
+    },
+    {
+      "tx": "0xe3b515b06932d1f98867772b645367f3924ec239ae2e047fa0a15e3f11152e45",
+      "user": "0x230c4c8c4d33d7d6c25448ec115c2b837f5d3eb5",
+      "position_ids": [
+        1393977
+      ],
+      "nonce": 311852506246530581152504258742548141449623968527810661615760,
+      "deadline": 1792360688,
+      "signature_v": 27,
+      "library_pairs": 1
+    }
+  ],
+  "ledger": [
+    {
+      "tx": "0x04b0da9f141aba59584b82b6f41fb4362734e35010374008db08e634bbf993e9",
+      "entry_price": 809255,
+      "exit_price": 809325,
+      "margin": "530357648259529441280",
+      "leverage": 439,
+      "is_long": false,
+      "raw_pnl": "-20139375760440577729",
+      "adjusted_pnl": "-20139375760440577729",
+      "settlement_input_tail": "5000667876326816873357400",
+      "settlement_output": [
+        "510218272499088863551",
+        "0",
+        "0",
+        "0",
+        "201393757604405777",
+        "201393757604405777"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x04b0da9f141aba59584b82b6f41fb4362734e35010374008db08e634bbf993e9",
+      "entry_price": 809255,
+      "exit_price": 809325,
+      "margin": "300000000000000000000",
+      "leverage": 439,
+      "is_long": false,
+      "raw_pnl": "-11391959271181518804",
+      "adjusted_pnl": "-11391959271181518804",
+      "settlement_input_tail": "5000687612915062105123575",
+      "settlement_output": [
+        "288608040728818481196",
+        "0",
+        "0",
+        "0",
+        "113919592711815188",
+        "113919592711815188"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x04b0da9f141aba59584b82b6f41fb4362734e35010374008db08e634bbf993e9",
+      "entry_price": 234445,
+      "exit_price": 234995,
+      "margin": "31890000000000000000",
+      "leverage": 171,
+      "is_long": true,
+      "raw_pnl": "12699958369766896286",
+      "adjusted_pnl": "10229565746095307745",
+      "settlement_input_tail": "5000698777035147863012003",
+      "settlement_output": [
+        "31890000000000000000",
+        "10024974431173401591",
+        "0",
+        "0",
+        "102295657460953077",
+        "102295657460953077"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x04b0da9f141aba59584b82b6f41fb4362734e35010374008db08e634bbf993e9",
+      "entry_price": 234445,
+      "exit_price": 234995,
+      "margin": "31890000000000000000",
+      "leverage": 171,
+      "is_long": false,
+      "raw_pnl": "-12792998357823796626",
+      "adjusted_pnl": "-12792998357823796626",
+      "settlement_input_tail": "5000688547469401767704258",
+      "settlement_output": [
+        "19097001642176203374",
+        "0",
+        "0",
+        "0",
+        "127929983578237966",
+        "127929983578237966"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x04b0da9f141aba59584b82b6f41fb4362734e35010374008db08e634bbf993e9",
+      "entry_price": 809255,
+      "exit_price": 809325,
+      "margin": "10009999999999997952",
+      "leverage": 100,
+      "is_long": false,
+      "raw_pnl": "-86585810405867106",
+      "adjusted_pnl": "-86585810405867106",
+      "settlement_input_tail": "5000701084607792435024952",
+      "settlement_output": [
+        "9923414189594130846",
+        "0",
+        "0",
+        "0",
+        "865858104058671",
+        "865858104058671"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+      "entry_price": 808075,
+      "exit_price": 809465,
+      "margin": "1000000000000000000000",
+      "leverage": 1000,
+      "is_long": true,
+      "raw_pnl": "1700337221173777186523",
+      "adjusted_pnl": "1376908565777242611685",
+      "settlement_input_tail": "5001157156245524861107088",
+      "settlement_output": [
+        "1000000000000000000000",
+        "1349370394461697759452",
+        "0",
+        "0",
+        "13769085657772426116",
+        "13769085657772426117"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+      "entry_price": 809325,
+      "exit_price": 809465,
+      "margin": "170320000000000000000",
+      "leverage": 449,
+      "is_long": true,
+      "raw_pnl": "11716845914805547833",
+      "adjusted_pnl": "4715339913440111746",
+      "settlement_input_tail": "4999780247679747618495403",
+      "settlement_output": [
+        "170320000000000000000",
+        "4621033115171309512",
+        "0",
+        "0",
+        "47153399134401117",
+        "47153399134401117"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+      "entry_price": 809325,
+      "exit_price": 809465,
+      "margin": "85160000000000000000",
+      "leverage": 449,
+      "is_long": true,
+      "raw_pnl": "5858422957402773916",
+      "adjusted_pnl": "2357669956720055873",
+      "settlement_input_tail": "4999775532339834178383657",
+      "settlement_output": [
+        "85160000000000000000",
+        "2310516557585654756",
+        "0",
+        "0",
+        "23576699567200558",
+        "23576699567200559"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+      "entry_price": 809325,
+      "exit_price": 809465,
+      "margin": "10640000000000000000",
+      "leverage": 449,
+      "is_long": true,
+      "raw_pnl": "731958904024959070",
+      "adjusted_pnl": "294570318688367713",
+      "settlement_input_tail": "4999773174669877458327784",
+      "settlement_output": [
+        "10640000000000000000",
+        "288678912314600359",
+        "0",
+        "0",
+        "2945703186883677",
+        "2945703186883677"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+      "entry_price": 809325,
+      "exit_price": 809465,
+      "margin": "18510000000000000000",
+      "leverage": 327,
+      "is_long": true,
+      "raw_pnl": "927369696969696969",
+      "adjusted_pnl": "373211645730569068",
+      "settlement_input_tail": "4999772880099558769960071",
+      "settlement_output": [
+        "18510000000000000000",
+        "365747412815957687",
+        "0",
+        "0",
+        "3732116457305690",
+        "3732116457305691"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x1b19ea2e3ff121d620a728a0a88564c318a9615fe902b464b998cd9cfb92f186",
+      "entry_price": 809465,
+      "exit_price": 809465,
+      "margin": "150000000000000000000",
+      "leverage": 100,
+      "is_long": true,
+      "raw_pnl": "0",
+      "adjusted_pnl": "0",
+      "settlement_input_tail": "5000104534998033609369069",
+      "settlement_output": [
+        "150000000000000000000",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x1b19ea2e3ff121d620a728a0a88564c318a9615fe902b464b998cd9cfb92f186",
+      "entry_price": 234785,
+      "exit_price": 235035,
+      "margin": "10000000000000000000",
+      "leverage": 500,
+      "is_long": true,
+      "raw_pnl": "5238835530378857252",
+      "adjusted_pnl": "3739567373518613043",
+      "settlement_input_tail": "5000104534998033609369069",
+      "settlement_output": [
+        "10000000000000000000",
+        "3664776026048240783",
+        "0",
+        "0",
+        "37395673735186130",
+        "37395673735186130"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x1fc54a082055d35c0b79b6fc5f6c2a7004840531f5bcb9b6ec4450a93be2384f",
+      "entry_price": 249815,
+      "exit_price": 249825,
+      "margin": "45000000000000000000000",
+      "leverage": 99,
+      "is_long": true,
+      "raw_pnl": "106999179392750635470",
+      "adjusted_pnl": "7779532839134513866",
+      "settlement_input_tail": "0",
+      "settlement_output": [
+        "45000000000000000000000",
+        "0",
+        "7623942182351823589",
+        "0",
+        "0",
+        "0"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x20ee69d9f4191bff17d45a850a584d5803ca477986fd1684af985765d64d794b",
+      "entry_price": 249815,
+      "exit_price": 249825,
+      "margin": "10000000000000000000000",
+      "leverage": 1000,
+      "is_long": false,
+      "raw_pnl": "-400296219202209635129",
+      "adjusted_pnl": "-400296219202209635129",
+      "settlement_input_tail": "0",
+      "settlement_output": [
+        "9599703780797790364871",
+        "0",
+        "0",
+        "400296219202209635129",
+        "0",
+        "0"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x23757e8ca58c9f544dacddedbd7be835020f5bc87e151ca7788dc0fd7613f4c6",
+      "entry_price": 809255,
+      "exit_price": 809325,
+      "margin": "3500000000000000000000",
+      "leverage": 445,
+      "is_long": false,
+      "raw_pnl": "-134722677030107938783",
+      "adjusted_pnl": "-134722677030107938783",
+      "settlement_input_tail": "5000000000000000000000000",
+      "settlement_output": [
+        "3365277322969892061217",
+        "0",
+        "0",
+        "0",
+        "1347226770301079387",
+        "1347226770301079388"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x2d6be13d729def3f6c5346e951db5a8cab0f88bf4ea35191864e9026ac0e6b6d",
+      "entry_price": 809465,
+      "exit_price": 809465,
+      "margin": "200000000000000000000",
+      "leverage": 412,
+      "is_long": false,
+      "raw_pnl": "0",
+      "adjusted_pnl": "0",
+      "settlement_input_tail": "5001118588572781836800115",
+      "settlement_output": [
+        "200000000000000000000",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x2d6be13d729def3f6c5346e951db5a8cab0f88bf4ea35191864e9026ac0e6b6d",
+      "entry_price": 809465,
+      "exit_price": 809465,
+      "margin": "100000000000000000000",
+      "leverage": 412,
+      "is_long": false,
+      "raw_pnl": "0",
+      "adjusted_pnl": "0",
+      "settlement_input_tail": "5001118588572781836800115",
+      "settlement_output": [
+        "100000000000000000000",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x2d6be13d729def3f6c5346e951db5a8cab0f88bf4ea35191864e9026ac0e6b6d",
+      "entry_price": 235050,
+      "exit_price": 235035,
+      "margin": "200000000000000000000",
+      "leverage": 250,
+      "is_long": true,
+      "raw_pnl": "-3190810465858328015",
+      "adjusted_pnl": "-3190810465858328015",
+      "settlement_input_tail": "5001118588572781836800115",
+      "settlement_output": [
+        "196809189534141671985",
+        "0",
+        "0",
+        "0",
+        "31908104658583280",
+        "31908104658583280"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x30639f82f9eb58fc815fb48b302ea732eed1bff5e755a92835b0b1f97c818acf",
+      "entry_price": 809095,
+      "exit_price": 809145,
+      "margin": "2500000000000000000000",
+      "leverage": 400,
+      "is_long": true,
+      "raw_pnl": "42022259438014077456",
+      "adjusted_pnl": "6866671242413173194",
+      "settlement_input_tail": "5000193502051420426962916",
+      "settlement_output": [
+        "2500000000000000000000",
+        "6729337817564909731",
+        "0",
+        "0",
+        "68666712424131731",
+        "68666712424131732"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x3b56a71e00561f356eace90ce1a0b2845540aca891cc092cde3b4452567948b7",
+      "entry_price": 815485,
+      "exit_price": 815235,
+      "margin": "10000000000000000000",
+      "leverage": 100,
+      "is_long": true,
+      "raw_pnl": "-306566031257472547",
+      "adjusted_pnl": "-306566031257472547",
+      "settlement_input_tail": "4855705574563418105609872",
+      "settlement_output": [
+        "9693433968742527453",
+        "0",
+        "0",
+        "0",
+        "3065660312574725",
+        "3065660312574725"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x3bc7029ee0d72c5dbacfb74dddc183ddb6206adca6ed702014eb90c28cf2d39e",
+      "entry_price": 249815,
+      "exit_price": 249825,
+      "margin": "45000000000000000000000",
+      "leverage": 99,
+      "is_long": true,
+      "raw_pnl": "106999179392750635470",
+      "adjusted_pnl": "7779532839134513866",
+      "settlement_input_tail": "0",
+      "settlement_output": [
+        "45000000000000000000000",
+        "0",
+        "7623942182351823589",
+        "0",
+        "0",
+        "0"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x44d34a2ac0a36042f6ecd850ebc63f738b708d0a27d5993f8b7d9250e77c88cb",
+      "entry_price": 234095,
+      "exit_price": 235445,
+      "margin": "140000000000000000000",
+      "leverage": 100,
+      "is_long": true,
+      "raw_pnl": "80497234028919882953",
+      "adjusted_pnl": "69160331010842974085",
+      "settlement_input_tail": "5007193396372216687769246",
+      "settlement_output": [
+        "140000000000000000000",
+        "67777124390626114604",
+        "0",
+        "0",
+        "691603310108429740",
+        "691603310108429741"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x44d34a2ac0a36042f6ecd850ebc63f738b708d0a27d5993f8b7d9250e77c88cb",
+      "entry_price": 233625,
+      "exit_price": 235445,
+      "margin": "129613721000000000000",
+      "leverage": 100,
+      "is_long": false,
+      "raw_pnl": "-100972486771535580524",
+      "adjusted_pnl": "-100972486771535580524",
+      "settlement_input_tail": "5007124236041205844795161",
+      "settlement_output": [
+        "28641234228464419476",
+        "0",
+        "0",
+        "0",
+        "1009724867715355805",
+        "1009724867715355805"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x44d34a2ac0a36042f6ecd850ebc63f738b708d0a27d5993f8b7d9250e77c88cb",
+      "entry_price": 233625,
+      "exit_price": 235445,
+      "margin": "129613721000000000000",
+      "leverage": 100,
+      "is_long": true,
+      "raw_pnl": "100750569218191546281",
+      "adjusted_pnl": "87595828083417150173",
+      "settlement_input_tail": "5007223189078241949664075",
+      "settlement_output": [
+        "129613721000000000000",
+        "85843911521748807170",
+        "0",
+        "0",
+        "875958280834171501",
+        "875958280834171502"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x44d34a2ac0a36042f6ecd850ebc63f738b708d0a27d5993f8b7d9250e77c88cb",
+      "entry_price": 234645,
+      "exit_price": 235445,
+      "margin": "63000000000000000000",
+      "leverage": 200,
+      "is_long": false,
+      "raw_pnl": "-42958511794412836412",
+      "adjusted_pnl": "-42958511794412836412",
+      "settlement_input_tail": "5007135593250158532513902",
+      "settlement_output": [
+        "20041488205587163588",
+        "0",
+        "0",
+        "0",
+        "429585117944128364",
+        "429585117944128364"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0x726340c233749d1bdb8bea903e4c8cc6ab17923527ed51abc77c91f0e7b3e22e",
+      "entry_price": 809315,
+      "exit_price": 809315,
+      "margin": "18530000000000000000",
+      "leverage": 337,
+      "is_long": true,
+      "raw_pnl": "0",
+      "adjusted_pnl": "0",
+      "settlement_input_tail": "4996098026116546940206525",
+      "settlement_output": [
+        "18530000000000000000",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xa44fc9a0773a442541d3704bceec1d989a0db3a26e5b8faf8c3d1693a1352b4e",
+      "entry_price": 808455,
+      "exit_price": 809465,
+      "margin": "500000000000000000000",
+      "leverage": 300,
+      "is_long": false,
+      "raw_pnl": "-187394474646084197636",
+      "adjusted_pnl": "-187394474646084197636",
+      "settlement_input_tail": "4999685123985258234155125",
+      "settlement_output": [
+        "312605525353915802364",
+        "0",
+        "0",
+        "0",
+        "1873944746460841976",
+        "1873944746460841976"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xa44fc9a0773a442541d3704bceec1d989a0db3a26e5b8faf8c3d1693a1352b4e",
+      "entry_price": 809125,
+      "exit_price": 809465,
+      "margin": "100000000000000000000",
+      "leverage": 468,
+      "is_long": false,
+      "raw_pnl": "-19665688243472887378",
+      "adjusted_pnl": "-19665688243472887378",
+      "settlement_input_tail": "4999868770570411396668809",
+      "settlement_output": [
+        "80334311756527112622",
+        "0",
+        "0",
+        "0",
+        "196656882434728873",
+        "196656882434728874"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xa4beb0358ddb119f50f087a2bd293035751c479a06dda5bef2fb31529d985740",
+      "entry_price": 234595,
+      "exit_price": 235485,
+      "margin": "2448130000000000000000",
+      "leverage": 100,
+      "is_long": false,
+      "raw_pnl": "-928764764807434088535",
+      "adjusted_pnl": "-928764764807434088535",
+      "settlement_input_tail": "5000000000000000000000000",
+      "settlement_output": [
+        "1519365235192565911465",
+        "0",
+        "0",
+        "0",
+        "9287647648074340885",
+        "9287647648074340885"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xac4e0883756cb4912c51f20d7d8ce84d798ccdda4e455c2c6242af5a8f139009",
+      "entry_price": 809145,
+      "exit_price": 809325,
+      "margin": "10009999999999997952",
+      "leverage": 500,
+      "is_long": false,
+      "raw_pnl": "-1113397475112618647",
+      "adjusted_pnl": "-1113397475112618647",
+      "settlement_input_tail": "5000659970931839861954596",
+      "settlement_output": [
+        "8896602524887379305",
+        "0",
+        "0",
+        "0",
+        "11133974751126186",
+        "11133974751126186"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xac4e0883756cb4912c51f20d7d8ce84d798ccdda4e455c2c6242af5a8f139009",
+      "entry_price": 809305,
+      "exit_price": 809325,
+      "margin": "10009999999999997952",
+      "leverage": 100,
+      "is_long": false,
+      "raw_pnl": "-24737274575098381",
+      "adjusted_pnl": "-24737274575098381",
+      "settlement_input_tail": "5000661062061365472320871",
+      "settlement_output": [
+        "9985262725424899571",
+        "0",
+        "0",
+        "0",
+        "247372745750983",
+        "247372745750984"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+      "entry_price": 808385,
+      "exit_price": 808455,
+      "margin": "5750000000000000000000",
+      "leverage": 581,
+      "is_long": true,
+      "raw_pnl": "223161612350550789537",
+      "adjusted_pnl": "52361676010080092657",
+      "settlement_input_tail": "5002012573755118958351370",
+      "settlement_output": [
+        "5750000000000000000000",
+        "51314442489878490804",
+        "0",
+        "0",
+        "523616760100800926",
+        "523616760100800927"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+      "entry_price": 808725,
+      "exit_price": 808455,
+      "margin": "1000000000000000000000",
+      "leverage": 100,
+      "is_long": true,
+      "raw_pnl": "-33385885189650375591",
+      "adjusted_pnl": "-33385885189650375591",
+      "settlement_input_tail": "5001960212079108878258713",
+      "settlement_output": [
+        "966614114810349624409",
+        "0",
+        "0",
+        "0",
+        "333858851896503755",
+        "333858851896503756"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xc7ba4aaf1bdda8e24c2c8a228e315f39a879e7c9c87786eb260fa07c09b99940",
+      "entry_price": 249815,
+      "exit_price": 249825,
+      "margin": "45000000000000000000000",
+      "leverage": 99,
+      "is_long": true,
+      "raw_pnl": "106999179392750635470",
+      "adjusted_pnl": "7779532839134513866",
+      "settlement_input_tail": "0",
+      "settlement_output": [
+        "45000000000000000000000",
+        "0",
+        "7623942182351823589",
+        "0",
+        "0",
+        "0"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xd5a907988c178cb4fe55b8f3a8b87080eb3869e16ac548a8b9f7aa4a871a17c0",
+      "entry_price": 809325,
+      "exit_price": 809465,
+      "margin": "1216204036515382782545",
+      "leverage": 410,
+      "is_long": true,
+      "raw_pnl": "76399237903737139794",
+      "adjusted_pnl": "30746190439244762616",
+      "settlement_input_tail": "5000000000000000000000000",
+      "settlement_output": [
+        "1216204036515382782545",
+        "30131266630459867364",
+        "0",
+        "0",
+        "307461904392447626",
+        "307461904392447626"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xd5a907988c178cb4fe55b8f3a8b87080eb3869e16ac548a8b9f7aa4a871a17c0",
+      "entry_price": 809325,
+      "exit_price": 809465,
+      "margin": "717729067210519871093",
+      "leverage": 419,
+      "is_long": true,
+      "raw_pnl": "46075842728186785806",
+      "adjusted_pnl": "18542811080844888849",
+      "settlement_input_tail": "4999969253809560755237384",
+      "settlement_output": [
+        "717729067210519871093",
+        "18171954859227991073",
+        "0",
+        "0",
+        "185428110808448888",
+        "185428110808448888"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xd5a907988c178cb4fe55b8f3a8b87080eb3869e16ac548a8b9f7aa4a871a17c0",
+      "entry_price": 809325,
+      "exit_price": 809465,
+      "margin": "579710171186656101620",
+      "leverage": 415,
+      "is_long": true,
+      "raw_pnl": "36860204997084388829",
+      "adjusted_pnl": "14834060045179077667",
+      "settlement_input_tail": "4999950710998479910348535",
+      "settlement_output": [
+        "579710171186656101620",
+        "14537378844275496114",
+        "0",
+        "0",
+        "148340600451790776",
+        "148340600451790777"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xd5a907988c178cb4fe55b8f3a8b87080eb3869e16ac548a8b9f7aa4a871a17c0",
+      "entry_price": 809325,
+      "exit_price": 809465,
+      "margin": "236952398426372980630",
+      "leverage": 410,
+      "is_long": true,
+      "raw_pnl": "14884823693814972149",
+      "adjusted_pnl": "5990264255269899146",
+      "settlement_input_tail": "4999935876938434731270868",
+      "settlement_output": [
+        "236952398426372980630",
+        "5870458970164501164",
+        "0",
+        "0",
+        "59902642552698991",
+        "59902642552698991"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xd5a907988c178cb4fe55b8f3a8b87080eb3869e16ac548a8b9f7aa4a871a17c0",
+      "entry_price": 809305,
+      "exit_price": 809465,
+      "margin": "10009999999999997952",
+      "leverage": 100,
+      "is_long": false,
+      "raw_pnl": "-197898196600787054",
+      "adjusted_pnl": "-197898196600787054",
+      "settlement_input_tail": "4999929886674179461371722",
+      "settlement_output": [
+        "9812101803399210898",
+        "0",
+        "0",
+        "0",
+        "1978981966007870",
+        "1978981966007871"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xe14a79ff975269d0edfe9ac85d84b4f081016f70a55e47727cd084189eb18ac9",
+      "entry_price": 234715,
+      "exit_price": 234995,
+      "margin": "968150000000000000000",
+      "leverage": 70,
+      "is_long": false,
+      "raw_pnl": "-80845876914555950833",
+      "adjusted_pnl": "-80845876914555950833",
+      "settlement_input_tail": "5005323977443688824247429",
+      "settlement_output": [
+        "887304123085444049167",
+        "0",
+        "0",
+        "0",
+        "808458769145559508",
+        "808458769145559508"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xe14a79ff975269d0edfe9ac85d84b4f081016f70a55e47727cd084189eb18ac9",
+      "entry_price": 234805,
+      "exit_price": 234995,
+      "margin": "968150000000000000000",
+      "leverage": 104,
+      "is_long": false,
+      "raw_pnl": "-81474602329592640701",
+      "adjusted_pnl": "-81474602329592640701",
+      "settlement_input_tail": "5005403206403065089079246",
+      "settlement_output": [
+        "886675397670407359299",
+        "0",
+        "0",
+        "0",
+        "814746023295926407",
+        "814746023295926407"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xe14a79ff975269d0edfe9ac85d84b4f081016f70a55e47727cd084189eb18ac9",
+      "entry_price": 809255,
+      "exit_price": 809325,
+      "margin": "10009999999999997952",
+      "leverage": 100,
+      "is_long": false,
+      "raw_pnl": "-86585810405867106",
+      "adjusted_pnl": "-86585810405867106",
+      "settlement_input_tail": "5005483051513348089867133",
+      "settlement_output": [
+        "9923414189594130846",
+        "0",
+        "0",
+        "0",
+        "865858104058671",
+        "865858104058671"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xe2e6318b494325c8ea46b79d450622a320ce43180286c4347b9405d7775b67e1",
+      "entry_price": 234895,
+      "exit_price": 235035,
+      "margin": "956790000000000000000",
+      "leverage": 123,
+      "is_long": false,
+      "raw_pnl": "-70141653930479575980",
+      "adjusted_pnl": "-70141653930479575980",
+      "settlement_input_tail": "5000000000000000000000000",
+      "settlement_output": [
+        "886648346069520424020",
+        "0",
+        "0",
+        "0",
+        "701416539304795759",
+        "701416539304795760"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xe2e6318b494325c8ea46b79d450622a320ce43180286c4347b9405d7775b67e1",
+      "entry_price": 234305,
+      "exit_price": 235035,
+      "margin": "956790000000000000000",
+      "leverage": 755,
+      "is_long": true,
+      "raw_pnl": "2238301797656900194191",
+      "adjusted_pnl": "1851197624823037351837",
+      "settlement_input_tail": "5000068738820851869984461",
+      "settlement_output": [
+        "956790000000000000000",
+        "1814173672326576604801",
+        "0",
+        "0",
+        "18511976248230373518",
+        "18511976248230373518"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d",
+      "entry_price": 808455,
+      "exit_price": 808455,
+      "margin": "208333333333333344256",
+      "leverage": 480,
+      "is_long": false,
+      "raw_pnl": "0",
+      "adjusted_pnl": "0",
+      "settlement_input_tail": "5002839725700899608681625",
+      "settlement_output": [
+        "208333333333333344256",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d",
+      "entry_price": 808535,
+      "exit_price": 808455,
+      "margin": "96634787772646906518",
+      "leverage": 500,
+      "is_long": false,
+      "raw_pnl": "3824587938338724988",
+      "adjusted_pnl": "1014451343462700068",
+      "settlement_input_tail": "5002839725700899608681625",
+      "settlement_output": [
+        "96634787772646906518",
+        "994162316593446067",
+        "0",
+        "0",
+        "10144513434627000",
+        "10144513434627001"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xe3b515b06932d1f98867772b645367f3924ec239ae2e047fa0a15e3f11152e45",
+      "entry_price": 809285,
+      "exit_price": 809145,
+      "margin": "10000000000000000000000",
+      "leverage": 25,
+      "is_long": true,
+      "raw_pnl": "-43248052293073515510",
+      "adjusted_pnl": "-43248052293073515510",
+      "settlement_input_tail": "5000197467167722495217257",
+      "settlement_output": [
+        "9956751947706926484490",
+        "0",
+        "0",
+        "0",
+        "432480522930735155",
+        "432480522930735155"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xe3b515b06932d1f98867772b645367f3924ec239ae2e047fa0a15e3f11152e45",
+      "entry_price": 809255,
+      "exit_price": 809145,
+      "margin": "200000000000000000000",
+      "leverage": 439,
+      "is_long": false,
+      "raw_pnl": "10198515918962502548",
+      "adjusted_pnl": "3488936072136121240",
+      "settlement_input_tail": "5000239850258969707262457",
+      "settlement_output": [
+        "200000000000000000000",
+        "3419157350693398816",
+        "0",
+        "0",
+        "34889360721361212",
+        "34889360721361212"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    },
+    {
+      "tx": "0xe3b515b06932d1f98867772b645367f3924ec239ae2e047fa0a15e3f11152e45",
+      "entry_price": 809255,
+      "exit_price": 809145,
+      "margin": "89450781353930081074",
+      "leverage": 250,
+      "is_long": false,
+      "raw_pnl": "2597566109344220184",
+      "adjusted_pnl": "888633421829407204",
+      "settlement_input_tail": "5000236361322897571141217",
+      "settlement_output": [
+        "89450781353930081074",
+        "870860753392819060",
+        "0",
+        "0",
+        "8886334218294072",
+        "8886334218294072"
+      ],
+      "checks": {
+        "raw_and_adjusted_pnl": true,
+        "pnl_passed_to_settlement": true,
+        "six_settlement_outputs": true
+      }
+    }
+  ],
+  "limits": [
+    "All 49 historical settlement samples use equal fee-rate inputs; the separate controlled replay ledger checks unequal rates.",
+    "The exact Solidity source names of all ten library selectors remain unknown.",
+    "The remaining seven library selectors have no saved historical call.",
+    "The single historical 0x79810ffe call plus thirteen read-only simulations cover selected queue harvest branches, not every possible queue state.",
+    "Direct math probes simulate execution at the pin; no transactions were sent."
+  ]
+}

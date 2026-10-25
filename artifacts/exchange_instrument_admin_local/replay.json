@@ -1,0 +1,24 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "selector": "0x5ca4c0ea",
+  "event_topic": "0x76a319771459e5329ebc7830ef30b80fc54d20327f8b4946a9539e53c46018c9",
+  "runtime_hashes": {
+    "Proxy": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "Implementation": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1"
+  },
+  "test_names": [
+    "testInvalidInstrument",
+    "testKeeperRejected",
+    "testOutsiderRejected",
+    "testOwnerSecondInstrument",
+    "testOwnerWritesAndEmits",
+    "testRateUpperBound",
+    "testStatefulSecondUpdateAndGetter",
+    "testZeroFirst",
+    "testZeroThird"
+  ],
+  "forge_result": "9 passed, 0 failed",
+  "test_source_sha256": "c463b48a72a7d1816b323fbd2bde91e421269cfb6b8307ad9c69629da701f684",
+  "stateful_case": "two committed updates followed by the pinned getter"
+}

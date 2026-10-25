@@ -1,0 +1,75 @@
+{
+  "pin_block": 48902346,
+  "tokenomics_proxy": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+  "implementation": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+  "scheduled_operation_id": "0x51142366b8d5ae8d41322de14a7627f265e2ab54ee65828bbbaa14f6090cb578",
+  "scheduled_operation_executed_at_pin": false,
+  "selector_reconstructions": {
+    "0x12baae3b": "setMintParams(uint256,uint256,uint256,uint256)",
+    "0xae745703": "stakerLpDistributableExcessUsd()",
+    "0xc218c676": "distributeLpToStakers(uint256)"
+  },
+  "source_name_lead": "https://www.guardian.security/portfolio/papertrade/protocol-review-2026-10-09/",
+  "event_catalog": [
+    {
+      "topic0": "0xdbf6f1878073adede0b153c63f457c1c601a056124755086092f973f19550176",
+      "reconstructed_signature": "MintParamsUpdated(uint256,uint256,uint256,uint256)",
+      "status": "simulated_log_only"
+    }
+  ],
+  "simulated_error_catalog": [
+    {
+      "selector": "0xbad8ef95",
+      "reconstructed_signature": "InvalidMintParams()",
+      "probe_paths": [
+        "all_zero",
+        "inverted_distinct",
+        "threshold_above_floor",
+        "zero_floor",
+        "zero_rate",
+        "zero_scale",
+        "zero_threshold"
+      ]
+    },
+    {
+      "selector": "0x30cd7471",
+      "reconstructed_signature": "NotOwner()",
+      "probe_paths": [
+        "outsider_distinct"
+      ]
+    }
+  ],
+  "argument_storage_slots": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "sampled_validation": "all four parameters nonzero and first parameter <= second parameter",
+  "probe_count": 15,
+  "excess_getter_floor_probe_count": 4,
+  "slot_6_semantics": "floor subtracted from tracked LP USD, clamped to zero, in selector 0xae745703",
+  "governance_execution": {
+    "status": "pinned_read_only_simulation",
+    "success": true,
+    "nested_call_count": 2,
+    "nested_tokenomics_event_topic": "0xdbf6f1878073adede0b153c63f457c1c601a056124755086092f973f19550176",
+    "tokenomics_slot_6_post": "0x000000000000000000000000000000000000000000084595161401484a000000",
+    "timelock_operation_post": "0x0000000000000000000000000000000000000000000000000000000000000001"
+  },
+  "downstream_mint_probes": {
+    "count": 4,
+    "mint_amounts": {
+      "baseline": "11303568816826005791",
+      "scheduled_floor": "11303568816826005791",
+      "distinct_parameters": "13808026739943372833",
+      "flat_threshold": "100000000000000000000"
+    },
+    "status": "pinned_read_only_storage_overrides"
+  },
+  "limits": [
+    "All setter probes are pinned read-only simulations; the scheduled timelock operation was not executed on-chain.",
+    "The sampled validation model does not exclude additional guards for untested extreme values.",
+    "Downstream mint tests use hypothetical storage overrides, not an executed governance transaction."
+  ]
+}

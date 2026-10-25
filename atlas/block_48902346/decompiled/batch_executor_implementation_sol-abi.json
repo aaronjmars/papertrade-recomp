@@ -1,0 +1,256 @@
+[
+  {
+    "type": "function",
+    "name": "Unresolved_0b826190",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "Unresolved_0f71c8bc",
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "address"
+      },
+      {
+        "name": "arg1",
+        "type": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "payable"
+  },
+  {
+    "type": "function",
+    "name": "Unresolved_251fb27d",
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "uint256"
+      },
+      {
+        "name": "arg1",
+        "type": "uint256"
+      },
+      {
+        "name": "arg2",
+        "type": "uint256"
+      },
+      {
+        "name": "arg3",
+        "type": "uint256"
+      },
+      {
+        "name": "arg4",
+        "type": "uint256"
+      },
+      {
+        "name": "arg5",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "payable"
+  },
+  {
+    "type": "function",
+    "name": "Unresolved_29e295c5",
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "Unresolved_6090cf16",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "Unresolved_8da5cb5b",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "Unresolved_9011e5f9",
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "address"
+      },
+      {
+        "name": "arg1",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "payable"
+  },
+  {
+    "type": "function",
+    "name": "Unresolved_9ccae24e",
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "address"
+      },
+      {
+        "name": "arg1",
+        "type": "address"
+      },
+      {
+        "name": "arg2",
+        "type": "address"
+      },
+      {
+        "name": "arg3",
+        "type": "address"
+      },
+      {
+        "name": "arg4",
+        "type": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "payable"
+  },
+  {
+    "type": "function",
+    "name": "Unresolved_c0c53b8b",
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "address"
+      },
+      {
+        "name": "arg1",
+        "type": "address"
+      },
+      {
+        "name": "arg2",
+        "type": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "pure"
+  },
+  {
+    "type": "function",
+    "name": "Unresolved_d2f7265a",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "Unresolved_d5c539ce",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "Unresolved_f2fde38b",
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "payable"
+  },
+  {
+    "type": "event",
+    "name": "Event_431c9efc75fd5a8b5d510e3458e1c31ac5c3de0385743f60f76491e1e0867391",
+    "inputs": [],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "Event_4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+    "inputs": [],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "Event_9d65322d939fd0a2d0032c87248c8e9f9b14cc177e27b2c049cb4b0356e5160b",
+    "inputs": [],
+    "anonymous": false
+  },
+  {
+    "type": "error",
+    "name": "CustomError_000000000000000000000000000000000000000000000000000000000dc149f0",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CustomError_0000000000000000000000000000000000000000000000000000000017fb2066",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CustomError_0000000000000000000000000000000000000000000000000000000030cd7471",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CustomError_000000000000000000000000000000000000000000000000000000003f733c4f",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CustomError_00000000000000000000000000000000000000000000000000000000904bc503",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CustomError_00000000000000000000000000000000000000000000000000000000b7b2509c",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CustomError_00000000000000000000000000000000000000000000000000000000c031a0df",
+    "inputs": []
+  }
+]

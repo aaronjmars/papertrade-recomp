@@ -1,0 +1,77 @@
+{
+  "pin_block": 48902346,
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "staking_proxy": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+  "tokenomics_proxy": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+  "selector_reconstructions": {
+    "0x7b9f5264": "pushStakerFees()"
+  },
+  "event_catalog": [
+    {
+      "topic0": "0x18d8b7951a20bbcb2b5f45b29bb62a81963f4b1f75dac5e2493a885a6de74291",
+      "reconstructed_signature": "StakerFeesClaimed(address,uint256,uint256)",
+      "status": "observed_historical"
+    },
+    {
+      "topic0": "0x17d88d5ce12b7103190340ee5304ff19dbf970a0289bb2684460e4a87a7b66f9",
+      "reconstructed_signature": "StakerLpExcessDistributed(address,uint256,uint256,uint256)",
+      "status": "observed_historical"
+    }
+  ],
+  "historical_push_count": 5,
+  "historical_excess_count": 4,
+  "historical": [
+    {
+      "tx": "0x23757e8ca58c9f544dacddedbd7be835020f5bc87e151ca7788dc0fd7613f4c6",
+      "block": 48902116,
+      "fee": "62741809334785539301",
+      "excess": "5580143073014933977402",
+      "distributed": "5642884882349719516703"
+    },
+    {
+      "tx": "0xa4beb0358ddb119f50f087a2bd293035751c479a06dda5bef2fb31529d985740",
+      "block": 48902330,
+      "fee": "414095646709939272921",
+      "excess": "8045345109337217548045",
+      "distributed": "8459440756047156820966"
+    },
+    {
+      "tx": "0xb27bbadf830f5673211719cf6585d9929e91a446c3f46aee940e6e2e02888cdb",
+      "block": 48902299,
+      "fee": "156371955769039150292",
+      "excess": "0",
+      "distributed": "156371955769039150292"
+    },
+    {
+      "tx": "0xd5a907988c178cb4fe55b8f3a8b87080eb3869e16ac548a8b9f7aa4a871a17c0",
+      "block": 48902147,
+      "fee": "39740210512784488138",
+      "excess": "97954274153075592750",
+      "distributed": "137694484665860080888"
+    },
+    {
+      "tx": "0xe2e6318b494325c8ea46b79d450622a320ce43180286c4347b9405d7775b67e1",
+      "block": 48902177,
+      "fee": "21905720175704902334",
+      "excess": "1124801507535491512024",
+      "distributed": "1146707227711196414358"
+    }
+  ],
+  "pinned_probe_count": 5,
+  "pinned_fee": "99505349031080845747",
+  "pinned_excess": "968649731559005181671",
+  "pinned_total_credit": "1068155080590086027418",
+  "pinned_outsider_allowed": true,
+  "pinned_storage_effects": {
+    "total_balances_increase": "1068155080590086027418",
+    "staking_balance_increase": "1068155080590086027418",
+    "staker_fee_accumulator_decrease": "99505349031080845747",
+    "tokenomics_tracked_lp_decrease": "968649731559005181671"
+  },
+  "limits": [
+    "The event argument names beyond their checked relationships remain uncertain.",
+    "The permissionless caller probe proves the pinned state only.",
+    "Five historical transactions and five read-only pinned probes do not cover all future balances."
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "address": "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+  "representative_user": "0xfb94d3404c1d3d9d6f08f79e58041d5ea95accfa",
+  "exchange": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "historical_proxy": "0x2e38ce35e63bfae2a85bf6db885ffcedaa76e18e",
+  "historical_proxy_user": "0x1730a930cfd0da43255081801bf1a3eb0b69ec83",
+  "historical_proxy_normalized_sha256": "554e7afb9eb3c11831c7aa6a11fd2170aae9d81e29a5940b234e1cea62611225",
+  "historical_sweep_tx": "0xd4ee56dd5d1e271b8fc142e340362d3ab1eede92a9810ab33de4d90a9f798257",
+  "historical_sweep_args": [
+    0,
+    499900000000,
+    0
+  ],
+  "historical_sweep_actions": [
+    {
+      "id": 6,
+      "version": 1,
+      "fields": [
+        621329955008895694125364835068175551477650542754,
+        0,
+        499900000000
+      ],
+      "raw": "0x010000060000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a2000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000074645ca700"
+    }
+  ],
+  "historical_core_writer_log_matches_action": true,
+  "selector_reconstructions": {
+    "0x0c506e96": "withdrawStuckToken(address,uint256)",
+    "0x4f8632ba": "user()",
+    "0x925b3aad": "sweepAllToExchange(uint64,uint64,uint64)",
+    "0xd2f7265a": "exchange()"
+  },
+  "event_catalog": [
+    {
+      "topic0": "0x3d95e1dd133840fdfe95e9a3b6c9fc44f85019531359313e278c6e358ef5b1e0",
+      "reconstructed_signature": "StuckTokenWithdrawn(address,address,uint256)",
+      "indexed_fields": [
+        "user",
+        "token"
+      ],
+      "data_fields": [
+        "amount"
+      ],
+      "status": "simulated_log_only"
+    }
+  ],
+  "simulated_error_catalog": [
+    {
+      "selector": "0xfadaa871",
+      "reconstructed_signature": "CoreAmountOverflow()",
+      "probe_paths": [
+        "sweep_exchange_overflow_mul",
+        "sweep_exchange_overflow_sum"
+      ],
+      "public_signature_candidates": [
+        "CoreAmountOverflow()"
+      ]
+    }
+  ],
+  "action_cases": {
+    "sweep_exchange_spot_mock": [
+      {
+        "id": 6,
+        "version": 1,
+        "fields": [
+          621329955008895694125364835068175551477650542754,
+          0,
+          123
+        ],
+        "raw": "0x010000060000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007b"
+      }
+    ],
+    "sweep_exchange_perp_mock": [
+      {
+        "id": 7,
+        "version": 1,
+        "fields": [
+          4,
+          0
+        ],
+        "raw": "0x0100000700000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000"
+      },
+      {
+        "id": 6,
+        "version": 1,
+        "fields": [
+          621329955008895694125364835068175551477650542754,
+          0,
+          523
+        ],
+        "raw": "0x010000060000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020b"
+      }
+    ],
+    "sweep_exchange_perp_only_mock": [
+      {
+        "id": 7,
+        "version": 1,
+        "fields": [
+          4,
+          0
+        ],
+        "raw": "0x0100000700000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000"
+      },
+      {
+        "id": 6,
+        "version": 1,
+        "fields": [
+          621329955008895694125364835068175551477650542754,
+          0,
+          400
+        ],
+        "raw": "0x010000060000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000190"
+      }
+    ],
+    "sweep_exchange_token7_mock": [
+      {
+        "id": 6,
+        "version": 1,
+        "fields": [
+          621329955008895694125364835068175551477650542754,
+          7,
+          123
+        ],
+        "raw": "0x010000060000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a20000000000000000000000000000000000000000000000000000000000000007000000000000000000000000000000000000000000000000000000000000007b"
+      }
+    ],
+    "sweep_exchange_spot_real": [
+      {
+        "id": 6,
+        "version": 1,
+        "fields": [
+          621329955008895694125364835068175551477650542754,
+          0,
+          1952734375
+        ],
+        "raw": "0x010000060000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000074645ca7"
+      }
+    ]
+  },
+  "withdrawal_cases": {
+    "withdraw_user_true": {
+      "token_call": "0xa9059cbb000000000000000000000000fb94d3404c1d3d9d6f08f79e58041d5ea95accfa000000000000000000000000000000000000000000000000000000000000000b",
+      "event": {
+        "topics": [
+          "0x3d95e1dd133840fdfe95e9a3b6c9fc44f85019531359313e278c6e358ef5b1e0",
+          "0x000000000000000000000000fb94d3404c1d3d9d6f08f79e58041d5ea95accfa",
+          "0x0000000000000000000000004444444444444444444444444444444444444444"
+        ],
+        "data": "0x000000000000000000000000000000000000000000000000000000000000000b"
+      }
+    },
+    "withdraw_user_empty": {
+      "token_call": "0xa9059cbb000000000000000000000000fb94d3404c1d3d9d6f08f79e58041d5ea95accfa000000000000000000000000000000000000000000000000000000000000000b",
+      "event": {
+        "topics": [
+          "0x3d95e1dd133840fdfe95e9a3b6c9fc44f85019531359313e278c6e358ef5b1e0",
+          "0x000000000000000000000000fb94d3404c1d3d9d6f08f79e58041d5ea95accfa",
+          "0x0000000000000000000000004444444444444444444444444444444444444444"
+        ],
+        "data": "0x000000000000000000000000000000000000000000000000000000000000000b"
+      }
+    },
+    "withdraw_user_no_code": {
+      "token_call": "0xa9059cbb000000000000000000000000fb94d3404c1d3d9d6f08f79e58041d5ea95accfa000000000000000000000000000000000000000000000000000000000000000b",
+      "event": {
+        "topics": [
+          "0x3d95e1dd133840fdfe95e9a3b6c9fc44f85019531359313e278c6e358ef5b1e0",
+          "0x000000000000000000000000fb94d3404c1d3d9d6f08f79e58041d5ea95accfa",
+          "0x0000000000000000000000004444444444444444444444444444444444444444"
+        ],
+        "data": "0x000000000000000000000000000000000000000000000000000000000000000b"
+      }
+    }
+  },
+  "probe_count": 17,
+  "limitations": [
+    "Historical sweep shows a CoreWriter enqueue event, not HyperCore settlement.",
+    "The rescue success path was simulated with code overrides, not observed in a historical transaction.",
+    "The historical proxy is in the 41 fetched family samples. One additional unsampled proxy is fetched by the deployment-wide runtime derivation check."
+  ]
+}

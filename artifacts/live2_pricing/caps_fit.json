@@ -1,0 +1,254 @@
+{
+  "fit_rows": [
+    {
+      "tx": "0x6af4bd2172e5c9c26a23643c6917fcaed9b290df609d9510e53a70405bd63c43",
+      "open_index": 1,
+      "instrument": 0,
+      "side_word": 1,
+      "size_1e18": "46330000000000000000",
+      "leverage": 396,
+      "price_raw": 809525,
+      "exposure_delta": "226635125536580093",
+      "k": 9.999999,
+      "k_scaled_ppm": "9999999"
+    },
+    {
+      "tx": "0x6af4bd2172e5c9c26a23643c6917fcaed9b290df609d9510e53a70405bd63c43",
+      "open_index": 2,
+      "instrument": 0,
+      "side_word": 1,
+      "size_1e18": "35140000000000000000",
+      "leverage": 396,
+      "price_raw": 809525,
+      "exposure_delta": "171896358975942682",
+      "k": 9.999999,
+      "k_scaled_ppm": "9999999"
+    },
+    {
+      "tx": "0x6af4bd2172e5c9c26a23643c6917fcaed9b290df609d9510e53a70405bd63c43",
+      "open_index": 4,
+      "instrument": 0,
+      "side_word": 1,
+      "size_1e18": "33000000000000000000",
+      "leverage": 300,
+      "price_raw": 809525,
+      "exposure_delta": "122293937803032642",
+      "k": 9.999999,
+      "k_scaled_ppm": "9999999"
+    },
+    {
+      "tx": "0x6af4bd2172e5c9c26a23643c6917fcaed9b290df609d9510e53a70405bd63c43",
+      "open_index": 5,
+      "instrument": 0,
+      "side_word": 1,
+      "size_1e18": "14897529896663694348",
+      "leverage": 401,
+      "price_raw": 809525,
+      "exposure_delta": "73795243983350006",
+      "k": 9.999999,
+      "k_scaled_ppm": "9999999"
+    },
+    {
+      "tx": "0x6af4bd2172e5c9c26a23643c6917fcaed9b290df609d9510e53a70405bd63c43",
+      "open_index": 6,
+      "instrument": 0,
+      "side_word": 1,
+      "size_1e18": "50000000000000000000",
+      "leverage": 100,
+      "price_raw": 809525,
+      "exposure_delta": "61764615052036688",
+      "k": 9.999999,
+      "k_scaled_ppm": "9999999"
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "open_index": 2,
+      "instrument": 0,
+      "side_word": 0,
+      "size_1e18": "100000000000000000000",
+      "leverage": 439,
+      "price_raw": 809145,
+      "exposure_delta": "542547998195626247",
+      "k": 9.999999,
+      "k_scaled_ppm": "9999999"
+    },
+    {
+      "tx": "0x95b10b8980938011c07c0b87a7b5280e58a6a5ba69bca34ae316a4c0c80fe3db",
+      "open_index": 4,
+      "instrument": 1,
+      "side_word": 0,
+      "size_1e18": "18000000000000000000",
+      "leverage": 856,
+      "price_raw": 234905,
+      "exposure_delta": "6559247355313850279",
+      "k": 99.999999,
+      "k_scaled_ppm": "99999999"
+    },
+    {
+      "tx": "0xa6b54a591e6031dd4a8e858f0d1d74d60aaa7b9f00d6eabd483ce0d9fb7d6a66",
+      "open_index": 1,
+      "instrument": 0,
+      "side_word": 1,
+      "size_1e18": "170320000000000000000",
+      "leverage": 449,
+      "price_raw": 809325,
+      "exposure_delta": "944906928613350631",
+      "k": 9.999999,
+      "k_scaled_ppm": "9999999"
+    }
+  ],
+  "instruments": {
+    "0": {
+      "increments_measured": 7,
+      "distinct_prices": [
+        809145,
+        809325,
+        809525
+      ],
+      "k": 9.999999,
+      "model": "exposure_delta = margin_1e18 * leverage * k / price_raw",
+      "max_residual_units": 0,
+      "examples": [
+        {
+          "tx": "0x6af4bd2172e5c9c26a23643c6917fcaed9b290df609d9510e53a70405bd63c43",
+          "open_index": 1,
+          "instrument": 0,
+          "side_word": 1,
+          "size_1e18": "46330000000000000000",
+          "leverage": 396,
+          "price_raw": 809525,
+          "exposure_delta": "226635125536580093",
+          "k": 9.999999,
+          "k_scaled_ppm": "9999999"
+        },
+        {
+          "tx": "0x6af4bd2172e5c9c26a23643c6917fcaed9b290df609d9510e53a70405bd63c43",
+          "open_index": 2,
+          "instrument": 0,
+          "side_word": 1,
+          "size_1e18": "35140000000000000000",
+          "leverage": 396,
+          "price_raw": 809525,
+          "exposure_delta": "171896358975942682",
+          "k": 9.999999,
+          "k_scaled_ppm": "9999999"
+        }
+      ]
+    },
+    "1": {
+      "increments_measured": 1,
+      "distinct_prices": [
+        234905
+      ],
+      "k": 99.999999,
+      "model": "exposure_delta = margin_1e18 * leverage * k / price_raw",
+      "max_residual_units": 0,
+      "examples": [
+        {
+          "tx": "0x95b10b8980938011c07c0b87a7b5280e58a6a5ba69bca34ae316a4c0c80fe3db",
+          "open_index": 4,
+          "instrument": 1,
+          "side_word": 0,
+          "size_1e18": "18000000000000000000",
+          "leverage": 856,
+          "price_raw": 234905,
+          "exposure_delta": "6559247355313850279",
+          "k": 99.999999,
+          "k_scaled_ppm": "99999999"
+        }
+      ]
+    }
+  },
+  "pinned_caps": {
+    "0": {
+      "long_cap_128": 2619826912335858848565,
+      "short_cap_128": 2018729412591293082616,
+      "current_long_96": 2506550302643817336119,
+      "current_short_96": 1964220916114290373896,
+      "word0_last64": 10
+    },
+    "1": {
+      "long_cap_128": 31013441209990090349898,
+      "short_cap_128": 27897005740639578295875,
+      "current_long_96": 28827364986450670743877,
+      "current_short_96": 25672989332413427189485,
+      "word0_last64": 100
+    }
+  },
+  "live_caps": {
+    "instrument": 1,
+    "long_cap_128": 13898826154954597185500,
+    "short_cap_128": 9452601984950514883362,
+    "current_long_96": 13083667712742488048072,
+    "current_short_96": 8625954465223160974410,
+    "word0_last64": 100,
+    "head_block": 49258776
+  },
+  "conversions": {
+    "0": {
+      "scale_word0_last64": 10,
+      "measured_k": 9.999999,
+      "price_raw_used": 809525,
+      "caps_basis": "pinned",
+      "exposure_unit": "base-asset quantity scaled by last64/100",
+      "max_single_position_notional_1e18": {
+        "long": "212081538120868613438458162",
+        "short": "163421192772796653270471740"
+      },
+      "max_single_position_notional_usdc": {
+        "long": 212081538,
+        "short": 163421192
+      }
+    },
+    "1": {
+      "scale_word0_last64": 100,
+      "measured_k": 99.999999,
+      "price_raw_used": 234905,
+      "caps_basis": "live",
+      "exposure_unit": "base-asset quantity scaled by last64/100",
+      "max_single_position_notional_1e18": {
+        "long": "32649037579296096518598775",
+        "short": "22204634692748006986761506"
+      },
+      "max_single_position_notional_usdc": {
+        "long": 32649037,
+        "short": 22204634
+      }
+    }
+  },
+  "doc_headroom_claim": {
+    "pinned_eth_long": {
+      "gap_exposure": "2186076223539419606021",
+      "gap_base_quantity_1e18": "2186076223539419606021",
+      "gap_usdc_at_last_price": 5135202
+    },
+    "pinned_eth_short": {
+      "gap_exposure": "2224016408226151106390",
+      "gap_base_quantity_1e18": "2224016408226151106390",
+      "gap_usdc_at_last_price": 5224325
+    },
+    "live_eth_long": {
+      "gap_exposure": "815158442212109137428",
+      "gap_base_quantity_1e18": "815158442212109137428",
+      "gap_usdc_at_last_price": 1914847
+    },
+    "live_eth_short": {
+      "gap_exposure": "826647519727353908952",
+      "gap_base_quantity_1e18": "826647519727353908952",
+      "gap_usdc_at_last_price": 1941836
+    }
+  },
+  "lp_bankroll": {
+    "formula": "lpBankrollAvailable = 0 if totalQueued > 0 else max(treasury - totalBalances - totalLockedMargin - stakerFeeAccumulator - devFeeAccumulator, 0)",
+    "prestate_block": 48901631,
+    "treasury_1e18": "65099672687923540000000000",
+    "reserved_1e18": "60097660114168421041648630",
+    "available_1e18": "5002012573755118958351370",
+    "available_usdc": 5002012.573755119,
+    "largest_replay_credit": {
+      "notional_usdc": 250000000,
+      "balance_credit_1e18": "830620860165958929124558",
+      "queue_delta_1e18": "0"
+    }
+  }
+}

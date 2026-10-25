@@ -1,0 +1,34 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "tokenomics_proxy": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+  "implementation": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+  "runtime_sha256": "ed9d18151a9365c347ac7a9da7e83b53ecedac235d9e67c4b2699503a6bd4a97",
+  "selector_reconstructions": {
+    "0xfe16eae8": "quoteRedemption(uint256)",
+    "0xdb006a75": "redeem(uint256)"
+  },
+  "error_selector": "0x32aa90b0",
+  "error_name_status": "unresolved",
+  "source_name_status": "hash-matching selector preimages; original Solidity names unverified",
+  "selector_entries": {
+    "0xfe16eae8": {
+      "entry_pc": 262,
+      "revert_pc": 291,
+      "pinned_probe_count": 3
+    },
+    "0xdb006a75": {
+      "entry_pc": 672,
+      "revert_pc": 702,
+      "pinned_probe_count": 3
+    }
+  },
+  "error_encoding": "PUSH4 0x032aa90b, shift left by 228 bits, store and revert with the first four bytes 0x32aa90b0",
+  "behavior": "canonical nonpayable uint256 calls revert without storage reads, writes, logs, or external calls",
+  "archived_probe_evidence": "../../artifacts/tokenomics/pinned_redemption_probes.json",
+  "local_replay_evidence": "../../artifacts/fixed_revert_local/replay.json",
+  "limits": [
+    "The result applies to the pinned live implementation. No successful redemption path exists through these two entrypoints in that runtime.",
+    "The source name of error 0x32aa90b0 is unknown; an upgrade could change behavior."
+  ]
+}

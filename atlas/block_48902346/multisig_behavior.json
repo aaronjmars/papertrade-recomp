@@ -1,0 +1,626 @@
+{
+  "pin": 48902346,
+  "method": "pinned eth_call, raw eth_getStorageAt, historical receipts, and read-only debug_traceCall",
+  "address": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+  "required_confirmations": 2,
+  "signers": [
+    "0xaa7577a7a27aa7fcf6d0ec481b87df3ad0f6a88e",
+    "0xe9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+    "0x9028f3b5b6b0d69e4e84ff555ade17114c3d1e72"
+  ],
+  "current_epoch": 1,
+  "transaction_count": 7,
+  "signer_checks": {
+    "0xaa7577a7a27aa7fcf6d0ec481b87df3ad0f6a88e": true,
+    "0xe9686c8e11d80c8d78736485fcb6b6d7f4d7692e": true,
+    "0x9028f3b5b6b0d69e4e84ff555ade17114c3d1e72": true,
+    "0x1111111111111111111111111111111111111111": false
+  },
+  "storage_layout": {
+    "slot_0": "signerOne",
+    "slot_1": "signerTwo",
+    "slot_2": "signerThree",
+    "slot_3": "epoch",
+    "slot_4": "transactionCount",
+    "mapping_slot_5": [
+      "destination",
+      "value",
+      "data bytes",
+      "submitter",
+      "epoch",
+      "status"
+    ]
+  },
+  "status_values": {
+    "0": "pending",
+    "1": "executed",
+    "2": "revoked"
+  },
+  "transaction_hash_formula": "keccak256(abi.encode(chainid, address(this), index, destination, value, keccak256(data), epoch))",
+  "records": [
+    {
+      "index": 0,
+      "destination": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+      "value": 0,
+      "payload": "0x79301c0f000000000000000000000000aa7577a7a27aa7fcf6d0ec481b87df3ad0f6a88e000000000000000000000000e9686c8e11d80c8d78736485fcb6b6d7f4d7692e0000000000000000000000009028f3b5b6b0d69e4e84ff555ade17114c3d1e72",
+      "payload_bytes": 100,
+      "payload_keccak256": "0x2ae6fa5f42cdb9c89a5114c9f7858532cf41a360c0178d3932ab4c209d9a55fb",
+      "submitter": "0xe9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+      "epoch": 0,
+      "status": 1,
+      "transaction_hash": "0x5daa1c8976580be0796969af47b3480ea3cc3db86db8bdb03ac8d3b3348a85af",
+      "hash_formula_matches": true,
+      "mapping_base_slot": "0x5b8ccbb9d4d8fb16ea74ce3c29a41f1b461fbdaff4714a0d9a8eb05499746bc",
+      "raw_storage_fields": [
+        "0x000000000000000000000000696292762fd5ac3677a45edbe54eaece4194d1f6",
+        "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "0x00000000000000000000000000000000000000000000000000000000000000c9",
+        "0x000000000000000000000000e9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+        "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "0x0000000000000000000000000000000000000000000000000000000000000001"
+      ]
+    },
+    {
+      "index": 1,
+      "destination": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "value": 0,
+      "payload": "0xb0e58bc900000000000000000000000075174549dbbd44497d31a47e2e2d7406408d63d900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080a03fa922a8a4d9781c3c74ece5e4b12827eecd4f12aa7f5b9981bc3657bb2332000000000000000000000000000000000000000000000000000000000000008412baae3b00000000000000000000000000000000000000000001a784379d99db42000000000000000000000000000000000000000000000000084595161401484a0000000000000000000000000000000000000000000000000000056bc75e2d631000000000000000000000000000000000000000000000006342fd08f00f637800000000000000000000000000000000000000000000000000000000000000",
+      "payload_bytes": 324,
+      "payload_keccak256": "0x6494af24e0a22c771e630bed919722f5ce316172dec4c2a048207865819e5c07",
+      "submitter": "0xe9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+      "epoch": 1,
+      "status": 1,
+      "transaction_hash": "0x2f2befb596285964c41e98a6371df83b80d76a2173fdf4dcde751b5d55058883",
+      "hash_formula_matches": true,
+      "mapping_base_slot": "0x1471eb6eb2c5e789fc3de43f8ce62938c7d1836ec861730447e2ada8fd81017b",
+      "raw_storage_fields": [
+        "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "0x0000000000000000000000000000000000000000000000000000000000000289",
+        "0x000000000000000000000000e9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+        "0x0000000000000000000000000000000000000000000000000000000000000001",
+        "0x0000000000000000000000000000000000000000000000000000000000000001"
+      ]
+    },
+    {
+      "index": 2,
+      "destination": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "value": 0,
+      "payload": "0x8b07f62b000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000e000000000000000000000000000000000000000000000000000000000000001405910643eef2d3a9d4c7488c6cdf12b65da8b632383fe090014085bdca1101ca400000000000000000000000000000000000000000000000000000000000000020000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a20000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a200000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000012000000000000000000000000000000000000000000000000000000000000000a45ca4c0ea00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000069e10de76676d080000000000000000000000000000000000000000000000000002c28d1751327a7000000000000000000000000000000000000000000000000032d26d12e980b600000000000000000000000000000000000000000000000000000016345785d8a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a45ca4c0ea000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000d3c21bcecceda100000000000000000000000000000000000000000000000000001a3c8ed044f4c7800000000000000000000000000000000000000000000000032d26d12e980b600000000000000000000000000000000000000000000000000000016345785d8a000000000000000000000000000000000000000000000000000000000000",
+      "payload_bytes": 868,
+      "payload_keccak256": "0x245e29cf547e1f63fb1134ed6cf2fd3cdeb520eac0d03c4dfcee0fb9cc0368f1",
+      "submitter": "0xe9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+      "epoch": 1,
+      "status": 2,
+      "transaction_hash": "0x254cb6ddeaa727c77bd3a9b57554ed64d8ff124dfcefa930639b4673acfa08ae",
+      "hash_formula_matches": true,
+      "mapping_base_slot": "0x89832631fb3c3307a103ba2c84ab569c64d6182a18893dcd163f0f1c2090733a",
+      "raw_storage_fields": [
+        "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "0x00000000000000000000000000000000000000000000000000000000000006c9",
+        "0x000000000000000000000000e9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+        "0x0000000000000000000000000000000000000000000000000000000000000001",
+        "0x0000000000000000000000000000000000000000000000000000000000000002"
+      ]
+    },
+    {
+      "index": 3,
+      "destination": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "value": 0,
+      "payload": "0xb0e58bc9000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000804f6334bb72dc6434598f27bdd8a884e83553a871b874434dba529b894e0b1bc300000000000000000000000000000000000000000000000000000000000000248a99d586000000000000000000000000000000000000000000000000000000000001518000000000000000000000000000000000000000000000000000000000",
+      "payload_bytes": 228,
+      "payload_keccak256": "0x6f7ab4ff18ed55f06a048d891096e0aa3e499cb5c079da95ffc4b5f6044fb61a",
+      "submitter": "0xe9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+      "epoch": 1,
+      "status": 1,
+      "transaction_hash": "0xbf3e7d4f5c43378eec9be8f7c094ab2953faf659bbfd854ee47e770d01ad058c",
+      "hash_formula_matches": true,
+      "mapping_base_slot": "0xa9bc9a3a348c357ba16b37005d7e6b3236198c0e939f4af8c5f19b8deeb8ebc0",
+      "raw_storage_fields": [
+        "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "0x00000000000000000000000000000000000000000000000000000000000001c9",
+        "0x000000000000000000000000e9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+        "0x0000000000000000000000000000000000000000000000000000000000000001",
+        "0x0000000000000000000000000000000000000000000000000000000000000001"
+      ]
+    },
+    {
+      "index": 4,
+      "destination": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "value": 0,
+      "payload": "0xb0e58bc90000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080f26c944fb5bca88fb923b508e8b23753bddc8916f5076473741370353260ffc400000000000000000000000000000000000000000000000000000000000000a45ca4c0ea0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000001fc3842bd1f071c0000000000000000000000000000000000000000000000000001a3c8ed044f4c7800000000000000000000000000000000000000000000000032d26d12e980b600000000000000000000000000000000000000000000000000000016345785d8a000000000000000000000000000000000000000000000000000000000000",
+      "payload_bytes": 356,
+      "payload_keccak256": "0x57d0c541aea9b229a3e242105604f3cec286f577ccea429f827bf659a6217191",
+      "submitter": "0xe9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+      "epoch": 1,
+      "status": 0,
+      "transaction_hash": "0x238b01dcb16a5d275d6a7d407d128d8137d217c025214e54bbe7cfaf675caee1",
+      "hash_formula_matches": true,
+      "mapping_base_slot": "0x3eec716f11ba9e820c81ca75eb978ffb45831ef8b7a53e5e422c26008e1ca6d5",
+      "raw_storage_fields": [
+        "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "0x00000000000000000000000000000000000000000000000000000000000002c9",
+        "0x000000000000000000000000e9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+        "0x0000000000000000000000000000000000000000000000000000000000000001",
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
+      ]
+    },
+    {
+      "index": 5,
+      "destination": "0xb88339cb7199b77e23db6e890353e22632ba630f",
+      "value": 0,
+      "payload": "0xa9059cbb0000000000000000000000002d30ea401b594f8d6a36f2a680c75ada4adfa27400000000000000000000000000000000000000000000000000000013a49be9e0",
+      "payload_bytes": 68,
+      "payload_keccak256": "0x996631b92e4eba7741c4f1bf7d85338a3923486971a934e56fad03e99262ed1b",
+      "submitter": "0xe9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+      "epoch": 1,
+      "status": 1,
+      "transaction_hash": "0xba517836fb689c14aef327899286ab7ee2b5b32bf81a673aaae9055fc90fbdb4",
+      "hash_formula_matches": true,
+      "mapping_base_slot": "0x458b30c2d72bfd2c6317304a4594ecbafe5f729d3111b65fdc3a33bd48e5432d",
+      "raw_storage_fields": [
+        "0x000000000000000000000000b88339cb7199b77e23db6e890353e22632ba630f",
+        "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "0x0000000000000000000000000000000000000000000000000000000000000089",
+        "0x000000000000000000000000e9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+        "0x0000000000000000000000000000000000000000000000000000000000000001",
+        "0x0000000000000000000000000000000000000000000000000000000000000001"
+      ]
+    },
+    {
+      "index": 6,
+      "destination": "0xb88339cb7199b77e23db6e890353e22632ba630f",
+      "value": 0,
+      "payload": "0xa9059cbb00000000000000000000000098f1151dbc3e098abbb71ba607d70941b82b6d9300000000000000000000000000000000000000000000000000000003d07dfea0",
+      "payload_bytes": 68,
+      "payload_keccak256": "0xba905e005c064efb02e79296367dfa502effd754e795375f07bda5677f17b035",
+      "submitter": "0xe9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+      "epoch": 1,
+      "status": 1,
+      "transaction_hash": "0xb4378264f2450642833ece74635492e5b787b31c5684d669492846bd57f23ccf",
+      "hash_formula_matches": true,
+      "mapping_base_slot": "0x69400f22b28c6c362558d92f66163cec5671cba50b61abd2eecfcd0eaeac518",
+      "raw_storage_fields": [
+        "0x000000000000000000000000b88339cb7199b77e23db6e890353e22632ba630f",
+        "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "0x0000000000000000000000000000000000000000000000000000000000000089",
+        "0x000000000000000000000000e9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+        "0x0000000000000000000000000000000000000000000000000000000000000001",
+        "0x0000000000000000000000000000000000000000000000000000000000000001"
+      ]
+    }
+  ],
+  "selector_reconstructions": {
+    "0x1a5f66c3": "signerTwo()",
+    "0x27865bb3": "transactionHash(uint256)",
+    "0x64d62769": "signerThree()",
+    "0x735631ad": "revokeTransaction(uint256)",
+    "0x79301c0f": "updateSigners(address,address,address)",
+    "0x7b1106de": "confirmAndExecute(uint256,bytes32)",
+    "0x7df73e27": "isSigner(address)",
+    "0x82e717f7": "requiredConfirmations()",
+    "0x900cf0cf": "epoch()",
+    "0x9ace38c2": "transactions(uint256)",
+    "0xb77bf600": "transactionCount()",
+    "0xc6427474": "submitTransaction(address,uint256,bytes)",
+    "0xd98f851a": "signerOne()"
+  },
+  "creation": {
+    "tx": "0x7f02102d7c251058f4b0d9b440f53e28e79920807ebd7c2f16727a201c384e02",
+    "block": 47855493,
+    "events": [
+      {
+        "topic0": "0xddfe9ff988d8830e7b19e61773b4a39f43d1d98b57f2aef535a4960c0291b0fd",
+        "data": "0x000000000000000000000000e3d55ff02a18976fda6d4aabb6b32e9088eb35e3000000000000000000000000e9686c8e11d80c8d78736485fcb6b6d7f4d7692e0000000000000000000000009028f3b5b6b0d69e4e84ff555ade17114c3d1e720000000000000000000000000000000000000000000000000000000000000000"
+      }
+    ]
+  },
+  "event_catalog": [
+    {
+      "topic0": "0x4c4e829c9b8c87162e976ab955be6db24dace1afaa0ebe4308b6c273a92f5875",
+      "reconstructed_signature": "TransactionRevoked(uint256)",
+      "historical_count": 1
+    },
+    {
+      "topic0": "0xbe411f0729ceed7585127466bac46d523f0ef18ba210980602e861c7a8fe4a7f",
+      "reconstructed_signature": "TransactionSubmitted(uint256,address,address,uint256,bytes,bytes32)",
+      "historical_count": 7
+    },
+    {
+      "topic0": "0xd3fb8b9f824d81f0fe695808b7b28faf553f5e7d8ff92fb5f25e210eb9134aec",
+      "reconstructed_signature": "TransactionExecuted(uint256,address,address,uint256,bytes)",
+      "historical_count": 5
+    },
+    {
+      "topic0": "0xddfe9ff988d8830e7b19e61773b4a39f43d1d98b57f2aef535a4960c0291b0fd",
+      "reconstructed_signature": "SignersUpdated(address,address,address,uint256)",
+      "historical_count": 2
+    }
+  ],
+  "submit_probes": {
+    "signer": {
+      "success": true,
+      "error": null,
+      "revert_selector": null,
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000007",
+      "child_calls": [],
+      "events": [
+        {
+          "address": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+          "topics": [
+            "0xbe411f0729ceed7585127466bac46d523f0ef18ba210980602e861c7a8fe4a7f",
+            "0x0000000000000000000000000000000000000000000000000000000000000007",
+            "0x000000000000000000000000aa7577a7a27aa7fcf6d0ec481b87df3ad0f6a88e",
+            "0x0000000000000000000000001111111111111111111111111111111111111111"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000060598b22959420ad876faabaa9c4735353cd25ee5769b04d193191daee1fbfab600000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ]
+    },
+    "outsider": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0xa1b035c8",
+      "return_data": null,
+      "child_calls": [],
+      "events": []
+    },
+    "simulated_multisig_storage_post": {
+      "0x0000000000000000000000000000000000000000000000000000000000000004": "0x0000000000000000000000000000000000000000000000000000000000000008",
+      "0xeddb6698d7c569ff62ff64f1f1492bf14a54594835ba0faac91f84b4f5d81460": "0x0000000000000000000000001111111111111111111111111111111111111111",
+      "0xeddb6698d7c569ff62ff64f1f1492bf14a54594835ba0faac91f84b4f5d81463": "0x000000000000000000000000aa7577a7a27aa7fcf6d0ec481b87df3ad0f6a88e",
+      "0xeddb6698d7c569ff62ff64f1f1492bf14a54594835ba0faac91f84b4f5d81464": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    }
+  },
+  "confirm_probes": {
+    "outsider": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0xa1b035c8",
+      "return_data": null,
+      "child_calls": [],
+      "events": []
+    },
+    "submitter": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0x137b4559",
+      "return_data": null,
+      "child_calls": [],
+      "events": []
+    },
+    "other_signer_one": {
+      "success": true,
+      "error": null,
+      "revert_selector": null,
+      "return_data": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000201e156be98097efbe2170fc21fc9a710cb921810135662a0d138900fb47ea8d21",
+      "child_calls": [
+        {
+          "to": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+          "selector": "0xb0e58bc9",
+          "value": "0x0",
+          "error": null,
+          "revert_selector": null
+        }
+      ],
+      "events": [
+        {
+          "address": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+          "topics": [
+            "0xd3fb8b9f824d81f0fe695808b7b28faf553f5e7d8ff92fb5f25e210eb9134aec",
+            "0x0000000000000000000000000000000000000000000000000000000000000004",
+            "0x000000000000000000000000aa7577a7a27aa7fcf6d0ec481b87df3ad0f6a88e",
+            "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000164b0e58bc90000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080f26c944fb5bca88fb923b508e8b23753bddc8916f5076473741370353260ffc400000000000000000000000000000000000000000000000000000000000000a45ca4c0ea0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000001fc3842bd1f071c0000000000000000000000000000000000000000000000000001a3c8ed044f4c7800000000000000000000000000000000000000000000000032d26d12e980b600000000000000000000000000000000000000000000000000000016345785d8a00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ]
+    },
+    "other_signer_three": {
+      "success": true,
+      "error": null,
+      "revert_selector": null,
+      "return_data": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000201e156be98097efbe2170fc21fc9a710cb921810135662a0d138900fb47ea8d21",
+      "child_calls": [
+        {
+          "to": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+          "selector": "0xb0e58bc9",
+          "value": "0x0",
+          "error": null,
+          "revert_selector": null
+        }
+      ],
+      "events": []
+    },
+    "wrong_hash": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0x4e11f906",
+      "return_data": null,
+      "child_calls": [],
+      "events": []
+    },
+    "invalid_id": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0x500a07ce",
+      "return_data": null,
+      "child_calls": [],
+      "events": []
+    },
+    "revoked": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0x82235d53",
+      "return_data": null,
+      "child_calls": [],
+      "events": []
+    },
+    "executed": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0x82235d53",
+      "return_data": null,
+      "child_calls": [],
+      "events": []
+    },
+    "stale_epoch": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0xe1577073",
+      "return_data": null,
+      "child_calls": [],
+      "events": []
+    },
+    "root_storage_write_and_call_order": [
+      {
+        "pc": 1558,
+        "op": "SSTORE",
+        "top_stack": "0x3eec716f11ba9e820c81ca75eb978ffb45831ef8b7a53e5e422c26008e1ca6da"
+      },
+      {
+        "pc": 1565,
+        "op": "CALL",
+        "top_stack": "0x973c83"
+      }
+    ],
+    "successful_confirm_storage_post": {
+      "0x696292762fd5ac3677a45edbe54eaece4194d1f6": {
+        "0x3eec716f11ba9e820c81ca75eb978ffb45831ef8b7a53e5e422c26008e1ca6da": "0x0000000000000000000000000000000000000000000000000000000000000001"
+      },
+      "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f": {
+        "0x4dac4991e04c4700d1cd2d6ab570ae8c1a618b7b4b51b8bc1fac1de04b1f46d7": "0x000000000000000000000000000000000000000000000000000000006ade6e5d"
+      }
+    },
+    "target_failure": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0x15fcd675",
+      "return_data": null,
+      "child_calls": [
+        {
+          "to": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+          "selector": "0xb0e58bc9",
+          "value": "0x0",
+          "error": "execution reverted",
+          "revert_selector": "0x9b382476"
+        }
+      ],
+      "events": []
+    },
+    "target_failure_storage_post": {}
+  },
+  "revoke_probes": {
+    "submitter": {
+      "success": true,
+      "error": null,
+      "revert_selector": null,
+      "return_data": "",
+      "child_calls": [],
+      "events": [
+        {
+          "address": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+          "topics": [
+            "0x4c4e829c9b8c87162e976ab955be6db24dace1afaa0ebe4308b6c273a92f5875",
+            "0x0000000000000000000000000000000000000000000000000000000000000004"
+          ],
+          "data": "0x"
+        }
+      ]
+    },
+    "submitter_after_epoch_change": {
+      "success": true,
+      "error": null,
+      "revert_selector": null,
+      "return_data": "",
+      "child_calls": [],
+      "events": []
+    },
+    "other_signer": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0xc5446884",
+      "return_data": null,
+      "child_calls": [],
+      "events": []
+    },
+    "outsider": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0xa1b035c8",
+      "return_data": null,
+      "child_calls": [],
+      "events": []
+    }
+  },
+  "update_signers_probes": {
+    "direct_signer": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0x29c3b7ee",
+      "return_data": null,
+      "child_calls": [],
+      "events": []
+    },
+    "self_valid": {
+      "success": true,
+      "error": null,
+      "revert_selector": null,
+      "return_data": "",
+      "child_calls": [],
+      "events": [
+        {
+          "address": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+          "topics": [
+            "0xddfe9ff988d8830e7b19e61773b4a39f43d1d98b57f2aef535a4960c0291b0fd"
+          ],
+          "data": "0x000000000000000000000000aa7577a7a27aa7fcf6d0ec481b87df3ad0f6a88e000000000000000000000000e9686c8e11d80c8d78736485fcb6b6d7f4d7692e0000000000000000000000009028f3b5b6b0d69e4e84ff555ade17114c3d1e720000000000000000000000000000000000000000000000000000000000000002"
+        }
+      ]
+    },
+    "self_zero": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0x815e1d64",
+      "return_data": null,
+      "child_calls": [],
+      "events": []
+    },
+    "self_duplicate": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0x815e1d64",
+      "return_data": null,
+      "child_calls": [],
+      "events": []
+    },
+    "self_address_as_signer": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0x815e1d64",
+      "return_data": null,
+      "child_calls": [],
+      "events": []
+    },
+    "simulated_storage_post": {
+      "0x0000000000000000000000000000000000000000000000000000000000000003": "0x0000000000000000000000000000000000000000000000000000000000000002"
+    }
+  },
+  "invalid_hash_getter_probe": {
+    "success": false,
+    "error": "execution reverted",
+    "revert_selector": "0x500a07ce",
+    "return_data": null,
+    "child_calls": [],
+    "events": []
+  },
+  "simulated_error_catalog": [
+    {
+      "selector": "0x137b4559",
+      "public_signature_candidates": [],
+      "probe_paths": [
+        "confirm_probes.submitter"
+      ],
+      "status": "observed_in_read_only_simulation"
+    },
+    {
+      "selector": "0x15fcd675",
+      "public_signature_candidates": [
+        "ExecutionFailed(bytes)"
+      ],
+      "probe_paths": [
+        "confirm_probes.target_failure"
+      ],
+      "status": "observed_in_read_only_simulation"
+    },
+    {
+      "selector": "0x29c3b7ee",
+      "public_signature_candidates": [
+        "NotSelf()"
+      ],
+      "probe_paths": [
+        "update_signers_probes.direct_signer"
+      ],
+      "status": "observed_in_read_only_simulation"
+    },
+    {
+      "selector": "0x4e11f906",
+      "public_signature_candidates": [
+        "TransactionHashMismatch()"
+      ],
+      "probe_paths": [
+        "confirm_probes.wrong_hash"
+      ],
+      "status": "observed_in_read_only_simulation"
+    },
+    {
+      "selector": "0x500a07ce",
+      "public_signature_candidates": [
+        "InvalidTransaction()"
+      ],
+      "probe_paths": [
+        "confirm_probes.invalid_id",
+        "invalid_hash_getter_probe"
+      ],
+      "status": "observed_in_read_only_simulation"
+    },
+    {
+      "selector": "0x815e1d64",
+      "public_signature_candidates": [
+        "InvalidSigner()"
+      ],
+      "probe_paths": [
+        "update_signers_probes.self_zero",
+        "update_signers_probes.self_duplicate",
+        "update_signers_probes.self_address_as_signer"
+      ],
+      "status": "observed_in_read_only_simulation"
+    },
+    {
+      "selector": "0x82235d53",
+      "public_signature_candidates": [
+        "TransactionNotPending()"
+      ],
+      "probe_paths": [
+        "confirm_probes.revoked",
+        "confirm_probes.executed"
+      ],
+      "status": "observed_in_read_only_simulation"
+    },
+    {
+      "selector": "0xa1b035c8",
+      "public_signature_candidates": [
+        "NotSigner()"
+      ],
+      "probe_paths": [
+        "submit_probes.outsider",
+        "confirm_probes.outsider",
+        "revoke_probes.outsider"
+      ],
+      "status": "observed_in_read_only_simulation"
+    },
+    {
+      "selector": "0xc5446884",
+      "public_signature_candidates": [
+        "NotSubmitter()"
+      ],
+      "probe_paths": [
+        "revoke_probes.other_signer"
+      ],
+      "status": "observed_in_read_only_simulation"
+    },
+    {
+      "selector": "0xe1577073",
+      "public_signature_candidates": [
+        "StaleTransaction()"
+      ],
+      "probe_paths": [
+        "confirm_probes.stale_epoch"
+      ],
+      "status": "observed_in_read_only_simulation"
+    }
+  ]
+}

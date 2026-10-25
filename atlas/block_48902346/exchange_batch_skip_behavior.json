@@ -1,0 +1,77 @@
+{
+  "pin_block": 48902346,
+  "pin_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "historical_transaction": "0xdfe4d997bd2d8ee4d5a96d0759e38a6b24e9719c40545eae6ea406b43ed119f9",
+  "historical_block": 48902280,
+  "historical_block_hash": "0xb4706949d6a56e4029485d300fb44ed17124b608d5fbe4a20bc6ef19c7f716da",
+  "transaction_index": 8,
+  "raw_evidence": {
+    "prestate": "../../artifacts/exchange_batch_summary/partial_tx_prestate.json",
+    "call_trace": "../../artifacts/exchange_batch_summary/partial_tx_calls.json",
+    "receipt": "../../artifacts/exchange_batch_summary/partial_tx_receipt.json",
+    "block_header": "../../artifacts/exchange_batch_summary/partial_tx_block.json"
+  },
+  "oracle_midpoint": 235155,
+  "hypercore_bbo": {
+    "bid": 235150,
+    "ask": 235160
+  },
+  "instrument_word1": {
+    "1": "0x00016345785d8a00000001b5be54f0a02200000000084595161401484a000000"
+  },
+  "positions": [
+    {
+      "position_id": 1392363,
+      "prestate_word0": "0x00000000000393550000000191dba498df1a85e9ee2fb008f1fd87eb330246d0",
+      "prestate_word1": "0x00010000000000006ad53045000000fa000000000000000ad78ebc5ac6200000",
+      "instrument": 1,
+      "entry_price": 234325,
+      "leverage": 250,
+      "side": "short",
+      "active": true,
+      "maintenance_rate_1e18": 481304050180130,
+      "liquidation_threshold": 235149,
+      "oracle_midpoint": 235155,
+      "threshold_predicted_eligible": true,
+      "historically_liquidated": true
+    },
+    {
+      "position_id": 1394076,
+      "prestate_word0": "0x00000000000395f300000001dae0424fd265b683ef1a2525aceba37d001565b7",
+      "prestate_word1": "0x00010000000000006ad53306000003580000000000000000f9ccd8a1c5080000",
+      "instrument": 1,
+      "entry_price": 234995,
+      "leverage": 856,
+      "side": "short",
+      "active": true,
+      "maintenance_rate_1e18": 481304050180130,
+      "liquidation_threshold": 235156,
+      "oracle_midpoint": 235155,
+      "threshold_predicted_eligible": false,
+      "historically_liquidated": false
+    },
+    {
+      "position_id": 1394080,
+      "prestate_word0": "0x00000000000395f300000001dae0424fd265b683ef1a2525aceba37d001565b7",
+      "prestate_word1": "0x00010000000000006ad53307000003580000000000000000f9ccd8a1c5080000",
+      "instrument": 1,
+      "entry_price": 234995,
+      "leverage": 856,
+      "side": "short",
+      "active": true,
+      "maintenance_rate_1e18": 481304050180130,
+      "liquidation_threshold": 235156,
+      "oracle_midpoint": 235155,
+      "threshold_predicted_eligible": false,
+      "historically_liquidated": false
+    }
+  ],
+  "requested_count": 3,
+  "threshold_predicted_count": 1,
+  "historical_liquidated_count": 1,
+  "interpretation": "All three positions were active. The short liquidation threshold selects only the first ID at the observed midpoint.",
+  "limits": [
+    "One historical partial batch verifies this boundary, not every batch skip branch.",
+    "The threshold formula was established separately from 26 pinned view outputs and four local price-boundary probes."
+  ]
+}

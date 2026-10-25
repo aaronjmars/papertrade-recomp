@@ -1,0 +1,41 @@
+{
+  "pin_block": 48902346,
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "selector_reconstructions": {
+    "0x9274682e": "sideBucket()"
+  },
+  "event_catalog": [
+    {
+      "topic0": "0xc2a40711b646c786b80242364fa8e26da64c5a4dfb2bf8fff83692db43600d89",
+      "reconstructed_signature": "SideBucketUpdated(uint256)",
+      "status": "observed_historical_topic"
+    }
+  ],
+  "slot": 27,
+  "pinned_getter_value": 0,
+  "historical_transitions": [
+    {
+      "transaction": "0x20ee69d9f4191bff17d45a850a584d5803ca477986fd1684af985765d64d794b",
+      "block": 48173889,
+      "root_selector": "0x251fb27d",
+      "slot_27_pre": "0",
+      "slot_27_post": "400296219202209635129",
+      "event_amount": "400296219202209635129",
+      "zero_post_omitted_by_diff_tracer": false
+    },
+    {
+      "transaction": "0x4214fa14d9c5bf46fade1c7f3ca8d242baefaa52426395b1840f43b626ee8a99",
+      "block": 48173890,
+      "root_selector": "0xddc63262",
+      "slot_27_pre": "400296219202209635129",
+      "slot_27_post": "0",
+      "event_amount": "0",
+      "zero_post_omitted_by_diff_tracer": true
+    }
+  ],
+  "limitations": [
+    "Two adjacent historical transactions prove the emitted post values, not every writer of slot 27.",
+    "Diff-mode omission of a zero post word is interpreted as a cleared slot."
+  ]
+}

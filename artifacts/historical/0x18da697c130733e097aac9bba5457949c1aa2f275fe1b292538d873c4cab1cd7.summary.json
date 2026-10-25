@@ -1,0 +1,325 @@
+{
+  "hash": "0x18da697c130733e097aac9bba5457949c1aa2f275fe1b292538d873c4cab1cd7",
+  "block": 48901640,
+  "status": 1,
+  "calls": [
+    {
+      "depth": 0,
+      "type": "CALL",
+      "from": "0xc916e55b1909be6582bf1b2f017aaf82ad8eb0b4",
+      "to": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "selector": "0x251fb27d",
+      "gas_used": "0x88555",
+      "error": null
+    },
+    {
+      "depth": 1,
+      "type": "DELEGATECALL",
+      "from": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "to": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "selector": "0x251fb27d",
+      "gas_used": "0x7e971",
+      "error": null
+    },
+    {
+      "depth": 2,
+      "type": "CALL",
+      "from": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "selector": "0xec6783f0",
+      "gas_used": "0x2e88a",
+      "error": null
+    },
+    {
+      "depth": 3,
+      "type": "DELEGATECALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xec6783f0",
+      "gas_used": "0x2d4de",
+      "error": null
+    },
+    {
+      "depth": 4,
+      "type": "CALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "selector": "0xb002b9fa",
+      "gas_used": "0x47e5",
+      "error": null
+    },
+    {
+      "depth": 5,
+      "type": "DELEGATECALL",
+      "from": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "to": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "selector": "0xb002b9fa",
+      "gas_used": "0x346c",
+      "error": null
+    },
+    {
+      "depth": 4,
+      "type": "STATICCALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "selector": "0x7f608253",
+      "gas_used": "0x1d00",
+      "error": null
+    },
+    {
+      "depth": 5,
+      "type": "DELEGATECALL",
+      "from": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "to": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "selector": "0x7f608253",
+      "gas_used": "0x1b0c",
+      "error": null
+    },
+    {
+      "depth": 6,
+      "type": "STATICCALL",
+      "from": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "to": "0x0000000000000000000000000000000000000001",
+      "selector": "0x8bbfd7af",
+      "gas_used": "0xbb8",
+      "error": null
+    },
+    {
+      "depth": 4,
+      "type": "STATICCALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+      "selector": "0xc0182669",
+      "gas_used": "0x28c5",
+      "error": null
+    },
+    {
+      "depth": 5,
+      "type": "DELEGATECALL",
+      "from": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+      "to": "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+      "selector": "0xc0182669",
+      "gas_used": "0x1552",
+      "error": null
+    },
+    {
+      "depth": 6,
+      "type": "STATICCALL",
+      "from": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+      "to": "0x000000000000000000000000000000000000080e",
+      "selector": "0x00000000",
+      "gas_used": "0x1048",
+      "error": null
+    },
+    {
+      "depth": 2,
+      "type": "CALL",
+      "from": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "selector": "0xec6783f0",
+      "gas_used": "0x21a00",
+      "error": null
+    },
+    {
+      "depth": 3,
+      "type": "DELEGATECALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xec6783f0",
+      "gas_used": "0x217e8",
+      "error": null
+    },
+    {
+      "depth": 4,
+      "type": "CALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "selector": "0xb002b9fa",
+      "gas_used": "0x2e81",
+      "error": null
+    },
+    {
+      "depth": 5,
+      "type": "DELEGATECALL",
+      "from": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "to": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "selector": "0xb002b9fa",
+      "gas_used": "0x2c9c",
+      "error": null
+    },
+    {
+      "depth": 4,
+      "type": "STATICCALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "selector": "0x7f608253",
+      "gas_used": "0x1d1a",
+      "error": null
+    },
+    {
+      "depth": 5,
+      "type": "DELEGATECALL",
+      "from": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "to": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "selector": "0x7f608253",
+      "gas_used": "0x1b26",
+      "error": null
+    },
+    {
+      "depth": 6,
+      "type": "STATICCALL",
+      "from": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "to": "0x0000000000000000000000000000000000000001",
+      "selector": "0x725c2538",
+      "gas_used": "0xbb8",
+      "error": null
+    },
+    {
+      "depth": 4,
+      "type": "STATICCALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+      "selector": "0xc0182669",
+      "gas_used": "0x1731",
+      "error": null
+    },
+    {
+      "depth": 5,
+      "type": "DELEGATECALL",
+      "from": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+      "to": "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+      "selector": "0xc0182669",
+      "gas_used": "0x1552",
+      "error": null
+    },
+    {
+      "depth": 6,
+      "type": "STATICCALL",
+      "from": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+      "to": "0x000000000000000000000000000000000000080e",
+      "selector": "0x00000000",
+      "gas_used": "0x1048",
+      "error": null
+    },
+    {
+      "depth": 2,
+      "type": "CALL",
+      "from": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "selector": "0xec6783f0",
+      "gas_used": "0x28253",
+      "error": null
+    },
+    {
+      "depth": 3,
+      "type": "DELEGATECALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xec6783f0",
+      "gas_used": "0x2803b",
+      "error": null
+    },
+    {
+      "depth": 4,
+      "type": "CALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "selector": "0xb002b9fa",
+      "gas_used": "0x22bd",
+      "error": null
+    },
+    {
+      "depth": 5,
+      "type": "DELEGATECALL",
+      "from": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "to": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "selector": "0xb002b9fa",
+      "gas_used": "0x20d8",
+      "error": null
+    },
+    {
+      "depth": 4,
+      "type": "STATICCALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "selector": "0x7f608253",
+      "gas_used": "0x1d1a",
+      "error": null
+    },
+    {
+      "depth": 5,
+      "type": "DELEGATECALL",
+      "from": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "to": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "selector": "0x7f608253",
+      "gas_used": "0x1b26",
+      "error": null
+    },
+    {
+      "depth": 6,
+      "type": "STATICCALL",
+      "from": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "to": "0x0000000000000000000000000000000000000001",
+      "selector": "0xea6f0628",
+      "gas_used": "0xbb8",
+      "error": null
+    },
+    {
+      "depth": 4,
+      "type": "STATICCALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+      "selector": "0xc0182669",
+      "gas_used": "0x1731",
+      "error": null
+    },
+    {
+      "depth": 5,
+      "type": "DELEGATECALL",
+      "from": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+      "to": "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+      "selector": "0xc0182669",
+      "gas_used": "0x1552",
+      "error": null
+    },
+    {
+      "depth": 6,
+      "type": "STATICCALL",
+      "from": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+      "to": "0x000000000000000000000000000000000000080e",
+      "selector": "0x00000000",
+      "gas_used": "0x1048",
+      "error": null
+    }
+  ],
+  "logs": [
+    {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "topic0": "0x88451ea1189f73b554f0bf39c09868560ed149b3d788fcc933ff66ba926827f3"
+    },
+    {
+      "address": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "topic0": "0x8a23ef1120f3e42e722a0c0a599a66d55ab2650ecc39716f57e625684e349cad"
+    },
+    {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "topic0": "0x88451ea1189f73b554f0bf39c09868560ed149b3d788fcc933ff66ba926827f3"
+    },
+    {
+      "address": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "topic0": "0x8a23ef1120f3e42e722a0c0a599a66d55ab2650ecc39716f57e625684e349cad"
+    },
+    {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "topic0": "0x88451ea1189f73b554f0bf39c09868560ed149b3d788fcc933ff66ba926827f3"
+    },
+    {
+      "address": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "topic0": "0x8a23ef1120f3e42e722a0c0a599a66d55ab2650ecc39716f57e625684e349cad"
+    },
+    {
+      "address": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "topic0": "0x9d65322d939fd0a2d0032c87248c8e9f9b14cc177e27b2c049cb4b0356e5160b"
+    }
+  ]
+}

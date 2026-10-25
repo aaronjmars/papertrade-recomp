@@ -1,0 +1,22 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "runtime_hashes": {
+    "Proxy": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "Staking": "3e006d0daee1fcbaa71c160a72291374783da5f720a33db0a51c8f84bde3aa04",
+    "Session": "630c02b0c693c47760554a3f0fed68b72db5df601f887d2edaaa3106e6308e63",
+    "Tokenomics": "ed9d18151a9365c347ac7a9da7e83b53ecedac235d9e67c4b2699503a6bd4a97"
+  },
+  "test_source_sha256": "0c672939072bd9087be35ce262fd86930718cfc091adb176e35e01f6069faf6d",
+  "forge_result": "7 passed, 0 failed",
+  "test_names": [
+    "testProbeSession",
+    "testProbeSessionCreationCalldata",
+    "testProbeSessionInitVariants",
+    "testProbeStakingAdmin",
+    "testProbeStakingThreeAddress",
+    "testProbeTokenomics",
+    "testProbeTokenomicsAdminFresh"
+  ],
+  "scope": "Exact pinned proxy and implementation runtimes in synthetic fresh and initialized storage; SessionKeyManager creation call and receipt captured from archive"
+}

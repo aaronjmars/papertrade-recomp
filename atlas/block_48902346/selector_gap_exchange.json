@@ -1,0 +1,2760 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "scope": "untraced state-changing selectors of the Exchange implementation and the live linked library",
+  "assigned_roles": {
+    "exchange_implementation": 13,
+    "exchange_linked_library_live": 7
+  },
+  "assigned_selector_count": 20,
+  "evidence_tiers": [
+    "exact_runtime_replay"
+  ],
+  "rows": [
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x01681a62",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 16016,
+      "name_status": "behaviour_reconstruction_not_registry",
+      "candidate_signature": "sweep(address)",
+      "name_hash_checked": true,
+      "name_source": "behaviour_reconstruction: exchange_sweep_behavior.json",
+      "abi_shape": {
+        "calldata_words": 1,
+        "calldata_min_bytes": 36,
+        "calldata_offsets_read": [
+          4
+        ],
+        "return_words": null,
+        "source": "canonical ABI length constant and calldata offsets in the pinned runtime bytes, checked by the replay"
+      },
+      "guard": {
+        "role": "no_caller_check",
+        "evidence": "an outsider and the pinned market keeper both reach the same 0x967d697b rejection, so no caller check is in front of the path",
+        "static_caller_checks": [],
+        "library_caller_instructions": null,
+        "source": "exact-runtime caller probes plus the caller check sites recovered from the pinned bytes"
+      },
+      "documented_behaviour": "sweep(user) follows requestSweep when no pending request exists and finalizeSweep otherwise; both paths are reconstructed in exchange_sweep_pseudocode.md.",
+      "writes": [
+        {
+          "source": "none observed in this replay"
+        }
+      ],
+      "documented_writes": [
+        "pendingSweep mapping (base 33) and lastSweepBlock mapping (base 32) on the request path",
+        "treasury (14), totalBalances (22 low 128 bits) and balances[user] mapping (base 9) on the finalization path"
+      ],
+      "events": [
+        {
+          "source": "none observed in this replay"
+        }
+      ],
+      "documented_events": [
+        "0x02d61879 site SweepRequested(address,address,uint64,uint64,uint32)",
+        "0xc36b5179 site Swept(address,uint256)",
+        "0x28f3adb5 site PendingSweepCleared(address,address)"
+      ],
+      "evidence_tier": "exact_runtime_replay",
+      "evidence_tier_reason": "no saved historical call graph or root transaction for this selector exists in the sampled history, so the behaviour record rests on the pinned-byte static read plus this port-free replay",
+      "rejection_branch": {
+        "short_calldata_probe": "short_0x01681a62",
+        "short_calldata_outcome": "revert",
+        "short_calldata_revert_data": "0x",
+        "caller_probe": "outsider_0x01681a62",
+        "caller_probe_outcome": "revert",
+        "caller_probe_revert_data": "0x967d697b",
+        "state_changed": false
+      },
+      "probe_outcomes": {
+        "short_0x01681a62": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "outsider_0x01681a62": {
+          "status": "revert",
+          "output_or_revert": "0x967d697b",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "keeper_0x01681a62": {
+          "status": "revert",
+          "output_or_revert": "0x967d697b",
+          "state_changed": false,
+          "log_count": 0
+        }
+      },
+      "evidence_refs": [
+        "atlas/block_48902346/exchange_sweep_pseudocode.md",
+        "atlas/block_48902346/exchange_sweep_behavior.json",
+        "artifacts/exchange_sweep_archive_local/",
+        "atlas/block_48902346/exchange_getters.md",
+        "artifacts/selector_gap_exchange/replay/short_0x01681a62.txt",
+        "artifacts/selector_gap_exchange/replay/outsider_0x01681a62.txt",
+        "artifacts/selector_gap_exchange/replay/keeper_0x01681a62.txt"
+      ],
+      "undecided": [
+        "No saved historical call of selector 0x01681a62 exists in the sampled transaction history.",
+        "The success path needs the factory proxy and mocked HyperCore reads, so this replay only records the rejection branch.",
+        "No write set is observed on the probed path; the documented write set comes from the cited artifacts."
+      ],
+      "synthetic": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x2d2451d1",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 12113,
+      "name_status": "behaviour_reconstruction_not_registry",
+      "candidate_signature": "pauseMarket(uint32)",
+      "name_hash_checked": true,
+      "name_source": "behaviour_reconstruction: exchange_pause_behavior.json",
+      "abi_shape": {
+        "calldata_words": 1,
+        "calldata_min_bytes": 36,
+        "calldata_offsets_read": [
+          4
+        ],
+        "return_words": null,
+        "source": "canonical ABI length constant and calldata offsets in the pinned runtime bytes, checked by the replay"
+      },
+      "guard": {
+        "role": "owner+pauseGuardian",
+        "evidence": "owner and pause guardian succeed, an outsider gets NotPauseAuthority()",
+        "static_caller_checks": [
+          {
+            "caller_pc": 12154,
+            "slot": null,
+            "shift": 16,
+            "comparison_ops": [
+              "EQ",
+              "SUB"
+            ]
+          },
+          {
+            "caller_pc": 12542,
+            "slot": 1,
+            "shift": null,
+            "comparison_ops": [
+              "EQ"
+            ]
+          }
+        ],
+        "library_caller_instructions": null,
+        "source": "exact-runtime caller probes plus the caller check sites recovered from the pinned bytes"
+      },
+      "documented_behaviour": "pauseMarket(id) sets a per-market packed pause word after reading the market price from the oracle.",
+      "writes": [
+        {
+          "probe": "owner_0x2d2451d1",
+          "slot": "0xec8fa5b038da1e720ea021ba5ca9b6d584cce4d81a9a9ab37c8a07ee3bc65110",
+          "slot_label": "marketPause mapping key 0",
+          "before": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "after": "0x000000000000000000000000000001000000004190ab00000000003b9aca0001",
+          "source": "this replay"
+        }
+      ],
+      "documented_writes": [
+        "marketPause mapping (keccak(abi.encode(id, 35))): flag bits 0..7, bid 8..71, ask 72..135, timestamp 136..199"
+      ],
+      "events": [
+        {
+          "probe": "owner_0x2d2451d1",
+          "topic0": "0x25e933a27e6487478d7617f2f4ef2f5c77355faf6cad2e6fd7c4b8d029930d9f",
+          "topic_count": 2,
+          "data_bytes": 96,
+          "name_status": "unnamed",
+          "source": "this replay"
+        }
+      ],
+      "documented_events": [
+        "0x25e933a2 site unnamed (indexed uint32 id, three unindexed words)"
+      ],
+      "evidence_tier": "exact_runtime_replay",
+      "evidence_tier_reason": "no saved historical call graph or root transaction for this selector exists in the sampled history, so the behaviour record rests on the pinned-byte static read plus this port-free replay",
+      "rejection_branch": {
+        "short_calldata_probe": "short_0x2d2451d1",
+        "short_calldata_outcome": "revert",
+        "short_calldata_revert_data": "0x",
+        "caller_probe": "outsider_0x2d2451d1",
+        "caller_probe_outcome": "revert",
+        "caller_probe_revert_data": "0x49199fb6",
+        "state_changed": false
+      },
+      "probe_outcomes": {
+        "short_0x2d2451d1": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "outsider_0x2d2451d1": {
+          "status": "revert",
+          "output_or_revert": "0x49199fb6",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "owner_0x2d2451d1": {
+          "status": "ok",
+          "output_or_revert": "0x",
+          "state_changed": true,
+          "log_count": 1
+        },
+        "invalid_0x2d2451d1": {
+          "status": "revert",
+          "output_or_revert": "0x67207a88",
+          "state_changed": false,
+          "log_count": 0
+        }
+      },
+      "evidence_refs": [
+        "atlas/block_48902346/exchange_pause_pseudocode.md",
+        "artifacts/exchange_pause_local/replay.json",
+        "artifacts/selector_gap_exchange/replay/short_0x2d2451d1.txt",
+        "artifacts/selector_gap_exchange/replay/outsider_0x2d2451d1.txt",
+        "artifacts/selector_gap_exchange/replay/owner_0x2d2451d1.txt",
+        "artifacts/selector_gap_exchange/replay/invalid_0x2d2451d1.txt"
+      ],
+      "undecided": [
+        "The event's Solidity name is unknown; the full-history log query returned no successful emission."
+      ],
+      "synthetic": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x415f1240",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 10772,
+      "name_status": "hash_matched_public_abi_fixture",
+      "candidate_signature": "liquidate(uint256)",
+      "name_hash_checked": true,
+      "name_source": "public_abi_fixture: exchange_interface_evidence.json",
+      "abi_shape": {
+        "calldata_words": 1,
+        "calldata_min_bytes": 36,
+        "calldata_offsets_read": [
+          4
+        ],
+        "return_words": null,
+        "source": "canonical ABI length constant and calldata offsets in the pinned runtime bytes, checked by the replay"
+      },
+      "guard": {
+        "role": "no_caller_check",
+        "evidence": "an outsider reaches the price predicate, so the entrypoint is caller-permissionless in the tested state",
+        "static_caller_checks": [],
+        "library_caller_instructions": null,
+        "source": "exact-runtime caller probes plus the caller check sites recovered from the pinned bytes"
+      },
+      "documented_behaviour": "liquidate(id) settles one active position that is outside its price boundary; liquidateBatch shares the settlement path.",
+      "writes": [
+        {
+          "source": "none observed in this replay"
+        }
+      ],
+      "documented_writes": [
+        "position mapping (base 10) second word bit 240 cleared, accounting slots and the Tokenomics/PAPER side on the settlement path"
+      ],
+      "events": [
+        {
+          "source": "none observed in this replay"
+        }
+      ],
+      "documented_events": [
+        "Liquidated on the settlement path, plus PAPER Transfer and the Tokenomics liquidation event"
+      ],
+      "evidence_tier": "exact_runtime_replay",
+      "evidence_tier_reason": "no saved historical call graph or root transaction for this selector exists in the sampled history, so the behaviour record rests on the pinned-byte static read plus this port-free replay",
+      "rejection_branch": {
+        "short_calldata_probe": "short_0x415f1240",
+        "short_calldata_outcome": "revert",
+        "short_calldata_revert_data": "0x",
+        "caller_probe": "outsider_0x415f1240",
+        "caller_probe_outcome": "revert",
+        "caller_probe_revert_data": "0xddeb79ba",
+        "state_changed": false
+      },
+      "probe_outcomes": {
+        "short_0x415f1240": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "outsider_0x415f1240": {
+          "status": "revert",
+          "output_or_revert": "0xddeb79ba",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "inactive_0x415f1240": {
+          "status": "revert",
+          "output_or_revert": "0x94e88a21",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "farprice_0x415f1240": {
+          "status": "revert",
+          "output_or_revert": "0xddeb79ba",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "boundary_0x415f1240": {
+          "status": "revert",
+          "output_or_revert": "0x924d25e6",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "out_of_bound_0x415f1240": {
+          "status": "revert",
+          "output_or_revert": "0x94e88a21",
+          "state_changed": false,
+          "log_count": 0
+        }
+      },
+      "evidence_refs": [
+        "atlas/block_48902346/exchange_liquidation_pseudocode.md",
+        "artifacts/exchange_liquidation/pinned_local_probes.json",
+        "artifacts/exchange_liquidation/invalid_prices.json",
+        "artifacts/selector_gap_exchange/replay/short_0x415f1240.txt",
+        "artifacts/selector_gap_exchange/replay/outsider_0x415f1240.txt",
+        "artifacts/selector_gap_exchange/replay/inactive_0x415f1240.txt",
+        "artifacts/selector_gap_exchange/replay/farprice_0x415f1240.txt",
+        "artifacts/selector_gap_exchange/replay/boundary_0x415f1240.txt",
+        "artifacts/selector_gap_exchange/replay/out_of_bound_0x415f1240.txt"
+      ],
+      "undecided": [
+        "No historical single-position liquidate call is saved; all 26 saved batch traces are for liquidateBatch.",
+        "The port-free run passes the price predicate at the documented boundary price and then reverts with 0x924d25e6, a four-byte value that appears in no captured runtime, so the successful settlement stays with the archive-backed probe.",
+        "No write set is observed on the probed path; the documented write set comes from the cited artifacts."
+      ],
+      "synthetic": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x4a4d9eea",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 10514,
+      "name_status": "unresolved",
+      "candidate_signature": "",
+      "name_hash_checked": false,
+      "name_source": "unresolved",
+      "abi_shape": {
+        "calldata_words": 3,
+        "calldata_min_bytes": 100,
+        "calldata_offsets_read": [
+          4,
+          36,
+          68
+        ],
+        "return_words": 3,
+        "source": "canonical ABI length constant and calldata offsets in the pinned runtime bytes, checked by the replay"
+      },
+      "guard": {
+        "role": "no_caller_check",
+        "evidence": "an outsider call succeeds and returns the library words, so no caller check guards the wrapper",
+        "static_caller_checks": [],
+        "library_caller_instructions": null,
+        "source": "exact-runtime caller probes plus the caller check sites recovered from the pinned bytes"
+      },
+      "documented_behaviour": "Delegatecalls the linked library selector 0xca02ff91 with words (15, user, start, count): headward count-based queue consolidation.",
+      "writes": [
+        {
+          "probe": "merge_0x4a4d9eea",
+          "slot": "0x0558928f694ce97b3c47e15e6073daedc5d9a03d80d781f131114b6ad8be15e1",
+          "slot_label": "queue node 101 packed links",
+          "before": "0x0000000000000000000000667822efb68be9e458efa6307d3386921b23ac3ade",
+          "after": "0x0000000000000000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_0x4a4d9eea",
+          "slot": "0x0558928f694ce97b3c47e15e6073daedc5d9a03d80d781f131114b6ad8be15e2",
+          "slot_label": "queue node 101 amount",
+          "before": "0x000000000000000000000000000000000000000000000000000000000000012c",
+          "after": "0x00000000000000000000000000000000000000000000000000000000000003e8",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_0x4a4d9eea",
+          "slot": "0x5506ba4625dfdb0f79c9e4cb81b4df4351e694f55476e0f95f19120d6ad731bf",
+          "slot_label": "queue node 102 packed links",
+          "before": "0x0000000000650000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "after": "0x0000000000000000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_0x4a4d9eea",
+          "slot": "0x5506ba4625dfdb0f79c9e4cb81b4df4351e694f55476e0f95f19120d6ad731c0",
+          "slot_label": "queue node 102 amount",
+          "before": "0x00000000000000000000000000000000000000000000000000000000000002bc",
+          "after": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_0x4a4d9eea",
+          "slot": "0x8b8e368e134b39ae993a74702581e80b63aa5f7c2f90fa0a7485b3f422ff27f8",
+          "slot_label": "queue user word at mapping base 21",
+          "before": "0x0000000000000000000000000000000000000000000000000000000000000066",
+          "after": "0x0000000000000000000000000000000000000000000000000000000000000065",
+          "source": "this replay"
+        }
+      ],
+      "documented_writes": [
+        "queue node mapping (base 15) at the delegatecall target: merged node amount and packed links; this replay reproduces five proxy writes in a two-node state"
+      ],
+      "events": [
+        {
+          "probe": "merge_0x4a4d9eea",
+          "topic0": "0xb8c6723c829f797c1498cb75af97462c6cb9f3784fe7c0c47bcd42cf42ca94fb",
+          "topic_count": 4,
+          "data_bytes": 32,
+          "name_status": "unnamed",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_0x4a4d9eea",
+          "topic0": "0xf949f11686e63f08cadf672fb6db7f7b859cb0fe11f2bf80c57db5429453f0cc",
+          "topic_count": 4,
+          "data_bytes": 64,
+          "name_status": "unnamed",
+          "source": "this replay"
+        }
+      ],
+      "documented_events": [
+        "0xb8c6723c site merge move",
+        "0xf949f116 site merge summary"
+      ],
+      "evidence_tier": "exact_runtime_replay",
+      "evidence_tier_reason": "no saved historical call graph or root transaction for this selector exists in the sampled history, so the behaviour record rests on the pinned-byte static read plus this port-free replay",
+      "rejection_branch": {
+        "short_calldata_probe": "short_0x4a4d9eea",
+        "short_calldata_outcome": "revert",
+        "short_calldata_revert_data": "0x",
+        "caller_probe": "outsider_0x4a4d9eea",
+        "caller_probe_outcome": "ok",
+        "caller_probe_revert_data": "0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "state_changed": false
+      },
+      "probe_outcomes": {
+        "short_0x4a4d9eea": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "outsider_0x4a4d9eea": {
+          "status": "ok",
+          "output_or_revert": "0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "merge_0x4a4d9eea": {
+          "status": "ok",
+          "output_or_revert": "0x000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000002bc0000000000000000000000000000000000000000000000000000000000000065",
+          "state_changed": true,
+          "log_count": 2
+        }
+      },
+      "evidence_refs": [
+        "atlas/block_48902346/exchange_library_adapters.md",
+        "atlas/block_48902346/exchange_library_queue_count_merge.md",
+        "artifacts/selector_gap_exchange/replay/short_0x4a4d9eea.txt",
+        "artifacts/selector_gap_exchange/replay/outsider_0x4a4d9eea.txt",
+        "artifacts/selector_gap_exchange/replay/merge_0x4a4d9eea.txt"
+      ],
+      "undecided": [
+        "Both the Exchange wrapper and the library function keep their source names.",
+        "Argument semantics beyond the tested counts remain unproven."
+      ],
+      "synthetic": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x5ca4c0ea",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 9690,
+      "name_status": "unresolved",
+      "candidate_signature": "",
+      "name_hash_checked": false,
+      "name_source": "unresolved",
+      "abi_shape": {
+        "calldata_words": 5,
+        "calldata_min_bytes": 164,
+        "calldata_offsets_read": [
+          4,
+          36,
+          68,
+          100,
+          132
+        ],
+        "return_words": null,
+        "source": "canonical ABI length constant and calldata offsets in the pinned runtime bytes, checked by the replay"
+      },
+      "guard": {
+        "role": "owner",
+        "evidence": "an outsider gets NotOwner()",
+        "static_caller_checks": [
+          {
+            "caller_pc": 19042,
+            "slot": null,
+            "shift": 16,
+            "comparison_ops": [
+              "SUB"
+            ]
+          }
+        ],
+        "library_caller_instructions": null,
+        "source": "exact-runtime caller probes plus the caller check sites recovered from the pinned bytes"
+      },
+      "documented_behaviour": "Owner-only instrument update writing four fields of instruments(id) in one call.",
+      "writes": [
+        {
+          "probe": "owner_0x5ca4c0ea",
+          "slot": "0x6d5257204ebe7d88fd91ae87941cb2dd9d8062b64ae5a2bd2d28ec40b9fbf6df",
+          "slot_label": "instruments(0) word 0",
+          "before": "0x000003e8000000000000002c28d1751327a700000000032d26d12e980b600000",
+          "after": "0x000003e800000000000000000000000000000001000000000000000000000001",
+          "source": "this replay"
+        },
+        {
+          "probe": "owner_0x5ca4c0ea",
+          "slot": "0x6d5257204ebe7d88fd91ae87941cb2dd9d8062b64ae5a2bd2d28ec40b9fbf6e0",
+          "slot_label": "instruments(0) word 1",
+          "before": "0x00016345785d8a00000001b0f51147891600000000084595161401484a000000",
+          "after": "0x0000000000000000010001b0f51147891600000000084595161401484a000000",
+          "source": "this replay"
+        },
+        {
+          "probe": "owner_0x5ca4c0ea",
+          "slot": "0x6d5257204ebe7d88fd91ae87941cb2dd9d8062b64ae5a2bd2d28ec40b9fbf6e1",
+          "slot_label": "instruments(0) word 2",
+          "before": "0x00000000000000000000000000000000000000000000152d02c7e14af6800000",
+          "after": "0x0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+          "source": "this replay"
+        }
+      ],
+      "documented_writes": [
+        "instruments mapping (base 7) word 0 bits 0..191, word 1 bits 184..247, word 2 low 128 bits"
+      ],
+      "events": [
+        {
+          "probe": "owner_0x5ca4c0ea",
+          "topic0": "0x76a319771459e5329ebc7830ef30b80fc54d20327f8b4946a9539e53c46018c9",
+          "topic_count": 2,
+          "data_bytes": 128,
+          "name_status": "unnamed",
+          "source": "this replay"
+        }
+      ],
+      "documented_events": [
+        "0x76a31977 site unnamed (indexed uint32 id, four unindexed values)"
+      ],
+      "evidence_tier": "exact_runtime_replay",
+      "evidence_tier_reason": "no saved historical call graph or root transaction for this selector exists in the sampled history, so the behaviour record rests on the pinned-byte static read plus this port-free replay",
+      "rejection_branch": {
+        "short_calldata_probe": "short_0x5ca4c0ea",
+        "short_calldata_outcome": "revert",
+        "short_calldata_revert_data": "0x",
+        "caller_probe": "outsider_0x5ca4c0ea",
+        "caller_probe_outcome": "revert",
+        "caller_probe_revert_data": "0x30cd7471",
+        "state_changed": false
+      },
+      "probe_outcomes": {
+        "short_0x5ca4c0ea": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "outsider_0x5ca4c0ea": {
+          "status": "revert",
+          "output_or_revert": "0x30cd7471",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "owner_0x5ca4c0ea": {
+          "status": "ok",
+          "output_or_revert": "0x",
+          "state_changed": true,
+          "log_count": 1
+        },
+        "invalid_0x5ca4c0ea": {
+          "status": "revert",
+          "output_or_revert": "0x67207a88",
+          "state_changed": false,
+          "log_count": 0
+        }
+      },
+      "evidence_refs": [
+        "atlas/block_48902346/exchange_instrument_admin.md",
+        "artifacts/exchange_instrument_admin_local/replay.json",
+        "artifacts/selector_gap_exchange/replay/short_0x5ca4c0ea.txt",
+        "artifacts/selector_gap_exchange/replay/outsider_0x5ca4c0ea.txt",
+        "artifacts/selector_gap_exchange/replay/owner_0x5ca4c0ea.txt",
+        "artifacts/selector_gap_exchange/replay/invalid_0x5ca4c0ea.txt"
+      ],
+      "undecided": [
+        "Function and event names, and the economic meaning of the four fields, remain unresolved."
+      ],
+      "synthetic": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x6a3214c9",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 9296,
+      "name_status": "behaviour_reconstruction_not_registry",
+      "candidate_signature": "reconcileSweepCredit(address,uint256)",
+      "name_hash_checked": true,
+      "name_source": "behaviour_reconstruction: exchange_sweep_behavior.json",
+      "abi_shape": {
+        "calldata_words": 2,
+        "calldata_min_bytes": 68,
+        "calldata_offsets_read": [
+          4,
+          36
+        ],
+        "return_words": null,
+        "source": "canonical ABI length constant and calldata offsets in the pinned runtime bytes, checked by the replay"
+      },
+      "guard": {
+        "role": "owner",
+        "evidence": "an outsider gets NotOwner()",
+        "static_caller_checks": [
+          {
+            "caller_pc": 19042,
+            "slot": null,
+            "shift": 16,
+            "comparison_ops": [
+              "SUB"
+            ]
+          }
+        ],
+        "library_caller_instructions": null,
+        "source": "exact-runtime caller probes plus the caller check sites recovered from the pinned bytes"
+      },
+      "documented_behaviour": "Owner-only reconciliation that credits amount * collateralScale after the pending sweep word is clear.",
+      "writes": [
+        {
+          "source": "none observed in this replay"
+        }
+      ],
+      "documented_writes": [
+        "treasury (14), totalBalances (22) and balances[user] (base 9) on the documented credit path"
+      ],
+      "events": [
+        {
+          "source": "none observed in this replay"
+        }
+      ],
+      "documented_events": [
+        "one unnamed credit event in the documented probe"
+      ],
+      "evidence_tier": "exact_runtime_replay",
+      "evidence_tier_reason": "no saved historical call graph or root transaction for this selector exists in the sampled history, so the behaviour record rests on the pinned-byte static read plus this port-free replay",
+      "rejection_branch": {
+        "short_calldata_probe": "short_0x6a3214c9",
+        "short_calldata_outcome": "revert",
+        "short_calldata_revert_data": "0x",
+        "caller_probe": "outsider_0x6a3214c9",
+        "caller_probe_outcome": "revert",
+        "caller_probe_revert_data": "0x30cd7471",
+        "state_changed": false
+      },
+      "probe_outcomes": {
+        "short_0x6a3214c9": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "outsider_0x6a3214c9": {
+          "status": "revert",
+          "output_or_revert": "0x30cd7471",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "owner_0x6a3214c9": {
+          "status": "ok",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        }
+      },
+      "evidence_refs": [
+        "atlas/block_48902346/exchange_sweep_recovery.md",
+        "artifacts/audit_sweep_recovery_local/replay.json",
+        "artifacts/selector_gap_exchange/replay/short_0x6a3214c9.txt",
+        "artifacts/selector_gap_exchange/replay/outsider_0x6a3214c9.txt",
+        "artifacts/selector_gap_exchange/replay/owner_0x6a3214c9.txt"
+      ],
+      "undecided": [
+        "In this run's fresh synthetic state the owner call returns success with no write and no log, so the credit precondition is not reproduced here.",
+        "The historical recovery need is open: both saved pending users reject owner reconciliation and clearPendingSweep(address) is absent.",
+        "No write set is observed on the probed path; the documented write set comes from the cited artifacts."
+      ],
+      "synthetic": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x753a369c",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 9054,
+      "name_status": "unresolved",
+      "candidate_signature": "",
+      "name_hash_checked": false,
+      "name_source": "unresolved",
+      "abi_shape": {
+        "calldata_words": 4,
+        "calldata_min_bytes": 132,
+        "calldata_offsets_read": [
+          4,
+          36,
+          68,
+          100
+        ],
+        "return_words": null,
+        "source": "canonical ABI length constant and calldata offsets in the pinned runtime bytes, checked by the replay"
+      },
+      "guard": {
+        "role": "no_caller_check",
+        "evidence": "an outsider call reaches the library range error, not an authorization error",
+        "static_caller_checks": [],
+        "library_caller_instructions": null,
+        "source": "exact-runtime caller probes plus the caller check sites recovered from the pinned bytes"
+      },
+      "documented_behaviour": "Delegatecalls the linked library selector 0x3cf4208d with words (15, user, start, end, limit, 10^18): forward range merge.",
+      "writes": [
+        {
+          "probe": "merge_0x753a369c",
+          "slot": "0x0558928f694ce97b3c47e15e6073daedc5d9a03d80d781f131114b6ad8be15e1",
+          "slot_label": "queue node 101 packed links",
+          "before": "0x0000000000000000000000667822efb68be9e458efa6307d3386921b23ac3ade",
+          "after": "0x0000000000000000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_0x753a369c",
+          "slot": "0x0558928f694ce97b3c47e15e6073daedc5d9a03d80d781f131114b6ad8be15e2",
+          "slot_label": "queue node 101 amount",
+          "before": "0x000000000000000000000000000000000000000000000000000000000000012c",
+          "after": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_0x753a369c",
+          "slot": "0x5506ba4625dfdb0f79c9e4cb81b4df4351e694f55476e0f95f19120d6ad731bf",
+          "slot_label": "queue node 102 packed links",
+          "before": "0x0000000000650000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "after": "0x0000000000000000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_0x753a369c",
+          "slot": "0x5506ba4625dfdb0f79c9e4cb81b4df4351e694f55476e0f95f19120d6ad731c0",
+          "slot_label": "queue node 102 amount",
+          "before": "0x00000000000000000000000000000000000000000000000000000000000002bc",
+          "after": "0x00000000000000000000000000000000000000000000000000000000000003e8",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_0x753a369c",
+          "slot": "0x503591cabe1352b154b50a68baf1c865f073496eea06c0228848c231622c05b3",
+          "slot_label": "queue user word at mapping base 20",
+          "before": "0x0000000000000000000000000000000000000000000000000000000000000065",
+          "after": "0x0000000000000000000000000000000000000000000000000000000000000066",
+          "source": "this replay"
+        }
+      ],
+      "documented_writes": [
+        "queue node mapping (base 15) at the target: five proxy writes in the two-node case, nine in the three-node case; this replay reproduces the five-write two-node case"
+      ],
+      "events": [
+        {
+          "probe": "merge_0x753a369c",
+          "topic0": "0xb8c6723c829f797c1498cb75af97462c6cb9f3784fe7c0c47bcd42cf42ca94fb",
+          "topic_count": 4,
+          "data_bytes": 32,
+          "name_status": "unnamed",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_0x753a369c",
+          "topic0": "0xf949f11686e63f08cadf672fb6db7f7b859cb0fe11f2bf80c57db5429453f0cc",
+          "topic_count": 4,
+          "data_bytes": 64,
+          "name_status": "unnamed",
+          "source": "this replay"
+        }
+      ],
+      "documented_events": [
+        "0xb8c6723c site merge move",
+        "0xf949f116 site merge summary"
+      ],
+      "evidence_tier": "exact_runtime_replay",
+      "evidence_tier_reason": "no saved historical call graph or root transaction for this selector exists in the sampled history, so the behaviour record rests on the pinned-byte static read plus this port-free replay",
+      "rejection_branch": {
+        "short_calldata_probe": "short_0x753a369c",
+        "short_calldata_outcome": "revert",
+        "short_calldata_revert_data": "0x",
+        "caller_probe": "outsider_0x753a369c",
+        "caller_probe_outcome": "revert",
+        "caller_probe_revert_data": "0x5b6d2b7a",
+        "state_changed": false
+      },
+      "probe_outcomes": {
+        "short_0x753a369c": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "outsider_0x753a369c": {
+          "status": "revert",
+          "output_or_revert": "0x5b6d2b7a",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "merge_0x753a369c": {
+          "status": "ok",
+          "output_or_revert": "0x0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000012c0000000000000000000000000000000000000000000000000000000000000066",
+          "state_changed": true,
+          "log_count": 2
+        }
+      },
+      "evidence_refs": [
+        "atlas/block_48902346/exchange_library_queue_merge.md",
+        "atlas/block_48902346/exchange_library_queue_interleaved.md",
+        "artifacts/selector_gap_exchange/replay/short_0x753a369c.txt",
+        "artifacts/selector_gap_exchange/replay/outsider_0x753a369c.txt",
+        "artifacts/selector_gap_exchange/replay/merge_0x753a369c.txt"
+      ],
+      "undecided": [
+        "Names stay unresolved; the fixed 10^18 word and the last argument's full meaning remain unproven."
+      ],
+      "synthetic": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x827ad94c",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 8730,
+      "name_status": "unresolved",
+      "candidate_signature": "",
+      "name_hash_checked": false,
+      "name_source": "unresolved",
+      "abi_shape": {
+        "calldata_words": 4,
+        "calldata_min_bytes": 132,
+        "calldata_offsets_read": [
+          4,
+          36,
+          68,
+          100
+        ],
+        "return_words": null,
+        "source": "canonical ABI length constant and calldata offsets in the pinned runtime bytes, checked by the replay"
+      },
+      "guard": {
+        "role": "no_caller_check",
+        "evidence": "an outsider call reaches the library range error, not an authorization error",
+        "static_caller_checks": [],
+        "library_caller_instructions": null,
+        "source": "exact-runtime caller probes plus the caller check sites recovered from the pinned bytes"
+      },
+      "documented_behaviour": "Delegatecalls the linked library selector 0x32db40c9 with words (15, user, start, end, limit): reverse range merge.",
+      "writes": [
+        {
+          "probe": "merge_0x827ad94c",
+          "slot": "0x0558928f694ce97b3c47e15e6073daedc5d9a03d80d781f131114b6ad8be15e1",
+          "slot_label": "queue node 101 packed links",
+          "before": "0x0000000000000000000000667822efb68be9e458efa6307d3386921b23ac3ade",
+          "after": "0x0000000000000000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_0x827ad94c",
+          "slot": "0x0558928f694ce97b3c47e15e6073daedc5d9a03d80d781f131114b6ad8be15e2",
+          "slot_label": "queue node 101 amount",
+          "before": "0x000000000000000000000000000000000000000000000000000000000000012c",
+          "after": "0x00000000000000000000000000000000000000000000000000000000000003e8",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_0x827ad94c",
+          "slot": "0x5506ba4625dfdb0f79c9e4cb81b4df4351e694f55476e0f95f19120d6ad731bf",
+          "slot_label": "queue node 102 packed links",
+          "before": "0x0000000000650000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "after": "0x0000000000000000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_0x827ad94c",
+          "slot": "0x5506ba4625dfdb0f79c9e4cb81b4df4351e694f55476e0f95f19120d6ad731c0",
+          "slot_label": "queue node 102 amount",
+          "before": "0x00000000000000000000000000000000000000000000000000000000000002bc",
+          "after": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_0x827ad94c",
+          "slot": "0x8b8e368e134b39ae993a74702581e80b63aa5f7c2f90fa0a7485b3f422ff27f8",
+          "slot_label": "queue user word at mapping base 21",
+          "before": "0x0000000000000000000000000000000000000000000000000000000000000066",
+          "after": "0x0000000000000000000000000000000000000000000000000000000000000065",
+          "source": "this replay"
+        }
+      ],
+      "documented_writes": [
+        "queue node mapping (base 15) at the target: five proxy writes in the two-node case, ten in the three-node case; this replay reproduces the five-write two-node case"
+      ],
+      "events": [
+        {
+          "probe": "merge_0x827ad94c",
+          "topic0": "0xb8c6723c829f797c1498cb75af97462c6cb9f3784fe7c0c47bcd42cf42ca94fb",
+          "topic_count": 4,
+          "data_bytes": 32,
+          "name_status": "unnamed",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_0x827ad94c",
+          "topic0": "0xf949f11686e63f08cadf672fb6db7f7b859cb0fe11f2bf80c57db5429453f0cc",
+          "topic_count": 4,
+          "data_bytes": 64,
+          "name_status": "unnamed",
+          "source": "this replay"
+        }
+      ],
+      "documented_events": [
+        "0xb8c6723c site merge move",
+        "0xf949f116 site merge summary"
+      ],
+      "evidence_tier": "exact_runtime_replay",
+      "evidence_tier_reason": "no saved historical call graph or root transaction for this selector exists in the sampled history, so the behaviour record rests on the pinned-byte static read plus this port-free replay",
+      "rejection_branch": {
+        "short_calldata_probe": "short_0x827ad94c",
+        "short_calldata_outcome": "revert",
+        "short_calldata_revert_data": "0x",
+        "caller_probe": "outsider_0x827ad94c",
+        "caller_probe_outcome": "revert",
+        "caller_probe_revert_data": "0x5b6d2b7a",
+        "state_changed": false
+      },
+      "probe_outcomes": {
+        "short_0x827ad94c": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "outsider_0x827ad94c": {
+          "status": "revert",
+          "output_or_revert": "0x5b6d2b7a",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "merge_0x827ad94c": {
+          "status": "ok",
+          "output_or_revert": "0x000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000002bc0000000000000000000000000000000000000000000000000000000000000065",
+          "state_changed": true,
+          "log_count": 2
+        }
+      },
+      "evidence_refs": [
+        "atlas/block_48902346/exchange_library_queue_merge.md",
+        "atlas/block_48902346/exchange_library_queue_interleaved.md",
+        "artifacts/selector_gap_exchange/replay/short_0x827ad94c.txt",
+        "artifacts/selector_gap_exchange/replay/outsider_0x827ad94c.txt",
+        "artifacts/selector_gap_exchange/replay/merge_0x827ad94c.txt"
+      ],
+      "undecided": [
+        "Names stay unresolved; the reverse direction rejects an A, B, A range in the sampled state."
+      ],
+      "synthetic": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xae4daf4e",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 6953,
+      "name_status": "unresolved",
+      "candidate_signature": "",
+      "name_hash_checked": false,
+      "name_source": "unresolved",
+      "abi_shape": {
+        "calldata_words": 3,
+        "calldata_min_bytes": 100,
+        "calldata_offsets_read": [
+          4,
+          36,
+          68
+        ],
+        "return_words": 3,
+        "source": "canonical ABI length constant and calldata offsets in the pinned runtime bytes, checked by the replay"
+      },
+      "guard": {
+        "role": "no_caller_check",
+        "evidence": "an outsider call succeeds and returns the library words, so no caller check guards the wrapper",
+        "static_caller_checks": [],
+        "library_caller_instructions": null,
+        "source": "exact-runtime caller probes plus the caller check sites recovered from the pinned bytes"
+      },
+      "documented_behaviour": "Delegatecalls the linked library selector 0x2448a553 with words (15, user, start, count, 10^18): tailward count-based queue consolidation.",
+      "writes": [
+        {
+          "probe": "merge_0xae4daf4e",
+          "slot": "0x0558928f694ce97b3c47e15e6073daedc5d9a03d80d781f131114b6ad8be15e1",
+          "slot_label": "queue node 101 packed links",
+          "before": "0x0000000000000000000000667822efb68be9e458efa6307d3386921b23ac3ade",
+          "after": "0x0000000000000000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_0xae4daf4e",
+          "slot": "0x0558928f694ce97b3c47e15e6073daedc5d9a03d80d781f131114b6ad8be15e2",
+          "slot_label": "queue node 101 amount",
+          "before": "0x000000000000000000000000000000000000000000000000000000000000012c",
+          "after": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_0xae4daf4e",
+          "slot": "0x5506ba4625dfdb0f79c9e4cb81b4df4351e694f55476e0f95f19120d6ad731bf",
+          "slot_label": "queue node 102 packed links",
+          "before": "0x0000000000650000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "after": "0x0000000000000000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_0xae4daf4e",
+          "slot": "0x5506ba4625dfdb0f79c9e4cb81b4df4351e694f55476e0f95f19120d6ad731c0",
+          "slot_label": "queue node 102 amount",
+          "before": "0x00000000000000000000000000000000000000000000000000000000000002bc",
+          "after": "0x00000000000000000000000000000000000000000000000000000000000003e8",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_0xae4daf4e",
+          "slot": "0x503591cabe1352b154b50a68baf1c865f073496eea06c0228848c231622c05b3",
+          "slot_label": "queue user word at mapping base 20",
+          "before": "0x0000000000000000000000000000000000000000000000000000000000000065",
+          "after": "0x0000000000000000000000000000000000000000000000000000000000000066",
+          "source": "this replay"
+        }
+      ],
+      "documented_writes": [
+        "queue node mapping (base 15) at the target on the merge paths; this replay reproduces five writes in a two-node state"
+      ],
+      "events": [
+        {
+          "probe": "merge_0xae4daf4e",
+          "topic0": "0xb8c6723c829f797c1498cb75af97462c6cb9f3784fe7c0c47bcd42cf42ca94fb",
+          "topic_count": 4,
+          "data_bytes": 32,
+          "name_status": "unnamed",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_0xae4daf4e",
+          "topic0": "0xf949f11686e63f08cadf672fb6db7f7b859cb0fe11f2bf80c57db5429453f0cc",
+          "topic_count": 4,
+          "data_bytes": 64,
+          "name_status": "unnamed",
+          "source": "this replay"
+        }
+      ],
+      "documented_events": [
+        "0xb8c6723c site merge move",
+        "0xf949f116 site merge summary"
+      ],
+      "evidence_tier": "exact_runtime_replay",
+      "evidence_tier_reason": "no saved historical call graph or root transaction for this selector exists in the sampled history, so the behaviour record rests on the pinned-byte static read plus this port-free replay",
+      "rejection_branch": {
+        "short_calldata_probe": "short_0xae4daf4e",
+        "short_calldata_outcome": "revert",
+        "short_calldata_revert_data": "0x",
+        "caller_probe": "outsider_0xae4daf4e",
+        "caller_probe_outcome": "ok",
+        "caller_probe_revert_data": "0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "state_changed": false
+      },
+      "probe_outcomes": {
+        "short_0xae4daf4e": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "outsider_0xae4daf4e": {
+          "status": "ok",
+          "output_or_revert": "0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "merge_0xae4daf4e": {
+          "status": "ok",
+          "output_or_revert": "0x0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000012c0000000000000000000000000000000000000000000000000000000000000066",
+          "state_changed": true,
+          "log_count": 2
+        }
+      },
+      "evidence_refs": [
+        "atlas/block_48902346/exchange_library_queue_count_merge.md",
+        "artifacts/selector_gap_exchange/replay/short_0xae4daf4e.txt",
+        "artifacts/selector_gap_exchange/replay/outsider_0xae4daf4e.txt",
+        "artifacts/selector_gap_exchange/replay/merge_0xae4daf4e.txt"
+      ],
+      "undecided": [
+        "Names stay unresolved; the strict 10^18 amount threshold is checked only in the sampled states."
+      ],
+      "synthetic": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xae69b95b",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 6780,
+      "name_status": "behaviour_reconstruction_not_registry",
+      "candidate_signature": "setTradingPaused(bool)",
+      "name_hash_checked": true,
+      "name_source": "behaviour_reconstruction: exchange_pause_behavior.json",
+      "abi_shape": {
+        "calldata_words": 1,
+        "calldata_min_bytes": 36,
+        "calldata_offsets_read": [
+          4
+        ],
+        "return_words": null,
+        "source": "canonical ABI length constant and calldata offsets in the pinned runtime bytes, checked by the replay"
+      },
+      "guard": {
+        "role": "owner+pauseGuardian",
+        "evidence": "owner and pause guardian may pause, the guardian and an outsider get NotPauseAuthority() when clearing",
+        "static_caller_checks": [
+          {
+            "caller_pc": 6828,
+            "slot": null,
+            "shift": 16,
+            "comparison_ops": [
+              "EQ",
+              "SUB"
+            ]
+          },
+          {
+            "caller_pc": 6927,
+            "slot": 1,
+            "shift": null,
+            "comparison_ops": [
+              "EQ"
+            ]
+          }
+        ],
+        "library_caller_instructions": null,
+        "source": "exact-runtime caller probes plus the caller check sites recovered from the pinned bytes"
+      },
+      "documented_behaviour": "setTradingPaused(bool): owner may set and clear, the pause guardian may only set.",
+      "writes": [
+        {
+          "probe": "owner_0xae69b95b",
+          "slot": "0x000000000000000000000000000000000000000000000000000000000000001d",
+          "slot_label": "slot 29 packed trading-paused word",
+          "before": "0x00000000000000000000008326eb8896e358717f10502ec73ce8d28e37b10800",
+          "after": "0x00000000000000000000008326eb8896e358717f10502ec73ce8d28e37b10801",
+          "source": "this replay"
+        }
+      ],
+      "documented_writes": [
+        "slot 29 low byte; upper bytes keep the SessionKeyManager address shifted by 8"
+      ],
+      "events": [
+        {
+          "probe": "owner_0xae69b95b",
+          "topic0": "0xa4abec9259618fb7d014c89824b2887f61e3ab2b382d4a48a42dfde43cec5d6e",
+          "topic_count": 1,
+          "data_bytes": 32,
+          "name_status": "TradingPausedUpdated(bool) (behaviour reconstruction, hash-checked)",
+          "source": "this replay"
+        }
+      ],
+      "documented_events": [
+        "0xa4abec92 site TradingPausedUpdated(bool), one unindexed word"
+      ],
+      "evidence_tier": "exact_runtime_replay",
+      "evidence_tier_reason": "no saved historical call graph or root transaction for this selector exists in the sampled history, so the behaviour record rests on the pinned-byte static read plus this port-free replay",
+      "rejection_branch": {
+        "short_calldata_probe": "short_0xae69b95b",
+        "short_calldata_outcome": "revert",
+        "short_calldata_revert_data": "0x",
+        "caller_probe": "outsider_0xae69b95b",
+        "caller_probe_outcome": "revert",
+        "caller_probe_revert_data": "0x49199fb6",
+        "state_changed": false
+      },
+      "probe_outcomes": {
+        "short_0xae69b95b": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "outsider_0xae69b95b": {
+          "status": "revert",
+          "output_or_revert": "0x49199fb6",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "owner_0xae69b95b": {
+          "status": "ok",
+          "output_or_revert": "0x",
+          "state_changed": true,
+          "log_count": 1
+        },
+        "guardian_0xae69b95b": {
+          "status": "ok",
+          "output_or_revert": "0x",
+          "state_changed": true,
+          "log_count": 1
+        },
+        "guardian_false_0xae69b95b": {
+          "status": "revert",
+          "output_or_revert": "0x49199fb6",
+          "state_changed": false,
+          "log_count": 0
+        }
+      },
+      "evidence_refs": [
+        "atlas/block_48902346/exchange_pause_pseudocode.md",
+        "artifacts/exchange_pause_local/replay.json",
+        "artifacts/selector_gap_exchange/replay/short_0xae69b95b.txt",
+        "artifacts/selector_gap_exchange/replay/outsider_0xae69b95b.txt",
+        "artifacts/selector_gap_exchange/replay/owner_0xae69b95b.txt",
+        "artifacts/selector_gap_exchange/replay/guardian_0xae69b95b.txt",
+        "artifacts/selector_gap_exchange/replay/guardian_false_0xae69b95b.txt"
+      ],
+      "undecided": [
+        "No historical call or successful emission exists through the pin; attempted or reverted calls cannot be excluded."
+      ],
+      "synthetic": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xc0c53b8b",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 6105,
+      "name_status": "hash_matched_public_abi_fixture",
+      "candidate_signature": "initialize(address,address,address)",
+      "name_hash_checked": true,
+      "name_source": "public_abi_fixture: guardian_report_lead",
+      "abi_shape": {
+        "calldata_words": 3,
+        "calldata_min_bytes": 100,
+        "calldata_offsets_read": [
+          4,
+          36,
+          68
+        ],
+        "return_words": null,
+        "source": "canonical ABI length constant and calldata offsets in the pinned runtime bytes, checked by the replay"
+      },
+      "guard": {
+        "role": "no_caller_check",
+        "evidence": "any caller reaches the initialized-state rejection, so the entry has no caller check",
+        "static_caller_checks": [],
+        "library_caller_instructions": null,
+        "source": "exact-runtime caller probes plus the caller check sites recovered from the pinned bytes"
+      },
+      "documented_behaviour": "initialize(owner, oracle, token) in a fresh proxy: writes owner, pause guardian, oracle, decimal scale and fee defaults after a token decimals() call.",
+      "writes": [
+        {
+          "source": "none observed in this replay"
+        }
+      ],
+      "documented_writes": [
+        "slots 0, 1, 2, 3, 4 low byte, 5, 17, 23, 24, 25, 28 in the documented fresh state"
+      ],
+      "events": [
+        {
+          "source": "none observed in this replay"
+        }
+      ],
+      "documented_events": [
+        "OwnerUpdated(address)"
+      ],
+      "evidence_tier": "exact_runtime_replay",
+      "evidence_tier_reason": "no saved historical call graph or root transaction for this selector exists in the sampled history, so the behaviour record rests on the pinned-byte static read plus this port-free replay",
+      "rejection_branch": {
+        "short_calldata_probe": "short_0xc0c53b8b",
+        "short_calldata_outcome": "revert",
+        "short_calldata_revert_data": "0x",
+        "caller_probe": "outsider_0xc0c53b8b",
+        "caller_probe_outcome": "revert",
+        "caller_probe_revert_data": "0x0dc149f0",
+        "state_changed": false
+      },
+      "probe_outcomes": {
+        "short_0xc0c53b8b": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "outsider_0xc0c53b8b": {
+          "status": "revert",
+          "output_or_revert": "0x0dc149f0",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "initialized_0xc0c53b8b": {
+          "status": "revert",
+          "output_or_revert": "0x0dc149f0",
+          "state_changed": false,
+          "log_count": 0
+        }
+      },
+      "evidence_refs": [
+        "atlas/block_48902346/exchange_initializer.md",
+        "artifacts/exchange_initializer_local/replay.json",
+        "artifacts/selector_gap_exchange/replay/short_0xc0c53b8b.txt",
+        "artifacts/selector_gap_exchange/replay/outsider_0xc0c53b8b.txt",
+        "artifacts/selector_gap_exchange/replay/initialized_0xc0c53b8b.txt"
+      ],
+      "undecided": [
+        "The exact alias source names are not proven; the token address is not observed inside the tested slots.",
+        "The pin's proxy is already initialized, so only the rejection branch is replayed here.",
+        "No write set is observed on the probed path; the documented write set comes from the cited artifacts."
+      ],
+      "synthetic": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xd7c7e5fb",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 4733,
+      "name_status": "unresolved",
+      "candidate_signature": "",
+      "name_hash_checked": false,
+      "name_source": "unresolved",
+      "abi_shape": {
+        "calldata_words": 3,
+        "calldata_min_bytes": 100,
+        "calldata_offsets_read": [
+          4,
+          36,
+          68
+        ],
+        "return_words": null,
+        "source": "canonical ABI length constant and calldata offsets in the pinned runtime bytes, checked by the replay"
+      },
+      "guard": {
+        "role": "owner",
+        "evidence": "an outsider gets NotOwner()",
+        "static_caller_checks": [
+          {
+            "caller_pc": 19042,
+            "slot": null,
+            "shift": 16,
+            "comparison_ops": [
+              "SUB"
+            ]
+          }
+        ],
+        "library_caller_instructions": null,
+        "source": "exact-runtime caller probes plus the caller check sites recovered from the pinned bytes"
+      },
+      "documented_behaviour": "Owner-only setter replacing two packed fields of instruments(id).",
+      "writes": [
+        {
+          "probe": "owner_0xd7c7e5fb",
+          "slot": "0x6d5257204ebe7d88fd91ae87941cb2dd9d8062b64ae5a2bd2d28ec40b9fbf6df",
+          "slot_label": "instruments(0) word 0",
+          "before": "0x000003e8000000000000002c28d1751327a700000000032d26d12e980b600000",
+          "after": "0x00000001000000000000002c28d1751327a700000000032d26d12e980b600000",
+          "source": "this replay"
+        },
+        {
+          "probe": "owner_0xd7c7e5fb",
+          "slot": "0x6d5257204ebe7d88fd91ae87941cb2dd9d8062b64ae5a2bd2d28ec40b9fbf6e0",
+          "slot_label": "instruments(0) word 1",
+          "before": "0x00016345785d8a00000001b0f51147891600000000084595161401484a000000",
+          "after": "0x00016345785d8a00000001b0f511478916000000000000000000000000000001",
+          "source": "this replay"
+        }
+      ],
+      "documented_writes": [
+        "instruments mapping (base 7) word 0 bits 224..255 and word 1 bits 0..119"
+      ],
+      "events": [
+        {
+          "probe": "owner_0xd7c7e5fb",
+          "topic0": "0x62db1b2b923b6f20043c492d3586df1a823e447c63e44d15dbc90c1a3bc9fcc5",
+          "topic_count": 2,
+          "data_bytes": 64,
+          "name_status": "unnamed",
+          "source": "this replay"
+        }
+      ],
+      "documented_events": [
+        "0x62db1b2b site unnamed (indexed uint32 id, two unindexed words)"
+      ],
+      "evidence_tier": "exact_runtime_replay",
+      "evidence_tier_reason": "no saved historical call graph or root transaction for this selector exists in the sampled history, so the behaviour record rests on the pinned-byte static read plus this port-free replay",
+      "rejection_branch": {
+        "short_calldata_probe": "short_0xd7c7e5fb",
+        "short_calldata_outcome": "revert",
+        "short_calldata_revert_data": "0x",
+        "caller_probe": "outsider_0xd7c7e5fb",
+        "caller_probe_outcome": "revert",
+        "caller_probe_revert_data": "0x30cd7471",
+        "state_changed": false
+      },
+      "probe_outcomes": {
+        "short_0xd7c7e5fb": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "outsider_0xd7c7e5fb": {
+          "status": "revert",
+          "output_or_revert": "0x30cd7471",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "owner_0xd7c7e5fb": {
+          "status": "ok",
+          "output_or_revert": "0x",
+          "state_changed": true,
+          "log_count": 1
+        },
+        "zero_0xd7c7e5fb": {
+          "status": "revert",
+          "output_or_revert": "0xb0cb274d",
+          "state_changed": false,
+          "log_count": 0
+        }
+      },
+      "evidence_refs": [
+        "atlas/block_48902346/exchange_instrument_limit.md",
+        "artifacts/exchange_instrument_limit_local/replay.json",
+        "artifacts/selector_gap_exchange/replay/short_0xd7c7e5fb.txt",
+        "artifacts/selector_gap_exchange/replay/outsider_0xd7c7e5fb.txt",
+        "artifacts/selector_gap_exchange/replay/owner_0xd7c7e5fb.txt",
+        "artifacts/selector_gap_exchange/replay/zero_0xd7c7e5fb.txt"
+      ],
+      "undecided": [
+        "Function, event and field names remain unresolved."
+      ],
+      "synthetic": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xe538b280",
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "entry_pc": 4224,
+      "name_status": "behaviour_reconstruction_not_registry",
+      "candidate_signature": "setFeeRates(uint256,uint256,uint256)",
+      "name_hash_checked": true,
+      "name_source": "behaviour_reconstruction: exchange_fee_rates_behavior.json",
+      "abi_shape": {
+        "calldata_words": 3,
+        "calldata_min_bytes": 100,
+        "calldata_offsets_read": [
+          4,
+          36,
+          68
+        ],
+        "return_words": null,
+        "source": "canonical ABI length constant and calldata offsets in the pinned runtime bytes, checked by the replay"
+      },
+      "guard": {
+        "role": "owner",
+        "evidence": "an outsider gets NotOwner()",
+        "static_caller_checks": [
+          {
+            "caller_pc": 19042,
+            "slot": null,
+            "shift": 16,
+            "comparison_ops": [
+              "SUB"
+            ]
+          }
+        ],
+        "library_caller_instructions": null,
+        "source": "exact-runtime caller probes plus the caller check sites recovered from the pinned bytes"
+      },
+      "documented_behaviour": "Owner-only setFeeRates(first, second, third), each rate at most 0.5 * 10^18.",
+      "writes": [
+        {
+          "probe": "owner_0xe538b280",
+          "slot": "0x0000000000000000000000000000000000000000000000000000000000000017",
+          "slot_label": "slot 23 fee rate (unnamed)",
+          "before": "0x00000000000000000000000000000000000000000000000000470de4df820000",
+          "after": "0x000000000000000000000000000000000000000000000000002386f26fc10000",
+          "source": "this replay"
+        },
+        {
+          "probe": "owner_0xe538b280",
+          "slot": "0x0000000000000000000000000000000000000000000000000000000000000019",
+          "slot_label": "slot 25 liquidation fee rate",
+          "before": "0x00000000000000000000000000000000000000000000000000470de4df820000",
+          "after": "0x000000000000000000000000000000000000000000000000006a94d74f430000",
+          "source": "this replay"
+        }
+      ],
+      "documented_writes": [
+        "slots 23, 24 and 25"
+      ],
+      "events": [
+        {
+          "probe": "owner_0xe538b280",
+          "topic0": "0xe4af0531d4ba8c578b5076b042e4505372fb4f4986aea8ebf77f4ff1585e3e75",
+          "topic_count": 1,
+          "data_bytes": 96,
+          "name_status": "FeeRatesUpdated(uint256,uint256,uint256) (behaviour reconstruction, hash-checked)",
+          "source": "this replay"
+        }
+      ],
+      "documented_events": [
+        "0xe4af0531 site FeeRatesUpdated(uint256,uint256,uint256), three unindexed words"
+      ],
+      "evidence_tier": "exact_runtime_replay",
+      "evidence_tier_reason": "no saved historical call graph or root transaction for this selector exists in the sampled history, so the behaviour record rests on the pinned-byte static read plus this port-free replay",
+      "rejection_branch": {
+        "short_calldata_probe": "short_0xe538b280",
+        "short_calldata_outcome": "revert",
+        "short_calldata_revert_data": "0x",
+        "caller_probe": "outsider_0xe538b280",
+        "caller_probe_outcome": "revert",
+        "caller_probe_revert_data": "0x30cd7471",
+        "state_changed": false
+      },
+      "probe_outcomes": {
+        "short_0xe538b280": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "outsider_0xe538b280": {
+          "status": "revert",
+          "output_or_revert": "0x30cd7471",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "owner_0xe538b280": {
+          "status": "ok",
+          "output_or_revert": "0x",
+          "state_changed": true,
+          "log_count": 1
+        },
+        "cap_0xe538b280": {
+          "status": "revert",
+          "output_or_revert": "0xcd4e6167",
+          "state_changed": false,
+          "log_count": 0
+        }
+      },
+      "evidence_refs": [
+        "atlas/block_48902346/exchange_fee_rates.md",
+        "atlas/block_48902346/exchange_fee_rates_behavior.json",
+        "artifacts/selector_gap_exchange/replay/short_0xe538b280.txt",
+        "artifacts/selector_gap_exchange/replay/outsider_0xe538b280.txt",
+        "artifacts/selector_gap_exchange/replay/owner_0xe538b280.txt",
+        "artifacts/selector_gap_exchange/replay/cap_0xe538b280.txt"
+      ],
+      "undecided": [
+        "Slot 23's getter name stays unknown; slot 24's name comes from the Guardian report, not from a bytecode match.",
+        "No historical call or successful emission exists through the pin."
+      ],
+      "synthetic": true
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0x18958ce2",
+      "runtime_sha256": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2",
+      "entry_pc": 2616,
+      "name_status": "unresolved",
+      "candidate_signature": "",
+      "name_hash_checked": false,
+      "name_source": "unresolved",
+      "abi_shape": {
+        "calldata_words": 3,
+        "calldata_min_bytes": 100,
+        "calldata_offsets_read": [
+          4,
+          36,
+          68
+        ],
+        "return_words": null,
+        "source": "canonical ABI length constant and calldata offsets in the pinned runtime bytes, checked by the replay"
+      },
+      "guard": {
+        "role": "no_caller_check",
+        "evidence": "zero CALLER instructions exist in the whole library runtime; a direct call reverts while a delegatecall executes",
+        "static_caller_checks": [],
+        "library_caller_instructions": 0,
+        "source": "exact-runtime caller probes plus the caller check sites recovered from the pinned bytes"
+      },
+      "documented_behaviour": "Library enqueue(base, user, amount): creates a queue node, links it, and adds to the global and user totals.",
+      "writes": [
+        {
+          "probe": "delegate_0x18958ce2",
+          "slot": "0x0000000000000000000000000000000000000000000000000000000000000010",
+          "slot_label": "slot 16 queue global head",
+          "before": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "after": "0x0000000000000000000000000000000000000000000000000000000000000001",
+          "source": "this replay"
+        },
+        {
+          "probe": "delegate_0x18958ce2",
+          "slot": "0x0000000000000000000000000000000000000000000000000000000000000011",
+          "slot_label": "slot 17 queue next node id",
+          "before": "0x0000000000000000000000000000000000000000000000000000000000000001",
+          "after": "0x0000000000000000000000000000000000000000000000000000000000000002",
+          "source": "this replay"
+        },
+        {
+          "probe": "delegate_0x18958ce2",
+          "slot": "0x0000000000000000000000000000000000000000000000000000000000000012",
+          "slot_label": "slot 18 total queued",
+          "before": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "after": "0x00000000000000000000000000000000000000000000000000000000000001f4",
+          "source": "this replay"
+        },
+        {
+          "probe": "delegate_0x18958ce2",
+          "slot": "0x169f97de0d9a84d840042b17d3c6b9638b3d6fd9024c9eb0c7a306a17b49f88f",
+          "slot_label": "queue node 1 packed links",
+          "before": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "after": "0x0000000000000000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "source": "this replay"
+        },
+        {
+          "probe": "delegate_0x18958ce2",
+          "slot": "0x169f97de0d9a84d840042b17d3c6b9638b3d6fd9024c9eb0c7a306a17b49f890",
+          "slot_label": "queue node 1 amount",
+          "before": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "after": "0x00000000000000000000000000000000000000000000000000000000000001f4",
+          "source": "this replay"
+        },
+        {
+          "probe": "delegate_0x18958ce2",
+          "slot": "0xd446877d04966641f728756700f43eb588ac86aa34e9f20ba7615985184fa7e5",
+          "slot_label": "queue user word at mapping base 19",
+          "before": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "after": "0x00000000000000000000000000000000000000000000000000000000000001f4",
+          "source": "this replay"
+        },
+        {
+          "probe": "delegate_0x18958ce2",
+          "slot": "0x503591cabe1352b154b50a68baf1c865f073496eea06c0228848c231622c05b3",
+          "slot_label": "queue user word at mapping base 20",
+          "before": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "after": "0x0000000000000000000000000000000000000000000000000000000000000001",
+          "source": "this replay"
+        },
+        {
+          "probe": "delegate_0x18958ce2",
+          "slot": "0x8b8e368e134b39ae993a74702581e80b63aa5f7c2f90fa0a7485b3f422ff27f8",
+          "slot_label": "queue user word at mapping base 21",
+          "before": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "after": "0x0000000000000000000000000000000000000000000000000000000000000001",
+          "source": "this replay"
+        }
+      ],
+      "documented_writes": [
+        "global head/tail/next-id/total words, the node mapping at the base slot, and the user head/tail/total words"
+      ],
+      "events": [
+        {
+          "probe": "delegate_0x18958ce2",
+          "topic0": "0xb2f6a0be3228032ab1a6e4d114ab0a4b8277ef32d9bd9b666e8537200aed4dc7",
+          "topic_count": 3,
+          "data_bytes": 32,
+          "name_status": "Enqueued(address,uint256,uint256) (hash-checked, present in the library runtime)",
+          "source": "this replay"
+        }
+      ],
+      "documented_events": [
+        "Enqueued(address,uint256,uint256) at topic 0xb2f6a0be, hash-checked and present in the library runtime"
+      ],
+      "evidence_tier": "exact_runtime_replay",
+      "evidence_tier_reason": "no saved historical call graph or root transaction for this selector exists in the sampled history, so the behaviour record rests on the pinned-byte static read plus this port-free replay",
+      "rejection_branch": {
+        "short_calldata_probe": "short_0x18958ce2",
+        "short_calldata_outcome": "revert",
+        "short_calldata_revert_data": "0x",
+        "caller_probe": "outsider_0x18958ce2",
+        "caller_probe_outcome": "revert",
+        "caller_probe_revert_data": "0x",
+        "state_changed": false
+      },
+      "probe_outcomes": {
+        "short_0x18958ce2": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "outsider_0x18958ce2": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "delegate_0x18958ce2": {
+          "status": "ok",
+          "output_or_revert": "0x",
+          "state_changed": true,
+          "log_count": 1
+        }
+      },
+      "evidence_refs": [
+        "atlas/block_48902346/exchange_library_remaining.md",
+        "artifacts/exchange_library_remaining_local/replay.json",
+        "artifacts/historical/replays/",
+        "artifacts/selector_gap_exchange/replay/short_0x18958ce2.txt",
+        "artifacts/selector_gap_exchange/replay/outsider_0x18958ce2.txt",
+        "artifacts/selector_gap_exchange/replay/delegate_0x18958ce2.txt"
+      ],
+      "undecided": [
+        "The source name stays unresolved; the arithmetic selector beside it is the only library row with a plain success on a direct call."
+      ],
+      "synthetic": true
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0x2448a553",
+      "runtime_sha256": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2",
+      "entry_pc": 2587,
+      "name_status": "unresolved",
+      "candidate_signature": "",
+      "name_hash_checked": false,
+      "name_source": "unresolved",
+      "abi_shape": {
+        "calldata_words": 5,
+        "calldata_min_bytes": 164,
+        "calldata_offsets_read": [
+          4,
+          36,
+          68,
+          100,
+          132
+        ],
+        "return_words": null,
+        "source": "canonical ABI length constant and calldata offsets in the pinned runtime bytes, checked by the replay"
+      },
+      "guard": {
+        "role": "no_caller_check",
+        "evidence": "zero CALLER instructions exist in the whole library runtime; a direct call reverts while a delegatecall executes",
+        "static_caller_checks": [],
+        "library_caller_instructions": 0,
+        "source": "exact-runtime caller probes plus the caller check sites recovered from the pinned bytes"
+      },
+      "documented_behaviour": "Library tailward count-based merge, called by Exchange 0xae4daf4e with a fixed 10^18 word.",
+      "writes": [
+        {
+          "probe": "merge_delegate_0x2448a553",
+          "slot": "0x503591cabe1352b154b50a68baf1c865f073496eea06c0228848c231622c05b3",
+          "slot_label": "queue user word at mapping base 20",
+          "before": "0x0000000000000000000000000000000000000000000000000000000000000065",
+          "after": "0x0000000000000000000000000000000000000000000000000000000000000066",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_delegate_0x2448a553",
+          "slot": "0x0558928f694ce97b3c47e15e6073daedc5d9a03d80d781f131114b6ad8be15e1",
+          "slot_label": "queue node 101 packed links",
+          "before": "0x0000000000000000000000667822efb68be9e458efa6307d3386921b23ac3ade",
+          "after": "0x0000000000000000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_delegate_0x2448a553",
+          "slot": "0x0558928f694ce97b3c47e15e6073daedc5d9a03d80d781f131114b6ad8be15e2",
+          "slot_label": "queue node 101 amount",
+          "before": "0x000000000000000000000000000000000000000000000000000000000000012c",
+          "after": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_delegate_0x2448a553",
+          "slot": "0x5506ba4625dfdb0f79c9e4cb81b4df4351e694f55476e0f95f19120d6ad731bf",
+          "slot_label": "queue node 102 packed links",
+          "before": "0x0000000000650000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "after": "0x0000000000000000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_delegate_0x2448a553",
+          "slot": "0x5506ba4625dfdb0f79c9e4cb81b4df4351e694f55476e0f95f19120d6ad731c0",
+          "slot_label": "queue node 102 amount",
+          "before": "0x00000000000000000000000000000000000000000000000000000000000002bc",
+          "after": "0x00000000000000000000000000000000000000000000000000000000000003e8",
+          "source": "this replay"
+        }
+      ],
+      "documented_writes": [
+        "queue node amounts and packed links at the base slot; this replay reproduces five writes in a two-node state"
+      ],
+      "events": [
+        {
+          "probe": "merge_delegate_0x2448a553",
+          "topic0": "0xb8c6723c829f797c1498cb75af97462c6cb9f3784fe7c0c47bcd42cf42ca94fb",
+          "topic_count": 4,
+          "data_bytes": 32,
+          "name_status": "unnamed",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_delegate_0x2448a553",
+          "topic0": "0xf949f11686e63f08cadf672fb6db7f7b859cb0fe11f2bf80c57db5429453f0cc",
+          "topic_count": 4,
+          "data_bytes": 64,
+          "name_status": "unnamed",
+          "source": "this replay"
+        }
+      ],
+      "documented_events": [
+        "0xb8c6723c site merge move",
+        "0xf949f116 site merge summary"
+      ],
+      "evidence_tier": "exact_runtime_replay",
+      "evidence_tier_reason": "no saved historical call graph or root transaction for this selector exists in the sampled history, so the behaviour record rests on the pinned-byte static read plus this port-free replay",
+      "rejection_branch": {
+        "short_calldata_probe": "short_0x2448a553",
+        "short_calldata_outcome": "revert",
+        "short_calldata_revert_data": "0x",
+        "caller_probe": "outsider_0x2448a553",
+        "caller_probe_outcome": "revert",
+        "caller_probe_revert_data": "0x",
+        "state_changed": false
+      },
+      "probe_outcomes": {
+        "short_0x2448a553": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "outsider_0x2448a553": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "delegate_0x2448a553": {
+          "status": "ok",
+          "output_or_revert": "0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "merge_delegate_0x2448a553": {
+          "status": "ok",
+          "output_or_revert": "0x0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000012c0000000000000000000000000000000000000000000000000000000000000066",
+          "state_changed": true,
+          "log_count": 2
+        }
+      },
+      "evidence_refs": [
+        "atlas/block_48902346/exchange_library_queue_count_merge.md",
+        "artifacts/exchange_library_queue_count_merge_local/replay.json",
+        "artifacts/selector_gap_exchange/replay/short_0x2448a553.txt",
+        "artifacts/selector_gap_exchange/replay/outsider_0x2448a553.txt",
+        "artifacts/selector_gap_exchange/replay/delegate_0x2448a553.txt",
+        "artifacts/selector_gap_exchange/replay/merge_delegate_0x2448a553.txt"
+      ],
+      "undecided": [
+        "Names stay unresolved; the strict 10^18 boundary is checked in sampled amounts only."
+      ],
+      "synthetic": true
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0x32db40c9",
+      "runtime_sha256": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2",
+      "entry_pc": 2146,
+      "name_status": "unresolved",
+      "candidate_signature": "",
+      "name_hash_checked": false,
+      "name_source": "unresolved",
+      "abi_shape": {
+        "calldata_words": 5,
+        "calldata_min_bytes": 164,
+        "calldata_offsets_read": [
+          4,
+          36,
+          68,
+          100,
+          132
+        ],
+        "return_words": null,
+        "source": "canonical ABI length constant and calldata offsets in the pinned runtime bytes, checked by the replay"
+      },
+      "guard": {
+        "role": "no_caller_check",
+        "evidence": "zero CALLER instructions exist in the whole library runtime; a direct call reverts while a delegatecall executes",
+        "static_caller_checks": [],
+        "library_caller_instructions": 0,
+        "source": "exact-runtime caller probes plus the caller check sites recovered from the pinned bytes"
+      },
+      "documented_behaviour": "Library reverse range merge, called by Exchange 0x827ad94c.",
+      "writes": [
+        {
+          "probe": "merge_delegate_0x32db40c9",
+          "slot": "0x8b8e368e134b39ae993a74702581e80b63aa5f7c2f90fa0a7485b3f422ff27f8",
+          "slot_label": "queue user word at mapping base 21",
+          "before": "0x0000000000000000000000000000000000000000000000000000000000000066",
+          "after": "0x0000000000000000000000000000000000000000000000000000000000000065",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_delegate_0x32db40c9",
+          "slot": "0x0558928f694ce97b3c47e15e6073daedc5d9a03d80d781f131114b6ad8be15e1",
+          "slot_label": "queue node 101 packed links",
+          "before": "0x0000000000000000000000667822efb68be9e458efa6307d3386921b23ac3ade",
+          "after": "0x0000000000000000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_delegate_0x32db40c9",
+          "slot": "0x0558928f694ce97b3c47e15e6073daedc5d9a03d80d781f131114b6ad8be15e2",
+          "slot_label": "queue node 101 amount",
+          "before": "0x000000000000000000000000000000000000000000000000000000000000012c",
+          "after": "0x00000000000000000000000000000000000000000000000000000000000003e8",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_delegate_0x32db40c9",
+          "slot": "0x5506ba4625dfdb0f79c9e4cb81b4df4351e694f55476e0f95f19120d6ad731bf",
+          "slot_label": "queue node 102 packed links",
+          "before": "0x0000000000650000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "after": "0x0000000000000000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_delegate_0x32db40c9",
+          "slot": "0x5506ba4625dfdb0f79c9e4cb81b4df4351e694f55476e0f95f19120d6ad731c0",
+          "slot_label": "queue node 102 amount",
+          "before": "0x00000000000000000000000000000000000000000000000000000000000002bc",
+          "after": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "source": "this replay"
+        }
+      ],
+      "documented_writes": [
+        "queue node amounts and packed links at the base slot; this replay reproduces five writes in a two-node state"
+      ],
+      "events": [
+        {
+          "probe": "merge_delegate_0x32db40c9",
+          "topic0": "0xb8c6723c829f797c1498cb75af97462c6cb9f3784fe7c0c47bcd42cf42ca94fb",
+          "topic_count": 4,
+          "data_bytes": 32,
+          "name_status": "unnamed",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_delegate_0x32db40c9",
+          "topic0": "0xf949f11686e63f08cadf672fb6db7f7b859cb0fe11f2bf80c57db5429453f0cc",
+          "topic_count": 4,
+          "data_bytes": 64,
+          "name_status": "unnamed",
+          "source": "this replay"
+        }
+      ],
+      "documented_events": [
+        "0xb8c6723c site merge move",
+        "0xf949f116 site merge summary"
+      ],
+      "evidence_tier": "exact_runtime_replay",
+      "evidence_tier_reason": "no saved historical call graph or root transaction for this selector exists in the sampled history, so the behaviour record rests on the pinned-byte static read plus this port-free replay",
+      "rejection_branch": {
+        "short_calldata_probe": "short_0x32db40c9",
+        "short_calldata_outcome": "revert",
+        "short_calldata_revert_data": "0x",
+        "caller_probe": "outsider_0x32db40c9",
+        "caller_probe_outcome": "revert",
+        "caller_probe_revert_data": "0x",
+        "state_changed": false
+      },
+      "probe_outcomes": {
+        "short_0x32db40c9": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "outsider_0x32db40c9": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "delegate_0x32db40c9": {
+          "status": "revert",
+          "output_or_revert": "0x5b6d2b7a",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "merge_delegate_0x32db40c9": {
+          "status": "ok",
+          "output_or_revert": "0x000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000002bc0000000000000000000000000000000000000000000000000000000000000065",
+          "state_changed": true,
+          "log_count": 2
+        }
+      },
+      "evidence_refs": [
+        "atlas/block_48902346/exchange_library_queue_merge.md",
+        "artifacts/selector_gap_exchange/replay/short_0x32db40c9.txt",
+        "artifacts/selector_gap_exchange/replay/outsider_0x32db40c9.txt",
+        "artifacts/selector_gap_exchange/replay/delegate_0x32db40c9.txt",
+        "artifacts/selector_gap_exchange/replay/merge_delegate_0x32db40c9.txt"
+      ],
+      "undecided": [
+        "Names stay unresolved; the range bound and its error mapping are sampled."
+      ],
+      "synthetic": true
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0x3cf4208d",
+      "runtime_sha256": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2",
+      "entry_pc": 1579,
+      "name_status": "unresolved",
+      "candidate_signature": "",
+      "name_hash_checked": false,
+      "name_source": "unresolved",
+      "abi_shape": {
+        "calldata_words": 6,
+        "calldata_min_bytes": 196,
+        "calldata_offsets_read": [
+          4,
+          36,
+          68,
+          100,
+          132,
+          164
+        ],
+        "return_words": null,
+        "source": "canonical ABI length constant and calldata offsets in the pinned runtime bytes, checked by the replay"
+      },
+      "guard": {
+        "role": "no_caller_check",
+        "evidence": "zero CALLER instructions exist in the whole library runtime; a direct call reverts while a delegatecall executes",
+        "static_caller_checks": [],
+        "library_caller_instructions": 0,
+        "source": "exact-runtime caller probes plus the caller check sites recovered from the pinned bytes"
+      },
+      "documented_behaviour": "Library forward range merge, called by Exchange 0x753a369c.",
+      "writes": [
+        {
+          "probe": "merge_delegate_0x3cf4208d",
+          "slot": "0x503591cabe1352b154b50a68baf1c865f073496eea06c0228848c231622c05b3",
+          "slot_label": "queue user word at mapping base 20",
+          "before": "0x0000000000000000000000000000000000000000000000000000000000000065",
+          "after": "0x0000000000000000000000000000000000000000000000000000000000000066",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_delegate_0x3cf4208d",
+          "slot": "0x0558928f694ce97b3c47e15e6073daedc5d9a03d80d781f131114b6ad8be15e1",
+          "slot_label": "queue node 101 packed links",
+          "before": "0x0000000000000000000000667822efb68be9e458efa6307d3386921b23ac3ade",
+          "after": "0x0000000000000000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_delegate_0x3cf4208d",
+          "slot": "0x0558928f694ce97b3c47e15e6073daedc5d9a03d80d781f131114b6ad8be15e2",
+          "slot_label": "queue node 101 amount",
+          "before": "0x000000000000000000000000000000000000000000000000000000000000012c",
+          "after": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_delegate_0x3cf4208d",
+          "slot": "0x5506ba4625dfdb0f79c9e4cb81b4df4351e694f55476e0f95f19120d6ad731bf",
+          "slot_label": "queue node 102 packed links",
+          "before": "0x0000000000650000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "after": "0x0000000000000000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_delegate_0x3cf4208d",
+          "slot": "0x5506ba4625dfdb0f79c9e4cb81b4df4351e694f55476e0f95f19120d6ad731c0",
+          "slot_label": "queue node 102 amount",
+          "before": "0x00000000000000000000000000000000000000000000000000000000000002bc",
+          "after": "0x00000000000000000000000000000000000000000000000000000000000003e8",
+          "source": "this replay"
+        }
+      ],
+      "documented_writes": [
+        "queue node amounts and packed links at the base slot; this replay reproduces five writes in a two-node state"
+      ],
+      "events": [
+        {
+          "probe": "merge_delegate_0x3cf4208d",
+          "topic0": "0xb8c6723c829f797c1498cb75af97462c6cb9f3784fe7c0c47bcd42cf42ca94fb",
+          "topic_count": 4,
+          "data_bytes": 32,
+          "name_status": "unnamed",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_delegate_0x3cf4208d",
+          "topic0": "0xf949f11686e63f08cadf672fb6db7f7b859cb0fe11f2bf80c57db5429453f0cc",
+          "topic_count": 4,
+          "data_bytes": 64,
+          "name_status": "unnamed",
+          "source": "this replay"
+        }
+      ],
+      "documented_events": [
+        "0xb8c6723c site merge move",
+        "0xf949f116 site merge summary"
+      ],
+      "evidence_tier": "exact_runtime_replay",
+      "evidence_tier_reason": "no saved historical call graph or root transaction for this selector exists in the sampled history, so the behaviour record rests on the pinned-byte static read plus this port-free replay",
+      "rejection_branch": {
+        "short_calldata_probe": "short_0x3cf4208d",
+        "short_calldata_outcome": "revert",
+        "short_calldata_revert_data": "0x",
+        "caller_probe": "outsider_0x3cf4208d",
+        "caller_probe_outcome": "revert",
+        "caller_probe_revert_data": "0x",
+        "state_changed": false
+      },
+      "probe_outcomes": {
+        "short_0x3cf4208d": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "outsider_0x3cf4208d": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "delegate_0x3cf4208d": {
+          "status": "revert",
+          "output_or_revert": "0x5b6d2b7a",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "merge_delegate_0x3cf4208d": {
+          "status": "ok",
+          "output_or_revert": "0x0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000012c0000000000000000000000000000000000000000000000000000000000000066",
+          "state_changed": true,
+          "log_count": 2
+        }
+      },
+      "evidence_refs": [
+        "atlas/block_48902346/exchange_library_queue_merge.md",
+        "artifacts/selector_gap_exchange/replay/short_0x3cf4208d.txt",
+        "artifacts/selector_gap_exchange/replay/outsider_0x3cf4208d.txt",
+        "artifacts/selector_gap_exchange/replay/delegate_0x3cf4208d.txt",
+        "artifacts/selector_gap_exchange/replay/merge_delegate_0x3cf4208d.txt"
+      ],
+      "undecided": [
+        "Names stay unresolved; larger ranges and the limit-1 rejection are the only checked bounds."
+      ],
+      "synthetic": true
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0x3f4e3626",
+      "runtime_sha256": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2",
+      "entry_pc": 1303,
+      "name_status": "unresolved",
+      "candidate_signature": "",
+      "name_hash_checked": false,
+      "name_source": "unresolved",
+      "abi_shape": {
+        "calldata_words": 3,
+        "calldata_min_bytes": 100,
+        "calldata_offsets_read": [
+          4,
+          36,
+          68
+        ],
+        "return_words": null,
+        "source": "canonical ABI length constant and calldata offsets in the pinned runtime bytes, checked by the replay"
+      },
+      "guard": {
+        "role": "no_caller_check",
+        "evidence": "zero CALLER instructions exist in the whole library runtime; a direct call reverts while a delegatecall executes",
+        "static_caller_checks": [],
+        "library_caller_instructions": 0,
+        "source": "exact-runtime caller probes plus the caller check sites recovered from the pinned bytes"
+      },
+      "documented_behaviour": "Library dequeue(base, user, amount): clears or reduces the user's newest queue node and advances the global head.",
+      "writes": [
+        {
+          "probe": "delegate_0x3f4e3626",
+          "slot": "0x0000000000000000000000000000000000000000000000000000000000000010",
+          "slot_label": "slot 16 queue global head",
+          "before": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "after": "0x0000000000000000000000000000000000000000000000000000000000000001",
+          "source": "this replay"
+        }
+      ],
+      "documented_writes": [
+        "global head and next-id words plus the node amount at the base slot"
+      ],
+      "events": [
+        {
+          "probe": "delegate_0x3f4e3626",
+          "topic0": "0x4c672bd1e7444966ce521bc0f053d4f359f1fad9cfe6a43011c00baac6278e4d",
+          "topic_count": 2,
+          "data_bytes": 32,
+          "name_status": "unnamed library dequeue event",
+          "source": "this replay"
+        }
+      ],
+      "documented_events": [
+        "0x4c672bd1e7444966ce521bc0f053d4f359f1fad9cfe6a43011c00baac6278e4d, indexed by user with the requested amount as data"
+      ],
+      "evidence_tier": "exact_runtime_replay",
+      "evidence_tier_reason": "no saved historical call graph or root transaction for this selector exists in the sampled history, so the behaviour record rests on the pinned-byte static read plus this port-free replay",
+      "rejection_branch": {
+        "short_calldata_probe": "short_0x3f4e3626",
+        "short_calldata_outcome": "revert",
+        "short_calldata_revert_data": "0x",
+        "caller_probe": "outsider_0x3f4e3626",
+        "caller_probe_outcome": "revert",
+        "caller_probe_revert_data": "0x",
+        "state_changed": false
+      },
+      "probe_outcomes": {
+        "short_0x3f4e3626": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "outsider_0x3f4e3626": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "delegate_0x3f4e3626": {
+          "status": "ok",
+          "output_or_revert": "0x",
+          "state_changed": true,
+          "log_count": 1
+        }
+      },
+      "evidence_refs": [
+        "atlas/block_48902346/exchange_library_remaining.md",
+        "artifacts/selector_gap_exchange/replay/short_0x3f4e3626.txt",
+        "artifacts/selector_gap_exchange/replay/outsider_0x3f4e3626.txt",
+        "artifacts/selector_gap_exchange/replay/delegate_0x3f4e3626.txt"
+      ],
+      "undecided": [
+        "The event name and its exact source type remain unresolved; an over-request emits the requested amount, not the cleared amount."
+      ],
+      "synthetic": true
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0xb67f3dd7",
+      "runtime_sha256": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2",
+      "entry_pc": 349,
+      "name_status": "unresolved",
+      "candidate_signature": "",
+      "name_hash_checked": false,
+      "name_source": "unresolved",
+      "abi_shape": {
+        "calldata_words": 7,
+        "calldata_min_bytes": 228,
+        "calldata_offsets_read": [
+          4,
+          36,
+          68,
+          100,
+          132,
+          164,
+          196
+        ],
+        "return_words": 1,
+        "source": "canonical ABI length constant and calldata offsets in the pinned runtime bytes, checked by the replay"
+      },
+      "guard": {
+        "role": "no_caller_check",
+        "evidence": "zero CALLER instructions exist in the whole library runtime; this pure path succeeds on a direct call as well",
+        "static_caller_checks": [],
+        "library_caller_instructions": 0,
+        "source": "exact-runtime caller probes plus the caller check sites recovered from the pinned bytes"
+      },
+      "documented_behaviour": "Seven-word arithmetic function returning one word; the checked integer order matches 40 vectors and an archived opcode trace.",
+      "writes": [
+        {
+          "source": "none observed in this replay"
+        }
+      ],
+      "documented_writes": [],
+      "events": [
+        {
+          "source": "none observed in this replay"
+        }
+      ],
+      "documented_events": [],
+      "evidence_tier": "exact_runtime_replay",
+      "evidence_tier_reason": "no saved historical call graph or root transaction for this selector exists in the sampled history, so the behaviour record rests on the pinned-byte static read plus this port-free replay",
+      "rejection_branch": {
+        "short_calldata_probe": "short_0xb67f3dd7",
+        "short_calldata_outcome": "revert",
+        "short_calldata_revert_data": "0x",
+        "caller_probe": "outsider_0xb67f3dd7",
+        "caller_probe_outcome": "ok",
+        "caller_probe_revert_data": "0x0000000000000000000000000000000000000000000000000000001748753a50",
+        "state_changed": false
+      },
+      "probe_outcomes": {
+        "short_0xb67f3dd7": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "outsider_0xb67f3dd7": {
+          "status": "ok",
+          "output_or_revert": "0x0000000000000000000000000000000000000000000000000000001748753a50",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "delegate_0xb67f3dd7": {
+          "status": "ok",
+          "output_or_revert": "0x0000000000000000000000000000000000000000000000000000001748753a50",
+          "state_changed": false,
+          "log_count": 0
+        }
+      },
+      "evidence_refs": [
+        "atlas/block_48902346/exchange_library_remaining.md",
+        "artifacts/exchange_library_remaining_local/opcode_trace17.json",
+        "artifacts/selector_gap_exchange/replay/short_0xb67f3dd7.txt",
+        "artifacts/selector_gap_exchange/replay/outsider_0xb67f3dd7.txt",
+        "artifacts/selector_gap_exchange/replay/delegate_0xb67f3dd7.txt"
+      ],
+      "undecided": [
+        "Argument labels are placeholders; extreme inputs and the source name remain open.",
+        "cast classifies it payable, but both a direct call and a delegatecall return a word and write nothing.",
+        "No write set is observed on the probed path; the documented write set comes from the cited artifacts."
+      ],
+      "synthetic": true
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0xca02ff91",
+      "runtime_sha256": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2",
+      "entry_pc": 283,
+      "name_status": "unresolved",
+      "candidate_signature": "",
+      "name_hash_checked": false,
+      "name_source": "unresolved",
+      "abi_shape": {
+        "calldata_words": 4,
+        "calldata_min_bytes": 132,
+        "calldata_offsets_read": [
+          4,
+          36,
+          68,
+          100
+        ],
+        "return_words": null,
+        "source": "canonical ABI length constant and calldata offsets in the pinned runtime bytes, checked by the replay"
+      },
+      "guard": {
+        "role": "no_caller_check",
+        "evidence": "zero CALLER instructions exist in the whole library runtime; a direct call reverts while a delegatecall executes",
+        "static_caller_checks": [],
+        "library_caller_instructions": 0,
+        "source": "exact-runtime caller probes plus the caller check sites recovered from the pinned bytes"
+      },
+      "documented_behaviour": "Library headward count-based merge, called by Exchange 0x4a4d9eea.",
+      "writes": [
+        {
+          "probe": "merge_delegate_0xca02ff91",
+          "slot": "0x8b8e368e134b39ae993a74702581e80b63aa5f7c2f90fa0a7485b3f422ff27f8",
+          "slot_label": "queue user word at mapping base 21",
+          "before": "0x0000000000000000000000000000000000000000000000000000000000000066",
+          "after": "0x0000000000000000000000000000000000000000000000000000000000000065",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_delegate_0xca02ff91",
+          "slot": "0x0558928f694ce97b3c47e15e6073daedc5d9a03d80d781f131114b6ad8be15e1",
+          "slot_label": "queue node 101 packed links",
+          "before": "0x0000000000000000000000667822efb68be9e458efa6307d3386921b23ac3ade",
+          "after": "0x0000000000000000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_delegate_0xca02ff91",
+          "slot": "0x0558928f694ce97b3c47e15e6073daedc5d9a03d80d781f131114b6ad8be15e2",
+          "slot_label": "queue node 101 amount",
+          "before": "0x000000000000000000000000000000000000000000000000000000000000012c",
+          "after": "0x00000000000000000000000000000000000000000000000000000000000003e8",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_delegate_0xca02ff91",
+          "slot": "0x5506ba4625dfdb0f79c9e4cb81b4df4351e694f55476e0f95f19120d6ad731bf",
+          "slot_label": "queue node 102 packed links",
+          "before": "0x0000000000650000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "after": "0x0000000000000000000000007822efb68be9e458efa6307d3386921b23ac3ade",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_delegate_0xca02ff91",
+          "slot": "0x5506ba4625dfdb0f79c9e4cb81b4df4351e694f55476e0f95f19120d6ad731c0",
+          "slot_label": "queue node 102 amount",
+          "before": "0x00000000000000000000000000000000000000000000000000000000000002bc",
+          "after": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "source": "this replay"
+        }
+      ],
+      "documented_writes": [
+        "queue node amounts and packed links at the base slot on the merge paths"
+      ],
+      "events": [
+        {
+          "probe": "merge_delegate_0xca02ff91",
+          "topic0": "0xb8c6723c829f797c1498cb75af97462c6cb9f3784fe7c0c47bcd42cf42ca94fb",
+          "topic_count": 4,
+          "data_bytes": 32,
+          "name_status": "unnamed",
+          "source": "this replay"
+        },
+        {
+          "probe": "merge_delegate_0xca02ff91",
+          "topic0": "0xf949f11686e63f08cadf672fb6db7f7b859cb0fe11f2bf80c57db5429453f0cc",
+          "topic_count": 4,
+          "data_bytes": 64,
+          "name_status": "unnamed",
+          "source": "this replay"
+        }
+      ],
+      "documented_events": [
+        "0xb8c6723c site merge move",
+        "0xf949f116 site merge summary"
+      ],
+      "evidence_tier": "exact_runtime_replay",
+      "evidence_tier_reason": "no saved historical call graph or root transaction for this selector exists in the sampled history, so the behaviour record rests on the pinned-byte static read plus this port-free replay",
+      "rejection_branch": {
+        "short_calldata_probe": "short_0xca02ff91",
+        "short_calldata_outcome": "revert",
+        "short_calldata_revert_data": "0x",
+        "caller_probe": "outsider_0xca02ff91",
+        "caller_probe_outcome": "revert",
+        "caller_probe_revert_data": "0x",
+        "state_changed": false
+      },
+      "probe_outcomes": {
+        "short_0xca02ff91": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "outsider_0xca02ff91": {
+          "status": "revert",
+          "output_or_revert": "0x",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "delegate_0xca02ff91": {
+          "status": "ok",
+          "output_or_revert": "0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "state_changed": false,
+          "log_count": 0
+        },
+        "merge_delegate_0xca02ff91": {
+          "status": "ok",
+          "output_or_revert": "0x000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000002bc0000000000000000000000000000000000000000000000000000000000000065",
+          "state_changed": true,
+          "log_count": 2
+        }
+      },
+      "evidence_refs": [
+        "atlas/block_48902346/exchange_library_queue_count_merge.md",
+        "artifacts/selector_gap_exchange/replay/short_0xca02ff91.txt",
+        "artifacts/selector_gap_exchange/replay/outsider_0xca02ff91.txt",
+        "artifacts/selector_gap_exchange/replay/delegate_0xca02ff91.txt",
+        "artifacts/selector_gap_exchange/replay/merge_delegate_0xca02ff91.txt"
+      ],
+      "undecided": [
+        "Names stay unresolved; a later node belonging to another user stops the count-based path in the sampled states."
+      ],
+      "synthetic": true
+    }
+  ],
+  "method": {
+    "static": "cast disassemble of the pinned runtime bytes, local keccak name checks, caller-check and calldata-shape recovery",
+    "replay": "../../artifacts/selector_gap_exchange/replay.json",
+    "static_analysis": "../../artifacts/selector_gap_exchange/static_analysis.json",
+    "replay_records": "../../artifacts/selector_gap_exchange/replay/",
+    "recording_step": "../../artifacts/selector_gap_exchange/observed_replay.json (written by --record before the expectations were frozen)"
+  },
+  "caller_census": {
+    "library_caller_instructions": 0,
+    "exchange_caller_instructions": 19,
+    "library_note": "zero CALLER instructions in the whole linked-library runtime"
+  },
+  "runtime_topic_census": {
+    "exchange": {
+      "0xe4af0531d4ba8c578b5076b042e4505372fb4f4986aea8ebf77f4ff1585e3e75": {
+        "label": "FeeRatesUpdated(uint256,uint256,uint256)",
+        "runtime_byte_offset": 4296
+      },
+      "0xa4abec9259618fb7d014c89824b2887f61e3ab2b382d4a48a42dfde43cec5d6e": {
+        "label": "TradingPausedUpdated(bool)",
+        "runtime_byte_offset": 6847
+      },
+      "0x6b3ffd50ed0810416007b5dbbae587b9d8801c50bf8065cda8eb82011bed314e": {
+        "label": "PauseGuardianUpdated(address)",
+        "runtime_byte_offset": 10735
+      },
+      "0x62db1b2b923b6f20043c492d3586df1a823e447c63e44d15dbc90c1a3bc9fcc5": {
+        "label": "unnamed instrument-field event",
+        "runtime_byte_offset": 4833
+      },
+      "0x76a319771459e5329ebc7830ef30b80fc54d20327f8b4946a9539e53c46018c9": {
+        "label": "unnamed instrument admin event",
+        "runtime_byte_offset": 9846
+      },
+      "0x25e933a27e6487478d7617f2f4ef2f5c77355faf6cad2e6fd7c4b8d029930d9f": {
+        "label": "unnamed market pause event",
+        "runtime_byte_offset": 22935
+      }
+    },
+    "library": {
+      "0xb8c6723c829f797c1498cb75af97462c6cb9f3784fe7c0c47bcd42cf42ca94fb": {
+        "label": "queue move",
+        "runtime_byte_offset": 5705
+      },
+      "0xf949f11686e63f08cadf672fb6db7f7b859cb0fe11f2bf80c57db5429453f0cc": {
+        "label": "queue merge summary",
+        "runtime_byte_offset": 5673
+      },
+      "0xb2f6a0be3228032ab1a6e4d114ab0a4b8277ef32d9bd9b666e8537200aed4dc7": {
+        "label": "Enqueued(address,uint256,uint256), hash-checked and present in the library runtime",
+        "runtime_byte_offset": 3036
+      }
+    }
+  },
+  "unnamed_error_selectors": {
+    "0x5b6d2b7a": "library queue-range or merge-limit error",
+    "0x0ce40f51": "instrument ID bound error at helper 0x4af4",
+    "0xb0cb274d": "instrument field validation error"
+  },
+  "observed_revert_selectors": {
+    "0x924d25e6": {
+      "selectors": [
+        "0x415f1240"
+      ],
+      "exchange": {
+        "push4_immediates": [],
+        "byte_offset": -1
+      },
+      "library": {
+        "push4_immediates": [],
+        "byte_offset": -1
+      },
+      "name": ""
+    },
+    "0xcd4e6167": {
+      "selectors": [
+        "0xe538b280"
+      ],
+      "exchange": {
+        "push4_immediates": [
+          4362
+        ],
+        "byte_offset": 4363
+      },
+      "library": {
+        "push4_immediates": [],
+        "byte_offset": -1
+      },
+      "name": "FeeTooHigh()"
+    },
+    "0x5b6d2b7a": {
+      "selectors": [
+        "0x32db40c9",
+        "0x3cf4208d",
+        "0x753a369c",
+        "0x827ad94c"
+      ],
+      "exchange": {
+        "push4_immediates": [],
+        "byte_offset": -1
+      },
+      "library": {
+        "push4_immediates": [],
+        "byte_offset": -1
+      },
+      "name": "library queue-range or merge-limit error"
+    },
+    "0xddeb79ba": {
+      "selectors": [
+        "0x415f1240"
+      ],
+      "exchange": {
+        "push4_immediates": [],
+        "byte_offset": -1
+      },
+      "library": {
+        "push4_immediates": [],
+        "byte_offset": -1
+      },
+      "name": "NotLiquidatable()"
+    },
+    "0x49199fb6": {
+      "selectors": [
+        "0x2d2451d1",
+        "0xae69b95b"
+      ],
+      "exchange": {
+        "push4_immediates": [],
+        "byte_offset": -1
+      },
+      "library": {
+        "push4_immediates": [],
+        "byte_offset": -1
+      },
+      "name": "NotPauseAuthority()"
+    },
+    "0x94e88a21": {
+      "selectors": [
+        "0x415f1240"
+      ],
+      "exchange": {
+        "push4_immediates": [
+          11802
+        ],
+        "byte_offset": 11803
+      },
+      "library": {
+        "push4_immediates": [],
+        "byte_offset": -1
+      },
+      "name": "PositionNotOpen()"
+    },
+    "0x0dc149f0": {
+      "selectors": [
+        "0xc0c53b8b"
+      ],
+      "exchange": {
+        "push4_immediates": [],
+        "byte_offset": -1
+      },
+      "library": {
+        "push4_immediates": [],
+        "byte_offset": -1
+      },
+      "name": "AlreadyInitialized()"
+    },
+    "0x67207a88": {
+      "selectors": [
+        "0x2d2451d1",
+        "0x5ca4c0ea"
+      ],
+      "exchange": {
+        "push4_immediates": [],
+        "byte_offset": -1
+      },
+      "library": {
+        "push4_immediates": [],
+        "byte_offset": -1
+      },
+      "name": "InvalidInstrumentId()"
+    },
+    "0x967d697b": {
+      "selectors": [
+        "0x01681a62"
+      ],
+      "exchange": {
+        "push4_immediates": [
+          20875
+        ],
+        "byte_offset": 20876
+      },
+      "library": {
+        "push4_immediates": [],
+        "byte_offset": -1
+      },
+      "name": ""
+    },
+    "0x30cd7471": {
+      "selectors": [
+        "0x5ca4c0ea",
+        "0x6a3214c9",
+        "0xd7c7e5fb",
+        "0xe538b280"
+      ],
+      "exchange": {
+        "push4_immediates": [
+          19053
+        ],
+        "byte_offset": 19054
+      },
+      "library": {
+        "push4_immediates": [],
+        "byte_offset": -1
+      },
+      "name": "NotOwner()"
+    },
+    "0xb0cb274d": {
+      "selectors": [
+        "0xd7c7e5fb"
+      ],
+      "exchange": {
+        "push4_immediates": [
+          4928
+        ],
+        "byte_offset": 4929
+      },
+      "library": {
+        "push4_immediates": [],
+        "byte_offset": -1
+      },
+      "name": "instrument field validation error"
+    }
+  },
+  "limits": [
+    "No assigned selector has a saved historical trace, so no row claims historical-trace evidence.",
+    "The static region walk follows direct jumps only and can miss a check reached through a computed jump.",
+    "Names taken from the public ABI fixture or the resolved caller-check table stay candidates, not verified source.",
+    "Every replay result is a simulation on etched pinned bytecode, never an on-chain execution."
+  ]
+}

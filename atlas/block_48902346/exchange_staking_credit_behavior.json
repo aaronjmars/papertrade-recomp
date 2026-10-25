@@ -1,0 +1,445 @@
+{
+  "pin_block": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "staking_proxy": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+  "selector_reconstructions": {
+    "0xe53e3de6": "creditStakingReward(address,uint256)"
+  },
+  "event_catalog": [
+    {
+      "topic0": "0xe7fd56edb8bf641db0dc0a89a9d7d3a10da1fedab015ab0c51f1c418d2bc15b0",
+      "reconstructed_signature": "StakingRewardCredited(address,uint256)",
+      "status": "observed_historical_topic"
+    }
+  ],
+  "historical_transaction_count": 7,
+  "historical_call_count": 27,
+  "read_only_probe_count": 4,
+  "probe_results": {
+    "staking_one": {
+      "error": null,
+      "revert_data": "0x",
+      "log_count": 1
+    },
+    "staking_zero": {
+      "error": null,
+      "revert_data": "0x",
+      "log_count": 0
+    },
+    "staking_huge": {
+      "error": "execution reverted",
+      "revert_data": "0xf4d678b8",
+      "log_count": 0
+    },
+    "outsider": {
+      "error": "execution reverted",
+      "revert_data": "0x538ccdfd",
+      "log_count": 0
+    }
+  },
+  "transactions": [
+    {
+      "tx": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+      "block": 48902137,
+      "call_count": 1,
+      "event_count": 1,
+      "total_credited": "2600758441858681628",
+      "staking_balance_slot": "0xd58dad47cd91e985195a3bd4bbd13ee356f80af8ef858a190ba13c1c642d4cd6",
+      "staking_balance_delta": "-2600758441858681628",
+      "calls": [
+        {
+          "user": "0x5554e4d307e6f24ee868e31fcf3effedba20e457",
+          "amount": "2600758441858681628"
+        }
+      ],
+      "recipient_balances": [
+        {
+          "user": "0x5554e4d307e6f24ee868e31fcf3effedba20e457",
+          "slot": "0xa3edef72758a4cddceb0bbebee47153091fb23dbce7b00a9b0fcfaf8ce7b1491",
+          "credited": "2600758441858681628",
+          "same_tx_withdrawal": "18270000000000000000",
+          "observed_delta": "-15669241558141318372"
+        }
+      ]
+    },
+    {
+      "tx": "0x44d34a2ac0a36042f6ecd850ebc63f738b708d0a27d5993f8b7d9250e77c88cb",
+      "block": 48902325,
+      "call_count": 4,
+      "event_count": 4,
+      "total_credited": "11963324988037893443",
+      "staking_balance_slot": "0xd58dad47cd91e985195a3bd4bbd13ee356f80af8ef858a190ba13c1c642d4cd6",
+      "staking_balance_delta": "-11963324988037893443",
+      "calls": [
+        {
+          "user": "0x57e5539fc4a57e00ec1fbba7786d1f03e4fa7218",
+          "amount": "7125590029467355"
+        },
+        {
+          "user": "0x1ac1b6a28bc325b7d23c9e180dd1a3c122893531",
+          "amount": "11861876135829050759"
+        },
+        {
+          "user": "0xf3aa98af36a33ec940155a832a8cf120f0464710",
+          "amount": "74931274492186053"
+        },
+        {
+          "user": "0x1eee2984a6d47324d8742dfb3df58ce7dbe7e495",
+          "amount": "19391987687189276"
+        }
+      ],
+      "recipient_balances": [
+        {
+          "user": "0x1ac1b6a28bc325b7d23c9e180dd1a3c122893531",
+          "slot": "0xa997d1ebd0ce42197066abbce56b3427d9d0b82dc8bc5872ff1dafd93bda01d3",
+          "credited": "11861876135829050759",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "11861876135829050759"
+        },
+        {
+          "user": "0x1eee2984a6d47324d8742dfb3df58ce7dbe7e495",
+          "slot": "0x1765af22a3686eebd0315ae350d982cef4d595e5747e094b4dfbcce81281228a",
+          "credited": "19391987687189276",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "19391987687189276"
+        },
+        {
+          "user": "0x57e5539fc4a57e00ec1fbba7786d1f03e4fa7218",
+          "slot": "0xa1d43c223227cf4fd879bd8e92a6d4099c051825e7bba572ae3461cda0da4562",
+          "credited": "7125590029467355",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "7125590029467355"
+        },
+        {
+          "user": "0xf3aa98af36a33ec940155a832a8cf120f0464710",
+          "slot": "0x8e6159de6940c8abe5d2ccdd63ec67189c755ef5e1607e95dc7906525547ae87",
+          "credited": "74931274492186053",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "74931274492186053"
+        }
+      ]
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "block": 48902264,
+      "call_count": 17,
+      "event_count": 17,
+      "total_credited": "130222497545723217193",
+      "staking_balance_slot": "0xd58dad47cd91e985195a3bd4bbd13ee356f80af8ef858a190ba13c1c642d4cd6",
+      "staking_balance_delta": "-130222497545723217193",
+      "calls": [
+        {
+          "user": "0xff8b7e7217f73d84acb070e770d223126594db2f",
+          "amount": "38961193421240642"
+        },
+        {
+          "user": "0x2957e3eb7ec343cbb99ecdd932949c756657a33a",
+          "amount": "17687154099340418838"
+        },
+        {
+          "user": "0xa453716c1066033fb4fd76cc1fd6bbb1261c9413",
+          "amount": "6786520528715626275"
+        },
+        {
+          "user": "0x140ce8ed2a187ac4199ef9b23f82a18e56e94c02",
+          "amount": "6679743237795016388"
+        },
+        {
+          "user": "0xcec90125326c941c51ade6d0b44093ab1036df73",
+          "amount": "22714869833420743966"
+        },
+        {
+          "user": "0x9a470cccf5c1501d9c06fcc63c71d2a3998f76bc",
+          "amount": "4647269044917668476"
+        },
+        {
+          "user": "0x2d6a20a39b4ee15a5a4d07ef30dfe5854db8d1ac",
+          "amount": "10787352222673836"
+        },
+        {
+          "user": "0x97a25a2a9f284c1bebdebf18b3fe46d07bfe1513",
+          "amount": "779515840277110899"
+        },
+        {
+          "user": "0x5f602b21d88de0f8caa74e6c53ddd249ec6bfeb6",
+          "amount": "48222456720839227355"
+        },
+        {
+          "user": "0x91057a092837b20e7c84222ffd125848fac89e1d",
+          "amount": "3841064155984178466"
+        },
+        {
+          "user": "0x832526ea653762c0cf9d47b22b318ca04de17ac0",
+          "amount": "144849606332949680"
+        },
+        {
+          "user": "0xf8f581aa719b01e79068068c7ee406543a41bc51",
+          "amount": "10684148948982785"
+        },
+        {
+          "user": "0x0587d084d467c80512a182abd69079467b09a7a4",
+          "amount": "25731175245449432"
+        },
+        {
+          "user": "0x7ba6ba46d1bdacb999330a17e04e3ecfcb1228cf",
+          "amount": "12517361692157927"
+        },
+        {
+          "user": "0xdde09aa0f5c06317b2130d0cf021fb618a1896ca",
+          "amount": "43813435637832057"
+        },
+        {
+          "user": "0x500ada87c25260875f8045882b4b0fdc362ef449",
+          "amount": "9253172818403917"
+        },
+        {
+          "user": "0xce370ebcbc655f845df7dfb8c079e75b5ea17d93",
+          "amount": "18567306638113536254"
+        }
+      ],
+      "recipient_balances": [
+        {
+          "user": "0x0587d084d467c80512a182abd69079467b09a7a4",
+          "slot": "0x121597f2f8d0b448606c050cbf8d69240b089faa4b457fcf62f059f6bf556aec",
+          "credited": "25731175245449432",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "25731175245449432"
+        },
+        {
+          "user": "0x140ce8ed2a187ac4199ef9b23f82a18e56e94c02",
+          "slot": "0x3bcb7ac211cb5f01cd92d3e5027e1949415e86f6734441d3dfdf342865b465eb",
+          "credited": "6679743237795016388",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "6679743237795016388"
+        },
+        {
+          "user": "0x2957e3eb7ec343cbb99ecdd932949c756657a33a",
+          "slot": "0xa9b1efe622cde7531e53c95f65d7d9d2738552e9885bb86f55c230de50e67720",
+          "credited": "17687154099340418838",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "17687154099340418838"
+        },
+        {
+          "user": "0x2d6a20a39b4ee15a5a4d07ef30dfe5854db8d1ac",
+          "slot": "0xc2c3c2feee2ffd2c3c3e3e3edcf66b1609de883bed581f0e56264ad1ce3b9b49",
+          "credited": "10787352222673836",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "10787352222673836"
+        },
+        {
+          "user": "0x500ada87c25260875f8045882b4b0fdc362ef449",
+          "slot": "0x7102a6fd2754e39bea4558532660fa03c3a718d1eabf43f5f943a36fabb0a359",
+          "credited": "9253172818403917",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "9253172818403917"
+        },
+        {
+          "user": "0x5f602b21d88de0f8caa74e6c53ddd249ec6bfeb6",
+          "slot": "0xa73a705f6df6b07ee7752239c4bd04cc92296aa0874b2b26a616e61d2e724ebb",
+          "credited": "48222456720839227355",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "48222456720839227355"
+        },
+        {
+          "user": "0x7ba6ba46d1bdacb999330a17e04e3ecfcb1228cf",
+          "slot": "0xc509c83e14f82530e6737b93d4e4dd5f1ef37a50a1d64f5f08125fe43f3cc85c",
+          "credited": "12517361692157927",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "12517361692157927"
+        },
+        {
+          "user": "0x832526ea653762c0cf9d47b22b318ca04de17ac0",
+          "slot": "0xc71746d1a6ac432edc586a3ce1c2c6c352f264aa66152ead97ad080408bb5178",
+          "credited": "144849606332949680",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "144849606332949680"
+        },
+        {
+          "user": "0x91057a092837b20e7c84222ffd125848fac89e1d",
+          "slot": "0x7cf159e0808c04ce0497313029c3335c41e82288c81951f11101928a3127fe93",
+          "credited": "3841064155984178466",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "3841064155984178466"
+        },
+        {
+          "user": "0x97a25a2a9f284c1bebdebf18b3fe46d07bfe1513",
+          "slot": "0xe0f705e213930f150e748c556051c155d20fbccb7acef092237b883402c7a000",
+          "credited": "779515840277110899",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "779515840277110899"
+        },
+        {
+          "user": "0x9a470cccf5c1501d9c06fcc63c71d2a3998f76bc",
+          "slot": "0x7a3424017dedb1b7614547606c2c5d2de6a42ea3a0fa79a1a2bcf18e5f57be16",
+          "credited": "4647269044917668476",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "4647269044917668476"
+        },
+        {
+          "user": "0xa453716c1066033fb4fd76cc1fd6bbb1261c9413",
+          "slot": "0x5a5f77e509d78ad8c807c4adf875430adbb555d2332bd44059d5e8a0e777acb3",
+          "credited": "6786520528715626275",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "6786520528715626275"
+        },
+        {
+          "user": "0xce370ebcbc655f845df7dfb8c079e75b5ea17d93",
+          "slot": "0x8664671a91a8261b81e8870106253c08a189903be97b760b8d1ef677934b4ea1",
+          "credited": "18567306638113536254",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "18567306638113536254"
+        },
+        {
+          "user": "0xcec90125326c941c51ade6d0b44093ab1036df73",
+          "slot": "0xbec090479a07026bdbf7653f959eff2c957cb31ecf30cfcc61357d5179d6faea",
+          "credited": "22714869833420743966",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "22714869833420743966"
+        },
+        {
+          "user": "0xdde09aa0f5c06317b2130d0cf021fb618a1896ca",
+          "slot": "0xdba5e90622297fa032ac92dfcee97470db545a1c0831eb0db878a4bc170f4c58",
+          "credited": "43813435637832057",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "43813435637832057"
+        },
+        {
+          "user": "0xf8f581aa719b01e79068068c7ee406543a41bc51",
+          "slot": "0x94f97032f7428db553c2e08ca1fba6b92d12af4dc44b2dc72d5203f79318087b",
+          "credited": "10684148948982785",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "10684148948982785"
+        },
+        {
+          "user": "0xff8b7e7217f73d84acb070e770d223126594db2f",
+          "slot": "0x659df40f5e94b6ed70eb5a47c1b0983d1e747cae48c141d0b16be136c9e6d720",
+          "credited": "38961193421240642",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "38961193421240642"
+        }
+      ]
+    },
+    {
+      "tx": "0x726340c233749d1bdb8bea903e4c8cc6ab17923527ed51abc77c91f0e7b3e22e",
+      "block": 48902204,
+      "call_count": 1,
+      "event_count": 1,
+      "total_credited": "1128934403828262549",
+      "staking_balance_slot": "0xd58dad47cd91e985195a3bd4bbd13ee356f80af8ef858a190ba13c1c642d4cd6",
+      "staking_balance_delta": "-1128934403828262549",
+      "calls": [
+        {
+          "user": "0x84378acede6b06259294a4b240ee363f172e0a0d",
+          "amount": "1128934403828262549"
+        }
+      ],
+      "recipient_balances": [
+        {
+          "user": "0x84378acede6b06259294a4b240ee363f172e0a0d",
+          "slot": "0xd836871a7a8f3361de1a6742a238bb211c2382e886268df5314187096f8eb260",
+          "credited": "1128934403828262549",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "1128934403828262549"
+        }
+      ]
+    },
+    {
+      "tx": "0x94192d521e62d362196076f7b0e03ea403aca75f4ec40257ef6ce259bf563a4d",
+      "block": 48902295,
+      "call_count": 2,
+      "event_count": 2,
+      "total_credited": "1892504856391231273",
+      "staking_balance_slot": "0xd58dad47cd91e985195a3bd4bbd13ee356f80af8ef858a190ba13c1c642d4cd6",
+      "staking_balance_delta": "-1892504856391231273",
+      "calls": [
+        {
+          "user": "0x4cdfb1352dbb17445dae82913cb5f92f540d0c1b",
+          "amount": "1303452546457362242"
+        },
+        {
+          "user": "0xca20413f12a2967d6bf70d072d07d406557f94a8",
+          "amount": "589052309933869031"
+        }
+      ],
+      "recipient_balances": [
+        {
+          "user": "0x4cdfb1352dbb17445dae82913cb5f92f540d0c1b",
+          "slot": "0xe464d4678857d65143bb8db9ce15b3e3fca00ba1082499cc703c430eaf2b536f",
+          "credited": "1303452546457362242",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "1303452546457362242"
+        },
+        {
+          "user": "0xca20413f12a2967d6bf70d072d07d406557f94a8",
+          "slot": "0xc63748d3d2df19505b4b82fae3e46945b546e6d7f39d8c457b7bd857c105de3e",
+          "credited": "589052309933869031",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "589052309933869031"
+        }
+      ]
+    },
+    {
+      "tx": "0xac4e0883756cb4912c51f20d7d8ce84d798ccdda4e455c2c6242af5a8f139009",
+      "block": 48902124,
+      "call_count": 1,
+      "event_count": 1,
+      "total_credited": "1247732696091412447",
+      "staking_balance_slot": "0xd58dad47cd91e985195a3bd4bbd13ee356f80af8ef858a190ba13c1c642d4cd6",
+      "staking_balance_delta": "-1247732696091412447",
+      "calls": [
+        {
+          "user": "0x98438465100a198798b1add373784323c67a8a26",
+          "amount": "1247732696091412447"
+        }
+      ],
+      "recipient_balances": [
+        {
+          "user": "0x98438465100a198798b1add373784323c67a8a26",
+          "slot": "0xf0b878f890abdb96e63b131fe26732bf0a3e0fad3be878e299feb97771de72e9",
+          "credited": "1247732696091412447",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "1247732696091412447"
+        }
+      ]
+    },
+    {
+      "tx": "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d",
+      "block": 48901640,
+      "call_count": 1,
+      "event_count": 1,
+      "total_credited": "27928178134822247776",
+      "staking_balance_slot": "0xd58dad47cd91e985195a3bd4bbd13ee356f80af8ef858a190ba13c1c642d4cd6",
+      "staking_balance_delta": "-27928178134822247776",
+      "calls": [
+        {
+          "user": "0x4c58299685ce0f55e0cb8a1c8d03863f2594ff3d",
+          "amount": "27928178134822247776"
+        }
+      ],
+      "recipient_balances": [
+        {
+          "user": "0x4c58299685ce0f55e0cb8a1c8d03863f2594ff3d",
+          "slot": "0xe7786d7767b61662afe54392de1d0f1723c16e80e823544ba268ca236f2e7c63",
+          "credited": "27928178134822247776",
+          "same_tx_withdrawal": "0",
+          "observed_delta": "27928178134822247776"
+        }
+      ]
+    }
+  ],
+  "checked_behavior": [
+    "all historical calls originate from the Staking proxy",
+    "each call delegates to the pinned Exchange implementation",
+    "call arguments match StakingRewardCredited logs in order",
+    "Staking balance at mapping base 9 falls by the sum of credits",
+    "recipient balances at mapping base 9 rise by each credit, adjusted for one same-transaction signed withdrawal",
+    "pinned read-only probes verify one-unit transfer, zero-amount no-op, outsider rejection, and overdraw rejection"
+  ],
+  "limitations": [
+    "Historical transactions cover only successful positive credits; boundary branches use read-only simulations.",
+    "The caller and balance error selectors are checked as raw revert bytes; their source names remain unverified for this function.",
+    "The public name is hash-matched and behavior-backed but original Solidity source is unavailable."
+  ]
+}

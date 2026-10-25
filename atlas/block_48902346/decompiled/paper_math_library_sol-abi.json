@@ -1,0 +1,39 @@
+[
+  {
+    "type": "function",
+    "name": "Unresolved_7aac24ba",
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "uint256"
+      },
+      {
+        "name": "arg1",
+        "type": "uint256"
+      },
+      {
+        "name": "arg2",
+        "type": "uint256"
+      },
+      {
+        "name": "arg3",
+        "type": "uint256"
+      },
+      {
+        "name": "arg4",
+        "type": "uint256"
+      },
+      {
+        "name": "arg5",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "pure"
+  }
+]

@@ -1,0 +1,294 @@
+{
+  "pin_block": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "selector_reconstructions": {
+    "0x837fa3fd": "setSessionKeyManager(address)",
+    "0x86d506db": "changeDevFeeAddress(address)",
+    "0xa0bf0f75": "setPaperTokenomics(address)",
+    "0xd188c049": "setAuthorizedExecutor(address)",
+    "0xefc1bd46": "setAuthorizedKeeper(address)",
+    "0xfbddd751": "setProxyFactory(address)",
+    "0xf2fde38b": "transferOwnership(address)"
+  },
+  "setter_rows": [
+    {
+      "selector": "0x837fa3fd",
+      "signature": "setSessionKeyManager(address)",
+      "storage_slot": 29,
+      "address_shift_bits": 8,
+      "old_word": "0x00000000000000000000008326eb8896e358717f10502ec73ce8d28e37b10800",
+      "owner_new": {
+        "new_address": "0x1111111111111111111111111111111111111111",
+        "post_word": "0x0000000000000000000000111111111111111111111111111111111111111100",
+        "topic0": "0x4d57218e59793e6845c36a961c3af7acfce8c54b13a697da231466fc265fdb61",
+        "indexed_address": "0x1111111111111111111111111111111111111111"
+      },
+      "owner_zero": {
+        "new_address": "0x0000000000000000000000000000000000000000",
+        "post_word": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "topic0": "0x4d57218e59793e6845c36a961c3af7acfce8c54b13a697da231466fc265fdb61",
+        "indexed_address": "0x0000000000000000000000000000000000000000"
+      },
+      "outsider_error": "NotOwner()"
+    },
+    {
+      "selector": "0x86d506db",
+      "signature": "changeDevFeeAddress(address)",
+      "storage_slot": 38,
+      "address_shift_bits": 0,
+      "old_word": "0x000000000000000000000000eef651e381e04b5ae25393b1367c19bcfd575792",
+      "owner_new": {
+        "new_address": "0x1111111111111111111111111111111111111111",
+        "post_word": "0x0000000000000000000000001111111111111111111111111111111111111111",
+        "topic0": "0x7de91f014f26c8762e7854629fd45ddaa8fb621e8b83288a6bcf371a1dd6fbc5",
+        "indexed_address": "0x1111111111111111111111111111111111111111"
+      },
+      "owner_zero": {
+        "new_address": "0x0000000000000000000000000000000000000000",
+        "post_word": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "topic0": "0x7de91f014f26c8762e7854629fd45ddaa8fb621e8b83288a6bcf371a1dd6fbc5",
+        "indexed_address": "0x0000000000000000000000000000000000000000"
+      },
+      "outsider_error": "NotOwner()"
+    },
+    {
+      "selector": "0xa0bf0f75",
+      "signature": "setPaperTokenomics(address)",
+      "storage_slot": 6,
+      "address_shift_bits": 0,
+      "old_word": "0x00000000000000000000000075174549dbbd44497d31a47e2e2d7406408d63d9",
+      "owner_new": {
+        "new_address": "0x1111111111111111111111111111111111111111",
+        "post_word": "0x0000000000000000000000001111111111111111111111111111111111111111",
+        "topic0": "0xaf80993709a0eea3136bd8cf21081dcc85e10d1df039a9267406920306fd0781",
+        "indexed_address": "0x1111111111111111111111111111111111111111"
+      },
+      "owner_zero": {
+        "new_address": "0x0000000000000000000000000000000000000000",
+        "post_word": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "topic0": "0xaf80993709a0eea3136bd8cf21081dcc85e10d1df039a9267406920306fd0781",
+        "indexed_address": "0x0000000000000000000000000000000000000000"
+      },
+      "outsider_error": "NotOwner()"
+    },
+    {
+      "selector": "0xd188c049",
+      "signature": "setAuthorizedExecutor(address)",
+      "storage_slot": 88,
+      "address_shift_bits": 0,
+      "old_word": "0x000000000000000000000000233ff29b239abc1d7748605da9b205c3e008626e",
+      "owner_new": {
+        "new_address": "0x1111111111111111111111111111111111111111",
+        "post_word": "0x0000000000000000000000001111111111111111111111111111111111111111",
+        "topic0": "0x3cfda8ee6e20b237d2949c3d16b6f12822b6f1bc0580f188f932c0771cac729d",
+        "indexed_address": "0x1111111111111111111111111111111111111111"
+      },
+      "owner_zero": {
+        "new_address": "0x0000000000000000000000000000000000000000",
+        "post_word": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "topic0": "0x3cfda8ee6e20b237d2949c3d16b6f12822b6f1bc0580f188f932c0771cac729d",
+        "indexed_address": "0x0000000000000000000000000000000000000000"
+      },
+      "outsider_error": "NotOwner()"
+    },
+    {
+      "selector": "0xefc1bd46",
+      "signature": "setAuthorizedKeeper(address)",
+      "storage_slot": 89,
+      "address_shift_bits": 0,
+      "old_word": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "owner_new": {
+        "new_address": "0x1111111111111111111111111111111111111111",
+        "post_word": "0x0000000000000000000000001111111111111111111111111111111111111111",
+        "topic0": "0xabf32d7cef1e07c4d0e9f8a6e1af1ac77dff1a5f0e0b04263a53e8f0d0660083",
+        "indexed_address": "0x1111111111111111111111111111111111111111"
+      },
+      "owner_zero": {
+        "new_address": "0x0000000000000000000000000000000000000000",
+        "post_word": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "topic0": "0xabf32d7cef1e07c4d0e9f8a6e1af1ac77dff1a5f0e0b04263a53e8f0d0660083",
+        "indexed_address": "0x0000000000000000000000000000000000000000"
+      },
+      "outsider_error": "NotOwner()"
+    },
+    {
+      "selector": "0xfbddd751",
+      "signature": "setProxyFactory(address)",
+      "storage_slot": 30,
+      "address_shift_bits": 0,
+      "old_word": "0x0000000000000000000000001629b7d46bef6e13ff754174fc9f32dea309b38f",
+      "owner_new": {
+        "new_address": "0x1111111111111111111111111111111111111111",
+        "post_word": "0x0000000000000000000000001111111111111111111111111111111111111111",
+        "topic0": "0x06fb15b3928ea45c766cc3b08212ecc978647d51cf9551cdd13a70d6a00197c7",
+        "indexed_address": "0x1111111111111111111111111111111111111111"
+      },
+      "owner_zero": {
+        "new_address": "0x0000000000000000000000000000000000000000",
+        "post_word": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "topic0": "0x06fb15b3928ea45c766cc3b08212ecc978647d51cf9551cdd13a70d6a00197c7",
+        "indexed_address": "0x0000000000000000000000000000000000000000"
+      },
+      "outsider_error": "NotOwner()"
+    },
+    {
+      "selector": "0xf2fde38b",
+      "signature": "transferOwnership(address)",
+      "storage_slot": 0,
+      "address_shift_bits": 16,
+      "old_word": "0x00000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f0001",
+      "owner_new": {
+        "new_address": "0x1111111111111111111111111111111111111111",
+        "post_word": "0x0000000000000000000011111111111111111111111111111111111111110001",
+        "topic0": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+        "indexed_address": "0x1111111111111111111111111111111111111111"
+      },
+      "owner_zero": {
+        "new_address": "0x0000000000000000000000000000000000000000",
+        "post_word": "0x0000000000000000000000000000000000000000000000000000000000000001",
+        "topic0": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+        "indexed_address": "0x0000000000000000000000000000000000000000"
+      },
+      "outsider_error": "NotOwner()"
+    }
+  ],
+  "historical_setter_transactions": [
+    {
+      "selector": "0x837fa3fd",
+      "tx": "0x5a3718a88ed429d6f78cc5c1da8b6c8be71affee484abb4e7c6ae443a901504e",
+      "block": 47855202,
+      "caller": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+      "argument": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "storage_slot": 29,
+      "before_word": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "after_word": "0x00000000000000000000008326eb8896e358717f10502ec73ce8d28e37b10800",
+      "storage_changed": true
+    },
+    {
+      "selector": "0x86d506db",
+      "tx": "0x73788a28abaa20839821e2422bc132ba674c541552ef940bf91d7a89144177c3",
+      "block": 47855209,
+      "caller": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+      "argument": "0xeef651e381e04b5ae25393b1367c19bcfd575792",
+      "storage_slot": 38,
+      "before_word": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "after_word": "0x000000000000000000000000eef651e381e04b5ae25393b1367c19bcfd575792",
+      "storage_changed": true
+    },
+    {
+      "selector": "0xa0bf0f75",
+      "tx": "0xa0db98ac81a320b71f9d981a75defe15d3fc5356570240b9db3fc7741ce42f4f",
+      "block": 47855204,
+      "caller": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+      "argument": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+      "storage_slot": 6,
+      "before_word": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "after_word": "0x00000000000000000000000075174549dbbd44497d31a47e2e2d7406408d63d9",
+      "storage_changed": true
+    },
+    {
+      "selector": "0xd188c049",
+      "tx": "0xe7884c0dfbba9add8498b40d556dd3a1f87238a8a6a187d9748b15cc94b039b9",
+      "block": 47855271,
+      "caller": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+      "argument": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "storage_slot": 88,
+      "before_word": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "after_word": "0x000000000000000000000000233ff29b239abc1d7748605da9b205c3e008626e",
+      "storage_changed": true
+    },
+    {
+      "selector": "0xefc1bd46",
+      "tx": "0x090d1123adf2240dfb6117c9c7c5edc2f1893885772b1355fec0a435ef7df4b4",
+      "block": 47855273,
+      "caller": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+      "argument": "0x0000000000000000000000000000000000000000",
+      "storage_slot": 89,
+      "before_word": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "after_word": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "storage_changed": false
+    },
+    {
+      "selector": "0xfbddd751",
+      "tx": "0x0f0cd47de910abffe0add759c86e3f874ef7fb4c849177e2b33d179e4e04f619",
+      "block": 47855217,
+      "caller": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+      "argument": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+      "storage_slot": 30,
+      "before_word": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "after_word": "0x0000000000000000000000001629b7d46bef6e13ff754174fc9f32dea309b38f",
+      "storage_changed": true
+    },
+    {
+      "selector": "0xf2fde38b",
+      "tx": "0x47668f45e06f17fa75fe4674fbe3f84f7544d6b70ff9741be00983dd23ab1d28",
+      "block": 47855503,
+      "caller": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+      "argument": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "storage_slot": 0,
+      "before_word": "0x00000000000000000000a1763a5ff94ebddd417cccb906622ec762ab2e290001",
+      "after_word": "0x00000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f0001",
+      "storage_changed": true
+    }
+  ],
+  "event_catalog": [
+    {
+      "topic0": "0x4d57218e59793e6845c36a961c3af7acfce8c54b13a697da231466fc265fdb61",
+      "reconstructed_signature": "SessionKeyManagerUpdated(address)",
+      "status": "observed_historical_topic",
+      "setter_selector": "0x837fa3fd",
+      "historical_tx": "0x5a3718a88ed429d6f78cc5c1da8b6c8be71affee484abb4e7c6ae443a901504e"
+    },
+    {
+      "topic0": "0x7de91f014f26c8762e7854629fd45ddaa8fb621e8b83288a6bcf371a1dd6fbc5",
+      "reconstructed_signature": "DevFeeRecipientUpdated(address)",
+      "status": "observed_historical_topic",
+      "setter_selector": "0x86d506db",
+      "historical_tx": "0x73788a28abaa20839821e2422bc132ba674c541552ef940bf91d7a89144177c3"
+    },
+    {
+      "topic0": "0xaf80993709a0eea3136bd8cf21081dcc85e10d1df039a9267406920306fd0781",
+      "reconstructed_signature": "PaperTokenomicsUpdated(address)",
+      "status": "observed_historical_topic",
+      "setter_selector": "0xa0bf0f75",
+      "historical_tx": "0xa0db98ac81a320b71f9d981a75defe15d3fc5356570240b9db3fc7741ce42f4f"
+    },
+    {
+      "topic0": "0x3cfda8ee6e20b237d2949c3d16b6f12822b6f1bc0580f188f932c0771cac729d",
+      "reconstructed_signature": "AuthorizedExecutorUpdated(address)",
+      "status": "observed_historical_topic",
+      "setter_selector": "0xd188c049",
+      "historical_tx": "0xe7884c0dfbba9add8498b40d556dd3a1f87238a8a6a187d9748b15cc94b039b9"
+    },
+    {
+      "topic0": "0xabf32d7cef1e07c4d0e9f8a6e1af1ac77dff1a5f0e0b04263a53e8f0d0660083",
+      "reconstructed_signature": "AuthorizedKeeperUpdated(address)",
+      "status": "observed_historical_topic",
+      "setter_selector": "0xefc1bd46",
+      "historical_tx": "0x090d1123adf2240dfb6117c9c7c5edc2f1893885772b1355fec0a435ef7df4b4"
+    },
+    {
+      "topic0": "0x06fb15b3928ea45c766cc3b08212ecc978647d51cf9551cdd13a70d6a00197c7",
+      "reconstructed_signature": "ProxyFactoryUpdated(address)",
+      "status": "observed_historical_topic",
+      "setter_selector": "0xfbddd751",
+      "historical_tx": "0x0f0cd47de910abffe0add759c86e3f874ef7fb4c849177e2b33d179e4e04f619"
+    },
+    {
+      "topic0": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+      "reconstructed_signature": "OwnerUpdated(address)",
+      "status": "observed_historical_topic",
+      "setter_selector": "0xf2fde38b",
+      "historical_tx": "0x47668f45e06f17fa75fe4674fbe3f84f7544d6b70ff9741be00983dd23ab1d28"
+    }
+  ],
+  "owner_new_success_count": 7,
+  "owner_zero_success_count": 7,
+  "outsider_not_owner_count": 7,
+  "limits": [
+    "Seven historical calls verify actual argument, event, and transaction-level slot effects; owner, outsider, and zero-address branches are read-only simulations at the pin.",
+    "All seven setters accept the zero address in the tested runtime, including ownership transfer; downstream behavior after such a change is untested."
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee": {
+    "role": "exchange_implementation",
+    "verified": false,
+    "contract_name": "",
+    "compiler_version": ""
+  },
+  "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a": {
+    "role": "oracle_implementation",
+    "verified": false,
+    "contract_name": "",
+    "compiler_version": ""
+  },
+  "0x433bd418ec92818a960585f4d5fae563e735bb4a": {
+    "role": "paper_token_implementation",
+    "verified": false,
+    "contract_name": "",
+    "compiler_version": ""
+  },
+  "0x4f859b790d34767ea325b4888c8c420c34cf85af": {
+    "role": "exchange_implementation_variant_b",
+    "verified": false,
+    "contract_name": "",
+    "compiler_version": ""
+  },
+  "0x5a4bda2dcc82749258d9e5cdd49cd52c3cd16388": {
+    "role": "exchange_linked_library_variant_a",
+    "verified": false,
+    "contract_name": "",
+    "compiler_version": ""
+  },
+  "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f": {
+    "role": "tokenomics_implementation",
+    "verified": false,
+    "contract_name": "",
+    "compiler_version": ""
+  },
+  "0x696292762fd5ac3677a45edbe54eaece4194d1f6": {
+    "role": "one_of_two_multisig",
+    "verified": false,
+    "contract_name": "",
+    "compiler_version": ""
+  },
+  "0x8a5069fe303e8f81e91825436e956d595032e558": {
+    "role": "session_key_manager_implementation",
+    "verified": false,
+    "contract_name": "",
+    "compiler_version": ""
+  },
+  "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0": {
+    "role": "deposit_proxy_factory_implementation",
+    "verified": false,
+    "contract_name": "",
+    "compiler_version": ""
+  },
+  "0x93a8e8d647f6c1e7b0f9bf4bd86eff3a9f20c3fb": {
+    "role": "exchange_implementation_variant_a",
+    "verified": false,
+    "contract_name": "",
+    "compiler_version": ""
+  },
+  "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f": {
+    "role": "timelock",
+    "verified": false,
+    "contract_name": "",
+    "compiler_version": ""
+  },
+  "0xcd617f984158a4f5d287ddee0e8eb0fed204916d": {
+    "role": "exchange_linked_library_live",
+    "verified": false,
+    "contract_name": "",
+    "compiler_version": ""
+  },
+  "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262": {
+    "role": "batch_executor_implementation",
+    "verified": false,
+    "contract_name": "",
+    "compiler_version": ""
+  },
+  "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15": {
+    "role": "staking_implementation",
+    "verified": false,
+    "contract_name": "",
+    "compiler_version": ""
+  },
+  "0xe79c91cc682f1bb401a9cab74c900470190f0f8f": {
+    "role": "proxy_admin",
+    "verified": false,
+    "contract_name": "",
+    "compiler_version": ""
+  },
+  "0xe991817199363046da0a28da6fbad0284e4aa492": {
+    "role": "paper_math_library",
+    "verified": false,
+    "contract_name": "",
+    "compiler_version": ""
+  },
+  "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce": {
+    "role": "user_deposit_proxy_representative",
+    "verified": false,
+    "contract_name": "",
+    "compiler_version": ""
+  }
+}

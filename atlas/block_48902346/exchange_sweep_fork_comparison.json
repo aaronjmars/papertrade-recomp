@@ -1,0 +1,236 @@
+{
+  "pin_block": 48902346,
+  "pin_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "public_fork_artifacts": "../../artifacts/exchange_sweep_local",
+  "archive_fork_artifacts": "../../artifacts/exchange_sweep_archive_local",
+  "case_count": 24,
+  "call_outcome_match_count": 24,
+  "ordered_log_match_count": 24,
+  "storage_delta_match_count": 21,
+  "baseline_differences": [
+    {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "slot": "0x000000000000000000000000000000000000000000000000000000000000000e",
+      "public": "0x0000000000000000000000000000000000000000003486df00ae9812fa77a800",
+      "archive": "0x00000000000000000000000000000000000000000035b5849a35d618f5b00800"
+    },
+    {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "slot": "0x0000000000000000000000000000000000000000000000000000000000000016",
+      "public": "0x00000000000772e2743f7cd780b231520000000000291d4d192bb2d7c73109b9",
+      "archive": "0x000000000007be65f23207ad7ea19168000000000029d3d6f9e2192a05b05b45"
+    },
+    {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "slot": "0x933a5f0af51b8c355d37612ed469ebbf7f68d712e0def9e96e026e58c110fa76",
+      "public": "0x0000000000000000000000000000000000000000000000967fd4a76d9f20c1ac",
+      "archive": "0x00000000000000000000000000000000000000000000032d18f077e463fc0000"
+    },
+    {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "slot": "0x9dd4b849c5f1b72bdde76f68a1377400346bb6b113564c65e9ed4950e2cd821f",
+      "public": null,
+      "archive": "0x0000000000000000000000000000000000000000000000000000000002ea2fcc"
+    }
+  ],
+  "minimum_raw": {
+    "public": 1000000000,
+    "archive": 1000000000
+  },
+  "cases": [
+    {
+      "name": "finalize_decreased",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": true,
+      "storage_delta_differences": []
+    },
+    {
+      "name": "finalize_decreased_above_minimum",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": true,
+      "storage_delta_differences": []
+    },
+    {
+      "name": "finalize_increased",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": true,
+      "storage_delta_differences": []
+    },
+    {
+      "name": "finalize_increased_above_minimum",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": true,
+      "storage_delta_differences": []
+    },
+    {
+      "name": "finalize_no_pending",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": true,
+      "storage_delta_differences": []
+    },
+    {
+      "name": "finalize_partial",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": true,
+      "storage_delta_differences": []
+    },
+    {
+      "name": "finalize_partial_above_minimum",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": true,
+      "storage_delta_differences": []
+    },
+    {
+      "name": "finalize_perp_equal_normalized_spot",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": false,
+      "storage_delta_differences": [
+        {
+          "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+          "slot": "0x9dd4b849c5f1b72bdde76f68a1377400346bb6b113564c65e9ed4950e2cd821f",
+          "public_delta": "48902346",
+          "archive_delta": "254"
+        }
+      ]
+    },
+    {
+      "name": "finalize_perp_partial",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": true,
+      "storage_delta_differences": []
+    },
+    {
+      "name": "finalize_perp_spot_below_normalized",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": true,
+      "storage_delta_differences": []
+    },
+    {
+      "name": "finalize_perp_unchanged",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": false,
+      "storage_delta_differences": [
+        {
+          "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+          "slot": "0x9dd4b849c5f1b72bdde76f68a1377400346bb6b113564c65e9ed4950e2cd821f",
+          "public_delta": "48902346",
+          "archive_delta": "254"
+        }
+      ]
+    },
+    {
+      "name": "finalize_perp_zero",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": true,
+      "storage_delta_differences": []
+    },
+    {
+      "name": "finalize_same_block",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": true,
+      "storage_delta_differences": []
+    },
+    {
+      "name": "finalize_unchanged",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": true,
+      "storage_delta_differences": []
+    },
+    {
+      "name": "finalize_unchanged_above_minimum",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": true,
+      "storage_delta_differences": []
+    },
+    {
+      "name": "request_above_minimum",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": true,
+      "storage_delta_differences": []
+    },
+    {
+      "name": "request_good",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": true,
+      "storage_delta_differences": []
+    },
+    {
+      "name": "request_no_balance",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": true,
+      "storage_delta_differences": []
+    },
+    {
+      "name": "request_perp_at_minimum",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": false,
+      "storage_delta_differences": [
+        {
+          "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+          "slot": "0x9dd4b849c5f1b72bdde76f68a1377400346bb6b113564c65e9ed4950e2cd821f",
+          "public_delta": "48902346",
+          "archive_delta": "254"
+        }
+      ]
+    },
+    {
+      "name": "request_perp_below_minimum",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": true,
+      "storage_delta_differences": []
+    },
+    {
+      "name": "request_same_block",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": true,
+      "storage_delta_differences": []
+    },
+    {
+      "name": "sweep_above_minimum",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": true,
+      "storage_delta_differences": []
+    },
+    {
+      "name": "sweep_good",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": true,
+      "storage_delta_differences": []
+    },
+    {
+      "name": "sweep_with_pending",
+      "same_error_and_output": true,
+      "same_ordered_logs": true,
+      "same_storage_deltas": true,
+      "storage_delta_differences": []
+    }
+  ],
+  "limits": [
+    "This compares the 24 saved sweep simulations only; it does not certify every Exchange path on a public fork.",
+    "The public-fork source is documented by the earlier capture setup; its artifact files did not record the upstream RPC URL.",
+    "Identical branch outcomes and logs do not make absolute storage values from the public fork correct."
+  ]
+}

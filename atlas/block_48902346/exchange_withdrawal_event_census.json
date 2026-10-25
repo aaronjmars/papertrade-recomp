@@ -1,0 +1,287 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "event_topic0": "0x95d1a93901f24eeaa294588802f66fa008f9f3741060c9f79e5dab4709de5e75",
+  "event_count": 28643,
+  "gap_definition": "event internal debit minus event Core amount multiplied by 10^10",
+  "gap_counts_18_decimals": {
+    "0": 22652,
+    "1000000000000000000": 5991
+  },
+  "sample_selection": "16 evenly spaced event logs within each debit-gap class in saved chain order; unique transaction hashes",
+  "sample_count": 32,
+  "sample_selector_status_counts": [
+    {
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 0,
+      "count": 16
+    },
+    {
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 1,
+      "count": 16
+    }
+  ],
+  "status_precompile": "0x0000000000000000000000000000000000000810",
+  "status_semantic_evidence": "hypercore_user_exists_evidence.json",
+  "sampled_events": [
+    {
+      "tx": "0x673ecd9b8ca58b87e4acee6cb2c4ae212deaf64dea7df49952b040c1241fe70a",
+      "block": 47930342,
+      "log_index": 12,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 1,
+      "event_debit_gap_18_decimals": "0"
+    },
+    {
+      "tx": "0x59d4ea87cb258bc9910b86d57ed637fd241d1575607c802e98804d80a5a349ad",
+      "block": 48175815,
+      "log_index": 98,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 1,
+      "event_debit_gap_18_decimals": "0"
+    },
+    {
+      "tx": "0x7e96c5c62b61f732bf1be039e4ac5b1373fcea1b1962742fa434c585eb03cd50",
+      "block": 48187832,
+      "log_index": 360,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 1,
+      "event_debit_gap_18_decimals": "0"
+    },
+    {
+      "tx": "0x28f7a6185ab0663f1c524e7b609f772c1f17e0b2f26c2b7e9fb7b9ce1e080586",
+      "block": 48206413,
+      "log_index": 9,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 1,
+      "event_debit_gap_18_decimals": "0"
+    },
+    {
+      "tx": "0xd0f13b27ac43ae98a70e97aca780edc2e265ec5e66bd434ea93a87edf6614f48",
+      "block": 48239308,
+      "log_index": 2,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 1,
+      "event_debit_gap_18_decimals": "0"
+    },
+    {
+      "tx": "0x83aa6844b50c3b9504745a8b72a3caa1f8f60e32daa989ac5dba30da18afa14b",
+      "block": 48279631,
+      "log_index": 10,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 1,
+      "event_debit_gap_18_decimals": "0"
+    },
+    {
+      "tx": "0x568d92cbe4b758d0144e15fd5ed3d55acff57fd09ae653fce03bc1ff0e6d82c3",
+      "block": 48353953,
+      "log_index": 30,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 1,
+      "event_debit_gap_18_decimals": "0"
+    },
+    {
+      "tx": "0xe357d443bbea2aad3ae9779f0252c06459acfa780aeb4ac1a583af4402b9e0fe",
+      "block": 48415889,
+      "log_index": 14,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 1,
+      "event_debit_gap_18_decimals": "0"
+    },
+    {
+      "tx": "0x7e2ae223b529a34339024d62bfd848f7cba33b9cdd1572fed38f977cb26b10c3",
+      "block": 48479109,
+      "log_index": 20,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 1,
+      "event_debit_gap_18_decimals": "0"
+    },
+    {
+      "tx": "0xcb9750a8c4a2c468898a217aae0509aa2f79b3cb4a6d8111993f45fedd50fdec",
+      "block": 48532675,
+      "log_index": 29,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 1,
+      "event_debit_gap_18_decimals": "0"
+    },
+    {
+      "tx": "0x3738cdc765c5c0e85e3dbac8a0227074dc4a6ebf19f2005c019e5ef9f188d8e5",
+      "block": 48589583,
+      "log_index": 29,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 1,
+      "event_debit_gap_18_decimals": "0"
+    },
+    {
+      "tx": "0x4b4e6da83b03b908df85556de8160678ae3eddb02b975407f8bfc0c8b926c71a",
+      "block": 48627569,
+      "log_index": 5,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 1,
+      "event_debit_gap_18_decimals": "0"
+    },
+    {
+      "tx": "0xf4d35f4af52ebef9f1ba0fea251849e483481df4b9f9c5f0603ca100338f36cb",
+      "block": 48693555,
+      "log_index": 36,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 1,
+      "event_debit_gap_18_decimals": "0"
+    },
+    {
+      "tx": "0xb6da808e111f77e34adb035380d9f9ec87f8cfdb0acd7eecb15acac26db32a38",
+      "block": 48738738,
+      "log_index": 11,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 1,
+      "event_debit_gap_18_decimals": "0"
+    },
+    {
+      "tx": "0xb6060057cb676f8f10677083477d6316673649be2a93bbf3576de1413a8a534a",
+      "block": 48831896,
+      "log_index": 5,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 1,
+      "event_debit_gap_18_decimals": "0"
+    },
+    {
+      "tx": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+      "block": 48902137,
+      "log_index": 33,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 1,
+      "event_debit_gap_18_decimals": "0"
+    },
+    {
+      "tx": "0xc5627d50471a8b12546adb2bf0dc68ab9337ea5cffdcb34b887aaf826912a1ea",
+      "block": 48002467,
+      "log_index": 28,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 0,
+      "event_debit_gap_18_decimals": "1000000000000000000"
+    },
+    {
+      "tx": "0xa33fb8b1bfc473d593f1056936cb6906f8260a81fa290cc17e564192f3ed5969",
+      "block": 48173472,
+      "log_index": 1,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 0,
+      "event_debit_gap_18_decimals": "1000000000000000000"
+    },
+    {
+      "tx": "0x108fa92d9e75f4c4d23ca651f0d84d86f852f9846e4c191c7ade2710d4181bd0",
+      "block": 48175327,
+      "log_index": 112,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 0,
+      "event_debit_gap_18_decimals": "1000000000000000000"
+    },
+    {
+      "tx": "0xe2d56ffa80ffd6a6d23347ac78ddf533944fdad2ed3bf74d8320706f08ef3159",
+      "block": 48177767,
+      "log_index": 111,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 0,
+      "event_debit_gap_18_decimals": "1000000000000000000"
+    },
+    {
+      "tx": "0x9801c8bbec373f8b25b014a7e27ca20e6726ad52f9a43200c8b7dd415f698085",
+      "block": 48183074,
+      "log_index": 54,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 0,
+      "event_debit_gap_18_decimals": "1000000000000000000"
+    },
+    {
+      "tx": "0xc5f3a1d7453849e30760be7ec80fa40d7764ac234b71fc5de513162d5943d811",
+      "block": 48191553,
+      "log_index": 41,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 0,
+      "event_debit_gap_18_decimals": "1000000000000000000"
+    },
+    {
+      "tx": "0xb78778ae971bace7646c3a4d6eaa7aa34c425f66a80ac269e0e7a6c7f19c545a",
+      "block": 48209109,
+      "log_index": 4,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 0,
+      "event_debit_gap_18_decimals": "1000000000000000000"
+    },
+    {
+      "tx": "0x1f9ebc6f870743dd0352b6f19e244280819dd2028935fac9778fc08b80124ed1",
+      "block": 48232541,
+      "log_index": 1,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 0,
+      "event_debit_gap_18_decimals": "1000000000000000000"
+    },
+    {
+      "tx": "0x4fde08aca3bb56b49e3372975659d7e5bc9b6fc9f541f59ee602a5a37a67c1ee",
+      "block": 48264918,
+      "log_index": 4,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 0,
+      "event_debit_gap_18_decimals": "1000000000000000000"
+    },
+    {
+      "tx": "0x8c8a4400aa287556f97a72ef204e5bf476640e85a364e5b47ef27c4bae6d764d",
+      "block": 48307025,
+      "log_index": 15,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 0,
+      "event_debit_gap_18_decimals": "1000000000000000000"
+    },
+    {
+      "tx": "0xc7bf5845337a7f460cfbcb41bbbd5cb1157b6022054a9f0d1290e0f8bc6aa512",
+      "block": 48360759,
+      "log_index": 14,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 0,
+      "event_debit_gap_18_decimals": "1000000000000000000"
+    },
+    {
+      "tx": "0x8400eb05258979dcff691d5bcb3207cc806affac78e0e9e6b8a26398e41ae739",
+      "block": 48462205,
+      "log_index": 21,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 0,
+      "event_debit_gap_18_decimals": "1000000000000000000"
+    },
+    {
+      "tx": "0xe46f46fc9807996af87e3ec5b18a8b5cd2c0bbedf98166a75181a2ff47cf186e",
+      "block": 48552823,
+      "log_index": 41,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 0,
+      "event_debit_gap_18_decimals": "1000000000000000000"
+    },
+    {
+      "tx": "0xdcc8a6ec7a2e83ec6a48df58fd457d3c69cbbdde234c3efb3d1340ca088c2048",
+      "block": 48659055,
+      "log_index": 6,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 0,
+      "event_debit_gap_18_decimals": "1000000000000000000"
+    },
+    {
+      "tx": "0x391a7ba6c6ad314321642bb880f61893a4bdfe1b224516c13f01cc6d89511a17",
+      "block": 48777949,
+      "log_index": 11,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 0,
+      "event_debit_gap_18_decimals": "1000000000000000000"
+    },
+    {
+      "tx": "0x2d41b17f1f3c5e3e26a89fb79f8732bc5fb2b06b488eb01adbf6c61892b13904",
+      "block": 48902010,
+      "log_index": 16,
+      "selector": "0x8d09f23f",
+      "hypercore_user_status": 0,
+      "event_debit_gap_18_decimals": "1000000000000000000"
+    }
+  ],
+  "limit": "The full-event census proves the two debit gaps through the pin. HyperCore status and function selector are checked only for the stratified trace sample, not all 28,643 events."
+}

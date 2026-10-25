@@ -1,0 +1,401 @@
+[
+  {
+    "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+    "from_role": "exchange_implementation",
+    "getter": "sessionKeyManager()",
+    "selector": "0x0b826190",
+    "to": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+    "to_role": "session_key_manager_proxy",
+    "storage_slots_read": [
+      29
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+    "from_role": "exchange_implementation",
+    "getter": "authorizedExecutor()",
+    "selector": "0x13dd495b",
+    "to": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+    "to_role": "batch_executor_proxy",
+    "storage_slots_read": [
+      88
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+    "from_role": "exchange_implementation",
+    "getter": "marketKeeper()",
+    "selector": "0x21f55a6c",
+    "to": "0x3721476de31190dc1af8908026abe20efe25cf99",
+    "to_role": "eoa_or_native_account",
+    "storage_slots_read": [
+      37
+    ],
+    "pin": 48902346,
+    "target_runtime_bytes": 0
+  },
+  {
+    "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+    "from_role": "exchange_implementation",
+    "getter": "pauseGuardian()",
+    "selector": "0x24a3d622",
+    "to": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+    "to_role": "one_of_two_multisig",
+    "storage_slots_read": [
+      1
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+    "from_role": "exchange_implementation",
+    "getter": "oracle()",
+    "selector": "0x7dc0d1d0",
+    "to": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+    "to_role": "oracle_proxy",
+    "storage_slots_read": [
+      2
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+    "from_role": "exchange_implementation",
+    "getter": "owner()",
+    "selector": "0x8da5cb5b",
+    "to": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "to_role": "timelock",
+    "storage_slots_read": [
+      0
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+    "from_role": "exchange_implementation",
+    "getter": "proxyFactory()",
+    "selector": "0xc10f1a75",
+    "to": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+    "to_role": "deposit_proxy_factory_proxy",
+    "storage_slots_read": [
+      30
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+    "from_role": "exchange_implementation",
+    "getter": "paperTokenomics()",
+    "selector": "0xed410ee1",
+    "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+    "to_role": "tokenomics_proxy",
+    "storage_slots_read": [
+      6
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+    "from_role": "oracle_implementation",
+    "getter": "owner()",
+    "selector": "0x8da5cb5b",
+    "to": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "to_role": "timelock",
+    "storage_slots_read": [
+      0
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0xe40f17915daa230324030003a197cdaef2261c0e",
+    "from_role": "paper_token_implementation",
+    "getter": "minter()",
+    "selector": "0x07546172",
+    "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+    "to_role": "tokenomics_proxy",
+    "storage_slots_read": [
+      4
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0xe40f17915daa230324030003a197cdaef2261c0e",
+    "from_role": "paper_token_implementation",
+    "getter": "owner()",
+    "selector": "0x8da5cb5b",
+    "to": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "to_role": "timelock",
+    "storage_slots_read": [
+      3
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0xe40f17915daa230324030003a197cdaef2261c0e",
+    "from_role": "paper_token_implementation",
+    "getter": "stakingContract()",
+    "selector": "0xee99205c",
+    "to": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+    "to_role": "staking_proxy",
+    "storage_slots_read": [
+      9
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+    "from_role": "tokenomics_implementation",
+    "getter": "owner()",
+    "selector": "0x8da5cb5b",
+    "to": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "to_role": "timelock",
+    "storage_slots_read": [
+      0
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+    "from_role": "tokenomics_implementation",
+    "getter": "paperToken()",
+    "selector": "0x98255e15",
+    "to": "0xe40f17915daa230324030003a197cdaef2261c0e",
+    "to_role": "paper_token_proxy",
+    "storage_slots_read": [
+      2
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+    "from_role": "tokenomics_implementation",
+    "getter": "exchange()",
+    "selector": "0xd2f7265a",
+    "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+    "to_role": "exchange_proxy",
+    "storage_slots_read": [
+      1
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+    "from_role": "one_of_two_multisig",
+    "getter": "signerTwo()",
+    "selector": "0x1a5f66c3",
+    "to": "0xe9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+    "to_role": "eoa_or_native_account",
+    "storage_slots_read": [
+      1
+    ],
+    "pin": 48902346,
+    "target_runtime_bytes": 0
+  },
+  {
+    "from": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+    "from_role": "one_of_two_multisig",
+    "getter": "signerOne()",
+    "selector": "0xd98f851a",
+    "to": "0xaa7577a7a27aa7fcf6d0ec481b87df3ad0f6a88e",
+    "to_role": "eoa_or_native_account",
+    "storage_slots_read": [
+      0
+    ],
+    "pin": 48902346,
+    "target_runtime_bytes": 0
+  },
+  {
+    "from": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+    "from_role": "session_key_manager_implementation",
+    "getter": "owner()",
+    "selector": "0x8da5cb5b",
+    "to": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "to_role": "timelock",
+    "storage_slots_read": [
+      2
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+    "from_role": "session_key_manager_implementation",
+    "getter": "authorizedCaller()",
+    "selector": "0x97dc97cb",
+    "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+    "to_role": "exchange_proxy",
+    "storage_slots_read": [
+      3
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+    "from_role": "deposit_proxy_factory_implementation",
+    "getter": "authorizedDeployer()",
+    "selector": "0x03b802b6",
+    "to": "0xdf1bda875c9393a663ce69bf6a7fbaa73dfd053d",
+    "to_role": "eoa_or_native_account",
+    "storage_slots_read": [
+      4
+    ],
+    "pin": 48902346,
+    "target_runtime_bytes": 0
+  },
+  {
+    "from": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+    "from_role": "deposit_proxy_factory_implementation",
+    "getter": "owner()",
+    "selector": "0x8da5cb5b",
+    "to": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "to_role": "timelock",
+    "storage_slots_read": [
+      3
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+    "from_role": "deposit_proxy_factory_implementation",
+    "getter": "exchange()",
+    "selector": "0xd2f7265a",
+    "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+    "to_role": "exchange_proxy",
+    "storage_slots_read": [
+      0
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "from_role": "timelock",
+    "getter": "owner()",
+    "selector": "0x8da5cb5b",
+    "to": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+    "to_role": "one_of_two_multisig",
+    "storage_slots_read": [
+      0
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+    "from_role": "batch_executor_implementation",
+    "getter": "sessionKeyManager()",
+    "selector": "0x0b826190",
+    "to": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+    "to_role": "session_key_manager_proxy",
+    "storage_slots_read": [
+      1
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+    "from_role": "batch_executor_implementation",
+    "getter": "owner()",
+    "selector": "0x8da5cb5b",
+    "to": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "to_role": "timelock",
+    "storage_slots_read": [
+      3
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+    "from_role": "batch_executor_implementation",
+    "getter": "exchange()",
+    "selector": "0xd2f7265a",
+    "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+    "to_role": "exchange_proxy",
+    "storage_slots_read": [
+      0
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+    "from_role": "staking_implementation",
+    "getter": "authorizedExecutor()",
+    "selector": "0x13dd495b",
+    "to": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+    "to_role": "batch_executor_proxy",
+    "storage_slots_read": [
+      16
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+    "from_role": "staking_implementation",
+    "getter": "stakeToken()",
+    "selector": "0x51ed6a30",
+    "to": "0xe40f17915daa230324030003a197cdaef2261c0e",
+    "to_role": "paper_token_proxy",
+    "storage_slots_read": [
+      3
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+    "from_role": "staking_implementation",
+    "getter": "owner()",
+    "selector": "0x8da5cb5b",
+    "to": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "to_role": "timelock",
+    "storage_slots_read": [
+      15
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+    "from_role": "staking_implementation",
+    "getter": "exchange()",
+    "selector": "0xd2f7265a",
+    "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+    "to_role": "exchange_proxy",
+    "storage_slots_read": [
+      2
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+    "from_role": "staking_implementation",
+    "getter": "rewardToken()",
+    "selector": "0xf7c618c1",
+    "to": "0x6b9e773128f453f5c2c60935ee2de2cbc5390a24",
+    "to_role": "external_contract",
+    "storage_slots_read": [
+      4
+    ],
+    "pin": 48902346,
+    "target_runtime_bytes": 2175
+  },
+  {
+    "from": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+    "from_role": "proxy_admin",
+    "getter": "owner()",
+    "selector": "0x8da5cb5b",
+    "to": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "to_role": "timelock",
+    "storage_slots_read": [
+      0
+    ],
+    "pin": 48902346
+  },
+  {
+    "from": "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+    "from_role": "user_deposit_proxy_representative",
+    "getter": "exchange()",
+    "selector": "0xd2f7265a",
+    "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+    "to_role": "exchange_proxy",
+    "storage_slots_read": [],
+    "pin": 48902346
+  }
+]

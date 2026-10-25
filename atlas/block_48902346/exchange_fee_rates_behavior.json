@@ -1,0 +1,62 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "setter_selector": "0xe538b280",
+  "event_topic0": "0xe4af0531d4ba8c578b5076b042e4505372fb4f4986aea8ebf77f4ff1585e3e75",
+  "raw_evidence": "../../artifacts/exchange_fee_rates/pinned_probes.json",
+  "selector_reconstructions": {
+    "0xe538b280": "setFeeRates(uint256,uint256,uint256)",
+    "0x5fb3b1b5": "liquidationFeeRate()"
+  },
+  "event_catalog": [
+    {
+      "topic0": "0xe4af0531d4ba8c578b5076b042e4505372fb4f4986aea8ebf77f4ff1585e3e75",
+      "reconstructed_signature": "FeeRatesUpdated(uint256,uint256,uint256)",
+      "status": "simulated_log_only"
+    }
+  ],
+  "simulated_error_catalog": [
+    {
+      "selector": "0x30cd7471",
+      "reconstructed_signature": "NotOwner()",
+      "probe_paths": [
+        "outsider"
+      ]
+    },
+    {
+      "selector": "0xcd4e6167",
+      "reconstructed_signature": "FeeTooHigh()",
+      "probe_paths": [
+        "owner_first_above_max",
+        "owner_second_above_max",
+        "owner_third_above_max"
+      ]
+    }
+  ],
+  "probe_count": 7,
+  "successes": [
+    "owner_distinct",
+    "owner_all_at_max",
+    "owner_zero"
+  ],
+  "revert_selectors": {
+    "outsider": "0x30cd7471",
+    "owner_first_above_max": "0xcd4e6167",
+    "owner_second_above_max": "0xcd4e6167",
+    "owner_third_above_max": "0xcd4e6167"
+  },
+  "historical_liquidation_fee_pairs_consistent": 6,
+  "each_rate_max_inclusive": 500000000000000000,
+  "getter_slots": {
+    "0xf1a8786c": 23,
+    "0x48ee5e08": 24,
+    "0x5fb3b1b5": 25
+  },
+  "limits": [
+    "No saved historical transaction called this setter.",
+    "The exact names of the slot-23 and slot-24 getters and the economic meanings of all three rates remain unverified.",
+    "Simulation tests setter branches but does not prove future trades under changed rates."
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "captured_at": "20261022T212630Z",
+  "latest_block": 49255179,
+  "note": "latest-state reads only; the RPC ignores historical block numbers, so these values are not the pinned state",
+  "implementation_slots": {
+    "paper_token_proxy": {
+      "proxy": "0xe40f17915daa230324030003a197cdaef2261c0e",
+      "implementation": "0x433bd418ec92818a960585f4d5fae563e735bb4a"
+    },
+    "tokenomics_proxy": {
+      "proxy": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+      "implementation": "0x7c0a72a788cff4d68cfe9586aecb98e21eb58a03"
+    },
+    "session_key_manager_proxy": {
+      "proxy": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "implementation": "0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946"
+    },
+    "deposit_proxy_factory_proxy": {
+      "proxy": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+      "implementation": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0"
+    },
+    "batch_executor_proxy": {
+      "proxy": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "implementation": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262"
+    },
+    "staking_proxy": {
+      "proxy": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+      "implementation": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15"
+    },
+    "exchange_proxy": {
+      "proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "implementation": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723"
+    }
+  },
+  "pinned_vs_live": {
+    "paper_token_proxy": {
+      "proxy": "0xe40f17915daa230324030003a197cdaef2261c0e",
+      "pinned_implementation": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+      "live_implementation": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+      "changed": false,
+      "live_runtime_bytes": 925,
+      "live_sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+      "note": "live code hash not re-fetched because the slot still matches the pin"
+    },
+    "tokenomics_proxy": {
+      "proxy": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+      "pinned_implementation": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "live_implementation": "0x7c0a72a788cff4d68cfe9586aecb98e21eb58a03",
+      "changed": true,
+      "live_runtime_bytes": 6452,
+      "live_sha256": "56caf868c73dbc33b94725972fc101dbcec0fb7b017c4f2f9e8cda49516992e9"
+    },
+    "session_key_manager_proxy": {
+      "proxy": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "pinned_implementation": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "live_implementation": "0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946",
+      "changed": true,
+      "live_runtime_bytes": 4521,
+      "live_sha256": "7df05c33597c04820a314fae015aab01b5566aff53e9bded8446962cfd4ad2c9"
+    },
+    "deposit_proxy_factory_proxy": {
+      "proxy": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+      "pinned_implementation": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "live_implementation": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "changed": false,
+      "live_runtime_bytes": 925,
+      "live_sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+      "note": "live code hash not re-fetched because the slot still matches the pin"
+    },
+    "batch_executor_proxy": {
+      "proxy": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "pinned_implementation": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "live_implementation": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "changed": false,
+      "live_runtime_bytes": 925,
+      "live_sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+      "note": "live code hash not re-fetched because the slot still matches the pin"
+    },
+    "staking_proxy": {
+      "proxy": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+      "pinned_implementation": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "live_implementation": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "changed": false,
+      "live_runtime_bytes": 925,
+      "live_sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+      "note": "live code hash not re-fetched because the slot still matches the pin"
+    },
+    "exchange_proxy": {
+      "proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "pinned_implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "live_implementation": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+      "changed": true,
+      "live_runtime_bytes": 23959,
+      "live_sha256": "fc7374f3969381160732fe98c5e3145e00c3f167f168d61d65bb4972e9a6b268"
+    },
+    "timelock": {
+      "proxy": null,
+      "pinned_implementation": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "live_implementation": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "changed": false,
+      "live_runtime_bytes": 3207,
+      "live_sha256": "f391dcb36b34b4b2fb1ffd42015cd4832a56ed8b40545eb3df41b58d7b38443e",
+      "pinned_runtime_bytes": 3207,
+      "pinned_sha256": "f391dcb36b34b4b2fb1ffd42015cd4832a56ed8b40545eb3df41b58d7b38443e"
+    },
+    "proxy_admin": {
+      "proxy": null,
+      "pinned_implementation": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+      "live_implementation": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+      "changed": false,
+      "live_runtime_bytes": 943,
+      "live_sha256": "238bb08777bab344b1e4090bd3a64fd26e48ef9ebaaf075234274e1c06129066",
+      "pinned_runtime_bytes": 943,
+      "pinned_sha256": "238bb08777bab344b1e4090bd3a64fd26e48ef9ebaaf075234274e1c06129066"
+    }
+  }
+}

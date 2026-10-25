@@ -1,0 +1,61 @@
+{
+  "pin": 48902346,
+  "factory": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+  "explorer_pages": 23,
+  "block_range_stages": 3,
+  "raw_event_rows_including_boundary_overlap": 22588,
+  "boundary_overlap_rows": 2,
+  "event_count": 22586,
+  "internal_create2_count": 22586,
+  "distinct_users": 22586,
+  "event_internal_address_tx_block_matches": 22586,
+  "create2_formula_matches": 22586,
+  "keccak_backend": "OpenSSL EVP KECCAK-256",
+  "source": "Etherscan v2 getLogs in rolling <=10,000-row block windows with inclusive boundary overlap, matched to pinned internal CREATE2 rows",
+  "user_proxy_map": "factory_user_proxy_map.json",
+  "canonical_user_proxy_tx_sha256": "37d10d9dc89c689316a654127d1abb8f1b13f9fe92c42ef2fb5fd76a892df51f",
+  "first_three": [
+    {
+      "user": "0xfb94d3404c1d3d9d6f08f79e58041d5ea95accfa",
+      "proxy": "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+      "tx": "0x19ea567c276c8a4ec2265a1ba78d0eed2aef06504ff5184957500e1f3173b8e5",
+      "block": 47920886
+    },
+    {
+      "user": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "proxy": "0x8a4712766b7884aca9b7d05ef7802afb3ec365ab",
+      "tx": "0xdeb3b987e84e6d2a61798269021e36c1123bbad6351ec8d1160e64ce5f3c531a",
+      "block": 47920996
+    },
+    {
+      "user": "0x2aa0b0bb38c2ab899797328e0796999d350d34c6",
+      "proxy": "0x75582fd06f0cf63844fd9be7c409318807a8cf9a",
+      "tx": "0x1d4f588a626d07fbb58c31931412ac58dc15806f7bcd2f6c68918e985e45798b",
+      "block": 48000678
+    }
+  ],
+  "last_three": [
+    {
+      "user": "0xba6d4d2f921d98f76cab8c73f9625633ed4faa5e",
+      "proxy": "0xece0e3294898a0b5dfa53defd7fb8e08f2dfd7d3",
+      "tx": "0xdd477b072f7e3a603881b84815f1cfdb046995bd8a276c3b673ab59df487be5b",
+      "block": 48902119
+    },
+    {
+      "user": "0x277d07b1b96d030eda9d57df90c466e91a493098",
+      "proxy": "0x4d3aad6b4325fda9184e43f0be1d7d1ff5063179",
+      "tx": "0x072df2a3d0008e69b4712e4a963f9c98d98b245fb51c17517d84398039ab0a9e",
+      "block": 48902270
+    },
+    {
+      "user": "0x520aac3e2f8cc78cc5c65d0fb94a5243c2f0a1dd",
+      "proxy": "0x6e92e230653df5a23611bcf64d39752b902fe703",
+      "tx": "0x1a6ac761fc4de29c2a4a8478c529786d08092fc388eb58abc4bf1b9f4b9d8497",
+      "block": 48902289
+    }
+  ],
+  "limits": [
+    "Explorer logs and internal traces are independent API surfaces, but both come from the same chain data provider family.",
+    "This validates every recorded CREATE2 deployment address and log through the pin, not every function branch of the factory or deposit proxy."
+  ]
+}

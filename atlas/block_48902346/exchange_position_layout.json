@@ -1,0 +1,1060 @@
+{
+  "pin": 48902346,
+  "exchange": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "mapping_base_slot": 10,
+  "sampled_open_events": 25,
+  "sampled_transactions": 10,
+  "post_diff_words_available": 25,
+  "all_available_words_match_events": true,
+  "top_32_flags_observed": {
+    "0x10000": 11,
+    "0x10001": 14
+  },
+  "records": [
+    {
+      "tx": "0x18da697c130733e097aac9bba5457949c1aa2f275fe1b292538d873c4cab1cd7",
+      "position_id": 1392998,
+      "mapping_base_slot": "0x90a025f4e52645991f33bd465a9d162337c27ac5c90244fde438c9ec372c9f45",
+      "decoded": {
+        "user": "0x59bbb293cd24c7a194035028aef7fe31a11ec0d7",
+        "instrument": 0,
+        "entry_price": 808455,
+        "margin": 400000000000000000000,
+        "leverage": 443,
+        "block_timestamp": 1792356647,
+        "top_32_flags": 65536
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0x18da697c130733e097aac9bba5457949c1aa2f275fe1b292538d873c4cab1cd7",
+      "position_id": 1392999,
+      "mapping_base_slot": "0xdac9e9776cb1218182705ff89766daf1fdb320ee62acfc5e3b9fd3a991db314d",
+      "decoded": {
+        "user": "0xe5474819bbbc082e4de0e15e57b1c95f8fda0152",
+        "instrument": 0,
+        "entry_price": 808455,
+        "margin": 200000000000000000000,
+        "leverage": 443,
+        "block_timestamp": 1792356647,
+        "top_32_flags": 65536
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0x18da697c130733e097aac9bba5457949c1aa2f275fe1b292538d873c4cab1cd7",
+      "position_id": 1393000,
+      "mapping_base_slot": "0xc0e067575fa7ddf63cf4894c8deb62eb3b4afa452af9b1b56838c2077711eb67",
+      "decoded": {
+        "user": "0x9d8670faa7a2ea01c8fe0a153a1adcbe763ac342",
+        "instrument": 1,
+        "entry_price": 234455,
+        "margin": 50000000000000000000,
+        "leverage": 100,
+        "block_timestamp": 1792356647,
+        "top_32_flags": 65537
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0x40dfc149333b3ea102864ca92e03c7d7ee6ccdb823460391e794d3b12639c16c",
+      "position_id": 1394021,
+      "mapping_base_slot": "0x2fd974218aeac966e5687dd4d2bc1bec8ee0c12a0325c5262125d77784130301",
+      "decoded": {
+        "user": "0xdae0424fd265b683ef1a2525aceba37d001565b7",
+        "instrument": 1,
+        "entry_price": 234895,
+        "margin": 18000000000000000000,
+        "leverage": 856,
+        "block_timestamp": 1792357093,
+        "top_32_flags": 65536
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0x6af4bd2172e5c9c26a23643c6917fcaed9b290df609d9510e53a70405bd63c43",
+      "position_id": 1394468,
+      "mapping_base_slot": "0x13bd4d52c14a018bf7b8b02d96b21b6c7f05ce252b6130851f3a72a32ebe4d4d",
+      "decoded": {
+        "user": "0x9f580c827fa8640fbf90d251eb0a98ecacd10e67",
+        "instrument": 0,
+        "entry_price": 809525,
+        "margin": 70290000000000000000,
+        "leverage": 396,
+        "block_timestamp": 1792357277,
+        "top_32_flags": 65537
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0x6af4bd2172e5c9c26a23643c6917fcaed9b290df609d9510e53a70405bd63c43",
+      "position_id": 1394469,
+      "mapping_base_slot": "0x323b5d25a6371b94dbafef6a20ffb9964a9701e5679a950921c26b27f698d204",
+      "decoded": {
+        "user": "0xe2a3f336d02435c2c9ec823114acbd98e51035ae",
+        "instrument": 0,
+        "entry_price": 809525,
+        "margin": 46330000000000000000,
+        "leverage": 396,
+        "block_timestamp": 1792357277,
+        "top_32_flags": 65537
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0x6af4bd2172e5c9c26a23643c6917fcaed9b290df609d9510e53a70405bd63c43",
+      "position_id": 1394470,
+      "mapping_base_slot": "0x5eea9c82c481c1bff9c9c9b418805f8b4324e842655e09d62fe1c77352867bd5",
+      "decoded": {
+        "user": "0x9f580c827fa8640fbf90d251eb0a98ecacd10e67",
+        "instrument": 0,
+        "entry_price": 809525,
+        "margin": 35140000000000000000,
+        "leverage": 396,
+        "block_timestamp": 1792357277,
+        "top_32_flags": 65537
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0x6af4bd2172e5c9c26a23643c6917fcaed9b290df609d9510e53a70405bd63c43",
+      "position_id": 1394471,
+      "mapping_base_slot": "0x5c138c8f7abf84200145f08106424a4ddbd77a932b794fa67069bda1797a4422",
+      "decoded": {
+        "user": "0x264d8292fe15333f0ac54b859b5397c4d4bcbabd",
+        "instrument": 0,
+        "entry_price": 809525,
+        "margin": 33000000000000000000,
+        "leverage": 300,
+        "block_timestamp": 1792357277,
+        "top_32_flags": 65537
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0x6af4bd2172e5c9c26a23643c6917fcaed9b290df609d9510e53a70405bd63c43",
+      "position_id": 1394472,
+      "mapping_base_slot": "0xf993fdc78d8c701eb82fe79b052ba9ca1cdafb3289e24b774bb9ab88b2dc9862",
+      "decoded": {
+        "user": "0xb99a18c395e9ecd8db58fba465a0df1d2a3e9ab4",
+        "instrument": 0,
+        "entry_price": 809525,
+        "margin": 14897529896663694348,
+        "leverage": 401,
+        "block_timestamp": 1792357277,
+        "top_32_flags": 65537
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0x6af4bd2172e5c9c26a23643c6917fcaed9b290df609d9510e53a70405bd63c43",
+      "position_id": 1394473,
+      "mapping_base_slot": "0x20fbbd790718f575ee2f828a3b0052c58354260e5f19b5cf02be22a5e604c3aa",
+      "decoded": {
+        "user": "0x7822efb68be9e458efa6307d3386921b23ac3ade",
+        "instrument": 0,
+        "entry_price": 809525,
+        "margin": 50000000000000000000,
+        "leverage": 100,
+        "block_timestamp": 1792357277,
+        "top_32_flags": 65537
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0x71015d2eb7e87c4a9b8e1c2832eaa6a91c62626675ae268a6be0b43801751989",
+      "position_id": 1394059,
+      "mapping_base_slot": "0x35841e6dfa0ffe5fea6c1ce2b849f36206d82f21980646cc937bad87871fde66",
+      "decoded": {
+        "user": "0x6c22208faea5660d14d397f0102c7d3300775c00",
+        "instrument": 0,
+        "entry_price": 809325,
+        "margin": 30000000000000000000,
+        "leverage": 350,
+        "block_timestamp": 1792357106,
+        "top_32_flags": 65537
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0x71015d2eb7e87c4a9b8e1c2832eaa6a91c62626675ae268a6be0b43801751989",
+      "position_id": 1394060,
+      "mapping_base_slot": "0x8fd8a8d83391bbf4f37af1e003b54fc49c90806c5b6c58a488327e6b26be119f",
+      "decoded": {
+        "user": "0x3705121529bf40d77e8e7b625120551b151d9af2",
+        "instrument": 1,
+        "entry_price": 235015,
+        "margin": 315340000000000000000,
+        "leverage": 33,
+        "block_timestamp": 1792357106,
+        "top_32_flags": 65536
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "position_id": 1394010,
+      "mapping_base_slot": "0xb459deb3cccdbd1f9a26258a9e26a3fed2f19dcf1f2fa14c8d1ddb3544c5326c",
+      "decoded": {
+        "user": "0x065837cfeef5c3c73bcbdc8a0f7cafac38f5e289",
+        "instrument": 0,
+        "entry_price": 809145,
+        "margin": 175000000000000000000,
+        "leverage": 439,
+        "block_timestamp": 1792357089,
+        "top_32_flags": 65536
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "position_id": 1394011,
+      "mapping_base_slot": "0x80d9d2c81984fdde758543991a28e071a4c9243c92763c9ca462145ea401f60b",
+      "decoded": {
+        "user": "0x9d75438d46561c19f2eb715a1e3e92d6bde716ef",
+        "instrument": 0,
+        "entry_price": 809145,
+        "margin": 100000000000000000000,
+        "leverage": 439,
+        "block_timestamp": 1792357089,
+        "top_32_flags": 65536
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "position_id": 1394012,
+      "mapping_base_slot": "0x5b0ae789693916519036062747f4393210681b2cc25d1724c1681d870b3a71f2",
+      "decoded": {
+        "user": "0xb4a487664232babf64295d9d90e0595dc33b3f90",
+        "instrument": 1,
+        "entry_price": 234930,
+        "margin": 231498009498201423872,
+        "leverage": 5,
+        "block_timestamp": 1792357089,
+        "top_32_flags": 65537
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0x95b10b8980938011c07c0b87a7b5280e58a6a5ba69bca34ae316a4c0c80fe3db",
+      "position_id": 1394018,
+      "mapping_base_slot": "0xf6d1677b6baad8ff0f425ec9753e8c830ef56b6899cd048f54f77eda7a092b4c",
+      "decoded": {
+        "user": "0xdae0424fd265b683ef1a2525aceba37d001565b7",
+        "instrument": 1,
+        "entry_price": 234905,
+        "margin": 18000000000000000000,
+        "leverage": 856,
+        "block_timestamp": 1792357092,
+        "top_32_flags": 65536
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0x95b10b8980938011c07c0b87a7b5280e58a6a5ba69bca34ae316a4c0c80fe3db",
+      "position_id": 1394019,
+      "mapping_base_slot": "0xbc0b5cad748414446e742044d7992c1f218f5d689a1d83301a00dc2e5e672814",
+      "decoded": {
+        "user": "0xdae0424fd265b683ef1a2525aceba37d001565b7",
+        "instrument": 1,
+        "entry_price": 234905,
+        "margin": 18000000000000000000,
+        "leverage": 856,
+        "block_timestamp": 1792357092,
+        "top_32_flags": 65536
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0x95b10b8980938011c07c0b87a7b5280e58a6a5ba69bca34ae316a4c0c80fe3db",
+      "position_id": 1394020,
+      "mapping_base_slot": "0xc15285a676393cbfbd0e35bf57a5a8216da93c8271068dca84dbcf7efbe11f06",
+      "decoded": {
+        "user": "0x290643c5ac91571d2b7f511d56bedf700c40cec9",
+        "instrument": 0,
+        "entry_price": 809145,
+        "margin": 10009999999999997952,
+        "leverage": 500,
+        "block_timestamp": 1792357092,
+        "top_32_flags": 65536
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0xa6b54a591e6031dd4a8e858f0d1d74d60aaa7b9f00d6eabd483ce0d9fb7d6a66",
+      "position_id": 1394056,
+      "mapping_base_slot": "0x2f5e235ecfe5eee67443ff80577e1cd1cc643f82e1646a337fa161fe0e839d40",
+      "decoded": {
+        "user": "0x6a540f93d3a9236c3accdc5751702ec9bc88a0b9",
+        "instrument": 0,
+        "entry_price": 809325,
+        "margin": 2000000000000000000000,
+        "leverage": 414,
+        "block_timestamp": 1792357106,
+        "top_32_flags": 65537
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0xa6b54a591e6031dd4a8e858f0d1d74d60aaa7b9f00d6eabd483ce0d9fb7d6a66",
+      "position_id": 1394057,
+      "mapping_base_slot": "0x882a7a23ff3f03ea51b09d4df5a00278f9b85462b7b3d0b4267d0e9245562cd6",
+      "decoded": {
+        "user": "0xe2a3f336d02435c2c9ec823114acbd98e51035ae",
+        "instrument": 0,
+        "entry_price": 809325,
+        "margin": 170320000000000000000,
+        "leverage": 449,
+        "block_timestamp": 1792357106,
+        "top_32_flags": 65537
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0xa6b54a591e6031dd4a8e858f0d1d74d60aaa7b9f00d6eabd483ce0d9fb7d6a66",
+      "position_id": 1394058,
+      "mapping_base_slot": "0x583b4039ff40342b1b8f768e02c7dc3be942b56e9ae422450116517e6e899308",
+      "decoded": {
+        "user": "0x7cda4b76a23765abf123929af2a8c8ca9c4d76de",
+        "instrument": 1,
+        "entry_price": 235015,
+        "margin": 1000000000000000000000,
+        "leverage": 50,
+        "block_timestamp": 1792357106,
+        "top_32_flags": 65537
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0xbfdbeb1a73a25264e1467b0f5be6646fb26f8ece631b1e2181133a49e2d0484c",
+      "position_id": 1394063,
+      "mapping_base_slot": "0xa7cb19a555c3555c1663f9dbce585f758b59e3c528c1039309a1079639fcf230",
+      "decoded": {
+        "user": "0xe284a7f6bb1b157f9df589a0a7709d22f82e762b",
+        "instrument": 0,
+        "entry_price": 809325,
+        "margin": 300000000000000000000,
+        "leverage": 20,
+        "block_timestamp": 1792357110,
+        "top_32_flags": 65536
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0xc6b1e8610b0a376d640bbb4fc8f5dae052e7282e013ea7214464aa24a9848f43",
+      "position_id": 1394061,
+      "mapping_base_slot": "0x153e1eaf2e928023f73b39eee3a3c6016d1b4cc2a9a8e98896ae2ce1777387b6",
+      "decoded": {
+        "user": "0x9d8670faa7a2ea01c8fe0a153a1adcbe763ac342",
+        "instrument": 1,
+        "entry_price": 234995,
+        "margin": 50000000000000000000,
+        "leverage": 100,
+        "block_timestamp": 1792357107,
+        "top_32_flags": 65537
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0xc6b1e8610b0a376d640bbb4fc8f5dae052e7282e013ea7214464aa24a9848f43",
+      "position_id": 1394062,
+      "mapping_base_slot": "0x88a829b5d36e32bab87c8f7631aceb95cf7967afcff8158cd84db68b1ebbc976",
+      "decoded": {
+        "user": "0x589151fabf143a94b204d8a7c1be72ea5e3049a5",
+        "instrument": 0,
+        "entry_price": 809325,
+        "margin": 20000000000000000000,
+        "leverage": 100,
+        "block_timestamp": 1792357107,
+        "top_32_flags": 65537
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    },
+    {
+      "tx": "0xf7dfd1a2d3d5950aa92e398e03c3de33c9e8e23dfae0d214ecb001759b1fcc9b",
+      "position_id": 1394013,
+      "mapping_base_slot": "0x995ebd573a0d03c05dd844cb2f12585a162c935d3b6bb7a143689d3f55b20951",
+      "decoded": {
+        "user": "0x6c22208faea5660d14d397f0102c7d3300775c00",
+        "instrument": 0,
+        "entry_price": 809145,
+        "margin": 30000000000000000000,
+        "leverage": 350,
+        "block_timestamp": 1792357090,
+        "top_32_flags": 65536
+      },
+      "event_fields_match": {
+        "user": true,
+        "instrument": true,
+        "side_bit0": true,
+        "flag_bit1": true,
+        "entry_price": true,
+        "margin": true,
+        "leverage": true,
+        "block_timestamp": true
+      },
+      "status": "matched"
+    }
+  ],
+  "open_accounting": [
+    {
+      "tx": "0x18da697c130733e097aac9bba5457949c1aa2f275fe1b292538d873c4cab1cd7",
+      "open_count": 3,
+      "user_balance_checks": [
+        {
+          "user": "0x59bbb293cd24c7a194035028aef7fe31a11ec0d7",
+          "margin_sum": 400000000000000000000,
+          "balance_delta": -400000000000000000000
+        },
+        {
+          "user": "0x9d8670faa7a2ea01c8fe0a153a1adcbe763ac342",
+          "margin_sum": 50000000000000000000,
+          "balance_delta": -50000000000000000000
+        },
+        {
+          "user": "0xe5474819bbbc082e4de0e15e57b1c95f8fda0152",
+          "margin_sum": 200000000000000000000,
+          "balance_delta": -200000000000000000000
+        }
+      ],
+      "total_margin": 650000000000000000000,
+      "total_balances_delta": -650000000000000000000,
+      "total_locked_margin_delta": 650000000000000000000
+    },
+    {
+      "tx": "0x40dfc149333b3ea102864ca92e03c7d7ee6ccdb823460391e794d3b12639c16c",
+      "open_count": 1,
+      "user_balance_checks": [
+        {
+          "user": "0xdae0424fd265b683ef1a2525aceba37d001565b7",
+          "margin_sum": 18000000000000000000,
+          "balance_delta": -18000000000000000000
+        }
+      ],
+      "total_margin": 18000000000000000000,
+      "total_balances_delta": -18000000000000000000,
+      "total_locked_margin_delta": 18000000000000000000
+    },
+    {
+      "tx": "0x6af4bd2172e5c9c26a23643c6917fcaed9b290df609d9510e53a70405bd63c43",
+      "open_count": 6,
+      "user_balance_checks": [
+        {
+          "user": "0x264d8292fe15333f0ac54b859b5397c4d4bcbabd",
+          "margin_sum": 33000000000000000000,
+          "balance_delta": -33000000000000000000
+        },
+        {
+          "user": "0x7822efb68be9e458efa6307d3386921b23ac3ade",
+          "margin_sum": 50000000000000000000,
+          "balance_delta": -50000000000000000000
+        },
+        {
+          "user": "0x9f580c827fa8640fbf90d251eb0a98ecacd10e67",
+          "margin_sum": 105430000000000000000,
+          "balance_delta": -105430000000000000000
+        },
+        {
+          "user": "0xb99a18c395e9ecd8db58fba465a0df1d2a3e9ab4",
+          "margin_sum": 14897529896663694348,
+          "balance_delta": -14897529896663694348
+        },
+        {
+          "user": "0xe2a3f336d02435c2c9ec823114acbd98e51035ae",
+          "margin_sum": 46330000000000000000,
+          "balance_delta": -46330000000000000000
+        }
+      ],
+      "total_margin": 249657529896663694348,
+      "total_balances_delta": -249657529896663694348,
+      "total_locked_margin_delta": 249657529896663694348
+    },
+    {
+      "tx": "0x71015d2eb7e87c4a9b8e1c2832eaa6a91c62626675ae268a6be0b43801751989",
+      "open_count": 2,
+      "user_balance_checks": [
+        {
+          "user": "0x3705121529bf40d77e8e7b625120551b151d9af2",
+          "margin_sum": 315340000000000000000,
+          "balance_delta": -315340000000000000000
+        },
+        {
+          "user": "0x6c22208faea5660d14d397f0102c7d3300775c00",
+          "margin_sum": 30000000000000000000,
+          "balance_delta": -30000000000000000000
+        }
+      ],
+      "total_margin": 345340000000000000000,
+      "total_balances_delta": -345340000000000000000,
+      "total_locked_margin_delta": 345340000000000000000
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "open_count": 3,
+      "user_balance_checks": [
+        {
+          "user": "0x065837cfeef5c3c73bcbdc8a0f7cafac38f5e289",
+          "margin_sum": 175000000000000000000,
+          "balance_delta": -175000000000000000000
+        },
+        {
+          "user": "0x9d75438d46561c19f2eb715a1e3e92d6bde716ef",
+          "margin_sum": 100000000000000000000,
+          "balance_delta": -100000000000000000000
+        },
+        {
+          "user": "0xb4a487664232babf64295d9d90e0595dc33b3f90",
+          "margin_sum": 231498009498201423872,
+          "balance_delta": -231498009498201423872
+        }
+      ],
+      "total_margin": 506498009498201423872,
+      "total_balances_delta": -506498009498201423872,
+      "total_locked_margin_delta": 506498009498201423872
+    },
+    {
+      "tx": "0x95b10b8980938011c07c0b87a7b5280e58a6a5ba69bca34ae316a4c0c80fe3db",
+      "open_count": 3,
+      "user_balance_checks": [
+        {
+          "user": "0x290643c5ac91571d2b7f511d56bedf700c40cec9",
+          "margin_sum": 10009999999999997952,
+          "balance_delta": -10009999999999997952
+        },
+        {
+          "user": "0xdae0424fd265b683ef1a2525aceba37d001565b7",
+          "margin_sum": 36000000000000000000,
+          "balance_delta": -36000000000000000000
+        }
+      ],
+      "total_margin": 46009999999999997952,
+      "total_balances_delta": -46009999999999997952,
+      "total_locked_margin_delta": 46009999999999997952
+    },
+    {
+      "tx": "0xa6b54a591e6031dd4a8e858f0d1d74d60aaa7b9f00d6eabd483ce0d9fb7d6a66",
+      "open_count": 3,
+      "user_balance_checks": [
+        {
+          "user": "0x6a540f93d3a9236c3accdc5751702ec9bc88a0b9",
+          "margin_sum": 2000000000000000000000,
+          "balance_delta": -2000000000000000000000
+        },
+        {
+          "user": "0x7cda4b76a23765abf123929af2a8c8ca9c4d76de",
+          "margin_sum": 1000000000000000000000,
+          "balance_delta": -1000000000000000000000
+        },
+        {
+          "user": "0xe2a3f336d02435c2c9ec823114acbd98e51035ae",
+          "margin_sum": 170320000000000000000,
+          "balance_delta": -170320000000000000000
+        }
+      ],
+      "total_margin": 3170320000000000000000,
+      "total_balances_delta": -3170320000000000000000,
+      "total_locked_margin_delta": 3170320000000000000000
+    },
+    {
+      "tx": "0xbfdbeb1a73a25264e1467b0f5be6646fb26f8ece631b1e2181133a49e2d0484c",
+      "open_count": 1,
+      "user_balance_checks": [
+        {
+          "user": "0xe284a7f6bb1b157f9df589a0a7709d22f82e762b",
+          "margin_sum": 300000000000000000000,
+          "balance_delta": -300000000000000000000
+        }
+      ],
+      "total_margin": 300000000000000000000,
+      "total_balances_delta": -300000000000000000000,
+      "total_locked_margin_delta": 300000000000000000000
+    },
+    {
+      "tx": "0xc6b1e8610b0a376d640bbb4fc8f5dae052e7282e013ea7214464aa24a9848f43",
+      "open_count": 2,
+      "user_balance_checks": [
+        {
+          "user": "0x589151fabf143a94b204d8a7c1be72ea5e3049a5",
+          "margin_sum": 20000000000000000000,
+          "balance_delta": -20000000000000000000
+        },
+        {
+          "user": "0x9d8670faa7a2ea01c8fe0a153a1adcbe763ac342",
+          "margin_sum": 50000000000000000000,
+          "balance_delta": -50000000000000000000
+        }
+      ],
+      "total_margin": 70000000000000000000,
+      "total_balances_delta": -70000000000000000000,
+      "total_locked_margin_delta": 70000000000000000000
+    },
+    {
+      "tx": "0xf7dfd1a2d3d5950aa92e398e03c3de33c9e8e23dfae0d214ecb001759b1fcc9b",
+      "open_count": 1,
+      "user_balance_checks": [
+        {
+          "user": "0x6c22208faea5660d14d397f0102c7d3300775c00",
+          "margin_sum": 30000000000000000000,
+          "balance_delta": -30000000000000000000
+        }
+      ],
+      "total_margin": 30000000000000000000,
+      "total_balances_delta": -30000000000000000000,
+      "total_locked_margin_delta": 30000000000000000000
+    }
+  ],
+  "open_balance_pairs_checked": 23,
+  "all_open_margin_transfers_match": true,
+  "signed_close_deactivations": 9,
+  "keeper_liquidation_deactivations": 6,
+  "deactivations": [
+    {
+      "tx": "0x1fc54a082055d35c0b79b6fc5f6c2a7004840531f5bcb9b6ec4450a93be2384f",
+      "position_id": 11,
+      "path": "signed_close",
+      "changed_word": "0xb3569174ca605aeef264a9f01151dace4275a70316034aaf090d8468560f043c",
+      "cleared_bit": 240,
+      "all_other_bits_unchanged": true
+    },
+    {
+      "tx": "0x20ee69d9f4191bff17d45a850a584d5803ca477986fd1684af985765d64d794b",
+      "position_id": 22,
+      "path": "signed_close",
+      "changed_word": "0x1722be5def2cea03a513d20b9ef471eb355d33f3c504747c388749c98f2d4223",
+      "cleared_bit": 240,
+      "all_other_bits_unchanged": true
+    },
+    {
+      "tx": "0x30639f82f9eb58fc815fb48b302ea732eed1bff5e755a92835b0b1f97c818acf",
+      "position_id": 1393736,
+      "path": "signed_close",
+      "changed_word": "0x273d99cce075828e62e6ee63f92ed394a4ed77d24022debfd578772c0dc7a74e",
+      "cleared_bit": 240,
+      "all_other_bits_unchanged": true
+    },
+    {
+      "tx": "0x3bc7029ee0d72c5dbacfb74dddc183ddb6206adca6ed702014eb90c28cf2d39e",
+      "position_id": 12,
+      "path": "signed_close",
+      "changed_word": "0x80283cfdc74729ecb224822f7a02837fb1d52df7cc3435ae86bb6e025f6e06fb",
+      "cleared_bit": 240,
+      "all_other_bits_unchanged": true
+    },
+    {
+      "tx": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+      "position_id": 1392206,
+      "path": "signed_close",
+      "changed_word": "0x277c7e846040c767a772481f7a1d8c165ee789ea93fc2ecb317be57fc2486910",
+      "cleared_bit": 240,
+      "all_other_bits_unchanged": true
+    },
+    {
+      "tx": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+      "position_id": 1392921,
+      "path": "signed_close",
+      "changed_word": "0x31caf646d2c00fec149098d54a53a7ec09188c0fdb130a8c39097dc159edf316",
+      "cleared_bit": 240,
+      "all_other_bits_unchanged": true
+    },
+    {
+      "tx": "0xc7ba4aaf1bdda8e24c2c8a228e315f39a879e7c9c87786eb260fa07c09b99940",
+      "position_id": 13,
+      "path": "signed_close",
+      "changed_word": "0xc5c2b17ace4fcac005542a0a50d8932fc28b9d50b7e4925e5b7ce40eede0c448",
+      "cleared_bit": 240,
+      "all_other_bits_unchanged": true
+    },
+    {
+      "tx": "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d",
+      "position_id": 1392977,
+      "path": "signed_close",
+      "changed_word": "0x32b927bf9a7c9dce7a6905b11143c67caa01fec9fc36dfe5ae7271932e15b180",
+      "cleared_bit": 240,
+      "all_other_bits_unchanged": true
+    },
+    {
+      "tx": "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d",
+      "position_id": 1392974,
+      "path": "signed_close",
+      "changed_word": "0x6dc9855929771c52a13f7b1b1895795587b781eb8c74b83cbd30507e68eb2269",
+      "cleared_bit": 240,
+      "all_other_bits_unchanged": true
+    },
+    {
+      "tx": "0x34b7ae5b487e74118446994402ec8f4651a1414ad1de75dcfe1f8267cc9854b9",
+      "position_id": 1390821,
+      "path": "keeper_liquidation",
+      "changed_word": "0xd72da6aa21d5a57b3c157bdb3776ff742a960c87fbf42c3311453099daee6e4a",
+      "cleared_bit": 240,
+      "all_other_bits_unchanged": true
+    },
+    {
+      "tx": "0x34b7ae5b487e74118446994402ec8f4651a1414ad1de75dcfe1f8267cc9854b9",
+      "position_id": 1393078,
+      "path": "keeper_liquidation",
+      "changed_word": "0x57ec892afb0ffcf8d5157b0fd73c60832769621ffce1e78ecd6f302a692e1193",
+      "cleared_bit": 240,
+      "all_other_bits_unchanged": true
+    },
+    {
+      "tx": "0x34b7ae5b487e74118446994402ec8f4651a1414ad1de75dcfe1f8267cc9854b9",
+      "position_id": 1393750,
+      "path": "keeper_liquidation",
+      "changed_word": "0x9f4d73f88710c4f1858aafacf45885eeb1f408cea1ebc544c708ec8810fbc643",
+      "cleared_bit": 240,
+      "all_other_bits_unchanged": true
+    },
+    {
+      "tx": "0xfd38402f39c844a944aa8a9aa8b3b7d89fb45a101593273b17b14a2f8b0fdc04",
+      "position_id": 1392721,
+      "path": "keeper_liquidation",
+      "changed_word": "0xad78221df55d1faa3d9bd32abff2affa879223a5e6deee449a1ca8573a16db1f",
+      "cleared_bit": 240,
+      "all_other_bits_unchanged": true
+    },
+    {
+      "tx": "0xfd38402f39c844a944aa8a9aa8b3b7d89fb45a101593273b17b14a2f8b0fdc04",
+      "position_id": 1392866,
+      "path": "keeper_liquidation",
+      "changed_word": "0x9f2ca11856d560a3509bdb3c8b2ba54d57c5f0785b0ded05a0008c545e76716c",
+      "cleared_bit": 240,
+      "all_other_bits_unchanged": true
+    },
+    {
+      "tx": "0xfd38402f39c844a944aa8a9aa8b3b7d89fb45a101593273b17b14a2f8b0fdc04",
+      "position_id": 1392878,
+      "path": "keeper_liquidation",
+      "changed_word": "0x6f817ef0f9369ecaeec714a21fab544f6cbfd3604434f0ce78a2a75fc67b2143",
+      "cleared_bit": 240,
+      "all_other_bits_unchanged": true
+    }
+  ],
+  "liquidation_accounting": [
+    {
+      "tx": "0x34b7ae5b487e74118446994402ec8f4651a1414ad1de75dcfe1f8267cc9854b9",
+      "positions": [
+        {
+          "position_id": 1393078,
+          "user": "0x1e48c2f130a95d75b01d1caf4cec7c49c5eb2aab",
+          "margin": 5000000000000000000000,
+          "user_balance_delta": 0,
+          "staker_fee": 50000000000000000000,
+          "dev_fee": 50000000000000000000,
+          "price": 235015,
+          "bust_price": 234981,
+          "event_flag": 0
+        },
+        {
+          "position_id": 1390821,
+          "user": "0x49d109e1e1b1c514a6b4c36083b223f7c7269540",
+          "margin": 100000000000000000000,
+          "user_balance_delta": 0,
+          "staker_fee": 1000000000000000000,
+          "dev_fee": 1000000000000000000,
+          "price": 235015,
+          "bust_price": 234984,
+          "event_flag": 0
+        },
+        {
+          "position_id": 1393750,
+          "user": "0xe66fbc8be19bd6b60a7fdc743a1019435ee0a04f",
+          "margin": 10300000000000000000,
+          "user_balance_delta": 0,
+          "staker_fee": 103000000000000000,
+          "dev_fee": 103000000000000000,
+          "price": 235015,
+          "bust_price": 234991,
+          "event_flag": 0
+        }
+      ],
+      "total_locked_margin_delta": -5110300000000000000000,
+      "total_balances_delta": 0
+    },
+    {
+      "tx": "0xfd38402f39c844a944aa8a9aa8b3b7d89fb45a101593273b17b14a2f8b0fdc04",
+      "positions": [
+        {
+          "position_id": 1392721,
+          "user": "0x71a45fdfc5fe3f517e30227d3a307e9d3bba29a0",
+          "margin": 1000000000000000000000,
+          "user_balance_delta": 0,
+          "staker_fee": 10000000000000000000,
+          "dev_fee": 10000000000000000000,
+          "price": 808455,
+          "bust_price": 808531,
+          "event_flag": 0
+        },
+        {
+          "position_id": 1392878,
+          "user": "0x71a45fdfc5fe3f517e30227d3a307e9d3bba29a0",
+          "margin": 1000000000000000000000,
+          "user_balance_delta": 0,
+          "staker_fee": 10000000000000000000,
+          "dev_fee": 10000000000000000000,
+          "price": 808455,
+          "bust_price": 808501,
+          "event_flag": 0
+        },
+        {
+          "position_id": 1392866,
+          "user": "0xb97e06a3a551749e98c6f149b586c5dc469df494",
+          "margin": 54750000000000000000,
+          "user_balance_delta": 0,
+          "staker_fee": 547500000000000000,
+          "dev_fee": 547500000000000000,
+          "price": 808455,
+          "bust_price": 808501,
+          "event_flag": 0
+        }
+      ],
+      "total_locked_margin_delta": -2054750000000000000000,
+      "total_balances_delta": 0
+    }
+  ],
+  "limits": [
+    "Open fields and the close/liquidation active-bit transition are covered only for saved successful paths, not every branch.",
+    "The upper 32 bits of the second word contain side, the active bit, and other flags; unobserved bits need independent branch evidence.",
+    "The 64-bit field next to leverage equals each sampled transaction block timestamp; other possible semantic uses remain unknown."
+  ]
+}

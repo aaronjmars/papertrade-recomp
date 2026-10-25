@@ -1,0 +1,55 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "replacement": "0x93a8e8d647f6c1e7b0f9bf4bd86eff3a9f20c3fb",
+  "replacement_sha256": "c755794c2d6cf6077dded83c91067b4e9e07fc386e63c322ff7e4389cd697f4d",
+  "original": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "runtime_hashes": {
+    "ExchangeProxy": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "Original": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+    "ProxyAdmin": "238bb08777bab344b1e4090bd3a64fd26e48ef9ebaaf075234274e1c06129066"
+  },
+  "proxy_runtime_hashes": [
+    "405e5bfee919c2dcb84ca0854ec56966a8212b322aae41c610e05de235b6b68f",
+    "07f9f589f271f1fa58e8a5990bec257eac46c8e0e7b44577d73666ac0a26511d"
+  ],
+  "test_names": [
+    "testOriginalFirstFullSend",
+    "testOriginalSecondFullSend",
+    "testReplacementFirstDeliveredCredit",
+    "testReplacementFirstNoFeeResidualCredit",
+    "testReplacementFirstReducedSend",
+    "testReplacementSecondDeliveredCredit",
+    "testReplacementSecondNoFeeResidualCredit",
+    "testReplacementSecondReducedSend"
+  ],
+  "test_source_sha256": "3c083fb77160cd3944ebdc7802e3ca6fca15efc532d45575cb677d04b4ba813a",
+  "forge_result": "8 passed, 0 failed",
+  "requested_raw_spot": [
+    5005091600,
+    1210000000
+  ],
+  "replacement_sent_raw_spot": [
+    4905091600,
+    1110000000
+  ],
+  "conditional_credit_internal": [
+    49050916000000000000,
+    11100000000000000000
+  ],
+  "tested_post_send_residual_raw_spot": [
+    0,
+    100000000
+  ],
+  "pinned_unit_slots": {
+    "3": 1000000000000,
+    "5": 10000000000
+  },
+  "limits": [
+    "This is a local implementation swap, not a historical upgrade or a recommended production upgrade.",
+    "The Exchange factory and Core balance precompiles are mocked; the CoreWriter is a local recorder, so no HyperCore delivery or fee is tested.",
+    "The second finalization assumes an accepted Core send leaving either zero or 1 USDC proxy spot balance; no HyperCore delivery is reproduced.",
+    "Only finalizeSweep retry and finalization behavior is exercised; storage-layout and safety equivalence of all other replacement functions is unproved.",
+    "The replacement is linked to an older library address and may change unrelated trading and accounting behavior."
+  ]
+}

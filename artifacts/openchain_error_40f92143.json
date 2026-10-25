@@ -1,0 +1,18 @@
+{
+  "url": "https://api.openchain.xyz/signature-database/v1/lookup?function=0x40f92143",
+  "response": {
+    "ok": true,
+    "result": {
+      "function": {
+        "0x40f92143": [
+          {
+            "name": "OiCapExceeded()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ]
+      },
+      "event": {}
+    }
+  }
+}

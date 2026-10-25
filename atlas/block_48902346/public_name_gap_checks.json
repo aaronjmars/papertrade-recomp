@@ -1,0 +1,39 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "openchain_function_lookup": "../../artifacts/openchain_unmatched_function_lookup.json",
+  "openchain_function_selector_count": 45,
+  "openchain_function_selectors_with_candidates": 0,
+  "openchain_event_lookup": "../../artifacts/openchain_unresolved_event_lookup.json",
+  "openchain_event_topic_count": 4,
+  "openchain_event_topics_with_candidates": 0,
+  "guardian_report_sha256": "74d71e8a4f71ed0b914c574fbbdf8e29176084605a2bb47736ef045c37b7d4a5",
+  "guardian_report_event_name_count": 524,
+  "guardian_report_event_layouts_checked": {
+    "0xa065d6ba54c5124cd73ce640fd3fbc0ce6eb8a4f4c9d5155347dcc461ad0cffe": [
+      "uint32,uint128,uint128",
+      "uint32,uint256,uint256",
+      "uint256,uint128,uint128",
+      "uint256,uint256,uint256"
+    ],
+    "0x3050fba19ada85812db26b240c13c72cabec711cbf18c7c6b3554d511e2951ee": [
+      "address,uint256,bool,uint256,uint256,uint256,uint256,uint256"
+    ],
+    "0x620c26bf4591919d64df736a6afdfe2981d15eb343c50644b49456c6facb3ab2": [
+      "address,uint256,uint256,uint256,uint256,uint256,uint256"
+    ],
+    "0x5bcf15b0a82479fbcfcb086707ad8be24c96d445448a1f625310e1c3fe491759": [
+      "uint128,uint128",
+      "uint256,uint256"
+    ]
+  },
+  "guardian_report_event_matches": [],
+  "instrument_event_full_history_lookup": "../../artifacts/exchange_instrument_admin/full_history_event_query.json",
+  "instrument_event_full_history_log_count": 0,
+  "control_event_last_256_block_log_count": 29,
+  "limits": [
+    "Registry absence and report text search cannot prove that a signature has no preimage.",
+    "Event field widths cannot be established from 32-byte log words alone; tested layouts are explicit above.",
+    "An empty provider log query does not prove that no historical call was attempted."
+  ]
+}

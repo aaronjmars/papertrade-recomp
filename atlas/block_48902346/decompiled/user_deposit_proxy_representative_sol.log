@@ -1,0 +1,5 @@
+[2m2026-10-18T21:32:15.001454Z[0m [33m WARN[0m calldata is not a standard size. if decoding fails, consider using the `--truncate-calldata` flag.
+[2m2026-10-18T21:32:15.001468Z[0m [33m WARN[0m couldn't find any resolved matches for 'a9059cbb'
+[2m2026-10-18T21:32:15.002519Z[0m [33m WARN[0m calldata is not a standard size. if decoding fails, consider using the `--truncate-calldata` flag.
+[2m2026-10-18T21:32:15.002524Z[0m [33m WARN[0m couldn't find any resolved matches for '17938e13'
+

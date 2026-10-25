@@ -1,0 +1,1366 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "generated_by": "audit_live2_authority.py",
+  "scope": "Authority, configuration and the upgrade route on the contract set 2 code installed by the 2026-10-21 governance batch: the set-2 Exchange, SessionKeyManager and Tokenomics implementations, the new BuilderRegistry, and the multisig/timelock/ProxyAdmin chain.",
+  "set2_runtimes": {
+    "exchange_implementation_2": {
+      "address": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+      "bytes": 23959,
+      "sha256": "fc7374f3969381160732fe98c5e3145e00c3f167f168d61d65bb4972e9a6b268"
+    },
+    "session_key_manager_implementation_2": {
+      "address": "0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946",
+      "bytes": 4521,
+      "sha256": "7df05c33597c04820a314fae015aab01b5566aff53e9bded8446962cfd4ad2c9"
+    },
+    "tokenomics_implementation_2": {
+      "address": "0x7c0a72a788cff4d68cfe9586aecb98e21eb58a03",
+      "bytes": 6452,
+      "sha256": "56caf868c73dbc33b94725972fc101dbcec0fb7b017c4f2f9e8cda49516992e9"
+    },
+    "exchange_linked_library_2": {
+      "address": "0x583d0bd818c991c5830fea93aef04e474b272459",
+      "bytes": 6286,
+      "sha256": "ced8e434ebd5379c4acc1fba809a5b18f531c676a264308c9a0a1a76d9641440"
+    },
+    "builder_registry": {
+      "address": "0xfdc6550436dd75ce8a0b145f935b7d3a64f53248",
+      "bytes": 1210,
+      "sha256": "f459de55cb0463912417650fbca7e18109f3820551e4071234109e1e72801d2f"
+    },
+    "exchange_implementation": {
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "bytes": 23052,
+      "sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1"
+    },
+    "session_key_manager_implementation": {
+      "address": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "bytes": 3764,
+      "sha256": "630c02b0c693c47760554a3f0fed68b72db5df601f887d2edaaa3106e6308e63"
+    },
+    "tokenomics_implementation": {
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "bytes": 3324,
+      "sha256": "ed9d18151a9365c347ac7a9da7e83b53ecedac235d9e67c4b2699503a6bd4a97"
+    },
+    "exchange_linked_library": {
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "bytes": 5790,
+      "sha256": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2"
+    }
+  },
+  "selector_diff": {
+    "exchange_implementation_2": {
+      "added": [
+        "0x69f9a5f0",
+        "0x9d346583",
+        "0xcbce7532",
+        "0xd970fad5",
+        "0xe6ac4a74",
+        "0xf009ac03"
+      ],
+      "dropped": [
+        "0x415f1240"
+      ],
+      "pinned_selectors": 98,
+      "set2_selectors": 103
+    },
+    "session_key_manager_implementation_2": {
+      "added": [
+        "0xbd322efa",
+        "0xd95208cd",
+        "0xe737de13"
+      ],
+      "dropped": [],
+      "pinned_selectors": 24,
+      "set2_selectors": 27
+    },
+    "tokenomics_implementation_2": {
+      "added": [
+        "0x122b6689",
+        "0x456db972",
+        "0x4ec7182e",
+        "0x85eb2a08",
+        "0xeedf4c43"
+      ],
+      "dropped": [],
+      "pinned_selectors": 21,
+      "set2_selectors": 26
+    },
+    "exchange_linked_library_2": {
+      "added": [
+        "0x06c5308a",
+        "0xb9370332"
+      ],
+      "dropped": [
+        "0x82296364",
+        "0xef1a27a9"
+      ],
+      "pinned_selectors": 10,
+      "set2_selectors": 10
+    },
+    "builder_registry": {
+      "added": [
+        "0x452a9320",
+        "0x459770f6",
+        "0x54dc2a02",
+        "0x673448dd",
+        "0x8a0dac4a",
+        "0x8da5cb5b",
+        "0x978bbdb9",
+        "0xd779e270",
+        "0xec969386",
+        "0xf2fde38b"
+      ],
+      "dropped": []
+    }
+  },
+  "added_selector_facts": {
+    "exchange_implementation_2:0x69f9a5f0": {
+      "body_pc": "0x253d",
+      "body_instructions": 16,
+      "nonpayable": true,
+      "caller_guard_slots": [],
+      "revert_payloads": [],
+      "pushed_topics": [],
+      "jump_targets": [
+        1186,
+        4348,
+        15096
+      ],
+      "note": "debits the shared slot-38 accumulator",
+      "guard": "none (self-claim)",
+      "abi": [],
+      "writes": [
+        "slot 39 own entry -> 0",
+        "slot 38 high 96 bits -="
+      ],
+      "events": [
+        "BuilderFeesClaimed(address,uint256,uint256)"
+      ]
+    },
+    "exchange_implementation_2:0x9d346583": {
+      "body_pc": "0x1e2a",
+      "body_instructions": 40,
+      "nonpayable": true,
+      "caller_guard_slots": [],
+      "revert_payloads": [],
+      "pushed_topics": [],
+      "jump_targets": [
+        1186,
+        7762,
+        13961
+      ],
+      "note": "returns the slot-39 mapping keccak256(abi.encode(addr, uint256(39)))",
+      "guard": "none",
+      "abi": [
+        "address"
+      ],
+      "writes": [],
+      "events": []
+    },
+    "exchange_implementation_2:0xcbce7532": {
+      "body_pc": "0x1533",
+      "body_instructions": 24,
+      "nonpayable": true,
+      "caller_guard_slots": [
+        {
+          "pc": "0x1549",
+          "slot": 38,
+          "caller_near": false
+        }
+      ],
+      "revert_payloads": [],
+      "pushed_topics": [],
+      "jump_targets": [
+        1186
+      ],
+      "note": "returns slot 38 >> 160 (a 96-bit accumulator above devFeeRecipient)",
+      "guard": "none",
+      "abi": [],
+      "writes": [],
+      "events": []
+    },
+    "exchange_implementation_2:0xd970fad5": {
+      "body_pc": "0x12fc",
+      "body_instructions": 29,
+      "nonpayable": true,
+      "caller_guard_slots": [],
+      "revert_payloads": [],
+      "pushed_topics": [],
+      "jump_targets": [
+        1186,
+        4348,
+        4889,
+        4897,
+        4906,
+        13961,
+        13983,
+        16058
+      ],
+      "note": "owner-only accrual reassignment between two addresses: builderFees(arg0) is moved into builderFees(arg1) and the shared slot-38 accumulator is not touched",
+      "guard": "owner (slot 0 bits 16..175, via the shared guard at 0x4500)",
+      "abi": [
+        "address",
+        "address"
+      ],
+      "writes": [
+        "slot 39 entry of arg0 -> 0",
+        "slot 39 entry of arg1 += arg0's amount"
+      ],
+      "events": [
+        "0xf764c3f6... (unnamed topic)"
+      ]
+    },
+    "exchange_implementation_2:0xe6ac4a74": {
+      "body_pc": "0x100c",
+      "body_instructions": 60,
+      "nonpayable": true,
+      "caller_guard_slots": [
+        {
+          "pc": "0x1029",
+          "slot": 89,
+          "caller_near": true
+        },
+        {
+          "pc": "0x1061",
+          "slot": 8,
+          "caller_near": false
+        }
+      ],
+      "revert_payloads": [],
+      "pushed_topics": [
+        "0xd8f19a0212393b8c603ef0d47c77814e1dbfa1419aa70029ad7a857c18d6ee98"
+      ],
+      "jump_targets": [
+        1186,
+        4056,
+        4134,
+        14077
+      ],
+      "note": "revert 0xda96f0b6 for every other caller, owner included",
+      "guard": "authorizedKeeper (slot 89 low 160 bits)",
+      "abi": [
+        "bool"
+      ],
+      "writes": [
+        "slot 8, byte above bits 0..31"
+      ],
+      "events": [
+        "0xd8f19a02... (unnamed topic)"
+      ]
+    },
+    "exchange_implementation_2:0xf009ac03": {
+      "body_pc": "0x6cf",
+      "body_instructions": 28,
+      "nonpayable": true,
+      "caller_guard_slots": [
+        {
+          "pc": "0x6e5",
+          "slot": 8,
+          "caller_near": false
+        }
+      ],
+      "revert_payloads": [],
+      "pushed_topics": [],
+      "jump_targets": [
+        1186
+      ],
+      "note": "returns (slot 8 >> 32) & 0xff != 0",
+      "guard": "none",
+      "abi": [],
+      "writes": [],
+      "events": []
+    },
+    "session_key_manager_implementation_2:0xbd322efa": {
+      "body_pc": "0x3a8",
+      "body_instructions": 57,
+      "nonpayable": true,
+      "caller_guard_slots": [
+        {
+          "pc": "0x3c6",
+          "slot": 2,
+          "caller_near": false
+        },
+        {
+          "pc": "0x3ea",
+          "slot": 8,
+          "caller_near": false
+        }
+      ],
+      "revert_payloads": [],
+      "pushed_topics": [
+        "0x8818669b8fb2aea1f49cabb856432f8bd536ace24e3564983488f5a001bc0cf9"
+      ],
+      "jump_targets": [
+        415,
+        428,
+        963,
+        3173
+      ],
+      "note": "",
+      "guard": "owner (slot 2 low 160 bits)",
+      "abi": [
+        "address"
+      ],
+      "writes": [
+        "slot 8 low 160 bits"
+      ],
+      "events": [
+        "BuilderRegistryUpdated(address)"
+      ]
+    },
+    "session_key_manager_implementation_2:0xd95208cd": {
+      "body_pc": "0x218",
+      "body_instructions": 64,
+      "nonpayable": true,
+      "caller_guard_slots": [],
+      "revert_payloads": [],
+      "pushed_topics": [],
+      "jump_targets": [
+        428,
+        554,
+        569,
+        587,
+        601,
+        614,
+        3391,
+        3586
+      ],
+      "note": "not a passive getter: the set-2 Exchange calls it as a staticcall on every signed close with (user, digest, v, r, s) and the pinned SessionKeyManager does not dispatch it at all",
+      "guard": "none (the Exchange calls it as a staticcall)",
+      "abi": [
+        "address",
+        "bytes32",
+        "uint8",
+        "bytes32",
+        "bytes32"
+      ],
+      "writes": [],
+      "events": []
+    },
+    "session_key_manager_implementation_2:0xe737de13": {
+      "body_pc": "0x1f0",
+      "body_instructions": 30,
+      "nonpayable": true,
+      "caller_guard_slots": [
+        {
+          "pc": "0x204",
+          "slot": 8,
+          "caller_near": false
+        }
+      ],
+      "revert_payloads": [],
+      "pushed_topics": [],
+      "jump_targets": [
+        428
+      ],
+      "note": "returns slot 8 low 160 bits",
+      "guard": "none",
+      "abi": [],
+      "writes": [],
+      "events": []
+    },
+    "tokenomics_implementation_2:0x122b6689": {
+      "body_pc": "0x8f5",
+      "body_instructions": 30,
+      "nonpayable": true,
+      "caller_guard_slots": [
+        {
+          "pc": "0x909",
+          "slot": 9,
+          "caller_near": false
+        }
+      ],
+      "revert_payloads": [],
+      "pushed_topics": [],
+      "jump_targets": [
+        347
+      ],
+      "note": "returns slot 9 low 128 bits",
+      "guard": "none",
+      "abi": [],
+      "writes": [],
+      "events": []
+    },
+    "tokenomics_implementation_2:0x456db972": {
+      "body_pc": "0x7e7",
+      "body_instructions": 33,
+      "nonpayable": true,
+      "caller_guard_slots": [
+        {
+          "pc": "0x7fb",
+          "slot": 9,
+          "caller_near": false
+        }
+      ],
+      "revert_payloads": [],
+      "pushed_topics": [],
+      "jump_targets": [
+        347
+      ],
+      "note": "returns slot 9 bits 128..191",
+      "guard": "none",
+      "abi": [],
+      "writes": [],
+      "events": []
+    },
+    "tokenomics_implementation_2:0x4ec7182e": {
+      "body_pc": "0x64a",
+      "body_instructions": 60,
+      "nonpayable": true,
+      "caller_guard_slots": [
+        {
+          "pc": "0x65e",
+          "slot": 9,
+          "caller_near": false
+        }
+      ],
+      "revert_payloads": [
+        "0x4e487b71"
+      ],
+      "pushed_topics": [],
+      "jump_targets": [
+        347,
+        1653,
+        1683,
+        4948
+      ],
+      "note": "reads slot 9 and TIMESTAMP",
+      "guard": "none",
+      "abi": [],
+      "writes": [],
+      "events": []
+    },
+    "tokenomics_implementation_2:0x85eb2a08": {
+      "body_pc": "0x445",
+      "body_instructions": 304,
+      "nonpayable": true,
+      "caller_guard_slots": [
+        {
+          "pc": "0x458",
+          "slot": 0,
+          "caller_near": false
+        },
+        {
+          "pc": "0x46f",
+          "slot": 9,
+          "caller_near": false
+        },
+        {
+          "pc": "0x485",
+          "slot": 2,
+          "caller_near": false
+        }
+      ],
+      "revert_payloads": [
+        "0x18160ddd",
+        "0x6e20dedb",
+        "0x6e20dedb",
+        "0x6e20dedb",
+        "0xfc6b95ed",
+        "0x30cd7471"
+      ],
+      "pushed_topics": [
+        "0x302d310a292ad6871345dd75b7909297bf984a2e0da9dafd6974ee157ea9f055"
+      ],
+      "jump_targets": [
+        347,
+        1199,
+        1214,
+        1225,
+        1235,
+        1307,
+        1321,
+        1326
+      ],
+      "note": "state-gated: 0x6e20dedb when the PAPER pointer is unset, 0xfc6b95ed when already active, then calls PAPER",
+      "guard": "owner (slot 0 bits 16..175)",
+      "abi": [],
+      "writes": [
+        "slot 9"
+      ],
+      "events": [
+        "0x302d310a... (unnamed topic)"
+      ]
+    },
+    "tokenomics_implementation_2:0xeedf4c43": {
+      "body_pc": "0x1dc",
+      "body_instructions": 25,
+      "nonpayable": true,
+      "caller_guard_slots": [],
+      "revert_payloads": [],
+      "pushed_topics": [],
+      "jump_targets": [
+        347,
+        504,
+        4433
+      ],
+      "note": "has a revert branch in the zero state (not an access-control error)",
+      "guard": "none",
+      "abi": [],
+      "writes": [],
+      "events": []
+    },
+    "exchange_linked_library_2:0x06c5308a": {
+      "body_pc": "0x8a5",
+      "body_instructions": 2926,
+      "nonpayable": false,
+      "caller_guard_slots": [],
+      "revert_payloads": [
+        "0x4e487b71",
+        "0x4e487b71",
+        "0xea097be6"
+      ],
+      "pushed_topics": [
+        "0xb2f6a0be3228032ab1a6e4d114ab0a4b8277ef32d9bd9b666e8537200aed4dc7"
+      ],
+      "jump_targets": [
+        235,
+        260,
+        292,
+        320,
+        600,
+        1000,
+        2076,
+        2253
+      ],
+      "note": "library entry; delegatecalled from the Exchange",
+      "guard": "undecided",
+      "abi": [],
+      "writes": [],
+      "events": [
+        "0xb2f6a0be... (unnamed topic)"
+      ]
+    },
+    "exchange_linked_library_2:0xb9370332": {
+      "body_pc": "0xef",
+      "body_instructions": 85,
+      "nonpayable": false,
+      "caller_guard_slots": [],
+      "revert_payloads": [],
+      "pushed_topics": [],
+      "jump_targets": [
+        235,
+        260,
+        270,
+        278,
+        287,
+        288,
+        317,
+        2364
+      ],
+      "note": "library entry; delegatecalled from the Exchange",
+      "guard": "undecided",
+      "abi": [],
+      "writes": [],
+      "events": []
+    }
+  },
+  "builder_registry": {
+    "address": "0xfdc6550436dd75ce8a0b145f935b7d3a64f53248",
+    "selectors": {
+      "0x452a9320": "guardian()",
+      "0x459770f6": "setFeeRate(uint64)",
+      "0x54dc2a02": "approveBuilder(address)",
+      "0x673448dd": "isApproved(address)",
+      "0x8a0dac4a": "setGuardian(address)",
+      "0x8da5cb5b": "owner()",
+      "0x978bbdb9": "feeRate()",
+      "0xd779e270": "feeRateOf(address)",
+      "0xec969386": "removeBuilder(address)",
+      "0xf2fde38b": "transferOwnership(address)"
+    },
+    "storage_layout": {
+      "slot_0": "owner (low 160 bits)",
+      "slot_1": "guardian (bits 0..159) + feeRate (bits 160..223)",
+      "slot_2": "mapping(address => uint8) approved builders"
+    },
+    "fee_rate_cap": 10000000000000000,
+    "fee_rate_cap_hex": "0x2386f26fc10000",
+    "owner_capabilities": [
+      "approveBuilder(address)",
+      "removeBuilder(address)",
+      "setFeeRate(uint64)",
+      "setGuardian(address)",
+      "transferOwnership(address)"
+    ],
+    "guardian_capabilities": [
+      "removeBuilder(address)"
+    ],
+    "observed_owner": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "observed_guardian": "0x000000000000000000000000696292762fd5ac3677a45edbe54eaece4194d1f6",
+    "observed_fee_rate": "0x0000000000000000000000000000000000000000000000000011c37937e08000",
+    "observed_fee_rate_of_keeper": "0x0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "saved_capture": {
+    "saved_head": {
+      "block": 49255838,
+      "hash": "0x8c221971a92fa2dc15969e32ba2fade7810dc16e58b21361a6a6ec6b3971b70c",
+      "timestamp": 1792705038,
+      "timestamp_utc": "2026-10-22T21:37:18Z"
+    },
+    "saved_captured_at": "2026-10-22T21:38:02.142727+00:00"
+  },
+  "own_capture": {
+    "rpc": "https://rpc.hyperliquid.xyz/evm",
+    "captured_at_utc": "2026-10-22T23:51:43Z",
+    "head": {
+      "block": 49264058,
+      "hash": "0xbc29de3ae0569aa442da1941d2fe4fb9458f36084351e7c3293c3bd3093adf74",
+      "timestamp": 1792713123
+    },
+    "proxy_slots": {
+      "exchange": {
+        "implementation": "0x0000000000000000000000000a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f"
+      },
+      "skm": {
+        "implementation": "0x00000000000000000000000004b5ea4cdd8d6de4bd6e0ef3865266947f043946",
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f"
+      },
+      "tokenomics": {
+        "implementation": "0x0000000000000000000000007c0a72a788cff4d68cfe9586aecb98e21eb58a03",
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f"
+      },
+      "paper": {
+        "implementation": "0x000000000000000000000000433bd418ec92818a960585f4d5fae563e735bb4a",
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f"
+      },
+      "staking": {
+        "implementation": "0x000000000000000000000000e6e3519455170913c5c3bfe541dd918a2d0cbb15",
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f"
+      },
+      "oracle": {
+        "implementation": "0x0000000000000000000000003997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f"
+      },
+      "batch_executor": {
+        "implementation": "0x000000000000000000000000e0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f"
+      },
+      "factory": {
+        "implementation": "0x0000000000000000000000008f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f"
+      }
+    },
+    "raw_slots": {
+      "exchange": {
+        "0x0": "0x00000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f0001",
+        "0x8": "0x0000000000000000000000000000000000000000000000000000000100000002",
+        "0x1a": "0x00000000000005862c43ca1c6ee476f6000000000000000054cf4204093fe202",
+        "0x1d": "0x00000000000000000000008326eb8896e358717f10502ec73ce8d28e37b10800",
+        "0x25": "0x0000000000000000000000003721476de31190dc1af8908026abe20efe25cf99",
+        "0x26": "0x000000000000000000000000eef651e381e04b5ae25393b1367c19bcfd575792",
+        "0x58": "0x000000000000000000000000233ff29b239abc1d7748605da9b205c3e008626e",
+        "0x59": "0x0000000000000000000000000924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56"
+      },
+      "skm": {
+        "0x0": "0x0000000000000000000000000000000000000000000000000000000000000001",
+        "0x1": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+        "0x2": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "0x3": "0x0000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a2",
+        "0x8": "0x000000000000000000000000fdc6550436dd75ce8a0b145f935b7d3a64f53248"
+      },
+      "tokenomics": {
+        "0x0": "0x00000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f0001",
+        "0x1": "0x0000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a2",
+        "0x2": "0x000000000000000000000000e40f17915daa230324030003a197cdaef2261c0e",
+        "0x3": "0x00000000000000000000000000000000000000000003ff4bb437d4f5498ba582",
+        "0x9": "0x0000000000000000000000000000000000000000038eba31582a5470aaca7592"
+      },
+      "paper": {
+        "0x3": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "0x4": "0x00000000000000000000000075174549dbbd44497d31a47e2e2d7406408d63d9",
+        "0x5": "0x000000000000000000000000aad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "0x6": "0x00000000000000000000000000000000000000001ce99aef25cc03afd88ffd86",
+        "0x9": "0x000000000000000000000000aad6c7b0cc3014fc80ffedae0ed7ce5967b0f016"
+      },
+      "staking": {
+        "0xf": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "0x10": "0x000000000000000000000001233ff29b239abc1d7748605da9b205c3e008626e"
+      },
+      "registry": {
+        "0x0": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "0x1": "0x000000000011c37937e08000696292762fd5ac3677a45edbe54eaece4194d1f6",
+        "0x2": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "timelock": {
+        "0x0": "0x000000000000000000000000696292762fd5ac3677a45edbe54eaece4194d1f6",
+        "0x1": "0x0000000000000000000000000000000000000000000000000000000000015180"
+      },
+      "proxyadmin": {
+        "0x0": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f"
+      },
+      "multisig": {
+        "0x0": "0x000000000000000000000000aa7577a7a27aa7fcf6d0ec481b87df3ad0f6a88e",
+        "0x1": "0x000000000000000000000000e9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+        "0x2": "0x0000000000000000000000009028f3b5b6b0d69e4e84ff555ade17114c3d1e72",
+        "0x3": "0x0000000000000000000000000000000000000000000000000000000000000001",
+        "0x4": "0x000000000000000000000000000000000000000000000000000000000000000c"
+      }
+    },
+    "multisig_transactions_11": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000e9686c8e11d80c8d78736485fcb6b6d7f4d7692e000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000104b0e58bc9000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008065a4ca136380fa593c43a77c7189b87d41fb27ee25deafd51efc7de2087ef2c0000000000000000000000000000000000000000000000000000000000000004499a88ec40000000000000000000000008326eb8896e358717f10502ec73ce8d28e37b1080000000000000000000000000a2db5c7614b714fd9ec12b29bff3b4f4c545d820000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "multisig_transactions_12": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "multisig_transaction_count_raw": "0x000000000000000000000000000000000000000000000000000000000000000c",
+    "pending_upgrade_operation_id": "0xef406895593dc1778f1f7b7ad77cc5c1894fe19bce6f38b9ef67982d5f7f114f",
+    "pending_upgrade_timelock_word": "0x000000000000000000000000000000000000000000000000000000006adbdb27",
+    "pending_impl_code": "0x6080604081815260049182361015610015575f80fd5b5f3560e01c9081630b4c3a8214610c4a5750806317a1678f14610bfe578063208e24fc14610bc45780632bc9ed5414610b9d5780633644e51514610b7f5780635197a0d314610aec5780635f76a1d6146108145780636525a680146107da578063747b8a1c1461066b57806378e890ba146106395780637ecebe00146106025780637f608253146105d25780637f6e9d4b1461059657806384f4fc6a146105365780638da5cb5b1461050e57806396ade1f9146104ae57806397dc97cb14610486578063b002b9fa14610415578063bd322efa146103a8578063c1e6613d1461035a578063cab7e8eb1461030e578063cf8fbec9146102b4578063d45167d01461026e578063d95208cd14610218578063e737de13146101f0578063f2f59776146101b05763f2fde38b14610148575f80fd5b346101ac5760203660031901126101ac57610161610c82565b600254926001600160a01b0392838516330361019f575050166001600160a01b03199190911681176002555f805160206111318339815191525f80a2005b516330cd747160e01b8152fd5b5f80fd5b50346101ac57806003193601126101ac576020906001600160a01b036101d4610c82565b165f5260068252805f206024355f528252805f20549051908152f35b50346101ac575f3660031901126101ac5760085490516001600160a01b039091168152602090f35b50346101ac5761023961022a36610d5c565b915f959395505f955f95610e1f565b6001600160a01b039150818116610259575b508351921682526020820152f35b9092506102669150610f9e565b90918461024b565b50346101ac5760803660031901126101ac576024359160ff831683036101ac576020926102a391606435916044359135610f3c565b90516001600160a01b039091168152f35b5090346101ac5760203660031901126101ac576102cf610c82565b6002546001600160a01b0393919291908416330361019f575050168060018060a01b031960035416176003555f805160206111518339815191525f80a2005b50346101ac57806003193601126101ac57602090600160ff61032e610c82565b60243590838060a01b03165f5260068552835f208160081c5f528552161b815f20541615159051908152f35b50346101ac57806003193601126101ac57602091610376610c82565b9061037f610c98565b6001600160a01b039283165f90815291855283822090831682528452829020548251921c168152f35b5090346101ac5760203660031901126101ac576103c3610c82565b6002546001600160a01b0393919291908416330361019f575050168060018060a01b031960085416176008557f8818669b8fb2aea1f49cabb856432f8bd536ace24e3564983488f5a001bc0cf95f80a2005b50346101ac5760603660031901126101ac5761042f610c82565b90610438610cae565b6003546001600160a01b03163303610476576001600160401b031642116104675761046560243583610e96565b005b5163f87d927160e01b81529050fd5b8151635c427cd960e01b81528490fd5b50346101ac575f3660031901126101ac5760035490516001600160a01b039091168152602090f35b5090346101ac57816003193601126101ac576104c8610c82565b906104d1610c98565b6001600160a01b039283165f908152602092835284812091841681529082528390205483516001600160401b038216815290841c90921690820152f35b50346101ac575f3660031901126101ac5760025490516001600160a01b039091168152602090f35b50346101ac5760203660031901126101ac575f90610552610c82565b923383526020528082209260018060a01b031692838352602052812055337f744157ccffbd293a2e8644928cd7d23d650f869b88f72d7bfea8041b76ca6bec5f80a3005b50346101ac5760203660031901126101ac576020906001600160a01b036105bb610c82565b165f526007825260ff815f20541690519015158152f35b50346101ac576020906105f06105e736610d5c565b93929092610e1f565b5090516001600160a01b039091168152f35b50346101ac5760203660031901126101ac576020906001600160a01b03610627610c82565b165f5260058252805f20549051908152f35b50346101ac575f3660031901126101ac5760035460209190610664906001600160a01b031646610d98565b9051908152f35b5090346101ac5760a03660031901126101ac57610686610c82565b6001600160401b0392906024358481116101ac576106a79036908501610d16565b936044359081116101ac576106bf9036908501610d16565b6001600160a01b0360843581811695919490928684036101ac575f549760ff8916806107cc575b6107be575f805160206111718339815191529060ff8a60081c1615998a6107ac575b50602081519101200361079e578060205f8051602061111183398151915292519101200361079157505061073e90606435610d98565b600155168160018060a01b03198281600254161760025560035416176003555f805160206111318339815191525f80a25f805160206111518339815191525f80a261078557005b5f805461ff0019169055005b51637a81105560e11b8152fd5b5051637a81105560e11b8152fd5b61ffff1916610101175f908155610708565b50505162dc149f60e41b8152fd5b5060ff8960081c16156106e6565b50346101ac575f3660031901126101ac57602090517ffce2fb41f9ff0457a0f012e62cfd6a7cff4e8439ae20008ab6979c740ba5a9838152f35b5090346101ac576101203660031901126101ac57610830610c82565b90610839610c98565b610841610cae565b916064359460018060a01b03948587168097036101ac576001600160401b0360a4358181169760843595929390918990036101ac5760c4359860ff8a168a036101ac57335f526020976007895260ff875f20541615610adc5783908c610a40575b16998a15610a3057814211610a20576108bb8884610e96565b86519186858b8501955f805160206110f18339815191528752169b8c8a8601528d606086015216988960808501528d60a085015260c084015260e083015260e08252610100820182811087821117610a0d57906109279392918852610104359260e43592519020610f3c565b16868115918215610a02575b50506109f457825191838301838110828211176109e15784528483528583018981525f8881529287528483208984528752918490209251835492516001600160e01b031990931691161790831b600160401b600160e01b031617905551908152839183917f3cec0566535d67d6c92668517af0bf8a66cdc91d622dbb830fcc08e1bcf5d1df9190a37f0355b1e1623f5e0e62218b560f626ffe2e73fda8d5a0c53ee8c83fa7ef3af60c5f80a4005b604183634e487b7160e01b5f525260245ffd5b8251638baa579f60e01b8152fd5b14159050865f610933565b604186634e487b7160e01b5f525260245ffd5b865163f87d927160e01b81528590fd5b865163276f9a6560e01b81528590fd5b90600854168015908115610a6a575b50610a5b5783906108a2565b865162c9a72160e41b81528590fd5b9050898d60248a518094819363673448dd60e01b83528b8301525afa908115610ad2575f91610a9c575b50155f610a4f565b90508981813d8311610acb575b610ab38183610cc4565b810103126101ac575180151581036101ac575f610a94565b503d610aa9565b88513d5f823e3d90fd5b8651631276f19160e31b81528590fd5b5090346101ac57816003193601126101ac57610b06610c82565b90602435918215158093036101ac576002546001600160a01b03929083163303610b715750916020917ff09fcf47c21ca51acd6fd24e30b537dc39f0e5e021541cf1e4fa7f1013d60b99931693845f5260078352805f2060ff1981541660ff841617905551908152a2005b84516330cd747160e01b8152fd5b50346101ac575f3660031901126101ac576020906001549051908152f35b50346101ac575f3660031901126101ac57602090515f805160206110f18339815191528152f35b50346101ac575f3660031901126101ac57602090517f9cc23a52214afa42e1ae53cdb2e79dc2d0cd33c33faca383ed3b149300adcb138152f35b50346101ac5760603660031901126101ac57610c18610c82565b506024356001600160401b038116036101ac576044356001600160a01b038116036101ac575163d2dd853160e01b8152fd5b346101ac575f3660031901126101ac57807fac4ddb8d63e9d7a862c5d61ce47517623a448262414a7eef6797102104b3121460209252f35b600435906001600160a01b03821682036101ac57565b602435906001600160a01b03821682036101ac57565b604435906001600160401b03821682036101ac57565b601f909101601f19168101906001600160401b03821190821017610ce757604052565b634e487b7160e01b5f52604160045260245ffd5b6001600160401b038111610ce757601f01601f191660200190565b81601f820112156101ac57803590610d2d82610cfb565b92610d3b6040519485610cc4565b828452602083830101116101ac57815f926020809301838601378301015290565b60a09060031901126101ac576004356001600160a01b03811681036101ac57906024359060443560ff811681036101ac57906064359060843590565b906040519060208201927f8b73c3c69bb8fe3d512ecc4cf759cc79239f7b179b0ffacaa9a75d522b39400f84525f8051602061117183398151915260408401525f805160206111118339815191526060840152608083015260018060a01b031660a082015260a0815260c0810181811060018060401b03821117610ce75760405251902090565b949391610e2c9391610f3c565b6001600160a01b039283165f90815260046020908152604080832086851684529091529020549092906001600160401b0381168015610e84574211610e725760401c1690565b604051636d03805160e11b8152600490fd5b6040516362822f9160e11b8152600490fd5b8160081c90600160ff84161b9060018060a01b031690815f5260209060068252604093845f20815f528352845f205490828216610f2b57845f5260068452855f20905f52835217835f2055815f5260058152825f2054841015610efa575b50505050565b60018401809411610f17576005915f52525f20555f808080610ef4565b634e487b7160e01b5f52601160045260245ffd5b8551633ab3447f60e11b8152600490fd5b6003549093929190610f57906001600160a01b031646610d98565b60405194602086019161190160f01b83526022870152604286015260428552608085019480861060018060401b03871117610ce757610f9b95604052519020611074565b90565b6008545f92906001600160a01b0390811690811561106a57604051630d779e2760e41b6020820190815291851660248083019190915281529160608301916001600160401b03831184841017610ce7575f9384936040525191614e20fa3d15611062573d9061100c82610cfb565b9161101a6040519384610cc4565b82523d5f602084013e5b158015611057575b61104e576020818051810103126101ac5760200151918261104a5750565b9250565b505f9250829150565b50602081511061102c565b606090611024565b505f935083925050565b9060ff1690601b821415806110e5575b6110dd576fa2a8918ca85bafe22016d0b997e4df60600160ff1b0384116110dd576020935f93608093604051938452868401526040830152606082015282805260015afa156110d2575f5190565b6040513d5f823e3d90fd5b505050505f90565b50601c82141561108456fed3d9a309f635415423ab81e7e3fb16d2117cc8e1edc90506adde9eaa3855edd2c89efdaa54c0f20c7adf612882df0950f5a951637e0307cdcb4c672f298b8bc64ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282bfe60173cc964bc674632fcf67031bba24c8a99a4a7d6518c726586978b7e30d37ff6a077f248416948843f592327444c45801847787632efa8e679f72a85215fa2646970667358221220f94a28d7e6ccc67c7d0bdf05c116bf43325f6343e03695968192ce6b961dedf264736f6c63430008180033"
+  },
+  "pending_upgrade": {
+    "record_index": 11,
+    "status_value": 1,
+    "destination": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "submitter": "0xe9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+    "epoch": 1,
+    "payload": "0xb0e58bc9000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008065a4ca136380fa593c43a77c7189b87d41fb27ee25deafd51efc7de2087ef2c0000000000000000000000000000000000000000000000000000000000000004499a88ec40000000000000000000000008326eb8896e358717f10502ec73ce8d28e37b1080000000000000000000000000a2db5c7614b714fd9ec12b29bff3b4f4c545d8200000000000000000000000000000000000000000000000000000000",
+    "schedule": {
+      "target": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+      "value": 0,
+      "predecessor": "0x65a4ca136380fa593c43a77c7189b87d41fb27ee25deafd51efc7de2087ef2c0",
+      "inner_selector": "0x99a88ec4",
+      "inner_data": "0x99a88ec40000000000000000000000008326eb8896e358717f10502ec73ce8d28e37b1080000000000000000000000000a2db5c7614b714fd9ec12b29bff3b4f4c545d82",
+      "inner_words": [
+        "0000000000000000000000008326eb8896e358717f10502ec73ce8d28e37b108",
+        "0000000000000000000000000a2db5c7614b714fd9ec12b29bff3b4f4c545d82",
+        "",
+        ""
+      ]
+    },
+    "inner_proxy": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+    "inner_impl": "0x0a2db5c7614b714fd9ec12b29bff3b4f4c545d82",
+    "operation_id": "0xef406895593dc1778f1f7b7ad77cc5c1894fe19bce6f38b9ef67982d5f7f114f",
+    "timelock_operation_word": "0x000000000000000000000000000000000000000000000000000000006adbdb27",
+    "impl_code_bytes": 4550,
+    "proxy_implementation_now": "0x00000000000000000000000004b5ea4cdd8d6de4bd6e0ef3865266947f043946"
+  },
+  "close_coupling": {
+    "method": "port-free exact-runtime replay of a constructed four-position set-2 close on the pinned mixed-close prestate (two real position templates from transaction 0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5, ids 1392206 and 1392921, with word0's address bits rewritten to a synthetic user), the set-2 Exchange implementation and linked library etched at the addresses the pinned prestate expects, and the SessionKeyManager implementation swapped between the pinned and the set-2 bytes",
+    "with_pinned_session_key_manager": {
+      "ok": false,
+      "revert_bytes": 100,
+      "write_slots": 0,
+      "slot39_candidate_hit": 0,
+      "slot_38_changed": false,
+      "slots": []
+    },
+    "with_set2_session_key_manager": {
+      "ok": true,
+      "revert_bytes": 0,
+      "write_slots": 12,
+      "slot39_candidate_hit": 0,
+      "slot_38_changed": false,
+      "slots": [
+        "bbc70db1b6c7afd11e79c0fb0051300458f1a3acb8ee9789d9b6b26c61ad9bc8",
+        "b7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "bff4442b8ed600beeb8e26b1279a0f0d14c6edfaec26d968ee13c86f7d4c2ba9",
+        "b7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "a856840544dc26124927add067d799967eac11be13e14d82cc281ea46fa3975a",
+        "b7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "e1eb2b2161a492c07c5a334e48012567cba93ec021043f53c1955516a3c5a842",
+        "b7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "0000000000000000000000000000000000000000000000000000000000000016",
+        "75799e60e4afdb6544e43ed6c0682f80920a44fabda9db26c7dc2c2e04f3ec42",
+        "0000000000000000000000000000000000000000000000000000000000000016",
+        "000000000000000000000000000000000000000000000000000000000000001a"
+      ]
+    },
+    "batch_with_pinned_session_key_manager": {
+      "outer_ok": true,
+      "return_bytes": 0,
+      "exchange_writes": 4,
+      "nonzero_writes": 4,
+      "positions_still_active": 2
+    },
+    "batch_with_set2_session_key_manager": {
+      "outer_ok": true,
+      "return_bytes": 0,
+      "exchange_writes": 22,
+      "nonzero_writes": 16,
+      "positions_still_active": 0
+    },
+    "failure_mode": "a direct close call with the pinned SessionKeyManager reverts with empty data (the failed verifier staticcall is bubbled), while the same close inside a BatchExecutor batch fails silently: the outer call succeeds and the two historical positions stay active, so the batch wrapper masks the inner failure rather than tolerating it",
+    "flag_byte_cleared": {
+      "ok": true,
+      "revert_bytes": 0,
+      "write_slots": 12,
+      "slots": [
+        "0000000000000000000000000000000000000000000000000000000000000016",
+        "0000000000000000000000000000000000000000000000000000000000000016",
+        "000000000000000000000000000000000000000000000000000000000000001a",
+        "75799e60e4afdb6544e43ed6c0682f80920a44fabda9db26c7dc2c2e04f3ec42",
+        "a856840544dc26124927add067d799967eac11be13e14d82cc281ea46fa3975a",
+        "b7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "b7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "b7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "b7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "bbc70db1b6c7afd11e79c0fb0051300458f1a3acb8ee9789d9b6b26c61ad9bc8",
+        "bff4442b8ed600beeb8e26b1279a0f0d14c6edfaec26d968ee13c86f7d4c2ba9",
+        "e1eb2b2161a492c07c5a334e48012567cba93ec021043f53c1955516a3c5a842"
+      ]
+    },
+    "flagged_write_set_identical": true,
+    "covered_selectors": [
+      "0x2792e706",
+      "0xd95208cd",
+      "0xb002b9fa",
+      "0x251fb27d"
+    ],
+    "limits": [
+      "The prestate is the pinned mixed-close prestate, not a set-2-era block.",
+      "The position templates are real and the signature is locally generated for the synthetic user.",
+      "No slot-39 candidate was credited, so the builder-fee credit key is still unobserved."
+    ]
+  },
+  "rejected_names": {
+    "SweepSameBlock()": {
+      "selector": "0xd26ffacb",
+      "note": "hash-asserted as NOT this name"
+    },
+    "SweepRateLimited()": {
+      "selector": "0xfefe83a0",
+      "note": "hash-asserted as NOT this name"
+    }
+  },
+  "cross_references": {
+    "signed_intents": {
+      "artifact": "atlas/block_48902346/live2_intents.json",
+      "script": "audit_live2_intents.py",
+      "rows_used": [
+        "L2-D1-06",
+        "L2-D2-04",
+        "L2-D2-05",
+        "L2-D4-02",
+        "L2-D5-01",
+        "L2-D1-07"
+      ],
+      "used_for": [
+        "the close struct has no builder field and an unsigned trailing calldata word does not become the slot-39 key (L2A-09)",
+        "claimBuilderFees pays only the caller's own entry (L2A-08)",
+        "the sweep family does not reach the slot-39 block (L2A-14)",
+        "0xd970fad5 reassigns slot-39 accruals and leaves slot 38 alone (L2A-13)",
+        "a mixed pair also changes dust-sweep retry success semantics (L2A-16)"
+      ],
+      "name_confirmations": [
+        "BuilderFeesClaimed(address,uint256,uint256) = 0x3416b71e... is hash-asserted in both audit_live2_authority.py and audit_live2_intents.py",
+        "SweepBelowMinimum() = 0x329c2b0f is hash-asserted in both scripts",
+        "SweepSameBlock() and SweepRateLimited() are asserted here as NOT 0xd26ffacb and 0xfefe83a0, so neither name may be revived in prose"
+      ]
+    }
+  },
+  "replay": {
+    "status": "present",
+    "forge_result": "19 passed, 0 failed",
+    "test_names": [
+      "testBuilderRegistryEvents",
+      "testBuilderRegistryFeeCap",
+      "testBuilderRegistryGuardianCapability",
+      "testBuilderRegistryOwnerGate",
+      "testBuilderRegistryZeroAddressBranches",
+      "testExchangeAddedGettersAnyCaller",
+      "testExchangeClaimBuilderFeesIsPermissionlessSelfClaim",
+      "testExchangeKeeperFlagEvent",
+      "testExchangeKeeperGatedFlag",
+      "testExchangeNewTwoArgSelectorIsOwnerGatedReassignment",
+      "testExchangeOwnerSettersStillOwnerGated",
+      "testExchangePauseAuthority",
+      "testNoImplementationSlotWriterInNewRuntimes",
+      "testPaperAdminOwnerGate",
+      "testSessionKeyManagerSetBuilderRegistryOwnerGate",
+      "testStakingAdminOwnerGate",
+      "testTimelockSelfGatedAndMultisigGated",
+      "testTokenomicsActivateRebateAuthority",
+      "testUpgradeRoutesThroughTimelockOwnedProxyAdmin"
+    ],
+    "source_sha256": "1df07af3358dfb8e1ced4ca980f96252e4a364849f7c4a61e1e5b5bf96f66887"
+  },
+  "findings": [
+    {
+      "id": "L2A-01",
+      "title": "Six selectors were added to the Exchange implementation, one dropped",
+      "angle": "C1 new selectors on unaudited code",
+      "invariant": "A5",
+      "actor": "owner (timelock), authorizedKeeper, any caller",
+      "precondition": "The set-2 Exchange implementation is behind the Exchange proxy (proved from the saved bytes and the batch payload).",
+      "trigger": "Any call to the six added selectors.",
+      "impact": "Two are new value-moving surfaces (0x69f9a5f0 claimBuilderFees, 0xd970fad5 owner-only accrual reassignment); one is a new non-owner setter (0xe6ac4a74, authorizedKeeper); three are getters.",
+      "affected": "set2",
+      "severity": "low",
+      "status": "confirmed_simulation",
+      "evidence_tier": "exact-runtime replay",
+      "evidence": [
+        "artifacts/live2_authority/AuthorityLocal.t.sol",
+        "artifacts/live2_authority/replay.json",
+        "artifacts/postpin_suite/runtime/0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723.hex",
+        "ADDED exchange_implementation_2 = 0x69f9a5f0,0x9d346583,0xcbce7532,0xd970fad5,0xe6ac4a74,0xf009ac03",
+        "DROPPED = 0x415f1240"
+      ],
+      "missing_observation": "A close in which the slot-39 credit actually fires. A four-position set-2 close on the pinned prestate with the live slot-8 flag reproduced writes 12 Exchange slots including the fee accumulator at slot 26 but no slot-39 entry, and leaves slot 38 unchanged (artifacts/live2_authority/close_coupling.json).",
+      "citations": [
+        "atlas/block_48902346/suite_sets.md"
+      ]
+    },
+    {
+      "id": "L2A-02",
+      "title": "0xe6ac4a74(bool) is a non-owner setter gated on authorizedKeeper, writing slot 8",
+      "angle": "C1 new selectors on unaudited code",
+      "invariant": "A5 + proposed A8 (role scope)",
+      "actor": "whichever address holds Exchange slot 89 (authorizedKeeper)",
+      "precondition": "Exchange slot 89 equals msg.sender; the batch set it to 0x0924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56.",
+      "trigger": "call 0xe6ac4a74(0|1) from the keeper",
+      "impact": "Flipped byte at slot 8 bits 32..40; instrumentCount (bits 0..31) is preserved (asserted), so the write cannot corrupt the instrument counter. The flag is returned by 0xf009ac03() and is read into the signed-close body's event-data buffer at 0x3001, but it does NOT gate the close: with the flag cleared the same constructed set-2 close succeeds and writes an identical 12-slot write set. No branch was found where it matters; open, liquidation and front-end consumers were not tested.",
+      "affected": "set2",
+      "severity": "low",
+      "status": "confirmed_simulation",
+      "evidence_tier": "exact-runtime replay",
+      "evidence": [
+        "testExchangeKeeperGatedFlag (keeper allowed; owner and outsider both revert 0xda96f0b6)",
+        "testExchangeKeeperFlagEvent (topic 0xd8f19a02..., one word of data)",
+        "testExchangeAddedGettersAnyCaller (instrumentCount unchanged across the write)",
+        "close_coupling.json flag_byte_cleared arm: the close succeeds and writes the same 12 slots as with the flag set"
+      ],
+      "missing_observation": "Whether the flag gates the open, liquidation or settlement paths; the close path is now tested and inert (artifacts/live2_authority/close_coupling.json, flag_byte_cleared arm).",
+      "citations": [
+        "atlas/block_48902346/exchange_direct_getters.md"
+      ]
+    },
+    {
+      "id": "L2A-03",
+      "title": "SessionKeyManager added three selectors; only the registry pointer setter writes state and it is owner-gated",
+      "angle": "C1 new selectors on unaudited code",
+      "invariant": "A5",
+      "actor": "owner (timelock)",
+      "precondition": "SessionKeyManager slot 2 holds the owner; the batch installed the set-2 implementation and then set slot 8.",
+      "trigger": "0xbd322efa(address) from the owner; 0xe737de13() from anyone; 0xd95208cd is the staticcall entry the set-2 Exchange uses for every signed close (see row L2A-15).",
+      "impact": "The registry pointer (slot 8) is owner-settable and readable; the wired value is the BuilderRegistry. No new non-owner setter.",
+      "affected": "set2",
+      "severity": "info",
+      "status": "confirmed_simulation",
+      "evidence_tier": "exact-runtime replay",
+      "evidence": [
+        "testSessionKeyManagerSetBuilderRegistryOwnerGate (outsider reverts 0x30cd7471, owner writes slot 8)",
+        "probe session_key_manager_builder_registry = 0x000000000000000000000000fdc6550436dd75ce8a0b145f935b7d3a64f53248"
+      ],
+      "missing_observation": "0xd95208cd's return words are not decomposed; only its calldata shape (user, digest, v, r, s) and its staticcall use are established.",
+      "citations": [
+        "atlas/block_48902346/selector_gap_other.md"
+      ]
+    },
+    {
+      "id": "L2A-04",
+      "title": "Tokenomics added five selectors; the only state changer is owner-gated and state-gated",
+      "angle": "C1 new selectors on unaudited code",
+      "invariant": "A5",
+      "actor": "owner (timelock)",
+      "precondition": "Tokenomics slot 0 bits 16..175 hold the owner; the rebate must be inactive and the PAPER pointer set.",
+      "trigger": "0x85eb2a08 activateRebate()",
+      "impact": "No new non-owner setter. The owner can activate a rebate path that then calls the configured PAPER token as minter; it refuses when the token is unset (0x6e20dedb) or the rebate is already active (0xfc6b95ed).",
+      "affected": "set2",
+      "severity": "info",
+      "status": "confirmed_simulation",
+      "evidence_tier": "exact-runtime replay",
+      "evidence": [
+        "testTokenomicsActivateRebateAuthority (outsider 0x30cd7471; owner reaches the PAPER call; 0x6e20dedb and 0xfc6b95ed both reproduced)",
+        "0x122b6689 and 0x456db972 read slot 9 low128 / bits128..191; 0xeedf4c43 has a revert branch in the zero state"
+      ],
+      "missing_observation": "The economic effect of the activated rebate and the name of 0x6e20dedb.",
+      "citations": [
+        "atlas/block_48902346/tokenomics_pseudocode.md"
+      ]
+    },
+    {
+      "id": "L2A-05",
+      "title": "The linked library changed two entries in each direction and the Exchange dropped liquidate(uint256)",
+      "angle": "C1 new selectors on unaudited code",
+      "invariant": "A5",
+      "actor": "n/a (interface shape)",
+      "precondition": "The set-2 Exchange links 0x583d0bd8... instead of the pinned 0xcd617f98....",
+      "trigger": "n/a",
+      "impact": "The new library adds 0x06c5308a and 0xb9370332 and drops 0x82296364 / 0xef1a27a9; the Exchange no longer dispatches 0x415f1240 (liquidate(uint256)), which the pinned implementation and both pinned variants do.",
+      "affected": "set2",
+      "severity": "info",
+      "status": "confirmed_simulation",
+      "evidence_tier": "bytecode-only static read",
+      "evidence": [
+        "selector diff from the saved set-2 and pinned library bytes",
+        "artifacts/postpin_suite/runtime/0x583d0bd818c991c5830fea93aef04e474b272459.hex"
+      ],
+      "missing_observation": "Whether any live caller still sends 0x415f1240 (it would now fall through to the fallback).",
+      "citations": [
+        "atlas/block_48902346/exchange_library_pseudocode.md"
+      ]
+    },
+    {
+      "id": "L2A-06",
+      "title": "BuilderRegistry authority: the owner controls everything except one guardian capability",
+      "angle": "C2 BuilderRegistry",
+      "invariant": "A5 + proposed A8",
+      "actor": "owner (timelock), guardian (newest multisig), any caller",
+      "precondition": "Owner = timelock 0xb915fa41... (slot 0); guardian = 0x696292... (slot 1 bits 0..159).",
+      "trigger": "approveBuilder / removeBuilder / setFeeRate / setGuardian / transferOwnership",
+      "impact": "approveBuilder, setFeeRate, setGuardian and transferOwnership are owner-only (outsider and guardian both revert NotOwner 0x30cd7471). removeBuilder accepts the owner OR the guardian (a third party gets 0x2c49223e NotOwnerOrGuardian). So the guardian can deny a builder its fee accrual but cannot add one or change the rate.",
+      "affected": "set2",
+      "severity": "low",
+      "status": "confirmed_simulation",
+      "evidence_tier": "exact-runtime replay",
+      "evidence": [
+        "testBuilderRegistryGuardianCapability (guardian allowed on removeBuilder, denied on the other four; outsider denied with 0x2c49223e)",
+        "testBuilderRegistryOwnerGate / testBuilderRegistryEvents / testBuilderRegistryZeroAddressBranches"
+      ],
+      "missing_observation": "Whether removeBuilder by the guardian has any on-chain precedent (no registry log besides the constructor exists).",
+      "citations": [
+        "atlas/block_48902346/suite_sets.md"
+      ]
+    },
+    {
+      "id": "L2A-07",
+      "title": "BuilderRegistry fee: 0.5 % live, hard-capped at 1 %, and only approved builders report it",
+      "angle": "C2 BuilderRegistry",
+      "invariant": "A5",
+      "actor": "owner (timelock)",
+      "precondition": "slot 1 packs guardian (bits 0..159) and feeRate (bits 160..223).",
+      "trigger": "setFeeRate(uint64) / feeRate() / feeRateOf(address)",
+      "impact": "The live rate is 5e15 raw = 0.5 % (the documented number). setFeeRate accepts exactly 1e16 (1 %) and reverts one unit above with FeeRateTooHigh 0xe30ce51e. feeRateOf returns the global rate only for an approved builder and zero for anyone else, so a fee cannot be attached to an unapproved address through the registry.",
+      "affected": "set2",
+      "severity": "info",
+      "status": "confirmed_simulation",
+      "evidence_tier": "exact-runtime replay",
+      "evidence": [
+        "testBuilderRegistryFeeCap (cap accepted, cap+1 reverts 0xe30ce51e, outsider reverts 0x30cd7471)",
+        "testBuilderRegistryOwnerGate (feeRateOf(approved)=5e15, feeRateOf(unapproved)=0)",
+        "saved probe builder_registry_fee_rate = 0x0000000000000000000000000000000000000000000000000011c37937e08000"
+      ],
+      "missing_observation": "Whether the Exchange ever reads feeRateOf: its runtime and library contain no such selector bytes.",
+      "citations": [
+        "https://docs.papertrade.xyz"
+      ]
+    },
+    {
+      "id": "L2A-08",
+      "title": "claimBuilderFees is permissionless but strictly caller-scoped",
+      "angle": "C2 BuilderRegistry",
+      "invariant": "A1 + A5",
+      "actor": "any address with a nonzero builderFees entry of its own",
+      "precondition": "The set-2 Exchange maps builder fees at slot 39; the slot-39 idiom is absent from the pinned implementation (0 occurrences of PUSH1 0x27), so the mechanism is new.",
+      "trigger": "0x69f9a5f0 claimBuilderFees() zeroes keccak256(abi.encode(msg.sender, 39)) and debits the shared slot-38 high 96 bits by that amount.",
+      "impact": "The claim is not access-controlled, but it can only touch the caller's own entry, so no caller can take another builder's accrual: with entries 5e18 for A and 7e18 for B, A's call pays exactly 5e18 and leaves B's entry intact, B's pays exactly 7e18, the shared slot-38 counter falls by exactly the two amounts, and an address with no entry succeeds and is paid zero. Cross-caller theft is therefore disproved; the fee is not a bearer asset. An amount larger than the slot-38 counter reverts with a checked-arithmetic panic. The only entry points that touch slot 39 in any driven shape are this one (caller key) and the owner reassignment 0xd970fad5; the sweep family, the close and the open leave it alone.",
+      "affected": "set2",
+      "severity": "low",
+      "status": "confirmed_simulation",
+      "evidence_tier": "exact-runtime replay",
+      "evidence": [
+        "testExchangeClaimBuilderFeesIsPermissionlessSelfClaim (outsider pays out its own entry, entry zeroed, slot-38 high 96 bits -= the amount, event 0x3416b71e..., overdraw panics 0x4e487b71, zero entry is a no-op success)",
+        "peer exact-runtime rows L2-D2-04 in atlas/block_48902346/live2_intents.json (two seeded entries: each caller is paid only its own, the other survives)",
+        "peer exact-runtime rows L2-D1-06 and L2-D2-04 in atlas/block_48902346/live2_intents.json (sweep family, close and open all leave the seeded slot-39 entries untouched)",
+        "static: pinned Exchange PUSH1 0x27 count = 0; set2 count = 4"
+      ],
+      "missing_observation": "Where the paid amount lands after the linked-library call (the Exchange balance mapping at base 9 was unchanged in the replay).",
+      "citations": [
+        "atlas/block_48902346/live2_intents.json"
+      ]
+    },
+    {
+      "id": "L2A-09",
+      "title": "The close's builder-fee credit keys on an unidentified memory word, and the close struct has no builder field",
+      "angle": "C2 BuilderRegistry",
+      "invariant": "A5",
+      "actor": "a closer (the credit site is inside the signed-close body)",
+      "precondition": "The signed-close struct is Close(address user,uint256[] positionIds,uint256 nonce,uint64 deadline): the CLOSE_TYPEHASH constant 0x9cc23a52... is byte-identical in the pinned and the set-2 Exchange runtime and hash-matches that signature, so no builder field is signed.",
+      "trigger": "A close that accrues a fee reaches the slot-39 credit site at 0x32b6: it loads a word from mload(args_base + 0x180), masks it to 160 bits, and does keccak256(., 39) -> SLOAD -> checked add -> SSTORE.",
+      "impact": "The credit site is real in the set-2 bytes, but the source of the keyed word is not identified: appending an unsigned 8th calldata word leaves the credited key and the Exchange write set unchanged, and a six-element positionIds array does not make any element the key. An empty or loss-free close writes nothing, so the block is only entered when a fee exists: four driven entry points (0x01681a62 sweep with and without a pending request, 0xe0189108 requestSweep, 0x6d142da1 finalizeSweep) all left seeded slot-39 entries untouched, so no non-fee-paying shape reaches the credit block, and my earlier lead that the helper block belongs to entry 0x01681a62 is contradicted by that probe. Nothing here shows that a third party can steer a builder fee, and nothing disproves it either.",
+      "affected": "set2",
+      "severity": "info",
+      "status": "plausible_unproven",
+      "evidence_tier": "bytecode-only static read",
+      "evidence": [
+        "static: PUSH1 0x27; PUSH1 0x20; MSTORE; KECCAK256; SLOAD; SSTORE at 0x32b6 inside body 0x2792e706, with the key loaded from memory at 0x180 + the argument index and masked to 160 bits at 0x32a6",
+        "CLOSE_TYPEHASH assertion in this script (constant present and hash-matched in both the pinned and the set-2 runtime)",
+        "peer exact-runtime rows L2-D1-06 and L2-D2-04 in atlas/block_48902346/live2_intents.json (unsigned trailing word accepted, credit key unchanged; sweep family and open leave slot 39 untouched; fee-paying shapes not run)"
+      ],
+      "missing_observation": "A fee-paying close traced on set 2, to name the memory word the credit keys on.",
+      "citations": [
+        "atlas/block_48902346/live2_intents.json",
+        "audit_live2_intents.py"
+      ]
+    },
+    {
+      "id": "L2A-10",
+      "title": "Live role inventory and blast radius",
+      "angle": "C3 authority inventory on live code",
+      "invariant": "A5 + proposed A8",
+      "actor": "owner (timelock), pause guardian (multisig), authorizedExecutor, authorizedKeeper, marketKeeper, relayer, builder",
+      "precondition": "Values read at the live head (latest, no archive endpoint).",
+      "trigger": "n/a",
+      "impact": "owner = timelock 0xb915fa41... for Exchange, SKM, Tokenomics, PAPER, Staking, ProxyAdmin and BuilderRegistry. pauseGuardian = the newest multisig, and it can pause but not resume (NotPauseAuthority 0x49199fb6). authorizedExecutor (slot 88) = the BatchExecutor proxy, which only relays signed intents. authorizedKeeper (slot 89) = the address the batch wired; it can flip the slot-8 flag. marketKeeper (slot 37) is a separate role. No role other than the owner can change pricing or pointers.",
+      "affected": "both",
+      "severity": "info",
+      "status": "confirmed_live",
+      "evidence_tier": "pinned read-only probe",
+      "evidence": [
+        "artifacts/live2_authority/live_capture_raw.json",
+        "testExchangePauseAuthority (guardian pause allowed, resume denied)",
+        "testExchangeOwnerSettersStillOwnerGated"
+      ],
+      "missing_observation": "Whether the keeper or marketKeeper address is a contract with further privileges.",
+      "citations": [
+        "atlas/block_48902346/exchange_admin_setters.md",
+        "atlas/block_48902346/exchange_pause_behavior.json"
+      ]
+    },
+    {
+      "id": "L2A-11",
+      "title": "Upgrade chain today: 2-of-3 multisig, 86,400 s timelock, timelock-owned ProxyAdmin",
+      "angle": "C4 upgrade route",
+      "invariant": "A5",
+      "actor": "two of the three multisig signers",
+      "precondition": "Multisig 0x69629276... (requiredConfirmations 2, epoch 1, signers 0xaa7577a7..., 0xe9686c8e..., 0x9028f3b5...) owns the timelock 0xb915fa41...; the timelock owns the ProxyAdmin 0xe79c91cc...; the ProxyAdmin is the EIP-1967 admin of all eight proxy addresses.",
+      "trigger": "submitTransaction(scheduleBatch) -> confirmAndExecute -> wait minDelay -> executeBatch -> ProxyAdmin.upgrade(proxy, impl)",
+      "impact": "The minimum delay is 86,400 s at the live head (the pin-era 604,800 s updateMinDelay operation executed at block 49,050,825), and the pin-era pending operation was cancelled at 49,079,600. A 12th multisig record exists at the current head where the saved capture recorded 11.",
+      "affected": "both",
+      "severity": "info",
+      "status": "confirmed_live",
+      "evidence_tier": "pinned read-only probe",
+      "evidence": [
+        "probe newest_timelock_min_delay = 0x0000000000000000000000000000000000000000000000000000000000015180",
+        "governance_logs newest_timelock: MinDelayUpdated 86,400 and OperationExecuted at block 49,050,825; OperationCancelled at 49,079,600",
+        "testUpgradeRoutesThroughTimelockOwnedProxyAdmin, testTimelockSelfGatedAndMultisigGated"
+      ],
+      "missing_observation": "The payload of multisig record 11, if the live capture of it is unavailable.",
+      "citations": [
+        "atlas/block_48902346/multisig_pseudocode.md",
+        "atlas/block_48902346/timelock_pseudocode.md"
+      ]
+    },
+    {
+      "id": "L2A-12",
+      "title": "A third SessionKeyManager implementation is staged through the timelock",
+      "angle": "C4 upgrade route",
+      "invariant": "A5",
+      "actor": "two of the three multisig signers",
+      "precondition": "The SKM proxy's EIP-1967 admin is the ProxyAdmin; the ProxyAdmin is owned by the timelock; the timelock delay is 86,400 s.",
+      "trigger": "Multisig record 11 (submitter 0xe9686c8e..., epoch 1, status 1 = executed) calls the timelock's schedule(0xb0e58bc9) with target = the ProxyAdmin, value 0, data = 0x99a88ec4 + the SKM proxy + implementation 0x0a2db5c7614b714fd9ec12b29bff3b4f4c545d82 (4,550 bytes), predecessor 0x65a4ca13....",
+      "impact": "Once the delay elapses, execute() can replace the SessionKeyManager implementation with unaudited 4,550-byte code behind the same proxy, with no proxy Upgraded log. At the capture head the proxy still points at the set-2 implementation 0x04b5ea4c..., so the swap has not happened yet.",
+      "affected": "both",
+      "severity": "medium",
+      "status": "confirmed_live",
+      "evidence_tier": "pinned read-only probe",
+      "evidence": [
+        "artifacts/live2_authority/live_capture_raw.json multisig_transactions_11 decoded (destination=timelock, selector 0xb0e58bc9, inner 0x99a88ec4, impl 0x0a2db5c7614b714fd9ec12b29bff3b4f4c545d82, status 1)",
+        "proxy_slots.skm.implementation still 0x04b5ea4c... at the capture head",
+        "pending_impl_code is a non-empty contract (4550 bytes)",
+        "timelock storage keccak256(abi.encode(operationId, 2)) = 0x6adbdb27; the executed pin-era operation 0xc616b8d5... reads 1 and the cancelled one 0x51142366... reads 0, which confirms the mapping base and the keying"
+      ],
+      "missing_observation": "The schedule block, so the applied delay can be checked: the timelock's entry for this operation id holds 0x6adbdb27 (a ready time about 2.8 days after the capture head), which is much longer than the 86,400 s minimum delay read at the same head. The confirming signer and the reason for the change are also open.",
+      "citations": [
+        "atlas/block_48902346/timelock_pseudocode.md"
+      ]
+    },
+    {
+      "id": "L2A-13",
+      "title": "0xd970fad5 is an owner-only accrual reassignment, not a claim and not a slot-38 debit",
+      "angle": "C2 BuilderRegistry",
+      "invariant": "A5 + proposed A8",
+      "actor": "owner (timelock)",
+      "precondition": "Exchange slot 39 is an address-keyed balance mapping; slot 0 bits 16..175 hold the owner.",
+      "trigger": "0xd970fad5(a, b) from the owner.",
+      "impact": "The two words are two addresses, not an amount: builderFees(a) goes to zero and builderFees(b) rises by a's amount, while the shared slot-38 accumulator is unchanged. A non-owner reverts NotOwner 0x30cd7471 and neither entry moves. This is an owner reassignment of a builder's accrued balance, so slot 39 is a per-address balance rather than a per-call fee; it is also why the credited address for a close cannot be named without a fee-paying close.",
+      "affected": "set2",
+      "severity": "low",
+      "status": "confirmed_simulation",
+      "evidence_tier": "exact-runtime replay",
+      "evidence": [
+        "testExchangeNewTwoArgSelectorIsOwnerGatedReassignment (5e18 on a and 7e18 on b: owner call gives a -> 0 and b -> 12e18 with slot-38 high 96 bits still 100e18; outsider reverts 0x30cd7471 and both entries keep their values)",
+        "peer exact-runtime row L2-D2-05 in atlas/block_48902346/live2_intents.json",
+        "static: the body reads builderFees(arg0) at 0x3eca and its owner guard is the shared routine at 0x4500"
+      ],
+      "missing_observation": "Whether any third party observation can ever reach this entry (it is owner-gated, and no owner call of it is in the saved history).",
+      "citations": [
+        "atlas/block_48902346/live2_intents.json"
+      ]
+    },
+    {
+      "id": "L2A-14",
+      "title": "The sweep family does not reach the slot-39 block: an earlier lead is disproved",
+      "angle": "C2 BuilderRegistry",
+      "invariant": "A5",
+      "actor": "n/a (entry-point census)",
+      "precondition": "The 0x3af8/0x3eca/0x3eba helper block sits inside the dispatch region attributed to entry 0x01681a62 by next-entry heuristics, which my own audit used as a lead.",
+      "trigger": "Driving 0x01681a62 (sweep with and without a pending request), 0xe0189108 (requestSweep) and 0x6d142da1 (finalizeSweep) with seeded slot-39 entries.",
+      "impact": "All four calls succeed and none reads or writes a seeded entry, so the sweep family does not enter the slot-39 block and the region-attribution lead is wrong. Recorded as a disproved lead so the census of slot-39 touchers stays honest: only claimBuilderFees (caller key) and the owner entry 0xd970fad5 touch that mapping.",
+      "affected": "set2",
+      "severity": "none",
+      "status": "disproved",
+      "evidence_tier": "exact-runtime replay",
+      "evidence": [
+        "peer exact-runtime rows L2-D1-06 and L2-D2-04 in atlas/block_48902346/live2_intents.json (four driven entry points, seeded entries untouched)",
+        "local: the region-attribution heuristic used no call-graph, so it could not have settled this without a probe"
+      ],
+      "missing_observation": "None for the disproof; the credited address for a close is still open (L2A-09).",
+      "citations": [
+        "atlas/block_48902346/live2_intents.json"
+      ]
+    },
+    {
+      "id": "L2A-15",
+      "title": "The set-2 Exchange depends on a set-2-only SessionKeyManager entry, so one proxy cannot be upgraded alone",
+      "angle": "C1 new selectors on unaudited code; C4 upgrade route",
+      "invariant": "A5",
+      "actor": "whoever installs a single implementation (the timelock, through the ProxyAdmin)",
+      "precondition": "The set-2 close path (0x2792e706) makes a staticcall to SessionKeyManager selector 0xd95208cd before it touches a position, after a non-static call to 0xb002b9fa.",
+      "trigger": "Install the set-2 Exchange implementation behind a SessionKeyManager that still dispatches the pinned implementation, then attempt a signed close.",
+      "impact": "A direct signed close call reverts with empty revert data: the trace shows 0x6cd56616::2792e706 -> 0x8326eb88::b002b9fa (non-static, succeeds) then 0x8326eb88::d95208cd [staticcall] -> delegatecall into the pinned 0x8a5069fe -> Revert, bubbled back out. The identical constructed close succeeds with the set-2 SessionKeyManager and writes 12 Exchange slots. The failure mode through a batch is different in appearance only: replaying the historical BatchExecutor batch verbatim, the outer call succeeds under either SessionKeyManager, but with the pinned one the batch writes 4 Exchange slots and both historical positions are STILL ACTIVE, while with the set-2 one it writes 22 and closes both. So the batch wrapper masks the inner close failure rather than the Exchange tolerating a failed verifier: nothing is closed and no position state advances. The pair is only coherent together, so any single-proxy retrofit breaks closes, and a recovery candidate that delegates to the pinned Exchange implementation must be paired with the pinned SessionKeyManager. The hazard is not limited to closes: a mixed pair also changes what counts as a successful deposit sweep (row L2A-20).",
+      "affected": "both",
+      "severity": "medium",
+      "status": "confirmed_simulation",
+      "evidence_tier": "exact-runtime replay",
+      "evidence": [
+        "artifacts/live2_authority/close_coupling.json: direct close with the pinned SessionKeyManager reverts and writes 0 slots, with the set-2 one succeeds and writes 12; the historical batch writes 4 slots with 2 positions still active under the pinned SessionKeyManager and 22 slots with 0 active under the set-2 one",
+        "artifacts/live2_authority/CloseCouplingLocal.t.sol (regenerate with python3 scripts/audit_live2_authority.py --close-coupling)",
+        "negative control inside the harness: the pinned-SessionKeyManager run must fail and write nothing"
+      ],
+      "missing_observation": "A close replayed on set-2-era state rather than the pinned prestate, to confirm the dependency on chain state and not only on the pinned storage layout; and whether any batch item other than the closes can reach the verifier call.",
+      "citations": [
+        "atlas/block_48902346/suite_sets.md",
+        "atlas/block_48902346/live2_intents.json"
+      ]
+    },
+    {
+      "id": "L2A-16",
+      "title": "A mixed implementation pair also changes sweep success semantics, silently",
+      "angle": "C4 upgrade route (silent failure-semantics change)",
+      "invariant": "A5 + A7",
+      "actor": "whoever installs one implementation without the other; a deposit proxy operator",
+      "precondition": "A deposit proxy holds a dust pending sweep below the 10 USDC minimum; the Exchange side carries a mixed pair.",
+      "trigger": "A dust retry under the set-2 Exchange clears the pending word and returns success, while the pinned implementation rewrites the word with the full observed balance and reverts SweepBelowMinimum (0x329c2b0f, hash-verified here).",
+      "impact": "The coupling hazard is not confined to signed closes: a mixed pair also changes whether a dust sweep retry succeeds or reverts, with no revert to tell the caller that the semantics changed. The related credit question \u2014 the finalize credit follows the stored snapshot rather than the delivered amount, so a Core-side fee or partial send becomes an Exchange liability equal to the shortfall \u2014 is recorded by the signed-intents lane as plausible_unproven and matters directly to the two live PT-01 pending sweeps.",
+      "affected": "both",
+      "severity": "medium",
+      "status": "confirmed_simulation",
+      "evidence_tier": "exact-runtime replay",
+      "evidence": [
+        "cross-referenced, not reproduced here: atlas/block_48902346/live2_intents.json rows L2-D4-02 (exact-runtime differential on both implementations plus saved fork diffs: the pinned dust retry reverts selector 849095439, the set-2 retry stores 0x24e160300 and clears) and L2-D5-01",
+        "independent check made here: 849095439 = 0x329c2b0f = keccak('SweepBelowMinimum()')[:10], asserted in this script",
+        "row L2A-15 for the same silent-masking shape on the close path"
+      ],
+      "missing_observation": "I did not re-run the sweep differential in my own harness; reproducing it there (deposit proxy + Exchange prestate) and observing one fee-paying set-2 sweep live would close both halves.",
+      "citations": [
+        "atlas/block_48902346/live2_intents.json"
+      ]
+    },
+    {
+      "id": "L2A-17",
+      "title": "No timelock bypass was added: none of the set-2 runtimes writes the implementation slot",
+      "angle": "C4 upgrade route",
+      "invariant": "A5",
+      "actor": "n/a",
+      "precondition": "The ProxyAdmin is the only writer of the EIP-1967 implementation slot.",
+      "trigger": "n/a",
+      "impact": "None of the three new runtimes nor the new library contains the EIP-1967 implementation or admin slot constant, and no added selector writes it; the ProxyAdmin is owner-gated (the timelock). The new Exchange keeps transferOwnership owner-gated. Recorded as a disproved bypass with the control.",
+      "affected": "set2",
+      "severity": "none",
+      "status": "disproved",
+      "evidence_tier": "exact-runtime replay",
+      "evidence": [
+        "testNoImplementationSlotWriterInNewRuntimes",
+        "testUpgradeRoutesThroughTimelockOwnedProxyAdmin (outsider reverts 0x30cd7471; the timelock changes the slot)"
+      ],
+      "missing_observation": "An initializer that could be re-entered with a fresh storage layout; the set-2 Exchange still exposes the 0xc0c53b8b stub, whose body was not decoded here.",
+      "citations": [
+        "atlas/block_48902346/proxy_admin_pseudocode.md"
+      ]
+    },
+    {
+      "id": "L2A-18",
+      "title": "Monitoring gap: an implementation swap is invisible in logs",
+      "angle": "C5 missing detection",
+      "invariant": "A5 (detection)",
+      "actor": "any chain observer",
+      "precondition": "The ProxyAdmin writes the EIP-1967 slot with no event; the shared proxy runtime contains no LOG opcode and never emits Upgraded.",
+      "trigger": "an upgrade (hypothetical for the 2026-10-21 batch, which was observed only via the multisig payload and the slot words)",
+      "impact": "An implementation change cannot be detected by log indexing. The new proxies emitted zero Upgraded (0xbc7cd75a...) logs over blocks 49,063,457..49,255,838, and the ProxyAdmin emitted only its two OwnerUpdated events, both before the pin.",
+      "affected": "both",
+      "severity": "low",
+      "status": "confirmed_live",
+      "evidence_tier": "pinned read-only probe",
+      "evidence": [
+        "governance_logs: every proxy_* set has 0 logs; newest_proxy_admin has 2, both OwnerUpdated",
+        "static: no LOG opcode in the 925-byte shared proxy runtime"
+      ],
+      "missing_observation": "None for the gap itself; a slot-word poll is the cheap check.",
+      "citations": [
+        "atlas/block_48902346/shared_proxy_pseudocode.md"
+      ]
+    },
+    {
+      "id": "L2A-19",
+      "title": "Cheap detection: poll the implementation slot, do not rely on events",
+      "angle": "C5 missing detection",
+      "invariant": "A5 (detection)",
+      "actor": "any chain observer",
+      "precondition": "The RPC serves eth_getStorageAt at latest.",
+      "trigger": "periodic read of IMPL_SLOT for each proxy (or implementation() from the admin)",
+      "impact": "One storage read per proxy catches an implementation swap within one poll interval; comparing against a stored expected hash also catches a same-address code change.",
+      "affected": "both",
+      "severity": "info",
+      "status": "confirmed_live",
+      "evidence_tier": "pinned read-only probe",
+      "evidence": [
+        "artifacts/live2_authority/live_capture_raw.json proxy_slots",
+        "artifacts/postpin_suite/live_latest.json.gz proxy_slots_at_latest"
+      ],
+      "missing_observation": "None.",
+      "citations": []
+    },
+    {
+      "id": "L2A-20",
+      "title": "PAPER and Staking privilege: all admin pointers are owner-only and no owner route redirects assets",
+      "angle": "C6 PAPER and Staking privilege",
+      "invariant": "A1 + A5",
+      "actor": "owner (timelock)",
+      "precondition": "PAPER owner slot 3, minter slot 4, autoApprovedSpender slot 5, stakingContract slot 9; Staking owner slot 15, packed executor slot 16.",
+      "trigger": "setMinter / setStakingContract / setAutoApprovedSpender / transferOwnership on PAPER; setAuthorizedExecutor / transferOwnership on Staking",
+      "impact": "Every one of these is owner-only (outsider reverts NotOwner 0x30cd7471) and the owner is the timelock, so no unprivileged path changes the transfer-eligibility slot or the staking pointers. The Staking owner's only lever is the authorized executor, which relays per-user signed intents, so it cannot move a user's funds without that user's signature.",
+      "affected": "both",
+      "severity": "none",
+      "status": "disproved",
+      "evidence_tier": "exact-runtime replay",
+      "evidence": [
+        "testPaperAdminOwnerGate",
+        "testStakingAdminOwnerGate",
+        "probe paper_stakingContract = 0x000000000000000000000000aad6c7b0cc3014fc80ffedae0ed7ce5967b0f016"
+      ],
+      "missing_observation": "Whether zeroing the PAPER staking pointer (owner-settable) can brick transfers; the pinned notes say a zero pointer still restricts transfers.",
+      "citations": [
+        "atlas/block_48902346/paper_token_pseudocode.md",
+        "atlas/block_48902346/staking_admin.md"
+      ]
+    }
+  ],
+  "counts": {
+    "rows": 20,
+    "by_status": {
+      "confirmed_live": 5,
+      "confirmed_simulation": 11,
+      "plausible_unproven": 1,
+      "disproved": 3
+    },
+    "by_affected": {
+      "set2": 12,
+      "both": 8,
+      "pinned": 0
+    },
+    "added_selectors": 16,
+    "dropped_selectors": 3,
+    "added_selectors_with_non_owner_guard": 1
+  },
+  "proposed_invariants": {
+    "A8": "A privileged role is limited to the actions its deployment wired it for: no role other than the owner can change a price, a pointer or an implementation, and each non-owner role's reach is enumerated."
+  },
+  "limits": [
+    "No archive HyperEVM endpoint: live values are latest-state reads at the named head.",
+    "The Forge replay is a simulation with locally written storage, not a historical trace.",
+    "Public-registry names are hash-matched candidates, not recovered source names.",
+    "Exchange 0xd970fad5 and the two library entries are decoded for guard and storage but not for economic meaning."
+  ]
+}

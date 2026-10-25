@@ -1,0 +1,33 @@
+{
+  "pin_block": 48902346,
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "selector_reconstructions": {
+    "0x3a21be03": "userQueueTail(address)",
+    "0x551306f3": "userQueuedTotal(address)",
+    "0x31a4956c": "getPendingSweep(address)",
+    "0x7e4174fc": "pendingSweepWord(address)",
+    "0x32faa570": "lastCoreWithdrawalBlock(address)"
+  },
+  "already_named_selector": {
+    "0xdcab7f6a": "userQueueHead(address)"
+  },
+  "mapping_bases": {
+    "user_queue_total": 19,
+    "user_queue_head": 20,
+    "user_queue_tail": 21,
+    "pending_sweep": 33,
+    "last_core_withdrawal_block": 34
+  },
+  "queue_user_count": 3,
+  "sweep_pair_count": 13,
+  "signed_core_withdrawal_count": 4,
+  "historical_getter_call_count": 80,
+  "pending_sweep_tuple": "exists, spotRaw uint64, perpRaw uint64, requestBlock uint32",
+  "pending_sweep_raw": "spotRaw in bits 0-63, perpRaw in bits 64-127, requestBlock in bits 128-159",
+  "limitations": [
+    "Function names are exact selector preimages checked against observed storage and return values.",
+    "The sampled pending sweeps are spot-only; perp word placement is supported by linked sweep fork probes.",
+    "Historical block-level getters do not prove same-block transaction ordering or every caller branch."
+  ]
+}

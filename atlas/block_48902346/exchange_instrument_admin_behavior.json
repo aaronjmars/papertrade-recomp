@@ -1,0 +1,76 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "setter_selector": "0x5ca4c0ea",
+  "getter_signature": "instruments(uint32)",
+  "event_topic0": "0x76a319771459e5329ebc7830ef30b80fc54d20327f8b4946a9539e53c46018c9",
+  "raw_evidence": "../../artifacts/exchange_instrument_admin/pinned_probes.json",
+  "local_replay": "../../artifacts/exchange_instrument_admin_local/replay.json",
+  "instrument_count": 2,
+  "probe_count": 9,
+  "successes": [
+    "owner_instrument_0",
+    "owner_instrument_1_zero_fields",
+    "owner_instrument_0_rate_max_below"
+  ],
+  "revert_selectors": {
+    "outsider_instrument_0": "0x30cd7471",
+    "keeper_instrument_0": "0x30cd7471",
+    "owner_invalid_instrument_2": "0x67207a88",
+    "owner_zero_first": "0xb0cb274d",
+    "owner_zero_third": "0xb0cb274d",
+    "owner_rate_upper_bound": "0xb0cb274d"
+  },
+  "storage_layout": {
+    "mapping_base": 7,
+    "word0": "third uint96 low, second uint96 bits 96..191, preserved high64",
+    "word1": "fourth uint64 bits 184..247, other bits preserved",
+    "word2": "first uint128 low, high128 preserved"
+  },
+  "getter_return_changes": {
+    "third": 0,
+    "second": 1,
+    "fourth": 6,
+    "first": 7
+  },
+  "event_layout": "indexed uint32 instrument; unindexed uint128 first, uint96 second, uint96 third, uint64 fourth",
+  "event_catalog": [
+    {
+      "topic0": "0x76a319771459e5329ebc7830ef30b80fc54d20327f8b4946a9539e53c46018c9",
+      "reconstructed_signature": "",
+      "status": "simulated_log_only"
+    }
+  ],
+  "simulated_error_catalog": [
+    {
+      "selector": "0x30cd7471",
+      "reconstructed_signature": "NotOwner()",
+      "probe_paths": [
+        "outsider_instrument_0",
+        "keeper_instrument_0"
+      ]
+    },
+    {
+      "selector": "0x67207a88",
+      "reconstructed_signature": "InvalidInstrumentId()",
+      "probe_paths": [
+        "owner_invalid_instrument_2"
+      ]
+    },
+    {
+      "selector": "0xb0cb274d",
+      "probe_paths": [
+        "owner_zero_first",
+        "owner_zero_third",
+        "owner_rate_upper_bound"
+      ]
+    }
+  ],
+  "limits": [
+    "No historical transaction or emitted event with this setter was found in the saved samples.",
+    "The setter and event names and the four parameter meanings remain unresolved.",
+    "Read-only simulations do not establish later behavior after committing changed instrument values."
+  ]
+}

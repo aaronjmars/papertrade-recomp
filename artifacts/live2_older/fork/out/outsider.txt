@@ -1,0 +1,1 @@
+outsider_ok=0 outsider_retlen=4 outsider_err=2746852204 user_balance_after=1000000000000000000000 outsider_balance_after=0 

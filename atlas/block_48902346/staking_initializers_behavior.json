@@ -1,0 +1,45 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "local_replay": "../../artifacts/remaining_initializers_local/replay.json",
+  "staking_proxy": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+  "implementation": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+  "runtime_sha256": "3e006d0daee1fcbaa71c160a72291374783da5f720a33db0a51c8f84bde3aa04",
+  "selector_behaviors": {
+    "0x0f71c8bc": "Two-address admin-only setup: outsider returns 0xc031a0df; proxy admin in fresh state writes owner to slot 15 and authorized executor plus initialization flag to slot 16, emits OwnerUpdated and AuthorizedExecutorUpdated; repeat returns 0x3f733c4f",
+    "0xc0c53b8b": "Three-address calldata returns 0xb7b2509c with no persisted writes or logs for user and proxy admin in fresh state and for user with slot-16 initialized flag"
+  },
+  "fresh_state": {
+    "owner_slot": 15,
+    "executor_and_flag_slot": 16,
+    "executor_address_bits": [
+      0,
+      159
+    ],
+    "initialized_flag_bit": 160
+  },
+  "simulated_error_catalog": [
+    {
+      "selector": "0xc031a0df",
+      "probe_paths": [
+        "staking-admin-user"
+      ]
+    },
+    {
+      "selector": "0x3f733c4f",
+      "probe_paths": [
+        "staking-admin-repeat"
+      ]
+    },
+    {
+      "selector": "0xb7b2509c",
+      "probe_paths": [
+        "staking-three-user",
+        "staking-three-admin",
+        "staking-three-initialized"
+      ]
+    }
+  ],
+  "source_names": "unresolved",
+  "historical_calls_for_these_selectors": 0
+}

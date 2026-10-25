@@ -1,0 +1,742 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "address": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+  "implementation": "0x8a5069fe303e8f81e91825436e956d595032e558",
+  "registration_count": 10,
+  "nonce_call_count": 19,
+  "historical_signer_call_count": 18,
+  "committed_nonce_calls": 16,
+  "rolled_back_nonce_calls": 3,
+  "register_typehash": "0xd3d9a309f635415423ab81e7e3fb16d2117cc8e1edc90506adde9eaa3855edd2",
+  "domain_separator": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+  "selector_reconstructions": {
+    "0x2bc9ed54": "REGISTER_SESSION_KEY_TYPEHASH()",
+    "0x5f76a1d6": "registerSessionKeyBySig(address,address,uint64,address,uint256,uint64,uint8,bytes32,bytes32)",
+    "0xb002b9fa": "consumeNonce(address,uint256,uint64)",
+    "0xf2f59776": "nonceBitmapWord(address,uint256)",
+    "0x7ecebe00": "nonces(address)",
+    "0xcab7e8eb": "isNonceUsed(address,uint256)",
+    "0x96ade1f9": "sessionKeys(address,address)",
+    "0x5197a0d3": "setAuthorizedSubmitter(address,bool)",
+    "0x84f4fc6a": "revokeSessionKey(address)",
+    "0xcf8fbec9": "setAuthorizedCaller(address)",
+    "0xf2fde38b": "transferOwnership(address)"
+  },
+  "event_catalog": [
+    {
+      "topic0": "0x3cec0566535d67d6c92668517af0bf8a66cdc91d622dbb830fcc08e1bcf5d1df",
+      "reconstructed_signature": "SessionKeyRegistered(address,address,uint64)",
+      "status": "observed_historical"
+    },
+    {
+      "topic0": "0x744157ccffbd293a2e8644928cd7d23d650f869b88f72d7bfea8041b76ca6bec",
+      "reconstructed_signature": "SessionKeyRevoked(address,address)",
+      "status": "observed_historical"
+    },
+    {
+      "topic0": "0xf09fcf47c21ca51acd6fd24e30b537dc39f0e5e021541cf1e4fa7f1013d60b99",
+      "reconstructed_signature": "AuthorizedSubmitterUpdated(address,bool)",
+      "status": "observed_historical"
+    },
+    {
+      "topic0": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+      "reconstructed_signature": "OwnerUpdated(address)",
+      "status": "observed_historical"
+    },
+    {
+      "topic0": "0xfe60173cc964bc674632fcf67031bba24c8a99a4a7d6518c726586978b7e30d3",
+      "reconstructed_signature": "AuthorizedCallerUpdated(address)",
+      "status": "simulated_log_only"
+    }
+  ],
+  "simulated_error_catalog": [
+    {
+      "selector": "0x93b78c88",
+      "reconstructed_signature": "UnauthorizedSubmitter()",
+      "probe_paths": [
+        "register_outsider"
+      ],
+      "public_signature_candidates": [
+        "UnauthorizedSubmitter()"
+      ]
+    },
+    {
+      "selector": "0x756688fe",
+      "reconstructed_signature": "InvalidNonce()",
+      "probe_paths": [
+        "register_authorized_replay",
+        "consume_replay"
+      ],
+      "public_signature_candidates": [
+        "InvalidNonce()"
+      ]
+    },
+    {
+      "selector": "0x30cd7471",
+      "reconstructed_signature": "NotOwner()",
+      "probe_paths": [
+        "set_submitter_outsider",
+        "set_caller_outsider"
+      ],
+      "public_signature_candidates": [
+        "NotOwner()"
+      ]
+    },
+    {
+      "selector": "0x5c427cd9",
+      "reconstructed_signature": "UnauthorizedCaller()",
+      "probe_paths": [
+        "consume_outsider"
+      ],
+      "public_signature_candidates": [
+        "UnauthorizedCaller()"
+      ]
+    },
+    {
+      "selector": "0xf87d9271",
+      "reconstructed_signature": "ExpiredDeadline()",
+      "probe_paths": [
+        "consume_expired"
+      ],
+      "public_signature_candidates": [
+        "ExpiredDeadline()"
+      ]
+    }
+  ],
+  "storage_bases": {
+    "sessionKeys_user_key": 4,
+    "nonces_user": 5,
+    "nonceBitmap_user_wordIndex": 6,
+    "authorizedSubmitters": 7
+  },
+  "registrations": [
+    {
+      "tx": "0xe14a79ff975269d0edfe9ac85d84b4f081016f70a55e47727cd084189eb18ac9",
+      "block": 48902112,
+      "user": "0xda0ccf3040d7f268bc2328250a250a34f5857fdc",
+      "session_key": "0x438ddc006a30836c8842d66c13d5988eb2021e68",
+      "expiry": 1792357229,
+      "associated_address": "0x0000000000000000000000000000000000000000",
+      "nonce": 33839354880,
+      "deadline": 1792360709,
+      "digest": "0x308eac76b7e2b4e82d8c22458ac4d7d1de0e1af5a199be2dda52dd7dd5d10613",
+      "recovered_signer": "0xda0ccf3040d7f268bc2328250a250a34f5857fdc",
+      "session_slot": "0x0507b07934fd4bde2ae3662bfdfd55211559b3273cee1eb0c47994abb498d0a7",
+      "session_word": "0x000000000000000000000000000000000000000000000000000000006ad5336d",
+      "nonce_bitmap_slot": "0x69cb56bae93258d88477cfec80041dda5ffa3dcb6327b89120390c6666f6ac20",
+      "nonce_bit": 0,
+      "nonce_counter_slot": "0x6fb4a98e4a94845f66e047af87645f0dcf7b43a8975b76342d8beed6e0da8e39",
+      "nonce_counter_pre": null,
+      "nonce_counter_post": null
+    },
+    {
+      "tx": "0xac4e0883756cb4912c51f20d7d8ce84d798ccdda4e455c2c6242af5a8f139009",
+      "block": 48902124,
+      "user": "0x5609cec701025490e3cb840cb4dedf939a20d773",
+      "session_key": "0xce1c9248a0b8b9372bce666762f9f22593453a64",
+      "expiry": 1794949120,
+      "associated_address": "0x0000000000000000000000000000000000000000",
+      "nonce": 2694568448,
+      "deadline": 1792360720,
+      "digest": "0x8ec0288f6419408ae7e6e29b62027173d9dc163e7d4c010e66710a181da278a6",
+      "recovered_signer": "0x5609cec701025490e3cb840cb4dedf939a20d773",
+      "session_slot": "0x1f870ca1cb2c14649134e9d5bfe2c63b3a45f9c9a79d1efa168a02cf49962db1",
+      "session_word": "0x000000000000000000000000000000000000000000000000000000006afcc000",
+      "nonce_bitmap_slot": "0x3a731e2883ca629cffe8c710380ce7e75ed57933fb1b3e19086f2a76ab2b46a7",
+      "nonce_bit": 0,
+      "nonce_counter_slot": "0x65baa779e63da65be7012a07e0f03db8759e76256d7811cba6f5fff2ce6dd976",
+      "nonce_counter_pre": null,
+      "nonce_counter_post": "0x00000000000000000000000000000000000000000000000000000000a09bda01"
+    },
+    {
+      "tx": "0x04b0da9f141aba59584b82b6f41fb4362734e35010374008db08e634bbf993e9",
+      "block": 48902126,
+      "user": "0x1730a930cfd0da43255081801bf1a3eb0b69ec83",
+      "session_key": "0xafd5b51b0b3322df35b10cce0eae43ea6c9abfb9",
+      "expiry": 1794949123,
+      "associated_address": "0x0000000000000000000000000000000000000000",
+      "nonce": 900000045,
+      "deadline": 1792360723,
+      "digest": "0xf05ccd09c0d48ea3bfa52548256cc1f4e131b56b027715ba3ae6a4d9f5c3d7ca",
+      "recovered_signer": "0x1730a930cfd0da43255081801bf1a3eb0b69ec83",
+      "session_slot": "0x9014eab34fcc312039961908ca51928d78dc66b43d2abea14639329f4726eeeb",
+      "session_word": "0x000000000000000000000000000000000000000000000000000000006afcc003",
+      "nonce_bitmap_slot": "0xdd1e498e89f145ecce8d9fb2451616af73f7cf035ed8ef82c544820174c382e4",
+      "nonce_bit": 45,
+      "nonce_counter_slot": "0xdcc450ec0d7846f582f0c43e41493e1b24a7ca49f1937635d0ac1b3f513ca03d",
+      "nonce_counter_pre": null,
+      "nonce_counter_post": "0x0000000000000000000000000000000000000000000000000000000035a4e92e"
+    },
+    {
+      "tx": "0x1b19ea2e3ff121d620a728a0a88564c318a9615fe902b464b998cd9cfb92f186",
+      "block": 48902143,
+      "user": "0xda0ccf3040d7f268bc2328250a250a34f5857fdc",
+      "session_key": "0xa2f9f22833172e80c9885ab15b57a186b7158a7f",
+      "expiry": 1792357259,
+      "associated_address": "0x0000000000000000000000000000000000000000",
+      "nonce": 129333954816,
+      "deadline": 1792360739,
+      "digest": "0x6ffa2cfd2567f55822011e7d47c615f30aaaeda32031e444f6834a2d91ca6484",
+      "recovered_signer": "0xda0ccf3040d7f268bc2328250a250a34f5857fdc",
+      "session_slot": "0x47e0dff32efab152d6552f5b23731fa47c5bed02cb0e6faa2e453dc027af36f9",
+      "session_word": "0x000000000000000000000000000000000000000000000000000000006ad5338b",
+      "nonce_bitmap_slot": "0xf4a80447fa8d673a8be6a879a35c313502db0158e2e67ffcb5a43fa9207e526c",
+      "nonce_bit": 0,
+      "nonce_counter_slot": "0x6fb4a98e4a94845f66e047af87645f0dcf7b43a8975b76342d8beed6e0da8e39",
+      "nonce_counter_pre": null,
+      "nonce_counter_post": null
+    },
+    {
+      "tx": "0xa44fc9a0773a442541d3704bceec1d989a0db3a26e5b8faf8c3d1693a1352b4e",
+      "block": 48902156,
+      "user": "0xba6d4d2f921d98f76cab8c73f9625633ed4faa5e",
+      "session_key": "0x802e3f840b2f3d7c4b30bf4e66a0866dbe980e9d",
+      "expiry": 1794949149,
+      "associated_address": "0x0000000000000000000000000000000000000000",
+      "nonce": 2846505472,
+      "deadline": 1792360749,
+      "digest": "0xd7b9cf783e503acb5744beb562dee0f069a5501b7a36d8167728c7a835d4bec8",
+      "recovered_signer": "0xba6d4d2f921d98f76cab8c73f9625633ed4faa5e",
+      "session_slot": "0xb8762b0a2f41480c678e03eec6e9044667ce02a5c4627a64a5b57b18bed27228",
+      "session_word": "0x000000000000000000000000000000000000000000000000000000006afcc01d",
+      "nonce_bitmap_slot": "0xb9d76912a3bba6ee26521cfb3f7e0de11d1122f261d736a66c061713775a4199",
+      "nonce_bit": 0,
+      "nonce_counter_slot": "0x688b4e2a0312cc13f928f0bab6e218ce053b2ef229b0fd8fb12f583cc597e9b2",
+      "nonce_counter_pre": null,
+      "nonce_counter_post": "0x00000000000000000000000000000000000000000000000000000000a9aa3a01"
+    },
+    {
+      "tx": "0x2d6be13d729def3f6c5346e951db5a8cab0f88bf4ea35191864e9026ac0e6b6d",
+      "block": 48902173,
+      "user": "0xda0ccf3040d7f268bc2328250a250a34f5857fdc",
+      "session_key": "0xe05d0944b8a8f4ea0699e2886725e5d51786873f",
+      "expiry": 1792357289,
+      "associated_address": "0x0000000000000000000000000000000000000000",
+      "nonce": 756419284736,
+      "deadline": 1792360769,
+      "digest": "0x3e57961382f524080d2a3fbbcd5d447dab4682cf857c722ea87eb5dac0268dd7",
+      "recovered_signer": "0xda0ccf3040d7f268bc2328250a250a34f5857fdc",
+      "session_slot": "0xc6510af40b03918afb683ff7ae4e112e9868c00bbfef236d844b4c1b266556a4",
+      "session_word": "0x000000000000000000000000000000000000000000000000000000006ad533a9",
+      "nonce_bitmap_slot": "0xf4777a0ceb1978cb0713a7b2045ab5359fb073aadaffdaac885462d1968b4513",
+      "nonce_bit": 0,
+      "nonce_counter_slot": "0x6fb4a98e4a94845f66e047af87645f0dcf7b43a8975b76342d8beed6e0da8e39",
+      "nonce_counter_pre": null,
+      "nonce_counter_post": null
+    },
+    {
+      "tx": "0x726340c233749d1bdb8bea903e4c8cc6ab17923527ed51abc77c91f0e7b3e22e",
+      "block": 48902204,
+      "user": "0xda0ccf3040d7f268bc2328250a250a34f5857fdc",
+      "session_key": "0x4cc6a795540d9e0e85211c3602abf31d7c8569e1",
+      "expiry": 1792357320,
+      "associated_address": "0x0000000000000000000000000000000000000000",
+      "nonce": 318588550144,
+      "deadline": 1792360800,
+      "digest": "0xea8772973ebca418ff1ff912c3bc246226508f1a77f8b906e229c3667436344b",
+      "recovered_signer": "0xda0ccf3040d7f268bc2328250a250a34f5857fdc",
+      "session_slot": "0xe1bcb6fc8522c9ac1740bc377cfd29fe6db515853a9db6153ee0174f046ae90a",
+      "session_word": "0x000000000000000000000000000000000000000000000000000000006ad533c8",
+      "nonce_bitmap_slot": "0x247c34549c167c360b1b0a174330ff1fc220da0d71b7517ece49257652810ace",
+      "nonce_bit": 0,
+      "nonce_counter_slot": "0x6fb4a98e4a94845f66e047af87645f0dcf7b43a8975b76342d8beed6e0da8e39",
+      "nonce_counter_pre": null,
+      "nonce_counter_post": null
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "block": 48902264,
+      "user": "0xda0ccf3040d7f268bc2328250a250a34f5857fdc",
+      "session_key": "0x9c756270e3a1fee5f21d3f8cc04e98d560b99a87",
+      "expiry": 1792357349,
+      "associated_address": "0x0000000000000000000000000000000000000000",
+      "nonce": 407716688896,
+      "deadline": 1792360829,
+      "digest": "0xafe82fb89c17d48efe0aed400542386997e2495d6422113317f13d330fa75be2",
+      "recovered_signer": "0xda0ccf3040d7f268bc2328250a250a34f5857fdc",
+      "session_slot": "0xdbaaa3ca456f77a337afd42d9c9b7704411dda608ce55cf4fcdc3f2c452e2c7a",
+      "session_word": "0x000000000000000000000000000000000000000000000000000000006ad533e5",
+      "nonce_bitmap_slot": "0xaa29d1d542266a5ab6abf1aa3f433b289e28ef159bb656fd7dacc5c3a6324658",
+      "nonce_bit": 0,
+      "nonce_counter_slot": "0x6fb4a98e4a94845f66e047af87645f0dcf7b43a8975b76342d8beed6e0da8e39",
+      "nonce_counter_pre": null,
+      "nonce_counter_post": null
+    },
+    {
+      "tx": "0x94192d521e62d362196076f7b0e03ea403aca75f4ec40257ef6ce259bf563a4d",
+      "block": 48902295,
+      "user": "0xda0ccf3040d7f268bc2328250a250a34f5857fdc",
+      "session_key": "0xf8ebc7af3808d04e359492b077ffd61afe75fefe",
+      "expiry": 1792357409,
+      "associated_address": "0x0000000000000000000000000000000000000000",
+      "nonce": 244030221824,
+      "deadline": 1792360889,
+      "digest": "0xa178986e50827c1cd3b35c101477827c39125a54cbf16431f4f13377fe3ca010",
+      "recovered_signer": "0xda0ccf3040d7f268bc2328250a250a34f5857fdc",
+      "session_slot": "0x43e9a72b20b1e20ee263bb3b948cb11b8bfe3793ce028f8ddd4ecfe266b5ce3e",
+      "session_word": "0x000000000000000000000000000000000000000000000000000000006ad53421",
+      "nonce_bitmap_slot": "0x05b2ce2da0f25c893851150955fba4ac98185ca87a9fba5c8badd2385166c131",
+      "nonce_bit": 0,
+      "nonce_counter_slot": "0x6fb4a98e4a94845f66e047af87645f0dcf7b43a8975b76342d8beed6e0da8e39",
+      "nonce_counter_pre": null,
+      "nonce_counter_post": null
+    },
+    {
+      "tx": "0x44d34a2ac0a36042f6ecd850ebc63f738b708d0a27d5993f8b7d9250e77c88cb",
+      "block": 48902325,
+      "user": "0xbaaff58ffdbfa6959d17f7e5e4e18cd096a1417e",
+      "session_key": "0xd39f4a0acd76a722e1105448ee756e9aab9841ae",
+      "expiry": 1794949311,
+      "associated_address": "0xd0d70b60426fbb01d250c6bf0136addc7aff721a",
+      "nonce": 1487047424,
+      "deadline": 1792357611,
+      "digest": "0xba145f18f2a6f24a45566189256a00f2ceb9e250bcc466b98e55303989a99be2",
+      "recovered_signer": "0xbaaff58ffdbfa6959d17f7e5e4e18cd096a1417e",
+      "session_slot": "0x6544ef0a5d4daceafc02690d0940d0b0f288e9b7d64cfa135b64a5f5816d6f6e",
+      "session_word": "0x00000000d0d70b60426fbb01d250c6bf0136addc7aff721a000000006afcc0bf",
+      "nonce_bitmap_slot": "0x47da26d94d287bc3285a0530c12ebef7c685c011cf05674923a8a819edb5696c",
+      "nonce_bit": 0,
+      "nonce_counter_slot": "0xcae3c0452e26dd8c70cf175a83ffbe09e002182e59357e742ff402e64179cdfa",
+      "nonce_counter_pre": null,
+      "nonce_counter_post": null
+    }
+  ],
+  "nonce_calls": [
+    {
+      "tx": "0x18da697c130733e097aac9bba5457949c1aa2f275fe1b292538d873c4cab1cd7",
+      "user": "0x59bbb293cd24c7a194035028aef7fe31a11ec0d7",
+      "nonce": 282036564936947,
+      "deadline": 1792360241,
+      "committed": true,
+      "bitmap_slot": "0x0f56d2e60c13e0d5dc47e024228906aead53810d9dcac97cd3ad1f6e3ed02168",
+      "bit_index": 243,
+      "used_at_pin": true,
+      "nonce_counter_at_pin": 282036564937039
+    },
+    {
+      "tx": "0x18da697c130733e097aac9bba5457949c1aa2f275fe1b292538d873c4cab1cd7",
+      "user": "0xe5474819bbbc082e4de0e15e57b1c95f8fda0152",
+      "nonce": 281870300118027,
+      "deadline": 1792360241,
+      "committed": true,
+      "bitmap_slot": "0x3424ac8c8085bce5f15a39b8e6a80ddb4dba2deed9f8f1a7c4ec1613ff34f07f",
+      "bit_index": 11,
+      "used_at_pin": true,
+      "nonce_counter_at_pin": 281870300118175
+    },
+    {
+      "tx": "0x18da697c130733e097aac9bba5457949c1aa2f275fe1b292538d873c4cab1cd7",
+      "user": "0x9d8670faa7a2ea01c8fe0a153a1adcbe763ac342",
+      "nonce": 838122422,
+      "deadline": 1792360245,
+      "committed": true,
+      "bitmap_slot": "0x913a8035aea9bc41cb7754e0c19232cce233f43d9b40060d2059c79a1addb6e0",
+      "bit_index": 182,
+      "used_at_pin": true,
+      "nonce_counter_at_pin": 1419755275
+    },
+    {
+      "tx": "0x1fc54a082055d35c0b79b6fc5f6c2a7004840531f5bcb9b6ec4450a93be2384f",
+      "user": "0x10ec78af7c91799e48c93c3b0eff024fbe0fbeb0",
+      "nonce": 2998638340,
+      "deadline": 1791644416,
+      "committed": true,
+      "bitmap_slot": "0xe0a94b4b7fbfe7b01253b5943745eab6f144cd96147d294fe8b11ee09044a735",
+      "bit_index": 4,
+      "used_at_pin": true,
+      "nonce_counter_at_pin": 2998641178
+    },
+    {
+      "tx": "0x20ee69d9f4191bff17d45a850a584d5803ca477986fd1684af985765d64d794b",
+      "user": "0x691f3b008d13dba927ca32ad5df2cc30fa085d7b",
+      "nonce": 1897568001,
+      "deadline": 1791644423,
+      "committed": true,
+      "bitmap_slot": "0xb19bcedb6a74205d6be78028351dd3247cd124fd8a3068f77520098420df12f5",
+      "bit_index": 1,
+      "used_at_pin": true,
+      "nonce_counter_at_pin": 697272919301
+    },
+    {
+      "tx": "0x30639f82f9eb58fc815fb48b302ea732eed1bff5e755a92835b0b1f97c818acf",
+      "user": "0x0a017c108f4bce037fcca5b4f428e59748fa623d",
+      "nonce": 258250091,
+      "deadline": 1792360665,
+      "committed": true,
+      "bitmap_slot": "0xe32e406e470ee0005f9f1e8a74a2453678332b01158c8183a1b5e549afee411f",
+      "bit_index": 107,
+      "used_at_pin": true,
+      "nonce_counter_at_pin": 900000028
+    },
+    {
+      "tx": "0x3bc7029ee0d72c5dbacfb74dddc183ddb6206adca6ed702014eb90c28cf2d39e",
+      "user": "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+      "nonce": 1739104003,
+      "deadline": 1791644416,
+      "committed": true,
+      "bitmap_slot": "0x6860c63c96f50355c7be96189dc08ba2eeb50c1a5ab7406da1aa7b1d1b8ace32",
+      "bit_index": 3,
+      "used_at_pin": true,
+      "nonce_counter_at_pin": 1739106545
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "user": "0x23663c0a25c2abad3ded13e54cf80c2928e7edc9",
+      "nonce": 282546230911710,
+      "deadline": 1792360677,
+      "committed": false,
+      "bitmap_slot": "0x25113c68e0665f1d66a6bf88a7ce33860229114730d43189672301be6b2ea919",
+      "bit_index": 222,
+      "used_at_pin": false,
+      "nonce_counter_at_pin": 282546230911746
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "user": "0x065837cfeef5c3c73bcbdc8a0f7cafac38f5e289",
+      "nonce": 6277101735386680764040785654012881725456650337799864599719,
+      "deadline": 1792357108,
+      "committed": true,
+      "bitmap_slot": "0x9dd84301f2b0927812bb68a5981a29e3390a089706a3e3f93b35e4e180493ca0",
+      "bit_index": 167,
+      "used_at_pin": true,
+      "nonce_counter_at_pin": 26959946667150639794667015087342623935318699151365681868287754426265
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "user": "0x9d75438d46561c19f2eb715a1e3e92d6bde716ef",
+      "nonce": 282373138504244,
+      "deadline": 1792360677,
+      "committed": true,
+      "bitmap_slot": "0x66bd21dd2fa4ea285417ccdca6a8837642db9c622c97e874000da3757bea3240",
+      "bit_index": 52,
+      "used_at_pin": true,
+      "nonce_counter_at_pin": 282573190544125
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "user": "0x41f499bd00e61616e9311caa70e872138b41192c",
+      "nonce": 282505019467498,
+      "deadline": 1792360677,
+      "committed": false,
+      "bitmap_slot": "0x094b1a60211945ee8cf0372f3c7d1284933f48a3c802c13e0690f6833c1ec94e",
+      "bit_index": 234,
+      "used_at_pin": false,
+      "nonce_counter_at_pin": 282505019467564
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "user": "0xce448faef06c7316e62e969277dd66ebf0dd9522",
+      "nonce": 3341425796,
+      "deadline": 1792357098,
+      "committed": false,
+      "bitmap_slot": "0xc3dafc60a4365f8929ffc0e9fa27a4895baa4272a9a6fe385ea1375ccb22da0b",
+      "bit_index": 132,
+      "used_at_pin": false,
+      "nonce_counter_at_pin": 3341425812
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "user": "0xb4a487664232babf64295d9d90e0595dc33b3f90",
+      "nonce": 3766629376,
+      "deadline": 1792360688,
+      "committed": true,
+      "bitmap_slot": "0x2e8f860d70b5b69a53fb49d801acd13b36bcfb196958e9df5048a3673088e127",
+      "bit_index": 0,
+      "used_at_pin": true,
+      "nonce_counter_at_pin": 4294539810
+    },
+    {
+      "tx": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+      "user": "0x78274a46400c83c91b7ad35dea11f01ec3894756",
+      "nonce": 911003902,
+      "deadline": 1792360236,
+      "committed": true,
+      "bitmap_slot": "0x7cb88552ac18fde615f0582ee0599bc8a0319fffb9cf153193d8b42183e1eb6e",
+      "bit_index": 254,
+      "used_at_pin": true,
+      "nonce_counter_at_pin": 911003912
+    },
+    {
+      "tx": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+      "user": "0x764274793ee9fdae1a2567667df698fd5bd4eff6",
+      "nonce": 3789945196,
+      "deadline": 1792360232,
+      "committed": true,
+      "bitmap_slot": "0x39684b31c837607fce9511d4c0d00f0efab9b1e9e860fddbe75a219ad3ee9c55",
+      "bit_index": 108,
+      "used_at_pin": true,
+      "nonce_counter_at_pin": 3789945197
+    },
+    {
+      "tx": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+      "user": "0x7a5a61a05a0bd2d1723d595803c47e494304f791",
+      "nonce": 2336953909,
+      "deadline": 1792360232,
+      "committed": true,
+      "bitmap_slot": "0xb8391606159611bf4e1b0e61072daf179a4e32b26ba6e948e1c78ba272e4028b",
+      "bit_index": 53,
+      "used_at_pin": true,
+      "nonce_counter_at_pin": 2910774820
+    },
+    {
+      "tx": "0xc7ba4aaf1bdda8e24c2c8a228e315f39a879e7c9c87786eb260fa07c09b99940",
+      "user": "0x177344b0f45102a5fb7b2dc72470650e84f3ef77",
+      "nonce": 3,
+      "deadline": 1791644416,
+      "committed": true,
+      "bitmap_slot": "0x05317f7a98ab29bf4838ede6546d2cda755a16bc4320c0e7e35ae6eedaab1509",
+      "bit_index": 3,
+      "used_at_pin": true,
+      "nonce_counter_at_pin": 2987
+    },
+    {
+      "tx": "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d",
+      "user": "0xe4dae68a7657cbb57285b937c12fe2a1fab49768",
+      "nonce": 291864414,
+      "deadline": 1792356727,
+      "committed": true,
+      "bitmap_slot": "0x1eeb2ce2a3a72e5f3181a7b3b61098c2951d53b68d596e18715c1abf8e8d8279",
+      "bit_index": 94,
+      "used_at_pin": true,
+      "nonce_counter_at_pin": 1765357569
+    },
+    {
+      "tx": "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d",
+      "user": "0x230c4c8c4d33d7d6c25448ec115c2b837f5d3eb5",
+      "nonce": 311852506246530581152504258742548141449623968527810661615587,
+      "deadline": 1792360241,
+      "committed": true,
+      "bitmap_slot": "0xea8c02264e01aaf9b0277fc52b9a2d1b3aa8b872cd6be87d0a4bcb0e8f83d15a",
+      "bit_index": 227,
+      "used_at_pin": true,
+      "nonce_counter_at_pin": 1598072209703361472289258433186541845585816964863859298682584
+    }
+  ],
+  "historical_signer_calls": [
+    {
+      "tx": "0x18da697c130733e097aac9bba5457949c1aa2f275fe1b292538d873c4cab1cd7",
+      "call_index": 0,
+      "user": "0x59bbb293cd24c7a194035028aef7fe31a11ec0d7",
+      "recovered_signer": "0x625482ec98afb12214beb066889012af63f8550e",
+      "struct_hash": "0x747eba0778c4cd81f7931afa067ea1b6380bee39ffdcaf7bff2c26ee8e48bbcb",
+      "digest": "0x8bbfd7afdf5260146b0e3042b462049570b0cf078cc049fb24dbe2530c4e5ef4",
+      "registered_expiry_at_block": 1794763276,
+      "registered_associated_address_at_block": "0x0000000000000000000000000000000000000000",
+      "block": 48901640,
+      "block_timestamp": 1792356647
+    },
+    {
+      "tx": "0x18da697c130733e097aac9bba5457949c1aa2f275fe1b292538d873c4cab1cd7",
+      "call_index": 1,
+      "user": "0xe5474819bbbc082e4de0e15e57b1c95f8fda0152",
+      "recovered_signer": "0x644f9bb144d6cf9a9ec945ea0739d40cadc23a60",
+      "struct_hash": "0x216d4e495fb80e691ca875a60b80fecf4dcba412ee17798d389ab9bace8154e3",
+      "digest": "0x725c253826e0144082a4cc883cfddb1f8fddaba759c4cb06d03d88e769ad2ee6",
+      "registered_expiry_at_block": 1794879866,
+      "registered_associated_address_at_block": "0x0000000000000000000000000000000000000000",
+      "block": 48901640,
+      "block_timestamp": 1792356647
+    },
+    {
+      "tx": "0x18da697c130733e097aac9bba5457949c1aa2f275fe1b292538d873c4cab1cd7",
+      "call_index": 2,
+      "user": "0x9d8670faa7a2ea01c8fe0a153a1adcbe763ac342",
+      "recovered_signer": "0xd7732dc1fb0593b4a65d06b7887145ffc8da05bb",
+      "struct_hash": "0x46ac8cbe725a6fc363e11088af9aa9d55e9f1d72dcf858c79919d85b234a4ca3",
+      "digest": "0xea6f06284929a077c4584cedd562f4610e6bba4a07fac338104ca049b87de5dc",
+      "registered_expiry_at_block": 1794842245,
+      "registered_associated_address_at_block": "0x0000000000000000000000000000000000000000",
+      "block": 48901640,
+      "block_timestamp": 1792356647
+    },
+    {
+      "tx": "0x1fc54a082055d35c0b79b6fc5f6c2a7004840531f5bcb9b6ec4450a93be2384f",
+      "call_index": 0,
+      "user": "0x10ec78af7c91799e48c93c3b0eff024fbe0fbeb0",
+      "recovered_signer": "0xef332676234d0cb71e289743ca66e81ed90e4733",
+      "struct_hash": "0x7dc42847a8fc5af207211a4cdca8048b6b42db4693e6d29a6ab17476aac567a6",
+      "digest": "0x5590e0a83e06857a3307112d996c5e150d292c0962b0993e59a5a25d13109eb1",
+      "registered_expiry_at_block": 1794107264,
+      "registered_associated_address_at_block": "0x0000000000000000000000000000000000000000",
+      "block": 48173887,
+      "block_timestamp": 1791640824
+    },
+    {
+      "tx": "0x20ee69d9f4191bff17d45a850a584d5803ca477986fd1684af985765d64d794b",
+      "call_index": 0,
+      "user": "0x691f3b008d13dba927ca32ad5df2cc30fa085d7b",
+      "recovered_signer": "0x9bbb0d2ee299ae8343dc6dc5383eecb4b8359dd9",
+      "struct_hash": "0x470d1ba307f4a7000c39c59302dbf5e38aadeaf508d303a44fefe5e6fabe997f",
+      "digest": "0x5f2200f6b882a5f29aa6ee6adca7362efff614418fc37b7bba81ed0a03efb0a5",
+      "registered_expiry_at_block": 1794222376,
+      "registered_associated_address_at_block": "0x0000000000000000000000000000000000000000",
+      "block": 48173889,
+      "block_timestamp": 1791640826
+    },
+    {
+      "tx": "0x30639f82f9eb58fc815fb48b302ea732eed1bff5e755a92835b0b1f97c818acf",
+      "call_index": 0,
+      "user": "0x0a017c108f4bce037fcca5b4f428e59748fa623d",
+      "recovered_signer": "0x3270f20dc3f340640ea379a9e9486e2e6747d3cd",
+      "struct_hash": "0x9c9ac1d240580cf129ea78816e17a10c86eb1c851f0c0841f15ac5c499f7aedd",
+      "digest": "0x94729157871b8be5061dbeac93c3769a2985c387e6da7acce0e6cdde076d298f",
+      "registered_expiry_at_block": 1794923968,
+      "registered_associated_address_at_block": "0x0000000000000000000000000000000000000000",
+      "block": 48902090,
+      "block_timestamp": 1792357089
+    },
+    {
+      "tx": "0x3bc7029ee0d72c5dbacfb74dddc183ddb6206adca6ed702014eb90c28cf2d39e",
+      "call_index": 0,
+      "user": "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+      "recovered_signer": "0x21a1b03ced8ab541adb9dd51abf4a53cc5753fff",
+      "struct_hash": "0x03fa6100bb33df4336ff1551027e44b9d7510a60aa4f4e70a8f7e5f5d1e536ad",
+      "digest": "0x84cf833074b1ae5deb728bd2d3b557f51cf8be4de18c8aaf2efce261889d0e4f",
+      "registered_expiry_at_block": 1794105584,
+      "registered_associated_address_at_block": "0x0000000000000000000000000000000000000000",
+      "block": 48173881,
+      "block_timestamp": 1791640818
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "call_index": 0,
+      "user": "0x23663c0a25c2abad3ded13e54cf80c2928e7edc9",
+      "recovered_signer": "0xcf5359903f1c3ede5fe7d6f6c1da3858cc646d85",
+      "struct_hash": "0x9e0842a7256d3bcc30ef2250a262bae86c5503e7ab5d4e9df9935c96ae73a2d1",
+      "digest": "0xe4f03557927fb2c7e6bd42c13cb1348d4ba0452602bf1f24f2f9fbf6c232a752",
+      "registered_expiry_at_block": 1794668547,
+      "registered_associated_address_at_block": "0x0000000000000000000000000000000000000000",
+      "block": 48902090,
+      "block_timestamp": 1792357089
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "call_index": 1,
+      "user": "0x065837cfeef5c3c73bcbdc8a0f7cafac38f5e289",
+      "recovered_signer": "0xc16f1299ac6f1afa24e5957b38cf8d0caec1646a",
+      "struct_hash": "0xc5142ba13be3b6769eba00d11f3f1da45920545b18b9388190f788f265a414d5",
+      "digest": "0xbfde52233d013443bf4e1ffc0ae076b83d275f589eae513ab83b034bd2f3a7f0",
+      "registered_expiry_at_block": 1794708737,
+      "registered_associated_address_at_block": "0x0000000000000000000000000000000000000000",
+      "block": 48902090,
+      "block_timestamp": 1792357089
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "call_index": 2,
+      "user": "0x9d75438d46561c19f2eb715a1e3e92d6bde716ef",
+      "recovered_signer": "0x9878433b966d158edb4b09c00b9a86133a741cd6",
+      "struct_hash": "0xfffe349b3f7bbbef76e6026da49db784bd345cba84bfd9ee15a77ccbbc84c7f8",
+      "digest": "0xfb462760539b802dcdb054d590a5129a8a8f4f670cdc463513df889f8350daaf",
+      "registered_expiry_at_block": 1794455479,
+      "registered_associated_address_at_block": "0x0000000000000000000000000000000000000000",
+      "block": 48902090,
+      "block_timestamp": 1792357089
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "call_index": 3,
+      "user": "0x41f499bd00e61616e9311caa70e872138b41192c",
+      "recovered_signer": "0xb0f6a1c535f226ff414e2c410b203c3de670dfba",
+      "struct_hash": "0x099f2ff32752f311e6378e57c0eab232fee3ae6959560ebd1c05836998ea5c82",
+      "digest": "0x4c71062eca8b5a8420c3f40e1726e8298a35264b13e4463eed00ab130e62d6ad",
+      "registered_expiry_at_block": 1794553106,
+      "registered_associated_address_at_block": "0x0000000000000000000000000000000000000000",
+      "block": 48902090,
+      "block_timestamp": 1792357089
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "call_index": 4,
+      "user": "0xce448faef06c7316e62e969277dd66ebf0dd9522",
+      "recovered_signer": "0xb7b2723a0eefdb07935f379861c43d7b02fa9e4f",
+      "struct_hash": "0x1b44e000060037003a1fafac76358d0c74dccd6e655cbd4f41f5c72d8e114941",
+      "digest": "0xdcd278025f505f4b90dc94d07d80c42085efd2410a2179d06e32d06457c337ee",
+      "registered_expiry_at_block": 1794874958,
+      "registered_associated_address_at_block": "0x0000000000000000000000000000000000000000",
+      "block": 48902090,
+      "block_timestamp": 1792357089
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "call_index": 5,
+      "user": "0xb4a487664232babf64295d9d90e0595dc33b3f90",
+      "recovered_signer": "0x80aae0966fe06acacacc62da8ade68f8d3984c28",
+      "struct_hash": "0x3e82e2b5d95fee0fd4ea90584a8f1f80466c4b7cf90843bc3d80391897ec53da",
+      "digest": "0x45f69a2c810faf31834c222843890e93c6131cf4f75a11e61d99c6e28d28c23a",
+      "registered_expiry_at_block": 1794617653,
+      "registered_associated_address_at_block": "0x0000000000000000000000000000000000000000",
+      "block": 48902090,
+      "block_timestamp": 1792357089
+    },
+    {
+      "tx": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+      "call_index": 0,
+      "user": "0x78274a46400c83c91b7ad35dea11f01ec3894756",
+      "recovered_signer": "0xa8d7b4b04c69fb41a8c88de7bec86b75a1601eb3",
+      "struct_hash": "0x401198b8972005a088186ef00b3fb78761a52a1a3d1430cd60e675793c5ee59d",
+      "digest": "0x2cb6e61b0da870d4c807d94deb2da1015935f3a62cdb9bed123c89ea16cafa83",
+      "registered_expiry_at_block": 1794245284,
+      "registered_associated_address_at_block": "0x0000000000000000000000000000000000000000",
+      "block": 48901631,
+      "block_timestamp": 1792356638
+    },
+    {
+      "tx": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+      "call_index": 1,
+      "user": "0x764274793ee9fdae1a2567667df698fd5bd4eff6",
+      "recovered_signer": "0x2633cfc8864c84434df66c6d4db20fd7f52d2422",
+      "struct_hash": "0x98614e1541192d63d19328522903976823df1648fe88f4dd00ad1b1a45175129",
+      "digest": "0x328a3dd99bf2975a350e01ad615f9eca7d99bc3d4f448eee0a4f9531511187ce",
+      "registered_expiry_at_block": 1794594138,
+      "registered_associated_address_at_block": "0x0000000000000000000000000000000000000000",
+      "block": 48901631,
+      "block_timestamp": 1792356638
+    },
+    {
+      "tx": "0xc7ba4aaf1bdda8e24c2c8a228e315f39a879e7c9c87786eb260fa07c09b99940",
+      "call_index": 0,
+      "user": "0x177344b0f45102a5fb7b2dc72470650e84f3ef77",
+      "recovered_signer": "0xee0d2cda918eae3558d6c294fb8621f452a85d49",
+      "struct_hash": "0x92d0288b2a0120288290c71b1577faf8605c749e54ec2517b3ada049e5f57d5c",
+      "digest": "0x32d211acc214f53bd114c260d1b69bb8a8ef010645d2972dd13f6bea6445cedd",
+      "registered_expiry_at_block": 1794107264,
+      "registered_associated_address_at_block": "0x0000000000000000000000000000000000000000",
+      "block": 48173885,
+      "block_timestamp": 1791640822
+    },
+    {
+      "tx": "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d",
+      "call_index": 0,
+      "user": "0xe4dae68a7657cbb57285b937c12fe2a1fab49768",
+      "recovered_signer": "0xf80d6fa60f3e6d4073272d83b0d61d62e89a3d41",
+      "struct_hash": "0x5d7beb53a7a0b242034e49208d700f71c3b9ea43e4573954be0bef87078d5acd",
+      "digest": "0x19df45a421d4775eb0e85b0fe7295175a930d0a6c4883c81b0bbca72d0afd46c",
+      "registered_expiry_at_block": 1794940985,
+      "registered_associated_address_at_block": "0x0000000000000000000000000000000000000000",
+      "block": 48901640,
+      "block_timestamp": 1792356647
+    },
+    {
+      "tx": "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d",
+      "call_index": 1,
+      "user": "0x230c4c8c4d33d7d6c25448ec115c2b837f5d3eb5",
+      "recovered_signer": "0x1313e37f0facd591b102bdb79c9508b559ee229a",
+      "struct_hash": "0x4432a6a7fa70ea9bdad24bb73c1c49686343809dab3f8d0434fb726a12479125",
+      "digest": "0x8a4ec0a92b417ac17d6a8f14927fad97f0c9c89233ac6615f0432fb1a0c38382",
+      "registered_expiry_at_block": 1794441922,
+      "registered_associated_address_at_block": "0x0000000000000000000000000000000000000000",
+      "block": 48901640,
+      "block_timestamp": 1792356647
+    }
+  ],
+  "limits": [
+    "Some selector source names and the registration type string remain unresolved.",
+    "The purpose of the signed associated address is not established by these samples.",
+    "The ten registrations are a recent sample, not complete registration history.",
+    "The 18 signer calls validate an unexpired registered key at each sampled block but do not cover direct-user signatures or all rejection branches.",
+    "Three nonce calls returned inside Exchange paths that later reverted; their bits were rolled back.",
+    "Read-only simulated owner changes and revocations did not alter pinned chain state."
+  ]
+}

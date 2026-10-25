@@ -1,0 +1,1 @@
+head=8453 tail=8454 head_next=8454 library_amount_per_node=331156061910525405 open_ok=1 post_userQueued=10000000000000000000 post_global=10000000000000000000 post_head=8453 post_tail=8453 post_head_amount=10000000000000000000 post_tail_amount=0 sum_remaining=10000000000000000000 

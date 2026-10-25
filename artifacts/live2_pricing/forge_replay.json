@@ -1,0 +1,262 @@
+{
+  "pinned": {
+    "source_sha256": "9d13d6bf85009417df9ff07620dfc8aee819ce49c46e749c7d778f79fe4a3fde",
+    "tests": [
+      "testA_close_live_valid",
+      "testB_close_crossed_reverts",
+      "testC_close_zero_reverts",
+      "testD_close_frozen_far_settles",
+      "testE_close_frozen_next_block",
+      "testF_liquidate_boundary_exact",
+      "testG_liquidate_boundary_plus_one",
+      "testH_liquidate_valid_price",
+      "testI_batch_boundary",
+      "testJ_pause_crossed_freezes_crossed_price",
+      "testK_pause_zero_freezes_zero_price",
+      "testL_paused_close",
+      "testM_unpause_reverts",
+      "testN_queue_defers_large_payout",
+      "testO_small_payout_paid_direct",
+      "testP_open_live_valid",
+      "testQ_open_paused"
+    ],
+    "observed": {
+      "batch_boundary": {
+        "a": 1,
+        "b": 1,
+        "c": 250264,
+        "note": "control"
+      },
+      "close_crossed_reverts": {
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "note": "revert=0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000b42424f2063726f73736564000000000000000000000000000000000000000000"
+      },
+      "close_frozen_far": {
+        "a": 501290,
+        "b": 8997361550391042670658500,
+        "c": 0,
+        "note": "balanceDelta=5002012573755118958351370"
+      },
+      "close_frozen_next_block": {
+        "a": 501290,
+        "b": 8997361550391042670658500,
+        "c": 0,
+        "note": "no freshness gate"
+      },
+      "close_live_valid": {
+        "a": 250700,
+        "b": 757551553348203624648,
+        "c": 0,
+        "note": "control"
+      },
+      "close_zero_reverts": {
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "note": "revert=0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000f42424f20756e617661696c61626c650000000000000000000000000000000000"
+      },
+      "liquidate_boundary_exact": {
+        "a": 1,
+        "b": 1,
+        "c": 250264,
+        "note": "outcome=ok cleared=0x"
+      },
+      "liquidate_boundary_plus_one": {
+        "a": 0,
+        "b": 0,
+        "c": 250265,
+        "note": "outcome=revert data=0xddeb79ba"
+      },
+      "liquidate_valid_price": {
+        "a": 0,
+        "b": 0,
+        "c": 250700,
+        "note": "outcome=revert data=0xddeb79ba"
+      },
+      "open_live_probe": {
+        "a": 0,
+        "b": 0,
+        "c": 234900,
+        "note": "outcome=revert data=0xf4d678b8"
+      },
+      "open_paused": {
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "note": "outcome=revert data=0x741df939"
+      },
+      "pause_crossed_liquidates_at_frozen": {
+        "a": 200000,
+        "b": 250700,
+        "c": 0,
+        "note": "phase2=ok liveMock=250700 frozenMid=200000 log=0x0000000000000000000000000000000000000000000000000000000000030d40000000000000000000000000000000000000000000000000000000000003d198000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 phase3=ok"
+      },
+      "pause_zero_snapshot": {
+        "a": 1,
+        "b": 1,
+        "c": 0,
+        "note": "phase2=ok frozenWord=87112285931760246646623899502532662132737 log=0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003d198000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "paused_close": {
+        "a": 1,
+        "b": 0,
+        "c": 0,
+        "note": "outcome=ok0x"
+      },
+      "queue_defers_large_payout": {
+        "a": 501290,
+        "b": 8997361550391042670658500,
+        "c": 3835401745628102858893960,
+        "note": "balanceDelta=5002012573755118958351370"
+      },
+      "small_payout_paid_direct": {
+        "a": 250705,
+        "b": 879525974721719353268,
+        "c": 0,
+        "note": "balanceDelta=20861935455227284966203"
+      },
+      "unpause": {
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "note": "outcome=revert data=0xd9d193d3"
+      }
+    },
+    "forge_result": "17 passed, 0 failed",
+    "setup_operations": 98
+  },
+  "set2": {
+    "source_sha256": "7265720994e8cb5e45af7ae7949439ed1363434782564e77fa2d79fc2043b9fe",
+    "tests": [
+      "testA_close_live_valid",
+      "testB_close_crossed_reverts",
+      "testC_close_zero_reverts",
+      "testD_close_frozen_far_settles",
+      "testE_close_frozen_next_block",
+      "testF_liquidate_boundary_exact",
+      "testG_liquidate_boundary_plus_one",
+      "testH_liquidate_valid_price",
+      "testI_batch_boundary",
+      "testJ_pause_crossed_freezes_crossed_price",
+      "testK_pause_zero_freezes_zero_price",
+      "testL_paused_close",
+      "testM_unpause_reverts",
+      "testN_queue_defers_large_payout",
+      "testO_small_payout_paid_direct",
+      "testP_open_live_valid",
+      "testQ_open_paused"
+    ],
+    "observed": {
+      "batch_boundary": {
+        "a": 1,
+        "b": 1,
+        "c": 250264,
+        "note": "control"
+      },
+      "close_crossed_reverts": {
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "note": "revert=0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000b42424f2063726f73736564000000000000000000000000000000000000000000"
+      },
+      "close_frozen_far": {
+        "a": 501290,
+        "b": 8997361550391042670658500,
+        "c": 0,
+        "note": "balanceDelta=5002012573755118958351370"
+      },
+      "close_frozen_next_block": {
+        "a": 501290,
+        "b": 8997361550391042670658500,
+        "c": 0,
+        "note": "no freshness gate"
+      },
+      "close_live_valid": {
+        "a": 250700,
+        "b": 340731519258073050970,
+        "c": 0,
+        "note": "control"
+      },
+      "close_zero_reverts": {
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "note": "revert=0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000f42424f20756e617661696c61626c650000000000000000000000000000000000"
+      },
+      "liquidate_boundary_exact": {
+        "a": 0,
+        "b": 0,
+        "c": 250264,
+        "note": "outcome=revert data=0x"
+      },
+      "liquidate_boundary_plus_one": {
+        "a": 0,
+        "b": 0,
+        "c": 250265,
+        "note": "outcome=revert data=0x"
+      },
+      "liquidate_valid_price": {
+        "a": 0,
+        "b": 0,
+        "c": 250700,
+        "note": "outcome=revert data=0x"
+      },
+      "open_live_probe": {
+        "a": 0,
+        "b": 0,
+        "c": 234900,
+        "note": "outcome=revert data=0xf4d678b8"
+      },
+      "open_paused": {
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "note": "outcome=revert data=0x741df939"
+      },
+      "pause_crossed_liquidates_at_frozen": {
+        "a": 200000,
+        "b": 250700,
+        "c": 0,
+        "note": "phase2=ok liveMock=250700 frozenMid=200000 log=0x0000000000000000000000000000000000000000000000000000000000030d40000000000000000000000000000000000000000000000000000000000003d198000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 phase3=ok"
+      },
+      "pause_zero_snapshot": {
+        "a": 1,
+        "b": 1,
+        "c": 0,
+        "note": "phase2=ok frozenWord=87112285931760246646623899502532662132737 log=0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003d198000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "paused_close": {
+        "a": 1,
+        "b": 0,
+        "c": 0,
+        "note": "outcome=ok0x"
+      },
+      "queue_defers_large_payout": {
+        "a": 501290,
+        "b": 8997361550391042670658500,
+        "c": 3835401745628102858893960,
+        "note": "balanceDelta=5002012573755118958351370"
+      },
+      "small_payout_paid_direct": {
+        "a": 250705,
+        "b": 378511127708616239866,
+        "c": 0,
+        "note": "balanceDelta=20370940905154443915069"
+      },
+      "unpause": {
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "note": "outcome=revert data=0xd9d193d3"
+      }
+    },
+    "forge_result": "17 passed, 0 failed",
+    "setup_operations": 102
+  },
+  "mocked_reads": [
+    "0x080e best bid/ask (every local case)",
+    "0x0806 mark price and 0x0807 oracle price are never reached: only the Oracle's own getPriceSnapshot reads them and no captured runtime calls it"
+  ]
+}

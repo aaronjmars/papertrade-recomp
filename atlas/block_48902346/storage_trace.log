@@ -1,0 +1,11 @@
+exchange_implementation 58 0
+oracle_implementation 6 0
+paper_token_implementation 9 0
+tokenomics_implementation 13 0
+one_of_two_multisig 9 0
+session_key_manager_implementation 10 0
+deposit_proxy_factory_implementation 7 0
+timelock 6 0
+batch_executor_implementation 6 0
+staking_implementation 25 0
+proxy_admin 1 0

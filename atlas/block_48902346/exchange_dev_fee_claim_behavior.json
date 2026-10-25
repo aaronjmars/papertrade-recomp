@@ -1,0 +1,51 @@
+{
+  "pin_block": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "selector_reconstructions": {
+    "0x88f2aea5": "claimDevFees()"
+  },
+  "event_catalog": [
+    {
+      "topic0": "0x8163d4e6d566c87ca3ced41f12809febe576911226e4d7165eb7178e74557a6f",
+      "reconstructed_signature": "DevFeesClaimed(address,uint256,uint256)",
+      "status": "observed_historical_topic",
+      "historical_tx": "0x08ef99988867832607e4d50d8eab4b08651b1f89664eeb5fa2ddab89b23761e3"
+    }
+  ],
+  "simulated_error_catalog": [
+    {
+      "selector": "0x2d016ae6",
+      "reconstructed_signature": "NotDevFeeRecipient()",
+      "probe_paths": [
+        "owner_rejected",
+        "outsider_rejected",
+        "old_recipient_reassigned"
+      ]
+    }
+  ],
+  "historical_claim": {
+    "tx": "0x08ef99988867832607e4d50d8eab4b08651b1f89664eeb5fa2ddab89b23761e3",
+    "block": 48901667,
+    "recipient": "0xeef651e381e04b5ae25393b1367c19bcfd575792",
+    "claimed_amount": 114890275671617164291236,
+    "balance_mapping_slot": "0xae0e0eb8595132c1595486d98df37c455f16d5044b801e373f2eff88dcd61e6d",
+    "no_external_child_call": true
+  },
+  "pinned_claim_amount": 1240216616927083848377,
+  "pinned_case_names": [
+    "recipient_baseline",
+    "owner_rejected",
+    "outsider_rejected",
+    "recipient_zero_fee",
+    "recipient_one_unit",
+    "alternate_reassigned",
+    "old_recipient_reassigned"
+  ],
+  "limits": [
+    "One historical claim and read-only pinned branch probes support the described path; other states remain untested.",
+    "The two unindexed event words equal the claim amount in the tested cases; their source parameter names are unavailable.",
+    "The sampled path credits internal Exchange balance and does not call an external token transfer."
+  ]
+}

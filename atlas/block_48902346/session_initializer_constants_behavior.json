@@ -1,0 +1,49 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "proxy": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+  "implementation": "0x8a5069fe303e8f81e91825436e956d595032e558",
+  "runtime_sha256": "630c02b0c693c47760554a3f0fed68b72db5df601f887d2edaaa3106e6308e63",
+  "selector": "0x747b8a1c",
+  "selector_reconstructions": {
+    "0x747b8a1c": "initialize(address,string,string,uint256,address)"
+  },
+  "name": "String",
+  "name_hash": "0x7ff6a077f248416948843f592327444c45801847787632efa8e679f72a85215f",
+  "name_hash_runtime_offset": 3679,
+  "version": "1",
+  "version_hash": "0xc89efdaa54c0f20c7adf612882df0950f5a951637e0307cdcb4c672f298b8bc6",
+  "version_hash_runtime_offset": 3583,
+  "comparison_byte_range": [
+    1615,
+    1685
+  ],
+  "name_mismatch_jump_pc": 1794,
+  "version_mismatch_jump_pc": 1781,
+  "mismatch_body_byte_range": [
+    1781,
+    1808
+  ],
+  "mismatch_error_selector": "0xf50220aa",
+  "historical_success_evidence": {
+    "transaction_hash": "0xe055509195f0ea1b9e30c366c3350d10470d8c1d145bfa51686b49134d36ffbe",
+    "block": 47855066,
+    "trace": "../../artifacts/session_creation/0xe055509195f0ea1b9e30c366c3350d10470d8c1d145bfa51686b49134d36ffbe.calls.json",
+    "receipt": "../../artifacts/session_creation/0xe055509195f0ea1b9e30c366c3350d10470d8c1d145bfa51686b49134d36ffbe.receipt.json",
+    "transaction": "../../artifacts/session_creation/0xe055509195f0ea1b9e30c366c3350d10470d8c1d145bfa51686b49134d36ffbe.transaction.json",
+    "decoded_arguments": {
+      "owner": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+      "name": "String",
+      "version": "1",
+      "chain_id": 999,
+      "authorized_caller": "0x6cd5661646289fb6e65ea5c032310fded797d0a2"
+    }
+  },
+  "local_replay": "../../artifacts/remaining_initializers_local/replay.json",
+  "observed_behavior": "Fresh-state initializer hashes the supplied name and version bytes and compares them to hardcoded keccak256(String) and keccak256(1); a mismatch reverts with 0xf50220aa.",
+  "limits": [
+    "The input constraint is proved for the fresh-state path at the pinned runtime; initialized-state calls can revert earlier.",
+    "Keccak equality gives a unique practical preimage but is not a formal proof that no hash collision exists.",
+    "The selector hash, deployment calldata, and exact runtime support the reconstructed signature; original source is unavailable."
+  ]
+}

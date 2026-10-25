@@ -1,0 +1,62 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "signed_open_selector": "0xec6783f0",
+  "raw_error_selector": "0x40f92143",
+  "market_mapping_base_slot": 36,
+  "samples": [
+    {
+      "label": "long_failure",
+      "tx": "0x52eec72eedb2eb413dd9abb950c715bfe6b9977bf2248a183b27d059d402d0e0",
+      "source": "artifacts/exchange_open_limit_opcode_trace.json",
+      "signed_open_call_count_in_tx": 1,
+      "side": "long",
+      "instrument_id": 0,
+      "base_slot": "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+      "cap_slot": "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ae",
+      "updated_exposure": "2533543364653611099749",
+      "cap": "2533537756243869928879",
+      "exceeds_cap": true,
+      "result": "0x40f92143",
+      "comparison_pc": "0xa44",
+      "cap_half": "low uint128"
+    },
+    {
+      "label": "long_success",
+      "tx": "0x44d34a2ac0a36042f6ecd850ebc63f738b708d0a27d5993f8b7d9250e77c88cb",
+      "source": "artifacts/exchange_open_limit_success_opcode_trace.json",
+      "signed_open_call_count_in_tx": 1,
+      "side": "long",
+      "instrument_id": 0,
+      "base_slot": "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+      "cap_slot": "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ae",
+      "updated_exposure": "2557158947954086355518",
+      "cap": "2619826912335858848565",
+      "exceeds_cap": false,
+      "result": "success",
+      "comparison_pc": "0xa44",
+      "cap_half": "low uint128"
+    },
+    {
+      "label": "short_failure",
+      "tx": "0x40dfc149333b3ea102864ca92e03c7d7ee6ccdb823460391e794d3b12639c16c",
+      "source": "artifacts/exchange_open_limit_short_failure_opcode_trace.json",
+      "signed_open_call_count_in_tx": 3,
+      "side": "short",
+      "instrument_id": 0,
+      "base_slot": "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+      "cap_slot": "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ae",
+      "updated_exposure": "1987329120640070378229",
+      "cap": "1985372238956521175420",
+      "exceeds_cap": true,
+      "result": "0x40f92143",
+      "comparison_pc": "0xedc",
+      "cap_half": "high uint128"
+    }
+  ],
+  "limits": [
+    "Three sampled execution paths establish the comparison and branch, not every signed-open branch.",
+    "OiCapExceeded() is a hash-verified public registry candidate, but contract source is unverified.",
+    "Exposure is a behavior label inferred from the storage update and cap comparison, not a recovered source field name."
+  ]
+}

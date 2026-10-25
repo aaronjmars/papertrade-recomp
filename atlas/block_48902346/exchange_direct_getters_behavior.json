@@ -1,0 +1,182 @@
+{
+  "pin_block": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "selector_reconstructions": {
+    "0x01ad056f": "totalLockedMargin()",
+    "0x0b826190": "sessionKeyManager()",
+    "0x13dd495b": "authorizedExecutor()",
+    "0x53ac4b66": "totalQueued()",
+    "0x61d027b3": "treasury()",
+    "0x7d004aeb": "devFeeAccumulator()",
+    "0x7dc0d1d0": "oracle()",
+    "0x899346c7": "nextPositionId()",
+    "0x96523644": "queueHead()",
+    "0x9d47d4d3": "authorizedKeeper()",
+    "0xa69a2ad1": "totalBalances()",
+    "0xafdf6702": "stakerFeeAccumulator()",
+    "0xc10f1a75": "proxyFactory()",
+    "0xcbeb5f3d": "devFeeRecipient()",
+    "0xec0bdcfc": "collateralScale()",
+    "0xed410ee1": "paperTokenomics()",
+    "0x27e235e3": "balances(address)"
+  },
+  "direct_slot_getters": [
+    {
+      "selector": "0x01ad056f",
+      "signature": "totalLockedMargin()",
+      "storage_slot": 22,
+      "field": "high128",
+      "raw_word": "0x000000000007be65f23207ad7ea19168000000000029d3d6f9e2192a05b05b45",
+      "getter_output": "0x00000000000000000000000000000000000000000007be65f23207ad7ea19168"
+    },
+    {
+      "selector": "0x0b826190",
+      "signature": "sessionKeyManager()",
+      "storage_slot": 29,
+      "field": "address_shift8",
+      "raw_word": "0x00000000000000000000008326eb8896e358717f10502ec73ce8d28e37b10800",
+      "getter_output": "0x0000000000000000000000008326eb8896e358717f10502ec73ce8d28e37b108"
+    },
+    {
+      "selector": "0x13dd495b",
+      "signature": "authorizedExecutor()",
+      "storage_slot": 88,
+      "field": "address",
+      "raw_word": "0x000000000000000000000000233ff29b239abc1d7748605da9b205c3e008626e",
+      "getter_output": "0x000000000000000000000000233ff29b239abc1d7748605da9b205c3e008626e"
+    },
+    {
+      "selector": "0x53ac4b66",
+      "signature": "totalQueued()",
+      "storage_slot": 18,
+      "field": "uint256",
+      "raw_word": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "getter_output": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "selector": "0x61d027b3",
+      "signature": "treasury()",
+      "storage_slot": 14,
+      "field": "uint256",
+      "raw_word": "0x00000000000000000000000000000000000000000035b5849a35d618f5b00800",
+      "getter_output": "0x00000000000000000000000000000000000000000035b5849a35d618f5b00800"
+    },
+    {
+      "selector": "0x7d004aeb",
+      "signature": "devFeeAccumulator()",
+      "storage_slot": 26,
+      "field": "high128",
+      "raw_word": "0x00000000000000433b768a255b8b62b9000000000000000564ea03bde8d561b3",
+      "getter_output": "0x0000000000000000000000000000000000000000000000433b768a255b8b62b9"
+    },
+    {
+      "selector": "0x7dc0d1d0",
+      "signature": "oracle()",
+      "storage_slot": 2,
+      "field": "address",
+      "raw_word": "0x000000000000000000000000a9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+      "getter_output": "0x000000000000000000000000a9b4c7b7ca5835652d81e25739c870d49f39cc2e"
+    },
+    {
+      "selector": "0x899346c7",
+      "signature": "nextPositionId()",
+      "storage_slot": 11,
+      "field": "uint256",
+      "raw_word": "0x00000000000000000000000000000000000000000000000000000000001547a3",
+      "getter_output": "0x00000000000000000000000000000000000000000000000000000000001547a3"
+    },
+    {
+      "selector": "0x96523644",
+      "signature": "queueHead()",
+      "storage_slot": 16,
+      "field": "uint256",
+      "raw_word": "0x0000000000000000000000000000000000000000000000000000000000000004",
+      "getter_output": "0x0000000000000000000000000000000000000000000000000000000000000004"
+    },
+    {
+      "selector": "0x9d47d4d3",
+      "signature": "authorizedKeeper()",
+      "storage_slot": 89,
+      "field": "address",
+      "raw_word": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "getter_output": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "selector": "0xa69a2ad1",
+      "signature": "totalBalances()",
+      "storage_slot": 22,
+      "field": "low128",
+      "raw_word": "0x000000000007be65f23207ad7ea19168000000000029d3d6f9e2192a05b05b45",
+      "getter_output": "0x00000000000000000000000000000000000000000029d3d6f9e2192a05b05b45"
+    },
+    {
+      "selector": "0xafdf6702",
+      "signature": "stakerFeeAccumulator()",
+      "storage_slot": 26,
+      "field": "low128",
+      "raw_word": "0x00000000000000433b768a255b8b62b9000000000000000564ea03bde8d561b3",
+      "getter_output": "0x00000000000000000000000000000000000000000000000564ea03bde8d561b3"
+    },
+    {
+      "selector": "0xc10f1a75",
+      "signature": "proxyFactory()",
+      "storage_slot": 30,
+      "field": "address",
+      "raw_word": "0x0000000000000000000000001629b7d46bef6e13ff754174fc9f32dea309b38f",
+      "getter_output": "0x0000000000000000000000001629b7d46bef6e13ff754174fc9f32dea309b38f"
+    },
+    {
+      "selector": "0xcbeb5f3d",
+      "signature": "devFeeRecipient()",
+      "storage_slot": 38,
+      "field": "address",
+      "raw_word": "0x000000000000000000000000eef651e381e04b5ae25393b1367c19bcfd575792",
+      "getter_output": "0x000000000000000000000000eef651e381e04b5ae25393b1367c19bcfd575792"
+    },
+    {
+      "selector": "0xec0bdcfc",
+      "signature": "collateralScale()",
+      "storage_slot": 3,
+      "field": "uint256",
+      "raw_word": "0x000000000000000000000000000000000000000000000000000000e8d4a51000",
+      "getter_output": "0x000000000000000000000000000000000000000000000000000000e8d4a51000"
+    },
+    {
+      "selector": "0xed410ee1",
+      "signature": "paperTokenomics()",
+      "storage_slot": 6,
+      "field": "address",
+      "raw_word": "0x00000000000000000000000075174549dbbd44497d31a47e2e2d7406408d63d9",
+      "getter_output": "0x00000000000000000000000075174549dbbd44497d31a47e2e2d7406408d63d9"
+    }
+  ],
+  "balance_mapping_samples": [
+    {
+      "user": "0x5554e4d307e6f24ee868e31fcf3effedba20e457",
+      "slot": "0xa3edef72758a4cddceb0bbebee47153091fb23dbce7b00a9b0fcfaf8ce7b1491",
+      "storage_value": "0x000000000000000000000000000000000000000000000000243655278695d101",
+      "getter_output": "0x000000000000000000000000000000000000000000000000243655278695d101"
+    },
+    {
+      "user": "0x1ac1b6a28bc325b7d23c9e180dd1a3c122893531",
+      "slot": "0xa997d1ebd0ce42197066abbce56b3427d9d0b82dc8bc5872ff1dafd93bda01d3",
+      "storage_value": "0x000000000000000000000000000000000000000000000000a50b7ab513ec5de7",
+      "getter_output": "0x000000000000000000000000000000000000000000000000a50b7ab513ec5de7"
+    },
+    {
+      "user": "0x1eee2984a6d47324d8742dfb3df58ce7dbe7e495",
+      "slot": "0x1765af22a3686eebd0315ae350d982cef4d595e5747e094b4dfbcce81281228a",
+      "storage_value": "0x00000000000000000000000000000000000000000000021240f992f97b209f2c",
+      "getter_output": "0x00000000000000000000000000000000000000000000021240f992f97b209f2c"
+    }
+  ],
+  "packed_slot29_override_count": 2,
+  "checked_behavior": "sixteen hash-checked direct and packed storage views plus three pinned user balance mapping reads",
+  "limitations": [
+    "Getter names have exact selector hashes and pinned storage behavior, but original Solidity source is unavailable.",
+    "A single pinned state cannot prove every future value or unusual caller branch.",
+    "The treasury getter returns a numeric accounting amount in this runtime; its exact source integer width is not established."
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "creation_block": 47854719,
+  "window_target": 100000,
+  "chunk_target_logs": 100000,
+  "chunks": [
+    {
+      "file": "events_0000.json.gz",
+      "from_block": 47854719,
+      "to_block": 48184406,
+      "logs": 104970,
+      "sha256": "88fbfa70f00fa917566c9005eb4170d19bed57c8df694c3884b87dae603ac5f1"
+    },
+    {
+      "file": "events_0001.json.gz",
+      "from_block": 48184407,
+      "to_block": 48196906,
+      "logs": 103027,
+      "sha256": "ca92ddf00fa17561a82be40d00ce2ae09b074f2c0a83252e9458a84c1b7b9c58"
+    },
+    {
+      "file": "events_0002.json.gz",
+      "from_block": 48196907,
+      "to_block": 48210968,
+      "logs": 103329,
+      "sha256": "4eb0d480ba985ba950c2370dee96eb4d85cacf26fc95b56f808837f149f5dafb"
+    },
+    {
+      "file": "events_0003.json.gz",
+      "from_block": 48210969,
+      "to_block": 48232843,
+      "logs": 102349,
+      "sha256": "1bc623e4210c62c70149bde6914b3a17fbed8e5198259c9101dafda7e4e2065a"
+    },
+    {
+      "file": "events_0004.json.gz",
+      "from_block": 48232844,
+      "to_block": 48254718,
+      "logs": 105673,
+      "sha256": "86fe035fb7d4e697c9afd4db3e7050316b35035eb51bc50559c174564abe85e0"
+    },
+    {
+      "file": "events_0005.json.gz",
+      "from_block": 48254719,
+      "to_block": 48272687,
+      "logs": 100437,
+      "sha256": "b3c5d53ea8b5a2dec1b2c0e75249a977e0c110bc28efe3303edd76bc0e01db80"
+    },
+    {
+      "file": "events_0006.json.gz",
+      "from_block": 48272688,
+      "to_block": 48292218,
+      "logs": 100993,
+      "sha256": "9b689f1a183c1ab51b4899fa35c13c2d206134aa29a83be70c9b1a5e52332ebe"
+    },
+    {
+      "file": "events_0007.json.gz",
+      "from_block": 48292219,
+      "to_block": 48310968,
+      "logs": 103413,
+      "sha256": "1d04dfab9a21a0c2b35e1c86976bcbff0f5479df6a6e3d7370345ab2650a2552"
+    },
+    {
+      "file": "events_0008.json.gz",
+      "from_block": 48310969,
+      "to_block": 48332843,
+      "logs": 107284,
+      "sha256": "25e9da3b5b0c2e5fb2e3bc8b1676957495cf2355dda9b113bf903fb8632a5a81"
+    },
+    {
+      "file": "events_0009.json.gz",
+      "from_block": 48332844,
+      "to_block": 48351593,
+      "logs": 102159,
+      "sha256": "35669a1fe66a5d235d37c6361bc87d6db0513e8147d143eebc852180a9181e2e"
+    },
+    {
+      "file": "events_0010.json.gz",
+      "from_block": 48351594,
+      "to_block": 48368781,
+      "logs": 106132,
+      "sha256": "8128ddffa1dab21e7dcc94d4064a20d6dcc62b8bbd0de9a67c5f5e74b5ce20fa"
+    },
+    {
+      "file": "events_0011.json.gz",
+      "from_block": 48368782,
+      "to_block": 48390656,
+      "logs": 106444,
+      "sha256": "b99bc46dad25326c3d7e168b66ee29aa0ac8b930658e237f81e00bd5c5455ed7"
+    },
+    {
+      "file": "events_0012.json.gz",
+      "from_block": 48390657,
+      "to_block": 48415656,
+      "logs": 100622,
+      "sha256": "a3454124e3d068cd6ce32df5ce9c8287111cea682d4e6c7b2ec89de523a46c1f"
+    },
+    {
+      "file": "events_0013.json.gz",
+      "from_block": 48415657,
+      "to_block": 48439093,
+      "logs": 101488,
+      "sha256": "181e019f75651fabbd340bfcb6feb9272c6700d83a236f969698f393a2abc68d"
+    },
+    {
+      "file": "events_0014.json.gz",
+      "from_block": 48439094,
+      "to_block": 48459406,
+      "logs": 103854,
+      "sha256": "ba7143b2ca050240d8c3fab0704327f26d87ef0b8e064483efea3731a8785d32"
+    },
+    {
+      "file": "events_0015.json.gz",
+      "from_block": 48459407,
+      "to_block": 48479718,
+      "logs": 101169,
+      "sha256": "0bb3e11d89c5c816129cf86fdd68e749e20ed24dd4899fed4383259e9492b637"
+    },
+    {
+      "file": "events_0016.json.gz",
+      "from_block": 48479719,
+      "to_block": 48500031,
+      "logs": 104018,
+      "sha256": "171b33619d01e09893ce275e1d1fe1bdbb15242ec97d5d7a32fda8a809b26a91"
+    },
+    {
+      "file": "events_0017.json.gz",
+      "from_block": 48500032,
+      "to_block": 48516437,
+      "logs": 101578,
+      "sha256": "63e634a6b8fbf307eedb49fe3957622928c75567ffb8cbaf6e93a197ab9c7e75"
+    },
+    {
+      "file": "events_0018.json.gz",
+      "from_block": 48516438,
+      "to_block": 48532843,
+      "logs": 101834,
+      "sha256": "89aa6601ed03f3f7351401fe992ab232db00636c2d2c33b0905cf500d6514219"
+    },
+    {
+      "file": "events_0019.json.gz",
+      "from_block": 48532844,
+      "to_block": 48550031,
+      "logs": 108221,
+      "sha256": "a56f4b73a060ea6e7f58c886fb2ea7c83ed6673abd7ca6efa76358a05e171b86"
+    },
+    {
+      "file": "events_0020.json.gz",
+      "from_block": 48550032,
+      "to_block": 48567218,
+      "logs": 105430,
+      "sha256": "8bca6d5a604c4a7324942e994cd08ea0c5753e8ccc0db1c82753a064dc1b2506"
+    },
+    {
+      "file": "events_0021.json.gz",
+      "from_block": 48567219,
+      "to_block": 48585968,
+      "logs": 100597,
+      "sha256": "e5baea8dbe3b3491c5d7763273bdd6a1191350a2761fc0c44c95f36e23fd5ad0"
+    },
+    {
+      "file": "events_0022.json.gz",
+      "from_block": 48585969,
+      "to_block": 48600812,
+      "logs": 101012,
+      "sha256": "2d76af76dd9bd9c2a9b329c25a3268a98f0ad57929eb33274d075d9034d6cbde"
+    },
+    {
+      "file": "events_0023.json.gz",
+      "from_block": 48600813,
+      "to_block": 48618781,
+      "logs": 104287,
+      "sha256": "e9417df9833019d4e1e318be9426022e54c779eda67bbca77e10f4f080c7d3ac"
+    },
+    {
+      "file": "events_0024.json.gz",
+      "from_block": 48618782,
+      "to_block": 48632062,
+      "logs": 101681,
+      "sha256": "7be88c16e55ac5678b5a60dca79e90824b2f9245ef6f05a712ddf58d7fc775d2"
+    },
+    {
+      "file": "events_0025.json.gz",
+      "from_block": 48632063,
+      "to_block": 48645343,
+      "logs": 101862,
+      "sha256": "ac06cf3760eb4a90c751e4a28dd039f9f9f6e5e1fbff4cd36c0db15ff30df7b9"
+    },
+    {
+      "file": "events_0026.json.gz",
+      "from_block": 48645344,
+      "to_block": 48658625,
+      "logs": 105448,
+      "sha256": "54a85d127c8cc8663de866e55cef462057c9aa2c9d736ae2225f95ae99eb9212"
+    },
+    {
+      "file": "events_0027.json.gz",
+      "from_block": 48658626,
+      "to_block": 48671125,
+      "logs": 103206,
+      "sha256": "b4fce1e1bd6fedc11663cead3acb8cf05360cff57db1a0ff1568a6b82f0ae8fe"
+    },
+    {
+      "file": "events_0028.json.gz",
+      "from_block": 48671126,
+      "to_block": 48682843,
+      "logs": 105271,
+      "sha256": "4791988ddbe9c6af04e55a32c46af70337a6b3c614d1a6c5655c95de021f5a13"
+    },
+    {
+      "file": "events_0029.json.gz",
+      "from_block": 48682844,
+      "to_block": 48694562,
+      "logs": 102586,
+      "sha256": "025784c4a8e755d9ac291653a28c3f9d691d67055d67e6a0ba195f44663836a1"
+    },
+    {
+      "file": "events_0030.json.gz",
+      "from_block": 48694563,
+      "to_block": 48710187,
+      "logs": 103569,
+      "sha256": "188e6105fd41c0d43d42c6f1918483cbdf465976ff436f02933426a628738a49"
+    },
+    {
+      "file": "events_0031.json.gz",
+      "from_block": 48710188,
+      "to_block": 48723468,
+      "logs": 103528,
+      "sha256": "31e8ffc8f50f8ae14db260dc1f9df4c7912462232eeed6002e5fd7a77045b92f"
+    },
+    {
+      "file": "events_0032.json.gz",
+      "from_block": 48723469,
+      "to_block": 48742218,
+      "logs": 108124,
+      "sha256": "fda983fc092bb0262aad11b825ea1a1a4c515f3260a08e6860c311ebbec9f552"
+    },
+    {
+      "file": "events_0033.json.gz",
+      "from_block": 48742219,
+      "to_block": 48765656,
+      "logs": 101822,
+      "sha256": "0bd0f4749c42078f03a430a0df807df36b0292fbdc88ecf7a238ee214d6a2e04"
+    },
+    {
+      "file": "events_0034.json.gz",
+      "from_block": 48765657,
+      "to_block": 48790656,
+      "logs": 103051,
+      "sha256": "bc1ea519b391a536a096604f93768ef00be7e5fe54b536671098618714b28a60"
+    },
+    {
+      "file": "events_0035.json.gz",
+      "from_block": 48790657,
+      "to_block": 48809406,
+      "logs": 105833,
+      "sha256": "4ec291b30d6062fb092fa9bad87dc528bdd5864489c90f4555fc325d12434b70"
+    },
+    {
+      "file": "events_0036.json.gz",
+      "from_block": 48809407,
+      "to_block": 48828156,
+      "logs": 103848,
+      "sha256": "71840d0f8147e9843a941bc784f0d3bbb9cac1b28cb4d2e74b28e1ed688da9b9"
+    },
+    {
+      "file": "events_0037.json.gz",
+      "from_block": 48828157,
+      "to_block": 48846906,
+      "logs": 103946,
+      "sha256": "7248e0b149303505fb78e6c3a16f69dfc0471ae88819c685ed44eedaa919ed6c"
+    },
+    {
+      "file": "events_0038.json.gz",
+      "from_block": 48846907,
+      "to_block": 48865881,
+      "logs": 101741,
+      "sha256": "ecae96e16dfe2d58bc94115069db94d6dede3f1b832f6cc4da96df60d4fd6d06"
+    },
+    {
+      "file": "events_0039.json.gz",
+      "from_block": 48865882,
+      "to_block": 48881509,
+      "logs": 102159,
+      "sha256": "68f4018ef48eff630eab86c432e803f08581aa3b1193b7565ce267bb1ab2a20f"
+    },
+    {
+      "file": "events_0040.json.gz",
+      "from_block": 48881510,
+      "to_block": 48893416,
+      "logs": 100093,
+      "sha256": "b0fd2075d41ee2ba0e7f5df39d560a246aa965fb8855989b065af5c616d36d40"
+    },
+    {
+      "file": "events_0041.json.gz",
+      "from_block": 48893417,
+      "to_block": 48902346,
+      "logs": 63808,
+      "sha256": "268deac0ba3f32773cbfc43445fc245dc80fe928bdb852b539b5a2beedf46709"
+    }
+  ]
+}

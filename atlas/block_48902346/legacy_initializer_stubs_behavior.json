@@ -1,0 +1,71 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "error_selector": "0xb7b2509c",
+  "entries": {
+    "staking_implementation": {
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "runtime_sha256": "3e006d0daee1fcbaa71c160a72291374783da5f720a33db0a51c8f84bde3aa04",
+      "selector": "0xc0c53b8b",
+      "candidate_signature": "initialize(address,address,address)",
+      "dispatcher_pc": 294,
+      "body_byte_range": [
+        1710,
+        1768
+      ],
+      "address_decoder_pcs": [
+        3647,
+        3669,
+        3691
+      ],
+      "address_argument_count": 3,
+      "linked_probe": "staking_initializers_behavior.json",
+      "canonical_zero_value_result": "0xb7b2509c",
+      "behavior": "After nonpayable and canonical address decoding, the path has no storage reads, writes, external calls, events, or success exit; it reverts with four error bytes."
+    },
+    "batch_executor_implementation": {
+      "address": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "runtime_sha256": "480375f798fccf20fd79fd4fedefdd3377dd44af4dd559a3310a87c5bc048ae8",
+      "selector": "0xc0c53b8b",
+      "candidate_signature": "initialize(address,address,address)",
+      "dispatcher_pc": 115,
+      "body_byte_range": [
+        350,
+        412
+      ],
+      "address_decoder_pcs": [
+        2407,
+        2429,
+        2451
+      ],
+      "address_argument_count": 3,
+      "linked_probe": "batch_control_behavior.json",
+      "canonical_zero_value_result": "0xb7b2509c",
+      "behavior": "After nonpayable and canonical address decoding, the path has no storage reads, writes, external calls, events, or success exit; it reverts with four error bytes."
+    },
+    "deposit_proxy_factory_implementation": {
+      "address": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "runtime_sha256": "808c1f14f7d7811b32fedb672fcfa0b5095f96faa20ec8413556875b4ace9efd",
+      "selector": "0xc4d66de8",
+      "candidate_signature": "initialize(address)",
+      "dispatcher_pc": 96,
+      "body_byte_range": [
+        823,
+        863
+      ],
+      "address_decoder_pcs": [
+        1363
+      ],
+      "address_argument_count": 1,
+      "linked_probe": "factory_behavior.json",
+      "canonical_zero_value_result": "0xb7b2509c",
+      "behavior": "After nonpayable and canonical address decoding, the path has no storage reads, writes, external calls, events, or success exit; it reverts with four error bytes."
+    }
+  },
+  "error_construction": "PUSH4 0x2dec9427 shifted left 226 bits gives 0xb7b2509c as the first four revert bytes",
+  "limits": [
+    "Proof covers canonical zero-value calldata on the three exact pinned implementations.",
+    "Malformed calldata and nonzero value can reach generic empty-data revert branches.",
+    "Source function spellings and custom error name are not proved by this bytecode result."
+  ]
+}

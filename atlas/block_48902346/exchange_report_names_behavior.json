@@ -1,0 +1,56 @@
+{
+  "pin_block": 48902346,
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "source_name_lead": "https://www.guardian.security/portfolio/papertrade/protocol-review-2026-10-09/",
+  "selector_reconstructions": {
+    "0xcd2d3811": "setStakerFeeRecipient(address)",
+    "0xe1f9209b": "stakerFeeRecipient()",
+    "0x138e9de2": "queueHarvestAvailable()",
+    "0x0cdd5fc4": "lpBankrollAvailable()"
+  },
+  "additional_exact_hash_name_leads": {
+    "0xae69b95b": "setTradingPaused(bool)",
+    "0xddc63262": "harvest(uint256)",
+    "0xe53e3de6": "creditStakingReward(address,uint256)"
+  },
+  "event_catalog": [
+    {
+      "topic0": "0xbcd09d92c26e8078d8be2b8380bb7d1ab324d0a9ae6743e158ad8d7f734a84ba",
+      "reconstructed_signature": "StakerFeeRecipientUpdated(address)",
+      "status": "observed_historical_topic"
+    }
+  ],
+  "historical_setter_transaction": "0xb357f09ef042c99d383e702118230d8fde098a78ab433b7a5a06e1b2c6a0bccd",
+  "historical_setter_storage_slot": 31,
+  "pinned_getters": {
+    "0xe1f9209b": {
+      "output": "0x000000000000000000000000aad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+      "direct_slots": [
+        31
+      ]
+    },
+    "0x138e9de2": {
+      "output": "0x0000000000000000000000000000000000000000000422ff0dc1275e2cfd56e7",
+      "direct_slots": [
+        14,
+        22,
+        26
+      ]
+    },
+    "0x0cdd5fc4": {
+      "output": "0x0000000000000000000000000000000000000000000422ff0dc1275e2cfd56e7",
+      "direct_slots": [
+        14,
+        18,
+        22,
+        26
+      ]
+    }
+  },
+  "limitations": [
+    "The audit report names functions but its source snapshot has not been matched to live runtime bytecode.",
+    "The two available-balance getters agree at this pinned state; their divergent branches are mapped separately in exchange_availability_behavior.json.",
+    "Additional exact-hash name leads are not promoted to reconstructed behavior here."
+  ]
+}

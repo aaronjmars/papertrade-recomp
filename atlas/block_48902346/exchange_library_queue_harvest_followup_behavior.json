@@ -1,0 +1,36 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "linked_library": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+  "merge_selectors": {
+    "forward": {
+      "exchange": "0x753a369c",
+      "library": "0x3cf4208d"
+    },
+    "reverse": {
+      "exchange": "0x827ad94c",
+      "library": "0x32db40c9"
+    }
+  },
+  "harvest_selectors": {
+    "exchange": "0xddc63262",
+    "library": "0x79810ffe"
+  },
+  "local_replay": "../../artifacts/exchange_library_queue_harvest_followup_local/replay.json",
+  "case_count": 11,
+  "funding_boundaries": {
+    "zero": "harvest returns zero without advancing the empty global head",
+    "partial_1000": "harvest skips two empty nodes, pays 1000 of 2100, and leaves global head at the partially paid node"
+  },
+  "forward_effect": "Harvest node limit counts emptied global-head nodes after consolidation; a two-node forward merge needs harvest limit 2 and a three-node forward merge needs limit 3 to reach the surviving amount in one call.",
+  "reverse_effect": "Reverse consolidation moves the amount into the first global node, so harvest limit 1 pays it in both tested queue sizes.",
+  "empty_head_transition": "With funding available, each skipped empty node advances global head without payment or Harvested log; queued totals and user balance remain unchanged.",
+  "source_name_status": "Merge function names and library harvest source name unresolved; Exchange harvest(uint256) is hash checked.",
+  "limits": [
+    "Synthetic one-user two- and three-node queues with 10000 treasury units and zero other reserves.",
+    "Local exact-runtime replays, not historical transactions or proof of all queue shapes.",
+    "Other users interleaved in the global queue, concurrent enqueues, and longer merged ranges remain untested."
+  ]
+}

@@ -1,0 +1,820 @@
+{
+  "pin": 48902346,
+  "method": "eth_call and read-only debug_traceCall at pinned state; batch execute uses an explicit hypothetical storage and time override",
+  "timelock": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+  "owner": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+  "storage_layout": {
+    "owner_slot": 0,
+    "min_delay_slot": 1,
+    "operation_timestamp_mapping_base_slot": 2,
+    "unscheduled_value": 0,
+    "done_value": 1
+  },
+  "scheduled_operations": [
+    {
+      "operation_id": "0x51142366b8d5ae8d41322de14a7627f265e2ab54ee65828bbbaa14f6090cb578",
+      "payload_keccak256": "0xb7e7535bf9817f20f3a4fba3033acc2f5121a242eeb08616db51489327e1556a",
+      "hash_operation_matches_scheduled_id": true,
+      "hash_formula_matches_scheduled_id": true,
+      "predecessor": "0xa03fa922a8a4d9781c3c74ece5e4b12827eecd4f12aa7f5b9981bc3657bb2332",
+      "predecessor_timestamp_at_pin": 0,
+      "predecessor_done_at_pin": false,
+      "operation_mapping_slot": "0xd1cafda4f163535ddf2c2e7cb902918d34da93db53d20e35f398343af17f64d4",
+      "predecessor_mapping_slot": "0x2a37d73e749cb398b5bc8cd0c309d5a1b6fbe71bb9b54ec4ad17684c42f82ce9",
+      "execute_owner_at_pin": {
+        "success": true,
+        "error": null,
+        "revert_selector": null,
+        "child_calls": [
+          {
+            "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+            "selector": "0x12baae3b",
+            "value": "0x0",
+            "error": null
+          }
+        ],
+        "event_topics": [
+          "0x2a08801cf3674ab09756ae78a3a4833813465af6af958136b360eab6b71c8952"
+        ],
+        "events": [
+          {
+            "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+            "topics": [
+              "0x2a08801cf3674ab09756ae78a3a4833813465af6af958136b360eab6b71c8952",
+              "0x51142366b8d5ae8d41322de14a7627f265e2ab54ee65828bbbaa14f6090cb578",
+              "0x00000000000000000000000075174549dbbd44497d31a47e2e2d7406408d63d9"
+            ],
+            "data": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000008412baae3b00000000000000000000000000000000000000000001a784379d99db42000000000000000000000000000000000000000000000000084595161401484a0000000000000000000000000000000000000000000000000000056bc75e2d631000000000000000000000000000000000000000000000006342fd08f00f637800000000000000000000000000000000000000000000000000000000000000"
+          }
+        ]
+      },
+      "execute_outsider_at_pin": {
+        "success": false,
+        "error": "execution reverted",
+        "revert_selector": "0x30cd7471",
+        "child_calls": [],
+        "event_topics": [],
+        "events": []
+      },
+      "execute_owner_before_ready": null,
+      "execute_owner_at_ready": {
+        "success": true,
+        "error": null,
+        "revert_selector": null,
+        "child_calls": [
+          {
+            "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+            "selector": "0x12baae3b",
+            "value": "0x0",
+            "error": null
+          }
+        ],
+        "event_topics": [
+          "0x2a08801cf3674ab09756ae78a3a4833813465af6af958136b360eab6b71c8952"
+        ],
+        "events": [
+          {
+            "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+            "topics": [
+              "0x2a08801cf3674ab09756ae78a3a4833813465af6af958136b360eab6b71c8952",
+              "0x51142366b8d5ae8d41322de14a7627f265e2ab54ee65828bbbaa14f6090cb578",
+              "0x00000000000000000000000075174549dbbd44497d31a47e2e2d7406408d63d9"
+            ],
+            "data": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000008412baae3b00000000000000000000000000000000000000000001a784379d99db42000000000000000000000000000000000000000000000000084595161401484a0000000000000000000000000000000000000000000000000000056bc75e2d631000000000000000000000000000000000000000000000006342fd08f00f637800000000000000000000000000000000000000000000000000000000000000"
+          }
+        ]
+      },
+      "execution_time_used": 1792357341,
+      "root_sload_slots_at_ready": [
+        "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "0xd1cafda4f163535ddf2c2e7cb902918d34da93db53d20e35f398343af17f64d4"
+      ],
+      "root_sstore_slots_at_ready": [
+        "0xd1cafda4f163535ddf2c2e7cb902918d34da93db53d20e35f398343af17f64d4"
+      ],
+      "simulated_storage_post": {
+        "0x75174549dbbd44497d31a47e2e2d7406408d63d9": {
+          "0x0000000000000000000000000000000000000000000000000000000000000006": "0x000000000000000000000000000000000000000000084595161401484a000000"
+        },
+        "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f": {
+          "0xd1cafda4f163535ddf2c2e7cb902918d34da93db53d20e35f398343af17f64d4": "0x0000000000000000000000000000000000000000000000000000000000000001"
+        }
+      },
+      "cancel_owner_at_pin": {
+        "success": true,
+        "error": null,
+        "revert_selector": null,
+        "child_calls": [],
+        "event_topics": [
+          "0xcf0f63b97f3387253cbc0bde884f975df77e39184dc3280c2c81be495f58eef4"
+        ],
+        "events": [
+          {
+            "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+            "topics": [
+              "0xcf0f63b97f3387253cbc0bde884f975df77e39184dc3280c2c81be495f58eef4",
+              "0x51142366b8d5ae8d41322de14a7627f265e2ab54ee65828bbbaa14f6090cb578"
+            ],
+            "data": "0x"
+          }
+        ]
+      },
+      "cancel_outsider_at_pin": {
+        "success": false,
+        "error": "execution reverted",
+        "revert_selector": "0x30cd7471",
+        "child_calls": [],
+        "event_topics": [],
+        "events": []
+      },
+      "cancel_hypothetical_done_operation": {
+        "success": false,
+        "error": "execution reverted",
+        "revert_selector": "0x18d96a80",
+        "child_calls": [],
+        "event_topics": [],
+        "events": []
+      },
+      "schedule_duplicate_owner_at_pin": {
+        "success": false,
+        "error": "execution reverted",
+        "revert_selector": "0x9b382476",
+        "child_calls": [],
+        "event_topics": [],
+        "events": []
+      },
+      "execute_wrong_value_owner_at_pin": {
+        "success": false,
+        "error": "execution reverted",
+        "revert_selector": "0xaa7feadc",
+        "child_calls": [],
+        "event_topics": [],
+        "events": []
+      },
+      "execute_hypothetical_done_operation": {
+        "success": false,
+        "error": "execution reverted",
+        "revert_selector": "0x18d96a80",
+        "child_calls": [],
+        "event_topics": [],
+        "events": []
+      }
+    },
+    {
+      "operation_id": "0xc616b8d5f1fccaae8952fd5832306ef7d181cdbf7b3e81fa331593abc6d6a6cb",
+      "payload_keccak256": "0x1e7a5d51243ea8197207e0b73359596a173997f6b0bc7464b86b844c54321ed7",
+      "hash_operation_matches_scheduled_id": true,
+      "hash_formula_matches_scheduled_id": true,
+      "predecessor": "0x4f6334bb72dc6434598f27bdd8a884e83553a871b874434dba529b894e0b1bc3",
+      "predecessor_timestamp_at_pin": 0,
+      "predecessor_done_at_pin": false,
+      "operation_mapping_slot": "0xac951066febc9de76c764c7a9c9861efd117045b5306e20b37ea75c14896e944",
+      "predecessor_mapping_slot": "0x488cc4249acbe4f49d4d82d78b4186608874f7dd8cff62572d0bb2b0f1c202c7",
+      "execute_owner_at_pin": {
+        "success": false,
+        "error": "execution reverted",
+        "revert_selector": "0xf800799b",
+        "child_calls": [],
+        "event_topics": [],
+        "events": []
+      },
+      "execute_outsider_at_pin": {
+        "success": false,
+        "error": "execution reverted",
+        "revert_selector": "0x30cd7471",
+        "child_calls": [],
+        "event_topics": [],
+        "events": []
+      },
+      "execute_owner_before_ready": {
+        "success": false,
+        "error": "execution reverted",
+        "revert_selector": "0xf800799b",
+        "child_calls": [],
+        "event_topics": [],
+        "events": []
+      },
+      "execute_owner_at_ready": {
+        "success": true,
+        "error": null,
+        "revert_selector": null,
+        "child_calls": [
+          {
+            "to": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+            "selector": "0x8a99d586",
+            "value": "0x0",
+            "error": null
+          }
+        ],
+        "event_topics": [
+          "0x2a08801cf3674ab09756ae78a3a4833813465af6af958136b360eab6b71c8952"
+        ],
+        "events": [
+          {
+            "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+            "topics": [
+              "0x2a08801cf3674ab09756ae78a3a4833813465af6af958136b360eab6b71c8952",
+              "0xc616b8d5f1fccaae8952fd5832306ef7d181cdbf7b3e81fa331593abc6d6a6cb",
+              "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f"
+            ],
+            "data": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000248a99d586000000000000000000000000000000000000000000000000000000000001518000000000000000000000000000000000000000000000000000000000"
+          }
+        ]
+      },
+      "execution_time_used": 1792447296,
+      "root_sload_slots_at_ready": [
+        "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "0xac951066febc9de76c764c7a9c9861efd117045b5306e20b37ea75c14896e944"
+      ],
+      "root_sstore_slots_at_ready": [
+        "0xac951066febc9de76c764c7a9c9861efd117045b5306e20b37ea75c14896e944"
+      ],
+      "simulated_storage_post": {
+        "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f": {
+          "0x0000000000000000000000000000000000000000000000000000000000000001": "0x0000000000000000000000000000000000000000000000000000000000015180",
+          "0xac951066febc9de76c764c7a9c9861efd117045b5306e20b37ea75c14896e944": "0x0000000000000000000000000000000000000000000000000000000000000001"
+        }
+      },
+      "cancel_owner_at_pin": {
+        "success": true,
+        "error": null,
+        "revert_selector": null,
+        "child_calls": [],
+        "event_topics": [
+          "0xcf0f63b97f3387253cbc0bde884f975df77e39184dc3280c2c81be495f58eef4"
+        ],
+        "events": [
+          {
+            "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+            "topics": [
+              "0xcf0f63b97f3387253cbc0bde884f975df77e39184dc3280c2c81be495f58eef4",
+              "0xc616b8d5f1fccaae8952fd5832306ef7d181cdbf7b3e81fa331593abc6d6a6cb"
+            ],
+            "data": "0x"
+          }
+        ]
+      },
+      "cancel_outsider_at_pin": {
+        "success": false,
+        "error": "execution reverted",
+        "revert_selector": "0x30cd7471",
+        "child_calls": [],
+        "event_topics": [],
+        "events": []
+      },
+      "cancel_hypothetical_done_operation": {
+        "success": false,
+        "error": "execution reverted",
+        "revert_selector": "0x18d96a80",
+        "child_calls": [],
+        "event_topics": [],
+        "events": []
+      },
+      "schedule_duplicate_owner_at_pin": {
+        "success": false,
+        "error": "execution reverted",
+        "revert_selector": "0x9b382476",
+        "child_calls": [],
+        "event_topics": [],
+        "events": []
+      },
+      "execute_wrong_value_owner_at_pin": {
+        "success": false,
+        "error": "execution reverted",
+        "revert_selector": "0xf800799b",
+        "child_calls": [],
+        "event_topics": [],
+        "events": []
+      },
+      "execute_hypothetical_done_operation": {
+        "success": false,
+        "error": "execution reverted",
+        "revert_selector": "0x18d96a80",
+        "child_calls": [],
+        "event_topics": [],
+        "events": []
+      }
+    }
+  ],
+  "status_getter_boundary_probes": {
+    "operation_id": "0xc616b8d5f1fccaae8952fd5832306ef7d181cdbf7b3e81fa331593abc6d6a6cb",
+    "before_ready": {
+      "pending": 1,
+      "ready": 0
+    },
+    "at_ready": {
+      "pending": 0,
+      "ready": 1
+    },
+    "hypothetical_done": {
+      "timestamp": 1,
+      "pending": 0,
+      "ready": 0,
+      "done": 1
+    }
+  },
+  "batch_probe": {
+    "sample": "one target, the timelock itself, calling updateMinDelay(86400); no transaction was sent",
+    "operation_id": "0x98fba87cba952141c823ec575bdc2df6c74ebaf75a0121d12af5576743e45794",
+    "hash_formula_matches_call": true,
+    "hypothetical_ready_timestamp": 1792962141,
+    "mapping_slot": "0x6ed5490b8487fe93b4701d2337e4d6cc2f70881eea62241d76016d1090a6d5b0",
+    "schedule_owner_at_pin": {
+      "success": true,
+      "error": null,
+      "revert_selector": null,
+      "child_calls": [],
+      "event_topics": [
+        "0x0b9c64b5b18792c995334aa1e837673c5a9cdb8f004ab10fb652f4eecb8d551f"
+      ],
+      "events": [
+        {
+          "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+          "topics": [
+            "0x0b9c64b5b18792c995334aa1e837673c5a9cdb8f004ab10fb652f4eecb8d551f",
+            "0x98fba87cba952141c823ec575bdc2df6c74ebaf75a0121d12af5576743e45794"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006ade6e5d"
+        }
+      ]
+    },
+    "schedule_outsider_at_pin": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0x30cd7471",
+      "child_calls": [],
+      "event_topics": [],
+      "events": []
+    },
+    "execute_without_schedule_at_pin": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0x27c0d610",
+      "child_calls": [],
+      "event_topics": [],
+      "events": []
+    },
+    "execute_outsider_with_hypothetical_scheduled_state": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0x30cd7471",
+      "child_calls": [],
+      "event_topics": [],
+      "events": []
+    },
+    "schedule_length_mismatch": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0xff633a38",
+      "child_calls": [],
+      "event_topics": [],
+      "events": []
+    },
+    "execute_length_mismatch": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0xff633a38",
+      "child_calls": [],
+      "event_topics": [],
+      "events": []
+    },
+    "schedule_empty_batch": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0xff633a38",
+      "child_calls": [],
+      "event_topics": [],
+      "events": []
+    },
+    "execute_with_hypothetical_scheduled_state_at_ready": {
+      "success": true,
+      "error": null,
+      "revert_selector": null,
+      "child_calls": [
+        {
+          "to": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+          "selector": "0x8a99d586",
+          "value": "0x0",
+          "error": null
+        }
+      ],
+      "event_topics": [
+        "0xaa1510acf32db51981a900a90589bafbf6f442c657a0b916fd3afe22c1474bcd"
+      ],
+      "events": [
+        {
+          "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+          "topics": [
+            "0xaa1510acf32db51981a900a90589bafbf6f442c657a0b916fd3afe22c1474bcd",
+            "0x98fba87cba952141c823ec575bdc2df6c74ebaf75a0121d12af5576743e45794"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000001"
+        }
+      ]
+    },
+    "simulated_schedule_storage_post": {
+      "0x6ed5490b8487fe93b4701d2337e4d6cc2f70881eea62241d76016d1090a6d5b0": "0x000000000000000000000000000000000000000000000000000000006ade6e5d"
+    },
+    "root_state_write_and_call_order": [
+      {
+        "pc": 2908,
+        "op": "SSTORE"
+      },
+      {
+        "pc": 3001,
+        "op": "CALL"
+      }
+    ],
+    "simulated_timelock_storage_post": {
+      "0x0000000000000000000000000000000000000000000000000000000000000001": "0x0000000000000000000000000000000000000000000000000000000000015180",
+      "0x6ed5490b8487fe93b4701d2337e4d6cc2f70881eea62241d76016d1090a6d5b0": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    }
+  },
+  "update_min_delay_probe": {
+    "owner_direct": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0x29c3b7ee",
+      "child_calls": [],
+      "event_topics": [],
+      "events": []
+    },
+    "self_direct": {
+      "success": true,
+      "error": null,
+      "revert_selector": null,
+      "child_calls": [],
+      "event_topics": [],
+      "events": []
+    }
+  },
+  "transfer_ownership_probe": {
+    "owner_direct": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0x29c3b7ee",
+      "child_calls": [],
+      "event_topics": [],
+      "events": []
+    },
+    "self_valid": {
+      "success": true,
+      "error": null,
+      "revert_selector": null,
+      "child_calls": [],
+      "event_topics": [
+        "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b"
+      ],
+      "events": [
+        {
+          "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+          "topics": [
+            "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+            "0x0000000000000000000000001111111111111111111111111111111111111111"
+          ],
+          "data": "0x"
+        }
+      ]
+    },
+    "self_zero": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0x49e27cff",
+      "child_calls": [],
+      "event_topics": [],
+      "events": []
+    },
+    "simulated_storage_post": {
+      "0x0000000000000000000000000000000000000000000000000000000000000000": "0x0000000000000000000000001111111111111111111111111111111111111111"
+    }
+  },
+  "failure_probes": {
+    "single_self_call_transfer_ownership_to_zero": {
+      "operation_id": "0x0f2e417c69f8f4e6256c955cb9caa07bc6bfd7326a20cb6dd07418bdb2981746",
+      "target_call_count": 1,
+      "execution": {
+        "success": false,
+        "error": "execution reverted",
+        "revert_selector": "0x15fcd675",
+        "child_calls": [
+          {
+            "to": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+            "selector": "0xf2fde38b",
+            "value": "0x0",
+            "error": "execution reverted"
+          }
+        ],
+        "event_topics": [],
+        "events": []
+      },
+      "timelock_storage_post": {}
+    },
+    "two_target_batch_second_call_fails": {
+      "operation_id": "0x2b004e44c98945aca6fcf12445997f116bd248f0bad7d7cfea5824b85690516d",
+      "target_call_count": 2,
+      "execution": {
+        "success": false,
+        "error": "execution reverted",
+        "revert_selector": "0x15fcd675",
+        "child_calls": [
+          {
+            "to": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+            "selector": "0x8a99d586",
+            "value": "0x0",
+            "error": null
+          },
+          {
+            "to": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+            "selector": "0xf2fde38b",
+            "value": "0x0",
+            "error": "execution reverted"
+          }
+        ],
+        "event_topics": [],
+        "events": []
+      },
+      "timelock_storage_post": {}
+    }
+  },
+  "multi_target_success_probe": {
+    "operation_id": "0x929769e74b6f731e6a32597136b76d12ad0a6eb04e1800a8d578a7b049a82616",
+    "execution": {
+      "success": true,
+      "error": null,
+      "revert_selector": null,
+      "child_calls": [
+        {
+          "to": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+          "selector": "0x8a99d586",
+          "value": "0x0",
+          "error": null
+        },
+        {
+          "to": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+          "selector": "0x8a99d586",
+          "value": "0x0",
+          "error": null
+        }
+      ],
+      "event_topics": [
+        "0xaa1510acf32db51981a900a90589bafbf6f442c657a0b916fd3afe22c1474bcd"
+      ],
+      "events": [
+        {
+          "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+          "topics": [
+            "0xaa1510acf32db51981a900a90589bafbf6f442c657a0b916fd3afe22c1474bcd",
+            "0x929769e74b6f731e6a32597136b76d12ad0a6eb04e1800a8d578a7b049a82616"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000002"
+        }
+      ]
+    },
+    "simulated_timelock_storage_post": {
+      "0x0000000000000000000000000000000000000000000000000000000000000001": "0x000000000000000000000000000000000000000000000000000000000000a8c0",
+      "0xce0f9d5dc639832881d16b625c73eb97f13794e9fc5a536654fcfe8d7c78d6e2": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    }
+  },
+  "batch_value_probe": {
+    "2": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0xaa7feadc",
+      "child_calls": [],
+      "event_topics": [],
+      "events": []
+    },
+    "3": {
+      "success": true,
+      "error": null,
+      "revert_selector": null,
+      "child_calls": [
+        {
+          "to": "0x1111111111111111111111111111111111111111",
+          "selector": "0x",
+          "value": "0x1",
+          "error": null
+        },
+        {
+          "to": "0x2222222222222222222222222222222222222222",
+          "selector": "0x",
+          "value": "0x2",
+          "error": null
+        }
+      ],
+      "event_topics": [],
+      "events": []
+    },
+    "4": {
+      "success": false,
+      "error": "execution reverted",
+      "revert_selector": "0xaa7feadc",
+      "child_calls": [],
+      "event_topics": [],
+      "events": []
+    }
+  },
+  "cancel_unscheduled_owner_at_pin": {
+    "success": false,
+    "error": "execution reverted",
+    "revert_selector": "0x27c0d610",
+    "child_calls": [],
+    "event_topics": [],
+    "events": []
+  },
+  "event_catalog": [
+    {
+      "topic0": "0x0b9c64b5b18792c995334aa1e837673c5a9cdb8f004ab10fb652f4eecb8d551f",
+      "public_signature_candidates": [],
+      "reconstructed_signature": "BatchOperationScheduled(bytes32,uint256,bytes32,uint256)",
+      "historical_log_count": 0,
+      "simulated_probe_paths": [
+        "batch_probe.schedule_owner_at_pin"
+      ]
+    },
+    {
+      "topic0": "0x25cd0ae91e995bc58ea33869249d0bcf40f2b2c8331ec976c96096bf7d27f464",
+      "public_signature_candidates": [
+        "MinDelayUpdated(uint256)"
+      ],
+      "reconstructed_signature": null,
+      "historical_log_count": 1,
+      "simulated_probe_paths": []
+    },
+    {
+      "topic0": "0x2a08801cf3674ab09756ae78a3a4833813465af6af958136b360eab6b71c8952",
+      "public_signature_candidates": [
+        "OperationExecuted(bytes32,address,uint256,bytes)"
+      ],
+      "reconstructed_signature": null,
+      "historical_log_count": 0,
+      "simulated_probe_paths": [
+        "scheduled_operations[0].execute_owner_at_pin",
+        "scheduled_operations[0].execute_owner_at_ready",
+        "scheduled_operations[1].execute_owner_at_ready"
+      ]
+    },
+    {
+      "topic0": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+      "public_signature_candidates": [
+        "OwnerUpdated(address)"
+      ],
+      "reconstructed_signature": null,
+      "historical_log_count": 1,
+      "simulated_probe_paths": [
+        "transfer_ownership_probe.self_valid"
+      ]
+    },
+    {
+      "topic0": "0x78f3bc93d9f0e2beb7fc8fe3192b142c5e70b8813403674aff3f81fc83af5b39",
+      "public_signature_candidates": [
+        "OperationScheduled(bytes32,address,uint256,bytes,bytes32,uint256)"
+      ],
+      "reconstructed_signature": null,
+      "historical_log_count": 2,
+      "simulated_probe_paths": []
+    },
+    {
+      "topic0": "0xaa1510acf32db51981a900a90589bafbf6f442c657a0b916fd3afe22c1474bcd",
+      "public_signature_candidates": [
+        "BatchOperationExecuted(bytes32,uint256)"
+      ],
+      "reconstructed_signature": null,
+      "historical_log_count": 0,
+      "simulated_probe_paths": [
+        "batch_probe.execute_with_hypothetical_scheduled_state_at_ready",
+        "multi_target_success_probe.execution"
+      ]
+    },
+    {
+      "topic0": "0xcf0f63b97f3387253cbc0bde884f975df77e39184dc3280c2c81be495f58eef4",
+      "public_signature_candidates": [
+        "OperationCancelled(bytes32)"
+      ],
+      "reconstructed_signature": null,
+      "historical_log_count": 0,
+      "simulated_probe_paths": [
+        "scheduled_operations[0].cancel_owner_at_pin",
+        "scheduled_operations[1].cancel_owner_at_pin"
+      ]
+    }
+  ],
+  "simulated_error_catalog": [
+    {
+      "selector": "0x15fcd675",
+      "public_signature_candidates": [
+        "ExecutionFailed(bytes)"
+      ],
+      "probe_paths": [
+        "failure_probes.single_self_call_transfer_ownership_to_zero.execution",
+        "failure_probes.two_target_batch_second_call_fails.execution"
+      ],
+      "status": "observed_in_read_only_simulation"
+    },
+    {
+      "selector": "0x18d96a80",
+      "public_signature_candidates": [],
+      "probe_paths": [
+        "scheduled_operations[0].cancel_hypothetical_done_operation",
+        "scheduled_operations[0].execute_hypothetical_done_operation",
+        "scheduled_operations[1].cancel_hypothetical_done_operation",
+        "scheduled_operations[1].execute_hypothetical_done_operation"
+      ],
+      "status": "observed_in_read_only_simulation"
+    },
+    {
+      "selector": "0x27c0d610",
+      "public_signature_candidates": [
+        "OperationNotScheduled()"
+      ],
+      "probe_paths": [
+        "batch_probe.execute_without_schedule_at_pin",
+        "cancel_unscheduled_owner_at_pin"
+      ],
+      "status": "observed_in_read_only_simulation"
+    },
+    {
+      "selector": "0x29c3b7ee",
+      "public_signature_candidates": [
+        "NotSelf()"
+      ],
+      "probe_paths": [
+        "update_min_delay_probe.owner_direct",
+        "transfer_ownership_probe.owner_direct"
+      ],
+      "status": "observed_in_read_only_simulation"
+    },
+    {
+      "selector": "0x30cd7471",
+      "public_signature_candidates": [
+        "NotOwner()"
+      ],
+      "probe_paths": [
+        "scheduled_operations[0].execute_outsider_at_pin",
+        "scheduled_operations[0].cancel_outsider_at_pin",
+        "scheduled_operations[1].execute_outsider_at_pin",
+        "scheduled_operations[1].cancel_outsider_at_pin",
+        "batch_probe.schedule_outsider_at_pin",
+        "batch_probe.execute_outsider_with_hypothetical_scheduled_state"
+      ],
+      "status": "observed_in_read_only_simulation"
+    },
+    {
+      "selector": "0x49e27cff",
+      "public_signature_candidates": [
+        "InvalidOwner()"
+      ],
+      "probe_paths": [
+        "transfer_ownership_probe.self_zero"
+      ],
+      "status": "observed_in_read_only_simulation"
+    },
+    {
+      "selector": "0x9b382476",
+      "public_signature_candidates": [
+        "OperationAlreadyScheduled()"
+      ],
+      "probe_paths": [
+        "scheduled_operations[0].schedule_duplicate_owner_at_pin",
+        "scheduled_operations[1].schedule_duplicate_owner_at_pin"
+      ],
+      "status": "observed_in_read_only_simulation"
+    },
+    {
+      "selector": "0xaa7feadc",
+      "public_signature_candidates": [
+        "InvalidValue()"
+      ],
+      "probe_paths": [
+        "scheduled_operations[0].execute_wrong_value_owner_at_pin",
+        "batch_value_probe.2",
+        "batch_value_probe.4"
+      ],
+      "status": "observed_in_read_only_simulation"
+    },
+    {
+      "selector": "0xf800799b",
+      "public_signature_candidates": [
+        "OperationNotReady()"
+      ],
+      "probe_paths": [
+        "scheduled_operations[1].execute_owner_at_pin",
+        "scheduled_operations[1].execute_owner_before_ready",
+        "scheduled_operations[1].execute_wrong_value_owner_at_pin"
+      ],
+      "status": "observed_in_read_only_simulation"
+    },
+    {
+      "selector": "0xff633a38",
+      "public_signature_candidates": [
+        "LengthMismatch()"
+      ],
+      "probe_paths": [
+        "batch_probe.schedule_length_mismatch",
+        "batch_probe.execute_length_mismatch",
+        "batch_probe.schedule_empty_batch"
+      ],
+      "status": "observed_in_read_only_simulation"
+    }
+  ]
+}

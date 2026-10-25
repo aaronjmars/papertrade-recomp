@@ -1,0 +1,173 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "address": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+  "selector": "0x7f608253",
+  "session_sample_tx": "0xd5a907988c178cb4fe55b8f3a8b87080eb3869e16ac548a8b9f7aa4a871a17c0",
+  "direct_user_sample_tx": "0xe14a79ff975269d0edfe9ac85d84b4f081016f70a55e47727cd084189eb18ac9",
+  "probe_count": 10,
+  "successful_probe_count": 2,
+  "rejected_probe_count": 8,
+  "simulated_error_catalog": [
+    {
+      "selector": "0xc5045f22",
+      "reconstructed_signature": "SessionKeyNotAuthorized()",
+      "probe_paths": [
+        "session_changed_user",
+        "session_changed_hash",
+        "session_invalid_v",
+        "session_zero_r",
+        "session_zero_s",
+        "direct_user_exchange",
+        "direct_user_outsider",
+        "direct_user_changed_user"
+      ],
+      "public_signature_candidates": [
+        "SessionKeyNotAuthorized()"
+      ]
+    },
+    {
+      "selector": "0xda0700a2",
+      "reconstructed_signature": "SessionKeyExpired()",
+      "probe_paths": [
+        "expiry_before"
+      ],
+      "public_signature_candidates": [
+        "SessionKeyExpired()"
+      ]
+    }
+  ],
+  "probes": {
+    "session_valid_exchange": {
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "user": "0x32f3c0ec5581030ea57d0e86eddbbc92fbabb89b",
+      "digest": "0xaeb5c3002ef6e407ce3199ea3a28870d4154c3f8a82188b00ba6c23ad9b34f7b",
+      "precompile_called": true,
+      "recovered_signer": "0xc975de52e399b4789f0afc1397cefa9ffbfbc7c8",
+      "error": null,
+      "output": "0x000000000000000000000000c975de52e399b4789f0afc1397cefa9ffbfbc7c8",
+      "child_call_count": 1
+    },
+    "session_valid_outsider": {
+      "from": "0x000000000000000000000000000000000000dead",
+      "user": "0x32f3c0ec5581030ea57d0e86eddbbc92fbabb89b",
+      "digest": "0xaeb5c3002ef6e407ce3199ea3a28870d4154c3f8a82188b00ba6c23ad9b34f7b",
+      "precompile_called": true,
+      "recovered_signer": "0xc975de52e399b4789f0afc1397cefa9ffbfbc7c8",
+      "error": null,
+      "output": "0x000000000000000000000000c975de52e399b4789f0afc1397cefa9ffbfbc7c8",
+      "child_call_count": 1
+    },
+    "session_changed_user": {
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "user": "0x32f3c0ec5581030ea57d0e86eddbbc92fbabb89a",
+      "digest": "0xaeb5c3002ef6e407ce3199ea3a28870d4154c3f8a82188b00ba6c23ad9b34f7b",
+      "precompile_called": true,
+      "recovered_signer": "0xc975de52e399b4789f0afc1397cefa9ffbfbc7c8",
+      "error": "execution reverted",
+      "output": "0xc5045f22",
+      "child_call_count": 1
+    },
+    "session_changed_hash": {
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "user": "0x32f3c0ec5581030ea57d0e86eddbbc92fbabb89b",
+      "digest": "0x6517d7d678b9aa177b03463b7fe547031d1ee1351a19d7a153a0db2fc840d737",
+      "precompile_called": true,
+      "recovered_signer": "0x4d6ac0f3d13a784af816088ffdd35a459b1e10ae",
+      "error": "execution reverted",
+      "output": "0xc5045f22",
+      "child_call_count": 1
+    },
+    "session_invalid_v": {
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "user": "0x32f3c0ec5581030ea57d0e86eddbbc92fbabb89b",
+      "digest": "0xaeb5c3002ef6e407ce3199ea3a28870d4154c3f8a82188b00ba6c23ad9b34f7b",
+      "precompile_called": false,
+      "recovered_signer": null,
+      "error": "execution reverted",
+      "output": "0xc5045f22",
+      "child_call_count": 1
+    },
+    "session_zero_r": {
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "user": "0x32f3c0ec5581030ea57d0e86eddbbc92fbabb89b",
+      "digest": "0xaeb5c3002ef6e407ce3199ea3a28870d4154c3f8a82188b00ba6c23ad9b34f7b",
+      "precompile_called": true,
+      "recovered_signer": null,
+      "error": "execution reverted",
+      "output": "0xc5045f22",
+      "child_call_count": 1
+    },
+    "session_zero_s": {
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "user": "0x32f3c0ec5581030ea57d0e86eddbbc92fbabb89b",
+      "digest": "0xaeb5c3002ef6e407ce3199ea3a28870d4154c3f8a82188b00ba6c23ad9b34f7b",
+      "precompile_called": true,
+      "recovered_signer": null,
+      "error": "execution reverted",
+      "output": "0xc5045f22",
+      "child_call_count": 1
+    },
+    "direct_user_exchange": {
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "user": "0xda0ccf3040d7f268bc2328250a250a34f5857fdc",
+      "digest": "0x308eac76b7e2b4e82d8c22458ac4d7d1de0e1af5a199be2dda52dd7dd5d10613",
+      "precompile_called": true,
+      "recovered_signer": "0xda0ccf3040d7f268bc2328250a250a34f5857fdc",
+      "error": "execution reverted",
+      "output": "0xc5045f22",
+      "child_call_count": 1
+    },
+    "direct_user_outsider": {
+      "from": "0x000000000000000000000000000000000000dead",
+      "user": "0xda0ccf3040d7f268bc2328250a250a34f5857fdc",
+      "digest": "0x308eac76b7e2b4e82d8c22458ac4d7d1de0e1af5a199be2dda52dd7dd5d10613",
+      "precompile_called": true,
+      "recovered_signer": "0xda0ccf3040d7f268bc2328250a250a34f5857fdc",
+      "error": "execution reverted",
+      "output": "0xc5045f22",
+      "child_call_count": 1
+    },
+    "direct_user_changed_user": {
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "user": "0xda0ccf3040d7f268bc2328250a250a34f5857fdd",
+      "digest": "0x308eac76b7e2b4e82d8c22458ac4d7d1de0e1af5a199be2dda52dd7dd5d10613",
+      "precompile_called": true,
+      "recovered_signer": "0xda0ccf3040d7f268bc2328250a250a34f5857fdc",
+      "error": "execution reverted",
+      "output": "0xc5045f22",
+      "child_call_count": 1
+    }
+  },
+  "storage_override_probes": {
+    "expiry_before": {
+      "stored_expiry": 1792357340,
+      "stored_associated_address": "0x0000000000000000000000000000000000000000",
+      "result": "0xda0700a2"
+    },
+    "expiry_at": {
+      "stored_expiry": 1792357341,
+      "stored_associated_address": "0x0000000000000000000000000000000000000000",
+      "result": "returned_signer"
+    },
+    "expiry_after": {
+      "stored_expiry": 1792357342,
+      "stored_associated_address": "0x0000000000000000000000000000000000000000",
+      "result": "returned_signer"
+    },
+    "revoked_word_zero": {
+      "stored_expiry": 0,
+      "stored_associated_address": "0x0000000000000000000000000000000000000000",
+      "result": "0xc5045f22"
+    },
+    "associated_nonzero": {
+      "stored_expiry": 1794944459,
+      "stored_associated_address": "0x000000000000000000000000000000000000dead",
+      "result": "returned_signer"
+    }
+  },
+  "limits": [
+    "Read-only calls at the pin cover ten signer inputs and five storage overrides; other validation branches remain untested.",
+    "The direct-user signature is taken from a historical registration; it is not a trade authorization."
+  ]
+}

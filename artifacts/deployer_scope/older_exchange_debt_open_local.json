@@ -1,0 +1,54 @@
+{
+  "fork_block": 47721328,
+  "test_sha256": "b3578887ea86add0d0d20ff30291e848f1a73dc67650f46e508c586d6a5f9fa2",
+  "trace_sha256": "3ecc0f8f02edbe4024c8e659681a60ad78215b0c86b5895f3bad00c5ba406aa1",
+  "tests": [
+    {
+      "name": "testBelowCreditReverts",
+      "gas": 134977
+    },
+    {
+      "name": "testDebtCloseHigherPriceQueuesLoss",
+      "gas": 716324
+    },
+    {
+      "name": "testDebtCloseLowerPriceQueuesProfit",
+      "gas": 676489
+    },
+    {
+      "name": "testDebtOpenCloseHarvestWithdrawToCore",
+      "gas": 1079612
+    },
+    {
+      "name": "testExactCreditSetsFlagAndConsumesQueue",
+      "gas": 273742
+    },
+    {
+      "name": "testNoQueueCreditReverts",
+      "gas": 133711
+    },
+    {
+      "name": "testNonDebtOpenDebitsBalance",
+      "gas": 249367
+    },
+    {
+      "name": "testOpenThenCloseDebtQueuesPayout",
+      "gas": 628819
+    },
+    {
+      "name": "testPartialQueueCreditLeavesRemainder",
+      "gas": 277794
+    },
+    {
+      "name": "testSecondOpenCannotReuseQueueCredit",
+      "gas": 383396
+    },
+    {
+      "name": "testSignatureMutationRejected",
+      "gas": 97884
+    }
+  ],
+  "suite_passed": true,
+  "method": "Forge archive fork; real EIP-712 open and close signatures, constructed authorized session key and queue state; exact Exchange, Session and old library runtime codehash assertions; constructed Core response and CoreWriter boundary mocks",
+  "trace_artifact": "older_exchange_debt_open_forge_trace.txt.gz"
+}

@@ -1,0 +1,77 @@
+{
+  "pin_block": 48902346,
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "event_catalog": [
+    {
+      "topic0": "0xb2f6a0be3228032ab1a6e4d114ab0a4b8277ef32d9bd9b666e8537200aed4dc7",
+      "reconstructed_signature": "Enqueued(address,uint256,uint256)",
+      "status": "observed_historical_topic"
+    }
+  ],
+  "global_slots": {
+    "16": "queue head node id",
+    "17": "next queue node id",
+    "18": "total queued amount"
+  },
+  "mapping_layout": {
+    "15": "node[id] owner at base slot; amount at base slot + 1",
+    "19": "user queued amount",
+    "20": "user queue head id",
+    "21": "user queue tail id"
+  },
+  "enqueues": [
+    {
+      "tx": "0x3bc7029ee0d72c5dbacfb74dddc183ddb6206adca6ed702014eb90c28cf2d39e",
+      "block": 48173881,
+      "user": "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+      "node_id": 1,
+      "amount": "7623942182351823589",
+      "node_owner_slot": "0x169f97de0d9a84d840042b17d3c6b9638b3d6fd9024c9eb0c7a306a17b49f88f",
+      "node_amount_slot": "0x169f97de0d9a84d840042b17d3c6b9638b3d6fd9024c9eb0c7a306a17b49f890",
+      "user_queued_amount_slot": "0xf86831cc12ee14d9eaf7ffabd66e5ad6bc90ead843942245bd65f0248c82d820",
+      "user_head_slot": "0x09b22573964a1bed38e6395be2c87ab05be5206a2f6c2350225238627903fc32",
+      "user_tail_slot": "0xc3d35a17e1e4fb44947f360fa8b09ead6dd00884d293f3b91b581d4aaa756910"
+    },
+    {
+      "tx": "0xc7ba4aaf1bdda8e24c2c8a228e315f39a879e7c9c87786eb260fa07c09b99940",
+      "block": 48173885,
+      "user": "0x177344b0f45102a5fb7b2dc72470650e84f3ef77",
+      "node_id": 2,
+      "amount": "7623942182351823589",
+      "node_owner_slot": "0xa74ba3945261e09fde15ba3db55005b205e61eeb4ad811ac0faa2b315bffeead",
+      "node_amount_slot": "0xa74ba3945261e09fde15ba3db55005b205e61eeb4ad811ac0faa2b315bffeeae",
+      "user_queued_amount_slot": "0x86867e378e56adc0eaf0d88c72760b127f6c34133482250cede7f9c549f619b4",
+      "user_head_slot": "0xfc7bfb20f1694220b8330066f130707250e1dd26cb2294a84bf2836137ef2c9d",
+      "user_tail_slot": "0x47ae5b66611be4d86073ead9892e3935404fcb2d46fbafcb27f9e87237978ae5"
+    },
+    {
+      "tx": "0x1fc54a082055d35c0b79b6fc5f6c2a7004840531f5bcb9b6ec4450a93be2384f",
+      "block": 48173887,
+      "user": "0x10ec78af7c91799e48c93c3b0eff024fbe0fbeb0",
+      "node_id": 3,
+      "amount": "7623942182351823589",
+      "node_owner_slot": "0x45f76dafbbad695564362934e24d72eedc57f9fc1a65f39bca62176cc8296828",
+      "node_amount_slot": "0x45f76dafbbad695564362934e24d72eedc57f9fc1a65f39bca62176cc8296829",
+      "user_queued_amount_slot": "0x4ab1ad661be1a7f06f7b32eff545070facc1c06b1f7181dec76ed18ad87a5d7d",
+      "user_head_slot": "0xaf3f81ea1ce8d0319d702b21d709e949ce61aa28c5455f535ac5db2db986dd7f",
+      "user_tail_slot": "0xb98df9e4f72d877d66cc4857522e281bf6eb0c5d1fedf306a3d81d850561f7c2"
+    }
+  ],
+  "harvest": {
+    "tx": "0x4214fa14d9c5bf46fade1c7f3ca8d242baefaa52426395b1840f43b626ee8a99",
+    "max_entries": 32,
+    "returned_amount": "22871826547055470767",
+    "head_after": 4,
+    "total_queued_after": 0,
+    "cleared_node_ids": [
+      1,
+      2,
+      3
+    ]
+  },
+  "limitations": [
+    "The three historical enqueues each create a first node for a distinct user; a synthetic same-user append is verified separately in exchange_queue_append_behavior.json.",
+    "The historical harvest proves the sampled three-node clear path; partial entry counts, same-user harvests, and underfunded node payouts are checked separately with read-only simulations.",
+    "Diff-mode omitted zero post words are interpreted using the prestate and event sequence."
+  ]
+}

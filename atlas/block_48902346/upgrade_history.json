@@ -1,0 +1,74 @@
+{
+  "0x1629b7d46bef6e13ff754174fc9f32dea309b38f": {
+    "role": "deposit_proxy_factory_proxy",
+    "creation_block": 47855071,
+    "pinned_implementation": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+    "upgrade_event_count": 0,
+    "events": [],
+    "creation_block_implementation": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+    "same_at_creation_and_pin": true
+  },
+  "0x233ff29b239abc1d7748605da9b205c3e008626e": {
+    "role": "batch_executor_proxy",
+    "creation_block": 47855140,
+    "pinned_implementation": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+    "upgrade_event_count": 0,
+    "events": [],
+    "creation_block_implementation": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+    "same_at_creation_and_pin": true
+  },
+  "0x6cd5661646289fb6e65ea5c032310fded797d0a2": {
+    "role": "exchange_proxy",
+    "creation_block": 47854719,
+    "pinned_implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+    "upgrade_event_count": 0,
+    "events": [],
+    "creation_block_implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+    "same_at_creation_and_pin": true
+  },
+  "0x75174549dbbd44497d31a47e2e2d7406408d63d9": {
+    "role": "tokenomics_proxy",
+    "creation_block": 47855075,
+    "pinned_implementation": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+    "upgrade_event_count": 0,
+    "events": [],
+    "creation_block_implementation": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+    "same_at_creation_and_pin": true
+  },
+  "0x8326eb8896e358717f10502ec73ce8d28e37b108": {
+    "role": "session_key_manager_proxy",
+    "creation_block": 47855066,
+    "pinned_implementation": "0x8a5069fe303e8f81e91825436e956d595032e558",
+    "upgrade_event_count": 0,
+    "events": [],
+    "creation_block_implementation": "0x8a5069fe303e8f81e91825436e956d595032e558",
+    "same_at_creation_and_pin": true
+  },
+  "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e": {
+    "role": "oracle_proxy",
+    "creation_block": 47854597,
+    "pinned_implementation": "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+    "upgrade_event_count": 0,
+    "events": [],
+    "creation_block_implementation": "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+    "same_at_creation_and_pin": true
+  },
+  "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016": {
+    "role": "staking_proxy",
+    "creation_block": 47855135,
+    "pinned_implementation": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+    "upgrade_event_count": 0,
+    "events": [],
+    "creation_block_implementation": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+    "same_at_creation_and_pin": true
+  },
+  "0xe40f17915daa230324030003a197cdaef2261c0e": {
+    "role": "paper_token_proxy",
+    "creation_block": 47855130,
+    "pinned_implementation": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+    "upgrade_event_count": 0,
+    "events": [],
+    "creation_block_implementation": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+    "same_at_creation_and_pin": true
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "proxy": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+  "implementation": "0x8a5069fe303e8f81e91825436e956d595032e558",
+  "runtime_sha256": "630c02b0c693c47760554a3f0fed68b72db5df601f887d2edaaa3106e6308e63",
+  "selector": "0x17a1678f",
+  "arguments": [
+    "address",
+    "uint64",
+    "address"
+  ],
+  "source_name_status": "unresolved",
+  "error_selector": "0xd2dd8531",
+  "error_name_status": "unresolved",
+  "dispatcher_entry_pc": 2711,
+  "address_decoder_pc": 2843,
+  "revert_pc": 2786,
+  "local_replay_evidence": "../../artifacts/fixed_revert_local/replay.json",
+  "behavior": "canonical nonpayable calls validate three ABI words and then revert with 0xd2dd8531, without storage, logs, or external calls",
+  "limits": [
+    "No archived dynamic call probe was captured; a port-free local EVM replay exercises canonical calls through the exact pinned proxy and implementation bytecode.",
+    "Malformed ABI words and nonzero msg.value use generic empty-data revert paths.",
+    "The original function and error names remain unknown."
+  ]
+}

@@ -1,0 +1,529 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "checks": [
+    {
+      "name": "the captured initcode carries the template with the four word slots zeroed",
+      "ok": true,
+      "detail": {
+        "initcode_user": "0x5609cec701025490e3cb840cb4dedf939a20d773",
+        "exchange_tail": "0x6cd5661646289fb6e65ea5c032310fded797d0a2"
+      }
+    },
+    {
+      "name": "family template == the initcode slice with the representative words applied",
+      "ok": true,
+      "detail": {
+        "manifest_sha256": "0c2f88b4bd4a6225e291a27e63601a50355f9f563c27da85d6df17c5431c3ffb",
+        "sha256": "0c2f88b4bd4a6225e291a27e63601a50355f9f563c27da85d6df17c5431c3ffb"
+      }
+    },
+    {
+      "name": "representative matches the family family hash",
+      "ok": true,
+      "detail": {
+        "family_records": 41
+      }
+    },
+    {
+      "name": "declared creation geometry",
+      "ok": true,
+      "detail": {
+        "initcode_bytes": 1889,
+        "body_bytes": 1825
+      }
+    },
+    {
+      "name": "runtime rebuilt from the trailing words",
+      "ok": true,
+      "detail": {
+        "exchange_word": "0x6cd5661646289fb6e65ea5c032310fded797d0a2"
+      }
+    },
+    {
+      "name": "only the two 20-byte user address slots vary across the family sample",
+      "ok": true,
+      "detail": {
+        "varying_byte_ranges": [
+          [
+            903,
+            923
+          ],
+          [
+            998,
+            1018
+          ]
+        ]
+      }
+    },
+    {
+      "name": "proxy runtime has no storage, no delegatecall and no selfdestruct",
+      "ok": true,
+      "detail": {
+        "SSTORE": 0,
+        "SLOAD": 0,
+        "DELEGATECALL": 0,
+        "CALLCODE": 0,
+        "SELFDESTRUCT": 0,
+        "STATICCALL": 0,
+        "CREATE": 0,
+        "CREATE2": 0,
+        "CALLER": 2,
+        "CALL": 3,
+        "REVERT": 18,
+        "INVALID": 1
+      }
+    },
+    {
+      "name": "exactly two CALLER sites, both a masked compare against an embedded PUSH32 word",
+      "ok": true,
+      "detail": {
+        "windows": [
+          [
+            "SWAP2",
+            "SUB",
+            "PUSH2 0x02eb",
+            "JUMPI",
+            "PUSH32 0x0000000000000000000000000000000000000000000000000000000000000000",
+            "PUSH1 0x01",
+            "PUSH1 0x01",
+            "PUSH1 0xa0",
+            "SHL",
+            "SUB",
+            "AND",
+            "SWAP1",
+            "CALLER",
+            "DUP3",
+            "SWAP1",
+            "SUB",
+            "PUSH2 0x0335",
+            "JUMPI"
+          ],
+          [
+            "DUP5",
+            "SUB",
+            "PUSH2 0x02eb",
+            "JUMPI",
+            "PUSH1 0x24",
+            "DUP1",
+            "CALLDATALOAD",
+            "SWAP4",
+            "PUSH32 0x0000000000000000000000000000000000000000000000000000000000000000",
+            "AND",
+            "SWAP6",
+            "DUP7",
+            "CALLER",
+            "SUB",
+            "PUSH2 0x055b",
+            "JUMPI",
+            "POP",
+            "DUP4"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "both embedded words are 12 zero bytes and a 20-byte address",
+      "ok": true,
+      "detail": {
+        "words": {
+          "0x61": "0000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a2",
+          "0xde": "0000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a2",
+          "0x37b": "000000000000000000000000fb94d3404c1d3d9d6f08f79e58041d5ea95accfa",
+          "0x3da": "000000000000000000000000fb94d3404c1d3d9d6f08f79e58041d5ea95accfa"
+        }
+      }
+    },
+    {
+      "name": "all recorded users reproduce their proxy address from salt + initcode",
+      "ok": true,
+      "detail": {
+        "checked": 22586,
+        "mismatches": 0
+      }
+    },
+    {
+      "name": "no duplicate user or proxy address",
+      "ok": true,
+      "detail": {
+        "users": 22586
+      }
+    },
+    {
+      "name": "no zero-user proxy on chain",
+      "ok": true,
+      "detail": {
+        "zero_user": 0
+      }
+    },
+    {
+      "name": "every derived runtime hash reproduces from the recorded user",
+      "ok": true,
+      "detail": {
+        "derived_rows": 22586,
+        "matches": 22586,
+        "distinct_hashes": 22586
+      }
+    },
+    {
+      "name": "factory records exchange in a pinned slot and only writes it at initialization",
+      "ok": true,
+      "detail": {
+        "slot0": {
+          "raw": "0x000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a20001",
+          "exchange_bits": [
+            16,
+            175
+          ],
+          "low_byte_initialized": 1
+        }
+      }
+    },
+    {
+      "name": "the zero-user shape derives to the address the pass-one zero-user probe returned",
+      "ok": true,
+      "detail": {
+        "derived": "0x23195734b67f4f173fa6d3b421c649f833ca0cc0",
+        "probe": "0x00000000000000000000000023195734b67f4f173fa6d3b421c649f833ca0cc0"
+      }
+    },
+    {
+      "name": "factory logs one ProxyDeployed per user with the recorded proxy",
+      "ok": true,
+      "detail": {
+        "mapping_slots": {
+          "proxyOf(user)": 1,
+          "isProxy(proxy)": 2
+        }
+      }
+    },
+    {
+      "name": "CoreWriter dispatches exactly one selector and rejects everything else",
+      "ok": true,
+      "detail": {
+        "opcode_count": 329,
+        "code_bytes": 491,
+        "metadata_bytes": 53,
+        "push4_selectors": [
+          "0x17938e13"
+        ],
+        "callvalue_guard": true
+      }
+    },
+    {
+      "name": "earlier_1: domain separator = f(999, authorizedCaller), cached == dynamic",
+      "ok": true,
+      "detail": {
+        "authorizedCaller": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+        "computed": "0x148ad6651bcc1981a17c339cb9726dee6b4617126472e8236bad447c73665254",
+        "stored": "0x148ad6651bcc1981a17c339cb9726dee6b4617126472e8236bad447c73665254",
+        "dynamic": "0x148ad6651bcc1981a17c339cb9726dee6b4617126472e8236bad447c73665254"
+      }
+    },
+    {
+      "name": "earlier_1: exchange.sessionKeyManager == its own SessionKeyManager",
+      "ok": true,
+      "detail": {
+        "read": "0x00000000000000000000000091667db7e20474b3ac6eaabf0c8106ed46b5691a"
+      }
+    },
+    {
+      "name": "earlier_1: exchange.proxyFactory == its own factory and factory.exchange == its own Exchange",
+      "ok": true,
+      "detail": {
+        "proxyFactory": "0x00000000000000000000000036365dc6bd9513692978e4ea8f3117a7bae55f28",
+        "factory_exchange": "0x0000000000000000000000001b534e482b92bb6daff452cd12f2e35219e13493"
+      }
+    },
+    {
+      "name": "earlier_1: the BatchExecutor is an authorized submitter of its own manager",
+      "ok": true,
+      "detail": {
+        "read": "0x0000000000000000000000000000000000000000000000000000000000000001"
+      }
+    },
+    {
+      "name": "earlier_2: domain separator = f(999, authorizedCaller), cached == dynamic",
+      "ok": true,
+      "detail": {
+        "authorizedCaller": "0x2ede04561914c61a5f49212609541934fd7f5901",
+        "computed": "0xcbedfe73b0acbbcf567c94f68358f2ed291e8e67060d57d48253b5c5063505e8",
+        "stored": "0xcbedfe73b0acbbcf567c94f68358f2ed291e8e67060d57d48253b5c5063505e8",
+        "dynamic": "0xcbedfe73b0acbbcf567c94f68358f2ed291e8e67060d57d48253b5c5063505e8"
+      }
+    },
+    {
+      "name": "earlier_2: exchange.sessionKeyManager == its own SessionKeyManager",
+      "ok": true,
+      "detail": {
+        "read": "0x000000000000000000000000e45264507a67d0bbea35299002b68ebd76adba04"
+      }
+    },
+    {
+      "name": "earlier_2: exchange.proxyFactory == its own factory and factory.exchange == its own Exchange",
+      "ok": true,
+      "detail": {
+        "proxyFactory": "0x00000000000000000000000099a8c54d3ee124debe8d685954546084c9a3731d",
+        "factory_exchange": "0x0000000000000000000000002ede04561914c61a5f49212609541934fd7f5901"
+      }
+    },
+    {
+      "name": "earlier_2: the BatchExecutor is an authorized submitter of its own manager",
+      "ok": true,
+      "detail": {
+        "read": "0x0000000000000000000000000000000000000000000000000000000000000001"
+      }
+    },
+    {
+      "name": "newest: domain separator = f(999, authorizedCaller), cached == dynamic",
+      "ok": true,
+      "detail": {
+        "authorizedCaller": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "computed": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+        "stored": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+        "dynamic": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77"
+      }
+    },
+    {
+      "name": "newest: exchange.sessionKeyManager == its own SessionKeyManager",
+      "ok": true,
+      "detail": {
+        "read": "0x0000000000000000000000008326eb8896e358717f10502ec73ce8d28e37b108"
+      }
+    },
+    {
+      "name": "newest: exchange.proxyFactory == its own factory and factory.exchange == its own Exchange",
+      "ok": true,
+      "detail": {
+        "proxyFactory": "0x0000000000000000000000001629b7d46bef6e13ff754174fc9f32dea309b38f",
+        "factory_exchange": "0x0000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a2"
+      }
+    },
+    {
+      "name": "newest: the BatchExecutor is an authorized submitter of its own manager",
+      "ok": true,
+      "detail": {
+        "read": "0x0000000000000000000000000000000000000000000000000000000000000001"
+      }
+    },
+    {
+      "name": "the three suite domain separators are pairwise distinct",
+      "ok": true,
+      "detail": {
+        "earlier_1": "0x148ad6651bcc1981a17c339cb9726dee6b4617126472e8236bad447c73665254",
+        "earlier_2": "0xcbedfe73b0acbbcf567c94f68358f2ed291e8e67060d57d48253b5c5063505e8",
+        "newest": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77"
+      }
+    },
+    {
+      "name": "the newest factory resolves the representative to its recorded proxy",
+      "ok": true,
+      "detail": {
+        "computeProxyAddress": "0x000000000000000000000000f1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce"
+      }
+    },
+    {
+      "name": "every intent-class typehash literal is present in the SessionKeyManager runtime",
+      "ok": true,
+      "detail": {
+        "typehashes": [
+          "0xd3d9a309f635415423ab81e7e3fb16d2117cc8e1edc90506adde9eaa3855edd2",
+          "0xac4ddb8d63e9d7a862c5d61ce47517623a448262414a7eef6797102104b31214",
+          "0x9cc23a52214afa42e1ae53cdb2e79dc2d0cd33c33faca383ed3b149300adcb13",
+          "0xfce2fb41f9ff0457a0f012e62cfd6a7cff4e8439ae20008ab6979c740ba5a983",
+          "0x8b73c3c69bb8fe3d512ecc4cf759cc79239f7b179b0ffacaa9a75d522b39400f"
+        ]
+      }
+    },
+    {
+      "name": "the registration struct typehash is distinct from every trading typehash",
+      "ok": true,
+      "detail": {
+        "count": 5
+      }
+    },
+    {
+      "name": "the sampled withdrawal digest reproduces as keccak(0x1901 || domain || structHash)",
+      "ok": true,
+      "detail": {
+        "digest": "0xc74fa4dc110a1b252eb594218544d1d3aaf5838b011dc746b3500bdb20b86595"
+      }
+    },
+    {
+      "name": "registration ledger records the same typehash and domain",
+      "ok": true,
+      "detail": {
+        "registrations": 10
+      }
+    },
+    {
+      "name": "withdrawal ledger records the same domain",
+      "ok": true,
+      "detail": {
+        "calls": 103
+      }
+    }
+  ],
+  "runtime_files": {
+    "Proxy.hex": {
+      "bytes": 1646,
+      "sha256": "0c2f88b4bd4a6225e291a27e63601a50355f9f563c27da85d6df17c5431c3ffb",
+      "source": "atlas/block_48902346/runtime/0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce.hex"
+    },
+    "Session.hex": {
+      "bytes": 3764,
+      "sha256": "630c02b0c693c47760554a3f0fed68b72db5df601f887d2edaaa3106e6308e63",
+      "source": "atlas/block_48902346/runtime/0x8a5069fe303e8f81e91825436e956d595032e558.hex"
+    },
+    "ExchangeProxy.hex": {
+      "bytes": 925,
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+      "source": "atlas/block_48902346/runtime/0x6cd5661646289fb6e65ea5c032310fded797d0a2.hex"
+    },
+    "ExchangeImpl.hex": {
+      "bytes": 23052,
+      "sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "source": "atlas/block_48902346/runtime/0x0f3febfc94876b0c895f7acecdc8f5c863b549ee.hex"
+    },
+    "CoreWriter.hex": {
+      "bytes": 544,
+      "sha256": "fd053fae53aa5ff797c8de9d38f5180d3c280228ae2d669ef9a83ab7834dac83",
+      "source": "artifacts/postpin_suite/runtime/0x3333333333333333333333333333333333333333.hex"
+    }
+  },
+  "template": {
+    "opcode_count": 1014,
+    "code_bytes": 1593,
+    "metadata_bytes": 53,
+    "counts": {
+      "SSTORE": 0,
+      "SLOAD": 0,
+      "DELEGATECALL": 0,
+      "CALLCODE": 0,
+      "SELFDESTRUCT": 0,
+      "STATICCALL": 0,
+      "CREATE": 0,
+      "CREATE2": 0,
+      "CALLER": 2,
+      "CALL": 3,
+      "REVERT": 18,
+      "INVALID": 1
+    },
+    "caller_windows": [
+      [
+        "SWAP2",
+        "SUB",
+        "PUSH2 0x02eb",
+        "JUMPI",
+        "PUSH32 0x0000000000000000000000000000000000000000000000000000000000000000",
+        "PUSH1 0x01",
+        "PUSH1 0x01",
+        "PUSH1 0xa0",
+        "SHL",
+        "SUB",
+        "AND",
+        "SWAP1",
+        "CALLER",
+        "DUP3",
+        "SWAP1",
+        "SUB",
+        "PUSH2 0x0335",
+        "JUMPI"
+      ],
+      [
+        "DUP5",
+        "SUB",
+        "PUSH2 0x02eb",
+        "JUMPI",
+        "PUSH1 0x24",
+        "DUP1",
+        "CALLDATALOAD",
+        "SWAP4",
+        "PUSH32 0x0000000000000000000000000000000000000000000000000000000000000000",
+        "AND",
+        "SWAP6",
+        "DUP7",
+        "CALLER",
+        "SUB",
+        "PUSH2 0x055b",
+        "JUMPI",
+        "POP",
+        "DUP4"
+      ]
+    ]
+  },
+  "family": {
+    "deployment_count": 22586,
+    "runtime_bytes": 1646,
+    "runtime_template_sha256": "554e7afb9eb3c11831c7aa6a11fd2170aae9d81e29a5940b234e1cea62611225",
+    "representative_sha256": "0c2f88b4bd4a6225e291a27e63601a50355f9f563c27da85d6df17c5431c3ffb",
+    "exchange_impl_bytes": 23052,
+    "representative": "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+    "representative_user": "0xfb94d3404c1d3d9d6f08f79e58041d5ea95accfa",
+    "exchange_word_offsets": [
+      97,
+      222
+    ],
+    "user_word_offsets": [
+      891,
+      986
+    ],
+    "caller_sites": 2,
+    "address_recomputed": 22586,
+    "runtime_hash_recomputed": 22586,
+    "proxy_family_records": 41
+  },
+  "zero_user": {
+    "derived_proxy": "0x23195734b67f4f173fa6d3b421c649f833ca0cc0",
+    "probe": "atlas/block_48902346/factory_behavior.json probes.deploy_zero_user",
+    "on_chain_count": 0
+  },
+  "core_writer": {
+    "opcode_count": 329,
+    "code_bytes": 491,
+    "metadata_bytes": 53,
+    "push4_selectors": [
+      "0x17938e13"
+    ],
+    "callvalue_guard": true
+  },
+  "live_head": "0x2efea98",
+  "domains": {
+    "earlier_1": {
+      "exchange": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "session": "0x91667db7e20474b3ac6eaabf0c8106ed46b5691a",
+      "domain_separator": "0x148ad6651bcc1981a17c339cb9726dee6b4617126472e8236bad447c73665254",
+      "authorized_caller": "0x1b534e482b92bb6daff452cd12f2e35219e13493"
+    },
+    "earlier_2": {
+      "exchange": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "session": "0xe45264507a67d0bbea35299002b68ebd76adba04",
+      "domain_separator": "0xcbedfe73b0acbbcf567c94f68358f2ed291e8e67060d57d48253b5c5063505e8",
+      "authorized_caller": "0x2ede04561914c61a5f49212609541934fd7f5901"
+    },
+    "newest": {
+      "exchange": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "session": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "domain_separator": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+      "authorized_caller": "0x6cd5661646289fb6e65ea5c032310fded797d0a2"
+    }
+  },
+  "withdrawal_signature": {
+    "user": "0xb2dadf36151fb51fad1b66a09d56749a3578e532",
+    "struct_hash": "0xa9e6b2f904dc14b63294e2103d006c6781bd25e32cbfb5d823122c68aa1b62d0",
+    "digest": "0xc74fa4dc110a1b252eb594218544d1d3aaf5838b011dc746b3500bdb20b86595",
+    "v": 27,
+    "r": "0x9dcb3249dbe8788d41737f0fe76383e046a7ebcc951879be1bcdb526b30ac8e0",
+    "s": "0x3c784e7f7bd6934b564b1918f48ede138b8005a6509e9bf525acb158bb7e494a",
+    "source": "atlas/block_48902346/session_direct_signer_behavior.json calls[0]",
+    "tx": "0x3b56a71e00561f356eace90ce1a0b2845540aca891cc092cde3b4452567948b7"
+  },
+  "resident_words": {
+    "proxy": {
+      "user": "0xfb94d3404c1d3d9d6f08f79e58041d5ea95accfa",
+      "exchange": "0x6cd5661646289fb6e65ea5c032310fded797d0a2"
+    },
+    "manifest_session_sha256": "630c02b0c693c47760554a3f0fed68b72db5df601f887d2edaaa3106e6308e63",
+    "manifest_exchange_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1"
+  }
+}

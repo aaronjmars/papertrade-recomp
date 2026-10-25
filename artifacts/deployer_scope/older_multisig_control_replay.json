@@ -1,0 +1,32 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "addresses": [
+    "0x73a83d746c38865960583879bc29bb007a04eacf",
+    "0x324b0547039683c2df146421f3a76083ef130d27"
+  ],
+  "runtime_sha256": "4c8ecb8092028b3931dc3b8e2852278aa7f81ea0e8e4a418a4e0490d84e87bde",
+  "slots_0_to_2": [
+    [
+      "0x0000000000000000000000007ce50a614174a3b26b107f1f9866f88461820626",
+      "0x0000000000000000000000008cea98f6ab3004c762efaf3dfd54876d62912300",
+      "0x00000000000000000000000000000000000000000000000000000000000000f0"
+    ],
+    [
+      "0x0000000000000000000000007ce50a614174a3b26b107f1f9866f88461820626",
+      "0x0000000000000000000000008cea98f6ab3004c762efaf3dfd54876d62912300",
+      "0x0000000000000000000000000000000000000000000000000000000000000513"
+    ]
+  ],
+  "test_source_sha256": "40f5b49d17a0f658c79b29f2e5736c15786a328508792f0ac6410cca361dcd38",
+  "test_names": [
+    "testFirstOlderMultisigOneSignerSelfUpdate",
+    "testSecondOlderMultisigOneSignerSelfUpdate"
+  ],
+  "forge_result": "2 passed, 0 failed",
+  "limits": [
+    "Exact pinned runtime and direct slots 0-2 are seeded locally; other state is not reproduced.",
+    "The replay tests a constructed signer update, not a historical takeover.",
+    "Signer changes bypass the timelock, while later governed target actions still use it."
+  ]
+}

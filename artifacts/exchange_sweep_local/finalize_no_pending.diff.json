@@ -1,0 +1,25 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "user": "0x1730a930cfd0da43255081801bf1a3eb0b69ec83",
+  "proxy": "0x2e38ce35e63bfae2a85bf6db885ffcedaa76e18e",
+  "pending_slot": "0x02dcc61ac6183b76f6e90816938998ba3fb65914ac1cc4656f5a86aaeb8d2985",
+  "last_sweep_slot": "0x9dd4b849c5f1b72bdde76f68a1377400346bb6b113564c65e9ed4950e2cd821f",
+  "mock_spot": 0,
+  "mock_perp": 0,
+  "pending_override": 0,
+  "last_sweep_override": 0,
+  "trace": {
+    "post": {
+      "0x3333333333333333333333333333333333333333": {
+        "nonce": 1
+      }
+    },
+    "pre": {
+      "0x3333333333333333333333333333333333333333": {
+        "balance": "0xa616e0973fe0000",
+        "code": "0x00"
+      }
+    }
+  }
+}

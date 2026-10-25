@@ -1,0 +1,732 @@
+{
+ "captured_at": "2026-10-22T23:10:00Z",
+ "method": "single read-only eth_call per selector at latest; the public RPC ignores block parameters",
+ "rpc": "https://rpc.hyperliquid.xyz/evm",
+ "source": "merged from two throttled probe passes",
+ "probes": [
+  {
+   "name": "tk_eedf4c43",
+   "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+   "data": "0xeedf4c43",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x00000000000000000000000000000000000000000000000088b7f8a4f84ea612"
+   }
+  },
+  {
+   "name": "tk_456db972",
+   "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+   "data": "0x456db972",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+   }
+  },
+  {
+   "name": "tk_122b6689",
+   "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+   "data": "0x122b6689",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x0000000000000000000000000000000000000000038eba31582a5470aaca7592"
+   }
+  },
+  {
+   "name": "tk_4ec7182e",
+   "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+   "data": "0x4ec7182e",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x0000000000000000000000000000000000000000000000000de0b6b3a7640000"
+   }
+  },
+  {
+   "name": "tk_trackedLpUsd_wrong_selector",
+   "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+   "data": "0x8f2bced7",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": 3,
+     "message": "execution reverted"
+    }
+   }
+  },
+  {
+   "name": "tk_0xae745703",
+   "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+   "data": "0xae745703",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+   }
+  },
+  {
+   "name": "tk_activateRebate_rand",
+   "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+   "data": "0x85eb2a08",
+   "from": "0x1111111111111111111111111111111111111111",
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": 3,
+     "message": "execution reverted",
+     "data": "0x30cd7471"
+    }
+   }
+  },
+  {
+   "name": "tk_activate_guard",
+   "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+   "data": "0x85eb2a08",
+   "from": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": 3,
+     "message": "execution reverted",
+     "data": "0x30cd7471"
+    }
+   }
+  },
+  {
+   "name": "ex_0x5780639d_keeper",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0x5780639d0000000000000000000000000924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": 3,
+     "message": "execution reverted"
+    }
+   }
+  },
+  {
+   "name": "ex_0x5780639d_owner",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0x5780639d0000000000000000000000000924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56",
+   "from": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": 3,
+     "message": "execution reverted"
+    }
+   }
+  },
+  {
+   "name": "ex_0xcbce7532_keeper",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0xcbce75320000000000000000000000000924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+   }
+  },
+  {
+   "name": "ex_0xcbce7532_owner",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0xcbce75320000000000000000000000000924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56",
+   "from": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+   }
+  },
+  {
+   "name": "ex_0xd970fad5_keeper",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0xd970fad50000000000000000000000000924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": 3,
+     "message": "execution reverted"
+    }
+   }
+  },
+  {
+   "name": "ex_0xd970fad5_owner",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0xd970fad50000000000000000000000000924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56",
+   "from": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": 3,
+     "message": "execution reverted"
+    }
+   }
+  },
+  {
+   "name": "ex_0xe6ac4a74_keeper",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0xe6ac4a740000000000000000000000000924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": 3,
+     "message": "execution reverted"
+    }
+   }
+  },
+  {
+   "name": "ex_0xe6ac4a74_owner",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0xe6ac4a740000000000000000000000000924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56",
+   "from": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": 3,
+     "message": "execution reverted"
+    }
+   }
+  },
+  {
+   "name": "ex_0xf009ac03_keeper",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0xf009ac030000000000000000000000000924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x0000000000000000000000000000000000000000000000000000000000000001"
+   }
+  },
+  {
+   "name": "ex_0xf009ac03_owner",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0xf009ac030000000000000000000000000924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56",
+   "from": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x0000000000000000000000000000000000000000000000000000000000000001"
+   }
+  },
+  {
+   "name": "ex_9d346583_keeper_arg",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0x9d3465830000000000000000000000000924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+   }
+  },
+  {
+   "name": "ex_0x9d346583_owner",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0x9d3465830000000000000000000000000924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56",
+   "from": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+   }
+  },
+  {
+   "name": "ex_0x69f9a5f0_keeper",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0x69f9a5f00000000000000000000000000924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x"
+   }
+  },
+  {
+   "name": "ex_0x69f9a5f0_owner",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0x69f9a5f00000000000000000000000000924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56",
+   "from": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x"
+   }
+  },
+  {
+   "name": "ex_5780639d_keeper",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0x5780639d",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": 3,
+     "message": "execution reverted"
+    }
+   }
+  },
+  {
+   "name": "ex_cbce7532_keeper",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0xcbce7532",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+   }
+  },
+  {
+   "name": "ex_d970fad5_keeper",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0xd970fad5",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": 3,
+     "message": "execution reverted"
+    }
+   }
+  },
+  {
+   "name": "ex_e6ac4a74_keeper",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0xe6ac4a74",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": 3,
+     "message": "execution reverted"
+    }
+   }
+  },
+  {
+   "name": "ex_f009ac03_keeper",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0xf009ac03",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x0000000000000000000000000000000000000000000000000000000000000001"
+   }
+  },
+  {
+   "name": "ex_9d346583_bare",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0x9d346583",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": 3,
+     "message": "execution reverted"
+    }
+   }
+  },
+  {
+   "name": "ex_69f9a5f0_bare",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0x69f9a5f0",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x"
+   }
+  },
+  {
+   "name": "br_setFeeRate_owner_1",
+   "to": "0xfdc6550436dd75ce8a0b145f935b7d3a64f53248",
+   "data": "0x459770f60000000000000000000000000000000000000000000000000000000000000001",
+   "from": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x"
+   }
+  },
+  {
+   "name": "br_setFeeRate_rand",
+   "to": "0xfdc6550436dd75ce8a0b145f935b7d3a64f53248",
+   "data": "0x459770f60000000000000000000000000000000000000000000000000000000000000001",
+   "from": "0x1111111111111111111111111111111111111111",
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": 3,
+     "message": "execution reverted",
+     "data": "0x30cd7471"
+    }
+   }
+  },
+  {
+   "name": "br_setFeeRate_guard",
+   "to": "0xfdc6550436dd75ce8a0b145f935b7d3a64f53248",
+   "data": "0x459770f60000000000000000000000000000000000000000000000000000000000000001",
+   "from": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": 3,
+     "message": "execution reverted",
+     "data": "0x30cd7471"
+    }
+   }
+  },
+  {
+   "name": "br_approveBuilder_owner",
+   "to": "0xfdc6550436dd75ce8a0b145f935b7d3a64f53248",
+   "data": "0x54dc2a020000000000000000000000001111111111111111111111111111111111111111",
+   "from": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x"
+   }
+  },
+  {
+   "name": "br_approveBuilder_guard",
+   "to": "0xfdc6550436dd75ce8a0b145f935b7d3a64f53248",
+   "data": "0x54dc2a020000000000000000000000001111111111111111111111111111111111111111",
+   "from": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": 3,
+     "message": "execution reverted",
+     "data": "0x30cd7471"
+    }
+   }
+  },
+  {
+   "name": "br_approveBuilder_rand",
+   "to": "0xfdc6550436dd75ce8a0b145f935b7d3a64f53248",
+   "data": "0x54dc2a020000000000000000000000001111111111111111111111111111111111111111",
+   "from": "0x1111111111111111111111111111111111111111",
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": 3,
+     "message": "execution reverted",
+     "data": "0x30cd7471"
+    }
+   }
+  },
+  {
+   "name": "br_isApproved_keeper",
+   "to": "0xfdc6550436dd75ce8a0b145f935b7d3a64f53248",
+   "data": "0x673448dd0000000000000000000000000924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+   }
+  },
+  {
+   "name": "br_feeRateOf_keeper",
+   "to": "0xfdc6550436dd75ce8a0b145f935b7d3a64f53248",
+   "data": "0xd779e2700000000000000000000000000924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+   }
+  },
+  {
+   "name": "br_feeRate",
+   "to": "0xfdc6550436dd75ce8a0b145f935b7d3a64f53248",
+   "data": "0x978bbdb9",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x0000000000000000000000000000000000000000000000000011c37937e08000"
+   }
+  },
+  {
+   "name": "br_removeBuilder_rand",
+   "to": "0xfdc6550436dd75ce8a0b145f935b7d3a64f53248",
+   "data": "0xec9693860000000000000000000000001111111111111111111111111111111111111111",
+   "from": "0x1111111111111111111111111111111111111111",
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": 3,
+     "message": "execution reverted: ,I\">",
+     "data": "0x2c49223e"
+    }
+   }
+  },
+  {
+   "name": "skm_builderRegistry",
+   "to": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+   "data": "0xe737de13",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x000000000000000000000000fdc6550436dd75ce8a0b145f935b7d3a64f53248"
+   }
+  },
+  {
+   "name": "skm_setBuilderRegistry_rand",
+   "to": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+   "data": "0xbd322efa0000000000000000000000001111111111111111111111111111111111111111",
+   "from": "0x1111111111111111111111111111111111111111",
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": 3,
+     "message": "execution reverted",
+     "data": "0x30cd7471"
+    }
+   }
+  },
+  {
+   "name": "ex_owner",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0x8da5cb5b",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f"
+   }
+  },
+  {
+   "name": "ex_lpBankrollAvailable",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0x0cdd5fc4",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x00000000000000000000000000000000000000000003ffade53188b958fa2c0a"
+   }
+  },
+  {
+   "name": "ex_totalQueued",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0x53ac4b66",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+   }
+  },
+  {
+   "name": "ex_treasury",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0x61d027b3",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x000000000000000000000000000000000000000000206cf8425249a455dce800"
+   }
+  },
+  {
+   "name": "ex_winFeeRate",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0x48ee5e08",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x00000000000000000000000000000000000000000000000000470de4df820000"
+   }
+  },
+  {
+   "name": "ex_liquidationFeeRate",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0x5fb3b1b5",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x00000000000000000000000000000000000000000000000000470de4df820000"
+   }
+  },
+  {
+   "name": "ex_authorizedKeeper",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0x9d47d4d3",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x0000000000000000000000000924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56"
+   }
+  },
+  {
+   "name": "ex_queueHead",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0x96523644",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x0000000000000000000000000000000000000000000000000000000000000004"
+   }
+  },
+  {
+   "name": "ex_queueHarvestAvailable",
+   "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+   "data": "0x138e9de2",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x00000000000000000000000000000000000000000003ffadf09a1540afb728af"
+   }
+  },
+  {
+   "name": "tk_owner",
+   "to": null,
+   "data": null,
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f"
+   }
+  },
+  {
+   "name": "skm_owner",
+   "to": null,
+   "data": null,
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f"
+   }
+  },
+  {
+   "name": "skm_setBuilderRegistry_zero",
+   "to": null,
+   "data": null,
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x"
+   }
+  },
+  {
+   "name": "ex_d970fad5_none",
+   "to": null,
+   "data": null,
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": 3,
+     "message": "execution reverted"
+    }
+   }
+  },
+  {
+   "name": "ex_e6ac4a74_none",
+   "to": null,
+   "data": null,
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": 3,
+     "message": "execution reverted"
+    }
+   }
+  },
+  {
+   "name": "ex_5780639d_none",
+   "to": null,
+   "data": null,
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "error": {
+     "code": 3,
+     "message": "execution reverted"
+    }
+   }
+  },
+  {
+   "name": "tk_owner",
+   "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+   "data": "0x8da5cb5b",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f"
+   }
+  },
+  {
+   "name": "skm_owner",
+   "to": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+   "data": "0x8da5cb5b",
+   "from": null,
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f"
+   }
+  },
+  {
+   "name": "skm_setBuilderRegistry_owner_zero",
+   "to": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+   "data": "0xbd322efa0000000000000000000000000000000000000000000000000000000000000000",
+   "from": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": "0x"
+   }
+  }
+ ],
+ "heads": "probe pass window 2026-10-22T21:40Z to 23:15Z; current-state reads only"
+}

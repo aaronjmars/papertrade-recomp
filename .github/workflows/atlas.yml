@@ -1,0 +1,36 @@
+name: Atlas
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Check out saved evidence
+        uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v7.0.0
+        with:
+          python-version: '3.12.15'
+      - name: Install pinned Foundry tools
+        uses: foundry-rs/foundry-toolchain@v1.9.1
+        with:
+          version: v1.8.5
+          cache: false
+      - name: Install pinned Keccak backend
+        run: python3 -m pip install pycryptodome==3.24.1
+      - name: Verify pinned atlas offline
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: |
+          python3 --version
+          cast --version
+          PYTHONPATH=scripts python3 -c 'from atlas_factory_events import Keccak; print(Keccak().backend)'
+          python3 scripts/atlas_verify.py

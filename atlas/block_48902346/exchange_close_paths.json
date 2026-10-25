@@ -1,0 +1,201 @@
+{
+  "pin": 48902346,
+  "exchange": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "sampled_transactions": 7,
+  "sampled_positions": 9,
+  "case_counts": {
+    "margin_only_credited": 1,
+    "margin_plus_negative_pnl_credited": 2,
+    "margin_plus_positive_pnl_minus_fee_credited": 3,
+    "margin_returned_net_profit_queued": 3
+  },
+  "transactions": [
+    {
+      "tx": "0x1fc54a082055d35c0b79b6fc5f6c2a7004840531f5bcb9b6ec4450a93be2384f",
+      "queue_delta": 7623942182351823589,
+      "staker_fee_delta": 0,
+      "dev_fee_delta": 0,
+      "positions": [
+        {
+          "position_id": 11,
+          "user": "0x10ec78af7c91799e48c93c3b0eff024fbe0fbeb0",
+          "case": "margin_returned_net_profit_queued",
+          "margin": 45000000000000000000000,
+          "exit_price": 249825,
+          "raw_pnl": 106999179392750635470,
+          "adjusted_pnl": 7779532839134513866,
+          "event_fee": 155590656782690277,
+          "balance_delta": 45000000000000000000000,
+          "balance_after": 100120612842000000000000,
+          "event_staker_fee": 0,
+          "event_dev_fee": 0
+        }
+      ]
+    },
+    {
+      "tx": "0x20ee69d9f4191bff17d45a850a584d5803ca477986fd1684af985765d64d794b",
+      "queue_delta": 0,
+      "staker_fee_delta": 0,
+      "dev_fee_delta": 0,
+      "positions": [
+        {
+          "position_id": 22,
+          "user": "0x691f3b008d13dba927ca32ad5df2cc30fa085d7b",
+          "case": "margin_plus_negative_pnl_credited",
+          "margin": 10000000000000000000000,
+          "exit_price": 249825,
+          "raw_pnl": -400296219202209635129,
+          "adjusted_pnl": -400296219202209635129,
+          "event_fee": 0,
+          "balance_delta": 9599703780797790364871,
+          "balance_after": 9698603780797790364871,
+          "event_staker_fee": 0,
+          "event_dev_fee": 0
+        }
+      ]
+    },
+    {
+      "tx": "0x30639f82f9eb58fc815fb48b302ea732eed1bff5e755a92835b0b1f97c818acf",
+      "queue_delta": 0,
+      "staker_fee_delta": 68666712424131731,
+      "dev_fee_delta": 68666712424131732,
+      "positions": [
+        {
+          "position_id": 1393736,
+          "user": "0x0a017c108f4bce037fcca5b4f428e59748fa623d",
+          "case": "margin_plus_positive_pnl_minus_fee_credited",
+          "margin": 2500000000000000000000,
+          "exit_price": 809145,
+          "raw_pnl": 42022259438014077456,
+          "adjusted_pnl": 6866671242413173194,
+          "event_fee": 137333424848263463,
+          "balance_delta": 2506729337817564909731,
+          "balance_after": 7332311297945420786484,
+          "event_staker_fee": 68666712424131731,
+          "event_dev_fee": 68666712424131732
+        }
+      ]
+    },
+    {
+      "tx": "0x3bc7029ee0d72c5dbacfb74dddc183ddb6206adca6ed702014eb90c28cf2d39e",
+      "queue_delta": 7623942182351823589,
+      "staker_fee_delta": 0,
+      "dev_fee_delta": 0,
+      "positions": [
+        {
+          "position_id": 12,
+          "user": "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+          "case": "margin_returned_net_profit_queued",
+          "margin": 45000000000000000000000,
+          "exit_price": 249825,
+          "raw_pnl": 106999179392750635470,
+          "adjusted_pnl": 7779532839134513866,
+          "event_fee": 155590656782690277,
+          "balance_delta": 45000000000000000000000,
+          "balance_after": 99998600000000000000000,
+          "event_staker_fee": 0,
+          "event_dev_fee": 0
+        }
+      ]
+    },
+    {
+      "tx": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+      "queue_delta": 0,
+      "staker_fee_delta": 857475611997304681,
+      "dev_fee_delta": 857475611997304683,
+      "positions": [
+        {
+          "position_id": 1392206,
+          "user": "0x78274a46400c83c91b7ad35dea11f01ec3894756",
+          "case": "margin_plus_positive_pnl_minus_fee_credited",
+          "margin": 5750000000000000000000,
+          "exit_price": 808455,
+          "raw_pnl": 223161612350550789537,
+          "adjusted_pnl": 52361676010080092657,
+          "event_fee": 1047233520201601853,
+          "balance_delta": 5801314442489878490804,
+          "balance_after": 5839686929689897528094,
+          "event_staker_fee": 523616760100800926,
+          "event_dev_fee": 523616760100800927
+        },
+        {
+          "position_id": 1392921,
+          "user": "0x764274793ee9fdae1a2567667df698fd5bd4eff6",
+          "case": "margin_plus_negative_pnl_credited",
+          "margin": 1000000000000000000000,
+          "exit_price": 808455,
+          "raw_pnl": -33385885189650375591,
+          "adjusted_pnl": -33385885189650375591,
+          "event_fee": 667717703793007511,
+          "balance_delta": 966614114810349624409,
+          "balance_after": 5015635330174976627043,
+          "event_staker_fee": 333858851896503755,
+          "event_dev_fee": 333858851896503756
+        }
+      ]
+    },
+    {
+      "tx": "0xc7ba4aaf1bdda8e24c2c8a228e315f39a879e7c9c87786eb260fa07c09b99940",
+      "queue_delta": 7623942182351823589,
+      "staker_fee_delta": 0,
+      "dev_fee_delta": 0,
+      "positions": [
+        {
+          "position_id": 13,
+          "user": "0x177344b0f45102a5fb7b2dc72470650e84f3ef77",
+          "case": "margin_returned_net_profit_queued",
+          "margin": 45000000000000000000000,
+          "exit_price": 249825,
+          "raw_pnl": 106999179392750635470,
+          "adjusted_pnl": 7779532839134513866,
+          "event_fee": 155590656782690277,
+          "balance_delta": 45000000000000000000000,
+          "balance_after": 99998800000000000000000,
+          "event_staker_fee": 0,
+          "event_dev_fee": 0
+        }
+      ]
+    },
+    {
+      "tx": "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d",
+      "queue_delta": 0,
+      "staker_fee_delta": 10144513434627000,
+      "dev_fee_delta": 10144513434627001,
+      "positions": [
+        {
+          "position_id": 1392977,
+          "user": "0xe4dae68a7657cbb57285b937c12fe2a1fab49768",
+          "case": "margin_only_credited",
+          "margin": 208333333333333344256,
+          "exit_price": 808455,
+          "raw_pnl": 0,
+          "adjusted_pnl": 0,
+          "event_fee": 0,
+          "balance_delta": 208333333333333344256,
+          "balance_after": 984087101782942736445,
+          "event_staker_fee": 0,
+          "event_dev_fee": 0
+        },
+        {
+          "position_id": 1392974,
+          "user": "0x230c4c8c4d33d7d6c25448ec115c2b837f5d3eb5",
+          "case": "margin_plus_positive_pnl_minus_fee_credited",
+          "margin": 96634787772646906518,
+          "exit_price": 808455,
+          "raw_pnl": 3824587938338724988,
+          "adjusted_pnl": 1014451343462700068,
+          "event_fee": 20289026869254001,
+          "balance_delta": 97628950089240352585,
+          "balance_after": 218422434805048985730,
+          "event_staker_fee": 10144513434627000,
+          "event_dev_fee": 10144513434627001
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "This is a transaction-level reconciliation of nine sampled successful close events, not an exhaustive proof of all close branches.",
+    "The public ABI fixture names the signed PnL and fee fields; this ledger verifies their observed arithmetic but not their economic definitions.",
+    "One negative-PnL sample credits margin plus adjusted PnL while recording a nonzero fee split; the later mixed-close replay shows that the fee reduces the Tokenomics LP credit and PAPER mint basis."
+  ]
+}

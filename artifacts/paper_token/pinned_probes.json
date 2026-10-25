@@ -1,0 +1,142 @@
+{
+  "pin_block": 48902346,
+  "pin_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "getters": {
+    "owner": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "minter": "0x00000000000000000000000075174549dbbd44497d31a47e2e2d7406408d63d9",
+    "slot5": "0x000000000000000000000000aad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+    "staking_contract": "0x000000000000000000000000aad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+    "total_supply": "0x00000000000000000000000000000000000000001bdc5b516305a080eebe6597",
+    "holder_balance": "0x000000000000000000000000000000000000000000000109e16d92607f3c678d",
+    "staking_balance": "0x00000000000000000000000000000000000000001ba4de81b4dc2bd7e4f36736",
+    "holder_staking_allowance": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+  },
+  "slots": {
+    "3": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "4": "0x00000000000000000000000075174549dbbd44497d31a47e2e2d7406408d63d9",
+    "5": "0x000000000000000000000000aad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+    "6": "0x00000000000000000000000000000000000000001bdc5b516305a080eebe6597",
+    "9": "0x000000000000000000000000aad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+    "holder_balance": "0x000000000000000000000000000000000000000000000109e16d92607f3c678d",
+    "staking_balance": "0x00000000000000000000000000000000000000001ba4de81b4dc2bd7e4f36736",
+    "holder_staking_allowance": "0x0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "balance_slot": "0xa27621c1976f062078db0dfc8d6452113cf6e5333dcd1765fb028d9a8445cd18",
+  "staking_balance_slot": "0x1c02db7e43f0df87d0f575ff9d37c4987b926108a975515dd1064b16d94aa1e3",
+  "allowance_slot": "0x74000008d5defe99f395be4b4848f2aebd2708459fb70147024a0ba2931a1b0a",
+  "outsider_allowance_slot": "0xd1300703cb9aaf2aa26c850570d01be065894010839776ba030b14fee27c3e67",
+  "probes": {
+    "holder_transfer": {
+      "ok": false,
+      "revert_selector": "0xe827105e"
+    },
+    "holder_zero_transfer": {
+      "ok": false,
+      "revert_selector": "0xe827105e"
+    },
+    "staking_transfer": {
+      "ok": true,
+      "output": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    },
+    "staking_zero_transfer": {
+      "ok": true,
+      "output": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    },
+    "staking_overdraw": {
+      "ok": false,
+      "revert_selector": "0xf4d678b8"
+    },
+    "staking_pull_into_staking": {
+      "ok": true,
+      "output": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    },
+    "staking_pull_elsewhere": {
+      "ok": false,
+      "revert_selector": "0xe827105e"
+    },
+    "outsider_pull_without_allowance": {
+      "ok": false,
+      "revert_selector": "0x13be252b"
+    },
+    "outsider_pull_to_staking_with_allowance": {
+      "ok": false,
+      "revert_selector": "0xe827105e"
+    },
+    "outsider_pull_elsewhere_with_allowance": {
+      "ok": false,
+      "revert_selector": "0xe827105e"
+    },
+    "staking_pull_without_allowance": {
+      "ok": true,
+      "output": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    },
+    "holder_transfer_with_slot9_zero": {
+      "ok": false,
+      "revert_selector": "0xe827105e"
+    },
+    "outsider_pull_with_slot9_zero_and_allowance": {
+      "ok": false,
+      "revert_selector": "0xe827105e"
+    },
+    "outsider_pull_as_new_staking_contract": {
+      "ok": true,
+      "output": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    },
+    "holder_transfer_to_new_staking_contract": {
+      "ok": false,
+      "revert_selector": "0xe827105e"
+    },
+    "old_staking_transfer_after_reassignment": {
+      "ok": false,
+      "revert_selector": "0xe827105e"
+    },
+    "holder_approve": {
+      "ok": true,
+      "output": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    },
+    "owner_slot5_setter": {
+      "ok": true,
+      "output": "0x"
+    },
+    "outsider_slot5_setter": {
+      "ok": false,
+      "revert_selector": "0x30cd7471"
+    },
+    "owner_staking_setter": {
+      "ok": true,
+      "output": "0x"
+    },
+    "outsider_staking_setter": {
+      "ok": false,
+      "revert_selector": "0x30cd7471"
+    },
+    "minter_mint": {
+      "ok": true,
+      "output": "0x"
+    },
+    "owner_mint": {
+      "ok": false,
+      "revert_selector": "0xf8d2906c"
+    },
+    "minter_burn": {
+      "ok": true,
+      "output": "0x"
+    },
+    "holder_burn": {
+      "ok": false,
+      "revert_selector": "0xf8d2906c"
+    },
+    "owner_set_minter": {
+      "ok": true,
+      "output": "0x"
+    },
+    "outsider_set_minter": {
+      "ok": false,
+      "revert_selector": "0x30cd7471"
+    },
+    "initializer_again": {
+      "ok": false,
+      "revert_selector": "0x0dc149f0"
+    }
+  }
+}

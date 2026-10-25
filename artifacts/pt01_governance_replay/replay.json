@@ -1,0 +1,28 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "runtime_hashes": {
+    "Multisig": "25c3204acbd096d8407b2253cc2d59b920e89be24be8fd897ad299db09f8f513",
+    "Timelock": "f391dcb36b34b4b2fb1ffd42015cd4832a56ed8b40545eb3df41b58d7b38443e",
+    "ProxyAdmin": "238bb08777bab344b1e4090bd3a64fd26e48ef9ebaaf075234274e1c06129066",
+    "ExchangeProxy": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "ExchangeImplementation": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1"
+  },
+  "test_names": [
+    "testScheduledDelayReductionThenUpgrade",
+    "testTwoSignersAndSevenDayDelay"
+  ],
+  "test_source_sha256": "3430778c9523d29396959aff5c49acd68d945d117d52042221c22e9e5fc35933",
+  "forge_result": "2 passed, 0 failed",
+  "direct_upgrade_delay_seconds": 604800,
+  "scheduled_delay_change_ready_timestamp": 1792447296,
+  "subsequent_upgrade_delay_seconds": 86400,
+  "earliest_tested_upgrade_timestamp": 1792533696,
+  "pinned_pending_words_unchanged_by_upgrade": true,
+  "limits": [
+    "The mock upgrade target is not deployed Papertrade code and contains no recovery logic.",
+    "Pinned governance slots and both pending words are seeded locally; other state is not reproduced.",
+    "The replay proves two authorized upgrade paths and their delays in the tested state, not HyperCore delivery or a safe upgrade implementation.",
+    "It does not establish whether governance acted after the pin or whether an emergency Core-side remedy exists."
+  ]
+}

@@ -1,0 +1,2589 @@
+{
+ "endpoint": "https://api.hyperliquid.xyz/info",
+ "read_types": [
+  "spotClearinghouseState",
+  "clearinghouseState",
+  "userNonFundingLedgerUpdates"
+ ],
+ "accounts": {
+  "E1": {
+   "address": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+   "spot": {
+    "balances": [
+     {
+      "coin": "USDC",
+      "token": 0,
+      "total": "0.156176",
+      "hold": "0.0",
+      "entryNtl": "0.0"
+     }
+    ]
+   },
+   "perp": {
+    "marginSummary": {
+     "accountValue": "0.0",
+     "totalNtlPos": "0.0",
+     "totalRawUsd": "0.0",
+     "totalMarginUsed": "0.0"
+    },
+    "crossMarginSummary": {
+     "accountValue": "0.0",
+     "totalNtlPos": "0.0",
+     "totalRawUsd": "0.0",
+     "totalMarginUsed": "0.0"
+    },
+    "crossMaintenanceMarginUsed": "0.0",
+    "withdrawable": "0.0",
+    "assetPositions": [],
+    "time": 1792728031336
+   },
+   "ledger": [
+    {
+     "time": 1791191364373,
+     "hash": "0x9b148a8b8b0b836a9c8e0445e24e6800004fa271260ea23c3edd35de4a0f5d55",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "29.0",
+      "usdcValue": "29.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3867112,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1790946755375,
+     "hash": "0x31941a08f4aa8598330d0445ae2c0a0000cf31ee8fada46ad55cc55bb3ae5f82",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3803506,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1790946716396,
+     "hash": "0x9adb075a418211969c540445ae29f00000161f3fdc8530683ea3b2ad0085eb81",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3803491,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1790946686365,
+     "hash": "0x52ecb2f2ca2716e454660445ae2842000027cad8652a35b6f6b55e45892af0ce",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.8",
+      "usdcValue": "9.8",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3803472,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1790946656383,
+     "hash": "0x04fb1ffcbadebae506740445ae26a900003637e255d1d9b7a8c3cb4f79d294cf",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3803454,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1790946626446,
+     "hash": "0x09c567dc1a0c57060b3f0445ae250b0101007fc1b50f75d8ad8e132ed90030f0",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "20.0",
+      "usdcValue": "20.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3803436,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1790946548361,
+     "hash": "0xa31e1e3e560fa1cca4970445ae20d80000593623f102c09e46e6c99115037bb7",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.8",
+      "usdcValue": "9.8",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3803412,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1790368021412,
+     "hash": "0x341f9c4b34a9d4d33599044533200a00005ab430cfacf3a5d7e8479df3adaebd",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "20.0",
+      "usdcValue": "20.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xfb94d3404c1d3d9d6f08f79e58041d5ea95accfa",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3593062,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1790266094425,
+     "hash": "0x0a1f088d4255a3000b9804451d6f740101002072dd58c1d2ade7b3e001597cea",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0x399ebb95afb6a519e53a293dbcd6714f9263ca16",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3563465,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1790083411399,
+     "hash": "0x7ae852540b52ce0e7c620444f68f440101006a39a655ece01eb0fda6ca56a7f9",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.748143",
+      "usdcValue": "9.748143",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3508724,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1790083343393,
+     "hash": "0xfcf0eca9401ae67bfe6a0444f68b8d00002c048edb1e054ea0b997fbff1ec066",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3508703,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1790018183418,
+     "hash": "0xf88d0614d8a427f1fa060444e8a74a0000c81dfa73a746c49c55b16797a801dc",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "20.0",
+      "usdcValue": "20.0",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3488891,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1789986881395,
+     "hash": "0x021c4062f5d273b303950444e1fc19000057584890d59285a5e4ebb5b4d64d9d",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.8",
+      "usdcValue": "9.8",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3474327,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1789951622493,
+     "hash": "0x0e8746343e273b5b10010444da70820000c25e19d92a5a2db24ff186fd2b1545",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "98.95",
+      "usdcValue": "98.95",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xfb94d3404c1d3d9d6f08f79e58041d5ea95accfa",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3460506,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1789850316381,
+     "hash": "0x143a564e4c1d329915b40444c4cb4d0000756e33e710516bb80301a10b110c83",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3433845,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1789850270397,
+     "hash": "0x4e407a7c05eed17f4fba0444c4c8ae00007b9261a0e1f051f20925cec4e2ab69",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3433837,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1789817267349,
+     "hash": "0x13b587043cfc4b5b152f0444bdc0730000f09ee9d7ff6a2db77e3256fbf02545",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "19.748874",
+      "usdcValue": "19.748874",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3425658,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1789816055367,
+     "hash": "0x5fe9ca581013c01b61630444bd7c8d000024e23dab16deed03b275aacf179a06",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "39.8",
+      "usdcValue": "39.8",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3425441,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1789814327475,
+     "hash": "0xe99b5ab934e3b5b1eb150444bd1e5e0000d6729ecfe6d4838d64060bf3e78f9c",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "19.8",
+      "usdcValue": "19.8",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3425117,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1789812169379,
+     "hash": "0x2ba9ac957050b2302d230444bca8e10000e4c47b0b53d102cf7257e82f548c1a",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "19.8",
+      "usdcValue": "19.8",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3424609,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1789770781408,
+     "hash": "0x1685d038ed5eb0de17ff0444b3d4f10000c0e81e8851cfb0ba4e7b8bac528ac8",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.8",
+      "usdcValue": "9.8",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3412740,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1789770720394,
+     "hash": "0x8cac65f896861cc68e260444b3d1800000e77dde31893b983075114b5589f6b1",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3412719,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788623273444,
+     "hash": "0x3c8d74cf9f112d9c3e070443bf703d0000c88cb53a144c6ee05620225e150786",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "11997.99",
+      "usdcValue": "11997.99",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xfb94d3404c1d3d9d6f08f79e58041d5ea95accfa",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3153828,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788622478396,
+     "hash": "0xb77ed11ccf60f8f0b8f80443bf45260000b9e9026a6417c25b477c6f8e64d2db",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "11997.554952",
+      "usdcValue": "11997.554952",
+      "user": "0xf6fda036d9479438a0047638e552ec2c0c8eccb5",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3153651,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788618651357,
+     "hash": "0xfa8a1e090e099d44fc030443be72580000c535eea90cbc179e52c95bcd0d772f",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "690205.0",
+      "usdcValue": "690205.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xfb94d3404c1d3d9d6f08f79e58041d5ea95accfa",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3152803,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788607924448,
+     "hash": "0xde3ac48013fc6dc2dfb40443bc2596010100dc65aeff8c9482036fd2d2f047ad",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "30521.477884",
+      "usdcValue": "30521.477884",
+      "user": "0xb4590a8c0a7d19f956e336c495d4ad0e3d1b2892",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3150543,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788607923498,
+     "hash": "0x6b381659a44496906cb10443bc258c0000732e3f3f47b5620f00c1ac6348707b",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "7498.999999",
+      "usdcValue": "7498.999999",
+      "user": "0xa1fadca10da8c4eb61d87a03525429c4be16c018",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3150541,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788607922492,
+     "hash": "0xab08dece4e2e01d9ac820443bc2582000043f6b3e92120ab4ed18a210d21dbc4",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9998.7",
+      "usdcValue": "9998.7",
+      "user": "0xa361aa957f61ed064dc7a8ee222b7ec227701675",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3150535,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788607922492,
+     "hash": "0x5ddc556967bf44555f560443bc25820101006d4f02b2632701a500bc26b31e40",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "14999.0",
+      "usdcValue": "14999.0",
+      "user": "0x4f4d0e71529a7a62b99cb21157e3cc111d4b93c6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3150536,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788607922492,
+     "hash": "0x10afcc04814086d112290443bc2582010200e3ea1c43a5a3b4787757404460bb",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "498.8",
+      "usdcValue": "498.8",
+      "user": "0x7568ba267854a9f0c982edd23eb6f0937c650a15",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3150537,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788607922492,
+     "hash": "0xc383429f9ad1c94cc4fc0443bc25820103005a8535d4e81e674bedf259d5a337",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9999.0",
+      "usdcValue": "9999.0",
+      "user": "0x0779b9a7a7155f15021578f53a5e7412c8d43832",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3150538,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788607922492,
+     "hash": "0x7656b93ab4630bc877d00443bc2582010400d1204f662a9a1a1f648d7366e5b3",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "1195.832446",
+      "usdcValue": "1195.832446",
+      "user": "0xa0fbd5073253f377ca591e80f3b5c42a68dbc216",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3150539,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788607922492,
+     "hash": "0x292a2fd5cdf44e442aa30443bc258201050047bb68f76d16ccf2db288cf8282e",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "15928.510899",
+      "usdcValue": "15928.510899",
+      "user": "0x7e8b4d720721475208e147380ed47a60cc91c9bc",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3150540,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788607921420,
+     "hash": "0x713b54e83c31f7dd72b50443bc25770000766ccdd73516af1504003afb35d1c8",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "38.754983",
+      "usdcValue": "38.754983",
+      "user": "0x7988efd6d0995e6100904b2b343a280de7c1a79c",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3150534,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788607920483,
+     "hash": "0xb10c1d5ce61b6326b2850443bc256d0000473542811e81f854d4c8afa51f3d11",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "2998.8",
+      "usdcValue": "2998.8",
+      "user": "0xfe677e78fab77c4c104d495d435afcb88777d0ad",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3150532,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788603924386,
+     "hash": "0xb2b9d62368fc625eb4330443bb4a330000f4ee0903ff81305682817627f03c49",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "15.0",
+      "usdcValue": "15.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0x70bc53f8b42b943433630143c00ddaec9dc6279c",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3149973,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788601816367,
+     "hash": "0xea1f1a1951987783eb980443bad68500005a31feec9b96558de7c56c109c516e",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "1039.79451",
+      "usdcValue": "1039.79451",
+      "user": "0xd4b4a58d995ed18eb342b6ac1cba19324862c885",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3149645,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788601752877,
+     "hash": "0xb0eac028378e085bb2640443bad32201e600d80dd281272d54b36b7af681e246",
+     "delta": {
+      "type": "send",
+      "user": "0x4f6d121808d03bea7ace637ca8a3117c9666266e",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "sourceDex": "spot",
+      "destinationDex": "spot",
+      "token": "USDC",
+      "amount": "100.0",
+      "usdcValue": "100.0",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 1788601742382,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788600683390,
+     "hash": "0x3d5f23c71de6c9733ed80443ba982e00009a3bacb8e9e845e127cf19dceaa35d",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "170.0",
+      "usdcValue": "170.0",
+      "user": "0xd4b4a58d995ed18eb342b6ac1cba19324862c885",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3149462,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788600432372,
+     "hash": "0x1acea697b25c5db31c480443ba8f81000009be7d4d5f7c85be9751ea7150379d",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "100.0",
+      "usdcValue": "100.0",
+      "user": "0xd4b4a58d995ed18eb342b6ac1cba19324862c885",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3149437,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788600022376,
+     "hash": "0x9f44cf977b0ff176a0be0443ba796800007fe77d16031048430d7aea3a03cb61",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "1000.0",
+      "usdcValue": "1000.0",
+      "user": "0xb1419f108c0b3d4b0b579949c52fc83bd22dab63",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3149375,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788595094401,
+     "hash": "0xdc6803a20027b018dde10443b96f220000a31b879b2aceea8030aef4bf2b8a03",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0x89557a4906d9e2c2de6d80b0917f25b9a17381cf",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3148482,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788573344381,
+     "hash": "0xa420f08a47f8ad50a59a0443b4d6e300005c086fe2fbcc2247e99bdd06fc873b",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10000.0",
+      "usdcValue": "10000.0",
+      "user": "0xc73f984cd4b667a33987aeb91a1743028c18417e",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145818,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788573307381,
+     "hash": "0xad504215e9c4eef3aec90443b4d4c400008b59fb84c80dc55118ed68a8c8c8de",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "798.0",
+      "usdcValue": "798.0",
+      "user": "0xb1419f108c0b3d4b0b579949c52fc83bd22dab63",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145814,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788573292519,
+     "hash": "0x564baab80c9b1bc657c50443b4d3f5000086c29da79e3a98fa14560acb9ef5b0",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "100.0",
+      "usdcValue": "100.0",
+      "user": "0xb1419f108c0b3d4b0b579949c52fc83bd22dab63",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145811,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788573270353,
+     "hash": "0x36de02b837de5a0438570443b4d2b90000191a9dd2d178d6daa6ae0af6d233ee",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "100.0",
+      "usdcValue": "100.0",
+      "user": "0xb1419f108c0b3d4b0b579949c52fc83bd22dab63",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145808,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788573085364,
+     "hash": "0x0e66941e0841576c0fe00443b4c8cc0000a1ac03a344763eb22f3f70c7453156",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "2440.0",
+      "usdcValue": "2440.0",
+      "user": "0x29333efd3e6fb1b5ffbaa2d64acf903723357964",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145792,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788572785348,
+     "hash": "0x60d7d7bf10ba113d62510443b4b85f000012efa4abbd300f04a08311cfbdeb28",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "2534.434695",
+      "usdcValue": "2534.434695",
+      "user": "0x9f22c2edbca363b9310072638518d2cfd8e21360",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145748,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788572048431,
+     "hash": "0x6ae8feadd7457f1b6c620443b4907c000024169372489ded0eb1aa0096495906",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10020.0",
+      "usdcValue": "10020.0",
+      "user": "0xe3a3b8a512ee6fcb9b80aaa00a9e0c42ce2851d0",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145608,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788571936383,
+     "hash": "0xa9b13f571fe56e82ab2a0443b48ace0000ec573cbae88d544d79eaa9dee9486d",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "20000.0",
+      "usdcValue": "20000.0",
+      "user": "0x5a0badc2a9c5958726ce2708c25e9998ff293dca",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145550,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788571618370,
+     "hash": "0xe374f7b444091ab9e4ee0443b479380000b00f99df0c398b873da307030cf4a4",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "27.040736",
+      "usdcValue": "27.040736",
+      "user": "0xc31791bb2ec5e3eb103b826a8187ca280ce79167",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145503,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788571259375,
+     "hash": "0xe20db6f47926e1b3e3870443b465f2000048ceda142a008585d66247382abb9e",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "98136.199414",
+      "usdcValue": "98136.199414",
+      "user": "0xe2fb811dc8b79e32f2fb97a8d88f6ebdc0d88f92",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145445,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788571188410,
+     "hash": "0xd65c2142c51c7e78d7d50443b4621d0000973928601f9d4a7a24cc9584105863",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "8500.0",
+      "usdcValue": "8500.0",
+      "user": "0xc31791bb2ec5e3eb103b826a8187ca280ce79167",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145437,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788571185419,
+     "hash": "0xef25f9aa7d5c5687f09f0443b461f10000611190185f755992eea4fd3c503072",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "2000.0",
+      "usdcValue": "2000.0",
+      "user": "0xffff422d26d5ab3694bd8e21e2487d5001958391",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145434,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788571164343,
+     "hash": "0xa36b013c7782f319a4e40443b460d00000a61922128611eb4733ac8f3686cd04",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "15.0",
+      "usdcValue": "15.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xb4e25fa15207b76fea912e44e0a2c319d0f762dd",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145427,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788571116398,
+     "hash": "0x504f5b08fcb2531d51c90443b45e1f00008a72ee97b571eff418065bbbb62d07",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10000.0",
+      "usdcValue": "10000.0",
+      "user": "0x5a0badc2a9c5958726ce2708c25e9998ff293dca",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145412,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788571084368,
+     "hash": "0x152461ec0dbc6de0169e0443b45c6f00005f79d1a8bf8cb2b8ed0d3eccb047ca",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "200.0",
+      "usdcValue": "200.0",
+      "user": "0xffff422d26d5ab3694bd8e21e2487d5001958391",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145407,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788570948429,
+     "hash": "0x9920188f1393a1779a990443b4552500005b3074ae96c0493ce8c3e1d2977b62",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10000.0",
+      "usdcValue": "10000.0",
+      "user": "0x5a0badc2a9c5958726ce2708c25e9998ff293dca",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145349,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788570918549,
+     "hash": "0x57f1e0e38ca05aed596b0443b4538a00002cf8c927a379bffbba8c364ba434d7",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "500.0",
+      "usdcValue": "500.0",
+      "user": "0xffff422d26d5ab3694bd8e21e2487d5001958391",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145343,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788570830411,
+     "hash": "0x5abe28828a3493675c370443b44eca01010040682537b239fe86d3d549386d51",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "1000.0",
+      "usdcValue": "1000.0",
+      "user": "0x031fa0b89d843ecedfb667fac5cfcf05502bd0c5",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145338,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788570635367,
+     "hash": "0xd5d749a199b0991ad7510443b4442f000012618734b3b7ec799ff4f458b47305",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "100000.0",
+      "usdcValue": "100000.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0x1aa780bb10425b86bcf05ecbb7953f9a93729ed9",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145309,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788570582382,
+     "hash": "0xd55305bbe91bdb29d6cc0443b4415d00008e1da1841ef9fb791bb10ea81fb514",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "199999.007113",
+      "usdcValue": "199999.007113",
+      "user": "0xe2fb811dc8b79e32f2fb97a8d88f6ebdc0d88f92",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145298,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788570420374,
+     "hash": "0xed4cf09fe7f7cc40eec60443b438e3000088088582faeb1291159bf2a6fba62b",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9800.0",
+      "usdcValue": "9800.0",
+      "user": "0xe3a3b8a512ee6fcb9b80aaa00a9e0c42ce2851d0",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145281,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788570327366,
+     "hash": "0x01fe7b63090a128d03780443b433c80000399348a40d315fa5c726b5c80dec77",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "100.0",
+      "usdcValue": "100.0",
+      "user": "0xffff422d26d5ab3694bd8e21e2487d5001958391",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145264,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788570152356,
+     "hash": "0xe10407b2226f16f7e27d0443b42a1600003f1f97bd6235c984ccb304e162f0e2",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "11.0",
+      "usdcValue": "11.0",
+      "user": "0xffff422d26d5ab3694bd8e21e2487d5001958391",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145242,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788570097381,
+     "hash": "0xb1fbd8d6373ebec9b3750443b426e7000036f0bbd231dd9b55c48428f63298b4",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "43333.126157",
+      "usdcValue": "43333.126157",
+      "user": "0x34c0b5e57945a06361b0ff072506be53c87b9d1f",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145236,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788569976400,
+     "hash": "0x78bbd0a348f8a9167a350443b420330000f6e888e3fbc7e81c847bf607fc8301",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "3943.97017",
+      "usdcValue": "3943.97017",
+      "user": "0xe3a3b8a512ee6fcb9b80aaa00a9e0c42ce2851d0",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145210,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788569934346,
+     "hash": "0x018cb3183e87c14c03060443b41e000000c7cafdd98ae01ea5555e6afd8b9b36",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "25221.994623",
+      "usdcValue": "25221.994623",
+      "user": "0xf83254ba8c8d9fe6d1a043e7db8380caa9643b9b",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145201,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788569860405,
+     "hash": "0x8f0364e4eefa5f8d907d0443b41a1300003e7cca89fd7e5f32cc1037adfe3978",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "24999.999999",
+      "usdcValue": "24999.999999",
+      "user": "0x3e20d7d865b65ee79865c559cc180af82182195f",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145187,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788569800379,
+     "hash": "0x47315da14b8a2f5048ab0443b4171000006c7586e68d4e22eafa08f40a8e093a",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "50000.0",
+      "usdcValue": "50000.0",
+      "user": "0xe2fb811dc8b79e32f2fb97a8d88f6ebdc0d88f92",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145183,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788569780381,
+     "hash": "0x75d195bb5a009402774b0443b4161800000cada0f503b2d4199a410e19046ded",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "50000.0",
+      "usdcValue": "50000.0",
+      "user": "0xe2fb811dc8b79e32f2fb97a8d88f6ebdc0d88f92",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145178,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788569612526,
+     "hash": "0x30c3aab2e3c5509f323d0443b40ce40000fec2987ec86f71d48c5605a2c92a89",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10000.0",
+      "usdcValue": "10000.0",
+      "user": "0x34c0b5e57945a06361b0ff072506be53c87b9d1f",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145163,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788569566440,
+     "hash": "0x5f802ff0c6367fc660f90443b40a970000bb47d661399e980348db43853a59b1",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "80000.0",
+      "usdcValue": "80000.0",
+      "user": "0xe2fb811dc8b79e32f2fb97a8d88f6ebdc0d88f92",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145159,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788569537460,
+     "hash": "0x521c439cb941e1eb53950443b4091c0000575b82544500bdf5e4eeef7845bbd5",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10000.0",
+      "usdcValue": "10000.0",
+      "user": "0xe2fb811dc8b79e32f2fb97a8d88f6ebdc0d88f92",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145154,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788569509451,
+     "hash": "0x77c5c472cdd199e4793f0443b40799000000dc5868d4b8b61b8e6fc58cd573cf",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10000.0",
+      "usdcValue": "10000.0",
+      "user": "0xe2fb811dc8b79e32f2fb97a8d88f6ebdc0d88f92",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3145150,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788562007392,
+     "hash": "0xc5e749b453c43b6ac7610443b26fe40000226199eec75a3c69aff50712c81555",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "100.0",
+      "usdcValue": "100.0",
+      "user": "0x22f743e611da9bf6cf983cd85cbbeb48e0f9ca72",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3143915,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788538708427,
+     "hash": "0x81bd893e4271008e83370443ad7bab0000f8a123dd741f60258634910174da79",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "100.0",
+      "usdcValue": "100.0",
+      "user": "0x22f743e611da9bf6cf983cd85cbbeb48e0f9ca72",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3139521,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788459977398,
+     "hash": "0x2cfbc1b90e3e9cbb2e7504439ca917000036d99ea931bb8dd0c46d0bcd3276a5",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3117602,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788459934383,
+     "hash": "0x54f82a3b003817ba567104439ca6b700003342209b3b368cf8c0d58dbf3bf1a4",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3117594,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788459890523,
+     "hash": "0x5cadbf6bf10fb3a75e2704439ca4480000e8d7518c02d27900766abeb0038d92",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3117576,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788458424401,
+     "hash": "0x81600c9a94fa0d9482d904439c53f300009b24802ffd2c662528b7ed53fde77f",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3117165,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788451517411,
+     "hash": "0xb5e74d42815e2cc8b76104439ada2401010065281c514b9a59aff895405206b3",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "20.0",
+      "usdcValue": "20.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3114549,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788444926357,
+     "hash": "0x63cdc0becebbf2dd654704439971bf000008d8a469bf11af07966c118dbfccc8",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "20.0",
+      "usdcValue": "20.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3111097,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788441696392,
+     "hash": "0xdab6fc1462f3fb6adc30044398c2530000f213f9fdf71a3c7e7fa76721f7d555",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "19.755866",
+      "usdcValue": "19.755866",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3109942,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788435024356,
+     "hash": "0xc441c8a0bf721c30c5bb04439757bb00007ce0865a753b02680a73f37e75f61b",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "19.755634",
+      "usdcValue": "19.755634",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3108051,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788434961402,
+     "hash": "0xc0ca0c05acd412d3c243044397544900000523eb47d731a56492b7586bd7ecbe",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "50.0",
+      "usdcValue": "50.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3108036,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788419136374,
+     "hash": "0xaf15cfac69b0f4c8b08f044393f52f000050e79204b4139a52de7aff28b4ceb3",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "14.727065",
+      "usdcValue": "14.727065",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3105033,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788393836337,
+     "hash": "0x7d80fda758ef34687efa04438e8d9e0000bc158cf3e2533a2149a8fa17e30e53",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "19.751415",
+      "usdcValue": "19.751415",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3100703,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788393787373,
+     "hash": "0x5d72c49dff92ea405eec04438e8ae50000addc839a960912013b6ff0be96c42b",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3100692,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788393467373,
+     "hash": "0x43e23c8001006191455b04438e794800001d54659c038063e7aae7d2c0043b7b",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "100.0",
+      "usdcValue": "100.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3100639,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788390332340,
+     "hash": "0x1d9df208fa776afc1f1704438dcd2b0000d909ee957a89cec1669d5bb97b44e6",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "19.756155",
+      "usdcValue": "19.756155",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3100197,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788390113358,
+     "hash": "0x5f2a4eed704c473d60a404438dc14c00006566d30b4f660f02f2fa402f402128",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.756262",
+      "usdcValue": "9.756262",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3100173,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788389525438,
+     "hash": "0x0de4e42877e8d0890f5e04438da141010100fc0e12ebef5bb1ad8f7b36ecaa73",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3100069,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788387760378,
+     "hash": "0xe7ef10eb8d0663f9e96804438d410800002a28d1280982cb8bb7bc3e4c0a3de4",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3099811,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788386612341,
+     "hash": "0xe42a833b7c2ae2bbe5a404438d01e20000659b21172e018d87f32e8e3b2ebca6",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3099622,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788201131394,
+     "hash": "0x72300e272834f95873a90443655b3700006b260cc338182a15f8b979e738d343",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "100.0",
+      "usdcValue": "100.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3057200,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788201030439,
+     "hash": "0x2493629c94bcfcb8260d044365559f0000ce7a822fb01b8ac85c0def53b0d6a2",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.721106",
+      "usdcValue": "9.721106",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3057173,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788200054369,
+     "hash": "0xa72744c454facfdca8a10443651ff30000625ca9effdeeae4aeff01713fea9c7",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.751187",
+      "usdcValue": "9.751187",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3056896,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788199605427,
+     "hash": "0x39564183a66360da3acf0443650756000091596941667facdd1eecd665673ac4",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.701137",
+      "usdcValue": "10.701137",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3056765,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788199555358,
+     "hash": "0xe5a235aa77628417e71b04436504990101004d901265a2e9896ae0fd36665e02",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.703694",
+      "usdcValue": "9.703694",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3056747,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788199328477,
+     "hash": "0x36dd3b2b0736759a3856044364f7e70000185310a239946cdaa5e67dc63a4f84",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.659521",
+      "usdcValue": "9.659521",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3056678,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788199068390,
+     "hash": "0xe63a0794b0db9970e7b3044364e9890000751f7a4bdeb8428a02b2e76fdf735b",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.584752",
+      "usdcValue": "9.584752",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3056623,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788198074452,
+     "hash": "0xa7fe212796634f78a977044364b256000039390d31666e4a4bc6cc7a55672963",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.706738",
+      "usdcValue": "9.706738",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3056445,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788197970370,
+     "hash": "0x1a90ad285901e78f1c0a044364acc80000cbc50df4050661be59587b1805c179",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.682361",
+      "usdcValue": "9.682361",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3056410,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788197936394,
+     "hash": "0x44e828b9f8d471344661044364aafc010100409f93d79006e8b0d40cb7d84b1e",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.740578",
+      "usdcValue": "9.740578",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3056394,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788197864356,
+     "hash": "0xf941520bf6968c9afabb044364a71500007c69f19199ab6d9d09fd5eb59a6685",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.741521",
+      "usdcValue": "9.741521",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3056379,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788197813388,
+     "hash": "0x7f1ebbcb8a2c59648098044364a442000059d3b1252f783622e7671e4920334f",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.68414",
+      "usdcValue": "9.68414",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3056362,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788182101386,
+     "hash": "0xf30f4eea32b97338f48904436144ff00004a66cfcdbc920b96d7fa3cf1bd4d23",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.8",
+      "usdcValue": "9.8",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3051852,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788182056482,
+     "hash": "0x679fdb2b56f16ef6691904436142930000daf310f1f48dc80b68867e15f548e1",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.8",
+      "usdcValue": "9.8",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3051834,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788170774467,
+     "hash": "0x231bfd86eafff2d6249504435ed4d3000057156c85f311a8c6e4a8d9a9f3ccc0",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.8",
+      "usdcValue": "9.8",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3048878,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1788125004388,
+     "hash": "0xaa2afceab1aea60caba40443550c1a00006614d04ca1c4de4df3a83d70a27ff7",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "8.8",
+      "usdcValue": "8.8",
+      "user": "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3037325,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1787929144447,
+     "hash": "0xacd1d695beec6e57ae4b04432b437e00000cee7b59ef8d29509a81e87de04842",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.694198",
+      "usdcValue": "9.694198",
+      "user": "0xf2aab37083f0fb7dab82317c92b54249e8591bed",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 2990412,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1787694562397,
+     "hash": "0xf03f8f52d4746ec5f1b90442f8eb4b00007aa7386f778d9894083aa5937848b0",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.754622",
+      "usdcValue": "9.754622",
+      "user": "0xf2aab37083f0fb7dab82317c92b54249e8591bed",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 2917660,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1787667362494,
+     "hash": "0xf20ac2f575fac5e4f3840442f31343000045dadb10fde4b795d36e4834fe9fcf",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.739955",
+      "usdcValue": "9.739955",
+      "user": "0xf2aab37083f0fb7dab82317c92b54249e8591bed",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 2907993,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1787583055357,
+     "hash": "0x0a7a1886005293c50bf30442e0f8d4010100306b9b55b297ae42c3d8bf566daf",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "400.0",
+      "usdcValue": "400.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xfb94d3404c1d3d9d6f08f79e58041d5ea95accfa",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 2875838,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1787582902414,
+     "hash": "0xfc29f18a661f447cfda30442e0f06001010009700112634f9ff29cdd25131e67",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 2875760,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1787582702421,
+     "hash": "0xb4dd409615f5bce8b6560442e0e543000018587bb0f8dbba58a5ebe8d4f996d3",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 2875658,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1787582412484,
+     "hash": "0x8fe6cc646c17fa0591600442e0d54d000021e44a071b18d733af77b72b1bd3f0",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.697874",
+      "usdcValue": "9.697874",
+      "user": "0xf2aab37083f0fb7dab82317c92b54249e8591bed",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 2875482,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1786600088398,
+     "hash": "0x20e5d008c61fd07b225f04420ebb6d000020e7ee6112ef4dc4ae7b5b8513aa65",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "150.0",
+      "usdcValue": "150.0",
+      "user": "0x8678d02e02a0c8f89d1298bf0147a7713849fead",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 2633152,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1786024305364,
+     "hash": "0x5e751a5190aff2015fee044193abbd01010032372ba310d3023dc5a44fa3cbec",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "284.728799",
+      "usdcValue": "284.728799",
+      "user": "0x1fbfbf1a862538a21ea2eb7915bf0a4d52454dc4",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 2547451,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1785902648426,
+     "hash": "0xe256493c89f2a640e3d0044179bd83000091612224f5c512861ef48f48f6802b",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "169.005999",
+      "usdcValue": "169.005999",
+      "user": "0xbe6c87624693cec37e192d7244a97c3a0034d188",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 2527471,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1785795613445,
+     "hash": "0x5066f0bf8443fcb951e0044162db8c0000a208a51f471b8bf42f9c124347d6a3",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0xf2aab37083f0fb7dab82317c92b54249e8591bed",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 2510370,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1785795137442,
+     "hash": "0xc26b6751a8757919c3e5044162c18b0000a67f37437897eb663412a467795304",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "destination": "0xfb94d3404c1d3d9d6f08f79e58041d5ea95accfa",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 2510317,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1785794997368,
+     "hash": "0xe4d5c5d4524cbc9fe64f044162b9ec000010ddb9ed4fdb71889e71271140968a",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0xf2aab37083f0fb7dab82317c92b54249e8591bed",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 2510301,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1785699960931,
+     "hash": "0xc5b0506927479a36c72a04414e72f7020159004ec24ab9086978fbbbe64b7421",
+     "delta": {
+      "type": "send",
+      "user": "0xfb94d3404c1d3d9d6f08f79e58041d5ea95accfa",
+      "destination": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "sourceDex": "spot",
+      "destinationDex": "spot",
+      "token": "USDC",
+      "amount": "1.0",
+      "usdcValue": "1.0",
+      "fee": "1.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 1785699952074,
+      "feeToken": "USDC"
+     }
+    }
+   ],
+   "ledger_summary": {
+    "entries": 125,
+    "inbound_total_usdc": 803211.096176,
+    "inbound_counterparties": 35,
+    "outbound_total_usdc": 803210.94,
+    "outbound_by_destination": {
+     "0xfb94d3404c1d3d9d6f08f79e58041d5ea95accfa": 702731.94,
+     "0x1aa780bb10425b86bcf05ecbb7953f9a93729ed9": 100000.0,
+     "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20": 449.0,
+     "0x70bc53f8b42b943433630143c00ddaec9dc6279c": 15.0,
+     "0xb4e25fa15207b76fea912e44e0a2c319d0f762dd": 15.0
+    },
+    "inbound_by_source": {
+     "0xe2fb811dc8b79e32f2fb97a8d88f6ebdc0d88f92": 498135.206527,
+     "0x34c0b5e57945a06361b0ff072506be53c87b9d1f": 53333.126157,
+     "0x5a0badc2a9c5958726ce2708c25e9998ff293dca": 40000.0,
+     "0xb4590a8c0a7d19f956e336c495d4ad0e3d1b2892": 30521.477884,
+     "0xf83254ba8c8d9fe6d1a043e7db8380caa9643b9b": 25221.994623,
+     "0x3e20d7d865b65ee79865c559cc180af82182195f": 24999.999999,
+     "0xe3a3b8a512ee6fcb9b80aaa00a9e0c42ce2851d0": 23763.97017,
+     "0x7e8b4d720721475208e147380ed47a60cc91c9bc": 15928.510899,
+     "0x4f4d0e71529a7a62b99cb21157e3cc111d4b93c6": 14999.0,
+     "0xf6fda036d9479438a0047638e552ec2c0c8eccb5": 11997.554952,
+     "0xc73f984cd4b667a33987aeb91a1743028c18417e": 10000.0,
+     "0x0779b9a7a7155f15021578f53a5e7412c8d43832": 9999.0,
+     "0xa361aa957f61ed064dc7a8ee222b7ec227701675": 9998.7,
+     "0xc31791bb2ec5e3eb103b826a8187ca280ce79167": 8527.040736,
+     "0xa1fadca10da8c4eb61d87a03525429c4be16c018": 7498.999999,
+     "0xfe677e78fab77c4c104d495d435afcb88777d0ad": 2998.8,
+     "0xffff422d26d5ab3694bd8e21e2487d5001958391": 2811.0,
+     "0x9f22c2edbca363b9310072638518d2cfd8e21360": 2534.434695,
+     "0x29333efd3e6fb1b5ffbaa2d64acf903723357964": 2440.0,
+     "0xb1419f108c0b3d4b0b579949c52fc83bd22dab63": 1998.0,
+     "0xd4b4a58d995ed18eb342b6ac1cba19324862c885": 1309.79451,
+     "0xa0fbd5073253f377ca591e80f3b5c42a68dbc216": 1195.832446,
+     "0x031fa0b89d843ecedfb667fac5cfcf05502bd0c5": 1000.0,
+     "0x7568ba267854a9f0c982edd23eb6f0937c650a15": 498.8,
+     "0xa71a7dfd377fc66238fe0057b5321ba56fb281f6": 477.476149,
+     "0x1fbfbf1a862538a21ea2eb7915bf0a4d52454dc4": 284.728799,
+     "0x22f743e611da9bf6cf983cd85cbbeb48e0f9ca72": 200.0,
+     "0xbe6c87624693cec37e192d7244a97c3a0034d188": 169.005999,
+     "0x8678d02e02a0c8f89d1298bf0147a7713849fead": 150.0,
+     "0x4f6d121808d03bea7ace637ca8a3117c9666266e": 100.0,
+     "0xf2aab37083f0fb7dab82317c92b54249e8591bed": 58.886649,
+     "0x7988efd6d0995e6100904b2b343a280de7c1a79c": 38.754983,
+     "0x399ebb95afb6a519e53a293dbcd6714f9263ca16": 10.0,
+     "0x89557a4906d9e2c2de6d80b0917f25b9a17381cf": 10.0,
+     "0xfb94d3404c1d3d9d6f08f79e58041d5ea95accfa": 1.0
+    }
+   }
+  },
+  "E2": {
+   "address": "0x2ede04561914c61a5f49212609541934fd7f5901",
+   "spot": {
+    "balances": [
+     {
+      "coin": "USDC",
+      "token": 0,
+      "total": "0.003269",
+      "hold": "0.0",
+      "entryNtl": "0.0"
+     }
+    ]
+   },
+   "perp": {
+    "marginSummary": {
+     "accountValue": "0.0",
+     "totalNtlPos": "0.0",
+     "totalRawUsd": "0.0",
+     "totalMarginUsed": "0.0"
+    },
+    "crossMarginSummary": {
+     "accountValue": "0.0",
+     "totalNtlPos": "0.0",
+     "totalRawUsd": "0.0",
+     "totalMarginUsed": "0.0"
+    },
+    "crossMaintenanceMarginUsed": "0.0",
+    "withdrawable": "0.0",
+    "assetPositions": [],
+    "time": 1792728031649
+   },
+   "ledger": [
+    {
+     "time": 1791633389398,
+     "hash": "0x9965cd719006f6159adf0446408cf80000a0e5572b0a14e73d2e78c44f0ad000",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "26.6",
+      "usdcValue": "26.6",
+      "user": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "destination": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 4017634,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1791622951402,
+     "hash": "0x00151a6e45d8ee33018e04463e55190000503253e0dc0d05a3ddc5c104dcc81d",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "8.5",
+      "usdcValue": "8.5",
+      "user": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "destination": "0xc7fd7671c4e0f2a95908ffe511d6dc4997cd3e55",
+      "fee": "1.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 4010730,
+      "feeToken": "USDC"
+     }
+    },
+    {
+     "time": 1791622187421,
+     "hash": "0xc025caf52fd47ee2c19f04463e2b2c010100e2dacad79db463ee7647eed858cd",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "9.5",
+      "usdcValue": "9.5",
+      "user": "0x07d38b03587edade651ee1520dfb619809992337",
+      "destination": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "fee": "1.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 4010153,
+      "feeToken": "USDC"
+     }
+    },
+    {
+     "time": 1791561194338,
+     "hash": "0x2899e1a47c3f375e2a1304463139770000d4f98a17325630cc628cf73b331148",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0x5fa0a115d5f6f56d1b1c7f1df51d88adcb860a6d",
+      "destination": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3989332,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1791561156421,
+     "hash": "0xb82ae0d5623603bbb9a40446313757000065f8bafd39228d5bf38c282139dda6",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.5",
+      "usdcValue": "10.5",
+      "user": "0x5fa0a115d5f6f56d1b1c7f1df51d88adcb860a6d",
+      "destination": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "fee": "1.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3989317,
+      "feeToken": "USDC"
+     }
+    },
+    {
+     "time": 1791560851390,
+     "hash": "0x512d09a704ffdcfe52a604463126f3000068218c9ff2fbd0f4f5b4f9c3f3b6e8",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "24.0",
+      "usdcValue": "24.0",
+      "user": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "destination": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3989177,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1791395100417,
+     "hash": "0x066bd4a501ea8f9a07e504460dc661010100ec8a9cedae6caa347ff7c0ee6984",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "300.0",
+      "usdcValue": "300.0",
+      "user": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "destination": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3923051,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1791394096371,
+     "hash": "0xe6d88ca6935568e8e85204460d8ed1000013a48c2e5887ba8aa137f9525942d3",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "20.0",
+      "usdcValue": "20.0",
+      "user": "0xb81def180d8340c6409998f17475e4ea623f7b4c",
+      "destination": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3922709,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1791389892412,
+     "hash": "0x5bae7e84ccea40205d2804460ca8d1010100966a67ed5ef2ff7729d78bee1a0a",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0xb81def180d8340c6409998f17475e4ea623f7b4c",
+      "destination": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3921433,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1791334146398,
+     "hash": "0x35f4ca8cdbdf91c1376e044600c9f900002fe27276d2b093d9bd75df9ad36bab",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "13.77",
+      "usdcValue": "13.77",
+      "user": "0xb81def180d8340c6409998f17475e4ea623f7b4c",
+      "destination": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3901810,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1791332431372,
+     "hash": "0xb75034b38b486304b8c90446006cbc00008b4c99264b81d65b18e0064a4c3cef",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0xb81def180d8340c6409998f17475e4ea623f7b4c",
+      "destination": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3901497,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1791332387454,
+     "hash": "0x2c9d9f22080ab19d2e170446006a780000d8b707a30dd06fd0664a74c70e8b87",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0xb81def180d8340c6409998f17475e4ea623f7b4c",
+      "destination": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3901487,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1791324616365,
+     "hash": "0xd2af62ad7dbeb050d4290445febf6f0000ea7a9318b1cf2276780e003cb28a3b",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "30.0",
+      "usdcValue": "30.0",
+      "user": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "destination": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3900143,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1791324555376,
+     "hash": "0x9023bbcb19b18e85919d0445febc2f00005ed3b0b4b4ad5733ec671dd8b56870",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "14.317137",
+      "usdcValue": "14.317137",
+      "user": "0xb81def180d8340c6409998f17475e4ea623f7b4c",
+      "destination": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3900132,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1791321610398,
+     "hash": "0x9821843532cd66eb999b0445fe1c9400005c9c1acdc085bd3bea2f87f1c140d6",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.988617",
+      "usdcValue": "10.988617",
+      "user": "0xb81def180d8340c6409998f17475e4ea623f7b4c",
+      "destination": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3899700,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1791303246393,
+     "hash": "0xded5a994b73b6885e04f0445fa2ee7000010c17a523e8757829e54e7763f4270",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "19.98246",
+      "usdcValue": "19.98246",
+      "user": "0xb81def180d8340c6409998f17475e4ea623f7b4c",
+      "destination": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3894887,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1791281036393,
+     "hash": "0xb84c14cf435e3930b9c50445f575d10000872cb4de5158025c14c0220252131b",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "121.378098",
+      "usdcValue": "121.378098",
+      "user": "0x0daebf09a740dfdf195c62030370440bf4e4dd60",
+      "destination": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3888369,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1791211437433,
+     "hash": "0x0bc9fd2007d73ea70d430445e693b90000051505a2da5d79af92a872c6db1891",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "108.666957",
+      "usdcValue": "108.666957",
+      "user": "0x0daebf09a740dfdf195c62030370440bf4e4dd60",
+      "destination": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3872140,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1791211380392,
+     "hash": "0x1c9296b8c68051c21e0c0445e690800000cdae9e61837094c05b420b85842bac",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10010.0",
+      "usdcValue": "10010.0",
+      "user": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "destination": "0xfb94d3404c1d3d9d6f08f79e58041d5ea95accfa",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3872119,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1791208155461,
+     "hash": "0x44b113c71f0ae100462a0445e5e0a80000ec2bacba0dffd2e879bf19de0ebaea",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10000.0",
+      "usdcValue": "10000.0",
+      "user": "0xe334978e58b877b00b089e6cb37eaca1c8026d08",
+      "destination": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3870905,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1791205855357,
+     "hash": "0x82dfb2466b2fe0a584590445e5639200001aca2c0622ff7726a85d992a23ba90",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "10.0",
+      "usdcValue": "10.0",
+      "user": "0xe334978e58b877b00b089e6cb37eaca1c8026d08",
+      "destination": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3870184,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1791201716371,
+     "hash": "0xb00acdf765b99a91b1840445e47fef000045e5dd00bcb96353d3794a24bd747c",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "20.0",
+      "usdcValue": "20.0",
+      "user": "0xb81def180d8340c6409998f17475e4ea623f7b4c",
+      "destination": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "fee": "0.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 3869340,
+      "feeToken": ""
+     }
+    },
+    {
+     "time": 1791197253365,
+     "hash": "0xb3cc0585af86c7d5b5450445e38ed9020193006b4a89e6a75794b0d86e8aa1c0",
+     "delta": {
+      "type": "spotTransfer",
+      "token": "USDC",
+      "amount": "1.0",
+      "usdcValue": "1.0",
+      "user": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+      "destination": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "fee": "1.0",
+      "nativeTokenFee": "0.0",
+      "nonce": 1791197251287,
+      "feeToken": "USDC"
+     }
+    }
+   ],
+   "ledger_summary": {
+    "entries": 23,
+    "inbound_total_usdc": 10400.103269,
+    "inbound_counterparties": 6,
+    "outbound_total_usdc": 10399.1,
+    "outbound_by_destination": {
+     "0xfb94d3404c1d3d9d6f08f79e58041d5ea95accfa": 10010.0,
+     "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20": 380.6,
+     "0xc7fd7671c4e0f2a95908ffe511d6dc4997cd3e55": 8.5
+    },
+    "inbound_by_source": {
+     "0xe334978e58b877b00b089e6cb37eaca1c8026d08": 10010.0,
+     "0x0daebf09a740dfdf195c62030370440bf4e4dd60": 230.045055,
+     "0xb81def180d8340c6409998f17475e4ea623f7b4c": 129.058214,
+     "0x5fa0a115d5f6f56d1b1c7f1df51d88adcb860a6d": 20.5,
+     "0x07d38b03587edade651ee1520dfb619809992337": 9.5,
+     "0xa1763a5ff94ebddd417cccb906622ec762ab2e29": 1.0
+    }
+   }
+  },
+  "LP_destination": {
+   "address": "0xd75ffb585ff88d3aa50b7cf9230b27a7eb923c20",
+   "spot": {
+    "balances": [
+     {
+      "coin": "USDC",
+      "token": 0,
+      "total": "0.0",
+      "hold": "0.0",
+      "entryNtl": "0.0"
+     },
+     {
+      "coin": "HYPE",
+      "token": 150,
+      "total": "0.00000001",
+      "hold": "0.0",
+      "entryNtl": "0.00000085"
+     },
+     {
+      "coin": "USDE",
+      "token": 235,
+      "total": "9.49846001",
+      "hold": "0.0",
+      "entryNtl": "9.49846001"
+     },
+     {
+      "coin": "USDT0",
+      "token": 268,
+      "total": "0.0",
+      "hold": "0.0",
+      "entryNtl": "0.0"
+     },
+     {
+      "coin": "USDH",
+      "token": 360,
+      "total": "0.0",
+      "hold": "0.0",
+      "entryNtl": "0.0"
+     }
+    ],
+    "tokenToAvailableAfterMaintenance": [
+     [
+      0,
+      "0.0"
+     ],
+     [
+      235,
+      "9.49846001"
+     ]
+    ]
+   },
+   "perp": {
+    "marginSummary": {
+     "accountValue": "0.0",
+     "totalNtlPos": "0.0",
+     "totalRawUsd": "0.0",
+     "totalMarginUsed": "0.0"
+    },
+    "crossMarginSummary": {
+     "accountValue": "0.0",
+     "totalNtlPos": "0.0",
+     "totalRawUsd": "0.0",
+     "totalMarginUsed": "0.0"
+    },
+    "crossMaintenanceMarginUsed": "0.0",
+    "withdrawable": "0.0",
+    "assetPositions": [],
+    "time": 1792728032198
+   }
+  }
+ }
+}

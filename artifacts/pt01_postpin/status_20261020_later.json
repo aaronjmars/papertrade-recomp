@@ -1,0 +1,82 @@
+{
+  "archive_rpc": "Hyperliquid mainnet archive JSON-RPC; credential omitted",
+  "captured_at_utc": "2026-10-20T13:23:33.575777+00:00",
+  "cases": [
+    {
+      "current_core_spot_state": {
+        "balances": [
+          {
+            "coin": "USDC",
+            "entryNtl": "0.0",
+            "hold": "0.0",
+            "token": 0,
+            "total": "50.050916"
+          }
+        ]
+      },
+      "pending_call": "0x00000000000000000000000002df9fbf0000000000000000000000012a53a310",
+      "pending_storage": "0x00000000000000000000000002df9fbf0000000000000000000000012a53a310",
+      "post_pin_core_ledger": [],
+      "proxy": "0x1e8a704179cc6221592c362daa52a341ae20084d",
+      "proxy_code_sha256": "405e5bfee919c2dcb84ca0854ec56966a8212b322aae41c610e05de235b6b68f",
+      "user": "0x56cbe78a5cdfa10147927aec550aa7f2fb3d3d01"
+    },
+    {
+      "current_core_spot_state": {
+        "balances": [
+          {
+            "coin": "USDC",
+            "entryNtl": "0.0",
+            "hold": "0.0",
+            "token": 0,
+            "total": "12.1"
+          },
+          {
+            "coin": "USDE",
+            "entryNtl": "1.49985",
+            "hold": "0.0",
+            "token": 235,
+            "total": "1.5"
+          }
+        ]
+      },
+      "pending_call": "0x00000000000000000000000002ddd166000000000000000000000000481f2280",
+      "pending_storage": "0x00000000000000000000000002ddd166000000000000000000000000481f2280",
+      "post_pin_core_ledger": [],
+      "proxy": "0xf6b60cdf359af5538495831a9f2bbcada23e10e6",
+      "proxy_code_sha256": "07f9f589f271f1fa58e8a5990bec257eac46c8e0e7b44577d73666ac0a26511d",
+      "user": "0x9c8599c32224d7d9956a7def18f7314162f77baf"
+    }
+  ],
+  "core_info": "https://api.hyperliquid.xyz/info",
+  "event_query": {
+    "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+    "fromBlock": "0x2ea30cb",
+    "toBlock": "0x2ec71b4",
+    "topics": [
+      [
+        "0x02d61879cd72906e0951e3a96096407dd2b1f2cd2d063dae983bb20216cf3025",
+        "0xc36b5179cb9c303b200074996eab2b3473eac370fdd7eba3bec636fe35109696",
+        "0x28f3adb5fa23ae5c83c811e67caf2ec192a816e4ef898c7f90d1484f65a9717e"
+      ],
+      [
+        "0x00000000000000000000000056cbe78a5cdfa10147927aec550aa7f2fb3d3d01",
+        "0x0000000000000000000000009c8599c32224d7d9956a7def18f7314162f77baf"
+      ]
+    ]
+  },
+  "exchange_implementation_slot": "0x0000000000000000000000000f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "head": {
+    "hash": "0xde6e3895890a61c8e252447de2c2cd85c0816904746a7326553b6373d08e8210",
+    "number": "0x2ec71b4",
+    "timestamp": "0x6ad76b52"
+  },
+  "pin": 48902346,
+  "pin_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "pin_header": {
+    "hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+    "number": "0x2ea30ca",
+    "timestamp": "0x6ad533dd"
+  },
+  "sweep_logs": []
+}

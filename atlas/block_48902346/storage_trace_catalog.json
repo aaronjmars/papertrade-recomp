@@ -1,0 +1,4138 @@
+{
+  "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee": {
+    "role": "exchange_implementation",
+    "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+    "views": [
+      {
+        "selector": "0x01ad056f",
+        "candidate_signature": "totalLockedMargin()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x00000000000000000000000000000000000000000007be65f23207ad7ea19168",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x16",
+            "pc": 16005,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          22
+        ]
+      },
+      {
+        "selector": "0x0b826190",
+        "candidate_signature": "sessionKeyManager()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000008326eb8896e358717f10502ec73ce8d28e37b108",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x1d",
+            "pc": 15857,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          29
+        ]
+      },
+      {
+        "selector": "0x0cdd5fc4",
+        "candidate_signature": "lpBankrollAvailable()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000422ff0dc1275e2cfd56e7",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x12",
+            "pc": 16463,
+            "depth": 2
+          },
+          {
+            "slot": "0x16",
+            "pc": 16521,
+            "depth": 2
+          },
+          {
+            "slot": "0x1a",
+            "pc": 16550,
+            "depth": 2
+          },
+          {
+            "slot": "0xe",
+            "pc": 16572,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          14,
+          18,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": "0x138e9de2",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000422ff0dc1275e2cfd56e7",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x16",
+            "pc": 16521,
+            "depth": 2
+          },
+          {
+            "slot": "0x1a",
+            "pc": 16550,
+            "depth": 2
+          },
+          {
+            "slot": "0xe",
+            "pc": 16572,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          14,
+          22,
+          26
+        ]
+      },
+      {
+        "selector": "0x13dd495b",
+        "candidate_signature": "authorizedExecutor()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000233ff29b239abc1d7748605da9b205c3e008626e",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x58",
+            "pc": 15765,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          88
+        ]
+      },
+      {
+        "selector": "0x18715c9a",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x00000000000000000000000000000000000000000000003482b726ba07fd56e7",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x6",
+            "pc": 16728,
+            "depth": 2
+          },
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 3
+          },
+          {
+            "slot": "0x3",
+            "pc": 2484,
+            "depth": 4
+          },
+          {
+            "slot": "0x6",
+            "pc": 2487,
+            "depth": 4
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          3,
+          6
+        ]
+      },
+      {
+        "selector": "0x1b7c1009",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000008ac7230489e8000000000000000000000000000000000000000000000000003635c9adc5dea000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x1c",
+            "pc": 15618,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          28
+        ]
+      },
+      {
+        "selector": "0x21f55a6c",
+        "candidate_signature": "marketKeeper()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000003721476de31190dc1af8908026abe20efe25cf99",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x25",
+            "pc": 15578,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          37
+        ]
+      },
+      {
+        "selector": "0x24a3d622",
+        "candidate_signature": "pauseGuardian()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000696292762fd5ac3677a45edbe54eaece4194d1f6",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x1",
+            "pc": 15538,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          1
+        ]
+      },
+      {
+        "selector": "0x27e235e3",
+        "candidate_signature": "balances(address)",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x00000000000000000000000000000000000000000000021e19e0c9bab2400000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x206714a7ce2324601125e3778e6765af4c4f3f4eb563d466d1708a878f3ab281",
+            "pc": 12598,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 9,
+            "field_offset": 0,
+            "read_slot": "0x206714a7ce2324601125e3778e6765af4c4f3f4eb563d466d1708a878f3ab281",
+            "pc": 12598
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x2dcc7fce",
+        "candidate_signature": "",
+        "arguments": "uint256",
+        "sample_argument": 1,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000064",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x3",
+            "pc": 12096,
+            "depth": 2
+          },
+          {
+            "slot": "0x5",
+            "pc": 12107,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          3,
+          5
+        ]
+      },
+      {
+        "selector": "0x31a39849",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x00000000000000000000000000000000000000000000000000000002540be400",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x5",
+            "pc": 12059,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          5
+        ]
+      },
+      {
+        "selector": "0x31a4956c",
+        "candidate_signature": "",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0xeaa24cb4694687db8f2f2c901edafd28ee59e7949c91cf62f85f6dd64c6d8aab",
+            "pc": 11990,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 33,
+            "field_offset": 0,
+            "read_slot": "0xeaa24cb4694687db8f2f2c901edafd28ee59e7949c91cf62f85f6dd64c6d8aab",
+            "pc": 11990
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x32faa570",
+        "candidate_signature": "",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x53e34d2ff734d94e90ae35e8458939c1ce9fdd338ddf0feaad92faa180e46f5c",
+            "pc": 11922,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 34,
+            "field_offset": 0,
+            "read_slot": "0x53e34d2ff734d94e90ae35e8458939c1ce9fdd338ddf0feaad92faa180e46f5c",
+            "pc": 11922
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x3a21be03",
+        "candidate_signature": "",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x4181d2352524c6867d19d72d8ff08effd9d9a2d370a0ef48c16aa93f23f6c957",
+            "pc": 11865,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 21,
+            "field_offset": 0,
+            "read_slot": "0x4181d2352524c6867d19d72d8ff08effd9d9a2d370a0ef48c16aa93f23f6c957",
+            "pc": 11865
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x48ee5e08",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x00000000000000000000000000000000000000000000000000470de4df820000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x18",
+            "pc": 10660,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          24
+        ]
+      },
+      {
+        "selector": "0x50c23fab",
+        "candidate_signature": "",
+        "arguments": "uint256",
+        "sample_argument": 1,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000000000000000000000000000000000000003cdde",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0xbbc70db1b6c7afd11e79c0fb0051300458f1a3acb8ee9789d9b6b26c61ad9bc7",
+            "pc": 10441,
+            "depth": 2
+          },
+          {
+            "slot": "0xbbc70db1b6c7afd11e79c0fb0051300458f1a3acb8ee9789d9b6b26c61ad9bc8",
+            "pc": 10469,
+            "depth": 2
+          },
+          {
+            "slot": "0xb39221ace053465ec3453ce2b36430bd138b997ecea25c1043da0c366812b829",
+            "pc": 10481,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 7,
+            "field_offset": 1,
+            "read_slot": "0xb39221ace053465ec3453ce2b36430bd138b997ecea25c1043da0c366812b829",
+            "pc": 10481
+          },
+          {
+            "base_slot": 10,
+            "field_offset": 0,
+            "read_slot": "0xbbc70db1b6c7afd11e79c0fb0051300458f1a3acb8ee9789d9b6b26c61ad9bc7",
+            "pc": 10441
+          },
+          {
+            "base_slot": 10,
+            "field_offset": 1,
+            "read_slot": "0xbbc70db1b6c7afd11e79c0fb0051300458f1a3acb8ee9789d9b6b26c61ad9bc8",
+            "pc": 10469
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x53ac4b66",
+        "candidate_signature": "totalQueued()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x12",
+            "pc": 10392,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          18
+        ]
+      },
+      {
+        "selector": "0x53e23e2e",
+        "candidate_signature": "tradingPaused()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x1d",
+            "pc": 10359,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          29
+        ]
+      },
+      {
+        "selector": "0x551306f3",
+        "candidate_signature": "",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0xf582b3bd13e8b9772db6b8fb1bd142f62040f594dd8b8f4fa4ba68a71d70e29",
+            "pc": 10327,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 19,
+            "field_offset": 0,
+            "read_slot": "0xf582b3bd13e8b9772db6b8fb1bd142f62040f594dd8b8f4fa4ba68a71d70e29",
+            "pc": 10327
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x5fb3b1b5",
+        "candidate_signature": "liquidationFeeRate()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x00000000000000000000000000000000000000000000000000470de4df820000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x19",
+            "pc": 9682,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          25
+        ]
+      },
+      {
+        "selector": "0x61d027b3",
+        "candidate_signature": "treasury()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x00000000000000000000000000000000000000000035b5849a35d618f5b00800",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0xe",
+            "pc": 9652,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          14
+        ]
+      },
+      {
+        "selector": "0x6d60ae8e",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000000000000000000000000000000000003b9aca00",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x70f75ff5",
+        "candidate_signature": "",
+        "arguments": "uint256",
+        "sample_argument": 1,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x00000000000000000000000000000000000000000000000000000002540be400",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x5",
+            "pc": 9223,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          5
+        ]
+      },
+      {
+        "selector": "0x7d004aeb",
+        "candidate_signature": "devFeeAccumulator()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000433b768a255b8b62b9",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x1a",
+            "pc": 9018,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          26
+        ]
+      },
+      {
+        "selector": "0x7dc0d1d0",
+        "candidate_signature": "oracle()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000a9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x2",
+            "pc": 8975,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          2
+        ]
+      },
+      {
+        "selector": "0x7e4174fc",
+        "candidate_signature": "",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0xeaa24cb4694687db8f2f2c901edafd28ee59e7949c91cf62f85f6dd64c6d8aab",
+            "pc": 8947,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 33,
+            "field_offset": 0,
+            "read_slot": "0xeaa24cb4694687db8f2f2c901edafd28ee59e7949c91cf62f85f6dd64c6d8aab",
+            "pc": 8947
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x899346c7",
+        "candidate_signature": "nextPositionId()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x00000000000000000000000000000000000000000000000000000000001547a3",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0xb",
+            "pc": 8262,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          11
+        ]
+      },
+      {
+        "selector": "0x8da5cb5b",
+        "candidate_signature": "owner()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x0",
+            "pc": 7766,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          0
+        ]
+      },
+      {
+        "selector": "0x9274682e",
+        "candidate_signature": "sideBucket()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x1b",
+            "pc": 7727,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          27
+        ]
+      },
+      {
+        "selector": "0x96523644",
+        "candidate_signature": "queueHead()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000004",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x10",
+            "pc": 7699,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          16
+        ]
+      },
+      {
+        "selector": "0x99fbab88",
+        "candidate_signature": "positions(uint256)",
+        "arguments": "uint256",
+        "sample_argument": 1,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000631af710e62f33cd600784ca6782118b9d3c52c000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0xbbc70db1b6c7afd11e79c0fb0051300458f1a3acb8ee9789d9b6b26c61ad9bc7",
+            "pc": 7550,
+            "depth": 2
+          },
+          {
+            "slot": "0xbbc70db1b6c7afd11e79c0fb0051300458f1a3acb8ee9789d9b6b26c61ad9bc8",
+            "pc": 7561,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 10,
+            "field_offset": 0,
+            "read_slot": "0xbbc70db1b6c7afd11e79c0fb0051300458f1a3acb8ee9789d9b6b26c61ad9bc7",
+            "pc": 7550
+          },
+          {
+            "base_slot": 10,
+            "field_offset": 1,
+            "read_slot": "0xbbc70db1b6c7afd11e79c0fb0051300458f1a3acb8ee9789d9b6b26c61ad9bc8",
+            "pc": 7561
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x9d47d4d3",
+        "candidate_signature": "authorizedKeeper()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x59",
+            "pc": 7490,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          89
+        ]
+      },
+      {
+        "selector": "0xa25dc87f",
+        "candidate_signature": "getUserOpenPositionIds(address)",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x43b4cbadfccc0e40c029872814c1fdbe5c5568df2b70e2eb24c6726e8ceb627a",
+            "pc": 7246,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 12,
+            "field_offset": 0,
+            "read_slot": "0x43b4cbadfccc0e40c029872814c1fdbe5c5568df2b70e2eb24c6726e8ceb627a",
+            "pc": 7246
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0xa69a2ad1",
+        "candidate_signature": "totalBalances()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x00000000000000000000000000000000000000000029d3d6f9e2192a05b05b45",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x16",
+            "pc": 7171,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          22
+        ]
+      },
+      {
+        "selector": "0xaf210ecc",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000019",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0xafdf6702",
+        "candidate_signature": "stakerFeeAccumulator()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x00000000000000000000000000000000000000000000000564ea03bde8d561b3",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x1a",
+            "pc": 6731,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          26
+        ]
+      },
+      {
+        "selector": "0xb3060d36",
+        "candidate_signature": "positionOwner(uint256)",
+        "arguments": "uint256",
+        "sample_argument": 1,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000631af710e62f33cd600784ca6782118b9d3c52c0",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0xbbc70db1b6c7afd11e79c0fb0051300458f1a3acb8ee9789d9b6b26c61ad9bc7",
+            "pc": 6702,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 10,
+            "field_offset": 0,
+            "read_slot": "0xbbc70db1b6c7afd11e79c0fb0051300458f1a3acb8ee9789d9b6b26c61ad9bc7",
+            "pc": 6702
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0xbacd9ea0",
+        "candidate_signature": "",
+        "arguments": "uint256",
+        "sample_argument": 1,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000000000000000000000000000000000e8d4a51000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x3",
+            "pc": 6652,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          3
+        ]
+      },
+      {
+        "selector": "0xc10f1a75",
+        "candidate_signature": "proxyFactory()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000001629b7d46bef6e13ff754174fc9f32dea309b38f",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x1e",
+            "pc": 6084,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          30
+        ]
+      },
+      {
+        "selector": "0xc43fbc8c",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000008",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x4",
+            "pc": 6055,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          4
+        ]
+      },
+      {
+        "selector": "0xc8372577",
+        "candidate_signature": "",
+        "arguments": "uint32",
+        "sample_argument": 1,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0xb361aea33a0348d043deace4a562cb920ac10508397ad80f12dfe9a2a063e047",
+            "pc": 5979,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 35,
+            "field_offset": 0,
+            "read_slot": "0xb361aea33a0348d043deace4a562cb920ac10508397ad80f12dfe9a2a063e047",
+            "pc": 5979
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0xcb163b03",
+        "candidate_signature": "",
+        "arguments": "uint32",
+        "sample_argument": 1,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x00000000000000000000000000000000000000000000061abc0de940559b714500000000000000000000000000000000000000000000056fbc4c6080bf3b86",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0xbbbb3b1da0cb0951f34c5e9db4606f934b7367b5284f29163e9e6fe67e1e97d6",
+            "pc": 5296,
+            "depth": 2
+          },
+          {
+            "slot": "0xbbbb3b1da0cb0951f34c5e9db4606f934b7367b5284f29163e9e6fe67e1e97d7",
+            "pc": 5307,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 36,
+            "field_offset": 0,
+            "read_slot": "0xbbbb3b1da0cb0951f34c5e9db4606f934b7367b5284f29163e9e6fe67e1e97d6",
+            "pc": 5296
+          },
+          {
+            "base_slot": 36,
+            "field_offset": 1,
+            "read_slot": "0xbbbb3b1da0cb0951f34c5e9db4606f934b7367b5284f29163e9e6fe67e1e97d7",
+            "pc": 5307
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0xcbeb5f3d",
+        "candidate_signature": "devFeeRecipient()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000eef651e381e04b5ae25393b1367c19bcfd575792",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x26",
+            "pc": 5228,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          38
+        ]
+      },
+      {
+        "selector": "0xdc8a47ef",
+        "candidate_signature": "",
+        "arguments": "uint32",
+        "sample_argument": 1,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x00000000000000000000000000000000000000000000032d26d12e980b60000000000000000000000000000000000000000000000000001a3c8ed044f4c780",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0xb39221ace053465ec3453ce2b36430bd138b997ecea25c1043da0c366812b828",
+            "pc": 4618,
+            "depth": 2
+          },
+          {
+            "slot": "0xb39221ace053465ec3453ce2b36430bd138b997ecea25c1043da0c366812b829",
+            "pc": 4632,
+            "depth": 2
+          },
+          {
+            "slot": "0xb39221ace053465ec3453ce2b36430bd138b997ecea25c1043da0c366812b82a",
+            "pc": 4653,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 7,
+            "field_offset": 0,
+            "read_slot": "0xb39221ace053465ec3453ce2b36430bd138b997ecea25c1043da0c366812b828",
+            "pc": 4618
+          },
+          {
+            "base_slot": 7,
+            "field_offset": 1,
+            "read_slot": "0xb39221ace053465ec3453ce2b36430bd138b997ecea25c1043da0c366812b829",
+            "pc": 4632
+          },
+          {
+            "base_slot": 7,
+            "field_offset": 2,
+            "read_slot": "0xb39221ace053465ec3453ce2b36430bd138b997ecea25c1043da0c366812b82a",
+            "pc": 4653
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0xdcab7f6a",
+        "candidate_signature": "userQueueHead(address)",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0xba876309fd8494eb67f226c5ed4422bbda2c1e7e8c33fddb350e2674ab481e8d",
+            "pc": 4559,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 20,
+            "field_offset": 0,
+            "read_slot": "0xba876309fd8494eb67f226c5ed4422bbda2c1e7e8c33fddb350e2674ab481e8d",
+            "pc": 4559
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0xe1f9209b",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000aad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x1f",
+            "pc": 4416,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          31
+        ]
+      },
+      {
+        "selector": "0xe634384f",
+        "candidate_signature": "queueNode(uint256)",
+        "arguments": "uint256",
+        "sample_argument": 1,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000ecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f9300000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x169f97de0d9a84d840042b17d3c6b9638b3d6fd9024c9eb0c7a306a17b49f88f",
+            "pc": 4133,
+            "depth": 2
+          },
+          {
+            "slot": "0x169f97de0d9a84d840042b17d3c6b9638b3d6fd9024c9eb0c7a306a17b49f890",
+            "pc": 4136,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 15,
+            "field_offset": 0,
+            "read_slot": "0x169f97de0d9a84d840042b17d3c6b9638b3d6fd9024c9eb0c7a306a17b49f88f",
+            "pc": 4133
+          },
+          {
+            "base_slot": 15,
+            "field_offset": 1,
+            "read_slot": "0x169f97de0d9a84d840042b17d3c6b9638b3d6fd9024c9eb0c7a306a17b49f890",
+            "pc": 4136
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0xec0bdcfc",
+        "candidate_signature": "collateralScale()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000000000000000000000000000000000e8d4a51000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x3",
+            "pc": 4087,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          3
+        ]
+      },
+      {
+        "selector": "0xed410ee1",
+        "candidate_signature": "paperTokenomics()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x00000000000000000000000075174549dbbd44497d31a47e2e2d7406408d63d9",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x6",
+            "pc": 1812,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          6
+        ]
+      },
+      {
+        "selector": "0xf1a8786c",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x00000000000000000000000000000000000000000000000000470de4df820000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x17",
+            "pc": 1680,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          23
+        ]
+      },
+      {
+        "selector": "0xf28bbdb2",
+        "candidate_signature": "instrumentCount()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000002",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x8",
+            "pc": 1649,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          8
+        ]
+      },
+      {
+        "selector": "0xf37d3c4f",
+        "candidate_signature": "",
+        "arguments": "uint32",
+        "sample_argument": 1,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x00000000000000000000000000000000000000000000061abc0de940559b714500000000000000000000000000000000000000000000056fbc4c6080bf3b86",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0xbbbb3b1da0cb0951f34c5e9db4606f934b7367b5284f29163e9e6fe67e1e97d6",
+            "pc": 1463,
+            "depth": 2
+          },
+          {
+            "slot": "0xbbbb3b1da0cb0951f34c5e9db4606f934b7367b5284f29163e9e6fe67e1e97d7",
+            "pc": 1474,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 36,
+            "field_offset": 0,
+            "read_slot": "0xbbbb3b1da0cb0951f34c5e9db4606f934b7367b5284f29163e9e6fe67e1e97d6",
+            "pc": 1463
+          },
+          {
+            "base_slot": 36,
+            "field_offset": 1,
+            "read_slot": "0xbbbb3b1da0cb0951f34c5e9db4606f934b7367b5284f29163e9e6fe67e1e97d7",
+            "pc": 1474
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0xf728fc98",
+        "candidate_signature": "",
+        "arguments": "uint256",
+        "sample_argument": 1,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0xfd54ff1ed53f34a900b24c5ba64f85761163b5d82d98a47b9bd80e45466993c5",
+            "pc": 1408,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 13,
+            "field_offset": 0,
+            "read_slot": "0xfd54ff1ed53f34a900b24c5ba64f85761163b5d82d98a47b9bd80e45466993c5",
+            "pc": 1408
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0xf84a74d3",
+        "candidate_signature": "",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0xa8b9413921229c7035239084d092000e5d7eeaea04a9da3c4d36992222e0ca40",
+            "pc": 1366,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 32,
+            "field_offset": 0,
+            "read_slot": "0xa8b9413921229c7035239084d092000e5d7eeaea04a9da3c4d36992222e0ca40",
+            "pc": 1366
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0xfb9f1009",
+        "candidate_signature": "unpauseMarket(uint32)",
+        "arguments": "uint32",
+        "sample_argument": 1,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": true,
+        "return_prefix": "0xd9d193d3",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0xfdfd905d",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0xff3bc415",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000040",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      }
+    ]
+  },
+  "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a": {
+    "role": "oracle_implementation",
+    "target": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+    "views": [
+      {
+        "selector": "0x2af78bd1",
+        "candidate_signature": "getOraclePrice(uint32)",
+        "arguments": "uint32",
+        "sample_argument": 1,
+        "target": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+        "failed": true,
+        "return_prefix": "0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x766cd255",
+        "candidate_signature": "",
+        "arguments": "uint32",
+        "sample_argument": 1,
+        "target": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+        "failed": true,
+        "return_prefix": "0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x8da5cb5b",
+        "candidate_signature": "owner()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x0",
+            "pc": 1089,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          0
+        ]
+      },
+      {
+        "selector": "0xa066fae9",
+        "candidate_signature": "getMarkPrice(uint32)",
+        "arguments": "uint32",
+        "sample_argument": 1,
+        "target": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+        "failed": true,
+        "return_prefix": "0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0xc0182669",
+        "candidate_signature": "",
+        "arguments": "uint32",
+        "sample_argument": 1,
+        "target": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+        "failed": true,
+        "return_prefix": "0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0xfb466481",
+        "candidate_signature": "",
+        "arguments": "uint32",
+        "sample_argument": 1,
+        "target": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+        "failed": true,
+        "return_prefix": "0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      }
+    ]
+  },
+  "0x433bd418ec92818a960585f4d5fae563e735bb4a": {
+    "role": "paper_token_implementation",
+    "target": "0xe40f17915daa230324030003a197cdaef2261c0e",
+    "views": [
+      {
+        "selector": "0x06fdde03",
+        "candidate_signature": "name()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xe40f17915daa230324030003a197cdaef2261c0e",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x1",
+            "pc": 2631,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          1
+        ]
+      },
+      {
+        "selector": "0x07546172",
+        "candidate_signature": "minter()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xe40f17915daa230324030003a197cdaef2261c0e",
+        "failed": false,
+        "return_prefix": "0x00000000000000000000000075174549dbbd44497d31a47e2e2d7406408d63d9",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x4",
+            "pc": 2587,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          4
+        ]
+      },
+      {
+        "selector": "0x12bbf044",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xe40f17915daa230324030003a197cdaef2261c0e",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000aad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x5",
+            "pc": 2438,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          5
+        ]
+      },
+      {
+        "selector": "0x18160ddd",
+        "candidate_signature": "totalSupply()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xe40f17915daa230324030003a197cdaef2261c0e",
+        "failed": false,
+        "return_prefix": "0x00000000000000000000000000000000000000001bdc5b516305a080eebe6597",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x6",
+            "pc": 2411,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          6
+        ]
+      },
+      {
+        "selector": "0x313ce567",
+        "candidate_signature": "decimals()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xe40f17915daa230324030003a197cdaef2261c0e",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000012",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x70a08231",
+        "candidate_signature": "balanceOf(address)",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0xe40f17915daa230324030003a197cdaef2261c0e",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x739d24be995ef3b1aca0089db5f39450c02df8baf32be4f1775f6d72499241aa",
+            "pc": 2055,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 7,
+            "field_offset": 0,
+            "read_slot": "0x739d24be995ef3b1aca0089db5f39450c02df8baf32be4f1775f6d72499241aa",
+            "pc": 2055
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x8da5cb5b",
+        "candidate_signature": "owner()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xe40f17915daa230324030003a197cdaef2261c0e",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x3",
+            "pc": 1987,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          3
+        ]
+      },
+      {
+        "selector": "0x95d89b41",
+        "candidate_signature": "symbol()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xe40f17915daa230324030003a197cdaef2261c0e",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x2",
+            "pc": 1003,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          2
+        ]
+      },
+      {
+        "selector": "0xee99205c",
+        "candidate_signature": "stakingContract()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xe40f17915daa230324030003a197cdaef2261c0e",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000aad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x9",
+            "pc": 477,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          9
+        ]
+      }
+    ]
+  },
+  "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f": {
+    "role": "tokenomics_implementation",
+    "target": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+    "views": [
+      {
+        "selector": "0x1c3972ba",
+        "candidate_signature": "flatRate()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000056bc75e2d63100000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x7",
+            "pc": 1424,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          7
+        ]
+      },
+      {
+        "selector": "0x3886cade",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "failed": false,
+        "return_prefix": "0x00000000000000000000000000000000000000000001a784379d99db42000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x5",
+            "pc": 526,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          5
+        ]
+      },
+      {
+        "selector": "0x8cf554a7",
+        "candidate_signature": "trackedLpUsd()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000422ff0dc1275e2cfd56e7",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x3",
+            "pc": 1003,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          3
+        ]
+      },
+      {
+        "selector": "0x8da5cb5b",
+        "candidate_signature": "owner()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x0",
+            "pc": 956,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          0
+        ]
+      },
+      {
+        "selector": "0x98255e15",
+        "candidate_signature": "paperToken()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000e40f17915daa230324030003a197cdaef2261c0e",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x2",
+            "pc": 917,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          2
+        ]
+      },
+      {
+        "selector": "0xae745703",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "failed": false,
+        "return_prefix": "0x00000000000000000000000000000000000000000000003482b726ba07fd56e7",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x3",
+            "pc": 2484,
+            "depth": 2
+          },
+          {
+            "slot": "0x6",
+            "pc": 2487,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          3,
+          6
+        ]
+      },
+      {
+        "selector": "0xc16017ca",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000422ca8b0a00a425000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x6",
+            "pc": 855,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          6
+        ]
+      },
+      {
+        "selector": "0xcbb451da",
+        "candidate_signature": "tailDecayScaleUsd()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000006342fd08f00f6378000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x8",
+            "pc": 766,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          8
+        ]
+      },
+      {
+        "selector": "0xd2f7265a",
+        "candidate_signature": "exchange()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a2",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x1",
+            "pc": 723,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          1
+        ]
+      },
+      {
+        "selector": "0xdb006a75",
+        "candidate_signature": "redeem(uint256)",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "failed": true,
+        "return_prefix": "0x",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0xdc5682d2",
+        "candidate_signature": "tailProgressUsd()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000000000000000000000c3fa356cc6e9b5a8a1d173",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x4",
+            "pc": 665,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          4
+        ]
+      },
+      {
+        "selector": "0xe9ed73e9",
+        "candidate_signature": "lpFlatThresholdUsd()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "failed": false,
+        "return_prefix": "0x00000000000000000000000000000000000000000001a784379d99db42000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x5",
+            "pc": 526,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          5
+        ]
+      },
+      {
+        "selector": "0xfe16eae8",
+        "candidate_signature": "quoteRedemption(uint256)",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "failed": true,
+        "return_prefix": "0x",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      }
+    ]
+  },
+  "0x696292762fd5ac3677a45edbe54eaece4194d1f6": {
+    "role": "one_of_two_multisig",
+    "target": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+    "views": [
+      {
+        "selector": "0x1a5f66c3",
+        "candidate_signature": "signerTwo()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000e9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+        "sloads": [
+          {
+            "slot": "0x1",
+            "pc": 2494,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          1
+        ]
+      },
+      {
+        "selector": "0x27865bb3",
+        "candidate_signature": "",
+        "arguments": "uint256",
+        "sample_argument": 1,
+        "target": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+        "failed": false,
+        "return_prefix": "0x2f2befb596285964c41e98a6371df83b80d76a2173fdf4dcde751b5d55058883",
+        "sloads": [
+          {
+            "slot": "0x4",
+            "pc": 2398,
+            "depth": 1
+          },
+          {
+            "slot": "0x1471eb6eb2c5e789fc3de43f8ce62938c7d1836ec861730447e2ada8fd81017b",
+            "pc": 2431,
+            "depth": 1
+          },
+          {
+            "slot": "0x1471eb6eb2c5e789fc3de43f8ce62938c7d1836ec861730447e2ada8fd81017c",
+            "pc": 2437,
+            "depth": 1
+          },
+          {
+            "slot": "0x1471eb6eb2c5e789fc3de43f8ce62938c7d1836ec861730447e2ada8fd81017d",
+            "pc": 2694,
+            "depth": 1
+          },
+          {
+            "slot": "0xe19b38339b9e994bd83f12300ae7fb8214a017c7386c7305e1c180190a2c6a04",
+            "pc": 2791,
+            "depth": 1
+          },
+          {
+            "slot": "0xe19b38339b9e994bd83f12300ae7fb8214a017c7386c7305e1c180190a2c6a05",
+            "pc": 2791,
+            "depth": 1
+          },
+          {
+            "slot": "0xe19b38339b9e994bd83f12300ae7fb8214a017c7386c7305e1c180190a2c6a06",
+            "pc": 2791,
+            "depth": 1
+          },
+          {
+            "slot": "0xe19b38339b9e994bd83f12300ae7fb8214a017c7386c7305e1c180190a2c6a07",
+            "pc": 2791,
+            "depth": 1
+          },
+          {
+            "slot": "0xe19b38339b9e994bd83f12300ae7fb8214a017c7386c7305e1c180190a2c6a08",
+            "pc": 2791,
+            "depth": 1
+          },
+          {
+            "slot": "0xe19b38339b9e994bd83f12300ae7fb8214a017c7386c7305e1c180190a2c6a09",
+            "pc": 2791,
+            "depth": 1
+          },
+          {
+            "slot": "0xe19b38339b9e994bd83f12300ae7fb8214a017c7386c7305e1c180190a2c6a0a",
+            "pc": 2791,
+            "depth": 1
+          },
+          {
+            "slot": "0xe19b38339b9e994bd83f12300ae7fb8214a017c7386c7305e1c180190a2c6a0b",
+            "pc": 2791,
+            "depth": 1
+          },
+          {
+            "slot": "0xe19b38339b9e994bd83f12300ae7fb8214a017c7386c7305e1c180190a2c6a0c",
+            "pc": 2791,
+            "depth": 1
+          },
+          {
+            "slot": "0xe19b38339b9e994bd83f12300ae7fb8214a017c7386c7305e1c180190a2c6a0d",
+            "pc": 2791,
+            "depth": 1
+          },
+          {
+            "slot": "0xe19b38339b9e994bd83f12300ae7fb8214a017c7386c7305e1c180190a2c6a0e",
+            "pc": 2791,
+            "depth": 1
+          },
+          {
+            "slot": "0x1471eb6eb2c5e789fc3de43f8ce62938c7d1836ec861730447e2ada8fd81017f",
+            "pc": 2461,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 5,
+            "field_offset": 0,
+            "read_slot": "0x1471eb6eb2c5e789fc3de43f8ce62938c7d1836ec861730447e2ada8fd81017b",
+            "pc": 2431
+          },
+          {
+            "base_slot": 5,
+            "field_offset": 1,
+            "read_slot": "0x1471eb6eb2c5e789fc3de43f8ce62938c7d1836ec861730447e2ada8fd81017c",
+            "pc": 2437
+          },
+          {
+            "base_slot": 5,
+            "field_offset": 2,
+            "read_slot": "0x1471eb6eb2c5e789fc3de43f8ce62938c7d1836ec861730447e2ada8fd81017d",
+            "pc": 2694
+          },
+          {
+            "base_slot": 5,
+            "field_offset": 4,
+            "read_slot": "0x1471eb6eb2c5e789fc3de43f8ce62938c7d1836ec861730447e2ada8fd81017f",
+            "pc": 2461
+          }
+        ],
+        "direct_slots": [
+          4
+        ]
+      },
+      {
+        "selector": "0x64d62769",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000009028f3b5b6b0d69e4e84ff555ade17114c3d1e72",
+        "sloads": [
+          {
+            "slot": "0x2",
+            "pc": 2354,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          2
+        ]
+      },
+      {
+        "selector": "0x7df73e27",
+        "candidate_signature": "isSigner(address)",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x0",
+            "pc": 2876,
+            "depth": 1
+          },
+          {
+            "slot": "0x1",
+            "pc": 2924,
+            "depth": 1
+          },
+          {
+            "slot": "0x2",
+            "pc": 2914,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "selector": "0x82e717f7",
+        "candidate_signature": "requiredConfirmations()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000002",
+        "sloads": [],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x900cf0cf",
+        "candidate_signature": "epoch()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000001",
+        "sloads": [
+          {
+            "slot": "0x3",
+            "pc": 1296,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          3
+        ]
+      },
+      {
+        "selector": "0x9ace38c2",
+        "candidate_signature": "transactions(uint256)",
+        "arguments": "uint256",
+        "sample_argument": 1,
+        "target": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f00000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x1471eb6eb2c5e789fc3de43f8ce62938c7d1836ec861730447e2ada8fd81017b",
+            "pc": 1171,
+            "depth": 1
+          },
+          {
+            "slot": "0x1471eb6eb2c5e789fc3de43f8ce62938c7d1836ec861730447e2ada8fd81017c",
+            "pc": 1178,
+            "depth": 1
+          },
+          {
+            "slot": "0x1471eb6eb2c5e789fc3de43f8ce62938c7d1836ec861730447e2ada8fd81017d",
+            "pc": 2694,
+            "depth": 1
+          },
+          {
+            "slot": "0xe19b38339b9e994bd83f12300ae7fb8214a017c7386c7305e1c180190a2c6a04",
+            "pc": 2791,
+            "depth": 1
+          },
+          {
+            "slot": "0xe19b38339b9e994bd83f12300ae7fb8214a017c7386c7305e1c180190a2c6a05",
+            "pc": 2791,
+            "depth": 1
+          },
+          {
+            "slot": "0xe19b38339b9e994bd83f12300ae7fb8214a017c7386c7305e1c180190a2c6a06",
+            "pc": 2791,
+            "depth": 1
+          },
+          {
+            "slot": "0xe19b38339b9e994bd83f12300ae7fb8214a017c7386c7305e1c180190a2c6a07",
+            "pc": 2791,
+            "depth": 1
+          },
+          {
+            "slot": "0xe19b38339b9e994bd83f12300ae7fb8214a017c7386c7305e1c180190a2c6a08",
+            "pc": 2791,
+            "depth": 1
+          },
+          {
+            "slot": "0xe19b38339b9e994bd83f12300ae7fb8214a017c7386c7305e1c180190a2c6a09",
+            "pc": 2791,
+            "depth": 1
+          },
+          {
+            "slot": "0xe19b38339b9e994bd83f12300ae7fb8214a017c7386c7305e1c180190a2c6a0a",
+            "pc": 2791,
+            "depth": 1
+          },
+          {
+            "slot": "0xe19b38339b9e994bd83f12300ae7fb8214a017c7386c7305e1c180190a2c6a0b",
+            "pc": 2791,
+            "depth": 1
+          },
+          {
+            "slot": "0xe19b38339b9e994bd83f12300ae7fb8214a017c7386c7305e1c180190a2c6a0c",
+            "pc": 2791,
+            "depth": 1
+          },
+          {
+            "slot": "0xe19b38339b9e994bd83f12300ae7fb8214a017c7386c7305e1c180190a2c6a0d",
+            "pc": 2791,
+            "depth": 1
+          },
+          {
+            "slot": "0xe19b38339b9e994bd83f12300ae7fb8214a017c7386c7305e1c180190a2c6a0e",
+            "pc": 2791,
+            "depth": 1
+          },
+          {
+            "slot": "0x1471eb6eb2c5e789fc3de43f8ce62938c7d1836ec861730447e2ada8fd81017e",
+            "pc": 1200,
+            "depth": 1
+          },
+          {
+            "slot": "0x1471eb6eb2c5e789fc3de43f8ce62938c7d1836ec861730447e2ada8fd81017f",
+            "pc": 1211,
+            "depth": 1
+          },
+          {
+            "slot": "0x1471eb6eb2c5e789fc3de43f8ce62938c7d1836ec861730447e2ada8fd810180",
+            "pc": 1214,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 5,
+            "field_offset": 0,
+            "read_slot": "0x1471eb6eb2c5e789fc3de43f8ce62938c7d1836ec861730447e2ada8fd81017b",
+            "pc": 1171
+          },
+          {
+            "base_slot": 5,
+            "field_offset": 1,
+            "read_slot": "0x1471eb6eb2c5e789fc3de43f8ce62938c7d1836ec861730447e2ada8fd81017c",
+            "pc": 1178
+          },
+          {
+            "base_slot": 5,
+            "field_offset": 2,
+            "read_slot": "0x1471eb6eb2c5e789fc3de43f8ce62938c7d1836ec861730447e2ada8fd81017d",
+            "pc": 2694
+          },
+          {
+            "base_slot": 5,
+            "field_offset": 3,
+            "read_slot": "0x1471eb6eb2c5e789fc3de43f8ce62938c7d1836ec861730447e2ada8fd81017e",
+            "pc": 1200
+          },
+          {
+            "base_slot": 5,
+            "field_offset": 4,
+            "read_slot": "0x1471eb6eb2c5e789fc3de43f8ce62938c7d1836ec861730447e2ada8fd81017f",
+            "pc": 1211
+          },
+          {
+            "base_slot": 5,
+            "field_offset": 5,
+            "read_slot": "0x1471eb6eb2c5e789fc3de43f8ce62938c7d1836ec861730447e2ada8fd810180",
+            "pc": 1214
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0xb77bf600",
+        "candidate_signature": "transactionCount()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000007",
+        "sloads": [
+          {
+            "slot": "0x4",
+            "pc": 1121,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          4
+        ]
+      },
+      {
+        "selector": "0xd98f851a",
+        "candidate_signature": "signerOne()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000aa7577a7a27aa7fcf6d0ec481b87df3ad0f6a88e",
+        "sloads": [
+          {
+            "slot": "0x0",
+            "pc": 201,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          0
+        ]
+      }
+    ]
+  },
+  "0x8a5069fe303e8f81e91825436e956d595032e558": {
+    "role": "session_key_manager_implementation",
+    "target": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+    "views": [
+      {
+        "selector": "0x0b4c3a82",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+        "failed": false,
+        "return_prefix": "0xac4ddb8d63e9d7a862c5d61ce47517623a448262414a7eef6797102104b31214",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x208e24fc",
+        "candidate_signature": "CLOSE_TYPEHASH()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+        "failed": false,
+        "return_prefix": "0x9cc23a52214afa42e1ae53cdb2e79dc2d0cd33c33faca383ed3b149300adcb13",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x2bc9ed54",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+        "failed": false,
+        "return_prefix": "0xd3d9a309f635415423ab81e7e3fb16d2117cc8e1edc90506adde9eaa3855edd2",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x3644e515",
+        "candidate_signature": "DOMAIN_SEPARATOR()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+        "failed": false,
+        "return_prefix": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x1",
+            "pc": 2607,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          1
+        ]
+      },
+      {
+        "selector": "0x6525a680",
+        "candidate_signature": "OPEN_POSITION_TYPEHASH()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+        "failed": false,
+        "return_prefix": "0xfce2fb41f9ff0457a0f012e62cfd6a7cff4e8439ae20008ab6979c740ba5a983",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x78e890ba",
+        "candidate_signature": "domainSeparatorV4()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+        "failed": false,
+        "return_prefix": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x3",
+            "pc": 1457,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          3
+        ]
+      },
+      {
+        "selector": "0x7ecebe00",
+        "candidate_signature": "nonces(address)|_$_$$_$__$$$$$$$$__$__$$_$$$_$$$(address)|transfer_attention_tg_invmru_5811b86(uint256,address,address)",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000075aab201",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x3a1725bee633ffaefa6b4c94ea9532d22009e6878676731f6f2dec623da17581",
+            "pc": 1430,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 5,
+            "field_offset": 0,
+            "read_slot": "0x3a1725bee633ffaefa6b4c94ea9532d22009e6878676731f6f2dec623da17581",
+            "pc": 1430
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x7f6e9d4b",
+        "candidate_signature": "authorizedSubmitters(address)",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x739d24be995ef3b1aca0089db5f39450c02df8baf32be4f1775f6d72499241aa",
+            "pc": 1212,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 7,
+            "field_offset": 0,
+            "read_slot": "0x739d24be995ef3b1aca0089db5f39450c02df8baf32be4f1775f6d72499241aa",
+            "pc": 1212
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x8da5cb5b",
+        "candidate_signature": "owner()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x2",
+            "pc": 1046,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          2
+        ]
+      },
+      {
+        "selector": "0x97dc97cb",
+        "candidate_signature": "authorizedCaller()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a2",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x3",
+            "pc": 910,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          3
+        ]
+      }
+    ]
+  },
+  "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0": {
+    "role": "deposit_proxy_factory_implementation",
+    "target": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+    "views": [
+      {
+        "selector": "0x03b802b6",
+        "candidate_signature": "authorizedDeployer()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000df1bda875c9393a663ce69bf6a7fbaa73dfd053d",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x4",
+            "pc": 1347,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          4
+        ]
+      },
+      {
+        "selector": "0x29710388",
+        "candidate_signature": "isProxy(address)",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0xaa3e2a6db72d1ac0f8dcefde97ea71ac08237ed7bc6a51db1e1a91da2b665d4e",
+            "pc": 1173,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 2,
+            "field_offset": 0,
+            "read_slot": "0xaa3e2a6db72d1ac0f8dcefde97ea71ac08237ed7bc6a51db1e1a91da2b665d4e",
+            "pc": 1173
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x8da5cb5b",
+        "candidate_signature": "owner()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x3",
+            "pc": 940,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          3
+        ]
+      },
+      {
+        "selector": "0xc1a9a508",
+        "candidate_signature": "proxyOf(address)",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000f1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x48dd0033796868de1a9f116af383661906dc8b4601e52fdd5e6512f3078caef4",
+            "pc": 912,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 1,
+            "field_offset": 0,
+            "read_slot": "0x48dd0033796868de1a9f116af383661906dc8b4601e52fdd5e6512f3078caef4",
+            "pc": 912
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0xc4d66de8",
+        "candidate_signature": "initialize(address)",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+        "failed": true,
+        "return_prefix": "0xb7b2509c",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0xd2f7265a",
+        "candidate_signature": "exchange()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a2",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x0",
+            "pc": 595,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          0
+        ]
+      },
+      {
+        "selector": "0xd600539a",
+        "candidate_signature": "computeProxyAddress(address)",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000f1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x0",
+            "pc": 406,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          0
+        ]
+      }
+    ]
+  },
+  "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f": {
+    "role": "timelock",
+    "target": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "views": [
+      {
+        "selector": "0x13bc9f20",
+        "candidate_signature": "isOperationReady(bytes32)",
+        "arguments": "uint256",
+        "sample_argument": 1,
+        "target": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0xe90b7bceb6e7df5418fb78d8ee546e97c83a08bbccc01a0644d599ccd2a7c2e0",
+            "pc": 1718,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 2,
+            "field_offset": 0,
+            "read_slot": "0xe90b7bceb6e7df5418fb78d8ee546e97c83a08bbccc01a0644d599ccd2a7c2e0",
+            "pc": 1718
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x2ab0f529",
+        "candidate_signature": "isOperationDone(bytes32)",
+        "arguments": "uint256",
+        "sample_argument": 1,
+        "target": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0xe90b7bceb6e7df5418fb78d8ee546e97c83a08bbccc01a0644d599ccd2a7c2e0",
+            "pc": 1677,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 2,
+            "field_offset": 0,
+            "read_slot": "0xe90b7bceb6e7df5418fb78d8ee546e97c83a08bbccc01a0644d599ccd2a7c2e0",
+            "pc": 1677
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x584b153e",
+        "candidate_signature": "isOperationPending(bytes32)",
+        "arguments": "uint256",
+        "sample_argument": 1,
+        "target": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0xe90b7bceb6e7df5418fb78d8ee546e97c83a08bbccc01a0644d599ccd2a7c2e0",
+            "pc": 1611,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 2,
+            "field_offset": 0,
+            "read_slot": "0xe90b7bceb6e7df5418fb78d8ee546e97c83a08bbccc01a0644d599ccd2a7c2e0",
+            "pc": 1611
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x6cb6a1f7",
+        "candidate_signature": "operationTimestamps(bytes32)",
+        "arguments": "uint256",
+        "sample_argument": 1,
+        "target": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0xe90b7bceb6e7df5418fb78d8ee546e97c83a08bbccc01a0644d599ccd2a7c2e0",
+            "pc": 1571,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 2,
+            "field_offset": 0,
+            "read_slot": "0xe90b7bceb6e7df5418fb78d8ee546e97c83a08bbccc01a0644d599ccd2a7c2e0",
+            "pc": 1571
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x8da5cb5b",
+        "candidate_signature": "owner()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000696292762fd5ac3677a45edbe54eaece4194d1f6",
+        "sloads": [
+          {
+            "slot": "0x0",
+            "pc": 1063,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          0
+        ]
+      },
+      {
+        "selector": "0xc63c4e9b",
+        "candidate_signature": "minDelay()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000093a80",
+        "sloads": [
+          {
+            "slot": "0x1",
+            "pc": 397,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          1
+        ]
+      }
+    ]
+  },
+  "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262": {
+    "role": "batch_executor_implementation",
+    "target": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+    "views": [
+      {
+        "selector": "0x0b826190",
+        "candidate_signature": "sessionKeyManager()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000008326eb8896e358717f10502ec73ce8d28e37b108",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x1",
+            "pc": 2391,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          1
+        ]
+      },
+      {
+        "selector": "0x29e295c5",
+        "candidate_signature": "authorizedRelayers(address)",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x24676cc28a03cc3a33b35919ed8a620945b396a70d7330671e48d866adc9c9dd",
+            "pc": 1032,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 4,
+            "field_offset": 0,
+            "read_slot": "0x24676cc28a03cc3a33b35919ed8a620945b396a70d7330671e48d866adc9c9dd",
+            "pc": 1032
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x6090cf16",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000001",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x5",
+            "pc": 971,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          5
+        ]
+      },
+      {
+        "selector": "0x8da5cb5b",
+        "candidate_signature": "owner()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x3",
+            "pc": 927,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          3
+        ]
+      },
+      {
+        "selector": "0xd2f7265a",
+        "candidate_signature": "exchange()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a2",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x0",
+            "pc": 325,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          0
+        ]
+      },
+      {
+        "selector": "0xd5c539ce",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000aad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x2",
+            "pc": 286,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          2
+        ]
+      }
+    ]
+  },
+  "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15": {
+    "role": "staking_implementation",
+    "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+    "views": [
+      {
+        "selector": "0x0700cc42",
+        "candidate_signature": "UNSTAKE_TYPEHASH()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": false,
+        "return_prefix": "0x1ecc9b0f79f4bb74abad4adb49babe57570219b3bc83a569a9b25299f833a9ce",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x13dd495b",
+        "candidate_signature": "authorizedExecutor()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000233ff29b239abc1d7748605da9b205c3e008626e",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x10",
+            "pc": 3349,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          16
+        ]
+      },
+      {
+        "selector": "0x2b6fdc7e",
+        "candidate_signature": "unallocatedRewards()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x8",
+            "pc": 3322,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          8
+        ]
+      },
+      {
+        "selector": "0x2e17de78",
+        "candidate_signature": "unstake(uint256)",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": true,
+        "return_prefix": "0x",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x31d7a262",
+        "candidate_signature": "pendingRewards(address)",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x2a43915c99f6af2d1365f3d040ed08f2bc8bfba3f26633710e05b7546a4bf78d",
+            "pc": 3292,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 11,
+            "field_offset": 0,
+            "read_slot": "0x2a43915c99f6af2d1365f3d040ed08f2bc8bfba3f26633710e05b7546a4bf78d",
+            "pc": 3292
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x3644e515",
+        "candidate_signature": "DOMAIN_SEPARATOR()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": false,
+        "return_prefix": "0x71706d56c8b436981e93987cd97df512528491b243c6d8d1614cad52659e7eb0",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x1",
+            "pc": 3237,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          1
+        ]
+      },
+      {
+        "selector": "0x4e71d92d",
+        "candidate_signature": "claim()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": true,
+        "return_prefix": "0xa15ce1ba",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x51ed6a30",
+        "candidate_signature": "stakeToken()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000e40f17915daa230324030003a197cdaef2261c0e",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x3",
+            "pc": 3194,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          3
+        ]
+      },
+      {
+        "selector": "0x5638b3e5",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": false,
+        "return_prefix": "0x23f3bc470a64f8283203a55adc575bcd5f81b7c537b6831c6886e4a0e2101e5a",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x5873eb9b",
+        "candidate_signature": "rewardDebt(address)",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x6ee33c043718ccf6f0e2723bea33a47d5eb4449e12ec5730a9022e6dac7447c",
+            "pc": 3128,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 10,
+            "field_offset": 0,
+            "read_slot": "0x6ee33c043718ccf6f0e2723bea33a47d5eb4449e12ec5730a9022e6dac7447c",
+            "pc": 3128
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x60217267",
+        "candidate_signature": "stakedBalance(address)",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x206714a7ce2324601125e3778e6765af4c4f3f4eb563d466d1708a878f3ab281",
+            "pc": 3073,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 9,
+            "field_offset": 0,
+            "read_slot": "0x206714a7ce2324601125e3778e6765af4c4f3f4eb563d466d1708a878f3ab281",
+            "pc": 3073
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x6090cf16",
+        "candidate_signature": "",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000001",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x10",
+            "pc": 3012,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          16
+        ]
+      },
+      {
+        "selector": "0x6b0509b1",
+        "candidate_signature": "CLAIM_TYPEHASH()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": false,
+        "return_prefix": "0x98df9450683706f5e3c8e5a81515893081ae7460248fbba60c7781957adc9f8f",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x78e890ba",
+        "candidate_signature": "domainSeparatorV4()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": false,
+        "return_prefix": "0x71706d56c8b436981e93987cd97df512528491b243c6d8d1614cad52659e7eb0",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x7ecebe00",
+        "candidate_signature": "nonces(address)|_$_$$_$__$$$$$$$$__$__$$_$$$_$$$(address)|transfer_attention_tg_invmru_5811b86(uint256,address,address)",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x43b4cbadfccc0e40c029872814c1fdbe5c5568df2b70e2eb24c6726e8ceb627a",
+            "pc": 2904,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 12,
+            "field_offset": 0,
+            "read_slot": "0x43b4cbadfccc0e40c029872814c1fdbe5c5568df2b70e2eb24c6726e8ceb627a",
+            "pc": 2904
+          }
+        ],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x817b1cd2",
+        "candidate_signature": "totalStaked()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": false,
+        "return_prefix": "0x00000000000000000000000000000000000000001ba4de81b4dc2bd7e4f36736",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x5",
+            "pc": 2849,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          5
+        ]
+      },
+      {
+        "selector": "0x89ee09f0",
+        "candidate_signature": "STAKE_TYPEHASH()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": false,
+        "return_prefix": "0x0e9469f2731f138fe05733a3ab1961961d9def010d73419c3f5b55ae6d64e8b0",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0x8da5cb5b",
+        "candidate_signature": "owner()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0xf",
+            "pc": 2304,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          15
+        ]
+      },
+      {
+        "selector": "0x939d6237",
+        "candidate_signature": "accRewardPerShare()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000b26c8fa567c14fc8b31e4",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x6",
+            "pc": 2277,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          6
+        ]
+      },
+      {
+        "selector": "0xa694fc3a",
+        "candidate_signature": "stake(uint256)",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": true,
+        "return_prefix": "0x",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0xcab64bcd",
+        "candidate_signature": "rewardReserve()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000466a49f3cb6cfc62fa66e",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x7",
+            "pc": 1703,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          7
+        ]
+      },
+      {
+        "selector": "0xd2f7265a",
+        "candidate_signature": "exchange()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a2",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x2",
+            "pc": 1494,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          2
+        ]
+      },
+      {
+        "selector": "0xe4fc6b6d",
+        "candidate_signature": "distribute()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": true,
+        "return_prefix": "0xa15ce1ba",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0xf40f0f52",
+        "candidate_signature": "pendingReward(address)",
+        "arguments": "address",
+        "sample_argument": 1436275596337742491148292629605903846977595690234,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x206714a7ce2324601125e3778e6765af4c4f3f4eb563d466d1708a878f3ab281",
+            "pc": 1022,
+            "depth": 2
+          },
+          {
+            "slot": "0x6",
+            "pc": 1041,
+            "depth": 2
+          },
+          {
+            "slot": "0x6ee33c043718ccf6f0e2723bea33a47d5eb4449e12ec5730a9022e6dac7447c",
+            "pc": 1059,
+            "depth": 2
+          },
+          {
+            "slot": "0x2a43915c99f6af2d1365f3d040ed08f2bc8bfba3f26633710e05b7546a4bf78d",
+            "pc": 1067,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [
+          {
+            "base_slot": 9,
+            "field_offset": 0,
+            "read_slot": "0x206714a7ce2324601125e3778e6765af4c4f3f4eb563d466d1708a878f3ab281",
+            "pc": 1022
+          },
+          {
+            "base_slot": 10,
+            "field_offset": 0,
+            "read_slot": "0x6ee33c043718ccf6f0e2723bea33a47d5eb4449e12ec5730a9022e6dac7447c",
+            "pc": 1059
+          },
+          {
+            "base_slot": 11,
+            "field_offset": 0,
+            "read_slot": "0x2a43915c99f6af2d1365f3d040ed08f2bc8bfba3f26633710e05b7546a4bf78d",
+            "pc": 1067
+          }
+        ],
+        "direct_slots": [
+          6
+        ]
+      },
+      {
+        "selector": "0xf7c618c1",
+        "candidate_signature": "rewardToken()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000006b9e773128f453f5c2c60935ee2de2cbc5390a24",
+        "sloads": [
+          {
+            "slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+            "pc": 781,
+            "depth": 1
+          },
+          {
+            "slot": "0x4",
+            "pc": 952,
+            "depth": 2
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          4
+        ]
+      }
+    ]
+  },
+  "0xe79c91cc682f1bb401a9cab74c900470190f0f8f": {
+    "role": "proxy_admin",
+    "target": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+    "views": [
+      {
+        "selector": "0x8da5cb5b",
+        "candidate_signature": "owner()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "sloads": [
+          {
+            "slot": "0x0",
+            "pc": 631,
+            "depth": 1
+          }
+        ],
+        "mapping_matches": [],
+        "direct_slots": [
+          0
+        ]
+      }
+    ]
+  },
+  "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce": {
+    "role": "user_deposit_proxy_representative",
+    "target": "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+    "views": [
+      {
+        "selector": "0x4f8632ba",
+        "candidate_signature": "user()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+        "failed": false,
+        "return_prefix": "0x000000000000000000000000fb94d3404c1d3d9d6f08f79e58041d5ea95accfa",
+        "sloads": [],
+        "mapping_matches": [],
+        "direct_slots": []
+      },
+      {
+        "selector": "0xd2f7265a",
+        "candidate_signature": "exchange()",
+        "arguments": "",
+        "sample_argument": null,
+        "target": "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+        "failed": false,
+        "return_prefix": "0x0000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a2",
+        "sloads": [],
+        "mapping_matches": [],
+        "direct_slots": []
+      }
+    ]
+  }
+}

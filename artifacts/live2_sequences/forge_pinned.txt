@@ -1,0 +1,28 @@
+Compiling 1 files with Solc 0.8.31
+Solc 0.8.31 finished in 4.76s
+Compiler run successful with warnings:
+Warning (2072): Unused local variable.
+   --> test/Sequence.t.sol:424:48:
+    |
+424 |         (uint256 t, uint256 bal, uint256 lock, uint256 q, uint256 stf, uint256 dev, int256 lp, int256 side) = components();
+    |                                                ^^^^^^^^^
+
+
+Ran 14 tests for test/Sequence.t.sol:SequenceTest
+[PASS] test_s0_control_and_negative() (gas: 141855)
+[PASS] test_s10_batch_executor_two_closes() (gas: 1123424)
+[PASS] test_s11_debt_cycle_coherent_queue() (gas: 3255681)
+[PASS] test_s12_push_staker_fees_below_cap() (gas: 1153896)
+[PASS] test_s13_push_staker_fees_above_cap() (gas: 2256743)
+[PASS] test_s1_open_close_same_price_cycles() (gas: 3078709)
+[PASS] test_s2_win_then_loss() (gas: 1407103)
+[PASS] test_s3_open_then_liquidate() (gas: 753605)
+[PASS] test_s4_queue_live_liquidation() (gas: 1817017)
+[PASS] test_s5_queued_win_then_harvest() (gas: 1210582)
+[PASS] test_s6_loss_into_live_queue_then_win() (gas: 2584662)
+[PASS] test_s7_both_sides_one_market() (gas: 2183266)
+[PASS] test_s8_boundaries() (gas: 2908425)
+[PASS] test_s9_close_then_withdraw() (gas: 1282111)
+Suite result: ok. 14 passed; 0 failed; 0 skipped; finished in 11.91ms (56.68ms CPU time)
+
+Ran 1 test suite in 12.25ms (11.91ms CPU time): 14 tests passed, 0 failed, 0 skipped (14 total tests)

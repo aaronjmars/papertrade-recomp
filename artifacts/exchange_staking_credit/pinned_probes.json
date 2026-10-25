@@ -1,0 +1,73 @@
+{
+  "block": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "cases": [
+    {
+      "name": "staking_one",
+      "from": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+      "recipient": "0x57e5539fc4a57e00ec1fbba7786d1f03e4fa7218",
+      "amount": "1",
+      "input": "0xe53e3de600000000000000000000000057e5539fc4a57e00ec1fbba7786d1f03e4fa72180000000000000000000000000000000000000000000000000000000000000001",
+      "error": null,
+      "revert_data": "0x",
+      "logs": [
+        {
+          "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+          "topics": [
+            "0xe7fd56edb8bf641db0dc0a89a9d7d3a10da1fedab015ab0c51f1c418d2bc15b0",
+            "0x00000000000000000000000057e5539fc4a57e00ec1fbba7786d1f03e4fa7218"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+          "position": "0x0",
+          "index": "0x0"
+        }
+      ],
+      "exchange_storage_diff": {
+        "pre": {
+          "0xa1d43c223227cf4fd879bd8e92a6d4099c051825e7bba572ae3461cda0da4562": "0x00000000000000000000000000000000000000000000000009664b33a8511aa3",
+          "0xd58dad47cd91e985195a3bd4bbd13ee356f80af8ef858a190ba13c1c642d4cd6": "0x0000000000000000000000000000000000000000000466a49f3cb6cfc62fa66e"
+        },
+        "post": {
+          "0xa1d43c223227cf4fd879bd8e92a6d4099c051825e7bba572ae3461cda0da4562": "0x00000000000000000000000000000000000000000000000009664b33a8511aa4",
+          "0xd58dad47cd91e985195a3bd4bbd13ee356f80af8ef858a190ba13c1c642d4cd6": "0x0000000000000000000000000000000000000000000466a49f3cb6cfc62fa66d"
+        }
+      }
+    },
+    {
+      "name": "staking_zero",
+      "from": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+      "recipient": "0x57e5539fc4a57e00ec1fbba7786d1f03e4fa7218",
+      "amount": "0",
+      "input": "0xe53e3de600000000000000000000000057e5539fc4a57e00ec1fbba7786d1f03e4fa72180000000000000000000000000000000000000000000000000000000000000000",
+      "error": null,
+      "revert_data": "0x",
+      "logs": [],
+      "exchange_storage_diff": {
+        "pre": {},
+        "post": {}
+      }
+    },
+    {
+      "name": "staking_huge",
+      "from": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+      "recipient": "0x57e5539fc4a57e00ec1fbba7786d1f03e4fa7218",
+      "amount": "57896044618658097711785492504343953926634992332820282019728792003956564819968",
+      "input": "0xe53e3de600000000000000000000000057e5539fc4a57e00ec1fbba7786d1f03e4fa72188000000000000000000000000000000000000000000000000000000000000000",
+      "error": "execution reverted",
+      "revert_data": "0xf4d678b8",
+      "logs": [],
+      "exchange_storage_diff": null
+    },
+    {
+      "name": "outsider",
+      "from": "0x1111111111111111111111111111111111111111",
+      "recipient": "0x57e5539fc4a57e00ec1fbba7786d1f03e4fa7218",
+      "amount": "1",
+      "input": "0xe53e3de600000000000000000000000057e5539fc4a57e00ec1fbba7786d1f03e4fa72180000000000000000000000000000000000000000000000000000000000000001",
+      "error": "execution reverted",
+      "revert_data": "0x538ccdfd",
+      "logs": [],
+      "exchange_storage_diff": null
+    }
+  ]
+}

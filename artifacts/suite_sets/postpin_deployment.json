@@ -1,0 +1,58 @@
+{
+  "0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946": {
+    "address": "0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946",
+    "deployer_nonce": 3,
+    "role": "session_key_manager_implementation_2",
+    "runtime_bytes": 4521,
+    "runtime_file": "runtime/0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946.hex",
+    "sha256": "7df05c33597c04820a314fae015aab01b5566aff53e9bded8446962cfd4ad2c9"
+  },
+  "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723": {
+    "address": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+    "deployer_nonce": 2,
+    "role": "exchange_implementation_2",
+    "runtime_bytes": 23959,
+    "runtime_file": "runtime/0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723.hex",
+    "sha256": "fc7374f3969381160732fe98c5e3145e00c3f167f168d61d65bb4972e9a6b268"
+  },
+  "0x583d0bd818c991c5830fea93aef04e474b272459": {
+    "address": "0x583d0bd818c991c5830fea93aef04e474b272459",
+    "deployer_nonce": 1,
+    "role": "exchange_linked_library_2",
+    "runtime_bytes": 6286,
+    "runtime_file": "runtime/0x583d0bd818c991c5830fea93aef04e474b272459.hex",
+    "sha256": "ced8e434ebd5379c4acc1fba809a5b18f531c676a264308c9a0a1a76d9641440"
+  },
+  "0x5a85c51e557b6a5cae014847b31e0c3c542c827f": {
+    "address": "0x5a85c51e557b6a5cae014847b31e0c3c542c827f",
+    "deployer_nonce": 4,
+    "role": "tokenomics_implementation_2_earlier_2_link",
+    "runtime_bytes": 6452,
+    "runtime_file": "runtime/0x5a85c51e557b6a5cae014847b31e0c3c542c827f.hex",
+    "sha256": "f4737a14ac4061c6c0ea1a8c81c49ad5e2c0814871f2acc4e316a302558d8c7d"
+  },
+  "0x7c0a72a788cff4d68cfe9586aecb98e21eb58a03": {
+    "address": "0x7c0a72a788cff4d68cfe9586aecb98e21eb58a03",
+    "deployer_nonce": 6,
+    "role": "tokenomics_implementation_2",
+    "runtime_bytes": 6452,
+    "runtime_file": "runtime/0x7c0a72a788cff4d68cfe9586aecb98e21eb58a03.hex",
+    "sha256": "56caf868c73dbc33b94725972fc101dbcec0fb7b017c4f2f9e8cda49516992e9"
+  },
+  "0xdf07f4a06bba4bec3355f068114dc30518c39cf1": {
+    "address": "0xdf07f4a06bba4bec3355f068114dc30518c39cf1",
+    "deployer_nonce": 5,
+    "role": "builder_registry_earlier_2_governed",
+    "runtime_bytes": 1210,
+    "runtime_file": "runtime/0xdf07f4a06bba4bec3355f068114dc30518c39cf1.hex",
+    "sha256": "f459de55cb0463912417650fbca7e18109f3820551e4071234109e1e72801d2f"
+  },
+  "0xfdc6550436dd75ce8a0b145f935b7d3a64f53248": {
+    "address": "0xfdc6550436dd75ce8a0b145f935b7d3a64f53248",
+    "deployer_nonce": 7,
+    "role": "builder_registry",
+    "runtime_bytes": 1210,
+    "runtime_file": "runtime/0xfdc6550436dd75ce8a0b145f935b7d3a64f53248.hex",
+    "sha256": "f459de55cb0463912417650fbca7e18109f3820551e4071234109e1e72801d2f"
+  }
+}

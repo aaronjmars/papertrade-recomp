@@ -1,0 +1,241 @@
+{
+  "pin_block": 48902346,
+  "pin_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "funded_staker": "0xbbb9512a5843441a8435d8f745fce97eb6a9eebf",
+  "probes": [
+    {
+      "name": "stake_one",
+      "call": {
+        "from": "0xbbb9512a5843441a8435d8f745fce97eb6a9eebf",
+        "to": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "data": "0xa694fc3a0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+        "value": "0x0"
+      },
+      "trace": {
+        "from": "0xbbb9512a5843441a8435d8f745fce97eb6a9eebf",
+        "gas": "0xffffffffffffffff",
+        "gasUsed": "0x6936",
+        "to": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "input": "0xa694fc3a0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+        "output": "0xa15ce1ba",
+        "error": "execution reverted",
+        "calls": [
+          {
+            "from": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+            "gas": "0xfbffffffffff9b37",
+            "gasUsed": "0x2b2",
+            "to": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+            "input": "0xa694fc3a0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+            "output": "0xa15ce1ba",
+            "error": "execution reverted",
+            "value": "0x0",
+            "type": "DELEGATECALL"
+          }
+        ],
+        "value": "0x0",
+        "type": "CALL"
+      }
+    },
+    {
+      "name": "stake_zero",
+      "call": {
+        "from": "0xbbb9512a5843441a8435d8f745fce97eb6a9eebf",
+        "to": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "data": "0xa694fc3a0000000000000000000000000000000000000000000000000000000000000000",
+        "value": "0x0"
+      },
+      "trace": {
+        "from": "0xbbb9512a5843441a8435d8f745fce97eb6a9eebf",
+        "gas": "0xffffffffffffffff",
+        "gasUsed": "0x68ee",
+        "to": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "input": "0xa694fc3a0000000000000000000000000000000000000000000000000000000000000000",
+        "output": "0xa15ce1ba",
+        "error": "execution reverted",
+        "calls": [
+          {
+            "from": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+            "gas": "0xfbffffffffff9b7e",
+            "gasUsed": "0x2b2",
+            "to": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+            "input": "0xa694fc3a0000000000000000000000000000000000000000000000000000000000000000",
+            "output": "0xa15ce1ba",
+            "error": "execution reverted",
+            "value": "0x0",
+            "type": "DELEGATECALL"
+          }
+        ],
+        "value": "0x0",
+        "type": "CALL"
+      }
+    },
+    {
+      "name": "unstake_one",
+      "call": {
+        "from": "0xbbb9512a5843441a8435d8f745fce97eb6a9eebf",
+        "to": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "data": "0x2e17de780000000000000000000000000000000000000000000000000de0b6b3a7640000",
+        "value": "0x0"
+      },
+      "trace": {
+        "from": "0xbbb9512a5843441a8435d8f745fce97eb6a9eebf",
+        "gas": "0xffffffffffffffff",
+        "gasUsed": "0x6794",
+        "to": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "input": "0x2e17de780000000000000000000000000000000000000000000000000de0b6b3a7640000",
+        "output": "0xa15ce1ba",
+        "error": "execution reverted",
+        "calls": [
+          {
+            "from": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+            "gas": "0xfbffffffffff9b37",
+            "gasUsed": "0x110",
+            "to": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+            "input": "0x2e17de780000000000000000000000000000000000000000000000000de0b6b3a7640000",
+            "output": "0xa15ce1ba",
+            "error": "execution reverted",
+            "value": "0x0",
+            "type": "DELEGATECALL"
+          }
+        ],
+        "value": "0x0",
+        "type": "CALL"
+      }
+    },
+    {
+      "name": "unstake_zero",
+      "call": {
+        "from": "0xbbb9512a5843441a8435d8f745fce97eb6a9eebf",
+        "to": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "data": "0x2e17de780000000000000000000000000000000000000000000000000000000000000000",
+        "value": "0x0"
+      },
+      "trace": {
+        "from": "0xbbb9512a5843441a8435d8f745fce97eb6a9eebf",
+        "gas": "0xffffffffffffffff",
+        "gasUsed": "0x674c",
+        "to": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "input": "0x2e17de780000000000000000000000000000000000000000000000000000000000000000",
+        "output": "0xa15ce1ba",
+        "error": "execution reverted",
+        "calls": [
+          {
+            "from": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+            "gas": "0xfbffffffffff9b7e",
+            "gasUsed": "0x110",
+            "to": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+            "input": "0x2e17de780000000000000000000000000000000000000000000000000000000000000000",
+            "output": "0xa15ce1ba",
+            "error": "execution reverted",
+            "value": "0x0",
+            "type": "DELEGATECALL"
+          }
+        ],
+        "value": "0x0",
+        "type": "CALL"
+      }
+    },
+    {
+      "name": "claim_user",
+      "call": {
+        "from": "0xbbb9512a5843441a8435d8f745fce97eb6a9eebf",
+        "to": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "data": "0x4e71d92d",
+        "value": "0x0"
+      },
+      "trace": {
+        "from": "0xbbb9512a5843441a8435d8f745fce97eb6a9eebf",
+        "gas": "0xffffffffffffffff",
+        "gasUsed": "0x670a",
+        "to": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "input": "0x4e71d92d",
+        "output": "0xa15ce1ba",
+        "error": "execution reverted",
+        "calls": [
+          {
+            "from": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+            "gas": "0xfbffffffffff9bff",
+            "gasUsed": "0x151",
+            "to": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+            "input": "0x4e71d92d",
+            "output": "0xa15ce1ba",
+            "error": "execution reverted",
+            "value": "0x0",
+            "type": "DELEGATECALL"
+          }
+        ],
+        "value": "0x0",
+        "type": "CALL"
+      }
+    },
+    {
+      "name": "claim_outsider",
+      "call": {
+        "from": "0x3333333333333333333333333333333333333333",
+        "to": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "data": "0x4e71d92d",
+        "value": "0x0"
+      },
+      "trace": {
+        "from": "0x3333333333333333333333333333333333333333",
+        "gas": "0xffffffffffffffff",
+        "gasUsed": "0x670a",
+        "to": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "input": "0x4e71d92d",
+        "output": "0xa15ce1ba",
+        "error": "execution reverted",
+        "calls": [
+          {
+            "from": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+            "gas": "0xfbffffffffff9bff",
+            "gasUsed": "0x151",
+            "to": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+            "input": "0x4e71d92d",
+            "output": "0xa15ce1ba",
+            "error": "execution reverted",
+            "value": "0x0",
+            "type": "DELEGATECALL"
+          }
+        ],
+        "value": "0x0",
+        "type": "CALL"
+      }
+    },
+    {
+      "name": "distribute_user",
+      "call": {
+        "from": "0xbbb9512a5843441a8435d8f745fce97eb6a9eebf",
+        "to": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "data": "0xe4fc6b6d",
+        "value": "0x0"
+      },
+      "trace": {
+        "from": "0xbbb9512a5843441a8435d8f745fce97eb6a9eebf",
+        "gas": "0xffffffffffffffff",
+        "gasUsed": "0x68ee",
+        "to": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "input": "0xe4fc6b6d",
+        "output": "0xa15ce1ba",
+        "error": "execution reverted",
+        "calls": [
+          {
+            "from": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+            "gas": "0xfbffffffffff9bff",
+            "gasUsed": "0x335",
+            "to": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+            "input": "0xe4fc6b6d",
+            "output": "0xa15ce1ba",
+            "error": "execution reverted",
+            "value": "0x0",
+            "type": "DELEGATECALL"
+          }
+        ],
+        "value": "0x0",
+        "type": "CALL"
+      }
+    }
+  ],
+  "funded_staker_balance": "0x000000000000000000000000000000000000000000000109e16d92607f3c678d",
+  "funded_staker_allowance": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+  "funded_staker_deposit": "0x0000000000000000000000000000000000000000000342f4b1b815179bf46f1d"
+}

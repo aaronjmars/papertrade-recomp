@@ -1,0 +1,109 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "session_proxy": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+  "session_implementation": "0x8a5069fe303e8f81e91825436e956d595032e558",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "selector": "0xd45167d0",
+  "sampled_path": "recover signer from keccak256(0x1901 || DOMAIN_SEPARATOR || structHash), v, r, s; return address",
+  "historical_call_count": 4,
+  "direct_user_match_count": 4,
+  "pinned_probe_count": 6,
+  "pinned_probes": {
+    "valid_exchange": {
+      "caller": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "returned_signer": "0xb2dadf36151fb51fad1b66a09d56749a3578e532",
+      "precompile_called": true,
+      "reverted": false
+    },
+    "valid_outsider": {
+      "caller": "0x000000000000000000000000000000000000dead",
+      "returned_signer": "0xb2dadf36151fb51fad1b66a09d56749a3578e532",
+      "precompile_called": true,
+      "reverted": false
+    },
+    "changed_hash": {
+      "caller": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "returned_signer": "0x2a56135c56969a1e23bc6ca019a063afd3296051",
+      "precompile_called": true,
+      "reverted": false
+    },
+    "invalid_v": {
+      "caller": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "returned_signer": "0x0000000000000000000000000000000000000000",
+      "precompile_called": false,
+      "reverted": false
+    },
+    "zero_r": {
+      "caller": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "returned_signer": "0x0000000000000000000000000000000000000000",
+      "precompile_called": true,
+      "reverted": false
+    },
+    "zero_s": {
+      "caller": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "returned_signer": "0x0000000000000000000000000000000000000000",
+      "precompile_called": true,
+      "reverted": false
+    }
+  },
+  "calls": [
+    {
+      "tx": "0x3b56a71e00561f356eace90ce1a0b2845540aca891cc092cde3b4452567948b7",
+      "block": 48783615,
+      "source_trace": "artifacts/exchange_getters/0x3b56a71e00561f356eace90ce1a0b2845540aca891cc092cde3b4452567948b7.calls.json",
+      "exchange_parent_selector": "0x8d09f23f",
+      "user": "0xb2dadf36151fb51fad1b66a09d56749a3578e532",
+      "struct_hash": "0xa9e6b2f904dc14b63294e2103d006c6781bd25e32cbfb5d823122c68aa1b62d0",
+      "digest": "0xc74fa4dc110a1b252eb594218544d1d3aaf5838b011dc746b3500bdb20b86595",
+      "v": 27,
+      "r": "0x9dcb3249dbe8788d41737f0fe76383e046a7ebcc951879be1bcdb526b30ac8e0",
+      "s": "0x3c784e7f7bd6934b564b1918f48ede138b8005a6509e9bf525acb158bb7e494a",
+      "recovered_signer": "0xb2dadf36151fb51fad1b66a09d56749a3578e532"
+    },
+    {
+      "tx": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+      "block": 48901631,
+      "source_trace": "artifacts/historical/0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5.calls.json",
+      "exchange_parent_selector": "0x8d09f23f",
+      "user": "0x7a5a61a05a0bd2d1723d595803c47e494304f791",
+      "struct_hash": "0xda0d9cf3cdf178a193c455666cf234c59bd402742a0cd4fcda3f5ea132441361",
+      "digest": "0x9b091521b9e4d232342dd9cb76e518858205f1c521a0d5fdbceceb8e3f7acf70",
+      "v": 28,
+      "r": "0xc196b95673e43507c161ebbffde343a7fd6562151244ec7a6472c9e22ba0221f",
+      "s": "0x5156acafe5e90aa71b841d85215e3eaa627c2ed88284e09eaf647be869e38f7d",
+      "recovered_signer": "0x7a5a61a05a0bd2d1723d595803c47e494304f791"
+    },
+    {
+      "tx": "0xe3b515b06932d1f98867772b645367f3924ec239ae2e047fa0a15e3f11152e45",
+      "block": 48902098,
+      "source_trace": "artifacts/exchange_core_withdrawal/0xe3b515b06932d1f98867772b645367f3924ec239ae2e047fa0a15e3f11152e45.calls.json",
+      "exchange_parent_selector": "0x8d09f23f",
+      "user": "0xefc6f5f22d802e489d45dc7743713285bfa66eae",
+      "struct_hash": "0x1160215693e55eb8270643fa0bbc13a18881752a80846fb0b7c782c27ae56228",
+      "digest": "0xc3fc89e670f4f7f6f6a47b7c8e855847b0403580bf50b4b0a9308041a801f7e8",
+      "v": 27,
+      "r": "0x98961ae4b817d1dcc61ca4a87d36ff55fa45374ef842b2bbf556d6b0a2ef9e30",
+      "s": "0x71ca2a44b7732c18350bac9eaaeb3210a40e42508b57988f717d234aafa6e3c4",
+      "recovered_signer": "0xefc6f5f22d802e489d45dc7743713285bfa66eae"
+    },
+    {
+      "tx": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+      "block": 48902137,
+      "source_trace": "artifacts/exchange_core_withdrawal/0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90.calls.json",
+      "exchange_parent_selector": "0x8d09f23f",
+      "user": "0x5554e4d307e6f24ee868e31fcf3effedba20e457",
+      "struct_hash": "0x51d164ab29d517e2a5d39b3b0f0d5ae4a94ee6db3249d947f3dc2c8c14fcb02f",
+      "digest": "0x0b279e89b93796e161f8edaa92ac3fb67b941e81015bebf5469772331b396228",
+      "v": 28,
+      "r": "0x5c552febea540a99d43ec91af212781e6fd20bf2de3bc0b38e66434c32630f52",
+      "s": "0x04429e8d18d6f58cd9a4b6d0b2c88b807b7c1b856bdc90cd2644e558fea13e3c",
+      "recovered_signer": "0x5554e4d307e6f24ee868e31fcf3effedba20e457"
+    }
+  ],
+  "limits": [
+    "Exact Solidity source name and declared ABI types are unresolved.",
+    "Only four successful direct-user withdrawal signatures are sampled.",
+    "Six pinned read-only probes check caller independence, one changed hash, invalid v, zero r, and zero s. Other malformed signatures remain untested."
+  ]
+}

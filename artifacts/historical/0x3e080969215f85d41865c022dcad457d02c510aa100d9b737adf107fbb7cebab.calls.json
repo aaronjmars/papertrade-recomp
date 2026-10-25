@@ -1,0 +1,20 @@
+{
+  "from": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+  "gas": "0x12b44",
+  "gasUsed": "0xcca1",
+  "to": "0xe40f17915daa230324030003a197cdaef2261c0e",
+  "input": "0xd311b1a9000000000000000000000000aad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+  "calls": [
+    {
+      "from": "0xe40f17915daa230324030003a197cdaef2261c0e",
+      "gas": "0xc12a",
+      "gasUsed": "0x6579",
+      "to": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+      "input": "0xd311b1a9000000000000000000000000aad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+      "value": "0x0",
+      "type": "DELEGATECALL"
+    }
+  ],
+  "value": "0x0",
+  "type": "CALL"
+}

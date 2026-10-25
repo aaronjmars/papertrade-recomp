@@ -1,0 +1,925 @@
+{
+  "generated_by": "audit_live2_pricing.py",
+  "pin": 48902346,
+  "pin_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "prestate_block": 48901631,
+  "scope": "pricing and eligibility: PriceOracle, every Exchange price consumer, the size caps and the liquidation boundaries",
+  "evidence_after": {
+    "static": "artifacts/live2_pricing/static_evidence.json",
+    "caps": "artifacts/live2_pricing/caps_fit.json",
+    "forge": "artifacts/live2_pricing/forge_replay.json"
+  },
+  "rows": [
+    {
+      "id": "LP-01",
+      "title": "No freshness, deviation or lookback gate exists anywhere in the price path",
+      "angle": "A1 freshness",
+      "invariant": "A4",
+      "actor": "any trader; the frozen-quote variant needs a keeper or the relayer",
+      "precondition": "HyperCore returns a non-zero, uncrossed quote that is stale, frozen or self-consistent, and the Exchange prices the transition from it",
+      "trigger": "a session-key close with precompile 0x080e mocked to a fixed bid == ask far from the entry price, then the same close 5,000 blocks and two days later",
+      "impact": "the close settles at the frozen price and the payout moves with it: the venue pays a profit the real book never offered, and nothing in the Oracle or the Exchange can detect it, so the payout is bounded only by the OI cap and the queue",
+      "affected": "both",
+      "severity": "medium",
+      "status": "confirmed_simulation",
+      "evidence_tier": "exact_runtime_replay",
+      "evidence": {
+        "oracle_opcode_census": {
+          "TIMESTAMP_0x42": 0,
+          "NUMBER_0x43": 0,
+          "SSTORE_0x55": 3,
+          "DELEGATECALL_0xf4": 0,
+          "extract": "linear opcode census skipping PUSH data; a zero count is a hard absence"
+        },
+        "exchange_timestamp_opcodes": {
+          "pinned": 3,
+          "set2": 4,
+          "note": "raw byte census, so it also counts matches inside the runtime data blob: the pinned site at byte 22881 follows the INVALID at byte 22870 and is data, not code. The two code sites are the position-record write at byte 2953 and the pauseMarket snapshot at byte 12327; neither is compared against a quote age"
+        },
+        "pinned_close_live_valid": {
+          "a": 250700,
+          "b": 757551553348203624648,
+          "c": 0,
+          "note": "control"
+        },
+        "pinned_close_frozen_far": {
+          "a": 501290,
+          "b": 8997361550391042670658500,
+          "c": 0,
+          "note": "balanceDelta=5002012573755118958351370"
+        },
+        "pinned_close_frozen_next_block": {
+          "a": 501290,
+          "b": 8997361550391042670658500,
+          "c": 0,
+          "note": "no freshness gate"
+        },
+        "set2_close_frozen_far": {
+          "a": 501290,
+          "b": 8997361550391042670658500,
+          "c": 0,
+          "note": "balanceDelta=5002012573755118958351370"
+        },
+        "set2_close_frozen_next_block": {
+          "a": 501290,
+          "b": 8997361550391042670658500,
+          "c": 0,
+          "note": "no freshness gate"
+        },
+        "available_staleness_data": "the only timestamp in the price surface is bits 136..199 of marketPause[instrumentId]; a pauseMarket call on this fixture stored flag | bid | ask | timestamp where the timestamp word is exactly 2**136 + 1 at block time 1, and no code compares it. The BBO precompile returns bid and ask only and the Oracle executes zero TIMESTAMP opcodes"
+      },
+      "missing_observation": "an archive trace of a real close whose settled midpoint was never between the entry price and the market price in the same second",
+      "citations": [
+        "atlas/block_48902346/oracle_pseudocode.md",
+        "https://docs.papertrade.xyz/how/pricing-bbo"
+      ]
+    },
+    {
+      "id": "LP-02",
+      "title": "pauseMarket freezes an unvalidated raw BBO irreversibly in the deployed implementation: a full dispatcher sweep finds no clearing path",
+      "angle": "A1 freshness / A2 raw reads",
+      "invariant": "A4",
+      "actor": "pause guardian or owner; an attacker who moves HyperCore's inside quote first",
+      "precondition": "the pause guardian or owner calls pauseMarket(instrumentId) while the live book is crossed or zero",
+      "trigger": "the 0x2d2451d1 body reads raw getBBO (selector 0xfb466481, no zero and no crossed check), packs flag|bid|ask|block.timestamp into marketPause[id], and the price helper's paused branch returns floor((storedBid+storedAsk)/2) without consulting the oracle",
+      "impact": "one pause taken on a crossed book fixes a fake price for that instrument id: a pause on the mocked crossed 300000/100000 book made both the pinned and the set-2 runtime settle a subsequent liquidation at 200000 while the live book read 250700, and the same holds for a zero book, which the Exchange then settles at price 0. No path in either deployed implementation clears it: the named unpauseMarket (0xfb9f1009) reverts 0xd9d193d3 from every caller, and a sweep of all 105 set-2 dispatcher selectors from owner, pause guardian, market keeper and an outsider under eight argument passes (3,255 calls, each isolated in a state snapshot, seeded word flag=1 with a packed bid/ask) produced zero flag clears and zero word changes, while the same sweep's positive control shows exactly one writer of a pause-shaped word, pauseMarket itself from owner or guardian",
+      "affected": "both",
+      "severity": "high",
+      "status": "confirmed_simulation",
+      "evidence_tier": "exact_runtime_replay",
+      "evidence": {
+        "raw_call_site": "the Exchange implementation pushes selector 0xfb466481 exactly once, inside the pauseMarket body, in both runtimes: {\"0xc0182669\": [22620], \"0xfb466481\": [12241]}",
+        "pinned_pause_crossed": {
+          "a": 200000,
+          "b": 250700,
+          "c": 0,
+          "note": "phase2=ok liveMock=250700 frozenMid=200000 log=0x0000000000000000000000000000000000000000000000000000000000030d40000000000000000000000000000000000000000000000000000000000003d198000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 phase3=ok"
+        },
+        "set2_pause_crossed": {
+          "a": 200000,
+          "b": 250700,
+          "c": 0,
+          "note": "phase2=ok liveMock=250700 frozenMid=200000 log=0x0000000000000000000000000000000000000000000000000000000000030d40000000000000000000000000000000000000000000000000000000000003d198000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 phase3=ok"
+        },
+        "pinned_pause_zero": {
+          "a": 1,
+          "b": 1,
+          "c": 0,
+          "note": "phase2=ok frozenWord=87112285931760246646623899502532662132737 log=0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003d198000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "set2_pause_zero": {
+          "a": 1,
+          "b": 1,
+          "c": 0,
+          "note": "phase2=ok frozenWord=87112285931760246646623899502532662132737 log=0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003d198000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "pinned_unpause": {
+          "a": 0,
+          "b": 0,
+          "c": 0,
+          "note": "outcome=revert data=0xd9d193d3"
+        },
+        "set2_unpause": {
+          "a": 0,
+          "b": 0,
+          "c": 0,
+          "note": "outcome=revert data=0xd9d193d3"
+        },
+        "poisoned_oracle_control": "the oracle proxy is etched to a reverting runtime after the pause and a fresh liquidation still succeeds (phase3=ok), so the frozen branch never consults it",
+        "pause_clearing_sweep": {
+          "runtime": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+          "selectors_swept": 105,
+          "calls": 3255,
+          "phases": [
+            "read",
+            "readaddr",
+            "readid",
+            "readmax",
+            "trading",
+            "tradingclear",
+            "tradingset",
+            "tradingsetguardian",
+            "write",
+            "writemax"
+          ],
+          "flag_cleared_rows": 0,
+          "word_changed_rows_on_seeded_word": 0,
+          "pause_word_writers": [
+            "0x2d2451d1"
+          ],
+          "pause_word_writer_callers": [
+            "guardian",
+            "owner"
+          ],
+          "pause_control_table": [
+            {
+              "selector": "0x2d2451d1",
+              "name": "pauseMarket(uint32)",
+              "dispatched": true,
+              "calls": 31,
+              "succeeded": 2,
+              "pause_word_changes": 2,
+              "revert_data": [
+                "0x",
+                "0x0d240815",
+                "0x49199fb6"
+              ]
+            },
+            {
+              "selector": "0xfb9f1009",
+              "name": "unpauseMarket(uint32)",
+              "dispatched": true,
+              "calls": 31,
+              "succeeded": 0,
+              "pause_word_changes": 0,
+              "revert_data": [
+                "0x",
+                "0xd9d193d3"
+              ]
+            },
+            {
+              "selector": "0xae69b95b",
+              "name": "setTradingPaused(bool)",
+              "dispatched": true,
+              "calls": 31,
+              "succeeded": 9,
+              "pause_word_changes": 0,
+              "revert_data": [
+                "0x",
+                "0x49199fb6"
+              ]
+            },
+            {
+              "selector": "0x48bde20c",
+              "name": "setPauseGuardian(address)",
+              "dispatched": true,
+              "calls": 31,
+              "succeeded": 8,
+              "pause_word_changes": 0,
+              "revert_data": [
+                "0x",
+                "0x30cd7471"
+              ]
+            },
+            {
+              "selector": "0x53e23e2e",
+              "name": "tradingPaused()",
+              "dispatched": true,
+              "calls": 31,
+              "succeeded": 31,
+              "pause_word_changes": 0,
+              "revert_data": []
+            },
+            {
+              "selector": "0x8da5cb5b",
+              "name": "owner()",
+              "dispatched": true,
+              "calls": 31,
+              "succeeded": 31,
+              "pause_word_changes": 0,
+              "revert_data": []
+            },
+            {
+              "selector": "0x599dc539",
+              "name": "liquidateBatch",
+              "dispatched": true,
+              "calls": 31,
+              "succeeded": 18,
+              "pause_word_changes": 0,
+              "revert_data": [
+                "0x"
+              ]
+            },
+            {
+              "selector": "0x2792e706",
+              "name": "close",
+              "dispatched": true,
+              "calls": 31,
+              "succeeded": 0,
+              "pause_word_changes": 0,
+              "revert_data": [
+                "0x",
+                "0xda96f0b6"
+              ]
+            },
+            {
+              "selector": "0xec6783f0",
+              "name": "open",
+              "dispatched": true,
+              "calls": 31,
+              "succeeded": 0,
+              "pause_word_changes": 0,
+              "revert_data": [
+                "0x"
+              ]
+            },
+            {
+              "selector": "0x415f1240",
+              "name": "liquidate(uint256)",
+              "dispatched": false,
+              "calls": 0,
+              "succeeded": 0,
+              "pause_word_changes": 0,
+              "revert_data": []
+            }
+          ],
+          "raw_table": "artifacts/live2_pricing/pause_sweep.json"
+        },
+        "mapping_35_static": {
+          "pinned_key_sites": [
+            {
+              "key_idiom_offset": 2376,
+              "keccak_offset": 2386,
+              "accessor": "SLOAD",
+              "accessor_offset": 2387,
+              "sstore_hint_offset": 2645,
+              "sstore_hint_note": "unverified hint: the nearest SSTORE inside the scan window, which may belong to the same key across a branch"
+            },
+            {
+              "key_idiom_offset": 5973,
+              "keccak_offset": 5978,
+              "accessor": "SLOAD",
+              "accessor_offset": 5979,
+              "sstore_hint_offset": null,
+              "sstore_hint_note": "unverified hint: the nearest SSTORE inside the scan window, which may belong to the same key across a branch"
+            },
+            {
+              "key_idiom_offset": 12188,
+              "keccak_offset": 12196,
+              "accessor": "SLOAD",
+              "accessor_offset": 12198,
+              "sstore_hint_offset": 12354,
+              "sstore_hint_note": "unverified hint: the nearest SSTORE inside the scan window, which may belong to the same key across a branch"
+            },
+            {
+              "key_idiom_offset": 22595,
+              "keccak_offset": 22603,
+              "accessor": "SLOAD",
+              "accessor_offset": 22604,
+              "sstore_hint_offset": null,
+              "sstore_hint_note": "unverified hint: the nearest SSTORE inside the scan window, which may belong to the same key across a branch"
+            }
+          ],
+          "set2_key_sites": [
+            {
+              "key_idiom_offset": 2403,
+              "keccak_offset": 2413,
+              "accessor": "SLOAD",
+              "accessor_offset": 2414,
+              "sstore_hint_offset": 2672,
+              "sstore_hint_note": "unverified hint: the nearest SSTORE inside the scan window, which may belong to the same key across a branch"
+            },
+            {
+              "key_idiom_offset": 6188,
+              "keccak_offset": 6193,
+              "accessor": "SLOAD",
+              "accessor_offset": 6194,
+              "sstore_hint_offset": null,
+              "sstore_hint_note": "unverified hint: the nearest SSTORE inside the scan window, which may belong to the same key across a branch"
+            },
+            {
+              "key_idiom_offset": 11360,
+              "keccak_offset": 11368,
+              "accessor": "SLOAD",
+              "accessor_offset": 11370,
+              "sstore_hint_offset": 11526,
+              "sstore_hint_note": "unverified hint: the nearest SSTORE inside the scan window, which may belong to the same key across a branch"
+            },
+            {
+              "key_idiom_offset": 23438,
+              "keccak_offset": 23446,
+              "accessor": "SLOAD",
+              "accessor_offset": 23447,
+              "sstore_hint_offset": null,
+              "sstore_hint_note": "unverified hint: the nearest SSTORE inside the scan window, which may belong to the same key across a branch"
+            }
+          ],
+          "pinned_verified_write": "SSTORE 12354 in the 12188 pauseMarket body",
+          "set2_verified_write": "SSTORE 11526 in the 11360 pauseMarket body",
+          "hint_caveat": "the sstore_hint field is unverified: the pinned hint at 2645 is provably the mapping-36 side-exposure write inside the signed-open body (the open-limit ledger's PC 0xa44/0xa55), not a pause write",
+          "sstore_total": {
+            "pinned_exchange_implementation": 83,
+            "set2_exchange_implementation": 92
+          }
+        },
+        "global_trading_pause": {
+          "set_by": [
+            [
+              "0xae69b95b",
+              "guardian"
+            ],
+            [
+              "0xae69b95b",
+              "owner"
+            ]
+          ],
+          "cleared_by": [
+            [
+              "0xae69b95b",
+              "owner"
+            ]
+          ],
+          "kept_by_everyone_else": true,
+          "guardian_clear_revert": "0x49199fb6 NotPauseAuthority()",
+          "slot": "storage slot 29 low byte"
+        },
+        "upgrade_caveat": "permanence is a property of the deployed implementations. The ProxyAdmin owner is the newest timelock and the set-2 batch itself executed ProxyAdmin.upgrade, so a governance upgrade can rewrite the proxy storage, including this word; no such rewrite is recorded"
+      },
+      "missing_observation": "an archive trace of a liquidation executed while a market was paused, and a post-pause storage rewrite or upgrade transaction that clears a market-pause word; the saved logs contain no successful pauseMarket emission, so the frozen branch is unreachable in the sampled history",
+      "citations": [
+        "atlas/block_48902346/exchange_pause_pseudocode.md",
+        "atlas/block_48902346/exchange_disabled_selector.md",
+        "atlas/block_48902346/suite_sets.md",
+        "https://docs.papertrade.xyz/how/pricing-bbo"
+      ]
+    },
+    {
+      "id": "LP-03",
+      "title": "Raw-versus-validated read map: one raw getBBO consumer, every value-moving path validated",
+      "angle": "A2 raw reads",
+      "invariant": "A4",
+      "actor": "any",
+      "precondition": "a crossed or zero HyperCore book",
+      "trigger": "scan every captured runtime for the six oracle selectors, then drive the reachable consumers with crossed and zero books",
+      "impact": "no value-moving path (signed open, signed close, liquidate, liquidateBatch) reads a raw or unvalidated price: a crossed and a zero book both revert the close with Error(string) 'BBO crossed' and 'BBO unavailable'. getPriceSnapshot and the snapshot-array selector exist only in the Oracle and are referenced by no captured runtime, so the unvalidated snapshot surface is unreachable from the Exchange",
+      "affected": "both",
+      "severity": "info",
+      "status": "confirmed_simulation",
+      "evidence_tier": "exact_runtime_replay",
+      "evidence": {
+        "catalogue": {
+          "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee": {
+            "0xc0182669": 1,
+            "0xfb466481": 1
+          },
+          "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a": {
+            "0xc0182669": 1,
+            "0xfb466481": 1,
+            "0x766cd255": 1,
+            "0xa7f06462": 1,
+            "0x2af78bd1": 1,
+            "0xa066fae9": 1
+          },
+          "0x4f859b790d34767ea325b4888c8c420c34cf85af": {
+            "0xc0182669": 1,
+            "0xfb466481": 1
+          },
+          "0x93a8e8d647f6c1e7b0f9bf4bd86eff3a9f20c3fb": {
+            "0xc0182669": 1,
+            "0xfb466481": 1
+          },
+          "postpin:0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723": {
+            "0xc0182669": 1,
+            "0xfb466481": 1
+          }
+        },
+        "pinned_close_crossed_reverts": {
+          "a": 0,
+          "b": 0,
+          "c": 0,
+          "note": "revert=0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000b42424f2063726f73736564000000000000000000000000000000000000000000"
+        },
+        "pinned_close_zero_reverts": {
+          "a": 0,
+          "b": 0,
+          "c": 0,
+          "note": "revert=0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000f42424f20756e617661696c61626c650000000000000000000000000000000000"
+        },
+        "set2_close_crossed_reverts": {
+          "a": 0,
+          "b": 0,
+          "c": 0,
+          "note": "revert=0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000b42424f2063726f73736564000000000000000000000000000000000000000000"
+        },
+        "set2_close_zero_reverts": {
+          "a": 0,
+          "b": 0,
+          "c": 0,
+          "note": "revert=0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000f42424f20756e617661696c61626c650000000000000000000000000000000000"
+        },
+        "live_midpoint_control": {
+          "a": 250700,
+          "b": 757551553348203624648,
+          "c": 0,
+          "note": "control"
+        }
+      },
+      "missing_observation": "a caller of getPriceSnapshot or 0xa7f06462 in a live transaction; none exists in the captured history",
+      "citations": [
+        "atlas/block_48902346/oracle_pseudocode.md",
+        "atlas/block_48902346/exchange_liquidation_invalid_prices.md"
+      ]
+    },
+    {
+      "id": "LP-04",
+      "title": "No unprivileged price writer: the Oracle has no price setter and the price-affecting writers are owner or marketKeeper gated",
+      "angle": "A3 price reachability",
+      "invariant": "A4",
+      "actor": "unprivileged user, session key, relayer, keeper, builder, mev bot",
+      "precondition": "none",
+      "trigger": "enumerate the PriceOracle dispatch (nine selectors) and the Exchange writers that feed the priced instrument record and the side caps",
+      "impact": "no unprivileged actor can move a price or a cap: the Oracle's only state-changing selectors are initialize (once) and transferOwnership (owner), prices come only from the HyperCore read precompiles, the instrument setter 0x5ca4c0ea is owner-only, and the side-cap setter 0x628a9fd6 is owner or marketKeeper",
+      "affected": "both",
+      "severity": "none",
+      "status": "disproved",
+      "evidence_tier": "bytecode_static_read",
+      "evidence": {
+        "oracle_dispatch_selectors": [
+          "0x2af78bd1",
+          "0x766cd255",
+          "0x8da5cb5b",
+          "0xa066fae9",
+          "0xa7f06462",
+          "0xc0182669",
+          "0xc4d66de8",
+          "0xf2fde38b",
+          "0xfb466481"
+        ],
+        "oracle_opcode_census": {
+          "TIMESTAMP_0x42": 0,
+          "NUMBER_0x43": 0,
+          "SSTORE_0x55": 3,
+          "DELEGATECALL_0xf4": 0,
+          "extract": "linear opcode census skipping PUSH data; a zero count is a hard absence"
+        },
+        "price_surface_dispatch": {
+          "liquidate(uint256)": {
+            "pinned": true,
+            "set2": false
+          },
+          "liquidateBatch": {
+            "pinned": true,
+            "set2": true
+          },
+          "pauseMarket": {
+            "pinned": true,
+            "set2": true
+          },
+          "unpauseMarket": {
+            "pinned": true,
+            "set2": true
+          },
+          "marketFields": {
+            "pinned": true,
+            "set2": true
+          },
+          "instrumentSetter": {
+            "pinned": true,
+            "set2": true
+          },
+          "signedOpen": {
+            "pinned": true,
+            "set2": true
+          },
+          "signedClose": {
+            "pinned": true,
+            "set2": true
+          }
+        },
+        "cited_caller_probes": [
+          "atlas/block_48902346/exchange_instrument_admin_behavior.json",
+          "atlas/block_48902346/exchange_market_fields_behavior.json",
+          "atlas/block_48902346/oracle_behavior.json"
+        ]
+      },
+      "missing_observation": "none for this claim; a future implementation could add a setter",
+      "citations": [
+        "atlas/block_48902346/oracle_pseudocode.md",
+        "atlas/block_48902346/exchange_instrument_admin.md",
+        "atlas/block_48902346/exchange_market_fields.md"
+      ]
+    },
+    {
+      "id": "LP-05",
+      "title": "Per-side cap unit resolved; the cap bounds notional, not payout, so one eligible close can still take the whole LP bankroll and create an unfunded queue claim",
+      "angle": "A4 caps versus liquidity",
+      "invariant": "A3",
+      "actor": "any eligible trader",
+      "precondition": "an active position inside its side cap. The test position is 20,000 margin at 500x (10,000,000 USDC notional); its side-exposure increment is 0.5% of the live ETH long headroom, so it is admissible under the live caps as well as the pinned fixture",
+      "trigger": "close the position at a frozen 2x quote with the prestate lpBankrollAvailable of 5,002,012.573755119 USDC, plus a small-move close as the control",
+      "impact": "the adjusted payout is 8,997,361.55 USDC; the close credits exactly the whole available bankroll, 5,002,012.573755 USDC, and defers 3,835,401.745628 USDC into the queue, so one close inside the caps empties available LP liquidity and leaves an unfunded claim. The small-move control (879.53 USDC pinned, 378.51 USDC in set 2) is credited directly with no queue entry, which is the control that the queue gate is real",
+      "affected": "both",
+      "severity": "medium",
+      "status": "confirmed_simulation",
+      "evidence_tier": "exact_runtime_replay",
+      "evidence": {
+        "exposure_fit": {
+          "0": {
+            "increments_measured": 7,
+            "distinct_prices": [
+              809145,
+              809325,
+              809525
+            ],
+            "k": 9.999999,
+            "model": "exposure_delta = margin_1e18 * leverage * k / price_raw",
+            "max_residual_units": 0,
+            "examples": [
+              {
+                "tx": "0x6af4bd2172e5c9c26a23643c6917fcaed9b290df609d9510e53a70405bd63c43",
+                "open_index": 1,
+                "instrument": 0,
+                "side_word": 1,
+                "size_1e18": "46330000000000000000",
+                "leverage": 396,
+                "price_raw": 809525,
+                "exposure_delta": "226635125536580093",
+                "k": 9.999999,
+                "k_scaled_ppm": "9999999"
+              },
+              {
+                "tx": "0x6af4bd2172e5c9c26a23643c6917fcaed9b290df609d9510e53a70405bd63c43",
+                "open_index": 2,
+                "instrument": 0,
+                "side_word": 1,
+                "size_1e18": "35140000000000000000",
+                "leverage": 396,
+                "price_raw": 809525,
+                "exposure_delta": "171896358975942682",
+                "k": 9.999999,
+                "k_scaled_ppm": "9999999"
+              }
+            ]
+          },
+          "1": {
+            "increments_measured": 1,
+            "distinct_prices": [
+              234905
+            ],
+            "k": 99.999999,
+            "model": "exposure_delta = margin_1e18 * leverage * k / price_raw",
+            "max_residual_units": 0,
+            "examples": [
+              {
+                "tx": "0x95b10b8980938011c07c0b87a7b5280e58a6a5ba69bca34ae316a4c0c80fe3db",
+                "open_index": 4,
+                "instrument": 1,
+                "side_word": 0,
+                "size_1e18": "18000000000000000000",
+                "leverage": 856,
+                "price_raw": 234905,
+                "exposure_delta": "6559247355313850279",
+                "k": 99.999999,
+                "k_scaled_ppm": "99999999"
+              }
+            ]
+          }
+        },
+        "cap_unit": "side-exposure increment = margin_1e18 * leverage * k / price_raw with k measured as the market word0 last-64 field, 10 for instrument 0 (seven increments at three prices, residual 0) and 100 for instrument 1 (one increment), so the cap counts a base-asset quantity",
+        "max_single_position_notional": {
+          "scale_word0_last64": 100,
+          "measured_k": 99.999999,
+          "price_raw_used": 234905,
+          "caps_basis": "live",
+          "exposure_unit": "base-asset quantity scaled by last64/100",
+          "max_single_position_notional_1e18": {
+            "long": "32649037579296096518598775",
+            "short": "22204634692748006986761506"
+          },
+          "max_single_position_notional_usdc": {
+            "long": 32649037,
+            "short": 22204634
+          }
+        },
+        "caps": {
+          "pinned": {
+            "0": {
+              "long_cap_128": 2619826912335858848565,
+              "short_cap_128": 2018729412591293082616,
+              "current_long_96": 2506550302643817336119,
+              "current_short_96": 1964220916114290373896,
+              "word0_last64": 10
+            },
+            "1": {
+              "long_cap_128": 31013441209990090349898,
+              "short_cap_128": 27897005740639578295875,
+              "current_long_96": 28827364986450670743877,
+              "current_short_96": 25672989332413427189485,
+              "word0_last64": 100
+            }
+          },
+          "live": {
+            "instrument": 1,
+            "long_cap_128": 13898826154954597185500,
+            "short_cap_128": 9452601984950514883362,
+            "current_long_96": 13083667712742488048072,
+            "current_short_96": 8625954465223160974410,
+            "word0_last64": 100,
+            "head_block": 49258776
+          }
+        },
+        "lp_bankroll": {
+          "formula": "lpBankrollAvailable = 0 if totalQueued > 0 else max(treasury - totalBalances - totalLockedMargin - stakerFeeAccumulator - devFeeAccumulator, 0)",
+          "prestate_block": 48901631,
+          "treasury_1e18": "65099672687923540000000000",
+          "reserved_1e18": "60097660114168421041648630",
+          "available_1e18": "5002012573755118958351370",
+          "available_usdc": 5002012.573755119,
+          "largest_replay_credit": {
+            "notional_usdc": 250000000,
+            "balance_credit_1e18": "830620860165958929124558",
+            "queue_delta_1e18": "0"
+          }
+        },
+        "pinned_queue_defers": {
+          "a": 501290,
+          "b": 8997361550391042670658500,
+          "c": 3835401745628102858893960,
+          "note": "balanceDelta=5002012573755118958351370"
+        },
+        "set2_queue_defers": {
+          "a": 501290,
+          "b": 8997361550391042670658500,
+          "c": 3835401745628102858893960,
+          "note": "balanceDelta=5002012573755118958351370"
+        },
+        "pinned_small_paid_direct": {
+          "a": 250705,
+          "b": 879525974721719353268,
+          "c": 0,
+          "note": "balanceDelta=20861935455227284966203"
+        },
+        "set2_small_paid_direct": {
+          "a": 250705,
+          "b": 378511127708616239866,
+          "c": 0,
+          "note": "balanceDelta=20370940905154443915069"
+        }
+      },
+      "missing_observation": "a second consecutive committed signed open on instrument 1 in a different batch, to widen the k=100 measurement beyond one pair; the two runs of the payout control are one fixture, not chain state",
+      "citations": [
+        "atlas/block_48902346/exchange_open_limit_full_behavior.json",
+        "atlas/block_48902346/exchange_market_fields.md",
+        "atlas/block_48902346/asymmetric_impact_behavior.md",
+        "https://docs.papertrade.xyz/how/risk"
+      ]
+    },
+    {
+      "id": "LP-06",
+      "title": "The documented 1e9 USD per-side headroom policy is inconsistent with the configured caps",
+      "angle": "A4 caps versus liquidity",
+      "invariant": "proposed A8 (a published parameter policy matches the configured parameter)",
+      "actor": "market keeper (policy), public docs (claim)",
+      "precondition": "the current docs state the keeper targets current OI plus 1e9 USD of BBO-valued headroom per side inside a 10% hysteresis band",
+      "trigger": "subtract the current side exposure from the configured cap and convert the gap to USD with the measured cap unit",
+      "impact": "the measured ETH headroom is about 5.14e6 USD long and 5.22e6 USD short at the pin and about 1.91e6 and 1.94e6 USD live, so the documented 1e9 USD headroom overstates the configured limit by roughly 195x to 520x; the docs number cannot be used to reason about the real exposure limit",
+      "affected": "both",
+      "severity": "low",
+      "status": "confirmed_simulation",
+      "evidence_tier": "bytecode_static_read",
+      "evidence": {
+        "pinned_eth_long": {
+          "gap_exposure": "2186076223539419606021",
+          "gap_base_quantity_1e18": "2186076223539419606021",
+          "gap_usdc_at_last_price": 5135202
+        },
+        "pinned_eth_short": {
+          "gap_exposure": "2224016408226151106390",
+          "gap_base_quantity_1e18": "2224016408226151106390",
+          "gap_usdc_at_last_price": 5224325
+        },
+        "live_eth_long": {
+          "gap_exposure": "815158442212109137428",
+          "gap_base_quantity_1e18": "815158442212109137428",
+          "gap_usdc_at_last_price": 1914847
+        },
+        "live_eth_short": {
+          "gap_exposure": "826647519727353908952",
+          "gap_base_quantity_1e18": "826647519727353908952",
+          "gap_usdc_at_last_price": 1941836
+        }
+      },
+      "missing_observation": "the keeper's off-chain cap-calculation inputs, so only the configured result is testable",
+      "citations": [
+        "https://docs.papertrade.xyz/how/risk"
+      ]
+    },
+    {
+      "id": "LP-07",
+      "title": "Liquidation-price integer formula and its one-unit boundary hold in both implementations",
+      "angle": "A5 eligibility boundaries",
+      "invariant": "A4",
+      "actor": "any; liquidateBatch is a permissionless maintenance path",
+      "precondition": "an active long position under the pinned ETH instrument record",
+      "trigger": "set the mocked midpoint to the exact integer boundary base = entry - floor(entry/leverage) = 250,144, adjustment = floor(base*maintenanceRate/1e18) = 120, boundary = 250,264, then 250,264 and 250,265",
+      "impact": "at the exact boundary the position liquidates and its active bit clears (pinned 250,264, a=1 b=1); at 250,265 it reverts NotLiquidatable (0xddeb79ba) with no log; the batch path settles the same position at 250,264 in both implementations, so batch and single share the integer formula",
+      "affected": "both",
+      "severity": "none",
+      "status": "confirmed_simulation",
+      "evidence_tier": "exact_runtime_replay",
+      "evidence": {
+        "maintenance_rate_1e18": 481304050180130,
+        "pinned_exact": {
+          "a": 1,
+          "b": 1,
+          "c": 250264,
+          "note": "outcome=ok cleared=0x"
+        },
+        "pinned_plus_one": {
+          "a": 0,
+          "b": 0,
+          "c": 250265,
+          "note": "outcome=revert data=0xddeb79ba"
+        },
+        "pinned_valid_price": {
+          "a": 0,
+          "b": 0,
+          "c": 250700,
+          "note": "outcome=revert data=0xddeb79ba"
+        },
+        "set2_batch": {
+          "a": 1,
+          "b": 1,
+          "c": 250264,
+          "note": "control"
+        },
+        "pinned_batch": {
+          "a": 1,
+          "b": 1,
+          "c": 250264,
+          "note": "control"
+        }
+      },
+      "missing_observation": "the same boundary on a short position and on the set-2 payout curve at a nonzero move; this control holds the move at zero",
+      "citations": [
+        "atlas/block_48902346/exchange_liquidation_price.md",
+        "atlas/block_48902346/exchange_liquidation_pseudocode.md"
+      ]
+    },
+    {
+      "id": "LP-08",
+      "title": "Contract set 2 drops liquidate(uint256): the single-position liquidation entrypoint is gone while liquidateBatch stays",
+      "angle": "A5 eligibility boundaries",
+      "invariant": "A4",
+      "actor": "any integration, keeper or recovery caller",
+      "precondition": "the set-2 Exchange implementation behind the proxy",
+      "trigger": "call 0x415f1240 on the set-2 runtime at a boundary-eligible position and at a valid price",
+      "impact": "the call reverts with empty data on set 2 (no dispatch) while the pinned runtime returns the NotLiquidatable predicate 0xddeb79ba at the same two prices, and the batch path proves the position was liquidatable at 250,264; the set-2 runtime contains no reference to the selector anywhere in its bytes, so any tool calling the single entrypoint silently loses the route",
+      "affected": "set2",
+      "severity": "low",
+      "status": "confirmed_simulation",
+      "evidence_tier": "exact_runtime_replay",
+      "evidence": {
+        "dispatch_diff": {
+          "pinned_count": 99,
+          "set2_count": 105,
+          "added": [
+            "0x5780639d",
+            "0x69f9a5f0",
+            "0x9d346583",
+            "0xcbce7532",
+            "0xd970fad5",
+            "0xe6ac4a74",
+            "0xf009ac03"
+          ],
+          "dropped": [
+            "0x415f1240"
+          ]
+        },
+        "selector_bytes_present": {
+          "pinned": true,
+          "set2": false
+        },
+        "set2_single_liquidate_at_boundary": {
+          "a": 0,
+          "b": 0,
+          "c": 250264,
+          "note": "outcome=revert data=0x"
+        },
+        "set2_single_liquidate_valid_price": {
+          "a": 0,
+          "b": 0,
+          "c": 250700,
+          "note": "outcome=revert data=0x"
+        },
+        "pinned_single_liquidate_control": {
+          "a": 0,
+          "b": 0,
+          "c": 250700,
+          "note": "outcome=revert data=0xddeb79ba"
+        },
+        "set2_batch_control": {
+          "a": 1,
+          "b": 1,
+          "c": 250264,
+          "note": "control"
+        }
+      },
+      "missing_observation": "whether one of the set-2 additions (0x5780639d, 0xcbce7532, 0xd970fad5, 0xe6ac4a74, 0xf009ac03) is a replacement single position route",
+      "citations": [
+        "atlas/block_48902346/suite_sets.md"
+      ]
+    },
+    {
+      "id": "LP-09",
+      "title": "A paused market gates new opens with MarketIsPaused() while closes and liquidations settle at the frozen snapshot",
+      "angle": "A5 eligibility boundaries",
+      "invariant": "A4",
+      "actor": "pause guardian (gate) against any holder (consequence)",
+      "precondition": "marketPause[instrumentId].flag is set",
+      "trigger": "close a position and submit a signed open and a liquidation on the same paused instrument with a fresh valid live quote mocked",
+      "impact": "the same signed open that the pinned runtime rejects with the unresolved raw 0xf4d678b8 on this fixture returns exactly 0x741df939, the keccak selector of MarketIsPaused(), once the market is paused, so the pause gate is real and fires ahead of the later synthetic-state check; meanwhile the close succeeds and the liquidation settles at the frozen snapshot rather than the live quote, so the pause hands the exit price to whoever reaches the maintenance path",
+      "affected": "both",
+      "severity": "medium",
+      "status": "confirmed_simulation",
+      "evidence_tier": "exact_runtime_replay",
+      "evidence": {
+        "market_is_paused_selector": "0x741df939 = keccak256('MarketIsPaused()')[0:4]",
+        "pinned_open_unpaused_probe": {
+          "a": 0,
+          "b": 0,
+          "c": 234900,
+          "note": "outcome=revert data=0xf4d678b8"
+        },
+        "pinned_open_paused_probe": {
+          "a": 0,
+          "b": 0,
+          "c": 0,
+          "note": "outcome=revert data=0x741df939"
+        },
+        "set2_open_unpaused_probe": {
+          "a": 0,
+          "b": 0,
+          "c": 234900,
+          "note": "outcome=revert data=0xf4d678b8"
+        },
+        "set2_open_paused_probe": {
+          "a": 0,
+          "b": 0,
+          "c": 0,
+          "note": "outcome=revert data=0x741df939"
+        },
+        "pinned_paused_close": {
+          "a": 1,
+          "b": 0,
+          "c": 0,
+          "note": "outcome=ok0x"
+        },
+        "set2_paused_close": {
+          "a": 1,
+          "b": 0,
+          "c": 0,
+          "note": "outcome=ok0x"
+        },
+        "pinned_paused_liquidation": {
+          "a": 200000,
+          "b": 250700,
+          "c": 0,
+          "note": "phase2=ok liveMock=250700 frozenMid=200000 log=0x0000000000000000000000000000000000000000000000000000000000030d40000000000000000000000000000000000000000000000000000000000003d198000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 phase3=ok"
+        },
+        "set2_paused_liquidation": {
+          "a": 200000,
+          "b": 250700,
+          "c": 0,
+          "note": "phase2=ok liveMock=250700 frozenMid=200000 log=0x0000000000000000000000000000000000000000000000000000000000030d40000000000000000000000000000000000000000000000000000000000003d198000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 phase3=ok"
+        },
+        "open_probe_limit": "the synthetic open never reaches its success branch on this fixture (raw 0xf4d678b8 after the pause gate), so the open control is a differential revert reason, not a successful open"
+      },
+      "missing_observation": "an archive trace of a close or an open submitted while a market was paused, and the name of the raw 0xf4d678b8 open error",
+      "citations": [
+        "https://docs.papertrade.xyz/how/pricing-bbo",
+        "atlas/block_48902346/exchange_pause_pseudocode.md"
+      ]
+    }
+  ]
+}

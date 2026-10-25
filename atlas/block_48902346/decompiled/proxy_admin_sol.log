@@ -1,0 +1,7 @@
+[2m2026-10-18T21:32:14.357699Z[0m [33m WARN[0m calldata is not a standard size. if decoding fails, consider using the `--truncate-calldata` flag.
+[2m2026-10-18T21:32:14.357709Z[0m [33m WARN[0m couldn't find any resolved matches for '8f283970'
+[2m2026-10-18T21:32:14.357936Z[0m [33m WARN[0m calldata is not a standard size. if decoding fails, consider using the `--truncate-calldata` flag.
+[2m2026-10-18T21:32:14.357938Z[0m [33m WARN[0m couldn't find any resolved matches for '4f1ef286'
+[2m2026-10-18T21:32:14.358266Z[0m [33m WARN[0m calldata is not a standard size. if decoding fails, consider using the `--truncate-calldata` flag.
+[2m2026-10-18T21:32:14.358272Z[0m [33m WARN[0m couldn't find any resolved matches for '4f1ef286'
+

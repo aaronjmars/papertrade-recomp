@@ -1,0 +1,78 @@
+{
+  "method": "port-free exact-runtime replay of a constructed four-position set-2 close on the pinned mixed-close prestate (two real position templates from transaction 0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5, ids 1392206 and 1392921, with word0's address bits rewritten to a synthetic user), the set-2 Exchange implementation and linked library etched at the addresses the pinned prestate expects, and the SessionKeyManager implementation swapped between the pinned and the set-2 bytes",
+  "with_pinned_session_key_manager": {
+    "ok": false,
+    "revert_bytes": 100,
+    "write_slots": 0,
+    "slot39_candidate_hit": 0,
+    "slot_38_changed": false,
+    "slots": []
+  },
+  "with_set2_session_key_manager": {
+    "ok": true,
+    "revert_bytes": 0,
+    "write_slots": 12,
+    "slot39_candidate_hit": 0,
+    "slot_38_changed": false,
+    "slots": [
+      "bbc70db1b6c7afd11e79c0fb0051300458f1a3acb8ee9789d9b6b26c61ad9bc8",
+      "b7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+      "bff4442b8ed600beeb8e26b1279a0f0d14c6edfaec26d968ee13c86f7d4c2ba9",
+      "b7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+      "a856840544dc26124927add067d799967eac11be13e14d82cc281ea46fa3975a",
+      "b7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+      "e1eb2b2161a492c07c5a334e48012567cba93ec021043f53c1955516a3c5a842",
+      "b7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+      "0000000000000000000000000000000000000000000000000000000000000016",
+      "75799e60e4afdb6544e43ed6c0682f80920a44fabda9db26c7dc2c2e04f3ec42",
+      "0000000000000000000000000000000000000000000000000000000000000016",
+      "000000000000000000000000000000000000000000000000000000000000001a"
+    ]
+  },
+  "batch_with_pinned_session_key_manager": {
+    "outer_ok": true,
+    "return_bytes": 0,
+    "exchange_writes": 4,
+    "nonzero_writes": 4,
+    "positions_still_active": 2
+  },
+  "batch_with_set2_session_key_manager": {
+    "outer_ok": true,
+    "return_bytes": 0,
+    "exchange_writes": 22,
+    "nonzero_writes": 16,
+    "positions_still_active": 0
+  },
+  "failure_mode": "a direct close call with the pinned SessionKeyManager reverts with empty data (the failed verifier staticcall is bubbled), while the same close inside a BatchExecutor batch fails silently: the outer call succeeds and the two historical positions stay active, so the batch wrapper masks the inner failure rather than tolerating it",
+  "flag_byte_cleared": {
+    "ok": true,
+    "revert_bytes": 0,
+    "write_slots": 12,
+    "slots": [
+      "0000000000000000000000000000000000000000000000000000000000000016",
+      "0000000000000000000000000000000000000000000000000000000000000016",
+      "000000000000000000000000000000000000000000000000000000000000001a",
+      "75799e60e4afdb6544e43ed6c0682f80920a44fabda9db26c7dc2c2e04f3ec42",
+      "a856840544dc26124927add067d799967eac11be13e14d82cc281ea46fa3975a",
+      "b7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+      "b7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+      "b7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+      "b7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+      "bbc70db1b6c7afd11e79c0fb0051300458f1a3acb8ee9789d9b6b26c61ad9bc8",
+      "bff4442b8ed600beeb8e26b1279a0f0d14c6edfaec26d968ee13c86f7d4c2ba9",
+      "e1eb2b2161a492c07c5a334e48012567cba93ec021043f53c1955516a3c5a842"
+    ]
+  },
+  "flagged_write_set_identical": true,
+  "covered_selectors": [
+    "0x2792e706",
+    "0xd95208cd",
+    "0xb002b9fa",
+    "0x251fb27d"
+  ],
+  "limits": [
+    "The prestate is the pinned mixed-close prestate, not a set-2-era block.",
+    "The position templates are real and the signature is locally generated for the synthetic user.",
+    "No slot-39 candidate was credited, so the builder-fee credit key is still unobserved."
+  ]
+}

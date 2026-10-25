@@ -1,0 +1,56 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+  "error_selector": "0x58f03bf7",
+  "source_error_name_status": "unresolved",
+  "selector_behaviors": {
+    "0x1afd17e9": {
+      "entry": 15649,
+      "arguments": [
+        "uint32",
+        "bool",
+        "uint128",
+        "uint32"
+      ],
+      "canonical_calldata_bytes": 132,
+      "revert_pc": 15719,
+      "source_name_status": "unresolved",
+      "behavior": "canonical nonpayable calldata passes ABI validation and then reverts with 0x58f03bf7; no storage read, write, log, or external call on this path"
+    },
+    "0x63ca348f": {
+      "entry": 9342,
+      "arguments": [
+        "uint32",
+        "bool",
+        "uint128",
+        "uint32",
+        "bool"
+      ],
+      "canonical_calldata_bytes": 164,
+      "revert_pc": 9424,
+      "source_name_status": "unresolved",
+      "behavior": "canonical nonpayable calldata passes ABI validation and then reverts with 0x58f03bf7; no storage read, write, log, or external call on this path"
+    },
+    "0x58d3ec6a": {
+      "entry": 10209,
+      "arguments": [
+        "uint256[]"
+      ],
+      "canonical_empty_array_calldata_bytes": 68,
+      "revert_pc": 10277,
+      "source_name_status": "hash-matching candidate only",
+      "public_signature_candidate": "close(uint256[])",
+      "behavior": "canonical nonpayable calldata passes ABI validation and then reverts with 0x58f03bf7; no storage read, write, log, or external call on this path"
+    }
+  },
+  "bytecode_evidence": "runtime dispatcher, function entry, ABI validator, and fixed revert instruction offsets checked by atlas_exchange_disabled_paths.py",
+  "local_replay_evidence": "../../artifacts/fixed_revert_local/replay.json",
+  "limits": [
+    "No archived dynamic probe was captured; a port-free local EVM replay exercises canonical calls through the exact pinned proxy and implementation bytecode.",
+    "Invalid ABI words or nonzero msg.value revert through the generic empty-data path.",
+    "The original function and error names remain unknown."
+  ]
+}

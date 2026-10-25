@@ -1,0 +1,86 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "selector_reconstructions": {
+    "0xdc8a47ef": "instruments(uint32)"
+  },
+  "mapping_base_slot": 7,
+  "sample_count": 3,
+  "return_word_count": 8,
+  "field_extraction": [
+    "slot0 low96",
+    "slot0 bits96..191",
+    "slot0 bits192..223",
+    "slot0 bits224..255",
+    "slot1 low120",
+    "slot1 bits120..183",
+    "slot1 bits184..255",
+    "slot2 sampled full word"
+  ],
+  "samples": [
+    {
+      "instrument_id": 0,
+      "mapping_root": "0x6d5257204ebe7d88fd91ae87941cb2dd9d8062b64ae5a2bd2d28ec40b9fbf6df",
+      "storage_words": [
+        "0x000003e8000000000000002c28d1751327a700000000032d26d12e980b600000",
+        "0x00016345785d8a00000001b0f51147891600000000084595161401484a000000",
+        "0x00000000000000000000000000000000000000000000152d02c7e14af6800000"
+      ],
+      "returned_fields": [
+        15000000000000000000000,
+        814598000000000000000,
+        0,
+        1000,
+        10000000000000000000000000,
+        476041580087574,
+        100000000000000000,
+        100000000000000000000000
+      ]
+    },
+    {
+      "instrument_id": 1,
+      "mapping_root": "0xb39221ace053465ec3453ce2b36430bd138b997ecea25c1043da0c366812b828",
+      "storage_words": [
+        "0x000003e8000000010000001a3c8ed044f4c780000000032d26d12e980b600000",
+        "0x00016345785d8a00000001b5be54f0a02200000000084595161401484a000000",
+        "0x00000000000000000000000000000000000000000000152d02c7e14af6800000"
+      ],
+      "returned_fields": [
+        15000000000000000000000,
+        483979000000000000000,
+        1,
+        1000,
+        10000000000000000000000000,
+        481304050180130,
+        100000000000000000,
+        100000000000000000000000
+      ]
+    },
+    {
+      "instrument_id": 2,
+      "mapping_root": "0xb7c774451310d1be4108bc180d1b52823cb0ee0274a6c0081bcaf94f115fb96d",
+      "storage_words": [
+        "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "0x0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "returned_fields": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "limits": [
+    "The sampled third storage word has zero high bits, so its declared source integer width is unresolved.",
+    "The business meaning of each returned field is not established by this getter check.",
+    "Instrument IDs 0 and 1 are live; ID 2 returned an all-zero tuple at the pin."
+  ]
+}

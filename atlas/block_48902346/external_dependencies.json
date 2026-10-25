@@ -1,0 +1,39 @@
+{
+  "chain_id": 999,
+  "pin": 48902346,
+  "dependencies": [
+    {
+      "address": "0x3721476de31190dc1af8908026abe20efe25cf99",
+      "referenced_as": "marketKeeper",
+      "runtime_bytes": 0
+    },
+    {
+      "address": "0x00000000000000000035b5849a35d618f5b00800",
+      "referenced_as": "treasury",
+      "runtime_bytes": 0
+    },
+    {
+      "address": "0xe9686c8e11d80c8d78736485fcb6b6d7f4d7692e",
+      "referenced_as": "signerTwo",
+      "runtime_bytes": 0
+    },
+    {
+      "address": "0xaa7577a7a27aa7fcf6d0ec481b87df3ad0f6a88e",
+      "referenced_as": "signerOne",
+      "runtime_bytes": 0
+    },
+    {
+      "address": "0xdf1bda875c9393a663ce69bf6a7fbaa73dfd053d",
+      "referenced_as": "authorizedDeployer",
+      "runtime_bytes": 0
+    },
+    {
+      "address": "0x6b9e773128f453f5c2c60935ee2de2cbc5390a24",
+      "referenced_as": "staking_rewardToken",
+      "runtime_bytes": 2175,
+      "eip1967_implementation": "0x7537af00779cc053a696e47ebd451b5bc4790da3",
+      "implementation_runtime_bytes": 17936,
+      "classification": "external HyperCore token bridge proxy candidate based on implementation selectors"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "method": "port-free Forge EVM with exact pinned proxy and implementation runtimes and EIP-1967 slot set locally",
+  "runtime_hashes": {
+    "proxy": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "implementation": "ed9d18151a9365c347ac7a9da7e83b53ecedac235d9e67c4b2699503a6bd4a97"
+  },
+  "test_source_sha256": "42c2420f6e679c84c5d3de1a9a0a526acf157188bf704d42e1ab5585eb3fd8a0",
+  "forge_result": "1 passed, 0 failed",
+  "getters_checked": 3,
+  "storage_cases": [
+    {
+      "slot5": 7,
+      "slot6": 11
+    },
+    {
+      "slot5": 17,
+      "slot6": 29
+    }
+  ],
+  "canonical_call_count": 6
+}

@@ -1,0 +1,84 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "historical_block": 48902111,
+  "historical_block_hash": "0xc40b029567b4d75d70ba91f52e918abf8ecd53fb65f6704e31cda535b96c1640",
+  "original_calldata_sha256": "06825987d2e093d143f5cfde335f2ed45a73b951a62005dbc5996b32e17beae6",
+  "source_sha256": "75d12dee144759b8cf6a240f094cb939137d7f8c2a1920ef672615fa6d23091f",
+  "runtime_sha256": {
+    "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+    "0x233ff29b239abc1d7748605da9b205c3e008626e": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a": "8e452a76ac1b28c05d220451d837c3758bd41180526940752f89047bc0dd22ed",
+    "0x6cd5661646289fb6e65ea5c032310fded797d0a2": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "0x8326eb8896e358717f10502ec73ce8d28e37b108": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "0x8a5069fe303e8f81e91825436e956d595032e558": "630c02b0c693c47760554a3f0fed68b72db5df601f887d2edaaa3106e6308e63",
+    "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262": "480375f798fccf20fd79fd4fedefdd3377dd44af4dd559a3310a87c5bc048ae8"
+  },
+  "mutations": [
+    {
+      "field": "user",
+      "word_index": 0,
+      "replacement": "1293190244282312904511849237246844840171780601388"
+    },
+    {
+      "field": "instrument",
+      "word_index": 1,
+      "replacement": "1"
+    },
+    {
+      "field": "side",
+      "word_index": 2,
+      "replacement": "1"
+    },
+    {
+      "field": "size",
+      "word_index": 3,
+      "replacement": "300000000000000000001"
+    },
+    {
+      "field": "leverage",
+      "word_index": 4,
+      "replacement": "21"
+    },
+    {
+      "field": "useDebt",
+      "word_index": 5,
+      "replacement": "1"
+    },
+    {
+      "field": "nonce",
+      "word_index": 6,
+      "replacement": "1735912713"
+    },
+    {
+      "field": "deadline",
+      "word_index": 7,
+      "replacement": "1792357116"
+    }
+  ],
+  "raw_error": "0xc5045f22",
+  "replay_error": "0x756688fe",
+  "copied_original_key_control": "rejected",
+  "forge_result": "11 passed, 0 failed",
+  "test_names": [
+    "testMutateDeadline",
+    "testMutateInstrument",
+    "testMutateLeverage",
+    "testMutateNonce",
+    "testMutateSide",
+    "testMutateSize",
+    "testMutateUseDebt",
+    "testMutateUser",
+    "testMutateUserWithCopiedOriginalKey",
+    "testOriginalDirectOpen",
+    "testOriginalReplayRejectedNextBlock"
+  ],
+  "limits": [
+    "One historical signed open and its archived transaction prestate are tested.",
+    "The local BBO precompile returns the response observed in the original trace.",
+    "Changing one ABI word tests these inputs only; other signature encodings and business states remain open.",
+    "The changed-user case reads an uncaptured session-key mapping; a separate local override copies the original signer authorization to isolate the changed digest.",
+    "The copied authorization is a local storage override, not a historical registration transaction."
+  ]
+}

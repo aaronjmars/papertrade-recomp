@@ -1,0 +1,89 @@
+{
+  "hash": "0xd4ee56dd5d1e271b8fc142e340362d3ab1eede92a9810ab33de4d90a9f798257",
+  "block": 48902092,
+  "status": 1,
+  "calls": [
+    {
+      "depth": 0,
+      "type": "CALL",
+      "from": "0xdf1bda875c9393a663ce69bf6a7fbaa73dfd053d",
+      "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "selector": "0xe0189108",
+      "gas_used": "0x1c404",
+      "error": null
+    },
+    {
+      "depth": 1,
+      "type": "DELEGATECALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xe0189108",
+      "gas_used": "0x15cdc",
+      "error": null
+    },
+    {
+      "depth": 2,
+      "type": "STATICCALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+      "selector": "0xc1a9a508",
+      "gas_used": "0x1d5b",
+      "error": null
+    },
+    {
+      "depth": 3,
+      "type": "DELEGATECALL",
+      "from": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+      "to": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "selector": "0xc1a9a508",
+      "gas_used": "0x9e8",
+      "error": null
+    },
+    {
+      "depth": 2,
+      "type": "STATICCALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0x0000000000000000000000000000000000000801",
+      "selector": "0x00000000",
+      "gas_used": "0x1888",
+      "error": null
+    },
+    {
+      "depth": 2,
+      "type": "STATICCALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0x0000000000000000000000000000000000000803",
+      "selector": "0x00000000",
+      "gas_used": "0xc28",
+      "error": null
+    },
+    {
+      "depth": 2,
+      "type": "CALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0x2e38ce35e63bfae2a85bf6db885ffcedaa76e18e",
+      "selector": "0x925b3aad",
+      "gas_used": "0x776f",
+      "error": null
+    },
+    {
+      "depth": 3,
+      "type": "CALL",
+      "from": "0x2e38ce35e63bfae2a85bf6db885ffcedaa76e18e",
+      "to": "0x3333333333333333333333333333333333333333",
+      "selector": "0x17938e13",
+      "gas_used": "0x6569",
+      "error": null
+    }
+  ],
+  "logs": [
+    {
+      "address": "0x3333333333333333333333333333333333333333",
+      "topic0": "0x8c7f585fb295f7eb1e6aeb8fba61b23a4fe60beda405f0045073b185c74412e3"
+    },
+    {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "topic0": "0x02d61879cd72906e0951e3a96096407dd2b1f2cd2d063dae983bb20216cf3025"
+    }
+  ]
+}

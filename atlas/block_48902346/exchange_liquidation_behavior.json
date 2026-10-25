@@ -1,0 +1,75 @@
+{
+  "pin_block": 48902346,
+  "pin_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "selector_reconstructions": {
+    "0x415f1240": "liquidate(uint256)"
+  },
+  "signature_evidence": "Exact hash, pinned public ABI fixture, and saved local execution",
+  "sampled_active_positions": 4,
+  "price_boundaries": [
+    {
+      "position_id": 1394473,
+      "side": "long",
+      "entry_price": 809525,
+      "leverage": 100,
+      "last_success_price": 801811,
+      "first_success_price": null,
+      "adjacent_failed_price": 801812
+    },
+    {
+      "position_id": 1394058,
+      "side": "long",
+      "entry_price": 235015,
+      "leverage": 50,
+      "last_success_price": 230425,
+      "first_success_price": null,
+      "adjacent_failed_price": 230426
+    },
+    {
+      "position_id": 1394062,
+      "side": "long",
+      "entry_price": 809325,
+      "leverage": 100,
+      "last_success_price": 801613,
+      "first_success_price": null,
+      "adjacent_failed_price": 801614
+    },
+    {
+      "position_id": 1394060,
+      "side": "short",
+      "entry_price": 235015,
+      "leverage": 33,
+      "last_success_price": null,
+      "first_success_price": 242020,
+      "adjacent_failed_price": 242019
+    }
+  ],
+  "single_batch_same_storage_changes": true,
+  "single_batch_same_logs_except_batch_summary": true,
+  "simulated_error_catalog": [
+    {
+      "selector": "0xddeb79ba",
+      "reconstructed_signature": "NotLiquidatable()",
+      "probe_paths": [
+        "price_boundary_1394473",
+        "price_boundary_1394058",
+        "price_boundary_1394062",
+        "price_boundary_1394060"
+      ]
+    },
+    {
+      "selector": "0x94e88a21",
+      "reconstructed_signature": "PositionNotOpen()",
+      "probe_paths": [
+        "inactive_id_zero"
+      ]
+    }
+  ],
+  "limits": [
+    "The public HyperEVM RPC and archive RPC disagree on one active flag at the same block hash; only the archive-backed fork is used for behavior probes.",
+    "Prices are synthetic read-precompile outputs, so successful calls are simulations and do not prove live liquidation eligibility.",
+    "Four active sampled positions and one inactive ID do not establish all liquidation formulas or branches."
+  ]
+}

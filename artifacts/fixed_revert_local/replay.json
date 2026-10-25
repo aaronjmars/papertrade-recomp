@@ -1,0 +1,70 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "method": "port-free Forge in-process EVM; exact pinned proxy and implementation bytecode injected with vm.etch; EIP-1967 implementation slots set with vm.store; local solc and offline mode",
+  "runtime_hashes": {
+    "ExchangeProxy": {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+    },
+    "ExchangeImplementation": {
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1"
+    },
+    "SessionProxy": {
+      "address": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+    },
+    "SessionImplementation": {
+      "address": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "sha256": "630c02b0c693c47760554a3f0fed68b72db5df601f887d2edaaa3106e6308e63"
+    },
+    "StakingProxy": {
+      "address": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+    },
+    "StakingImplementation": {
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "sha256": "3e006d0daee1fcbaa71c160a72291374783da5f720a33db0a51c8f84bde3aa04"
+    },
+    "TokenomicsProxy": {
+      "address": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+    },
+    "TokenomicsImplementation": {
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "sha256": "ed9d18151a9365c347ac7a9da7e83b53ecedac235d9e67c4b2699503a6bd4a97"
+    }
+  },
+  "test_names": [
+    "testExchangeDirectClose",
+    "testExchangeFiveArg",
+    "testExchangeFourArg",
+    "testExchangeUnpause",
+    "testSessionThreeArg",
+    "testStakingClaim",
+    "testStakingDistribute",
+    "testStakingStake",
+    "testStakingUnstake",
+    "testTokenomicsQuoteRedemption",
+    "testTokenomicsRedeem",
+    "testTokenomicsSevenWord"
+  ],
+  "canonical_call_count": 24,
+  "expected_revert_selectors": {
+    "0xfb9f1009": "0xd9d193d3",
+    "0x1afd17e9": "0x58f03bf7",
+    "0x63ca348f": "0x58f03bf7",
+    "0x58d3ec6a": "0x58f03bf7",
+    "0x17a1678f": "0xd2dd8531",
+    "0xa694fc3a": "0xa15ce1ba",
+    "0x2e17de78": "0xa15ce1ba",
+    "0x4e71d92d": "0xa15ce1ba",
+    "0xe4fc6b6d": "0xa15ce1ba",
+    "0xfe16eae8": "0x32aa90b0",
+    "0xdb006a75": "0x32aa90b0",
+    "0x7c7df7b4": "0x32aa90b0"
+  },
+  "forge_result": "12 passed, 0 failed",
+  "test_source_sha256": "0d7b07388313a9326ddd8ce244216d376624b65627de11d692dc9cd81186d660"
+}

@@ -1,0 +1,63 @@
+{
+  "archive_log_counts": {
+    "live": 10,
+    "pinned": 17
+  },
+  "archive_matched": {
+    "testLiveReplayMatchesArchive": false,
+    "testPinnedReplayMatchesArchive": true,
+    "testRecoveryReplayMatchesArchive": false
+  },
+  "candidate_code_sha256": "a20ee31db1ffff1103c01d967f1b44fdcff84d7d023b389cc1784bb0e4579a6f",
+  "candidate_implementation": "0x560611d19c93fbcd3200557658a6f83c48b200ad",
+  "forge_result": "2 passed, 0 failed",
+  "historical_block": 48901631,
+  "historical_block_hash": "0xc4ee9b9a002b0f2d7d3ad686ef129f8c6196edd477b3fb3f4e3937e9560d9ae9",
+  "limits": [
+    "The candidate and the live implementation are installed counterfactually at the historical block.",
+    "The HyperCore precompiles return their observed archived responses.",
+    "The prestate tracer captures storage accessed by this transaction, not all historical state.",
+    "One mixed transaction does not establish all trading paths, upgrade safety, or Core settlement.",
+    "The archive reference describes the pinned implementation; a live mismatch is a live-set change, not a candidate defect."
+  ],
+  "live_implementation": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+  "mocked_precompile_outputs": {
+    "0801": "0x000000000000000000000000000000000000000000000000001720c7e484292200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "080e": "0x00000000000000000000000000000000000000000000000000000000000c560200000000000000000000000000000000000000000000000000000000000c560c",
+    "0810": "0x0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "pinned_implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "post_storage_words_matched_each": 26,
+  "prestate_sha256": "04c4c1c4efee82a03c156c3f41801bace2970370404d2bef2c9839eaa889fcde",
+  "receipt_logs_matched_each": 17,
+  "relaxed_rerun": true,
+  "replay_tests": {
+    "testLiveAndRecoveryReplayAgree": true,
+    "testPinnedReplayMatchesArchive": true
+  },
+  "runtime_sha256": {
+    "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723": "fc7374f3969381160732fe98c5e3145e00c3f167f168d61d65bb4972e9a6b268",
+    "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+    "0x233ff29b239abc1d7748605da9b205c3e008626e": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "0x3333333333333333333333333333333333333333": "fd053fae53aa5ff797c8de9d38f5180d3c280228ae2d669ef9a83ab7834dac83",
+    "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a": "8e452a76ac1b28c05d220451d837c3758bd41180526940752f89047bc0dd22ed",
+    "0x433bd418ec92818a960585f4d5fae563e735bb4a": "f77b91537421a0092f1c068f85af316caf7fd8d8461e8b0305022ee6f5f0faae",
+    "0x560611d19c93fbcd3200557658a6f83c48b200ad": "a20ee31db1ffff1103c01d967f1b44fdcff84d7d023b389cc1784bb0e4579a6f",
+    "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f": "ed9d18151a9365c347ac7a9da7e83b53ecedac235d9e67c4b2699503a6bd4a97",
+    "0x6cd5661646289fb6e65ea5c032310fded797d0a2": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "0x75174549dbbd44497d31a47e2e2d7406408d63d9": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "0x8326eb8896e358717f10502ec73ce8d28e37b108": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "0x8a5069fe303e8f81e91825436e956d595032e558": "630c02b0c693c47760554a3f0fed68b72db5df601f887d2edaaa3106e6308e63",
+    "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "0xcd617f984158a4f5d287ddee0e8eb0fed204916d": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2",
+    "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262": "480375f798fccf20fd79fd4fedefdd3377dd44af4dd559a3310a87c5bc048ae8",
+    "0xe40f17915daa230324030003a197cdaef2261c0e": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15": "3e006d0daee1fcbaa71c160a72291374783da5f720a33db0a51c8f84bde3aa04",
+    "0xe991817199363046da0a28da6fbad0284e4aa492": "8f1de6ca76cfd6f0186e9f4472dd53fab6dfa1a53a7c3a2a3700d641fec7c5da"
+  },
+  "source_sha256": "0665910e1a1dfa1b5da233ad564de27c0595f24349479738136d1b31c84b6451",
+  "source_transaction": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+  "strict_candidate_archive": false,
+  "strict_live_archive": false
+}

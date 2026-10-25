@@ -1,0 +1,390 @@
+{
+  "tx": "0x40dfc149333b3ea102864ca92e03c7d7ee6ccdb823460391e794d3b12639c16c",
+  "steps": 14403,
+  "rows": [
+    {
+      "index": 3377,
+      "pc": "0xa0e",
+      "op": "KECCAK256",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0xc58b9",
+        "0x0",
+        "0xaabb2a7f13f0994d377e63044277f2597ead5500",
+        "0x1bd",
+        "0x1bb93c3e642f868f",
+        "0x40",
+        "0x0"
+      ]
+    },
+    {
+      "index": 3385,
+      "pc": "0xeb6",
+      "op": "JUMPDEST",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0xc58b9",
+        "0x0",
+        "0xaabb2a7f13f0994d377e63044277f2597ead5500",
+        "0x1bd",
+        "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "0x1bb93c3e642f868f"
+      ]
+    },
+    {
+      "index": 3387,
+      "pc": "0xeb8",
+      "op": "SLOAD",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0xc58b9",
+        "0x0",
+        "0xaabb2a7f13f0994d377e63044277f2597ead5500",
+        "0x1bd",
+        "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "0x1bb93c3e642f868f",
+        "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad"
+      ]
+    },
+    {
+      "index": 3427,
+      "pc": "0xed5",
+      "op": "SLOAD",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0xc58b9",
+        "0x0",
+        "0xaabb2a7f13f0994d377e63044277f2597ead5500",
+        "0x1bd",
+        "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "0x6bbbbb59e6b4d0e2f5",
+        "0xffffffffffffffffffffffff",
+        "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ae"
+      ]
+    },
+    {
+      "index": 3433,
+      "pc": "0xedc",
+      "op": "GT",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0xc58b9",
+        "0x0",
+        "0xaabb2a7f13f0994d377e63044277f2597ead5500",
+        "0x1bd",
+        "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "0x6bbbbb59e6b4d0e2f5",
+        "0x6ba0931c60c565b97c",
+        "0x6bbbbb59e6b4d0e2f5"
+      ]
+    },
+    {
+      "index": 3436,
+      "pc": "0xea4",
+      "op": "JUMPDEST",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0xc58b9",
+        "0x0",
+        "0xaabb2a7f13f0994d377e63044277f2597ead5500",
+        "0x1bd",
+        "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "0x6bbbbb59e6b4d0e2f5"
+      ]
+    },
+    {
+      "index": 6719,
+      "pc": "0xa0e",
+      "op": "KECCAK256",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0xc58b9",
+        "0x0",
+        "0x3dc457740ea42d6e966e3ff93d26516c55d29936",
+        "0x1bd",
+        "0x1126b7ed1a5c5ec4",
+        "0x40",
+        "0x0"
+      ]
+    },
+    {
+      "index": 6727,
+      "pc": "0xeb6",
+      "op": "JUMPDEST",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0xc58b9",
+        "0x0",
+        "0x3dc457740ea42d6e966e3ff93d26516c55d29936",
+        "0x1bd",
+        "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "0x1126b7ed1a5c5ec4"
+      ]
+    },
+    {
+      "index": 6729,
+      "pc": "0xeb8",
+      "op": "SLOAD",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0xc58b9",
+        "0x0",
+        "0x3dc457740ea42d6e966e3ff93d26516c55d29936",
+        "0x1bd",
+        "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "0x1126b7ed1a5c5ec4",
+        "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad"
+      ]
+    },
+    {
+      "index": 6769,
+      "pc": "0xed5",
+      "op": "SLOAD",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0xc58b9",
+        "0x0",
+        "0x3dc457740ea42d6e966e3ff93d26516c55d29936",
+        "0x1bd",
+        "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "0x6bb128d5956afdbb2a",
+        "0xffffffffffffffffffffffff",
+        "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ae"
+      ]
+    },
+    {
+      "index": 6775,
+      "pc": "0xedc",
+      "op": "GT",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0xc58b9",
+        "0x0",
+        "0x3dc457740ea42d6e966e3ff93d26516c55d29936",
+        "0x1bd",
+        "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "0x6bb128d5956afdbb2a",
+        "0x6ba0931c60c565b97c",
+        "0x6bb128d5956afdbb2a"
+      ]
+    },
+    {
+      "index": 6778,
+      "pc": "0xea4",
+      "op": "JUMPDEST",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0xc58b9",
+        "0x0",
+        "0x3dc457740ea42d6e966e3ff93d26516c55d29936",
+        "0x1bd",
+        "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "0x6bb128d5956afdbb2a"
+      ]
+    },
+    {
+      "index": 10084,
+      "pc": "0xa0e",
+      "op": "KECCAK256",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0xc58b9",
+        "0x0",
+        "0xe5474819bbbc082e4de0e15e57b1c95f8fda0152",
+        "0x1bd",
+        "0xf43b94af48e5bd1",
+        "0x40",
+        "0x0"
+      ]
+    },
+    {
+      "index": 10092,
+      "pc": "0xeb6",
+      "op": "JUMPDEST",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0xc58b9",
+        "0x0",
+        "0xe5474819bbbc082e4de0e15e57b1c95f8fda0152",
+        "0x1bd",
+        "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "0xf43b94af48e5bd1"
+      ]
+    },
+    {
+      "index": 10094,
+      "pc": "0xeb8",
+      "op": "SLOAD",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0xc58b9",
+        "0x0",
+        "0xe5474819bbbc082e4de0e15e57b1c95f8fda0152",
+        "0x1bd",
+        "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "0xf43b94af48e5bd1",
+        "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad"
+      ]
+    },
+    {
+      "index": 10134,
+      "pc": "0xed5",
+      "op": "SLOAD",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0xc58b9",
+        "0x0",
+        "0xe5474819bbbc082e4de0e15e57b1c95f8fda0152",
+        "0x1bd",
+        "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "0x6baf45d6f3452fb837",
+        "0xffffffffffffffffffffffff",
+        "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ae"
+      ]
+    },
+    {
+      "index": 10140,
+      "pc": "0xedc",
+      "op": "GT",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0xc58b9",
+        "0x0",
+        "0xe5474819bbbc082e4de0e15e57b1c95f8fda0152",
+        "0x1bd",
+        "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "0x6baf45d6f3452fb837",
+        "0x6ba0931c60c565b97c",
+        "0x6baf45d6f3452fb837"
+      ]
+    },
+    {
+      "index": 10143,
+      "pc": "0xea4",
+      "op": "JUMPDEST",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0xc58b9",
+        "0x0",
+        "0xe5474819bbbc082e4de0e15e57b1c95f8fda0152",
+        "0x1bd",
+        "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+        "0x6baf45d6f3452fb837"
+      ]
+    },
+    {
+      "index": 13418,
+      "pc": "0xa0e",
+      "op": "KECCAK256",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0x3958f",
+        "0x1",
+        "0xdae0424fd265b683ef1a2525aceba37d001565b7",
+        "0x358",
+        "0x5b081eafa4531014",
+        "0x40",
+        "0x0"
+      ]
+    },
+    {
+      "index": 13426,
+      "pc": "0xeb6",
+      "op": "JUMPDEST",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0x3958f",
+        "0x1",
+        "0xdae0424fd265b683ef1a2525aceba37d001565b7",
+        "0x358",
+        "0xbbbb3b1da0cb0951f34c5e9db4606f934b7367b5284f29163e9e6fe67e1e97d6",
+        "0x5b081eafa4531014"
+      ]
+    },
+    {
+      "index": 13428,
+      "pc": "0xeb8",
+      "op": "SLOAD",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0x3958f",
+        "0x1",
+        "0xdae0424fd265b683ef1a2525aceba37d001565b7",
+        "0x358",
+        "0xbbbb3b1da0cb0951f34c5e9db4606f934b7367b5284f29163e9e6fe67e1e97d6",
+        "0x5b081eafa4531014",
+        "0xbbbb3b1da0cb0951f34c5e9db4606f934b7367b5284f29163e9e6fe67e1e97d6"
+      ]
+    },
+    {
+      "index": 13468,
+      "pc": "0xed5",
+      "op": "SLOAD",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0x3958f",
+        "0x1",
+        "0xdae0424fd265b683ef1a2525aceba37d001565b7",
+        "0x358",
+        "0xbbbb3b1da0cb0951f34c5e9db4606f934b7367b5284f29163e9e6fe67e1e97d6",
+        "0x63cc7f7c8dd948f5fd7",
+        "0xffffffffffffffffffffffff",
+        "0xbbbb3b1da0cb0951f34c5e9db4606f934b7367b5284f29163e9e6fe67e1e97d7"
+      ]
+    },
+    {
+      "index": 13474,
+      "pc": "0xedc",
+      "op": "GT",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0x3958f",
+        "0x1",
+        "0xdae0424fd265b683ef1a2525aceba37d001565b7",
+        "0x358",
+        "0xbbbb3b1da0cb0951f34c5e9db4606f934b7367b5284f29163e9e6fe67e1e97d6",
+        "0x63cc7f7c8dd948f5fd7",
+        "0x6a19b69d786fab783ee",
+        "0x63cc7f7c8dd948f5fd7"
+      ]
+    },
+    {
+      "index": 13477,
+      "pc": "0xee1",
+      "op": "PUSH2",
+      "depth": 4,
+      "stack": [
+        "0x0",
+        "0x3958f",
+        "0x1",
+        "0xdae0424fd265b683ef1a2525aceba37d001565b7",
+        "0x358",
+        "0xbbbb3b1da0cb0951f34c5e9db4606f934b7367b5284f29163e9e6fe67e1e97d6",
+        "0x63cc7f7c8dd948f5fd7"
+      ]
+    }
+  ]
+}

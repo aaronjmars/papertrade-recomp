@@ -1,0 +1,117 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "runtime_hashes": {
+    "Proxy": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "Implementation": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+    "Library": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2"
+  },
+  "merge_replay": "../exchange_library_queue_merge_local/replay.json",
+  "test_names": [
+    "testQueueHarvestAfterMergeForwardThreeLimitFour",
+    "testQueueHarvestAfterMergeForwardThreeLimitOne",
+    "testQueueHarvestAfterMergeForwardThreeLimitThree",
+    "testQueueHarvestAfterMergeForwardThreeLimitTwo",
+    "testQueueHarvestAfterMergeForwardThreeNoFunding",
+    "testQueueHarvestAfterMergeForwardThreePartialFunding",
+    "testQueueHarvestAfterMergeForwardTwoLimitOne",
+    "testQueueHarvestAfterMergeForwardTwoLimitThree",
+    "testQueueHarvestAfterMergeForwardTwoLimitTwo",
+    "testQueueHarvestAfterMergeReverseThreeLimitOne",
+    "testQueueHarvestAfterMergeReverseTwoLimitOne"
+  ],
+  "forge_result": "11 passed, 0 failed",
+  "test_source_sha256": "0f7fd444ddcf534853f9965f71d7c120018bcac58c9f07df26345eadbe6f33de",
+  "cases": [
+    {
+      "direction": "forward",
+      "nodes": 2,
+      "harvest_limit": 1,
+      "paid": 0,
+      "global_head": 102
+    },
+    {
+      "direction": "forward",
+      "nodes": 2,
+      "harvest_limit": 2,
+      "paid": 1000,
+      "global_head": 103
+    },
+    {
+      "direction": "forward",
+      "nodes": 2,
+      "harvest_limit": 3,
+      "paid": 1000,
+      "global_head": 103
+    },
+    {
+      "direction": "reverse",
+      "nodes": 2,
+      "harvest_limit": 1,
+      "paid": 1000,
+      "global_head": 103
+    },
+    {
+      "direction": "forward",
+      "nodes": 3,
+      "harvest_limit": 1,
+      "paid": 0,
+      "global_head": 102
+    },
+    {
+      "direction": "forward",
+      "nodes": 3,
+      "harvest_limit": 2,
+      "paid": 0,
+      "global_head": 103
+    },
+    {
+      "direction": "forward",
+      "nodes": 3,
+      "harvest_limit": 3,
+      "paid": 2100,
+      "global_head": 104
+    },
+    {
+      "direction": "forward",
+      "nodes": 3,
+      "harvest_limit": 4,
+      "paid": 2100,
+      "global_head": 104
+    },
+    {
+      "direction": "reverse",
+      "nodes": 3,
+      "harvest_limit": 1,
+      "paid": 2100,
+      "global_head": 104
+    },
+    {
+      "direction": "forward",
+      "nodes": 3,
+      "harvest_limit": 3,
+      "treasury_funds": 0,
+      "paid": 0,
+      "global_head": 101,
+      "remaining_queued": 2100,
+      "writes": 0
+    },
+    {
+      "direction": "forward",
+      "nodes": 3,
+      "harvest_limit": 3,
+      "treasury_funds": 1000,
+      "paid": 1000,
+      "global_head": 103,
+      "remaining_queued": 1100,
+      "writes": 6
+    }
+  ],
+  "checked_storage": "Global head/next ID/total, user queued total/head/tail/balance, and all three node amounts",
+  "checked_events": "One exact Harvested log on payout, no harvest logs on empty-node-only limits",
+  "limits": [
+    "Synthetic one-user two- and three-node queues with 10000 treasury units and zero other reserves.",
+    "Local exact-runtime replays, not historical transactions or proof of all queue shapes.",
+    "Other users interleaved in the global queue, concurrent enqueues, and longer merged ranges remain untested."
+  ]
+}

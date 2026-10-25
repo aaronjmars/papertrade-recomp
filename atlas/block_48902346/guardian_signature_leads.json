@@ -1,0 +1,787 @@
+{
+  "report_url": "https://guardian.security/portfolio/papertrade/protocol-review-2026-10-09/",
+  "report_sha256": "74d71e8a4f71ed0b914c574fbbdf8e29176084605a2bb47736ef045c37b7d4a5",
+  "candidate_name_count": 524,
+  "active_selector_match_count": 86,
+  "matches": [
+    {
+      "role": "batch_executor_implementation",
+      "address": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "selector": "0x0b826190",
+      "signature": "sessionKeyManager()",
+      "arguments": "",
+      "name_in_code": false,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "batch_executor_implementation",
+      "address": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "selector": "0x251fb27d",
+      "signature": "execute((address,bytes,bool,bytes32,bytes32)[])",
+      "arguments": "(address,bytes,bool,bytes32,bytes32)[]",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "batch_executor_implementation",
+      "address": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "selector": "0xc0c53b8b",
+      "signature": "initialize(address,address,address)",
+      "arguments": "address,address,address",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "batch_executor_implementation",
+      "address": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "selector": "0xd2f7265a",
+      "signature": "exchange()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "deposit_proxy_factory_implementation",
+      "address": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "selector": "0xc1a9a508",
+      "signature": "proxyOf(address)",
+      "arguments": "address",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "deposit_proxy_factory_implementation",
+      "address": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "selector": "0xc4d66de8",
+      "signature": "initialize(address)",
+      "arguments": "address",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "deposit_proxy_factory_implementation",
+      "address": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "selector": "0xcbd433f4",
+      "signature": "deployProxy(address)",
+      "arguments": "address",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "deposit_proxy_factory_implementation",
+      "address": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "selector": "0xd2f7265a",
+      "signature": "exchange()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "deposit_proxy_factory_implementation",
+      "address": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "selector": "0xd600539a",
+      "signature": "computeProxyAddress(address)",
+      "arguments": "address",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x01ad056f",
+      "signature": "totalLockedMargin()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x0b826190",
+      "signature": "sessionKeyManager()",
+      "arguments": "",
+      "name_in_code": false,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x0cdd5fc4",
+      "signature": "lpBankrollAvailable()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x138e9de2",
+      "signature": "queueHarvestAvailable()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x18715c9a",
+      "signature": "stakerLpExcessToDistribute()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x1afd17e9",
+      "signature": "openPosition(uint32,bool,uint128,uint32)",
+      "arguments": "uint32,bool,uint128,uint32",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x24a3d622",
+      "signature": "pauseGuardian()",
+      "arguments": "",
+      "name_in_code": false,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x2792e706",
+      "signature": "closeBySig(address,uint256[],uint256,uint64,uint8,bytes32,bytes32)",
+      "arguments": "address,uint256[],uint256,uint64,uint8,bytes32,bytes32",
+      "name_in_code": false,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x27e235e3",
+      "signature": "balances(address)",
+      "arguments": "address",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x2d2451d1",
+      "signature": "pauseMarket(uint32)",
+      "arguments": "uint32",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x3a21be03",
+      "signature": "userQueueTail(address)",
+      "arguments": "address",
+      "name_in_code": false,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x415f1240",
+      "signature": "liquidate(uint256)",
+      "arguments": "uint256",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x48ee5e08",
+      "signature": "winFeeRate()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x53ac4b66",
+      "signature": "totalQueued()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x53e23e2e",
+      "signature": "tradingPaused()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x58d3ec6a",
+      "signature": "close(uint256[])",
+      "arguments": "uint256[]",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x599dc539",
+      "signature": "liquidateBatch(uint256[])",
+      "arguments": "uint256[]",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x61d027b3",
+      "signature": "treasury()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x63ca348f",
+      "signature": "openPosition(uint32,bool,uint128,uint32,bool)",
+      "arguments": "uint32,bool,uint128,uint32,bool",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x6a3214c9",
+      "signature": "reconcileSweepCredit(address,uint256)",
+      "arguments": "address,uint256",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x6d142da1",
+      "signature": "finalizeSweep(address)",
+      "arguments": "address",
+      "name_in_code": false,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x7b9f5264",
+      "signature": "pushStakerFees()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x7d004aeb",
+      "signature": "devFeeAccumulator()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x7dc0d1d0",
+      "signature": "oracle()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x7f99545a",
+      "signature": "withdrawToCore(uint256)",
+      "arguments": "uint256",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x899346c7",
+      "signature": "nextPositionId()",
+      "arguments": "",
+      "name_in_code": false,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x9274682e",
+      "signature": "sideBucket()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xa69a2ad1",
+      "signature": "totalBalances()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xae69b95b",
+      "signature": "setTradingPaused(bool)",
+      "arguments": "bool",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xafdf6702",
+      "signature": "stakerFeeAccumulator()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xc0c53b8b",
+      "signature": "initialize(address,address,address)",
+      "arguments": "address,address,address",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xc10f1a75",
+      "signature": "proxyFactory()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xc43fbc8c",
+      "signature": "coreCollateralDecimals()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xcd2d3811",
+      "signature": "setStakerFeeRecipient(address)",
+      "arguments": "address",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xddc63262",
+      "signature": "harvest(uint256)",
+      "arguments": "uint256",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xe0189108",
+      "signature": "requestSweep(address)",
+      "arguments": "address",
+      "name_in_code": false,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xe1f9209b",
+      "signature": "stakerFeeRecipient()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xe53e3de6",
+      "signature": "creditStakingReward(address,uint256)",
+      "arguments": "address,uint256",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xec6783f0",
+      "signature": "openPositionBySig(address,uint32,bool,uint128,uint32,bool,uint256,uint64,uint8,bytes32,bytes32)",
+      "arguments": "address,uint32,bool,uint128,uint32,bool,uint256,uint64,uint8,bytes32,bytes32",
+      "name_in_code": false,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xed410ee1",
+      "signature": "paperTokenomics()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xf84a74d3",
+      "signature": "lastSweepBlock(address)",
+      "arguments": "address",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xfb9f1009",
+      "signature": "unpauseMarket(uint32)",
+      "arguments": "uint32",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "one_of_two_multisig",
+      "address": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+      "selector": "0x79301c0f",
+      "signature": "updateSigners(address,address,address)",
+      "arguments": "address,address,address",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "one_of_two_multisig",
+      "address": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+      "selector": "0x82e717f7",
+      "signature": "requiredConfirmations()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "one_of_two_multisig",
+      "address": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+      "selector": "0xc6427474",
+      "signature": "submitTransaction(address,uint256,bytes)",
+      "arguments": "address,uint256,bytes",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "oracle_implementation",
+      "address": "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+      "selector": "0xc4d66de8",
+      "signature": "initialize(address)",
+      "arguments": "address",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "oracle_implementation",
+      "address": "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+      "selector": "0xfb466481",
+      "signature": "getBBO(uint32)",
+      "arguments": "uint32",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "paper_token_implementation",
+      "address": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+      "selector": "0x12bbf044",
+      "signature": "autoApprovedSpender()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "paper_token_implementation",
+      "address": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+      "selector": "0x23b872dd",
+      "signature": "transferFrom(address,address,uint256)",
+      "arguments": "address,address,uint256",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "paper_token_implementation",
+      "address": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+      "selector": "0x8f15b414",
+      "signature": "initialize(string,string,address,address)",
+      "arguments": "string,string,address,address",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "paper_token_implementation",
+      "address": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+      "selector": "0xd311b1a9",
+      "signature": "setAutoApprovedSpender(address)",
+      "arguments": "address",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "paper_token_implementation",
+      "address": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+      "selector": "0xdd62ed3e",
+      "signature": "allowance(address,address)",
+      "arguments": "address,address",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "session_key_manager_implementation",
+      "address": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "selector": "0x17a1678f",
+      "signature": "registerSessionKeyDirect(address,uint64,address)",
+      "arguments": "address,uint64,address",
+      "name_in_code": false,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "session_key_manager_implementation",
+      "address": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "selector": "0x5f76a1d6",
+      "signature": "registerSessionKeyBySig(address,address,uint64,address,uint256,uint64,uint8,bytes32,bytes32)",
+      "arguments": "address,address,uint64,address,uint256,uint64,uint8,bytes32,bytes32",
+      "name_in_code": false,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "session_key_manager_implementation",
+      "address": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "selector": "0x747b8a1c",
+      "signature": "initialize(address,string,string,uint256,address)",
+      "arguments": "address,string,string,uint256,address",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "staking_implementation",
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "selector": "0x31d7a262",
+      "signature": "pendingRewards(address)",
+      "arguments": "address",
+      "name_in_code": false,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "staking_implementation",
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "selector": "0x4e71d92d",
+      "signature": "claim()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "staking_implementation",
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "selector": "0xc0c53b8b",
+      "signature": "initialize(address,address,address)",
+      "arguments": "address,address,address",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "staking_implementation",
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "selector": "0xcab64bcd",
+      "signature": "rewardReserve()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "staking_implementation",
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "selector": "0xd2f7265a",
+      "signature": "exchange()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "staking_implementation",
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "selector": "0xe4fc6b6d",
+      "signature": "distribute()",
+      "arguments": "",
+      "name_in_code": false,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "timelock",
+      "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "selector": "0x88aa4c12",
+      "signature": "execute(address,uint256,bytes,bytes32)",
+      "arguments": "address,uint256,bytes,bytes32",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "timelock",
+      "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "selector": "0x8a99d586",
+      "signature": "updateMinDelay(uint256)",
+      "arguments": "uint256",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "timelock",
+      "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "selector": "0xc4d252f5",
+      "signature": "cancel(bytes32)",
+      "arguments": "bytes32",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "timelock",
+      "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "selector": "0xc63c4e9b",
+      "signature": "minDelay()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "tokenomics_implementation",
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "selector": "0x0efdf838",
+      "signature": "onLoss(address,uint256,bool,uint256,uint256)",
+      "arguments": "address,uint256,bool,uint256,uint256",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "tokenomics_implementation",
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "selector": "0x485cc955",
+      "signature": "initialize(address,address)",
+      "arguments": "address,address",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "tokenomics_implementation",
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "selector": "0x8cf554a7",
+      "signature": "trackedLpUsd()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "tokenomics_implementation",
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "selector": "0xae745703",
+      "signature": "stakerLpDistributableExcessUsd()",
+      "arguments": "",
+      "name_in_code": false,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "tokenomics_implementation",
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "selector": "0xc16017ca",
+      "signature": "stakerLpRewardCapUsd()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "tokenomics_implementation",
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "selector": "0xc218c676",
+      "signature": "distributeLpToStakers(uint256)",
+      "arguments": "uint256",
+      "name_in_code": false,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "tokenomics_implementation",
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "selector": "0xd2f7265a",
+      "signature": "exchange()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "tokenomics_implementation",
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "selector": "0xed722c96",
+      "signature": "onCloseBatch(address,uint256,uint256,uint256)",
+      "arguments": "address,uint256,uint256,uint256",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "user_deposit_proxy_representative",
+      "address": "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+      "selector": "0x0c506e96",
+      "signature": "withdrawStuckToken(address,uint256)",
+      "arguments": "address,uint256",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "user_deposit_proxy_representative",
+      "address": "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+      "selector": "0x4f8632ba",
+      "signature": "user()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    },
+    {
+      "role": "user_deposit_proxy_representative",
+      "address": "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+      "selector": "0x925b3aad",
+      "signature": "sweepAllToExchange(uint64,uint64,uint64)",
+      "arguments": "uint64,uint64,uint64",
+      "name_in_code": true,
+      "name_called_in_visible_text": true
+    },
+    {
+      "role": "user_deposit_proxy_representative",
+      "address": "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+      "selector": "0xd2f7265a",
+      "signature": "exchange()",
+      "arguments": "",
+      "name_in_code": true,
+      "name_called_in_visible_text": false
+    }
+  ],
+  "limits": [
+    "The public report describes an audit source snapshot, not a verified match to pinned deployed bytecode.",
+    "A four-byte selector hash match and inferred ABI layout identify a signature candidate; runtime behavior is checked in separate atlas artifacts.",
+    "Disabled entrypoints retain their names but revert in the pinned production runtime."
+  ]
+}

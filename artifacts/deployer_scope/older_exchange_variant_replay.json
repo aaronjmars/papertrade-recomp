@@ -1,0 +1,65 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "original": "0x6f0e9deab8a4f21344e4c10a35db5027b02a67fa",
+  "replacement": "0x93a8e8d647f6c1e7b0f9bf4bd86eff3a9f20c3fb",
+  "static_checks": {
+    "original_sha256": "9bfb4005bb8dce11ddc07fdda35955b7c771ffe2ac3fdcce1cf887bf00c34692",
+    "replacement_sha256": "c755794c2d6cf6077dded83c91067b4e9e07fc386e63c322ff7e4389cd697f4d",
+    "original_bytes": 23052,
+    "replacement_bytes": 23529,
+    "shared_selector_count": 98,
+    "original_retry_tail_pc": "0x4a2b",
+    "replacement_retry_tail_pc": "0x4a56",
+    "replacement_reserve_raw_spot": 100000000
+  },
+  "test_names": [
+    "testOriginalFirstSpotAtMinimum",
+    "testOriginalLegacyBelowMinimum",
+    "testOriginalMixedRetry",
+    "testOriginalPartialFinalization",
+    "testOriginalPerpRetry",
+    "testOriginalSpotRetry",
+    "testReplacementFirstPerpAtMinimum",
+    "testReplacementFirstSpotAtMinimum",
+    "testReplacementFirstSpotBelowMinimum",
+    "testReplacementLegacyBelowMinimum",
+    "testReplacementMixedRetry",
+    "testReplacementPartialFinalization",
+    "testReplacementPerpRetry",
+    "testReplacementSpotRetry"
+  ],
+  "test_source_sha256": "838c56cf293dc5a50894758cbf4812126c7c40f018cf97ea6b67e737a4cf3fb4",
+  "spot_raw_decimals": 8,
+  "normal_spot_retry_raw": {
+    "balance": 10000000000,
+    "original_send_and_pending": 10000000000,
+    "replacement_send_and_pending": 9900000000
+  },
+  "first_request_raw": {
+    "minimum_spot_equivalent": 1000000000,
+    "original_spot_send_at_minimum": 1000000000,
+    "replacement_spot_send_at_minimum": 1000000000,
+    "replacement_perp_send_at_minimum": 10000000,
+    "replacement_below_minimum_error": "0x329c2b0f"
+  },
+  "mixed_retry_raw": {
+    "spot": 1000000000,
+    "perp": 90000000,
+    "original_spot_send_and_pending": 1000000000,
+    "replacement_spot_send_and_pending": 900000000,
+    "perp_send_and_pending": 90000000
+  },
+  "legacy_below_minimum": {
+    "constructed_stored_and_current_spot": 100000000,
+    "original_error": "0x329c2b0f",
+    "replacement_clears": true
+  },
+  "limits": [
+    "Tests use exact pinned implementation runtimes with constructed Exchange state, mocked HyperCore reads, factory lookup, and proxy call.",
+    "The mock proxy records calldata but does not enqueue a CoreWriter action or establish Core settlement.",
+    "The legacy below-minimum pending word is constructed; no such word was observed in the older users at the pin.",
+    "The reserve is visible in the older replacement retry branch only; the exact Core transfer fee and adequacy of one USDC are unverified.",
+    "First requests at the 10 USDC spot-equivalent minimum forward the full spot or perp amount to a mock proxy; no CoreWriter execution is tested."
+  ]
+}

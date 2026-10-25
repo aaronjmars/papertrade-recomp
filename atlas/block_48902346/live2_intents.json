@@ -1,0 +1,872 @@
+{
+ "audit": "signed intents, execution gates and the deposit and withdrawal paths",
+ "pin": 48902346,
+ "pin_block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+ "live_set": {
+  "note": "contract set 2 behind the same proxies, live since block 49,169,385",
+  "exchange_implementation": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+  "session_key_manager_implementation": "0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946",
+  "exchange_linked_library": "0x583d0bd818c991c5830fea93aef04e474b272459",
+  "builder_registry": "0xfdc6550436dd75ce8a0b145f935b7d3a64f53248",
+  "runtime_sha256": {
+   "exchange_impl": "fc7374f3969381160732fe98c5e3145e00c3f167f168d61d65bb4972e9a6b268",
+   "session_impl": "7df05c33597c04820a314fae015aab01b5566aff53e9bded8446962cfd4ad2c9",
+   "library": "ced8e434ebd5379c4acc1fba809a5b18f531c676a264308c9a0a1a76d9641440",
+   "builder_registry": "f459de55cb0463912417650fbca7e18109f3820551e4071234109e1e72801d2f"
+  }
+ },
+ "pinned_set": {
+  "exchange_implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "session_key_manager_implementation": "0x8a5069fe303e8f81e91825436e956d595032e558"
+ },
+ "live_reads": {
+  "sources": [
+   [
+    "artifacts/postpin_pin/raw_reads.json",
+    "read-only HyperEVM probes captured by the post-pin atlas check"
+   ],
+   [
+    "artifacts/postpin_suite/live_latest.json.gz",
+    "head reads and Core account state at the post-pin pin check"
+   ],
+   [
+    "artifacts/live2_intents/live_reads.json",
+    "own read-only capture"
+   ]
+  ],
+  "values": {
+   "head": 49265284,
+   "exchange_slot_88": "0x000000000000000000000000233ff29b239abc1d7748605da9b205c3e008626e",
+   "exchange_owner": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+   "exchange_authorized_executor_getter": "0x000000000000000000000000233ff29b239abc1d7748605da9b205c3e008626e",
+   "session_proxy_sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+   "session_builder_registry": "0x000000000000000000000000fdc6550436dd75ce8a0b145f935b7d3a64f53248",
+   "session_registry_old_value_owner_call": "0x",
+   "session_owner": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+   "head_older": 49255838,
+   "own_capture": {
+    "rpc": "https://rpc.hyperliquid.xyz/evm",
+    "captured_at_utc": "2026-10-22T23:42:39Z",
+    "head": 49263577,
+    "code": {
+     "exchange_proxy": {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "code": "0x608080604052600436101561001a575b50366102fc576102fc565b5f3560e01c9081634f1ef28614610061575080635c60da1b1461005c5780638f283970146100575763f851a44014610052575f61000f565b610218565b6101c2565b610165565b604036600319011261014b5761007561014f565b90602435906001600160401b039081831161014b573660238401121561014b57826004013591821161014b57366024838501011161014b575f80516020610328833981519152546001600160a01b03908116330361013c5784161561012d57835f8051602061034883398151915255816100eb57005b5f93826024869501833783838301525af4610104610267565b901561010c57005b604051632361517160e01b815290819061012990600483016102b5565b0390fd5b63e6c4247b60e01b8152600490fd5b637bfa4b9f60e01b8252600482fd5b5f80fd5b600435906001600160a01b038216820361014b57565b3461014b575f36600319011261014b575f80516020610328833981519152546001600160a01b0390811633036101b0575f805160206103488339815191525460405191168152602090f35b604051637bfa4b9f60e01b8152600490fd5b3461014b57602036600319011261014b576101db61014f565b5f8051602061032883398151915280546001600160a01b0390811633036101b0578216156102065755005b60405163e6c4247b60e01b8152600490fd5b3461014b575f36600319011261014b575f80516020610328833981519152546001600160a01b0316338190036101b057602090604051908152f35b634e487b7160e01b5f52604160045260245ffd5b3d156102b0576001600160401b03903d8281116102ab5760405192601f8201601f19908116603f01168401908111848210176102ab5760405282523d5f602084013e565b610253565b606090565b602080825282518183018190529093925f5b8281106102e857505060409293505f838284010152601f8019910116010190565b8181018601518482016040015285016102c7565b5f805f8051602061034883398151915254368280378136915af43d5f803e15610323573d5ff35b3d5ffdfeb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbca26469706673582212203af6602325b7cca4d7cb807c1e44c129fb1ef1623493a643c2db789724b7284d64736f6c63430008180033"
+     },
+     "session_proxy": {
+      "address": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "code": "0x608080604052600436101561001a575b50366102fc576102fc565b5f3560e01c9081634f1ef28614610061575080635c60da1b1461005c5780638f283970146100575763f851a44014610052575f61000f565b610218565b6101c2565b610165565b604036600319011261014b5761007561014f565b90602435906001600160401b039081831161014b573660238401121561014b57826004013591821161014b57366024838501011161014b575f80516020610328833981519152546001600160a01b03908116330361013c5784161561012d57835f8051602061034883398151915255816100eb57005b5f93826024869501833783838301525af4610104610267565b901561010c57005b604051632361517160e01b815290819061012990600483016102b5565b0390fd5b63e6c4247b60e01b8152600490fd5b637bfa4b9f60e01b8252600482fd5b5f80fd5b600435906001600160a01b038216820361014b57565b3461014b575f36600319011261014b575f80516020610328833981519152546001600160a01b0390811633036101b0575f805160206103488339815191525460405191168152602090f35b604051637bfa4b9f60e01b8152600490fd5b3461014b57602036600319011261014b576101db61014f565b5f8051602061032883398151915280546001600160a01b0390811633036101b0578216156102065755005b60405163e6c4247b60e01b8152600490fd5b3461014b575f36600319011261014b575f80516020610328833981519152546001600160a01b0316338190036101b057602090604051908152f35b634e487b7160e01b5f52604160045260245ffd5b3d156102b0576001600160401b03903d8281116102ab5760405192601f8201601f19908116603f01168401908111848210176102ab5760405282523d5f602084013e565b610253565b606090565b602080825282518183018190529093925f5b8281106102e857505060409293505f838284010152601f8019910116010190565b8181018601518482016040015285016102c7565b5f805f8051602061034883398151915254368280378136915af43d5f803e15610323573d5ff35b3d5ffdfeb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbca26469706673582212203af6602325b7cca4d7cb807c1e44c129fb1ef1623493a643c2db789724b7284d64736f6c63430008180033"
+     },
+     "timelock": {
+      "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "code": "0x60406080815260048036101561001e575b5050361561001c575f80fd5b005b5f3560e01c806304d2cd0e146106d557806313bc9f20146106955780632ab0f5291461066a578063584b153e1461062a5780636cb6a1f71461060257806388aa4c12146105665780638a99d5861461050b5780638b07f62b1461043b5780638da5cb5b14610414578063a6cc2c8c146102e6578063b0e58bc914610233578063c4d252f514610194578063c63c4e9b14610176578063ec2a5b45146101515763f2fde38b03610010573461014d57602036600319011261014d5780356001600160a01b038116929083900361014d57303303610140578215610133575f80546001600160a01b0319168417815583907f4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b9080a2005b516349e27cff60e01b8152fd5b516314e1dbf760e11b8152fd5b5f80fd5b823461014d5760209061016f6101663661078f565b93929092610ab5565b9051908152f35b823461014d575f36600319011261014d576020906001549051908152f35b50903461014d57602036600319011261014d575f54823592906001600160a01b0316330361022557825f526002602052815f205480156102165760011461020957505f9082825260026020528120557fcf0f63b97f3387253cbc0bde884f975df77e39184dc3280c2c81be495f58eef45f80a2005b90516231b2d560e71b8152fd5b50905163027c0d6160e41b8152fd5b90516330cd747160e01b8152fd5b503461014d576102423661078f565b5f54919694959093916001600160a01b039190821633036102d8575095816020976102918684877f78f3bc93d9f0e2beb7fc8fe3192b142c5e70b8813403674aff3f81fc83af5b39978c610ab5565b97889561029d87610c13565b865f5260028b526102c3895f2054918a51968796875260808e88015260808701916109d2565b9789850152606084015216940390a351908152f35b85516330cd747160e01b8152fd5b506102f036610726565b5f54939895979596949591936001600160a01b0392908316330361040657881580156103fc575b80156103f2575b6103e157506103329084848b898c8a610873565b975f805b8282106103c15761034891508a610b25565b5f5b88811061037e57897faa1510acf32db51981a900a90589bafbf6f442c657a0b916fd3afe22c1474bcd60208b8b51908152a2005b610389818a886109f2565b3590838216820361014d576103ba6001926103a583868c6109f2565b35906103b2848a8a610a23565b929091610ba1565b500161034a565b6103d96001916103d284868c6109f2565b3590610a02565b910190610336565b87516001621398b960e31b03198152fd5b508489141561031e565b5089891415610317565b87516330cd747160e01b8152fd5b823461014d575f36600319011261014d575f5490516001600160a01b039091168152602090f35b50903461014d5761044b36610726565b949695909760018060a09694961b035f541633036104fd57871580156104f3575b80156104e9575b6104d857506020977f0b9c64b5b18792c995334aa1e837673c5a9cdb8f004ab10fb652f4eecb8d551f946060946104ac948a8995610873565b9485936104b885610c13565b845f5260028852855f20549086519283528883015285820152a251908152f35b86516001621398b960e31b03198152fd5b5088881415610473565b508388141561046c565b86516330cd747160e01b8152fd5b50903461014d57602036600319011261014d57813591303303610558577f25cd0ae91e995bc58ea33869249d0bcf40f2b2c8331ec976c96096bf7d27f464602084848160015551908152a1005b90516314e1dbf760e11b8152fd5b506105703661078f565b5f5494966001600160a01b03969095929492871633036102d8575095816105f16105c16105fe9987877f2a08801cf3674ab09756ae78a3a4833813465af6af958136b360eab6b71c89529787610ab5565b946105cc8387610b25565b6105d887828587610ba1565b98885194859485528960208601521696888401916109d2565b0390a351918291826107f5565b0390f35b50903461014d57602036600319011261014d57602091355f5260028252805f20549051908152f35b50903461014d57602036600319011261014d57602091355f5260028252805f205490600182119182610660575b50519015158152f35b421091505f610657565b50903461014d57602036600319011261014d57602091355f52600282526001815f2054149051908152f35b50903461014d57602036600319011261014d57602091355f5260028252805f2054906001821191826106ca5750519015158152f35b42101591505f610657565b823461014d5760209061016f6106ea36610726565b95949094939193610873565b9181601f8401121561014d578235916001600160401b03831161014d576020808501948460051b01011161014d57565b90608060031983011261014d576001600160401b0360043581811161014d5783610752916004016106f6565b9390939260243583811161014d578261076d916004016106f6565b9390939260443591821161014d57610787916004016106f6565b909160643590565b90608060031983011261014d576004356001600160a01b038116810361014d5791602435916001600160401b03916044359083821161014d578060238301121561014d57816004013593841161014d576024848301011161014d57602401919060643590565b602080825282518183018190529093925f5b82811061082857505060409293505f838284010152601f8019910116010190565b818101860151848201604001528501610807565b601f909101601f19168101906001600160401b0382119082101761085f57604052565b634e487b7160e01b5f52604160045260245ffd5b94929095919361088284610b0e565b91610890604051938461083c565b84835261089c85610b0e565b9560209283850196601f198099013689375f5b8181106109875750505060405197838901998060a08b0160808d525260c08a0191905f5b81811061095f57505050888103880160408a01528281526001600160fb1b03831161014d57906040918996949897959360051b80928a83013701878101928682036060880152518093520192905f5b81811061094857505050610942945060808301520390810183528261083c565b51902090565b825185528895509387019391870191600101610922565b90919283359060018060a01b03821680920361014d57908152860192860191906001016108d3565b61099c610995828486610a23565b3691610a7f565b8681519101209087518110156109be57600191878260051b8a010152016108af565b634e487b7160e01b5f52603260045260245ffd5b908060209392818452848401375f828201840152601f01601f1916010190565b91908110156109be5760051b0190565b91908201809211610a0f57565b634e487b7160e01b5f52601160045260245ffd5b91908110156109be5760051b81013590601e198136030182121561014d5701803591906001600160401b03831161014d57602001823603811361014d579190565b6001600160401b03811161085f57601f01601f191660200190565b929192610a8b82610a64565b91610a99604051938461083c565b82948184528183011161014d578281602093845f960137010152565b9391610ac391933691610a7f565b6020815191012060405192602084019460018060a01b031685526040840152606083015260808201526080815260a0810181811060018060401b0382111761085f5760405251902090565b6001600160401b03811161085f5760051b60200190565b805f526002602052604091825f20548015610b905760018114610b80574210610b6f573403610b5e57906001915f5260026020525f2055565b8151632a9ffab760e21b8152600490fd5b825163f800799b60e01b8152600490fd5b83516231b2d560e71b8152600490fd5b835163027c0d6160e41b8152600490fd5b90925f938493826040519384928337810185815203925af13d15610c0b573d90610bca82610a64565b91610bd8604051938461083c565b82523d5f602084013e5b15610bea5790565b6040516315fcd67560e01b8152908190610c0790600483016107f5565b0390fd5b606090610be2565b805f52600260205260405f2054610c3f57610c3060015442610a02565b905f52600260205260405f2055565b604051634d9c123b60e11b8152600490fdfea26469706673582212201dd1e3f7bbd0d41275e947c0343241a33be38bc9b74a88df3ff73b04c8fa37cd64736f6c63430008180033"
+     }
+    },
+    "session_slots": {
+     "1": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+     "2": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+     "3": "0x0000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a2",
+     "8": "0x000000000000000000000000fdc6550436dd75ce8a0b145f935b7d3a64f53248"
+    },
+    "session_calls": {
+     "DOMAIN_SEPARATOR": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+     "domainSeparatorV4": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+     "builderRegistry": "0x000000000000000000000000fdc6550436dd75ce8a0b145f935b7d3a64f53248",
+     "owner": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f"
+    },
+    "exchange_calls": {
+     "slot_88": "0x000000000000000000000000233ff29b239abc1d7748605da9b205c3e008626e",
+     "owner": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f"
+    }
+   }
+  }
+ },
+ "verified_names": {
+  "errors": {
+   "0x329c2b0f": "SweepBelowMinimum()",
+   "0x756688fe": "InvalidNonce()",
+   "0xf87d9271": "ExpiredDeadline()",
+   "0xc5045f22": "SessionKeyNotAuthorized()",
+   "0x93b78c88": "UnauthorizedSubmitter()",
+   "0x17fb2066": "NotAuthorizedRelayer()",
+   "0x30cd7471": "NotOwner()",
+   "0x28ef4314": "SweepAlreadyPending()",
+   "0x8baa579f": "InvalidSignature()",
+   "0x5c427cd9": "UnauthorizedCaller()",
+   "0x0984a617": "NoPendingSweep()",
+   "0x4e487b71": "Panic(uint256)"
+  },
+  "events": {
+   "0x3416b71ef34c8c9fa3f6669951a3b8ff28131879e96b2f9b68fef2029a9dfa15": "BuilderFeesClaimed(address,uint256,uint256)",
+   "0x95d1a93901f24eeaa294588802f66fa008f9f3741060c9f79e5dab4709de5e75": "CoreWithdrawal(address,uint256,uint256)"
+  },
+  "unnamed_selectors": [
+   "0xc20280ea",
+   "0xda96f0b6",
+   "0x0a4f5a07",
+   "0x4f57ffae",
+   "0xd26ffacb",
+   "0xfefe83a0",
+   "0x0576e005",
+   "0xd95208cd",
+   "0xd970fad5"
+  ],
+  "rejected_names": {
+   "0xd26ffacb": "SweepSameBlock()",
+   "0xfefe83a0": "SweepRateLimited()",
+   "0x4f57ffae": "WithdrawalThisBlock()",
+   "0xc20280ea": "InvalidSigner()"
+  },
+  "rejected_note": "hash-asserted as NOT these names; the selectors stay unnamed rather than carrying a plausible label",
+  "check": "keccak256 of each signature compared with the selector in the lookup tables of session_key_behavior.json, exchange_sweep_behavior.json and batch_executor_behavior.json"
+ },
+ "evidence_files": {
+  "generator": "audit_live2_intents.py",
+  "forge_results": "artifacts/live2_intents/forge_observations.json",
+  "own_live_capture": "artifacts/live2_intents/live_reads.json (written by --capture)",
+  "pinned_control_suite": "audit_signed_intent_failures.py (26 cases, run in this script)",
+  "saved_fork_cases": "artifacts/exchange_sweep_archive_local/*.diff.json",
+  "saved_head_probes": "artifacts/postpin_pin/raw_reads.json, artifacts/postpin_suite/live_latest.json.gz"
+ },
+ "rows": [
+  {
+   "id": "L2-D1-01",
+   "title": "The set 2 SessionKeyManager keeps the pinned EIP-712 domain; the domain's verifying contract is the Exchange, not the SessionKeyManager",
+   "angle": "D1 signature and domain separation",
+   "invariant": "A2",
+   "actor": "trading user, session key",
+   "precondition": "a signature produced against the pinned domain ahead of the upgrade",
+   "trigger": "submit the same signature to the set 2 SessionKeyManager by any allowed caller",
+   "impact": "no impact: no replay or invalidation window opens at the upgrade, because the domain is derived from chainId, the authorized caller (the Exchange proxy, which never changes address) and the initialization-time name and version",
+   "affected": "both",
+   "severity": "none",
+   "status": "confirmed_simulation",
+   "evidence_tier": "exact-runtime replay of the live configuration plus a live head read",
+   "evidence": {
+    "live_head_read": {
+     "head": 49263577,
+     "DOMAIN_SEPARATOR": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+     "domainSeparatorV4": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+     "slot_1": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+     "slot_3": "0x0000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a2"
+    },
+    "live_suite": [
+     "testValidWithdrawalPersistsNonceAndDebits",
+     "testWrongDomainWithdrawalSignatureRollsBack",
+     "testWrongValidWithdrawalSignerRollsBackNonce",
+     "testSignedUserMismatchRollsBack",
+     "testSignedAmountMismatchRollsBack"
+    ],
+    "observations": {
+     "set2_open_post_signer": {
+      "name": "set2_open_post_signer",
+      "ok": false,
+      "selector": 172972551
+     }
+    },
+    "domain_separator_at_pin": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+    "live_read_if_captured": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+    "typehash_constants_identical": [
+     "0x3cec0566535d67d6c92668517af0bf8a66cdc91d622dbb830fcc08e1bcf5d1df",
+     "0x744157ccffbd293a2e8644928cd7d23d650f869b88f72d7bfea8041b76ca6bec",
+     "0x8b73c3c69bb8fe3d512ecc4cf759cc79239f7b179b0ffacaa9a75d522b39400f",
+     "0x9cc23a52214afa42e1ae53cdb2e79dc2d0cd33c33faca383ed3b149300adcb13",
+     "0xac4ddb8d63e9d7a862c5d61ce47517623a448262414a7eef6797102104b31214",
+     "0xf09fcf47c21ca51acd6fd24e30b537dc39f0e5e021541cf1e4fa7f1013d60b99",
+     "0xfce2fb41f9ff0457a0f012e62cfd6a7cff4e8439ae20008ab6979c740ba5a983"
+    ]
+   },
+   "missing_observation": "none for the domain itself; a live call trace through the set 2 close was not obtained",
+   "citations": [
+    "atlas/block_48902346/session_direct_getters.md",
+    "atlas/block_48902346/suite_sets.json"
+   ]
+  },
+  {
+   "id": "L2-D1-02",
+   "title": "One nonce bitmap word serves every intent class; the class boundary is the EIP-712 typehash, not the nonce",
+   "angle": "D1 nonce edges",
+   "invariant": "A2",
+   "actor": "trading user, session key",
+   "precondition": "a nonce bit already consumed by any intent class",
+   "trigger": "submit a validly signed open, close, withdrawal or session-key registration with the same nonce",
+   "impact": "no unauthorized state change: every class is rejected with InvalidNonce (0x756688fe); the next bitmap word reuses the same bit index without interference; the mapping is per user",
+   "affected": "both",
+   "severity": "info",
+   "status": "confirmed_simulation",
+   "evidence_tier": "exact-runtime replay",
+   "evidence": {
+    "observations": {
+     "set2_nonce_shared": {
+      "name": "set2_nonce_shared",
+      "open_selector": 1969654014,
+      "withdraw_selector": 1969654014,
+      "register_selector": 1969654014,
+      "adjacent_word_accepted": true,
+      "close_selector": 0
+     },
+     "set2_nonce_per_user": {
+      "name": "set2_nonce_per_user",
+      "other_user_selector": 3305398050
+     }
+    }
+   },
+   "missing_observation": "none; the per-class struct hash boundaries are also covered by the 26-case base suite",
+   "citations": [
+    "atlas/block_48902346/session_key_pseudocode.md"
+   ]
+  },
+  {
+   "id": "L2-D1-03",
+   "title": "Session key expiry is inclusive at the block timestamp, the associated address is metadata rather than a signer, and revocation is immediate",
+   "angle": "D1 session-key lifecycle",
+   "invariant": "A2",
+   "actor": "trading user, session key",
+   "precondition": "a registered session key word",
+   "trigger": "close by signature at expiry equal to the block timestamp, with a non-zero associated address, and after revokeSessionKey",
+   "impact": "no impact beyond a one-second boundary; a key whose word carries a non-zero associated address is still verified against the registered key only, so the field cannot be used to authorize an unexpected signer",
+   "affected": "both",
+   "severity": "info",
+   "status": "confirmed_simulation",
+   "evidence_tier": "exact-runtime replay",
+   "evidence": {
+    "observations": {
+     "name": "set2_session_lifecycle",
+     "expiry_at_timestamp_ok": true,
+     "expiry_at_timestamp_selector": 0,
+     "associated_set_key_ok": true,
+     "associated_set_key_selector": 0,
+     "associated_signer_ok": false,
+     "associated_signer_selector": 3305398050,
+     "associated_address": 1402402230564801881840782179186293279750436966564
+    }
+   },
+   "missing_observation": "the intended product meaning of the associated address remains unresolved",
+   "citations": [
+    "atlas/block_48902346/session_key_pseudocode.md"
+   ]
+  },
+  {
+   "id": "L2-D2-01",
+   "title": "Only the stored signed-intent caller may submit open or close; the signed withdrawal path has no caller gate",
+   "angle": "D2 execution gates",
+   "invariant": "A1",
+   "actor": "unprivileged outsider, keeper",
+   "precondition": "Exchange slot 88 holds the BatchExecutor and the new slot 89 holds the keeper",
+   "trigger": "call openPositionBySig/closeBySig from an outsider or the keeper, and withdrawToCoreBySig from an outsider",
+   "impact": "no state change for the gated paths (0xda96f0b6 before any nonce write); the withdrawal path stays permissionlessly relayable but still requires the user's signature, and a zero signature yields 0xc20280ea",
+   "affected": "both",
+   "severity": "none",
+   "status": "confirmed_simulation",
+   "evidence_tier": "exact-runtime replay plus a saved head storage read",
+   "evidence": {
+    "observations": {
+     "name": "set2_keeper",
+     "written_slots": 1,
+     "first_written_slot": 89,
+     "close_selector": 3667325110,
+     "open_selector": 3667325110,
+     "withdraw_selector": 3254943978
+    },
+    "live_slot_88": "0x000000000000000000000000233ff29b239abc1d7748605da9b205c3e008626e",
+    "live_authorized_executor_getter": "0x000000000000000000000000233ff29b239abc1d7748605da9b205c3e008626e",
+    "set_authorized_keeper_wrote_slot": 89
+   },
+   "missing_observation": "whether a later governance call repointed the keeper slot",
+   "citations": [
+    "atlas/block_48902346/batch_executor_pseudocode.md",
+    "AUDIT.md A1"
+   ]
+  },
+  {
+   "id": "L2-D2-02",
+   "title": "No selector the set 2 upgrade added is reachable through the BatchExecutor allowlist, and the allowlist is anchored to the stored suite addresses",
+   "angle": "D2 allowlist",
+   "invariant": "A1",
+   "actor": "authorized relayer",
+   "precondition": "authorizedRelayers[relayer] set and BatchExecutor slots 0 to 2 holding the Exchange, SessionKeyManager and Staking addresses",
+   "trigger": "submit a batch whose inner call targets an added selector, and one whose inner call is the allowlisted signed close",
+   "impact": "no reachable state change the user did not sign: nine added selectors (claimBuilderFees, setAuthorizedKeeper, the added SessionKeyManager trio and the four un-named additions) emit CallRejected without an inner call, while the allowlisted signed close executes with the BatchExecutor as the inner caller and consumes its nonce",
+   "affected": "set2",
+   "severity": "none",
+   "status": "confirmed_simulation",
+   "evidence_tier": "exact-runtime replay (pinned BatchExecutor runtime)",
+   "evidence": {
+    "observations": {
+     "name": "set2_batch_allowlist",
+     "added_rejected": 9,
+     "allowlisted_close_ok": true,
+     "dropped_rejected": true,
+     "dropped_direct_selector": 0,
+     "slot_88_is_batch": true
+    },
+    "inner_close": {
+     "name": "set2_batch_close_debug",
+     "ok": true,
+     "rejected": false,
+     "executed": true,
+     "inner_ok": true,
+     "inner_selector": 0,
+     "inner_bytes": 0
+    }
+   },
+   "missing_observation": "selectors with no captured candidate are not exhaustively enumerated",
+   "citations": [
+    "atlas/block_48902346/batch_executor_pseudocode.md",
+    "artifacts/batch_allowlist_local/replay.json"
+   ]
+  },
+  {
+   "id": "L2-D2-03",
+   "title": "Session-key registration needs an authorized submitter and a signature from the user, not from the session key",
+   "angle": "D2 gates on the registration path",
+   "invariant": "A1",
+   "actor": "BatchExecutor, unprivileged outsider",
+   "precondition": "authorizedSubmitters[BatchExecutor] true",
+   "trigger": "registerSessionKeyBySig from an outsider, and with a digest signed by the session key rather than the user",
+   "impact": "no unauthorized key registration: the outsider receives UnauthorizedSubmitter (0x93b78c88) and a session-key-signed digest fails signature recovery, so a compromised session key cannot register further keys",
+   "affected": "both",
+   "severity": "none",
+   "status": "confirmed_simulation",
+   "evidence_tier": "exact-runtime replay",
+   "evidence": {
+    "observations": {
+     "name": "set2_registration",
+     "expiry_stored": 1792364541,
+     "nonce_bit": 4398046511104,
+     "outsider_selector": 2478279816,
+     "session_key_signature_selector": 2343196575
+    }
+   },
+   "missing_observation": "the exact registration type string is still unresolved; the struct hash was re-derived from ten saved digests",
+   "citations": [
+    "atlas/block_48902346/session_key_pseudocode.md",
+    "atlas/block_48902346/session_key_behavior.json"
+   ]
+  },
+  {
+   "id": "L2-D3-01",
+   "title": "The extra one USD withdrawal debit funds the Core new-account fee; the signed amount is delivered in full and no caller can influence the status read",
+   "angle": "D3 withdrawal accounting",
+   "invariant": "A6",
+   "actor": "withdrawal user, relayer",
+   "precondition": "the destination Core account-status read returns false",
+   "trigger": "withdrawToCoreBySig with a valid signature",
+   "impact": "a documented pass-through: the internal debit is the signed amount plus one USD while the Core payload is exactly the signed amount, and the pinned public core ledger shows the matching one USD fee on the Exchange's own Core account with the recipient receiving the signed amount",
+   "affected": "both",
+   "severity": "low",
+   "status": "confirmed_simulation",
+   "evidence_tier": "exact-runtime replay plus the pinned event census and sampled Core ledgers",
+   "evidence": {
+    "observations": {
+     "name": "set2_withdrawal_gap",
+     "status_false_debit": 3000000000000000000,
+     "status_false_core_amount": 200000000,
+     "status_false_outsider_debit": 3000000000000000000,
+     "status_true_debit": 2000000000000000000
+    },
+    "census": "5,991 of 28,643 CoreWithdrawal events debit one USD more; 22,652 debit exactly the sent amount",
+    "sampled_ledger": "16 status-0 cases each record a one USD Core fee; 16 status-1 cases record none"
+   },
+   "missing_observation": "the public Core ledger does not identify the fee recipient, and no observed case pairs a false status with a zero fee",
+   "citations": [
+    "atlas/block_48902346/exchange_core_withdrawal.md",
+    "atlas/block_48902346/withdrawal_settlement_stratified.md",
+    "AUDIT.md A6"
+   ]
+  },
+  {
+   "id": "L2-D3-02",
+   "title": "The withdrawal path admits one withdrawal per user per block",
+   "angle": "D3 sibling gate",
+   "invariant": "A6",
+   "actor": "withdrawal user, relayer",
+   "precondition": "a withdrawal already recorded for that user in the block",
+   "trigger": "a second signed withdrawal for the same user in the same block",
+   "impact": "no impact: the second call reverts with the unnamed 0x4f57ffae guard, which the pinned direct-path probe records for the same construction",
+   "affected": "both",
+   "severity": "info",
+   "status": "confirmed_simulation",
+   "evidence_tier": "exact-runtime replay plus a saved pinned probe",
+   "evidence": {
+    "first_hit": "the status test needed a roll between withdrawals",
+    "pinned_probe": "artifacts/exchange_direct_withdrawal/local_probes.json same_block"
+   },
+   "missing_observation": "the guard's source name is unresolved",
+   "citations": [
+    "atlas/block_48902346/exchange_getters.md"
+   ]
+  },
+  {
+   "id": "L2-D4-01",
+   "title": "Any outsider can drive a victim's sweep request, which always queues the full observed balance; no EVM funding path into a proxy exists",
+   "angle": "D4 deposit-path liveness as an attack surface",
+   "invariant": "A7",
+   "actor": "unprivileged outsider",
+   "precondition": "the victim's proxy holds at least the 10 USDC request minimum on Core",
+   "trigger": "call Exchange requestSweep/sweep(user) for the victim",
+   "impact": "the outsider's call succeeds, writes the pending word and queues a CoreWriter spot send of the entire observed balance through the proxy. A native-value call and any unknown selector on the proxy revert, and the sweep requires msg.sender to be the Exchange, so a third party cannot add funds on EVM and cannot create a gas reserve by topping up: each request recomputes the amount as the full current balance",
+   "affected": "both",
+   "severity": "medium",
+   "status": "confirmed_simulation",
+   "evidence_tier": "exact-runtime replay with mocked Core reads plus saved live runtimes",
+   "evidence": {
+    "observations": {
+     "name": "set2_outsider_sweep",
+     "queued_total": 10000000000,
+     "pending_spot": 10000000000,
+     "below_minimum_selector": 849095439
+    },
+    "proxy_surface": {
+     "name": "set2_deposit_proxy_surface",
+     "native_funding": false,
+     "fallback": false,
+     "outsider_sweep": false,
+     "outsider_rescue": false,
+     "user_rescue_no_code": true
+    },
+    "request_minimum": "10 USDC raw 1e9; 999,999,999 reverts 0x329c2b0f"
+   },
+   "missing_observation": "whether a Core-side top-up that lands between the EVM balance read and the Core execution supplies the transfer-gas fee (it would help rather than harm); the Core fee predicate itself is not established",
+   "citations": [
+    "FINDINGS.md PT-01",
+    "atlas/block_48902346/exchange_sweep_pseudocode.md",
+    "atlas/block_48902346/deposit_proxy_pseudocode.md"
+   ]
+  },
+  {
+   "id": "L2-D4-02",
+   "title": "The set 2 retry branch reserves one USD and clears a dust request instead of reverting",
+   "angle": "D4 liveness of the wedge, D5 sweep trio",
+   "invariant": "A7",
+   "actor": "any caller (the finalize and sweep entries are permissionless)",
+   "precondition": "a pending sweep request and a proxy Core balance at or above the previous snapshot",
+   "trigger": "call finalizeSweep/sweep(user) on the pending request",
+   "impact": "on the pinned implementation the retry rewrites the pending word with the full observed balance and, below the 10 USDC minimum, reverts SweepBelowMinimum; on the live set 2 implementation the retry rewrites it with the observed balance less exactly one USD, queues that reduced amount through the proxy, and clears the word when the reduced amount is zero. This is the same one-USD-reserve shape the older recovered proxies used to get their Core send executed, so a permissionless retry may now unwedge a stalled deposit, at the cost of the user being credited one USD less while the reserved unit stays in the proxy's Core account",
+   "affected": "set2",
+   "severity": "medium",
+   "status": "confirmed_simulation",
+   "evidence_tier": "exact-runtime differential on both runtimes, cross-checked against saved archive-fork storage diffs",
+   "evidence": {
+    "differential": {
+     "pinned": {
+      "diff_retry_amount": {
+       "name": "diff_retry_amount",
+       "stored_spot": 10000000000,
+       "queued_total": 10000000000,
+       "observed_balance": 10000000000
+      },
+      "diff_retry_dust": {
+       "name": "diff_retry_dust",
+       "ok": false,
+       "selector": 849095439,
+       "stored_spot_after": 100000000
+      }
+     },
+     "set2": {
+      "diff_retry_amount": {
+       "name": "diff_retry_amount",
+       "stored_spot": 9900000000,
+       "queued_total": 9900000000,
+       "observed_balance": 10000000000
+      },
+      "diff_retry_dust": {
+       "name": "diff_retry_dust",
+       "ok": true,
+       "selector": 0,
+       "stored_spot_after": 0
+      }
+     }
+    },
+    "saved_fork_pinned": "artifacts/exchange_sweep_archive_local/finalize_unchanged_above_minimum.diff.json stores the full balance; finalize_unchanged.call.json reverts 0x329c2b0f"
+   },
+   "missing_observation": "Core acceptance of the reduced send for the two stalled proxies; the saved head reads show both stalled pending words unchanged at head 49,255,838, and no post-upgrade event census could be obtained",
+   "citations": [
+    "FINDINGS.md PT-01",
+    "atlas/block_48902346/exchange_sweep_pseudocode.md",
+    "atlas/block_48902346/suite_sets.md"
+   ]
+  },
+  {
+   "id": "L2-D5-01",
+   "title": "The finalize credit follows the stored snapshot rather than the delivered amount",
+   "angle": "D5 credit without delivery",
+   "invariant": "A7",
+   "actor": "deposit user",
+   "precondition": "a pending request whose proxy Core balance has fallen by any amount",
+   "trigger": "call finalizeSweep(user)",
+   "impact": "the credit follows the stored spot-equivalent rather than the Exchange's observed Core receipt. A real proxy balance decrease without an equal Exchange receipt could create a shortfall, but two observed older reduced retries paid a separate 1 USD sender fee and credited exactly the amount delivered. The fee alone does not establish overcredit",
+   "affected": "both",
+   "severity": "medium",
+   "status": "plausible_unproven",
+   "evidence_tier": "exact-runtime replay plus the saved fork case corpus",
+   "evidence": {
+    "credit": {
+     "name": "set2_finalize_credit",
+     "one_unit_left": 1000000000000000000,
+     "half_left": 1000000000000000000,
+     "stored_snapshot": 1000000000000000000
+    },
+    "saved_fork": "artifacts/exchange_sweep_archive_local/finalize_partial.diff.json credits 1e18 after a one-raw-unit decrease"
+   },
+   "missing_observation": "a real partial Core delivery or other proxy balance decrease without an equal Exchange receipt; neither has been observed in set 2",
+   "citations": [
+    "FINDINGS.md PT-01",
+    "atlas/block_48902346/exchange_sweep_pseudocode.md",
+    "AUDIT.md A7"
+   ]
+  },
+  {
+   "id": "L2-D5-02",
+   "title": "The owner reconciliation route still rejects both live pending words and clearPendingSweep is still absent",
+   "angle": "D4 recovery, D5 sweep trio",
+   "invariant": "A7",
+   "actor": "owner or timelock, unprivileged caller",
+   "precondition": "the two stalled pending words",
+   "trigger": "owner reconcileSweepCredit(user, amount) and clearPendingSweep(user)",
+   "impact": "no recovery through either named route: the owner call reverts SweepAlreadyPending (0x28ef4314), an unrelated caller reverts NotOwner (0x30cd7471) and clearPendingSweep (0x2362f4de) returns empty data",
+   "affected": "both",
+   "severity": "high",
+   "status": "confirmed_simulation",
+   "evidence_tier": "exact-runtime replay plus saved head probes",
+   "evidence": {
+    "observations": {
+     "name": "set2_recovery_guards",
+     "outsider_selector": 818771057,
+     "owner_selector": 686768916,
+     "clear_returndata_bytes": 0
+    },
+    "saved_head_probes": "artifacts/postpin_suite/live_latest.json.gz pt01_reconcile_owner/pt01_reconcile_no_sender"
+   },
+   "missing_observation": "a differently shaped sweep route cannot be excluded without source or a real trace",
+   "citations": [
+    "FINDINGS.md PT-01",
+    "atlas/block_48902346/exchange_sweep_recovery.md"
+   ]
+  },
+  {
+   "id": "L2-D3-03",
+   "title": "The extra one USD withdrawal debit is not an uncompensated user loss (loss hypothesis disproved)",
+   "angle": "D3 withdrawal accounting",
+   "invariant": "A6",
+   "actor": "withdrawal user",
+   "precondition": "a first withdrawal to a Core account that does not yet exist",
+   "trigger": "compare the internal debit with the recipient's public Core ledger entry",
+   "impact": "no loss relative to the user's intent: the recipient receives exactly the signed amount and the one USD lands as a fee on the Exchange's own Core account; an existing destination pays no fee and debits no extra unit",
+   "affected": "both",
+   "severity": "none",
+   "status": "disproved",
+   "evidence_tier": "pinned public Core ledger capture (32 stratified cases) plus the full event census",
+   "evidence": {
+    "stratified": "16 status-0 cases deliver the signed amount with a one USD fee; 16 status-1 cases deliver it with none",
+    "census": "no gap other than 0 or one USD across 28,643 CoreWithdrawal events",
+    "exact_runtime": {
+     "name": "set2_withdrawal_gap",
+     "status_false_debit": 3000000000000000000,
+     "status_false_core_amount": 200000000,
+     "status_false_outsider_debit": 3000000000000000000,
+     "status_true_debit": 2000000000000000000
+    }
+   },
+   "missing_observation": "the ledger does not name the fee recipient",
+   "citations": [
+    "atlas/block_48902346/withdrawal_settlement_stratified.md",
+    "atlas/block_48902346/exchange_withdrawal_event_census.json",
+    "AUDIT.md A6"
+   ]
+  },
+  {
+   "id": "L2-D4-03",
+   "title": "Blocked: the post-upgrade live log census and fresh SessionKeyManager head reads could not be obtained",
+   "angle": "D3/D4 live observation",
+   "invariant": "A6, A7",
+   "actor": "none",
+   "precondition": "none",
+   "trigger": "eth_getLogs over the last 1000 blocks for the CoreWithdrawal and SweepRequested topics on the newest Exchange proxy, and eth_getStorageAt/eth_call for SessionKeyManager slots 1, 3 and 8 plus DOMAIN_SEPARATOR() and domainSeparatorV4()",
+   "impact": "none by itself; it limits how much of this audit is live rather than simulated. The staged retry captured the head, both proxy codes, the SessionKeyManager slots 1, 2, 3 and 8 and the domain getters at head 49,263,577, so only the log census remains missing",
+   "affected": "set2",
+   "severity": "info",
+   "status": "blocked",
+   "evidence_tier": "not obtained",
+   "evidence": {
+    "attempt": "audit_live2_intents.py --capture, 10 retries with backoff over about 550 s, then a resumable retry that captured everything except the logs",
+    "error": "{\"code\": -32005, \"message\": \"rate limited\"} until the endpoint recovered; the log queries then timed out",
+    "captured_at_head": 49265284,
+    "substitute": "saved head reads in artifacts/postpin_pin/raw_reads.json (head 49,260,476) and artifacts/postpin_suite/live_latest.json.gz (head 49,255,838)"
+   },
+   "missing_observation": "the two calls above; no archive RPC key exists in pass and the public endpoint ignores block parameters for state reads",
+   "citations": []
+  },
+  {
+   "id": "L2-D5-03",
+   "title": "Deposit proxy surface: four selectors, an immutable user and exchange pair, no fallback, no native path, a user-only rescue",
+   "angle": "D5 sibling-path review",
+   "invariant": "A7",
+   "actor": "unprivileged outsider, proxy user",
+   "precondition": "the derived per-user runtime",
+   "trigger": "sweepAllToExchange, withdrawStuckToken, a native-value call and an unknown selector",
+   "impact": "the sweep is exchange-only, the rescue is user-only and can only move tokens the proxy holds on EVM (none expected, since the venue's assets are Core-side), and unknown selectors or native value revert",
+   "affected": "both",
+   "severity": "info",
+   "status": "confirmed_simulation",
+   "evidence_tier": "exact-runtime replay of a derived per-user runtime",
+   "evidence": {
+    "observations": {
+     "name": "set2_deposit_proxy_surface",
+     "native_funding": false,
+     "fallback": false,
+     "outsider_sweep": false,
+     "outsider_rescue": false,
+     "user_rescue_no_code": true
+    }
+   },
+   "missing_observation": "no historical rescue transaction exists",
+   "citations": [
+    "atlas/block_48902346/deposit_proxy_pseudocode.md",
+    "artifacts/deposit_proxy_local/replay.json"
+   ]
+  },
+  {
+   "id": "L2-D5-04",
+   "title": "Factory deposit proxy runtimes have no per-user variation beyond the two embedded user words and the exchange word",
+   "angle": "D4 wedge reachability across the family",
+   "invariant": "A7",
+   "actor": "any user",
+   "precondition": "the newest factory CREATE2 derivation",
+   "trigger": "derive the runtime and the address for an arbitrary user",
+   "impact": "the wedge class is family-wide rather than per-user: the derivation reproduces the two saved live stalled-proxy runtimes byte for byte and five catalog user-to-proxy addresses exactly",
+   "affected": "both",
+   "severity": "info",
+   "status": "confirmed_live",
+   "evidence_tier": "saved head runtimes plus a reproducible derivation",
+   "evidence": {
+    "stalled_runtime_sha256": [
+     "405e5bfee919c2dcb84ca0854ec56966a8212b322aae41c610e05de235b6b68f",
+     "07f9f589f271f1fa58e8a5990bec257eac46c8e0e7b44577d73666ac0a26511d"
+    ],
+    "catalog_pairs_checked": 5
+   },
+   "missing_observation": "none",
+   "citations": [
+    "atlas/block_48902346/deposit_proxy_runtime_derivation.md",
+    "artifacts/postpin_suite/live_latest.json.gz"
+   ]
+  },
+  {
+   "id": "L2-D1-06",
+   "title": "The set 2 signed close does not bind a builder address: the signed struct is the pinned five-field Close",
+   "angle": "D1 signature binding of the set 2 builder fee",
+   "invariant": "A2",
+   "actor": "authorized relayer, third-party frontend, closer",
+   "precondition": "the set 2 Exchange behind the newest Exchange proxy",
+   "trigger": "compare the live CLOSE_TYPEHASH with the pinned one, append an unsigned word to the close calldata, and vary the positionIds array",
+   "impact": "the signature covers exactly (user, positionIds, nonce, deadline): the live CLOSE_TYPEHASH constant is byte-identical to the hash-verified pinned string and a signature over that struct is accepted. Appending an unsigned eighth word keeps the signature valid and the close succeeds, but it changes neither the credited builder accumulator nor the write set, and a six-element positionIds array does not make any element the credit key. The credit site still keys on a memory word twelve slots past the decode base, so the question the authority workstream left open - whether a relayer can steer the 0.5 percent fee to an address the user did not sign for - is narrowed but not closed: on a fee-paying close the source word is still unidentified",
+   "affected": "set2",
+   "severity": "medium",
+   "status": "plausible_unproven",
+   "evidence_tier": "exact-runtime replay on the set 2 runtimes plus bytecode-level typehash comparison",
+   "evidence": {
+    "close_typehash": "0x9cc23a52214afa42e1ae53cdb2e79dc2d0cd33c33faca383ed3b149300adcb13 both sets; hash-checked string Close(address user,uint256[] positionIds,uint256 nonce,uint64 deadline)",
+    "close_selector": "0x2792e706, seven arguments, unchanged",
+    "observations": {
+     "set2_builder_close_candidates": {
+      "malformed": "{\"name\":\"set2_builder_close_candidates\",\"ok\":true,\"selector\":0,\"length\":6\"ids_read_bitmap\":,\"ids_read_bitmap\":0,\"ids_write_bitmap\":0,\"read_count\":16,\"write_count\":0}\n",
+      "error": "Expecting ',' delimiter: line 1 column 74 (char 73)"
+     },
+     "set2_builder_close_plain": {
+      "name": "set2_builder_close_plain",
+      "ok": true,
+      "selector": 0,
+      "reads_zero_builder": false,
+      "writes_zero_builder": false,
+      "read_count": 11,
+      "write_count": 0
+     },
+     "set2_builder_close_trailing": {
+      "name": "set2_builder_close_trailing",
+      "a_ok": true,
+      "a_reads_builderA": false,
+      "a_writes_builderA": false,
+      "b_ok": true,
+      "b_selector": 0,
+      "b_reads_builderB": false,
+      "b_reads_builderA": false,
+      "b_writes_builderB": false
+     }
+    },
+    "static": "the credit site loads mload(args_base + 0x180) masked to 160 bits and adds the fee returned by the linked library; the block is only entered when a fee exists"
+   },
+   "missing_observation": "a fee-paying (positive realised PnL) close traced on the set 2 runtime, naming the exact word that becomes the builder key; the empty and loss-free closes used here never enter the credit block",
+   "citations": [
+    "atlas/block_48902346/live2_authority.md L2A-08",
+    "atlas/block_48902346/session_close_typehash_behavior.json",
+    "atlas/block_48902346/exchange_core_withdrawal.md"
+   ]
+  },
+  {
+   "id": "L2-D2-04",
+   "title": "claimBuilderFees is caller-scoped: no caller can take another builder's accrual (shared-pool hypothesis disproved)",
+   "angle": "D2 gate on the set 2 builder fee claim",
+   "invariant": "A1",
+   "actor": "any caller",
+   "precondition": "builderFees entries for two distinct builders, seeded directly at slot 39",
+   "trigger": "call claimBuilderFees() from builder A, from builder B, and from an address with no entry",
+   "impact": "no cross-builder theft: A's call pays exactly A's own 5e18 and zeroes only A's entry, B's entry survives; B's call pays exactly B's own 7e18; the shared slot 38 accumulator falls by 5 + 7 only; an arbitrary address succeeds but is paid zero. The claim body keys on keccak256(abi.encode(msg.sender, 39))",
+   "affected": "set2",
+   "severity": "none",
+   "status": "disproved",
+   "evidence_tier": "exact-runtime replay of the set 2 runtimes with constructed accruals",
+   "evidence": {
+    "observations": {
+     "set2_builder_claim_a": {
+      "name": "set2_builder_claim_a",
+      "ok": true,
+      "selector": 0,
+      "paid": 5000000000000000000,
+      "entry_a_after": 0,
+      "entry_b_after_a": 7000000000000000000
+     },
+     "set2_builder_claim_others": {
+      "name": "set2_builder_claim_others",
+      "caller_b_ok": true,
+      "caller_b_selector": 0,
+      "entry_b_after_b": 88000000000000000000,
+      "paid_b": 7000000000000000000,
+      "outsider_ok": true,
+      "outsider_selector": 0,
+      "paid_outsider": 0
+     }
+    },
+    "static": "0x3af8: CALLER, MSTORE, PUSH1 0x27, MSTORE, SHA3, SLOAD, require nonzero, SSTORE 0, slot 38 high 96 bits debited, BuilderFeesClaimed 0x3416b71e"
+   },
+   "missing_observation": "no on-chain claim has been observed; the seeded accruals are constructed",
+   "citations": [
+    "atlas/block_48902346/live2_authority.md L2A-08"
+   ]
+  },
+  {
+   "id": "L2-D1-07",
+   "title": "The signed-close path couples the two proxies: the set 2 Exchange verifies through a selector only the set 2 SessionKeyManager dispatches, and a failed verifier stops the close",
+   "angle": "D1 signed intents across the set 2 upgrade",
+   "invariant": "A1, A2",
+   "actor": "owner or timelock planning an upgrade, relayer",
+   "precondition": "the Exchange and SessionKeyManager proxies with mismatched implementations",
+   "trigger": "run a signed close on the set 2 Exchange while the SessionKeyManager proxy points at the pinned implementation",
+   "impact": "the two proxies cannot be upgraded independently, and a failed check silently stops the close rather than being tolerated. The set 2 Exchange's close statically calls SessionKeyManager::0xd95208cd(user, digest, v, r, s) on every close; the dispatch bytes exist only in the set 2 SessionKeyManager runtime, so with the pinned implementation behind the proxy the verifier call fails, the inner close reverts, and no position, payout or accumulator state advances (the BatchExecutor wrapper still returns success for the outer transaction, which is why the failure is silent in a batch). A deployment that mixes the implementations therefore keeps taking deposits and withdrawals while quietly closing nothing",
+   "affected": "set2",
+   "severity": "medium",
+   "status": "confirmed_simulation",
+   "evidence_tier": "static bytecode check, an exact-runtime call trace, and the authority workstream's four-arm negative control",
+   "evidence": {
+    "calltrace": "artifacts/live2_intents/close_verifier_calltrace.txt: 0x6cd56616::2792e706 -> 0x8326eb88::b002b9fa(user,nonce,deadline), 0x8326eb88::d95208cd(user,digest,v,r,s) [staticcall] -> 0x04b5ea4c",
+    "static": "63d95208cd appears once in the set 2 SessionKeyManager runtime and zero times in the pinned runtime, and the Exchange runtime has no dispatch entry of its own for it; asserted in audit_live2_intents.py",
+    "cross_reference": "atlas/block_48902346/live2_authority.md L2A-15 and artifacts/live2_authority/close_coupling.json: direct close with the pinned SessionKeyManager reverts with empty data and writes 0 Exchange slots, direct close with the set 2 SessionKeyManager succeeds with 12 writes, the historical batch with the pinned implementation succeeds with 4 writes and both positions still active, and with the set 2 implementation 22 writes and no position active",
+    "retired_local_arm": "a local implementation-swap arm of mine returned success for the close with the pinned SessionKeyManager behind the proxy; it was unstable between runs and is not used as evidence"
+   },
+   "missing_observation": "the failure mode on set 2 era state rather than the pinned mixed-close prestate; the coupling and the fail-closed behaviour themselves are settled",
+   "citations": [
+    "atlas/block_48902346/live2_authority.md L2A-15",
+    "artifacts/live2_authority/close_coupling.json",
+    "atlas/block_48902346/suite_sets.json"
+   ]
+  },
+  {
+   "id": "L2-D2-05",
+   "title": "The owner-only entry 0xd970fad5 moves one address's builder accrual onto another and leaves the shared counter alone",
+   "angle": "D2 authority surface on the set 2 builder accumulator",
+   "invariant": "A1",
+   "actor": "owner (timelock), any caller",
+   "precondition": "two seeded builderFees entries at slot 39",
+   "trigger": "call 0xd970fad5(a, b) as the owner and as an unrelated address",
+   "impact": "an unrelated caller reverts NotOwner (0x30cd7471); the owner call zeroes builderFees[a] (5e18), adds exactly that amount to builderFees[b] (7e18 becomes 12e18) and leaves the shared slot-38 counter untouched. It is a value-moving reassignment of an accrual, not a claim, and it confirms slot 39 is an address-keyed balance rather than a per-call fee",
+   "affected": "set2",
+   "severity": "low",
+   "status": "confirmed_simulation",
+   "evidence_tier": "exact-runtime replay of the set 2 runtimes with constructed accruals",
+   "evidence": {
+    "observations": {
+     "name": "set2_builder_sweep_entry",
+     "outsider_ok": false,
+     "outsider_selector": 818771057,
+     "owner_ok": true,
+     "owner_selector": 0,
+     "entry_a": 0,
+     "entry_b": 12000000000000000000,
+     "shared": 100000000000000000000,
+     "key_bits": 15
+    },
+    "sweep_family_probe": {
+     "name": "set2_sweep_builder_bits",
+     "sweep_pending": 0,
+     "sweep_fresh": 0,
+     "request": 0,
+     "finalize": 0,
+     "layout": "bit0 failed, bits1..8 are (read,write) of seeded builderFees entries for USER, address(0), a, proxy"
+    }
+   },
+   "missing_observation": "the source name of 0xd970fad5 and whether any owner call has happened on chain",
+   "citations": [
+    "atlas/block_48902346/live2_authority.md L2A-08"
+   ]
+  },
+  {
+   "id": "L2-D1-04",
+   "title": "The set 2 SessionKeyManager adds the per-close session verifier 0xd95208cd, a builder registry pointer (slot 8) and a BuilderRegistryUpdated event",
+   "angle": "D1 added surface",
+   "invariant": "A1",
+   "actor": "owner (setBuilderRegistry)",
+   "precondition": "the set 2 SessionKeyManager runtime",
+   "trigger": "static comparison and the BatchExecutor allowlist probe",
+   "impact": "the added selector 0xd95208cd is reached on every signed close: the set 2 Exchange statically calls SessionKeyManager::0xd95208cd(user, digest, v, r, s) with the EIP-712 digest, right after 0xb002b9fa consumes the nonce, and it is dispatched only by the set 2 runtime (the pinned runtime contains no 63d95208cd bytes). A direct call with a user-signed digest returns SessionKeyNotAuthorized (0xc5045f22), so it is a session-key verifier over a digest rather than a passive getter. The other added selectors are not allowlisted and the saved head read shows the builder registry pointer is the deployed registry",
+   "affected": "set2",
+   "severity": "info",
+   "status": "confirmed_simulation",
+   "evidence_tier": "static bytecode read, exact-runtime call trace and allowlist probe",
+   "evidence": {
+    "calltrace": "artifacts/live2_intents/close_verifier_calltrace.txt",
+    "added_selectors": [
+     "0xbd322efa",
+     "0xd95208cd",
+     "0xe737de13"
+    ],
+    "added_constant": "0x8818669b... = keccak256(BuilderRegistryUpdated(address))",
+    "builder_registry_slot": 8,
+    "live_registry": "0x000000000000000000000000fdc6550436dd75ce8a0b145f935b7d3a64f53248"
+   },
+   "missing_observation": "the source name of 0xd95208cd and of the builder accumulator's own entry points",
+   "citations": [
+    "atlas/block_48902346/suite_sets.md",
+    "atlas/block_48902346/live2_authority.md L2A-15"
+   ]
+  },
+  {
+   "id": "L2-D1-05",
+   "title": "The pinned 26-case signed-intent suite reproduces unchanged on the set 2 runtimes",
+   "angle": "D1/D2 control",
+   "invariant": "A2",
+   "actor": "none",
+   "precondition": "the adapted pinned suite compiled against the set 2 implementations",
+   "trigger": "run the suite",
+   "impact": "no impact: signature-field mismatches, nonce rollback after a bad signature, the inclusive deadline boundary, the slot-88 gate, the four-position close and the next-block replay rejection all behave identically, which is the control for every set 2 claim above",
+   "affected": "both",
+   "severity": "none",
+   "status": "confirmed_simulation",
+   "evidence_tier": "exact-runtime replay, both runtime sets, one harness",
+   "evidence": {
+    "control_tests": 26,
+    "live_base_tests": 26,
+    "live_only_tests": 18,
+    "recorded_open_post_signer": {
+     "name": "set2_open_post_signer",
+     "ok": false,
+     "selector": 172972551
+    }
+   },
+   "missing_observation": "the open path's post-signer error 0x0a4f5a07 persists on set 2 and its source name remains unresolved",
+   "citations": [
+    "atlas/block_48902346/session_key_pseudocode.md",
+    "AUDIT.md A2"
+   ]
+  }
+ ]
+}

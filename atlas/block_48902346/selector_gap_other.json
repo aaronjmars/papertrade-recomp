@@ -1,0 +1,4379 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "generated_by": "atlas_selector_gap_other.py",
+  "scope": "The rows of unresolved.json state_changing_selectors_without_saved_historical_trace whose runtime role is not exchange_implementation or exchange_linked_library_live, plus the already-proven fixed-revert and initializer-stub selectors of the same families, kept separate. Exchange rows are covered by the sibling workstream.",
+  "gap_row_count": 21,
+  "row_count": 21,
+  "counts": {
+    "assigned_rows": 21,
+    "assigned_rows_closed": 21,
+    "assigned_rows_undecided": 0,
+    "kept_separate_fixed_reverts": 8,
+    "kept_separate_initializer_stubs": 3,
+    "rows_with_exact_runtime_replay": 21,
+    "rows_by_family": {
+      "batch_executor_implementation": 2,
+      "deposit_proxy_factory_implementation": 2,
+      "paper_token_implementation": 2,
+      "proxy_admin": 3,
+      "session_key_manager_implementation": 1,
+      "staking_implementation": 1,
+      "timelock": 6,
+      "tokenomics_implementation": 2,
+      "user_deposit_proxy_representative": 2
+    },
+    "rows_with_hash_verified_name": 17,
+    "rows_with_undefined_source_name": 4,
+    "rows_with_ambiguous_public_preimage": 1,
+    "rows_without_saved_historical_trace": 21
+  },
+  "rows": [
+    {
+      "role": "paper_token_implementation",
+      "selector": "0x9dc29fac",
+      "signature": "burn(address,uint256)",
+      "name_status": "hash-verified reconstructed signature; original Solidity identifier unverified",
+      "abi": [
+        "address",
+        "uint256"
+      ],
+      "payable": false,
+      "guard": "caller == minter (proxy storage slot 4)",
+      "writes": [
+        "balances mapping base slot 7 for the burned holder",
+        "totalSupply slot 6"
+      ],
+      "reads": [
+        "slot 4 (minter)"
+      ],
+      "events": [
+        "Transfer(address,address,uint256)"
+      ],
+      "errors": [
+        "NotMinter()",
+        "InsufficientBalance()"
+      ],
+      "evidence_tier": "exact-runtime replay",
+      "evidence_paths": [
+        "../../artifacts/selector_gap_other/replay.json",
+        "../../artifacts/paper_token/pinned_mutation_traces.json",
+        "paper_token_behavior.json"
+      ],
+      "replay_tests": [
+        "testPaperBurnFromMinter",
+        "testPaperBurnRejections",
+        "testDecodeGuards"
+      ],
+      "undecided": [
+        "No successful post-deployment historical call exists: the full-range Transfer-to-zero query in artifacts/paper_control_history/event_queries.json returned zero logs.",
+        "Original Solidity identifier and the exact burn-branch boundary conditions (zero address, self-burn) are not recovered."
+      ],
+      "address": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+      "static_evidence": {
+        "inline_guard_word_count": null,
+        "revert_only_range": [
+          "0x32f",
+          "0x3c4"
+        ],
+        "revert_only_effect_opcodes": [
+          [
+            "0x34b",
+            "SLOAD"
+          ],
+          [
+            "0x370",
+            "SLOAD"
+          ],
+          [
+            "0x399",
+            "SLOAD"
+          ],
+          [
+            "0x3a0",
+            "SSTORE"
+          ],
+          [
+            "0x3a7",
+            "SLOAD"
+          ],
+          [
+            "0x3af",
+            "SSTORE"
+          ],
+          [
+            "0x3b4",
+            "LOG3"
+          ]
+        ],
+        "selector_push_pc": 162,
+        "dispatch_form": "EQ",
+        "dispatch_target_pc": 815,
+        "body_pc": 815,
+        "body_resolution": "inline",
+        "dispatch_idiom_bytes": "639dc29fac1461032f578063",
+        "nonpayable": true,
+        "body_region": [
+          "0x32f",
+          "0x3d3"
+        ],
+        "effect_opcodes": [
+          [
+            "0x34b",
+            "SLOAD"
+          ],
+          [
+            "0x370",
+            "SLOAD"
+          ],
+          [
+            "0x399",
+            "SLOAD"
+          ],
+          [
+            "0x3a0",
+            "SSTORE"
+          ],
+          [
+            "0x3a7",
+            "SLOAD"
+          ],
+          [
+            "0x3af",
+            "SSTORE"
+          ],
+          [
+            "0x3b4",
+            "LOG3"
+          ]
+        ],
+        "static_sload_candidates": [
+          [
+            "0x34b",
+            null
+          ],
+          [
+            "0x370",
+            "0x20"
+          ],
+          [
+            "0x399",
+            null
+          ],
+          [
+            "0x3a7",
+            "0x06"
+          ]
+        ],
+        "static_sstore_candidates": [
+          [
+            "0x3a0",
+            null
+          ],
+          [
+            "0x3af",
+            "0x06"
+          ]
+        ],
+        "static_slot_constants_indirect": {
+          "reads": 2,
+          "writes": 1
+        },
+        "error_constructions": [
+          {
+            "pc": "0x3b9",
+            "pushed": "0x1e9acf17",
+            "shift": 227,
+            "payload": "0xf4d678b8"
+          },
+          {
+            "pc": "0x3c8",
+            "pushed": "0x3e34a41b",
+            "shift": 226,
+            "payload": "0xf8d2906c"
+          }
+        ],
+        "source": "pinned runtime bytecode read in this script"
+      },
+      "event_topics": {
+        "Transfer(address,address,uint256)": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+      },
+      "error_selectors": {
+        "NotMinter()": "0xf8d2906c",
+        "InsufficientBalance()": "0xf4d678b8"
+      },
+      "decoded_head_words": 2
+    },
+    {
+      "role": "paper_token_implementation",
+      "selector": "0xfca3b5aa",
+      "signature": "setMinter(address)",
+      "name_status": "hash-verified reconstructed signature; original Solidity identifier unverified",
+      "abi": [
+        "address"
+      ],
+      "payable": false,
+      "guard": "caller == owner (proxy storage slot 3)",
+      "writes": [
+        "minter slot 4"
+      ],
+      "reads": [
+        "slot 3 (owner)"
+      ],
+      "events": [
+        "MinterUpdated(address)"
+      ],
+      "errors": [
+        "NotOwner()"
+      ],
+      "evidence_tier": "exact-runtime replay",
+      "evidence_paths": [
+        "../../artifacts/selector_gap_other/replay.json",
+        "../../artifacts/paper_token/pinned_mutation_traces.json",
+        "paper_token_behavior.json"
+      ],
+      "replay_tests": [
+        "testPaperSetMinter",
+        "testDecodeGuards"
+      ],
+      "undecided": [
+        "The only observed MinterUpdated log is the deployment initializer; no later historical setMinter call is saved.",
+        "Original Solidity identifier is unverified."
+      ],
+      "address": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+      "static_evidence": {
+        "inline_guard_word_count": 1,
+        "revert_only_range": [
+          "0xfb",
+          "0x160"
+        ],
+        "revert_only_effect_opcodes": [
+          [
+            "0x117",
+            "SLOAD"
+          ],
+          [
+            "0x12c",
+            "SLOAD"
+          ],
+          [
+            "0x13e",
+            "SSTORE"
+          ],
+          [
+            "0x14f",
+            "LOG2"
+          ]
+        ],
+        "selector_push_pc": 238,
+        "dispatch_form": "EQ",
+        "dispatch_target_pc": 251,
+        "body_pc": 251,
+        "body_resolution": "inline",
+        "dispatch_idiom_bytes": "63fca3b5aa146100fb575f80",
+        "nonpayable": true,
+        "body_region": [
+          "0xfb",
+          "0x164"
+        ],
+        "effect_opcodes": [
+          [
+            "0x117",
+            "SLOAD"
+          ],
+          [
+            "0x12c",
+            "SLOAD"
+          ],
+          [
+            "0x13e",
+            "SSTORE"
+          ],
+          [
+            "0x14f",
+            "LOG2"
+          ]
+        ],
+        "static_sload_candidates": [
+          [
+            "0x117",
+            "0x03"
+          ],
+          [
+            "0x12c",
+            null
+          ]
+        ],
+        "static_sstore_candidates": [
+          [
+            "0x13e",
+            null
+          ]
+        ],
+        "static_slot_constants_indirect": {
+          "reads": 1,
+          "writes": 1
+        },
+        "error_constructions": [
+          {
+            "pc": "0x153",
+            "pushed": "0x30cd7471",
+            "shift": 224,
+            "payload": "0x30cd7471"
+          }
+        ],
+        "source": "pinned runtime bytecode read in this script"
+      },
+      "event_topics": {
+        "MinterUpdated(address)": "0xad0f299ec81a386c98df0ac27dae11dd020ed1b56963c53a7292e7a3a314539a"
+      },
+      "error_selectors": {
+        "NotOwner()": "0x30cd7471"
+      },
+      "decoded_head_words": 1,
+      "inline_guard_constant_words": 1
+    },
+    {
+      "role": "tokenomics_implementation",
+      "selector": "0x12baae3b",
+      "signature": "setMintParams(uint256,uint256,uint256,uint256)",
+      "name_status": "hash-verified reconstructed signature; original Solidity identifier unverified",
+      "abi": [
+        "uint256",
+        "uint256",
+        "uint256",
+        "uint256"
+      ],
+      "payable": false,
+      "guard": "caller == owner (proxy storage slot 0, bits 16 through 175)",
+      "writes": [
+        "mint parameter slots 5, 6, 7 and 8, in argument order"
+      ],
+      "reads": [
+        "slot 0 (packed owner)"
+      ],
+      "events": [
+        "MintParamsUpdated(uint256,uint256,uint256,uint256)"
+      ],
+      "errors": [
+        "NotOwner()",
+        "InvalidMintParams()"
+      ],
+      "evidence_tier": "exact-runtime replay",
+      "evidence_paths": [
+        "../../artifacts/selector_gap_other/replay.json",
+        "tokenomics_params_behavior.json",
+        "timelock_operations.json"
+      ],
+      "replay_tests": [
+        "testTokenomicsSetMintParams",
+        "testDecodeGuards"
+      ],
+      "undecided": [
+        "The timelock operation that schedules this call was ready but not executed at the pin, so no historical success exists.",
+        "Downstream mint arithmetic under the changed parameters is not replayed end to end."
+      ],
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "static_evidence": {
+        "inline_guard_word_count": 4,
+        "revert_only_range": [
+          "0x597",
+          "0x638"
+        ],
+        "revert_only_effect_opcodes": [
+          [
+            "0x5ac",
+            "SLOAD"
+          ],
+          [
+            "0x609",
+            "SSTORE"
+          ],
+          [
+            "0x60d",
+            "SSTORE"
+          ],
+          [
+            "0x611",
+            "SSTORE"
+          ],
+          [
+            "0x615",
+            "SSTORE"
+          ],
+          [
+            "0x628",
+            "LOG1"
+          ]
+        ],
+        "selector_push_pc": 41,
+        "dispatch_form": "EQ",
+        "dispatch_target_pc": 1431,
+        "body_pc": 1431,
+        "body_resolution": "inline",
+        "dispatch_idiom_bytes": "6312baae3b14610597578063",
+        "nonpayable": true,
+        "body_region": [
+          "0x597",
+          "0x667"
+        ],
+        "effect_opcodes": [
+          [
+            "0x5ac",
+            "SLOAD"
+          ],
+          [
+            "0x609",
+            "SSTORE"
+          ],
+          [
+            "0x60d",
+            "SSTORE"
+          ],
+          [
+            "0x611",
+            "SSTORE"
+          ],
+          [
+            "0x615",
+            "SSTORE"
+          ],
+          [
+            "0x628",
+            "LOG1"
+          ]
+        ],
+        "static_sload_candidates": [
+          [
+            "0x5ac",
+            null
+          ]
+        ],
+        "static_sstore_candidates": [
+          [
+            "0x609",
+            "0x05"
+          ],
+          [
+            "0x60d",
+            "0x06"
+          ],
+          [
+            "0x611",
+            "0x07"
+          ],
+          [
+            "0x615",
+            "0x08"
+          ]
+        ],
+        "static_slot_constants_indirect": {
+          "reads": 1,
+          "writes": 0
+        },
+        "error_constructions": [
+          {
+            "pc": "0x62d",
+            "pushed": "0xbad8ef95",
+            "shift": 224,
+            "payload": "0xbad8ef95"
+          },
+          {
+            "pc": "0x65c",
+            "pushed": "0x30cd7471",
+            "shift": 224,
+            "payload": "0x30cd7471"
+          }
+        ],
+        "source": "pinned runtime bytecode read in this script"
+      },
+      "event_topics": {
+        "MintParamsUpdated(uint256,uint256,uint256,uint256)": "0xdbf6f1878073adede0b153c63f457c1c601a056124755086092f973f19550176"
+      },
+      "error_selectors": {
+        "NotOwner()": "0x30cd7471",
+        "InvalidMintParams()": "0xbad8ef95"
+      },
+      "decoded_head_words": 4,
+      "inline_guard_constant_words": 4
+    },
+    {
+      "role": "tokenomics_implementation",
+      "selector": "0x485cc955",
+      "signature": "initialize(address,address)",
+      "name_status": "ambiguous public preimage set; hash-matching candidate only",
+      "name_candidates": [
+        "initialize(address,address)",
+        "watch_tg_invmru_7bd442a(uint256,address,uint256)",
+        "watch_tg_invmru_10757d42(bool,bool)"
+      ],
+      "abi": [
+        "address",
+        "address"
+      ],
+      "payable": false,
+      "guard": "none in fresh state (any caller); initialized state reverts",
+      "writes": [
+        "slot 0 owner field with the low 16-bit initialization word",
+        "slot 1 second address (Exchange)",
+        "default mint parameter slots 5 through 8"
+      ],
+      "reads": [
+        "slot 0 (initialization word)"
+      ],
+      "events": [
+        "OwnerUpdated(address)",
+        "MintParamsUpdated(uint256,uint256,uint256,uint256)"
+      ],
+      "errors": [
+        "AlreadyInitialized()"
+      ],
+      "evidence_tier": "exact-runtime replay",
+      "evidence_paths": [
+        "../../artifacts/remaining_initializers_local/replay.json",
+        "tokenomics_initializer_behavior.json",
+        "../../artifacts/selector_gap_other/replay.json"
+      ],
+      "replay_tests": [
+        "testDecodeGuards"
+      ],
+      "undecided": [
+        "Three public 4-byte preimages hash to this selector; the original declaration is not proved.",
+        "No historical deployment call is saved for this implementation (the pinned proxy was deployed before it)."
+      ],
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "static_evidence": {
+        "inline_guard_word_count": null,
+        "revert_only_range": [
+          "0x438",
+          "0x56b"
+        ],
+        "revert_only_effect_opcodes": [
+          [
+            "0x46b",
+            "SLOAD"
+          ],
+          [
+            "0x49f",
+            "SLOAD"
+          ],
+          [
+            "0x4c1",
+            "SSTORE"
+          ],
+          [
+            "0x4cc",
+            "SLOAD"
+          ],
+          [
+            "0x4d1",
+            "SSTORE"
+          ],
+          [
+            "0x4e1",
+            "SSTORE"
+          ],
+          [
+            "0x4f1",
+            "SSTORE"
+          ],
+          [
+            "0x500",
+            "SSTORE"
+          ],
+          [
+            "0x511",
+            "SSTORE"
+          ],
+          [
+            "0x526",
+            "LOG2"
+          ],
+          [
+            "0x536",
+            "LOG1"
+          ],
+          [
+            "0x54a",
+            "SSTORE"
+          ],
+          [
+            "0x559",
+            "SSTORE"
+          ]
+        ],
+        "selector_push_pc": 74,
+        "dispatch_form": "EQ",
+        "dispatch_target_pc": 1080,
+        "body_pc": 1080,
+        "body_resolution": "inline",
+        "dispatch_idiom_bytes": "63485cc95514610438578063",
+        "nonpayable": true,
+        "body_region": [
+          "0x438",
+          "0x579"
+        ],
+        "effect_opcodes": [
+          [
+            "0x46b",
+            "SLOAD"
+          ],
+          [
+            "0x49f",
+            "SLOAD"
+          ],
+          [
+            "0x4c1",
+            "SSTORE"
+          ],
+          [
+            "0x4cc",
+            "SLOAD"
+          ],
+          [
+            "0x4d1",
+            "SSTORE"
+          ],
+          [
+            "0x4e1",
+            "SSTORE"
+          ],
+          [
+            "0x4f1",
+            "SSTORE"
+          ],
+          [
+            "0x500",
+            "SSTORE"
+          ],
+          [
+            "0x511",
+            "SSTORE"
+          ],
+          [
+            "0x526",
+            "LOG2"
+          ],
+          [
+            "0x536",
+            "LOG1"
+          ],
+          [
+            "0x54a",
+            "SSTORE"
+          ],
+          [
+            "0x559",
+            "SSTORE"
+          ]
+        ],
+        "static_sload_candidates": [
+          [
+            "0x46b",
+            null
+          ],
+          [
+            "0x49f",
+            null
+          ],
+          [
+            "0x4cc",
+            "0x01"
+          ]
+        ],
+        "static_sstore_candidates": [
+          [
+            "0x4c1",
+            null
+          ],
+          [
+            "0x4d1",
+            "0x01"
+          ],
+          [
+            "0x4e1",
+            "0x05"
+          ],
+          [
+            "0x4f1",
+            "0x06"
+          ],
+          [
+            "0x500",
+            "0x07"
+          ],
+          [
+            "0x511",
+            "0x08"
+          ],
+          [
+            "0x54a",
+            null
+          ],
+          [
+            "0x559",
+            null
+          ]
+        ],
+        "static_slot_constants_indirect": {
+          "reads": 2,
+          "writes": 3
+        },
+        "error_constructions": [],
+        "source": "pinned runtime bytecode read in this script"
+      },
+      "event_topics": {
+        "OwnerUpdated(address)": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+        "MintParamsUpdated(uint256,uint256,uint256,uint256)": "0xdbf6f1878073adede0b153c63f457c1c601a056124755086092f973f19550176"
+      },
+      "error_selectors": {
+        "AlreadyInitialized()": "0x0dc149f0"
+      },
+      "decoded_head_words": 2
+    },
+    {
+      "role": "session_key_manager_implementation",
+      "selector": "0xcf8fbec9",
+      "signature": "setAuthorizedCaller(address)",
+      "name_status": "hash-verified reconstructed signature; original Solidity identifier unverified",
+      "abi": [
+        "address"
+      ],
+      "payable": false,
+      "guard": "caller == owner (proxy storage slot 2)",
+      "writes": [
+        "authorized Exchange caller slot 3 only; the cached domain separator in slot 1 is unchanged"
+      ],
+      "reads": [
+        "slot 2 (owner)",
+        "slot 3 (previous caller)"
+      ],
+      "events": [
+        "AuthorizedCallerUpdated(address)"
+      ],
+      "errors": [
+        "NotOwner()"
+      ],
+      "evidence_tier": "exact-runtime replay",
+      "evidence_paths": [
+        "../../artifacts/selector_gap_other/replay.json",
+        "../../artifacts/session_keys/pinned_auth_probes.json",
+        "session_key_behavior.json"
+      ],
+      "replay_tests": [
+        "testSessionSetAuthorizedCaller",
+        "testDecodeGuards"
+      ],
+      "undecided": [
+        "No historical call is saved; the pinned read-only probe and this local replay are the only executions.",
+        "The pinned session proxy now points at a different implementation at latest (see live_drift), so this record describes the pinned runtime only."
+      ],
+      "address": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "static_evidence": {
+        "inline_guard_word_count": 1,
+        "revert_only_range": null,
+        "revert_only_effect_opcodes": null,
+        "selector_push_pc": 250,
+        "dispatch_form": "EQ",
+        "dispatch_target_pc": 533,
+        "body_pc": 533,
+        "body_resolution": "inline",
+        "dispatch_idiom_bytes": "63cf8fbec914610215578063",
+        "nonpayable": true,
+        "body_region": [
+          "0x215",
+          "0x26f"
+        ],
+        "effect_opcodes": [
+          [
+            "0x233",
+            "SLOAD"
+          ],
+          [
+            "0x257",
+            "SLOAD"
+          ],
+          [
+            "0x25c",
+            "SSTORE"
+          ],
+          [
+            "0x26d",
+            "LOG2"
+          ]
+        ],
+        "static_sload_candidates": [
+          [
+            "0x233",
+            "0x02"
+          ],
+          [
+            "0x257",
+            "0x03"
+          ]
+        ],
+        "static_sstore_candidates": [
+          [
+            "0x25c",
+            "0x03"
+          ]
+        ],
+        "static_slot_constants_indirect": {
+          "reads": 0,
+          "writes": 0
+        },
+        "error_constructions": [],
+        "source": "pinned runtime bytecode read in this script"
+      },
+      "event_topics": {
+        "AuthorizedCallerUpdated(address)": "0xfe60173cc964bc674632fcf67031bba24c8a99a4a7d6518c726586978b7e30d3"
+      },
+      "error_selectors": {
+        "NotOwner()": "0x30cd7471"
+      },
+      "decoded_head_words": 1,
+      "inline_guard_constant_words": 1
+    },
+    {
+      "role": "deposit_proxy_factory_implementation",
+      "selector": "0x0f71c8bc",
+      "signature": null,
+      "name_status": "undefined: no hash-matching public name and no source",
+      "abi": [
+        "address",
+        "address"
+      ],
+      "payable": false,
+      "guard": "caller == the proxy's EIP-1967 admin slot AND owner storage slot 3 == 0; a zero Exchange field in slot 0 additionally reverts",
+      "writes": [
+        "owner slot 3",
+        "authorized deployer slot 4"
+      ],
+      "reads": [
+        "EIP-1967 admin slot 0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103",
+        "slot 3 (owner)",
+        "slot 0 (packed Exchange and initialized word)"
+      ],
+      "events": [
+        "OwnerUpdated(address)",
+        "AuthorizedDeployerUpdated(address)"
+      ],
+      "errors": [
+        "0xc031a0df (caller is not the proxy admin)",
+        "0x3f733c4f (already initialized)",
+        "InvalidExchange()"
+      ],
+      "evidence_tier": "exact-runtime replay",
+      "evidence_paths": [
+        "../../artifacts/selector_gap_other/replay.json",
+        "factory_behavior.json"
+      ],
+      "replay_tests": [
+        "testFactoryAdminInitializer",
+        "testDecodeGuards"
+      ],
+      "undecided": [
+        "Source function name and both admin-path error names are undefined.",
+        "The pinned call reverts because the owner is set, so only a synthetic owner-zero test proxy reaches the write path."
+      ],
+      "address": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "static_evidence": {
+        "inline_guard_word_count": null,
+        "revert_only_range": [
+          "0x49f",
+          "0x520"
+        ],
+        "revert_only_effect_opcodes": [
+          [
+            "0x4e2",
+            "SLOAD"
+          ],
+          [
+            "0x4f9",
+            "SLOAD"
+          ],
+          [
+            "0x506",
+            "SLOAD"
+          ]
+        ],
+        "selector_push_pc": 41,
+        "dispatch_form": "EQ",
+        "dispatch_target_pc": 1183,
+        "body_pc": 1183,
+        "body_resolution": "inline",
+        "dispatch_idiom_bytes": "630f71c8bc1461049f578063",
+        "nonpayable": true,
+        "body_region": [
+          "0x49f",
+          "0x52f"
+        ],
+        "effect_opcodes": [
+          [
+            "0x4e2",
+            "SLOAD"
+          ],
+          [
+            "0x4f9",
+            "SLOAD"
+          ],
+          [
+            "0x506",
+            "SLOAD"
+          ]
+        ],
+        "static_sload_candidates": [
+          [
+            "0x4e2",
+            "0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103"
+          ],
+          [
+            "0x4f9",
+            "0x03"
+          ],
+          [
+            "0x506",
+            null
+          ]
+        ],
+        "static_sstore_candidates": [],
+        "static_slot_constants_indirect": {
+          "reads": 1,
+          "writes": 0
+        },
+        "error_constructions": [
+          {
+            "pc": "0x513",
+            "pushed": "0x3f733c4f",
+            "shift": 224,
+            "payload": "0x3f733c4f"
+          },
+          {
+            "pc": "0x522",
+            "pushed": "0xc031a0df",
+            "shift": 224,
+            "payload": "0xc031a0df"
+          }
+        ],
+        "source": "pinned runtime bytecode read in this script"
+      },
+      "event_topics": {
+        "OwnerUpdated(address)": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+        "AuthorizedDeployerUpdated(address)": "0x09bdaf5fdab1e55bea2219aeaa3c7334e422f842e1fb25dc319e8a2b3d5e0167"
+      },
+      "error_selectors": {
+        "0xc031a0df (caller is not the proxy admin)": "0xc031a0df",
+        "0x3f733c4f (already initialized)": "0x3f733c4f",
+        "InvalidExchange()": "0x40892c33"
+      },
+      "decoded_head_words": 2
+    },
+    {
+      "role": "deposit_proxy_factory_implementation",
+      "selector": "0xc6f881bc",
+      "signature": "setAuthorizedDeployer(address)",
+      "name_status": "hash-verified reconstructed signature; original Solidity identifier unverified",
+      "abi": [
+        "address"
+      ],
+      "payable": false,
+      "guard": "caller == owner (proxy storage slot 3)",
+      "writes": [
+        "authorized deployer slot 4"
+      ],
+      "reads": [
+        "slot 3 (owner)"
+      ],
+      "events": [
+        "AuthorizedDeployerUpdated(address)"
+      ],
+      "errors": [
+        "NotOwner()"
+      ],
+      "evidence_tier": "exact-runtime replay",
+      "evidence_paths": [
+        "../../artifacts/selector_gap_other/replay.json",
+        "factory_selector_names_behavior.json"
+      ],
+      "replay_tests": [
+        "testFactorySetAuthorizedDeployer",
+        "testDecodeGuards"
+      ],
+      "undecided": [
+        "No historical call is saved; the pinned probes and this replay are the only executions."
+      ],
+      "address": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "static_evidence": {
+        "inline_guard_word_count": 1,
+        "revert_only_range": [
+          "0x2d1",
+          "0x337"
+        ],
+        "revert_only_effect_opcodes": [
+          [
+            "0x2ee",
+            "SLOAD"
+          ],
+          [
+            "0x303",
+            "SLOAD"
+          ],
+          [
+            "0x315",
+            "SSTORE"
+          ],
+          [
+            "0x326",
+            "LOG2"
+          ]
+        ],
+        "selector_push_pc": 107,
+        "dispatch_form": "EQ",
+        "dispatch_target_pc": 721,
+        "body_pc": 721,
+        "body_resolution": "inline",
+        "dispatch_idiom_bytes": "63c6f881bc146102d1578063",
+        "nonpayable": true,
+        "body_region": [
+          "0x2d1",
+          "0x337"
+        ],
+        "effect_opcodes": [
+          [
+            "0x2ee",
+            "SLOAD"
+          ],
+          [
+            "0x303",
+            "SLOAD"
+          ],
+          [
+            "0x315",
+            "SSTORE"
+          ],
+          [
+            "0x326",
+            "LOG2"
+          ]
+        ],
+        "static_sload_candidates": [
+          [
+            "0x2ee",
+            "0x03"
+          ],
+          [
+            "0x303",
+            null
+          ]
+        ],
+        "static_sstore_candidates": [
+          [
+            "0x315",
+            null
+          ]
+        ],
+        "static_slot_constants_indirect": {
+          "reads": 1,
+          "writes": 1
+        },
+        "error_constructions": [
+          {
+            "pc": "0x32a",
+            "pushed": "0x30cd7471",
+            "shift": 224,
+            "payload": "0x30cd7471"
+          }
+        ],
+        "source": "pinned runtime bytecode read in this script"
+      },
+      "event_topics": {
+        "AuthorizedDeployerUpdated(address)": "0x09bdaf5fdab1e55bea2219aeaa3c7334e422f842e1fb25dc319e8a2b3d5e0167"
+      },
+      "error_selectors": {
+        "NotOwner()": "0x30cd7471"
+      },
+      "decoded_head_words": 1,
+      "inline_guard_constant_words": 1
+    },
+    {
+      "role": "batch_executor_implementation",
+      "selector": "0x0f71c8bc",
+      "signature": null,
+      "name_status": "undefined: no hash-matching public name and no source",
+      "abi": [
+        "address",
+        "address"
+      ],
+      "payable": false,
+      "guard": "caller == the proxy's EIP-1967 admin slot AND owner slot 3 == 0 AND the slot-5 initialization word is clear",
+      "writes": [
+        "owner slot 3",
+        "initialization word slot 5",
+        "authorized relayer mapping base slot 4"
+      ],
+      "reads": [
+        "EIP-1967 admin slot 0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103",
+        "slots 3 and 5"
+      ],
+      "events": [
+        "OwnerUpdated(address)",
+        "AuthorizedRelayerUpdated(address,bool)"
+      ],
+      "errors": [
+        "0xc031a0df (caller is not the proxy admin)",
+        "0x3f733c4f (already initialized)"
+      ],
+      "evidence_tier": "exact-runtime replay",
+      "evidence_paths": [
+        "../../artifacts/batch_control_local/replay.json",
+        "batch_control_behavior.json",
+        "../../artifacts/selector_gap_other/replay.json"
+      ],
+      "replay_tests": [
+        "testDecodeGuards"
+      ],
+      "undecided": [
+        "Source function name and both admin-path error names are undefined.",
+        "The write path needs a synthetic fresh-state proxy; the archived layout reverts."
+      ],
+      "address": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "static_evidence": {
+        "inline_guard_word_count": 2,
+        "revert_only_range": [
+          "0x83a",
+          "0x925"
+        ],
+        "revert_only_effect_opcodes": [
+          [
+            "0x87d",
+            "SLOAD"
+          ],
+          [
+            "0x891",
+            "SLOAD"
+          ],
+          [
+            "0x8ae",
+            "SLOAD"
+          ],
+          [
+            "0x8bc",
+            "SSTORE"
+          ],
+          [
+            "0x8c8",
+            "SSTORE"
+          ],
+          [
+            "0x8dd",
+            "LOG2"
+          ],
+          [
+            "0x908",
+            "SLOAD"
+          ],
+          [
+            "0x90c",
+            "SSTORE"
+          ],
+          [
+            "0x911",
+            "LOG2"
+          ]
+        ],
+        "selector_push_pc": 38,
+        "dispatch_form": "EQ",
+        "dispatch_target_pc": 2106,
+        "body_pc": 2106,
+        "body_resolution": "inline",
+        "dispatch_idiom_bytes": "630f71c8bc1461083a578063",
+        "nonpayable": true,
+        "body_region": [
+          "0x83a",
+          "0x944"
+        ],
+        "effect_opcodes": [
+          [
+            "0x87d",
+            "SLOAD"
+          ],
+          [
+            "0x891",
+            "SLOAD"
+          ],
+          [
+            "0x8ae",
+            "SLOAD"
+          ],
+          [
+            "0x8bc",
+            "SSTORE"
+          ],
+          [
+            "0x8c8",
+            "SSTORE"
+          ],
+          [
+            "0x8dd",
+            "LOG2"
+          ],
+          [
+            "0x908",
+            "SLOAD"
+          ],
+          [
+            "0x90c",
+            "SSTORE"
+          ],
+          [
+            "0x911",
+            "LOG2"
+          ],
+          [
+            "0x92a",
+            "SLOAD"
+          ]
+        ],
+        "static_sload_candidates": [
+          [
+            "0x87d",
+            "0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103"
+          ],
+          [
+            "0x891",
+            "0x05"
+          ],
+          [
+            "0x8ae",
+            "0x03"
+          ],
+          [
+            "0x908",
+            "0x40"
+          ],
+          [
+            "0x92a",
+            "0x03"
+          ]
+        ],
+        "static_sstore_candidates": [
+          [
+            "0x8bc",
+            null
+          ],
+          [
+            "0x8c8",
+            "0x05"
+          ],
+          [
+            "0x90c",
+            "0x40"
+          ]
+        ],
+        "static_slot_constants_indirect": {
+          "reads": 0,
+          "writes": 1
+        },
+        "error_constructions": [
+          {
+            "pc": "0x917",
+            "pushed": "0x3f733c4f",
+            "shift": 224,
+            "payload": "0x3f733c4f"
+          },
+          {
+            "pc": "0x936",
+            "pushed": "0xc031a0df",
+            "shift": 224,
+            "payload": "0xc031a0df"
+          }
+        ],
+        "source": "pinned runtime bytecode read in this script"
+      },
+      "event_topics": {
+        "OwnerUpdated(address)": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+        "AuthorizedRelayerUpdated(address,bool)": "0x431c9efc75fd5a8b5d510e3458e1c31ac5c3de0385743f60f76491e1e0867391"
+      },
+      "error_selectors": {
+        "0xc031a0df (caller is not the proxy admin)": "0xc031a0df",
+        "0x3f733c4f (already initialized)": "0x3f733c4f"
+      },
+      "decoded_head_words": 2,
+      "inline_guard_constant_words": 2
+    },
+    {
+      "role": "batch_executor_implementation",
+      "selector": "0x9ccae24e",
+      "signature": null,
+      "name_status": "undefined: no hash-matching public name and no source",
+      "abi": [
+        "address",
+        "address",
+        "address",
+        "address",
+        "address"
+      ],
+      "payable": false,
+      "guard": "fresh state only; a set slot-5 initialization word reverts, otherwise any caller is accepted",
+      "writes": [
+        "slots 0 through 3",
+        "initialization word slot 5",
+        "authorized relayer mapping base slot 4"
+      ],
+      "reads": [
+        "slots 0, 1, 2, 3 and 5"
+      ],
+      "events": [
+        "OwnerUpdated(address)",
+        "AuthorizedRelayerUpdated(address,bool)"
+      ],
+      "errors": [
+        "AlreadyInitialized()"
+      ],
+      "evidence_tier": "exact-runtime replay",
+      "evidence_paths": [
+        "../../artifacts/batch_control_local/replay.json",
+        "batch_control_behavior.json",
+        "../../artifacts/selector_gap_other/replay.json"
+      ],
+      "replay_tests": [
+        "testDecodeGuards"
+      ],
+      "undecided": [
+        "Source function name is undefined.",
+        "The five-address argument order is inferred from the exercised fresh-state call, not from a historical deployment."
+      ],
+      "address": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "static_evidence": {
+        "inline_guard_word_count": 5,
+        "revert_only_range": [
+          "0x19c",
+          "0x2eb"
+        ],
+        "revert_only_effect_opcodes": [
+          [
+            "0x1ed",
+            "SLOAD"
+          ],
+          [
+            "0x20f",
+            "SLOAD"
+          ],
+          [
+            "0x232",
+            "SSTORE"
+          ],
+          [
+            "0x236",
+            "SLOAD"
+          ],
+          [
+            "0x24b",
+            "SSTORE"
+          ],
+          [
+            "0x24f",
+            "SLOAD"
+          ],
+          [
+            "0x258",
+            "SSTORE"
+          ],
+          [
+            "0x263",
+            "SLOAD"
+          ],
+          [
+            "0x268",
+            "SSTORE"
+          ],
+          [
+            "0x271",
+            "SLOAD"
+          ],
+          [
+            "0x276",
+            "SSTORE"
+          ],
+          [
+            "0x28b",
+            "LOG2"
+          ],
+          [
+            "0x29d",
+            "SLOAD"
+          ],
+          [
+            "0x2a4",
+            "SSTORE"
+          ],
+          [
+            "0x2c8",
+            "SLOAD"
+          ],
+          [
+            "0x2cc",
+            "SSTORE"
+          ],
+          [
+            "0x2d1",
+            "LOG2"
+          ]
+        ],
+        "selector_push_pc": 104,
+        "dispatch_form": "EQ",
+        "dispatch_target_pc": 412,
+        "body_pc": 412,
+        "body_resolution": "inline",
+        "dispatch_idiom_bytes": "639ccae24e1461019c578063",
+        "nonpayable": true,
+        "body_region": [
+          "0x19c",
+          "0x31b"
+        ],
+        "effect_opcodes": [
+          [
+            "0x1ed",
+            "SLOAD"
+          ],
+          [
+            "0x20f",
+            "SLOAD"
+          ],
+          [
+            "0x232",
+            "SSTORE"
+          ],
+          [
+            "0x236",
+            "SLOAD"
+          ],
+          [
+            "0x24b",
+            "SSTORE"
+          ],
+          [
+            "0x24f",
+            "SLOAD"
+          ],
+          [
+            "0x258",
+            "SSTORE"
+          ],
+          [
+            "0x263",
+            "SLOAD"
+          ],
+          [
+            "0x268",
+            "SSTORE"
+          ],
+          [
+            "0x271",
+            "SLOAD"
+          ],
+          [
+            "0x276",
+            "SSTORE"
+          ],
+          [
+            "0x28b",
+            "LOG2"
+          ],
+          [
+            "0x29d",
+            "SLOAD"
+          ],
+          [
+            "0x2a4",
+            "SSTORE"
+          ],
+          [
+            "0x2c8",
+            "SLOAD"
+          ],
+          [
+            "0x2cc",
+            "SSTORE"
+          ],
+          [
+            "0x2d1",
+            "LOG2"
+          ],
+          [
+            "0x2f6",
+            "SSTORE"
+          ]
+        ],
+        "static_sload_candidates": [
+          [
+            "0x1ed",
+            null
+          ],
+          [
+            "0x20f",
+            null
+          ],
+          [
+            "0x236",
+            "0x01"
+          ],
+          [
+            "0x24f",
+            "0x02"
+          ],
+          [
+            "0x263",
+            "0x03"
+          ],
+          [
+            "0x271",
+            "0x05"
+          ],
+          [
+            "0x29d",
+            null
+          ],
+          [
+            "0x2c8",
+            "0x40"
+          ]
+        ],
+        "static_sstore_candidates": [
+          [
+            "0x232",
+            null
+          ],
+          [
+            "0x24b",
+            null
+          ],
+          [
+            "0x258",
+            "0x02"
+          ],
+          [
+            "0x268",
+            "0x03"
+          ],
+          [
+            "0x276",
+            "0x05"
+          ],
+          [
+            "0x2a4",
+            null
+          ],
+          [
+            "0x2cc",
+            "0x40"
+          ],
+          [
+            "0x2f6",
+            null
+          ]
+        ],
+        "static_slot_constants_indirect": {
+          "reads": 3,
+          "writes": 4
+        },
+        "error_constructions": [
+          {
+            "pc": "0x2dd",
+            "pushed": "0x904bc503",
+            "shift": 224,
+            "payload": "0x904bc503"
+          }
+        ],
+        "source": "pinned runtime bytecode read in this script"
+      },
+      "event_topics": {
+        "OwnerUpdated(address)": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+        "AuthorizedRelayerUpdated(address,bool)": "0x431c9efc75fd5a8b5d510e3458e1c31ac5c3de0385743f60f76491e1e0867391"
+      },
+      "error_selectors": {
+        "AlreadyInitialized()": "0x0dc149f0"
+      },
+      "decoded_head_words": 5,
+      "inline_guard_constant_words": 5
+    },
+    {
+      "role": "staking_implementation",
+      "selector": "0x0f71c8bc",
+      "signature": null,
+      "name_status": "undefined: no hash-matching public name and no source",
+      "abi": [
+        "address",
+        "address"
+      ],
+      "payable": false,
+      "guard": "caller == the proxy's EIP-1967 admin slot AND owner slot 15 == 0 AND the slot-16 initialization flag is clear",
+      "writes": [
+        "owner slot 15",
+        "authorized executor plus initialization flag slot 16"
+      ],
+      "reads": [
+        "EIP-1967 admin slot 0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103",
+        "slots 15 and 16"
+      ],
+      "events": [
+        "OwnerUpdated(address)",
+        "AuthorizedExecutorUpdated(address)"
+      ],
+      "errors": [
+        "0xc031a0df (caller is not the proxy admin)",
+        "0x3f733c4f (already initialized)"
+      ],
+      "evidence_tier": "exact-runtime replay",
+      "evidence_paths": [
+        "../../artifacts/remaining_initializers_local/replay.json",
+        "staking_initializers_behavior.json",
+        "../../artifacts/selector_gap_other/replay.json"
+      ],
+      "replay_tests": [
+        "testDecodeGuards"
+      ],
+      "undecided": [
+        "Source function name and both admin-path error names are undefined.",
+        "The write path is a synthetic fresh-state test; the pinned state reverts."
+      ],
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "static_evidence": {
+        "inline_guard_word_count": null,
+        "revert_only_range": [
+          "0xd29",
+          "0xdff"
+        ],
+        "revert_only_effect_opcodes": [
+          [
+            "0xd6d",
+            "SLOAD"
+          ],
+          [
+            "0xd82",
+            "SLOAD"
+          ],
+          [
+            "0xda4",
+            "SLOAD"
+          ],
+          [
+            "0xdb2",
+            "SSTORE"
+          ],
+          [
+            "0xdcc",
+            "SSTORE"
+          ],
+          [
+            "0xddd",
+            "LOG2"
+          ],
+          [
+            "0xdee",
+            "LOG2"
+          ]
+        ],
+        "selector_push_pc": 41,
+        "dispatch_form": "EQ",
+        "dispatch_target_pc": 3369,
+        "body_pc": 3369,
+        "body_resolution": "inline",
+        "dispatch_idiom_bytes": "630f71c8bc14610d29578063",
+        "nonpayable": true,
+        "body_region": [
+          "0xd29",
+          "0xe1a"
+        ],
+        "effect_opcodes": [
+          [
+            "0xd6d",
+            "SLOAD"
+          ],
+          [
+            "0xd82",
+            "SLOAD"
+          ],
+          [
+            "0xda4",
+            "SLOAD"
+          ],
+          [
+            "0xdb2",
+            "SSTORE"
+          ],
+          [
+            "0xdcc",
+            "SSTORE"
+          ],
+          [
+            "0xddd",
+            "LOG2"
+          ],
+          [
+            "0xdee",
+            "LOG2"
+          ],
+          [
+            "0xe04",
+            "SLOAD"
+          ]
+        ],
+        "static_sload_candidates": [
+          [
+            "0xd6d",
+            "0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103"
+          ],
+          [
+            "0xd82",
+            "0x10"
+          ],
+          [
+            "0xda4",
+            "0x0f"
+          ],
+          [
+            "0xe04",
+            "0x0f"
+          ]
+        ],
+        "static_sstore_candidates": [
+          [
+            "0xdb2",
+            null
+          ],
+          [
+            "0xdcc",
+            "0x10"
+          ]
+        ],
+        "static_slot_constants_indirect": {
+          "reads": 0,
+          "writes": 1
+        },
+        "error_constructions": [
+          {
+            "pc": "0xdf4",
+            "pushed": "0x3f733c4f",
+            "shift": 224,
+            "payload": "0x3f733c4f"
+          },
+          {
+            "pc": "0xe0f",
+            "pushed": "0xc031a0df",
+            "shift": 224,
+            "payload": "0xc031a0df"
+          }
+        ],
+        "source": "pinned runtime bytecode read in this script"
+      },
+      "event_topics": {
+        "OwnerUpdated(address)": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+        "AuthorizedExecutorUpdated(address)": "0x3cfda8ee6e20b237d2949c3d16b6f12822b6f1bc0580f188f932c0771cac729d"
+      },
+      "error_selectors": {
+        "0xc031a0df (caller is not the proxy admin)": "0xc031a0df",
+        "0x3f733c4f (already initialized)": "0x3f733c4f"
+      },
+      "decoded_head_words": 2
+    },
+    {
+      "role": "proxy_admin",
+      "selector": "0x7eff275e",
+      "signature": "changeProxyAdmin(address,address)",
+      "name_status": "hash-verified reconstructed signature; original Solidity identifier unverified",
+      "abi": [
+        "address",
+        "address"
+      ],
+      "payable": false,
+      "guard": "caller == owner (slot 0)",
+      "writes": [
+        "EIP-1967 admin slot of the target proxy"
+      ],
+      "reads": [
+        "slot 0 (owner)"
+      ],
+      "events": [],
+      "errors": [
+        "NotOwner()"
+      ],
+      "evidence_tier": "exact-runtime replay",
+      "evidence_paths": [
+        "../../artifacts/proxy_admin_local/replay.json",
+        "proxy_admin_behavior.json"
+      ],
+      "replay_tests": [],
+      "undecided": [
+        "No historical ProxyAdmin call is saved beyond its creation and owner transfer, so this path is a local pinned-runtime replay only.",
+        "The shared proxy runtime has no LOG opcode, so a successful admin change leaves no event."
+      ],
+      "address": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+      "static_evidence": {
+        "inline_guard_word_count": null,
+        "revert_only_range": [
+          "0x28b",
+          "0x314"
+        ],
+        "revert_only_effect_opcodes": [
+          [
+            "0x2b2",
+            "SLOAD"
+          ],
+          [
+            "0x2ef",
+            "CALL"
+          ],
+          [
+            "0x2fe",
+            "RETURN"
+          ]
+        ],
+        "selector_push_pc": 30,
+        "dispatch_form": "EQ",
+        "dispatch_target_pc": 651,
+        "body_pc": 651,
+        "body_resolution": "inline",
+        "dispatch_idiom_bytes": "637eff275e1461028b575080",
+        "nonpayable": true,
+        "body_region": [
+          "0x28b",
+          "0x3a3"
+        ],
+        "effect_opcodes": [
+          [
+            "0x2b2",
+            "SLOAD"
+          ],
+          [
+            "0x2ef",
+            "CALL"
+          ],
+          [
+            "0x2fe",
+            "RETURN"
+          ],
+          [
+            "0x37a",
+            "LOG2"
+          ],
+          [
+            "0x3a0",
+            "CALL"
+          ]
+        ],
+        "static_sload_candidates": [
+          [
+            "0x2b2",
+            null
+          ]
+        ],
+        "static_sstore_candidates": [],
+        "static_slot_constants_indirect": {
+          "reads": 1,
+          "writes": 0
+        },
+        "error_constructions": [
+          {
+            "pc": "0x2df",
+            "pushed": "0x08f28397",
+            "shift": 228,
+            "payload": "0x8f283970"
+          },
+          {
+            "pc": "0x319",
+            "pushed": "0x30cd7471",
+            "shift": 224,
+            "payload": "0x30cd7471"
+          },
+          {
+            "pc": "0x366",
+            "pushed": "0x4e487b71",
+            "shift": 224,
+            "payload": "0x4e487b71"
+          }
+        ],
+        "source": "pinned runtime bytecode read in this script"
+      },
+      "event_topics": {},
+      "error_selectors": {
+        "NotOwner()": "0x30cd7471"
+      },
+      "decoded_head_words": 2
+    },
+    {
+      "role": "proxy_admin",
+      "selector": "0x9623609d",
+      "signature": "upgradeAndCall(address,address,bytes)",
+      "name_status": "hash-verified reconstructed signature; original Solidity identifier unverified",
+      "abi": [
+        "address",
+        "address",
+        "bytes"
+      ],
+      "payable": true,
+      "guard": "caller == owner (slot 0)",
+      "writes": [
+        "EIP-1967 implementation slot of the target proxy",
+        "whatever the delegated setup call writes in the target proxy's storage"
+      ],
+      "reads": [
+        "slot 0 (owner)"
+      ],
+      "events": [],
+      "errors": [
+        "NotOwner()"
+      ],
+      "evidence_tier": "exact-runtime replay",
+      "evidence_paths": [
+        "../../artifacts/proxy_admin_local/replay.json",
+        "proxy_admin_behavior.json"
+      ],
+      "replay_tests": [],
+      "undecided": [
+        "Only a local mock setup call is replayed; no historical upgradeAndCall transaction exists."
+      ],
+      "address": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+      "static_evidence": {
+        "inline_guard_word_count": 3,
+        "revert_only_range": [
+          "0x194",
+          "0x263"
+        ],
+        "revert_only_effect_opcodes": [
+          [
+            "0x1eb",
+            "SLOAD"
+          ],
+          [
+            "0x250",
+            "CALL"
+          ],
+          [
+            "0x25e",
+            "RETURN"
+          ]
+        ],
+        "selector_push_pc": 53,
+        "dispatch_form": "EQ",
+        "dispatch_target_pc": 404,
+        "body_pc": 404,
+        "body_resolution": "inline",
+        "dispatch_idiom_bytes": "639623609d14610194578063",
+        "nonpayable": false,
+        "body_region": [
+          "0x194",
+          "0x263"
+        ],
+        "effect_opcodes": [
+          [
+            "0x1eb",
+            "SLOAD"
+          ],
+          [
+            "0x250",
+            "CALL"
+          ],
+          [
+            "0x25e",
+            "RETURN"
+          ]
+        ],
+        "static_sload_candidates": [
+          [
+            "0x1eb",
+            null
+          ]
+        ],
+        "static_sstore_candidates": [],
+        "static_slot_constants_indirect": {
+          "reads": 1,
+          "writes": 0
+        },
+        "error_constructions": [
+          {
+            "pc": "0x21a",
+            "pushed": "0x278f7943",
+            "shift": 225,
+            "payload": "0x4f1ef286"
+          }
+        ],
+        "source": "pinned runtime bytecode read in this script"
+      },
+      "event_topics": {},
+      "error_selectors": {
+        "NotOwner()": "0x30cd7471"
+      },
+      "decoded_head_words": 3,
+      "inline_guard_constant_words": 3
+    },
+    {
+      "role": "proxy_admin",
+      "selector": "0x99a88ec4",
+      "signature": "upgrade(address,address)",
+      "name_status": "hash-verified reconstructed signature; original Solidity identifier unverified",
+      "abi": [
+        "address",
+        "address"
+      ],
+      "payable": false,
+      "guard": "caller == owner (slot 0)",
+      "writes": [
+        "EIP-1967 implementation slot of the target proxy"
+      ],
+      "reads": [
+        "slot 0 (owner)"
+      ],
+      "events": [],
+      "errors": [
+        "NotOwner()"
+      ],
+      "evidence_tier": "exact-runtime replay",
+      "evidence_paths": [
+        "../../artifacts/proxy_admin_local/replay.json",
+        "proxy_admin_behavior.json"
+      ],
+      "replay_tests": [],
+      "undecided": [
+        "No historical upgrade transaction is saved; the local replay accepts a no-code target, which is a hazard rather than an observed action."
+      ],
+      "address": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+      "static_evidence": {
+        "inline_guard_word_count": null,
+        "revert_only_range": [
+          "0xe6",
+          "0x174"
+        ],
+        "revert_only_effect_opcodes": [
+          [
+            "0x10c",
+            "SLOAD"
+          ],
+          [
+            "0x152",
+            "CALL"
+          ],
+          [
+            "0x160",
+            "RETURN"
+          ],
+          [
+            "0x170",
+            "RETURN"
+          ]
+        ],
+        "selector_push_pc": 64,
+        "dispatch_form": "EQ",
+        "dispatch_target_pc": 230,
+        "body_pc": 230,
+        "body_resolution": "inline",
+        "dispatch_idiom_bytes": "6399a88ec4146100e65763f2",
+        "nonpayable": true,
+        "body_region": [
+          "0xe6",
+          "0x194"
+        ],
+        "effect_opcodes": [
+          [
+            "0x10c",
+            "SLOAD"
+          ],
+          [
+            "0x152",
+            "CALL"
+          ],
+          [
+            "0x160",
+            "RETURN"
+          ],
+          [
+            "0x170",
+            "RETURN"
+          ]
+        ],
+        "static_sload_candidates": [
+          [
+            "0x10c",
+            null
+          ]
+        ],
+        "static_sstore_candidates": [],
+        "static_slot_constants_indirect": {
+          "reads": 1,
+          "writes": 0
+        },
+        "error_constructions": [
+          {
+            "pc": "0x136",
+            "pushed": "0x278f7943",
+            "shift": 225,
+            "payload": "0x4f1ef286"
+          },
+          {
+            "pc": "0x185",
+            "pushed": "0x30cd7471",
+            "shift": 224,
+            "payload": "0x30cd7471"
+          }
+        ],
+        "source": "pinned runtime bytecode read in this script"
+      },
+      "event_topics": {},
+      "error_selectors": {
+        "NotOwner()": "0x30cd7471"
+      },
+      "decoded_head_words": 2
+    },
+    {
+      "role": "user_deposit_proxy_representative",
+      "selector": "0x0c506e96",
+      "signature": "withdrawStuckToken(address,uint256)",
+      "name_status": "hash-verified reconstructed signature; original Solidity identifier unverified",
+      "abi": [
+        "address",
+        "uint256"
+      ],
+      "payable": false,
+      "guard": "msg.sender == the user address embedded in the runtime code",
+      "writes": [
+        "none; the call reaches an arbitrary ERC-20 target"
+      ],
+      "reads": [
+        "runtime constants only"
+      ],
+      "events": [
+        "StuckTokenWithdrawn(address,address,uint256)"
+      ],
+      "errors": [
+        "0x08c379a0 (transfer-failed string revert)"
+      ],
+      "evidence_tier": "exact-runtime replay",
+      "evidence_paths": [
+        "../../artifacts/deposit_proxy_local/replay.json",
+        "deposit_proxy_behavior.json"
+      ],
+      "replay_tests": [],
+      "undecided": [
+        "No historical rescue transaction is saved.",
+        "A no-code token target still emits StuckTokenWithdrawn locally, so the event alone does not evidence a token movement."
+      ],
+      "address": "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+      "static_evidence": {
+        "inline_guard_word_count": null,
+        "revert_only_range": [
+          "0x3aa",
+          "0x4da"
+        ],
+        "revert_only_effect_opcodes": [
+          [
+            "0x43c",
+            "CALL"
+          ],
+          [
+            "0x4a6",
+            "LOG3"
+          ]
+        ],
+        "selector_push_pc": 31,
+        "dispatch_form": "EQ",
+        "dispatch_target_pc": 938,
+        "body_pc": 938,
+        "body_resolution": "inline",
+        "dispatch_idiom_bytes": "630c506e96146103aa575081",
+        "nonpayable": true,
+        "body_region": [
+          "0x3aa",
+          "0x655"
+        ],
+        "effect_opcodes": [
+          [
+            "0x43c",
+            "CALL"
+          ],
+          [
+            "0x4a6",
+            "LOG3"
+          ],
+          [
+            "0x639",
+            "LOG2"
+          ]
+        ],
+        "static_sload_candidates": [],
+        "static_sstore_candidates": [],
+        "static_slot_constants_indirect": {
+          "reads": 0,
+          "writes": 0
+        },
+        "error_constructions": [
+          {
+            "pc": "0x417",
+            "pushed": "0xa9059cbb",
+            "shift": 224,
+            "payload": "0xa9059cbb"
+          },
+          {
+            "pc": "0x518",
+            "pushed": "0x4e487b71",
+            "shift": 224,
+            "payload": "0x4e487b71"
+          },
+          {
+            "pc": "0x59a",
+            "pushed": "0x4e487b71",
+            "shift": 224,
+            "payload": "0x4e487b71"
+          }
+        ],
+        "source": "pinned runtime bytecode read in this script"
+      },
+      "event_topics": {
+        "StuckTokenWithdrawn(address,address,uint256)": "0x3d95e1dd133840fdfe95e9a3b6c9fc44f85019531359313e278c6e358ef5b1e0"
+      },
+      "error_selectors": {
+        "0x08c379a0 (transfer-failed string revert)": "0x08c379a0"
+      },
+      "decoded_head_words": 2
+    },
+    {
+      "role": "user_deposit_proxy_representative",
+      "selector": "0x925b3aad",
+      "signature": "sweepAllToExchange(uint64,uint64,uint64)",
+      "name_status": "hash-verified reconstructed signature; original Solidity identifier unverified",
+      "abi": [
+        "uint64",
+        "uint64",
+        "uint64"
+      ],
+      "payable": false,
+      "guard": "msg.sender == the exchange address embedded in the runtime code",
+      "writes": [
+        "none; the call enqueues HyperCore CoreWriter actions"
+      ],
+      "reads": [
+        "runtime constants only"
+      ],
+      "events": [],
+      "errors": [
+        "CoreAmountOverflow()"
+      ],
+      "evidence_tier": "exact-runtime replay",
+      "evidence_paths": [
+        "../../artifacts/deposit_proxy_local/replay.json",
+        "../../artifacts/historical/0xd4ee56dd5d1e271b8fc142e340362d3ab1eede92a9810ab33de4d90a9f798257.calls.json",
+        "deposit_proxy_behavior.json"
+      ],
+      "replay_tests": [],
+      "undecided": [
+        "The one historical sweep is a different proxy in the same runtime family; this address has no saved call of its own.",
+        "HyperCore settlement after the enqueued action is unverified."
+      ],
+      "address": "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+      "static_evidence": {
+        "inline_guard_word_count": 3,
+        "revert_only_range": [
+          "0x94",
+          "0x215"
+        ],
+        "revert_only_effect_opcodes": [
+          [
+            "0x145",
+            "RETURN"
+          ],
+          [
+            "0x1e7",
+            "CALL"
+          ],
+          [
+            "0x1fd",
+            "RETURN"
+          ]
+        ],
+        "selector_push_pc": 54,
+        "dispatch_form": "EQ",
+        "dispatch_target_pc": 148,
+        "body_pc": 148,
+        "body_resolution": "inline",
+        "dispatch_idiom_bytes": "63925b3aad14610094575063",
+        "nonpayable": true,
+        "body_region": [
+          "0x94",
+          "0x367"
+        ],
+        "effect_opcodes": [
+          [
+            "0x145",
+            "RETURN"
+          ],
+          [
+            "0x1e7",
+            "CALL"
+          ],
+          [
+            "0x1fd",
+            "RETURN"
+          ],
+          [
+            "0x2c3",
+            "CALL"
+          ]
+        ],
+        "static_sload_candidates": [],
+        "static_sstore_candidates": [],
+        "static_slot_constants_indirect": {
+          "reads": 0,
+          "writes": 0
+        },
+        "error_constructions": [
+          {
+            "pc": "0x1d3",
+            "pushed": "0x17938e13",
+            "shift": 224,
+            "payload": "0x17938e13"
+          },
+          {
+            "pc": "0x29f",
+            "pushed": "0x17938e13",
+            "shift": 224,
+            "payload": "0x17938e13"
+          },
+          {
+            "pc": "0x2f4",
+            "pushed": "0x4e487b71",
+            "shift": 224,
+            "payload": "0x4e487b71"
+          },
+          {
+            "pc": "0x304",
+            "pushed": "0xfadaa871",
+            "shift": 224,
+            "payload": "0xfadaa871"
+          },
+          {
+            "pc": "0x316",
+            "pushed": "0x4e487b71",
+            "shift": 224,
+            "payload": "0x4e487b71"
+          },
+          {
+            "pc": "0x328",
+            "pushed": "0x4e487b71",
+            "shift": 224,
+            "payload": "0x4e487b71"
+          }
+        ],
+        "source": "pinned runtime bytecode read in this script"
+      },
+      "event_topics": {},
+      "error_selectors": {
+        "CoreAmountOverflow()": "0xfadaa871"
+      },
+      "decoded_head_words": 3,
+      "inline_guard_constant_words": 3
+    },
+    {
+      "role": "timelock",
+      "selector": "0x88aa4c12",
+      "signature": "execute(address,uint256,bytes,bytes32)",
+      "name_status": "hash-verified reconstructed signature; original Solidity identifier unverified",
+      "abi": [
+        "address",
+        "uint256",
+        "bytes",
+        "bytes32"
+      ],
+      "payable": true,
+      "guard": "caller == owner (slot 0); the scheduled operation must be ready and msg.value must equal the scheduled value",
+      "writes": [
+        "operation done flag in mapping base slot 2 for the operation id",
+        "the target contract's storage, through the executed call"
+      ],
+      "reads": [
+        "slot 0 (owner)",
+        "operation timestamp mapping base slot 2"
+      ],
+      "events": [
+        "OperationExecuted(bytes32,address,uint256,bytes)"
+      ],
+      "errors": [
+        "NotOwner()",
+        "OperationNotScheduled()",
+        "OperationNotReady()",
+        "InvalidValue()",
+        "ExecutionFailed(bytes)",
+        "0x18d96a80 (already done)"
+      ],
+      "evidence_tier": "exact-runtime replay",
+      "evidence_paths": [
+        "../../artifacts/selector_gap_other/replay.json",
+        "timelock_behavior.json",
+        "timelock_pseudocode.md"
+      ],
+      "replay_tests": [
+        "testTimelockScheduleSingleAndExecute",
+        "testDecodeGuards"
+      ],
+      "undecided": [
+        "No historical execution exists: both scheduled operations were ready but unexecuted at the pin, so the only successes are read-only probes and this local replay.",
+        "The predecessor argument is not enforced by this runtime; the record states the observed behavior, not the intended design."
+      ],
+      "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "static_evidence": {
+        "inline_guard_word_count": null,
+        "revert_only_range": null,
+        "revert_only_effect_opcodes": null,
+        "selector_push_pc": 92,
+        "dispatch_form": "EQ",
+        "dispatch_target_pc": 1382,
+        "body_pc": 1392,
+        "body_resolution": "decoder-resume",
+        "dispatch_idiom_bytes": "6388aa4c1214610566578063",
+        "nonpayable": false,
+        "body_region": [
+          "0x570",
+          "0x602"
+        ],
+        "effect_opcodes": [
+          [
+            "0x572",
+            "SLOAD"
+          ],
+          [
+            "0x5f4",
+            "LOG3"
+          ],
+          [
+            "0x601",
+            "RETURN"
+          ]
+        ],
+        "static_sload_candidates": [
+          [
+            "0x572",
+            null
+          ]
+        ],
+        "static_sstore_candidates": [],
+        "static_slot_constants_indirect": {
+          "reads": 1,
+          "writes": 0
+        },
+        "error_constructions": [],
+        "source": "pinned runtime bytecode read in this script"
+      },
+      "event_topics": {
+        "OperationExecuted(bytes32,address,uint256,bytes)": "0x2a08801cf3674ab09756ae78a3a4833813465af6af958136b360eab6b71c8952"
+      },
+      "error_selectors": {
+        "NotOwner()": "0x30cd7471",
+        "OperationNotScheduled()": "0x27c0d610",
+        "OperationNotReady()": "0xf800799b",
+        "InvalidValue()": "0xaa7feadc",
+        "ExecutionFailed(bytes)": "0x15fcd675",
+        "0x18d96a80 (already done)": "0x18d96a80"
+      },
+      "decoded_head_words": 4
+    },
+    {
+      "role": "timelock",
+      "selector": "0x8a99d586",
+      "signature": "updateMinDelay(uint256)",
+      "name_status": "hash-verified reconstructed signature; original Solidity identifier unverified",
+      "abi": [
+        "uint256"
+      ],
+      "payable": false,
+      "guard": "msg.sender == address(this): self-call only, not the owner",
+      "writes": [
+        "minimum delay slot 1"
+      ],
+      "reads": [
+        "none before the guard"
+      ],
+      "events": [
+        "MinDelayUpdated(uint256)"
+      ],
+      "errors": [
+        "NotSelf()"
+      ],
+      "evidence_tier": "exact-runtime replay",
+      "evidence_paths": [
+        "../../artifacts/selector_gap_other/replay.json",
+        "timelock_behavior.json",
+        "timelock_all_logs.json"
+      ],
+      "replay_tests": [
+        "testTimelockSelfGatedSetters",
+        "testDecodeGuards"
+      ],
+      "undecided": [
+        "The only historical MinDelayUpdated log came from a self-call during construction of the suite; no later governance execution is saved.",
+        "The earlier read-only probe recorded no storage post-state, so the slot-1 write was only assumed until this replay."
+      ],
+      "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "static_evidence": {
+        "inline_guard_word_count": 1,
+        "revert_only_range": [
+          "0x50b",
+          "0x566"
+        ],
+        "revert_only_effect_opcodes": [
+          [
+            "0x551",
+            "SSTORE"
+          ],
+          [
+            "0x556",
+            "LOG1"
+          ]
+        ],
+        "selector_push_pc": 103,
+        "dispatch_form": "EQ",
+        "dispatch_target_pc": 1291,
+        "body_pc": 1291,
+        "body_resolution": "inline",
+        "dispatch_idiom_bytes": "638a99d5861461050b578063",
+        "nonpayable": true,
+        "body_region": [
+          "0x50b",
+          "0x566"
+        ],
+        "effect_opcodes": [
+          [
+            "0x551",
+            "SSTORE"
+          ],
+          [
+            "0x556",
+            "LOG1"
+          ]
+        ],
+        "static_sload_candidates": [],
+        "static_sstore_candidates": [
+          [
+            "0x551",
+            "0x01"
+          ]
+        ],
+        "static_slot_constants_indirect": {
+          "reads": 0,
+          "writes": 0
+        },
+        "error_constructions": [
+          {
+            "pc": "0x55b",
+            "pushed": "0x14e1dbf7",
+            "shift": 225,
+            "payload": "0x29c3b7ee"
+          }
+        ],
+        "source": "pinned runtime bytecode read in this script"
+      },
+      "event_topics": {
+        "MinDelayUpdated(uint256)": "0x25cd0ae91e995bc58ea33869249d0bcf40f2b2c8331ec976c96096bf7d27f464"
+      },
+      "error_selectors": {
+        "NotSelf()": "0x29c3b7ee"
+      },
+      "decoded_head_words": 1,
+      "inline_guard_constant_words": 1
+    },
+    {
+      "role": "timelock",
+      "selector": "0x8b07f62b",
+      "signature": "scheduleBatch(address[],uint256[],bytes[],bytes32)",
+      "name_status": "hash-verified reconstructed signature; original Solidity identifier unverified",
+      "abi": [
+        "address[]",
+        "uint256[]",
+        "bytes[]",
+        "bytes32"
+      ],
+      "payable": false,
+      "guard": "caller == owner (slot 0); array lengths must agree",
+      "writes": [
+        "ready timestamp for the batch operation id in mapping base slot 2"
+      ],
+      "reads": [
+        "slot 0 (owner)",
+        "mapping base slot 2"
+      ],
+      "events": [
+        "BatchOperationScheduled(bytes32,uint256,bytes32,uint256)"
+      ],
+      "errors": [
+        "NotOwner()",
+        "LengthMismatch()",
+        "OperationAlreadyScheduled()"
+      ],
+      "evidence_tier": "exact-runtime replay",
+      "evidence_paths": [
+        "../../artifacts/selector_gap_other/replay.json",
+        "timelock_behavior.json"
+      ],
+      "replay_tests": [
+        "testTimelockScheduleBatchAndExecuteBatch",
+        "testDecodeGuards"
+      ],
+      "undecided": [
+        "No historical batch schedule is saved; the two historical operations used the single-target schedule path."
+      ],
+      "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "static_evidence": {
+        "inline_guard_word_count": null,
+        "revert_only_range": [
+          "0x43b",
+          "0x4e9"
+        ],
+        "revert_only_effect_opcodes": [
+          [
+            "0x45c",
+            "SLOAD"
+          ],
+          [
+            "0x4c3",
+            "SLOAD"
+          ],
+          [
+            "0x4d2",
+            "LOG2"
+          ],
+          [
+            "0x4d7",
+            "RETURN"
+          ]
+        ],
+        "selector_push_pc": 114,
+        "dispatch_form": "EQ",
+        "dispatch_target_pc": 1083,
+        "body_pc": 1083,
+        "body_resolution": "inline",
+        "dispatch_idiom_bytes": "638b07f62b1461043b578063",
+        "nonpayable": true,
+        "body_region": [
+          "0x43b",
+          "0x50b"
+        ],
+        "effect_opcodes": [
+          [
+            "0x45c",
+            "SLOAD"
+          ],
+          [
+            "0x4c3",
+            "SLOAD"
+          ],
+          [
+            "0x4d2",
+            "LOG2"
+          ],
+          [
+            "0x4d7",
+            "RETURN"
+          ]
+        ],
+        "static_sload_candidates": [
+          [
+            "0x45c",
+            null
+          ],
+          [
+            "0x4c3",
+            "0x02"
+          ]
+        ],
+        "static_sstore_candidates": [],
+        "static_slot_constants_indirect": {
+          "reads": 1,
+          "writes": 0
+        },
+        "error_constructions": [
+          {
+            "pc": "0x500",
+            "pushed": "0x30cd7471",
+            "shift": 224,
+            "payload": "0x30cd7471"
+          }
+        ],
+        "source": "pinned runtime bytecode read in this script"
+      },
+      "event_topics": {
+        "BatchOperationScheduled(bytes32,uint256,bytes32,uint256)": "0x0b9c64b5b18792c995334aa1e837673c5a9cdb8f004ab10fb652f4eecb8d551f"
+      },
+      "error_selectors": {
+        "NotOwner()": "0x30cd7471",
+        "LengthMismatch()": "0xff633a38",
+        "OperationAlreadyScheduled()": "0x9b382476"
+      },
+      "decoded_head_words": 4
+    },
+    {
+      "role": "timelock",
+      "selector": "0xa6cc2c8c",
+      "signature": "executeBatch(address[],uint256[],bytes[],bytes32)",
+      "name_status": "hash-verified reconstructed signature; original Solidity identifier unverified",
+      "abi": [
+        "address[]",
+        "uint256[]",
+        "bytes[]",
+        "bytes32"
+      ],
+      "payable": true,
+      "guard": "caller == owner (slot 0); the batch must be ready and msg.value must equal the summed values",
+      "writes": [
+        "batch done flag in mapping base slot 2",
+        "target storage through each executed call"
+      ],
+      "reads": [
+        "slot 0 (owner)",
+        "mapping base slot 2"
+      ],
+      "events": [
+        "BatchOperationExecuted(bytes32,uint256)"
+      ],
+      "errors": [
+        "NotOwner()",
+        "OperationNotScheduled()",
+        "OperationNotReady()",
+        "InvalidValue()",
+        "LengthMismatch()",
+        "ExecutionFailed(bytes)"
+      ],
+      "evidence_tier": "exact-runtime replay",
+      "evidence_paths": [
+        "../../artifacts/selector_gap_other/replay.json",
+        "timelock_behavior.json"
+      ],
+      "replay_tests": [
+        "testTimelockScheduleBatchAndExecuteBatch",
+        "testDecodeGuards"
+      ],
+      "undecided": [
+        "No historical batch execution exists; the pinned simulations and this local replay are the only executions.",
+        "A failed second target was observed to roll back both targets in the read-only probe; the local replay covers only the success path."
+      ],
+      "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "static_evidence": {
+        "inline_guard_word_count": null,
+        "revert_only_range": [
+          "0x2f0",
+          "0x3f2"
+        ],
+        "revert_only_effect_opcodes": [
+          [
+            "0x2f2",
+            "SLOAD"
+          ],
+          [
+            "0x37c",
+            "LOG2"
+          ]
+        ],
+        "selector_push_pc": 136,
+        "dispatch_form": "EQ",
+        "dispatch_target_pc": 742,
+        "body_pc": 752,
+        "body_resolution": "decoder-resume",
+        "dispatch_idiom_bytes": "63a6cc2c8c146102e6578063",
+        "nonpayable": false,
+        "body_region": [
+          "0x2f0",
+          "0x414"
+        ],
+        "effect_opcodes": [
+          [
+            "0x2f2",
+            "SLOAD"
+          ],
+          [
+            "0x37c",
+            "LOG2"
+          ]
+        ],
+        "static_sload_candidates": [
+          [
+            "0x2f2",
+            null
+          ]
+        ],
+        "static_sstore_candidates": [],
+        "static_slot_constants_indirect": {
+          "reads": 1,
+          "writes": 0
+        },
+        "error_constructions": [
+          {
+            "pc": "0x409",
+            "pushed": "0x30cd7471",
+            "shift": 224,
+            "payload": "0x30cd7471"
+          }
+        ],
+        "source": "pinned runtime bytecode read in this script"
+      },
+      "event_topics": {
+        "BatchOperationExecuted(bytes32,uint256)": "0xaa1510acf32db51981a900a90589bafbf6f442c657a0b916fd3afe22c1474bcd"
+      },
+      "error_selectors": {
+        "NotOwner()": "0x30cd7471",
+        "OperationNotScheduled()": "0x27c0d610",
+        "OperationNotReady()": "0xf800799b",
+        "InvalidValue()": "0xaa7feadc",
+        "LengthMismatch()": "0xff633a38",
+        "ExecutionFailed(bytes)": "0x15fcd675"
+      },
+      "decoded_head_words": 4
+    },
+    {
+      "role": "timelock",
+      "selector": "0xc4d252f5",
+      "signature": "cancel(bytes32)",
+      "name_status": "hash-verified reconstructed signature; original Solidity identifier unverified",
+      "abi": [
+        "bytes32"
+      ],
+      "payable": false,
+      "guard": "caller == owner (slot 0); the operation must be scheduled and not done",
+      "writes": [
+        "clears the ready timestamp in mapping base slot 2"
+      ],
+      "reads": [
+        "slot 0 (owner)",
+        "mapping base slot 2"
+      ],
+      "events": [
+        "OperationCancelled(bytes32)"
+      ],
+      "errors": [
+        "NotOwner()",
+        "OperationNotScheduled()",
+        "0x18d96a80 (already done)"
+      ],
+      "evidence_tier": "exact-runtime replay",
+      "evidence_paths": [
+        "../../artifacts/selector_gap_other/replay.json",
+        "timelock_behavior.json"
+      ],
+      "replay_tests": [
+        "testTimelockCancel",
+        "testDecodeGuards"
+      ],
+      "undecided": [
+        "No historical cancel transaction is saved; the two scheduled operations were never cancelled at the pin."
+      ],
+      "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "static_evidence": {
+        "inline_guard_word_count": 1,
+        "revert_only_range": [
+          "0x194",
+          "0x216"
+        ],
+        "revert_only_effect_opcodes": [
+          [
+            "0x1a9",
+            "SLOAD"
+          ],
+          [
+            "0x1c8",
+            "SLOAD"
+          ],
+          [
+            "0x1e3",
+            "SSTORE"
+          ],
+          [
+            "0x207",
+            "LOG2"
+          ]
+        ],
+        "selector_push_pc": 158,
+        "dispatch_form": "EQ",
+        "dispatch_target_pc": 404,
+        "body_pc": 404,
+        "body_resolution": "inline",
+        "dispatch_idiom_bytes": "63c4d252f514610194578063",
+        "nonpayable": true,
+        "body_region": [
+          "0x194",
+          "0x233"
+        ],
+        "effect_opcodes": [
+          [
+            "0x1a9",
+            "SLOAD"
+          ],
+          [
+            "0x1c8",
+            "SLOAD"
+          ],
+          [
+            "0x1e3",
+            "SSTORE"
+          ],
+          [
+            "0x207",
+            "LOG2"
+          ]
+        ],
+        "static_sload_candidates": [
+          [
+            "0x1a9",
+            null
+          ],
+          [
+            "0x1c8",
+            "0x20"
+          ]
+        ],
+        "static_sstore_candidates": [
+          [
+            "0x1e3",
+            "0x20"
+          ]
+        ],
+        "static_slot_constants_indirect": {
+          "reads": 1,
+          "writes": 0
+        },
+        "error_constructions": [
+          {
+            "pc": "0x21a",
+            "pushed": "0x027c0d61",
+            "shift": 228,
+            "payload": "0x27c0d610"
+          },
+          {
+            "pc": "0x228",
+            "pushed": "0x30cd7471",
+            "shift": 224,
+            "payload": "0x30cd7471"
+          }
+        ],
+        "source": "pinned runtime bytecode read in this script"
+      },
+      "event_topics": {
+        "OperationCancelled(bytes32)": "0xcf0f63b97f3387253cbc0bde884f975df77e39184dc3280c2c81be495f58eef4"
+      },
+      "error_selectors": {
+        "NotOwner()": "0x30cd7471",
+        "OperationNotScheduled()": "0x27c0d610",
+        "0x18d96a80 (already done)": "0x18d96a80"
+      },
+      "decoded_head_words": 1,
+      "inline_guard_constant_words": 1
+    },
+    {
+      "role": "timelock",
+      "selector": "0xf2fde38b",
+      "signature": "transferOwnership(address)",
+      "name_status": "hash-verified reconstructed signature; the public candidate _SIMONdotBLACK_(...) is a hash collision and is rejected",
+      "name_candidates": [
+        "transferOwnership(address)"
+      ],
+      "rejected_candidates": [
+        "_SIMONdotBLACK_(int8[],uint256,address,bytes8,int96)"
+      ],
+      "abi": [
+        "address"
+      ],
+      "payable": false,
+      "guard": "msg.sender == address(this): self-call only, not the owner",
+      "writes": [
+        "owner slot 0"
+      ],
+      "reads": [
+        "none before the guard"
+      ],
+      "events": [
+        "OwnerUpdated(address)"
+      ],
+      "errors": [
+        "NotSelf()",
+        "InvalidOwner()"
+      ],
+      "evidence_tier": "exact-runtime replay",
+      "evidence_paths": [
+        "../../artifacts/selector_gap_other/replay.json",
+        "timelock_behavior.json",
+        "timelock_all_logs.json"
+      ],
+      "replay_tests": [
+        "testTimelockSelfGatedSetters",
+        "testDecodeGuards"
+      ],
+      "undecided": [
+        "The historical owner write happened at construction; the only later historical OwnerUpdated log is the initializer.",
+        "A second public 4-byte preimage exists for this selector and is not a real name of this contract."
+      ],
+      "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "static_evidence": {
+        "inline_guard_word_count": 1,
+        "revert_only_range": [
+          "0xc8",
+          "0x140"
+        ],
+        "revert_only_effect_opcodes": [
+          [
+            "0xfd",
+            "SLOAD"
+          ],
+          [
+            "0x10b",
+            "SSTORE"
+          ],
+          [
+            "0x131",
+            "LOG2"
+          ]
+        ],
+        "selector_push_pc": 190,
+        "dispatch_form": "SUB",
+        "dispatch_target_pc": 200,
+        "body_pc": 200,
+        "body_resolution": "inline",
+        "dispatch_idiom_bytes": "63f2fde38b03610010573461",
+        "nonpayable": true,
+        "body_region": [
+          "0xc8",
+          "0x151"
+        ],
+        "effect_opcodes": [
+          [
+            "0xfd",
+            "SLOAD"
+          ],
+          [
+            "0x10b",
+            "SSTORE"
+          ],
+          [
+            "0x131",
+            "LOG2"
+          ]
+        ],
+        "static_sload_candidates": [
+          [
+            "0xfd",
+            null
+          ]
+        ],
+        "static_sstore_candidates": [
+          [
+            "0x10b",
+            null
+          ]
+        ],
+        "static_slot_constants_indirect": {
+          "reads": 1,
+          "writes": 1
+        },
+        "error_constructions": [
+          {
+            "pc": "0x135",
+            "pushed": "0x49e27cff",
+            "shift": 224,
+            "payload": "0x49e27cff"
+          },
+          {
+            "pc": "0x142",
+            "pushed": "0x14e1dbf7",
+            "shift": 225,
+            "payload": "0x29c3b7ee"
+          }
+        ],
+        "source": "pinned runtime bytecode read in this script"
+      },
+      "event_topics": {
+        "OwnerUpdated(address)": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b"
+      },
+      "error_selectors": {
+        "NotSelf()": "0x29c3b7ee",
+        "InvalidOwner()": "0x49e27cff"
+      },
+      "decoded_head_words": 1,
+      "inline_guard_constant_words": 1
+    }
+  ],
+  "kept_separate_rows": [
+    {
+      "role": "session_key_manager_implementation",
+      "selector": "0x17a1678f",
+      "kind": "fixed revert",
+      "expected_error": "0xd2dd8531",
+      "expected_words": 3,
+      "source_name_status": "unresolved; the report candidate registerSessionKeyDirect(address,uint64,address) is hash-matching only",
+      "proof_evidence": "session_disabled_selector_behavior.json",
+      "replay_evidence": "../../artifacts/fixed_revert_local/replay.json",
+      "address": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "revert_payload_construction": {
+        "0xad8": {
+          "pc": "0xad8",
+          "pushed": "0xd2dd8531",
+          "shift": 224,
+          "payload": "0xd2dd8531"
+        }
+      },
+      "decoder_requirement_words": 3,
+      "decoder_requirement_source": "read from the pinned entry bytes and equal to the cited proof",
+      "static_evidence": {
+        "selector_push_pc": 41,
+        "inline_guard_word_count": 3,
+        "revert_only_range": [
+          "0xa97",
+          "0xae3"
+        ],
+        "revert_only_effect_opcodes": [],
+        "dispatch_target_pc": 2711,
+        "body_pc": 2711,
+        "dispatch_idiom_bytes": "6317a1678f14610a97578063",
+        "nonpayable": true,
+        "effect_opcodes": [],
+        "source_name_status": "unresolved; the report candidate registerSessionKeyDirect(address,uint64,address) is hash-matching only"
+      }
+    },
+    {
+      "role": "staking_implementation",
+      "selector": "0x2e17de78",
+      "kind": "fixed revert",
+      "expected_error": "0xa15ce1ba",
+      "expected_words": 1,
+      "source_name_status": "unresolved; public unstake(uint256) remains a candidate",
+      "proof_evidence": "staking_direct_stubs_behavior.json",
+      "replay_evidence": "../../artifacts/fixed_revert_local/replay.json",
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "revert_payload_construction": {
+        "0xe96": {
+          "pc": "0xe96",
+          "pushed": "0x50ae70dd",
+          "shift": 225,
+          "payload": "0xa15ce1ba"
+        },
+        "0xeb8": {
+          "pc": "0xeb8",
+          "pushed": "0x50ae70dd",
+          "shift": 225,
+          "payload": "0xa15ce1ba"
+        }
+      },
+      "decoder_requirement_words": 1,
+      "decoder_requirement_source": "read from the pinned entry bytes and equal to the cited proof",
+      "static_evidence": {
+        "selector_push_pc": 74,
+        "inline_guard_word_count": 1,
+        "revert_only_range": [
+          "0xe81",
+          "0xea4"
+        ],
+        "revert_only_effect_opcodes": [],
+        "dispatch_target_pc": 1768,
+        "body_pc": 3713,
+        "dispatch_idiom_bytes": "632e17de78146106e8578063",
+        "nonpayable": true,
+        "effect_opcodes": [
+          [
+            "0x1121",
+            "SLOAD"
+          ],
+          [
+            "0x113d",
+            "SSTORE"
+          ],
+          [
+            "0x1149",
+            "SLOAD"
+          ],
+          [
+            "0x117b",
+            "LOG3"
+          ],
+          [
+            "0x120c",
+            "SSTORE"
+          ],
+          [
+            "0x126e",
+            "SLOAD"
+          ],
+          [
+            "0x1289",
+            "SLOAD"
+          ],
+          [
+            "0x12a1",
+            "SLOAD"
+          ],
+          [
+            "0x12c1",
+            "SSTORE"
+          ],
+          [
+            "0x12ca",
+            "SLOAD"
+          ],
+          [
+            "0x12f5",
+            "SSTORE"
+          ],
+          [
+            "0x12fd",
+            "SSTORE"
+          ],
+          [
+            "0x1300",
+            "SLOAD"
+          ],
+          [
+            "0x132f",
+            "CALL"
+          ],
+          [
+            "0x1366",
+            "LOG2"
+          ],
+          [
+            "0x1395",
+            "SLOAD"
+          ],
+          [
+            "0x13bf",
+            "CALL"
+          ],
+          [
+            "0x13ea",
+            "STATICCALL"
+          ],
+          [
+            "0x13fc",
+            "SLOAD"
+          ],
+          [
+            "0x1412",
+            "SLOAD"
+          ],
+          [
+            "0x1416",
+            "SLOAD"
+          ],
+          [
+            "0x1422",
+            "SLOAD"
+          ],
+          [
+            "0x145c",
+            "LOG1"
+          ],
+          [
+            "0x1474",
+            "SSTORE"
+          ],
+          [
+            "0x14b7",
+            "SSTORE"
+          ],
+          [
+            "0x14e4",
+            "SSTORE"
+          ],
+          [
+            "0x1514",
+            "SLOAD"
+          ],
+          [
+            "0x151c",
+            "SSTORE"
+          ],
+          [
+            "0x152d",
+            "LOG1"
+          ],
+          [
+            "0x153c",
+            "SSTORE"
+          ],
+          [
+            "0x15bc",
+            "SLOAD"
+          ],
+          [
+            "0x15bf",
+            "SLOAD"
+          ],
+          [
+            "0x15e4",
+            "SLOAD"
+          ],
+          [
+            "0x160b",
+            "SLOAD"
+          ],
+          [
+            "0x1612",
+            "SSTORE"
+          ],
+          [
+            "0x1668",
+            "STATICCALL"
+          ],
+          [
+            "0x16ff",
+            "CALL"
+          ],
+          [
+            "0x1703",
+            "CALL"
+          ],
+          [
+            "0x1707",
+            "CALL"
+          ],
+          [
+            "0x1771",
+            "LOG2"
+          ]
+        ],
+        "source_name_status": "unresolved; public unstake(uint256) remains a candidate"
+      }
+    },
+    {
+      "role": "staking_implementation",
+      "selector": "0xa694fc3a",
+      "kind": "fixed revert",
+      "expected_error": "0xa15ce1ba",
+      "expected_words": 1,
+      "source_name_status": "unresolved; public stake(uint256) remains a candidate",
+      "proof_evidence": "staking_direct_stubs_behavior.json",
+      "replay_evidence": "../../artifacts/fixed_revert_local/replay.json",
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "revert_payload_construction": {
+        "0xe96": {
+          "pc": "0xe96",
+          "pushed": "0x50ae70dd",
+          "shift": 225,
+          "payload": "0xa15ce1ba"
+        },
+        "0xeb8": {
+          "pc": "0xeb8",
+          "pushed": "0x50ae70dd",
+          "shift": 225,
+          "payload": "0xa15ce1ba"
+        }
+      },
+      "decoder_requirement_words": 1,
+      "decoder_requirement_source": "read from the pinned entry bytes and equal to the cited proof",
+      "static_evidence": {
+        "selector_push_pc": 283,
+        "inline_guard_word_count": 1,
+        "revert_only_range": [
+          "0xe81",
+          "0xea4"
+        ],
+        "revert_only_effect_opcodes": [],
+        "dispatch_target_pc": 1768,
+        "body_pc": 3713,
+        "dispatch_idiom_bytes": "63a694fc3a146106e8578063",
+        "nonpayable": true,
+        "effect_opcodes": [
+          [
+            "0x1121",
+            "SLOAD"
+          ],
+          [
+            "0x113d",
+            "SSTORE"
+          ],
+          [
+            "0x1149",
+            "SLOAD"
+          ],
+          [
+            "0x117b",
+            "LOG3"
+          ],
+          [
+            "0x120c",
+            "SSTORE"
+          ],
+          [
+            "0x126e",
+            "SLOAD"
+          ],
+          [
+            "0x1289",
+            "SLOAD"
+          ],
+          [
+            "0x12a1",
+            "SLOAD"
+          ],
+          [
+            "0x12c1",
+            "SSTORE"
+          ],
+          [
+            "0x12ca",
+            "SLOAD"
+          ],
+          [
+            "0x12f5",
+            "SSTORE"
+          ],
+          [
+            "0x12fd",
+            "SSTORE"
+          ],
+          [
+            "0x1300",
+            "SLOAD"
+          ],
+          [
+            "0x132f",
+            "CALL"
+          ],
+          [
+            "0x1366",
+            "LOG2"
+          ],
+          [
+            "0x1395",
+            "SLOAD"
+          ],
+          [
+            "0x13bf",
+            "CALL"
+          ],
+          [
+            "0x13ea",
+            "STATICCALL"
+          ],
+          [
+            "0x13fc",
+            "SLOAD"
+          ],
+          [
+            "0x1412",
+            "SLOAD"
+          ],
+          [
+            "0x1416",
+            "SLOAD"
+          ],
+          [
+            "0x1422",
+            "SLOAD"
+          ],
+          [
+            "0x145c",
+            "LOG1"
+          ],
+          [
+            "0x1474",
+            "SSTORE"
+          ],
+          [
+            "0x14b7",
+            "SSTORE"
+          ],
+          [
+            "0x14e4",
+            "SSTORE"
+          ],
+          [
+            "0x1514",
+            "SLOAD"
+          ],
+          [
+            "0x151c",
+            "SSTORE"
+          ],
+          [
+            "0x152d",
+            "LOG1"
+          ],
+          [
+            "0x153c",
+            "SSTORE"
+          ],
+          [
+            "0x15bc",
+            "SLOAD"
+          ],
+          [
+            "0x15bf",
+            "SLOAD"
+          ],
+          [
+            "0x15e4",
+            "SLOAD"
+          ],
+          [
+            "0x160b",
+            "SLOAD"
+          ],
+          [
+            "0x1612",
+            "SSTORE"
+          ],
+          [
+            "0x1668",
+            "STATICCALL"
+          ],
+          [
+            "0x16ff",
+            "CALL"
+          ],
+          [
+            "0x1703",
+            "CALL"
+          ],
+          [
+            "0x1707",
+            "CALL"
+          ],
+          [
+            "0x1771",
+            "LOG2"
+          ]
+        ],
+        "source_name_status": "unresolved; public stake(uint256) remains a candidate"
+      }
+    },
+    {
+      "role": "staking_implementation",
+      "selector": "0x4e71d92d",
+      "kind": "fixed revert",
+      "expected_error": "0xa15ce1ba",
+      "expected_words": 0,
+      "source_name_status": "unresolved; public claim() remains a candidate",
+      "proof_evidence": "staking_direct_stubs_behavior.json",
+      "replay_evidence": "../../artifacts/fixed_revert_local/replay.json",
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "revert_payload_construction": {
+        "0xeb8": {
+          "pc": "0xeb8",
+          "pushed": "0x50ae70dd",
+          "shift": 225,
+          "payload": "0xa15ce1ba"
+        }
+      },
+      "decoder_requirement_words": 0,
+      "decoder_requirement_source": "read from the pinned entry bytes and equal to the cited proof",
+      "static_evidence": {
+        "selector_push_pc": 107,
+        "inline_guard_word_count": 0,
+        "revert_only_range": [
+          "0xea4",
+          "0xec6"
+        ],
+        "revert_only_effect_opcodes": [],
+        "dispatch_target_pc": 1469,
+        "body_pc": 3748,
+        "dispatch_idiom_bytes": "634e71d92d146105bd578063",
+        "nonpayable": true,
+        "effect_opcodes": [
+          [
+            "0x1121",
+            "SLOAD"
+          ],
+          [
+            "0x113d",
+            "SSTORE"
+          ],
+          [
+            "0x1149",
+            "SLOAD"
+          ],
+          [
+            "0x117b",
+            "LOG3"
+          ],
+          [
+            "0x120c",
+            "SSTORE"
+          ],
+          [
+            "0x126e",
+            "SLOAD"
+          ],
+          [
+            "0x1289",
+            "SLOAD"
+          ],
+          [
+            "0x12a1",
+            "SLOAD"
+          ],
+          [
+            "0x12c1",
+            "SSTORE"
+          ],
+          [
+            "0x12ca",
+            "SLOAD"
+          ],
+          [
+            "0x12f5",
+            "SSTORE"
+          ],
+          [
+            "0x12fd",
+            "SSTORE"
+          ],
+          [
+            "0x1300",
+            "SLOAD"
+          ],
+          [
+            "0x132f",
+            "CALL"
+          ],
+          [
+            "0x1366",
+            "LOG2"
+          ],
+          [
+            "0x1395",
+            "SLOAD"
+          ],
+          [
+            "0x13bf",
+            "CALL"
+          ],
+          [
+            "0x13ea",
+            "STATICCALL"
+          ],
+          [
+            "0x13fc",
+            "SLOAD"
+          ],
+          [
+            "0x1412",
+            "SLOAD"
+          ],
+          [
+            "0x1416",
+            "SLOAD"
+          ],
+          [
+            "0x1422",
+            "SLOAD"
+          ],
+          [
+            "0x145c",
+            "LOG1"
+          ],
+          [
+            "0x1474",
+            "SSTORE"
+          ],
+          [
+            "0x14b7",
+            "SSTORE"
+          ],
+          [
+            "0x14e4",
+            "SSTORE"
+          ],
+          [
+            "0x1514",
+            "SLOAD"
+          ],
+          [
+            "0x151c",
+            "SSTORE"
+          ],
+          [
+            "0x152d",
+            "LOG1"
+          ],
+          [
+            "0x153c",
+            "SSTORE"
+          ],
+          [
+            "0x15bc",
+            "SLOAD"
+          ],
+          [
+            "0x15bf",
+            "SLOAD"
+          ],
+          [
+            "0x15e4",
+            "SLOAD"
+          ],
+          [
+            "0x160b",
+            "SLOAD"
+          ],
+          [
+            "0x1612",
+            "SSTORE"
+          ],
+          [
+            "0x1668",
+            "STATICCALL"
+          ],
+          [
+            "0x16ff",
+            "CALL"
+          ],
+          [
+            "0x1703",
+            "CALL"
+          ],
+          [
+            "0x1707",
+            "CALL"
+          ],
+          [
+            "0x1771",
+            "LOG2"
+          ]
+        ],
+        "source_name_status": "unresolved; public claim() remains a candidate"
+      }
+    },
+    {
+      "role": "staking_implementation",
+      "selector": "0xe4fc6b6d",
+      "kind": "fixed revert",
+      "expected_error": "0xa15ce1ba",
+      "expected_words": 0,
+      "source_name_status": "unresolved; public distribute() remains a candidate",
+      "proof_evidence": "staking_direct_stubs_behavior.json",
+      "replay_evidence": "../../artifacts/fixed_revert_local/replay.json",
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "revert_payload_construction": {
+        "0xeb8": {
+          "pc": "0xeb8",
+          "pushed": "0x50ae70dd",
+          "shift": 225,
+          "payload": "0xa15ce1ba"
+        }
+      },
+      "decoder_requirement_words": 0,
+      "decoder_requirement_source": "read from the pinned entry bytes and equal to the cited proof",
+      "static_evidence": {
+        "selector_push_pc": 349,
+        "inline_guard_word_count": 0,
+        "revert_only_range": [
+          "0xea4",
+          "0xec6"
+        ],
+        "revert_only_effect_opcodes": [],
+        "dispatch_target_pc": 1469,
+        "body_pc": 3748,
+        "dispatch_idiom_bytes": "63e4fc6b6d146105bd578063",
+        "nonpayable": true,
+        "effect_opcodes": [
+          [
+            "0x1121",
+            "SLOAD"
+          ],
+          [
+            "0x113d",
+            "SSTORE"
+          ],
+          [
+            "0x1149",
+            "SLOAD"
+          ],
+          [
+            "0x117b",
+            "LOG3"
+          ],
+          [
+            "0x120c",
+            "SSTORE"
+          ],
+          [
+            "0x126e",
+            "SLOAD"
+          ],
+          [
+            "0x1289",
+            "SLOAD"
+          ],
+          [
+            "0x12a1",
+            "SLOAD"
+          ],
+          [
+            "0x12c1",
+            "SSTORE"
+          ],
+          [
+            "0x12ca",
+            "SLOAD"
+          ],
+          [
+            "0x12f5",
+            "SSTORE"
+          ],
+          [
+            "0x12fd",
+            "SSTORE"
+          ],
+          [
+            "0x1300",
+            "SLOAD"
+          ],
+          [
+            "0x132f",
+            "CALL"
+          ],
+          [
+            "0x1366",
+            "LOG2"
+          ],
+          [
+            "0x1395",
+            "SLOAD"
+          ],
+          [
+            "0x13bf",
+            "CALL"
+          ],
+          [
+            "0x13ea",
+            "STATICCALL"
+          ],
+          [
+            "0x13fc",
+            "SLOAD"
+          ],
+          [
+            "0x1412",
+            "SLOAD"
+          ],
+          [
+            "0x1416",
+            "SLOAD"
+          ],
+          [
+            "0x1422",
+            "SLOAD"
+          ],
+          [
+            "0x145c",
+            "LOG1"
+          ],
+          [
+            "0x1474",
+            "SSTORE"
+          ],
+          [
+            "0x14b7",
+            "SSTORE"
+          ],
+          [
+            "0x14e4",
+            "SSTORE"
+          ],
+          [
+            "0x1514",
+            "SLOAD"
+          ],
+          [
+            "0x151c",
+            "SSTORE"
+          ],
+          [
+            "0x152d",
+            "LOG1"
+          ],
+          [
+            "0x153c",
+            "SSTORE"
+          ],
+          [
+            "0x15bc",
+            "SLOAD"
+          ],
+          [
+            "0x15bf",
+            "SLOAD"
+          ],
+          [
+            "0x15e4",
+            "SLOAD"
+          ],
+          [
+            "0x160b",
+            "SLOAD"
+          ],
+          [
+            "0x1612",
+            "SSTORE"
+          ],
+          [
+            "0x1668",
+            "STATICCALL"
+          ],
+          [
+            "0x16ff",
+            "CALL"
+          ],
+          [
+            "0x1703",
+            "CALL"
+          ],
+          [
+            "0x1707",
+            "CALL"
+          ],
+          [
+            "0x1771",
+            "LOG2"
+          ]
+        ],
+        "source_name_status": "unresolved; public distribute() remains a candidate"
+      }
+    },
+    {
+      "role": "tokenomics_implementation",
+      "selector": "0xdb006a75",
+      "kind": "fixed revert",
+      "expected_error": "0x32aa90b0",
+      "expected_words": 1,
+      "source_name_status": "unresolved; public redeem(uint256) is hash-matching only",
+      "proof_evidence": "tokenomics_redemption_stub_behavior.json",
+      "replay_evidence": "../../artifacts/fixed_revert_local/replay.json",
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "revert_payload_construction": {
+        "0x2b4": {
+          "pc": "0x2b4",
+          "pushed": "0x032aa90b",
+          "shift": 228,
+          "payload": "0x32aa90b0"
+        }
+      },
+      "decoder_requirement_words": 1,
+      "decoder_requirement_source": "read from the pinned entry bytes and equal to the cited proof",
+      "static_evidence": {
+        "selector_push_pc": 184,
+        "inline_guard_word_count": 1,
+        "revert_only_range": [
+          "0x2a0",
+          "0x2bf"
+        ],
+        "revert_only_effect_opcodes": [],
+        "dispatch_target_pc": 672,
+        "body_pc": 672,
+        "dispatch_idiom_bytes": "63db006a75146102a0578063",
+        "nonpayable": true,
+        "effect_opcodes": [],
+        "source_name_status": "unresolved; public redeem(uint256) is hash-matching only"
+      }
+    },
+    {
+      "role": "tokenomics_implementation",
+      "selector": "0xfe16eae8",
+      "kind": "fixed revert",
+      "expected_error": "0x32aa90b0",
+      "expected_words": 1,
+      "source_name_status": "unresolved; public quoteRedemption(uint256) is hash-matching only",
+      "proof_evidence": "tokenomics_redemption_stub_behavior.json",
+      "replay_evidence": "../../artifacts/fixed_revert_local/replay.json",
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "revert_payload_construction": {
+        "0x119": {
+          "pc": "0x119",
+          "pushed": "0x032aa90b",
+          "shift": 228,
+          "payload": "0x32aa90b0"
+        }
+      },
+      "decoder_requirement_words": 1,
+      "decoder_requirement_source": "read from the pinned entry bytes and equal to the cited proof",
+      "static_evidence": {
+        "selector_push_pc": 249,
+        "inline_guard_word_count": 1,
+        "revert_only_range": [
+          "0x106",
+          "0x124"
+        ],
+        "revert_only_effect_opcodes": [],
+        "dispatch_target_pc": 262,
+        "body_pc": 262,
+        "dispatch_idiom_bytes": "63fe16eae814610106575f80",
+        "nonpayable": true,
+        "effect_opcodes": [],
+        "source_name_status": "unresolved; public quoteRedemption(uint256) is hash-matching only"
+      }
+    },
+    {
+      "role": "tokenomics_implementation",
+      "selector": "0x7c7df7b4",
+      "kind": "fixed revert",
+      "expected_error": "0x32aa90b0",
+      "expected_words": 7,
+      "source_name_status": "unresolved; the selector tool's five-argument inference is incomplete",
+      "proof_evidence": "tokenomics_seven_word_stub_behavior.json",
+      "replay_evidence": "../../artifacts/fixed_revert_local/replay.json",
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "revert_payload_construction": {
+        "0x42d": {
+          "pc": "0x42d",
+          "pushed": "0x032aa90b",
+          "shift": 228,
+          "payload": "0x32aa90b0"
+        }
+      },
+      "decoder_requirement_words": 7,
+      "decoder_requirement_source": "read from the pinned entry bytes and equal to the cited proof",
+      "static_evidence": {
+        "selector_push_pc": 85,
+        "inline_guard_word_count": 7,
+        "revert_only_range": [
+          "0x3f2",
+          "0x438"
+        ],
+        "revert_only_effect_opcodes": [],
+        "dispatch_target_pc": 1010,
+        "body_pc": 1010,
+        "dispatch_idiom_bytes": "637c7df7b4146103f2578063",
+        "nonpayable": true,
+        "effect_opcodes": [],
+        "source_name_status": "unresolved; the selector tool's five-argument inference is incomplete"
+      }
+    },
+    {
+      "role": "staking_implementation",
+      "selector": "0xc0c53b8b",
+      "kind": "initializer stub",
+      "expected_error": "0xb7b2509c",
+      "expected_words": 3,
+      "source_name_status": "unresolved; report candidate initialize(address,address,address) is hash-matching only",
+      "proof_evidence": "legacy_initializer_stubs_behavior.json",
+      "replay_evidence": "../../artifacts/remaining_initializers_local/replay.json",
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "revert_payload_construction": {
+        "0x6dd": {
+          "pc": "0x6dd",
+          "pushed": "0x2dec9427",
+          "shift": 226,
+          "payload": "0xb7b2509c"
+        }
+      },
+      "decoder_requirement_words": 3,
+      "decoder_requirement_source": "read from the pinned entry bytes and equal to the cited proof",
+      "static_evidence": {
+        "selector_push_pc": 294,
+        "inline_guard_word_count": 3,
+        "revert_only_range": [
+          "0x6ae",
+          "0x6e8"
+        ],
+        "revert_only_effect_opcodes": [],
+        "dispatch_target_pc": 1710,
+        "body_pc": 1710,
+        "dispatch_idiom_bytes": "63c0c53b8b146106ae578063",
+        "nonpayable": true,
+        "effect_opcodes": [],
+        "source_name_status": "unresolved; report candidate initialize(address,address,address) is hash-matching only"
+      }
+    },
+    {
+      "role": "batch_executor_implementation",
+      "selector": "0xc0c53b8b",
+      "kind": "initializer stub",
+      "expected_error": "0xb7b2509c",
+      "expected_words": 3,
+      "source_name_status": "unresolved; report candidate initialize(address,address,address) is hash-matching only",
+      "proof_evidence": "legacy_initializer_stubs_behavior.json",
+      "replay_evidence": "../../artifacts/batch_control_local/replay.json",
+      "address": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "revert_payload_construction": {
+        "0x18e": {
+          "pc": "0x18e",
+          "pushed": "0x2dec9427",
+          "shift": 226,
+          "payload": "0xb7b2509c"
+        }
+      },
+      "decoder_requirement_words": 3,
+      "decoder_requirement_source": "read from the pinned entry bytes and equal to the cited proof",
+      "static_evidence": {
+        "selector_push_pc": 115,
+        "inline_guard_word_count": 3,
+        "revert_only_range": [
+          "0x15e",
+          "0x19c"
+        ],
+        "revert_only_effect_opcodes": [],
+        "dispatch_target_pc": 350,
+        "body_pc": 350,
+        "dispatch_idiom_bytes": "63c0c53b8b1461015e578063",
+        "nonpayable": true,
+        "effect_opcodes": [],
+        "source_name_status": "unresolved; report candidate initialize(address,address,address) is hash-matching only"
+      }
+    },
+    {
+      "role": "deposit_proxy_factory_implementation",
+      "selector": "0xc4d66de8",
+      "kind": "initializer stub",
+      "expected_error": "0xb7b2509c",
+      "expected_words": 1,
+      "source_name_status": "unresolved; report candidate initialize(address) is hash-matching only",
+      "proof_evidence": "legacy_initializer_stubs_behavior.json",
+      "replay_evidence": "../../artifacts/fixed_revert_local/replay.json",
+      "address": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "revert_payload_construction": {
+        "0x354": {
+          "pc": "0x354",
+          "pushed": "0x2dec9427",
+          "shift": 226,
+          "payload": "0xb7b2509c"
+        }
+      },
+      "decoder_requirement_words": 1,
+      "decoder_requirement_source": "read from the pinned entry bytes and equal to the cited proof",
+      "static_evidence": {
+        "selector_push_pc": 96,
+        "inline_guard_word_count": 1,
+        "revert_only_range": [
+          "0x337",
+          "0x35f"
+        ],
+        "revert_only_effect_opcodes": [],
+        "dispatch_target_pc": 823,
+        "body_pc": 823,
+        "dispatch_idiom_bytes": "63c4d66de814610337578063",
+        "nonpayable": true,
+        "effect_opcodes": [],
+        "source_name_status": "unresolved; report candidate initialize(address) is hash-matching only"
+      }
+    }
+  ],
+  "local_replay": {
+    "pin": 48902346,
+    "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+    "method": "port-free in-process Forge EVM; exact pinned proxy, implementation, timelock and ProxyAdmin runtimes injected with vm.etch; pinned owner and EIP-1967 slots set with vm.store; fresh initialization states are synthetic; no transaction sent",
+    "runtime_hashes": {
+      "SharedProxy": {
+        "address": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+        "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+      },
+      "PaperProxy": {
+        "address": "0xe40f17915daa230324030003a197cdaef2261c0e",
+        "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+      },
+      "PaperImplementation": {
+        "address": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+        "sha256": "f77b91537421a0092f1c068f85af316caf7fd8d8461e8b0305022ee6f5f0faae"
+      },
+      "SessionImplementation": {
+        "address": "0x8a5069fe303e8f81e91825436e956d595032e558",
+        "sha256": "630c02b0c693c47760554a3f0fed68b72db5df601f887d2edaaa3106e6308e63"
+      },
+      "FactoryImplementation": {
+        "address": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+        "sha256": "808c1f14f7d7811b32fedb672fcfa0b5095f96faa20ec8413556875b4ace9efd"
+      },
+      "TokenomicsImplementation": {
+        "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+        "sha256": "ed9d18151a9365c347ac7a9da7e83b53ecedac235d9e67c4b2699503a6bd4a97"
+      },
+      "Timelock": {
+        "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "sha256": "f391dcb36b34b4b2fb1ffd42015cd4832a56ed8b40545eb3df41b58d7b38443e"
+      },
+      "BatchProxy": {
+        "address": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+        "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+      },
+      "BatchImplementation": {
+        "address": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+        "sha256": "480375f798fccf20fd79fd4fedefdd3377dd44af4dd559a3310a87c5bc048ae8"
+      },
+      "ProxyAdmin": {
+        "address": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+        "sha256": "238bb08777bab344b1e4090bd3a64fd26e48ef9ebaaf075234274e1c06129066"
+      }
+    },
+    "test_names": [
+      "testDecodeGuards",
+      "testFactoryAdminInitializer",
+      "testFactorySetAuthorizedDeployer",
+      "testPaperBurnFromMinter",
+      "testPaperBurnRejections",
+      "testPaperSetMinter",
+      "testSessionSetAuthorizedCaller",
+      "testTimelockCancel",
+      "testTimelockScheduleBatchAndExecuteBatch",
+      "testTimelockScheduleSingleAndExecute",
+      "testTimelockSelfGatedSetters",
+      "testTokenomicsSetMintParams"
+    ],
+    "passed_tests": [
+      "testDecodeGuards",
+      "testFactoryAdminInitializer",
+      "testFactorySetAuthorizedDeployer",
+      "testPaperBurnFromMinter",
+      "testPaperBurnRejections",
+      "testPaperSetMinter",
+      "testSessionSetAuthorizedCaller",
+      "testTimelockCancel",
+      "testTimelockScheduleBatchAndExecuteBatch",
+      "testTimelockScheduleSingleAndExecute",
+      "testTimelockSelfGatedSetters",
+      "testTokenomicsSetMintParams"
+    ],
+    "forge_result": "12 passed, 0 failed",
+    "source_sha256": "f90a8f67e88070388aefba031d4bf022b7368c5e2430172b421748418af9487e",
+    "test_source_sha256": "f90a8f67e88070388aefba031d4bf022b7368c5e2430172b421748418af9487e",
+    "covered_selectors": [
+      "0x0f71c8bc",
+      "0x12baae3b",
+      "0x485cc955",
+      "0x88aa4c12",
+      "0x8a99d586",
+      "0x8b07f62b",
+      "0x9ccae24e",
+      "0x9dc29fac",
+      "0xa6cc2c8c",
+      "0xc4d252f5",
+      "0xc6f881bc",
+      "0xcf8fbec9",
+      "0xf2fde38b",
+      "0xfca3b5aa"
+    ],
+    "limits": [
+      "Synthetic local state: the fresh-state initializer paths were never executed on chain.",
+      "No historical transaction is replayed by this harness; it exercises exact runtime code only."
+    ]
+  },
+  "live_latest_state": {
+    "captured_at": "20261022T212630Z",
+    "latest_block": 49255179,
+    "note": "latest-state reads only; the RPC ignores historical block numbers, so these values are not the pinned state",
+    "implementation_slots": {
+      "paper_token_proxy": {
+        "proxy": "0xe40f17915daa230324030003a197cdaef2261c0e",
+        "implementation": "0x433bd418ec92818a960585f4d5fae563e735bb4a"
+      },
+      "tokenomics_proxy": {
+        "proxy": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "implementation": "0x7c0a72a788cff4d68cfe9586aecb98e21eb58a03"
+      },
+      "session_key_manager_proxy": {
+        "proxy": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+        "implementation": "0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946"
+      },
+      "deposit_proxy_factory_proxy": {
+        "proxy": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+        "implementation": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0"
+      },
+      "batch_executor_proxy": {
+        "proxy": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+        "implementation": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262"
+      },
+      "staking_proxy": {
+        "proxy": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "implementation": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15"
+      },
+      "exchange_proxy": {
+        "proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "implementation": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723"
+      }
+    },
+    "pinned_vs_live": {
+      "paper_token_proxy": {
+        "proxy": "0xe40f17915daa230324030003a197cdaef2261c0e",
+        "pinned_implementation": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+        "live_implementation": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+        "changed": false,
+        "live_runtime_bytes": 925,
+        "live_sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+        "note": "live code hash not re-fetched because the slot still matches the pin"
+      },
+      "tokenomics_proxy": {
+        "proxy": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "pinned_implementation": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+        "live_implementation": "0x7c0a72a788cff4d68cfe9586aecb98e21eb58a03",
+        "changed": true,
+        "live_runtime_bytes": 6452,
+        "live_sha256": "56caf868c73dbc33b94725972fc101dbcec0fb7b017c4f2f9e8cda49516992e9"
+      },
+      "session_key_manager_proxy": {
+        "proxy": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+        "pinned_implementation": "0x8a5069fe303e8f81e91825436e956d595032e558",
+        "live_implementation": "0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946",
+        "changed": true,
+        "live_runtime_bytes": 4521,
+        "live_sha256": "7df05c33597c04820a314fae015aab01b5566aff53e9bded8446962cfd4ad2c9"
+      },
+      "deposit_proxy_factory_proxy": {
+        "proxy": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+        "pinned_implementation": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+        "live_implementation": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+        "changed": false,
+        "live_runtime_bytes": 925,
+        "live_sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+        "note": "live code hash not re-fetched because the slot still matches the pin"
+      },
+      "batch_executor_proxy": {
+        "proxy": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+        "pinned_implementation": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+        "live_implementation": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+        "changed": false,
+        "live_runtime_bytes": 925,
+        "live_sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+        "note": "live code hash not re-fetched because the slot still matches the pin"
+      },
+      "staking_proxy": {
+        "proxy": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "pinned_implementation": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+        "live_implementation": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+        "changed": false,
+        "live_runtime_bytes": 925,
+        "live_sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+        "note": "live code hash not re-fetched because the slot still matches the pin"
+      },
+      "exchange_proxy": {
+        "proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "pinned_implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+        "live_implementation": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+        "changed": true,
+        "live_runtime_bytes": 23959,
+        "live_sha256": "fc7374f3969381160732fe98c5e3145e00c3f167f168d61d65bb4972e9a6b268"
+      },
+      "timelock": {
+        "proxy": null,
+        "pinned_implementation": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "live_implementation": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "changed": false,
+        "live_runtime_bytes": 3207,
+        "live_sha256": "f391dcb36b34b4b2fb1ffd42015cd4832a56ed8b40545eb3df41b58d7b38443e",
+        "pinned_runtime_bytes": 3207,
+        "pinned_sha256": "f391dcb36b34b4b2fb1ffd42015cd4832a56ed8b40545eb3df41b58d7b38443e"
+      },
+      "proxy_admin": {
+        "proxy": null,
+        "pinned_implementation": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+        "live_implementation": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+        "changed": false,
+        "live_runtime_bytes": 943,
+        "live_sha256": "238bb08777bab344b1e4090bd3a64fd26e48ef9ebaaf075234274e1c06129066",
+        "pinned_runtime_bytes": 943,
+        "pinned_sha256": "238bb08777bab344b1e4090bd3a64fd26e48ef9ebaaf075234274e1c06129066"
+      }
+    }
+  },
+  "evidence_vocabulary": [
+    "historical trace: a saved sampled historical call graph or trace in artifacts/",
+    "exact-runtime replay: the pinned runtime bytes executed in a local EVM (this artifact) or saved pinned-state debug trace with storage diff",
+    "pinned read-only probe: an eth_call or debug_traceCall against the pinned state",
+    "bytecode-only static read: a claim read from the pinned bytes at a named program counter",
+    "fixed revert: a canonical call that always reverted with a hash-checked payload"
+  ],
+  "limits": [
+    "No archive HyperEVM endpoint is available, so no historical refetch was possible; the pinned captures under atlas/block_48902346/runtime and artifacts/ are the only historical state.",
+    "The record describes the pinned runtimes. Two proxies (SessionKeyManager and Tokenomics) point at different implementations at latest; see live_latest_state.",
+    "Local replay successes are synthetic executions of exact code with local storage, not on-chain transactions.",
+    "Decompiler output and public signature preimages are never promoted to proven names here."
+  ]
+}

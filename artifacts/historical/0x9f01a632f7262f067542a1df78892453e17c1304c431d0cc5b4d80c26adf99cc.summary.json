@@ -1,0 +1,31 @@
+{
+  "hash": "0x9f01a632f7262f067542a1df78892453e17c1304c431d0cc5b4d80c26adf99cc",
+  "block": 48085806,
+  "status": 1,
+  "calls": [
+    {
+      "depth": 0,
+      "type": "CALL",
+      "from": "0xda0ccf3040d7f268bc2328250a250a34f5857fdc",
+      "to": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "selector": "0x84f4fc6a",
+      "gas_used": "0x7064",
+      "error": null
+    },
+    {
+      "depth": 1,
+      "type": "DELEGATECALL",
+      "from": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "to": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "selector": "0x84f4fc6a",
+      "gas_used": "0x1bfc",
+      "error": null
+    }
+  ],
+  "logs": [
+    {
+      "address": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "topic0": "0x744157ccffbd293a2e8644928cd7d23d650f869b88f72d7bfea8041b76ca6bec"
+    }
+  ]
+}

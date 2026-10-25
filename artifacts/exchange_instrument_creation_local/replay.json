@@ -1,0 +1,33 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "runtime_sha256": {
+    "Proxy": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "Implementation": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1"
+  },
+  "source_sha256": "8591a049198dac5082cc34449ca0fbd55c0fcec943bd5409ebb1a894594d98e8",
+  "test_count": 8,
+  "passed_tests": [
+    "testCreateEventUsesThirdArgument",
+    "testCreateHistoricalPair",
+    "testCreateOptionalZeroWords",
+    "testCreateOutsiderRejected",
+    "testCreateOwnerGuardBeforeMostWidthChecks",
+    "testCreateRequiredNonzeroWords",
+    "testCreateWidthOverflowsReject",
+    "testCreateWord7ObservedBoundary"
+  ],
+  "successful_registration_cases": 7,
+  "required_zero_rejection_cases": 5,
+  "overflow_rejection_cases": 9,
+  "word7_observed_width_bits": 128,
+  "owner_guard_order": "words 0 through 7: owner guard before sampled width rejection; word 8: width rejection before owner guard",
+  "event_second_field": "input word 2, demonstrated when new ID is 0 and input word 2 is 7",
+  "limits": [
+    "Synthetic initial state, exact pinned proxy and implementation runtimes.",
+    "Boundary probes show 127th bit accepted and 128th bit rejected for word 7. This is an observed input boundary, not proof of the original ABI spelling.",
+    "Other tested width overflows revert with empty data; narrower acceptance limits remain unresolved."
+  ]
+}

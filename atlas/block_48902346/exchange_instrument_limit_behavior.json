@@ -1,0 +1,29 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "selector": "0xd7c7e5fb",
+  "event_topic": "0x62db1b2b923b6f20043c492d3586df1a823e447c63e44d15dbc90c1a3bc9fcc5",
+  "validated_fields": [
+    "instrument id is uint32",
+    "first value is uint32",
+    "second value is nonzero and at most uint120 max"
+  ],
+  "storage_mapping_base": 7,
+  "word0_replaced_bits": [
+    224,
+    255
+  ],
+  "word1_replaced_bits": [
+    0,
+    119
+  ],
+  "local_replay": "../../artifacts/exchange_instrument_limit_local/replay.json",
+  "tested_errors": {
+    "non_owner": "0x30cd7471",
+    "invalid_instrument": "0x67207a88",
+    "zero_value": "0xb0cb274d"
+  },
+  "source_name_status": "unresolved"
+}

@@ -1,0 +1,69 @@
+{
+  "saved_trace_count": 60,
+  "reverts": [
+    {
+      "target": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+      "role": "paper_token_implementation",
+      "revert_selector": "0xe827105e",
+      "public_signature_candidates": [
+        "TransferRestricted()"
+      ],
+      "count_in_saved_traces": 1,
+      "samples": [
+        {
+          "tx": "0x44e5261573d094f2dbe91fbec674acad2f3a6e80b02eb8bc55466ffb2c13fe42",
+          "called_selector": "0xa9059cbb",
+          "error": "execution reverted",
+          "output_prefix": "0xe827105e"
+        }
+      ]
+    },
+    {
+      "target": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+      "role": "staking_proxy",
+      "revert_selector": "0xa15ce1ba",
+      "public_signature_candidates": [],
+      "count_in_saved_traces": 1,
+      "samples": [
+        {
+          "tx": "0xaff42aa42819e057cb5b94db7093a7b220041353e8159bb60a85daa17abe7fb4",
+          "called_selector": "0x4e71d92d",
+          "error": "execution reverted",
+          "output_prefix": "0xa15ce1ba"
+        }
+      ]
+    },
+    {
+      "target": "0xe40f17915daa230324030003a197cdaef2261c0e",
+      "role": "paper_token_proxy",
+      "revert_selector": "0xe827105e",
+      "public_signature_candidates": [
+        "TransferRestricted()"
+      ],
+      "count_in_saved_traces": 1,
+      "samples": [
+        {
+          "tx": "0x44e5261573d094f2dbe91fbec674acad2f3a6e80b02eb8bc55466ffb2c13fe42",
+          "called_selector": "0xa9059cbb",
+          "error": "execution reverted",
+          "output_prefix": "0xe827105e"
+        }
+      ]
+    },
+    {
+      "target": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "role": "staking_implementation",
+      "revert_selector": "0xa15ce1ba",
+      "public_signature_candidates": [],
+      "count_in_saved_traces": 1,
+      "samples": [
+        {
+          "tx": "0xaff42aa42819e057cb5b94db7093a7b220041353e8159bb60a85daa17abe7fb4",
+          "called_selector": "0x4e71d92d",
+          "error": "execution reverted",
+          "output_prefix": "0xa15ce1ba"
+        }
+      ]
+    }
+  ]
+}

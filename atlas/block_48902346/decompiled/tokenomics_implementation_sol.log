@@ -1,0 +1,9 @@
+[2m2026-10-18T21:32:10.797915Z[0m [33m WARN[0m calldata is not a standard size. if decoding fails, consider using the `--truncate-calldata` flag.
+[2m2026-10-18T21:32:10.797945Z[0m [33m WARN[0m couldn't find any resolved matches for '7aac24ba'
+[2m2026-10-18T21:32:10.798148Z[0m [33m WARN[0m calldata is not a standard size. if decoding fails, consider using the `--truncate-calldata` flag.
+[2m2026-10-18T21:32:10.798152Z[0m [33m WARN[0m couldn't find any resolved matches for '40c10f19'
+[2m2026-10-18T21:32:10.800409Z[0m [33m WARN[0m calldata is not a standard size. if decoding fails, consider using the `--truncate-calldata` flag.
+[2m2026-10-18T21:32:10.800414Z[0m [33m WARN[0m couldn't find any resolved matches for '7aac24ba'
+[2m2026-10-18T21:32:10.800565Z[0m [33m WARN[0m calldata is not a standard size. if decoding fails, consider using the `--truncate-calldata` flag.
+[2m2026-10-18T21:32:10.800569Z[0m [33m WARN[0m couldn't find any resolved matches for '40c10f19'
+

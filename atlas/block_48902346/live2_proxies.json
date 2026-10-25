@@ -1,0 +1,405 @@
+{
+  "audit": "user deposit-proxy family, factory CREATE2 binding and EIP-712 domains across the three live suites",
+  "pin": 48902346,
+  "pin_block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "pass": 2,
+  "suites": {
+    "earlier_1": {
+      "exchange": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+      "session": "0x91667db7e20474b3ac6eaabf0c8106ed46b5691a",
+      "domain_separator": "0x148ad6651bcc1981a17c339cb9726dee6b4617126472e8236bad447c73665254",
+      "authorized_caller": "0x1b534e482b92bb6daff452cd12f2e35219e13493"
+    },
+    "earlier_2": {
+      "exchange": "0x2ede04561914c61a5f49212609541934fd7f5901",
+      "session": "0xe45264507a67d0bbea35299002b68ebd76adba04",
+      "domain_separator": "0xcbedfe73b0acbbcf567c94f68358f2ed291e8e67060d57d48253b5c5063505e8",
+      "authorized_caller": "0x2ede04561914c61a5f49212609541934fd7f5901"
+    },
+    "newest": {
+      "exchange": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "session": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "domain_separator": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+      "authorized_caller": "0x6cd5661646289fb6e65ea5c032310fded797d0a2"
+    }
+  },
+  "family": {
+    "deployment_count": 22586,
+    "runtime_bytes": 1646,
+    "runtime_template_sha256": "554e7afb9eb3c11831c7aa6a11fd2170aae9d81e29a5940b234e1cea62611225",
+    "representative_sha256": "0c2f88b4bd4a6225e291a27e63601a50355f9f563c27da85d6df17c5431c3ffb",
+    "exchange_impl_bytes": 23052,
+    "representative": "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+    "representative_user": "0xfb94d3404c1d3d9d6f08f79e58041d5ea95accfa",
+    "exchange_word_offsets": [
+      97,
+      222
+    ],
+    "user_word_offsets": [
+      891,
+      986
+    ],
+    "caller_sites": 2,
+    "address_recomputed": 22586,
+    "runtime_hash_recomputed": 22586,
+    "proxy_family_records": 41
+  },
+  "core_writer": {
+    "opcode_count": 329,
+    "code_bytes": 491,
+    "metadata_bytes": 53,
+    "push4_selectors": [
+      "0x17938e13"
+    ],
+    "callvalue_guard": true
+  },
+  "template": {
+    "opcode_count": 1014,
+    "code_bytes": 1593,
+    "metadata_bytes": 53,
+    "counts": {
+      "SSTORE": 0,
+      "SLOAD": 0,
+      "DELEGATECALL": 0,
+      "CALLCODE": 0,
+      "SELFDESTRUCT": 0,
+      "STATICCALL": 0,
+      "CREATE": 0,
+      "CREATE2": 0,
+      "CALLER": 2,
+      "CALL": 3,
+      "REVERT": 18,
+      "INVALID": 1
+    },
+    "caller_windows": [
+      [
+        "SWAP2",
+        "SUB",
+        "PUSH2 0x02eb",
+        "JUMPI",
+        "PUSH32 0x0000000000000000000000000000000000000000000000000000000000000000",
+        "PUSH1 0x01",
+        "PUSH1 0x01",
+        "PUSH1 0xa0",
+        "SHL",
+        "SUB",
+        "AND",
+        "SWAP1",
+        "CALLER",
+        "DUP3",
+        "SWAP1",
+        "SUB",
+        "PUSH2 0x0335",
+        "JUMPI"
+      ],
+      [
+        "DUP5",
+        "SUB",
+        "PUSH2 0x02eb",
+        "JUMPI",
+        "PUSH1 0x24",
+        "DUP1",
+        "CALLDATALOAD",
+        "SWAP4",
+        "PUSH32 0x0000000000000000000000000000000000000000000000000000000000000000",
+        "AND",
+        "SWAP6",
+        "DUP7",
+        "CALLER",
+        "SUB",
+        "PUSH2 0x055b",
+        "JUMPI",
+        "POP",
+        "DUP4"
+      ]
+    ]
+  },
+  "live_reads": {
+    "head": "0x2efea98",
+    "source": "artifacts/live2_proxies/live_reads.json"
+  },
+  "evidence_files": [
+    "artifacts/live2_proxies/offline_checks.json",
+    "artifacts/live2_proxies/live_reads.json",
+    "artifacts/live2_proxies/replay.json",
+    "artifacts/live2_proxies/replay_source.sol",
+    "artifacts/live2_proxies/runtime/"
+  ],
+  "counts": {
+    "severity": {
+      "none": 7,
+      "info": 1,
+      "low": 1
+    },
+    "status": {
+      "confirmed_simulation": 6,
+      "disproved": 1,
+      "confirmed_live": 2
+    },
+    "affected": {
+      "pinned": 5,
+      "both": 4
+    },
+    "rows": 9
+  },
+  "rows": [
+    {
+      "id": "PX-L2P-01",
+      "title": "The deposit-proxy template has exactly two embedded address words, both guards mask to 160 bits, and the runtime has no storage, delegatecall or selfdestruct",
+      "angle": "1 proxy family: a spoofed or dirty embedded user word",
+      "invariant": "A7",
+      "actor": "unprivileged deployer of a copy of the public creation code",
+      "precondition": "the captured 1,646-byte runtime and its two embedded words at 0x37b/0x3da (user) and 0x61/0xde (exchange)",
+      "trigger": "etch or deploy the same runtime with twelve inert high bytes changed, then call the user-only rescue and the exchange-only sweep",
+      "impact": "no impact: both guards compare CALLER against the 160-bit mask of the embedded word, so the twelve inert high bytes of each word cannot block or satisfy a guard, and the only 20-byte content of either word is the address. A copy whose 20-byte address differs simply answers to that address. The runtime holds no storage, no DELEGATECALL, CALLCODE, SELFDESTRUCT, STATICCALL, CREATE or CREATE2 and exactly two CALLER sites, so nothing in the template can be redirected at run time",
+      "affected": "pinned",
+      "severity": "none",
+      "status": "confirmed_simulation",
+      "evidence_tier": "exact-runtime replay of the captured template plus a linear disassembly",
+      "evidence": {
+        "template": "artifacts/live2_proxies/runtime/Proxy.hex (the same 1,646 bytes as atlas/block_48902346/runtime/0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce.hex)",
+        "opcode_counts": "artifacts/live2_proxies/offline_checks.json -> template.counts",
+        "replay": "artifacts/live2_proxies/replay.json -> testGuardMasksTheEmbeddedWordTo160Bits",
+        "control": "changing the 20-byte address, or the salt, changes the guard/address"
+      },
+      "missing_observation": "nothing for the guard shape; the exact Solidity spelling of the two guards is unrecovered",
+      "citations": [
+        "atlas/block_48902346/deposit_proxy_pseudocode.md",
+        "artifacts/live2_proxies/replay.json",
+        "artifacts/live2_proxies/offline_checks.json"
+      ],
+      "citation_ok": true,
+      "workstream": "proxies",
+      "source_id": "PX-L2P-01"
+    },
+    {
+      "id": "PX-L2P-02",
+      "title": "Anyone can deploy an identical proxy carrying a chosen (exchange, user) pair, and the guard set then answers to those forged words; no protocol path reads the clone",
+      "angle": "1 proxy family: can the exchange-only guard be satisfied by anyone other than the Exchange",
+      "invariant": "A7",
+      "actor": "unprivileged outsider",
+      "precondition": "the 1,825-byte creation body is public in the recorded factory CREATE2 calldata",
+      "trigger": "deploy body ++ abi.encode(attacker, victim) with CREATE2 from any address",
+      "impact": "the clone's immutables are the forged ones, so the attacker's own address holds the exchange-only sweep right over it and the victim holds the user-only rescue right. That is a self-inflicted deployment, not a protocol breach: the real Exchange resolves a user's proxy through factory.proxyOf(user) and its computeProxyAddress formula, both of which are the factory's CREATE2 address for that user, so a clone is never swept, credited or reconciled by the Exchange. The clone is also at a different address by construction, because the CREATE2 deployer is part of the address. The 22,586 recorded proxies all carry the real Exchange word",
+      "affected": "pinned",
+      "severity": "none",
+      "status": "confirmed_simulation",
+      "evidence_tier": "exact-runtime replay of the captured creation body plus a live factory read",
+      "evidence": {
+        "replay": "artifacts/live2_proxies/replay.json -> testCopyOfTheCreationCodeIsPermissionless",
+        "live": "artifacts/live2_proxies/live_reads.json -> factory:newest:computeProxyAddress(representative), factory:newest:proxyOf(representative)",
+        "family": "artifacts/live2_proxies/offline_checks.json -> family.exchange_word_offsets fixed at every derivation"
+      },
+      "missing_observation": "no on-chain clone of the creation code was found; nothing funded one",
+      "citations": [
+        "atlas/block_48902346/factory_pseudocode.md",
+        "artifacts/live2_proxies/replay.json",
+        "atlas/block_48902346/factory_user_proxy_map.json"
+      ],
+      "citation_ok": true,
+      "workstream": "proxies",
+      "source_id": "PX-L2P-02"
+    },
+    {
+      "id": "PX-L2P-03",
+      "title": "A proxy's sweep can only reach its own embedded exchange and its own Core account; no calldata can point it at another user's funds",
+      "angle": "1 proxy family: can one proxy's sweep be pointed at another user's funds",
+      "invariant": "A7",
+      "actor": "unprivileged outsider (through the permissionless Exchange sweep request)",
+      "precondition": "the Exchange-only guard is satisfied",
+      "trigger": "call sweepAllToExchange(uint64 tokenId, uint64 spotAmount, uint64 perpAmount) with any token id, amounts or addresses",
+      "impact": "no impact: the action 6 destination is the code-level exchange word, never a calldata value, and the two CoreWriter actions execute against the calling proxy's own HyperCore account, so the only account a sweep can debit is that proxy's. The amount is the caller-supplied total spotAmount + 100 * perpAmount, and the overflow guard reverts above uint64.max before any CoreWriter call. The Exchange reaches the guard only by calling the proxy itself, which is the pass-one liveness row, not a redirection",
+      "affected": "pinned",
+      "severity": "none",
+      "status": "disproved",
+      "evidence_tier": "exact-runtime replay plus the recorded historical sweep payload",
+      "evidence": {
+        "replay": "artifacts/live2_proxies/replay.json -> testSweepDestinationIsTheEmbeddedWord",
+        "historical": "atlas/block_48902346/deposit_proxy_pseudocode.md (action 6 payload to the Exchange proxy)",
+        "semantics": "Hyperliquid CoreWriter action 6/7 operate on the sender's own Core account (hyperliquid.gitbook.io hyperevm docs)"
+      },
+      "missing_observation": "no historical sweep of a proxy by a third party was found; the request path is permissionless by design",
+      "citations": [
+        "atlas/block_48902346/deposit_proxy_pseudocode.md",
+        "atlas/block_48902346/exchange_sweep_pseudocode.md",
+        "atlas/block_48902346/live2_intents.md"
+      ],
+      "citation_ok": true,
+      "workstream": "proxies",
+      "source_id": "PX-L2P-03"
+    },
+    {
+      "id": "PX-L2P-04",
+      "title": "The CREATE2 salt, the recorded user and the deployed code word cannot be made to disagree: all 22,586 deployments re-derive from one calldata address",
+      "angle": "2 factory binding: salt, recorded user and deployed code",
+      "invariant": "A7",
+      "actor": "any user, the owner or the authorized deployer",
+      "precondition": "deployProxy(address user) on the pinned factory",
+      "trigger": "compare keccak256(abi.encodePacked(user)), the appended user word and the factory's proxyOf[user] for every recorded deployment",
+      "impact": "no impact: deployProxy takes one address argument and uses it three times, as the CREATE2 salt preimage, as the appended initcode word and as the proxyOf/isProxy key, so no caller can create a proxy at a user's deterministic address whose embedded user differs from that user, and no user can be credited for a proxy they do not control. Re-deriving all 22,586 records reproduces every address, every derived runtime SHA-256 and every embedded user word; only the two user words vary across the family sample, so the exchange word is the real Exchange in all of them. All 22,586 users and proxies are distinct and none is zero, so every deployed proxy belongs to exactly one user who can rescue it",
+      "affected": "pinned",
+      "severity": "none",
+      "status": "confirmed_live",
+      "evidence_tier": "exhaustive offline re-derivation from the saved catalogs plus a live factory read",
+      "evidence": {
+        "recomputed": "artifacts/live2_proxies/offline_checks.json -> family.address_recomputed=22586, family.runtime_hash_recomputed=22586",
+        "replay": "artifacts/live2_proxies/replay.json -> testCreate2TripleBindingControls (salt, code-word and deployer controls)",
+        "distinct": "22,586 distinct users and proxies; none is address(0)"
+      },
+      "missing_observation": "an exhaustive proof that no other factory entry writes proxyOf/isProxy needs the source, which does not exist; the four state-changing entries the pass-one probe set exercised are initialization, setAuthorizedDeployer, transferOwnership and deployProxy, and only the last takes a user",
+      "citations": [
+        "atlas/block_48902346/factory_pseudocode.md",
+        "atlas/block_48902346/deposit_proxy_runtime_derivation.md",
+        "atlas/block_48902346/factory_user_proxy_map.json",
+        "artifacts/live2_proxies/offline_checks.json"
+      ],
+      "citation_ok": true,
+      "workstream": "proxies",
+      "source_id": "PX-L2P-04"
+    },
+    {
+      "id": "PX-L2P-05",
+      "title": "The three suites have three distinct EIP-712 domains, each bound to its own Exchange, factory and SessionKeyManager, and the wiring chain is consistent in all three",
+      "angle": "3 signature domains across suites",
+      "invariant": "A2",
+      "actor": "n/a (domain derivation)",
+      "precondition": "the three SessionKeyManager proxies and three Exchange proxies are live",
+      "trigger": "read each manager's DOMAIN_SEPARATOR, domainSeparatorV4 and authorizedCaller, each Exchange's sessionKeyManager and proxyFactory, and each factory's exchange",
+      "impact": "no cross-suite domain: every manager's domain separator equals keccak256(EIP712Domain, keccak256(\"String\"), keccak256(\"1\"), 999, authorizedCaller) with its own Exchange as the verifying contract, and the three values are pairwise distinct (earlier_1 0x148ad665..., earlier_2 0xcbedfe73..., newest 0x53a2ab5a...). Each Exchange points at its own SessionKeyManager and its own factory, each factory at its own Exchange, and each manager names its own Exchange as authorized caller and its own BatchExecutor as an authorized submitter, so no suite is wired to another suite's verifier",
+      "affected": "both",
+      "severity": "none",
+      "status": "confirmed_live",
+      "evidence_tier": "live contract reads at one head plus an offline formula recomputation",
+      "evidence": {
+        "live": "artifacts/live2_proxies/live_reads.json (head recorded with the reads)",
+        "formula": "offline_checks.json -> domains: keccak256(EIP712Domain typehash, keccak(name), keccak(version), 999, caller) matches every stored and dynamic value",
+        "suite_wiring": "exchange.sessionKeyManager, exchange.proxyFactory, session.authorizedCaller, factory.exchange all per suite"
+      },
+      "missing_observation": "the two older suites' implementation runtimes were not re-read here; their live getters are on the same proxies the pass-one atlas records",
+      "citations": [
+        "atlas/block_48902346/session_direct_getters.md",
+        "atlas/block_48902346/suite_sets.md",
+        "artifacts/live2_proxies/live_reads.json"
+      ],
+      "citation_ok": true,
+      "workstream": "proxies",
+      "source_id": "PX-L2P-05"
+    },
+    {
+      "id": "PX-L2P-06",
+      "title": "No intent signed for one suite validates in another: a real withdrawal signature recovers a different signer under every other suite's separator, and the exact-runtime registration path rejects the cross-suite submission",
+      "angle": "3 signature domains across suites: replay of a newest-suite intent on an older suite",
+      "invariant": "A2",
+      "actor": "any relayer or submitter",
+      "precondition": "a signature produced against one suite's domain, and an older suite still live",
+      "trigger": "submit the same (structHash, v, r, s) to another suite's verifier",
+      "impact": "no impact: the digest a verifier computes is keccak256(0x1901 || its own domain separator || structHash), so the same signature recovers a different address under each other suite's separator. A recorded withdrawal signed for the newest Exchange (user 0xb2dadf36..., digest 0xc74fa4dc...) recovers that user under 0x53a2ab5a... and an unrelated non-zero address under 0x148ad665... and 0xcbedfe73.... The withdrawal path requires the recovered address to equal the named user, and the session-key paths require a key registered for that user in that suite's manager, so both reject. The exact pinned SessionKeyManager runtime accepts a registration under its own domain parameters, rejects the identical signature and struct under each older suite's real parameters with hash-checked InvalidSignature() (0x8baa579f), and then accepts a signature made for those older parameters, so the rejection is domain-specific rather than environmental",
+      "affected": "both",
+      "severity": "none",
+      "status": "confirmed_simulation",
+      "evidence_tier": "ecrecover over real recorded signature material plus an exact-runtime replay of the registration path",
+      "evidence": {
+        "signature": "atlas/block_48902346/session_direct_signer_behavior.json calls[0] (tx 0x3b56a71e...)",
+        "replay": "artifacts/live2_proxies/replay.json -> testDomainFormulaAndCrossSuiteEcrecover, testCrossSuiteRegistrationIsRejected",
+        "controls": "positive control (own domain recovers the user / registers), negative (each other domain recovers a different address / reverts InvalidSignature()), and a third control that a signature made for the older domain does register",
+        "invalid_signature": "0x8baa579f = keccak256(\"InvalidSignature()\")[:4]"
+      },
+      "missing_observation": "the two older sessions' dispatchers were not driven directly; their real domain parameters were installed on the pinned runtime instead, and their live getters confirm the parameters",
+      "citations": [
+        "atlas/block_48902346/session_direct_signer_behavior.json",
+        "atlas/block_48902346/exchange_withdrawal_signature_behavior.json",
+        "atlas/block_48902346/session_typehash_behavior.json",
+        "artifacts/live2_proxies/replay.json"
+      ],
+      "citation_ok": true,
+      "workstream": "proxies",
+      "source_id": "PX-L2P-06"
+    },
+    {
+      "id": "PX-L2P-07",
+      "title": "Session-key registration binds the signed expiry and the signed struct; a compromised session key can trade the user's account but cannot withdraw to Core, register further keys or revoke another user's key",
+      "angle": "4 session-key registration and a compromised session key",
+      "invariant": "A1, A2",
+      "actor": "authorized submitter with the user's signature; later a holder of the registered key",
+      "precondition": "authorizedSubmitters[BatchExecutor] true and the user's own EIP-712 signature over the registration struct",
+      "trigger": "submit registerSessionKeyBySig with an expiry the user did not sign; then use the registered key on the open and close paths",
+      "impact": "no escalation: the digest covers user, key, expiry, associated address, nonce and deadline, so changing the expiry (or any other field) after signing recovers the wrong address and reverts with InvalidSignature() without consuming the nonce. The registration typehash is distinct from every trading typehash (four distinct literals are present in the runtime), so a signature made for an open, close or withdrawal cannot be replayed as a registration, and the registration requires the user's signature, not the session key's, so a compromised session key cannot register further keys. Exposure of a leaked session key is bounded to trading: the signed withdrawal path recovers the user, not the session key, so a session key cannot move funds to a Core address; the holder can only open and close positions on the user's account, which can convert the balance into a loss or a queued claim",
+      "affected": "both",
+      "severity": "info",
+      "status": "confirmed_simulation",
+      "evidence_tier": "exact-runtime replay plus the saved registration ledger",
+      "evidence": {
+        "replay": "artifacts/live2_proxies/replay.json -> testRegistrationBindsTheSignedExpiry, testCrossSuiteRegistrationIsRejected",
+        "typehashes": "artifacts/live2_proxies/offline_checks.json -> typehash separation",
+        "withdrawal": "atlas/block_48902346/exchange_withdrawal_signature_behavior.json (103/103 recovered signers equal the withdrawal user)"
+      },
+      "missing_observation": "the exact registration type string is still unresolved; the typehash value is pinned and used directly",
+      "citations": [
+        "atlas/block_48902346/session_key_pseudocode.md",
+        "atlas/block_48902346/session_key_behavior.json",
+        "artifacts/live2_proxies/replay.json"
+      ],
+      "citation_ok": true,
+      "workstream": "proxies",
+      "source_id": "PX-L2P-07"
+    },
+    {
+      "id": "PX-L2P-08",
+      "title": "The stuck-token rescue cannot be aimed at a Core-facing action or at proxy bookkeeping: the captured CoreWriter accepts one selector only, the proxy has no storage, and a re-entrant token reaches neither guard",
+      "angle": "5 stuck-token rescue: value other than an ERC-20 held by the proxy",
+      "invariant": "A7",
+      "actor": "the proxy's immutable user",
+      "precondition": "withdrawStuckToken(address token, uint256 amount) with amount != 0",
+      "trigger": "call the rescue with token set to the CoreWriter, the proxy itself, the Exchange, and a token that re-enters both guarded functions",
+      "impact": "no impact: the rescue performs one low-level call to the caller-supplied token, so it can only move an ERC-20 the proxy holds on HyperEVM to the immutable user. Set to the CoreWriter (0x3333...33) the call carries selector 0xa9059cbb, and the captured 544-byte CoreWriter runtime dispatches exactly one selector, 0x17938e13 sendRawAction(bytes), reverting on everything else, so no Core action can be enqueued. Set to the proxy itself or the Exchange there is no transfer selector and the call reverts. The proxy holds no storage at all, so no bookkeeping can be corrupted, and a token that re-enters sweepAllToExchange or withdrawStuckToken from inside transfer is rejected by both caller guards, so there is no re-entrancy path",
+      "affected": "both",
+      "severity": "none",
+      "status": "confirmed_simulation",
+      "evidence_tier": "exact-runtime replay against the captured CoreWriter runtime and the captured proxy template",
+      "evidence": {
+        "replay": "artifacts/live2_proxies/replay.json -> testRescueAtACoreFacingTargetReverts, testRescueAtBookkeepingOrTheExchangeReverts, testTokenReentrancyCannotReachEitherGuard",
+        "corewriter": "artifacts/live2_proxies/offline_checks.json -> core_writer.push4_selectors = ['0x17938e13']",
+        "runtime": "artifacts/live2_proxies/runtime/CoreWriter.hex (544 bytes, captured from artifacts/postpin_suite)"
+      },
+      "missing_observation": "HyperCore's own response to a malformed action is not observable here; the CoreWriter rejects the call before any action is enqueued, so it does not matter",
+      "citations": [
+        "atlas/block_48902346/deposit_proxy_pseudocode.md",
+        "artifacts/live2_proxies/replay.json",
+        "artifacts/live2_proxies/offline_checks.json"
+      ],
+      "citation_ok": true,
+      "workstream": "proxies",
+      "source_id": "PX-L2P-08"
+    },
+    {
+      "id": "PX-L2P-09",
+      "title": "deployProxy(address(0)) creates an immutable zero-user proxy that no account can rescue",
+      "angle": "2 factory binding: a proxy that no user can claim",
+      "invariant": "A7",
+      "actor": "any caller with deploy authority (the owner or the authorized deployer)",
+      "precondition": "the pinned factory implementation, whose deployProxy accepts any address including zero",
+      "trigger": "call deployProxy(address(0))",
+      "impact": "the factory creates a proxy whose immutable user word is address(0), at the deterministic CREATE2 address for the zero salt, and records proxyOf[address(0)] and isProxy[proxy]. Both guards compare CALLER against the embedded word, so no account can ever satisfy the user-only withdrawStuckToken guard on that proxy: any value it held would be unrecoverable through the proxy, which makes this the one proxy shape the factory can mint that no user can claim. No such proxy exists on chain, so no value is at risk today, and nothing funds one: the Exchange resolves a user's proxy through proxyOf and sweeps by reading HyperCore balances, so no path credits or funds a zero-user proxy",
+      "affected": "pinned",
+      "severity": "low",
+      "status": "confirmed_simulation",
+      "evidence_tier": "pinned read-only probe re-derived offline, plus an exhaustive on-chain census",
+      "evidence": {
+        "probe": "atlas/block_48902346/factory_behavior.json probes.deploy_zero_user: success, ProxyDeployed, proxy 0x23195734b67f4f173fa6d3b421c649f833ca0cc0",
+        "derivation": "artifacts/live2_proxies/offline_checks.json -> zero_user: create2(factory, keccak256(bytes20(0)), initcode with the zero user word) reproduces that address",
+        "census": "0 of 22,586 recorded users is address(0) (artifacts/live2_proxies/offline_checks.json -> family)",
+        "guards": "both guards mask the embedded word to 160 bits and compare CALLER (PX-L2P-01)"
+      },
+      "missing_observation": "no live zero-user proxy and no on-chain funding of the shape; nothing indicates anyone has created one",
+      "citations": [
+        "atlas/block_48902346/factory_pseudocode.md",
+        "atlas/block_48902346/factory_behavior.json",
+        "atlas/block_48902346/factory_user_proxy_map.json",
+        "artifacts/live2_proxies/offline_checks.json"
+      ],
+      "citation_ok": true,
+      "workstream": "proxies",
+      "source_id": "PX-L2P-09"
+    }
+  ]
+}

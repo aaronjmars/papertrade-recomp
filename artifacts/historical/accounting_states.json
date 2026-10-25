@@ -1,0 +1,207 @@
+{
+  "chain_id": 999,
+  "selectors": {
+    "queue_head": [
+      "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "0x96523644"
+    ],
+    "total_queued": [
+      "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "0x53ac4b66"
+    ],
+    "lp_bankroll_available": [
+      "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "0x0cdd5fc4"
+    ],
+    "queue_harvest_available": [
+      "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "0x138e9de2"
+    ],
+    "exchange_staker_excess": [
+      "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "0x18715c9a"
+    ],
+    "tracked_lp": [
+      "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+      "0x8cf554a7"
+    ],
+    "staker_excess": [
+      "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+      "0xae745703"
+    ],
+    "staker_cap": [
+      "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+      "0xc16017ca"
+    ]
+  },
+  "states": [
+    {
+      "block": 48170000,
+      "block_hash": "0xb8ad0a4ff08d81fba74d4dcc6a5dd9b19e23942028b376b2742795aa63488e63",
+      "timestamp": 1791637001,
+      "queue_head": "0",
+      "total_queued": "0",
+      "lp_bankroll_available": "0",
+      "queue_harvest_available": "0",
+      "exchange_staker_excess": "0",
+      "tracked_lp": "0",
+      "staker_excess": "0",
+      "staker_cap": "5000000000000000000000000"
+    },
+    {
+      "block": 48173880,
+      "block_hash": "0xc4e06ae5048b4457d3df2b1f9658abd429a233649f617c2eb73a67f5f06a48b3",
+      "timestamp": 1791640817,
+      "queue_head": "0",
+      "total_queued": "0",
+      "lp_bankroll_available": "0",
+      "queue_harvest_available": "0",
+      "exchange_staker_excess": "0",
+      "tracked_lp": "0",
+      "staker_excess": "0",
+      "staker_cap": "5000000000000000000000000"
+    },
+    {
+      "block": 48173881,
+      "block_hash": "0xd5de9a9df7115ab1203e8895b79b4490e15467db5967946aa9956f302de0f488",
+      "timestamp": 1791640818,
+      "queue_head": "1",
+      "total_queued": "7623942182351823589",
+      "lp_bankroll_available": "0",
+      "queue_harvest_available": "0",
+      "exchange_staker_excess": "0",
+      "tracked_lp": "-7623942182351823589",
+      "staker_excess": "0",
+      "staker_cap": "5000000000000000000000000"
+    },
+    {
+      "block": 48173885,
+      "block_hash": "0xb3c520748140750b9e206743894a838774ddda9566cc554d26729b62964c28d6",
+      "timestamp": 1791640822,
+      "queue_head": "1",
+      "total_queued": "15247884364703647178",
+      "lp_bankroll_available": "0",
+      "queue_harvest_available": "0",
+      "exchange_staker_excess": "0",
+      "tracked_lp": "-15247884364703647178",
+      "staker_excess": "0",
+      "staker_cap": "5000000000000000000000000"
+    },
+    {
+      "block": 48173887,
+      "block_hash": "0x6005547d736228f19432fc389c52b46ceaaadf8f898645c014d99f97b5ba19a1",
+      "timestamp": 1791640824,
+      "queue_head": "1",
+      "total_queued": "22871826547055470767",
+      "lp_bankroll_available": "0",
+      "queue_harvest_available": "0",
+      "exchange_staker_excess": "0",
+      "tracked_lp": "-22871826547055470767",
+      "staker_excess": "0",
+      "staker_cap": "5000000000000000000000000"
+    },
+    {
+      "block": 48173889,
+      "block_hash": "0xe53bc96266e8aaeb4ef7bc6e4ab3c9d8529f5aae989d7bb815c242914d78efa8",
+      "timestamp": 1791640826,
+      "queue_head": "1",
+      "total_queued": "22871826547055470767",
+      "lp_bankroll_available": "0",
+      "queue_harvest_available": "400296219202209635129",
+      "exchange_staker_excess": "0",
+      "tracked_lp": "377424392655154164362",
+      "staker_excess": "0",
+      "staker_cap": "5000000000000000000000000"
+    },
+    {
+      "block": 48173890,
+      "block_hash": "0xd34ba7b776ba94fc3943096ae9cfab01bedc754b1c6fe754385e56c5c994a4da",
+      "timestamp": 1791640827,
+      "queue_head": "4",
+      "total_queued": "0",
+      "lp_bankroll_available": "377424392655154164362",
+      "queue_harvest_available": "377424392655154164362",
+      "exchange_staker_excess": "0",
+      "tracked_lp": "377424392655154164362",
+      "staker_excess": "0",
+      "staker_cap": "5000000000000000000000000"
+    },
+    {
+      "block": 48899300,
+      "block_hash": "0x7bf57eb4f6678a5560674f6691bb8d272758e8241d973f4da9ab3a6cf9c21b78",
+      "timestamp": 1792354345,
+      "queue_head": "4",
+      "total_queued": "0",
+      "lp_bankroll_available": "5002056911227408759981977",
+      "queue_harvest_available": "5002056911227408759981977",
+      "exchange_staker_excess": "2056911227408759981977",
+      "tracked_lp": "5002056911227408759981977",
+      "staker_excess": "2056911227408759981977",
+      "staker_cap": "5000000000000000000000000"
+    },
+    {
+      "block": 48901469,
+      "block_hash": "0xb10845c7a2f1769cd63d637bd35e22ae6b2f671a239e29de19efff5c9e5eb637",
+      "timestamp": 1792356479,
+      "queue_head": "4",
+      "total_queued": "0",
+      "lp_bankroll_available": "4999846249632922624919053",
+      "queue_harvest_available": "4999846249632922624919053",
+      "exchange_staker_excess": "0",
+      "tracked_lp": "4999846249632922624919053",
+      "staker_excess": "0",
+      "staker_cap": "5000000000000000000000000"
+    },
+    {
+      "block": 48902346,
+      "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+      "timestamp": 1792357341,
+      "queue_head": "4",
+      "total_queued": "0",
+      "lp_bankroll_available": "5000968649731559005181671",
+      "queue_harvest_available": "5000968649731559005181671",
+      "exchange_staker_excess": "968649731559005181671",
+      "tracked_lp": "5000968649731559005181671",
+      "staker_excess": "968649731559005181671",
+      "staker_cap": "5000000000000000000000000"
+    }
+  ],
+  "historical_implementations": {
+    "exchange_48170000": {
+      "proxy_implementation_slot": "0x0000000000000000000000000f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "runtime_bytes": 23052,
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1"
+    },
+    "tokenomics_48170000": {
+      "proxy_implementation_slot": "0x000000000000000000000000600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "implementation": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "runtime_bytes": 3324,
+      "runtime_sha256": "ed9d18151a9365c347ac7a9da7e83b53ecedac235d9e67c4b2699503a6bd4a97"
+    },
+    "exchange_48173881": {
+      "proxy_implementation_slot": "0x0000000000000000000000000f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "runtime_bytes": 23052,
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1"
+    },
+    "tokenomics_48173881": {
+      "proxy_implementation_slot": "0x000000000000000000000000600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "implementation": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "runtime_bytes": 3324,
+      "runtime_sha256": "ed9d18151a9365c347ac7a9da7e83b53ecedac235d9e67c4b2699503a6bd4a97"
+    },
+    "exchange_48901469": {
+      "proxy_implementation_slot": "0x0000000000000000000000000f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "runtime_bytes": 23052,
+      "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1"
+    },
+    "tokenomics_48901469": {
+      "proxy_implementation_slot": "0x000000000000000000000000600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "implementation": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "runtime_bytes": 3324,
+      "runtime_sha256": "ed9d18151a9365c347ac7a9da7e83b53ecedac235d9e67c4b2699503a6bd4a97"
+    }
+  }
+}

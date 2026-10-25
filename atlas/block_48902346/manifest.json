@@ -1,0 +1,493 @@
+{
+  "chain_id": 999,
+  "block": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "timestamp": 1792357341,
+  "sources": [
+    "deployer_txlist.json",
+    "Exchange getter reads",
+    "Tokenomics trace",
+    "EIP-1967 proxy slots",
+    "Exchange implementation PUSH20 references",
+    "deposit_proxy_instances.json"
+  ],
+  "scope_note": "Newest deployer-created suite, its EIP-1967 proxy targets, linked libraries, and representative user deposit proxy. The separate deployer_scope capture records 38 earlier direct creations and 38 older factory-created user proxies still carrying code at the pin. External token and HyperCore system contracts are dependencies, not counted as Papertrade deployments.",
+  "deposit_proxy_family": {
+    "factory": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+    "instance_count": 22586,
+    "instance_file": "deposit_proxy_instances.json",
+    "sample_template_file": "deposit_proxy_family.json"
+  },
+  "contracts": {
+    "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee": {
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "role": "exchange_implementation",
+      "origin": {
+        "kind": "deployer_creation",
+        "block": 47854658,
+        "tx": "0x643b352161abb59624f9fcf3f779706f9d073f03b122086663f18a1301b54421"
+      },
+      "code_present": true,
+      "runtime_bytes": 23052,
+      "sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+      "keccak256": "0x9d20287df886415035d53344a0dc8a1044949308cc3283ee0fe7ea5f3ea28d92",
+      "runtime_file": "runtime/0x0f3febfc94876b0c895f7acecdc8f5c863b549ee.hex",
+      "eip1967_slots": {
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0x1629b7d46bef6e13ff754174fc9f32dea309b38f": {
+      "address": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+      "role": "deposit_proxy_factory_proxy",
+      "origin": {
+        "kind": "deployer_creation",
+        "block": 47855071,
+        "tx": "0xdf3909a903c5e15a5ac770bdcb6cccef77399094b4b99f759ecd4521ed86ae7d"
+      },
+      "code_present": true,
+      "runtime_bytes": 925,
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+      "keccak256": "0x93076ef48e1d48172af505f739606cf1fa8425dbf9dbc6bee6743307bd4bd63b",
+      "runtime_file": "runtime/0x1629b7d46bef6e13ff754174fc9f32dea309b38f.hex",
+      "eip1967_slots": {
+        "implementation": "0x0000000000000000000000008f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0x233ff29b239abc1d7748605da9b205c3e008626e": {
+      "address": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "role": "batch_executor_proxy",
+      "origin": {
+        "kind": "deployer_creation",
+        "block": 47855140,
+        "tx": "0xa1cce64c11078d19a9bd7df04fc9300b19bd4be5f01e72f64e635c59909b71ae"
+      },
+      "code_present": true,
+      "runtime_bytes": 925,
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+      "keccak256": "0x93076ef48e1d48172af505f739606cf1fa8425dbf9dbc6bee6743307bd4bd63b",
+      "runtime_file": "runtime/0x233ff29b239abc1d7748605da9b205c3e008626e.hex",
+      "eip1967_slots": {
+        "implementation": "0x000000000000000000000000e0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a": {
+      "address": "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+      "role": "oracle_implementation",
+      "origin": {
+        "kind": "deployer_creation",
+        "block": 47854536,
+        "tx": "0x44933368624ddd7d850364a7bf50fb88f220a282cef05a3b898f711457765b74"
+      },
+      "code_present": true,
+      "runtime_bytes": 2475,
+      "sha256": "8e452a76ac1b28c05d220451d837c3758bd41180526940752f89047bc0dd22ed",
+      "keccak256": "0x75f094dab1fb771fc5ed5953a02be453a5d35dc4878b53a9e6a11c7d9e4e679c",
+      "runtime_file": "runtime/0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a.hex",
+      "eip1967_slots": {
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0x433bd418ec92818a960585f4d5fae563e735bb4a": {
+      "address": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+      "role": "paper_token_implementation",
+      "origin": {
+        "kind": "deployer_creation",
+        "block": 47855127,
+        "tx": "0x1d519202cf0803805420b5a077fe6142cc5b7c1f3a27735713561f976443094a"
+      },
+      "code_present": true,
+      "runtime_bytes": 3528,
+      "sha256": "f77b91537421a0092f1c068f85af316caf7fd8d8461e8b0305022ee6f5f0faae",
+      "keccak256": "0x087aaaf8472c1ca9bb313493a83fca6f5497d639ef46e6ca2ed0ef4cab85a590",
+      "runtime_file": "runtime/0x433bd418ec92818a960585f4d5fae563e735bb4a.hex",
+      "eip1967_slots": {
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0x4f859b790d34767ea325b4888c8c420c34cf85af": {
+      "address": "0x4f859b790d34767ea325b4888c8c420c34cf85af",
+      "role": "exchange_implementation_variant_b",
+      "origin": {
+        "kind": "deployer_creation",
+        "block": 48094997,
+        "tx": "0x80107da21b2d7f261e9b0bb0a6727dc2c7e05d53a50028d21ba83445a4e2560a"
+      },
+      "code_present": true,
+      "runtime_bytes": 23529,
+      "sha256": "19e0334bff9247132ed4f3beaf5ecdab1dfc1708c4832d61c0f0a34c9b2faed0",
+      "keccak256": "0xbcf63409daffba4d6138b2b656eaccf201612e942f48b1fa1ef2b473d6d728e7",
+      "runtime_file": "runtime/0x4f859b790d34767ea325b4888c8c420c34cf85af.hex",
+      "eip1967_slots": {
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0x5a4bda2dcc82749258d9e5cdd49cd52c3cd16388": {
+      "address": "0x5a4bda2dcc82749258d9e5cdd49cd52c3cd16388",
+      "role": "exchange_linked_library_variant_a",
+      "origin": {
+        "kind": "push20_linked_library",
+        "from": "exchange_implementation_variant_a"
+      },
+      "code_present": true,
+      "runtime_bytes": 5790,
+      "sha256": "93cabc1ccb68ddbcb98160bd5023f27377bc8d77dc154c11863a9a91cf1e5b35",
+      "keccak256": "0xf6c75f2c3c97c7b58197fabcea41d6ee0a1b5a58902410dec0788182499dead3",
+      "runtime_file": "runtime/0x5a4bda2dcc82749258d9e5cdd49cd52c3cd16388.hex",
+      "eip1967_slots": {
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f": {
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "role": "tokenomics_implementation",
+      "origin": {
+        "kind": "deployer_creation",
+        "block": 47855073,
+        "tx": "0xd1ec955f9a0cb926b76dd5d70ddc5560efa12151edd7c2ed6de882ce22949508"
+      },
+      "code_present": true,
+      "runtime_bytes": 3324,
+      "sha256": "ed9d18151a9365c347ac7a9da7e83b53ecedac235d9e67c4b2699503a6bd4a97",
+      "keccak256": "0xd9fbc7091e10f4d56188f3097454bd8464ed4b77b5f44d1c6391be72b9362169",
+      "runtime_file": "runtime/0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f.hex",
+      "eip1967_slots": {
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0x696292762fd5ac3677a45edbe54eaece4194d1f6": {
+      "address": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+      "role": "one_of_two_multisig",
+      "origin": {
+        "kind": "deployer_creation",
+        "block": 47855493,
+        "tx": "0x7f02102d7c251058f4b0d9b440f53e28e79920807ebd7c2f16727a201c384e02"
+      },
+      "code_present": true,
+      "runtime_bytes": 3134,
+      "sha256": "25c3204acbd096d8407b2253cc2d59b920e89be24be8fd897ad299db09f8f513",
+      "keccak256": "0xdb27a12cb89210a9e6f1aad59bbee6c32f69efd56f6c91fd9d07128bf7f04720",
+      "runtime_file": "runtime/0x696292762fd5ac3677a45edbe54eaece4194d1f6.hex",
+      "eip1967_slots": {
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0x6cd5661646289fb6e65ea5c032310fded797d0a2": {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "role": "exchange_proxy",
+      "origin": {
+        "kind": "deployer_creation",
+        "block": 47854719,
+        "tx": "0x6f6c80fd5052bbf85e0e55b3bbe1102a1dbf764396fe4c2d4447e150b16579ce"
+      },
+      "code_present": true,
+      "runtime_bytes": 925,
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+      "keccak256": "0x93076ef48e1d48172af505f739606cf1fa8425dbf9dbc6bee6743307bd4bd63b",
+      "runtime_file": "runtime/0x6cd5661646289fb6e65ea5c032310fded797d0a2.hex",
+      "eip1967_slots": {
+        "implementation": "0x0000000000000000000000000f3febfc94876b0c895f7acecdc8f5c863b549ee",
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0x75174549dbbd44497d31a47e2e2d7406408d63d9": {
+      "address": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+      "role": "tokenomics_proxy",
+      "origin": {
+        "kind": "deployer_creation",
+        "block": 47855075,
+        "tx": "0x8f0fcad98f87bd8a42fde8d399f470f239975b55eb26025932caf08a357c5747"
+      },
+      "code_present": true,
+      "runtime_bytes": 925,
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+      "keccak256": "0x93076ef48e1d48172af505f739606cf1fa8425dbf9dbc6bee6743307bd4bd63b",
+      "runtime_file": "runtime/0x75174549dbbd44497d31a47e2e2d7406408d63d9.hex",
+      "eip1967_slots": {
+        "implementation": "0x000000000000000000000000600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0x8326eb8896e358717f10502ec73ce8d28e37b108": {
+      "address": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "role": "session_key_manager_proxy",
+      "origin": {
+        "kind": "deployer_creation",
+        "block": 47855066,
+        "tx": "0xe055509195f0ea1b9e30c366c3350d10470d8c1d145bfa51686b49134d36ffbe"
+      },
+      "code_present": true,
+      "runtime_bytes": 925,
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+      "keccak256": "0x93076ef48e1d48172af505f739606cf1fa8425dbf9dbc6bee6743307bd4bd63b",
+      "runtime_file": "runtime/0x8326eb8896e358717f10502ec73ce8d28e37b108.hex",
+      "eip1967_slots": {
+        "implementation": "0x0000000000000000000000008a5069fe303e8f81e91825436e956d595032e558",
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0x8a5069fe303e8f81e91825436e956d595032e558": {
+      "address": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "role": "session_key_manager_implementation",
+      "origin": {
+        "kind": "deployer_creation",
+        "block": 47855064,
+        "tx": "0x98510ecde6e5808fdc50b224dfc1031dac24a9d94f107a43ff75a6d15c8ee35f"
+      },
+      "code_present": true,
+      "runtime_bytes": 3764,
+      "sha256": "630c02b0c693c47760554a3f0fed68b72db5df601f887d2edaaa3106e6308e63",
+      "keccak256": "0x337787e630c4fe48e2cea45e1dbd7cb12be2254d158042ee1cd446e706d5c484",
+      "runtime_file": "runtime/0x8a5069fe303e8f81e91825436e956d595032e558.hex",
+      "eip1967_slots": {
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0": {
+      "address": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "role": "deposit_proxy_factory_implementation",
+      "origin": {
+        "kind": "deployer_creation",
+        "block": 47855068,
+        "tx": "0xbce9a7c2e1eee761420668e8d1995706943b41e6e2de7f392a18bd4e9262b831"
+      },
+      "code_present": true,
+      "runtime_bytes": 3917,
+      "sha256": "808c1f14f7d7811b32fedb672fcfa0b5095f96faa20ec8413556875b4ace9efd",
+      "keccak256": "0xb8ab2884da3e386fc6a5e27971a39247ea6285f35160e85b304be742c0f28812",
+      "runtime_file": "runtime/0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0.hex",
+      "eip1967_slots": {
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0x93a8e8d647f6c1e7b0f9bf4bd86eff3a9f20c3fb": {
+      "address": "0x93a8e8d647f6c1e7b0f9bf4bd86eff3a9f20c3fb",
+      "role": "exchange_implementation_variant_a",
+      "origin": {
+        "kind": "deployer_creation",
+        "block": 48092801,
+        "tx": "0xb478b9195521a8ef41f26f69936de3be0bac7949ed678d45ce4ff0d9e9e0f39c"
+      },
+      "code_present": true,
+      "runtime_bytes": 23529,
+      "sha256": "c755794c2d6cf6077dded83c91067b4e9e07fc386e63c322ff7e4389cd697f4d",
+      "keccak256": "0x7a010e2b4e71c1349b036ea7e4d4732fde6c08d38cc6fc75d0b4a861c90237ee",
+      "runtime_file": "runtime/0x93a8e8d647f6c1e7b0f9bf4bd86eff3a9f20c3fb.hex",
+      "eip1967_slots": {
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e": {
+      "address": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+      "role": "oracle_proxy",
+      "origin": {
+        "kind": "deployer_creation",
+        "block": 47854597,
+        "tx": "0x9b66014c5dfeb4d4fe9bd45bbc681f8628edbbbd8a3a2dbe19d155ed5de63f9d"
+      },
+      "code_present": true,
+      "runtime_bytes": 925,
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+      "keccak256": "0x93076ef48e1d48172af505f739606cf1fa8425dbf9dbc6bee6743307bd4bd63b",
+      "runtime_file": "runtime/0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e.hex",
+      "eip1967_slots": {
+        "implementation": "0x0000000000000000000000003997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016": {
+      "address": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+      "role": "staking_proxy",
+      "origin": {
+        "kind": "deployer_creation",
+        "block": 47855135,
+        "tx": "0xcd107566d243dc4984e0e157b5384018532e8f1b2b2495ebbc720c8e8aca955d"
+      },
+      "code_present": true,
+      "runtime_bytes": 925,
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+      "keccak256": "0x93076ef48e1d48172af505f739606cf1fa8425dbf9dbc6bee6743307bd4bd63b",
+      "runtime_file": "runtime/0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016.hex",
+      "eip1967_slots": {
+        "implementation": "0x000000000000000000000000e6e3519455170913c5c3bfe541dd918a2d0cbb15",
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f": {
+      "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "role": "timelock",
+      "origin": {
+        "kind": "deployer_creation",
+        "block": 47855496,
+        "tx": "0xc6fd85ec337d08e9e6caffee4b26d74b60406883661c18673b1427f4934d2e0b"
+      },
+      "code_present": true,
+      "runtime_bytes": 3207,
+      "sha256": "f391dcb36b34b4b2fb1ffd42015cd4832a56ed8b40545eb3df41b58d7b38443e",
+      "keccak256": "0x500bf24105ab07da3a7b9dd08f74d14d24c8ae82c81b204dcb5755eb7f798716",
+      "runtime_file": "runtime/0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f.hex",
+      "eip1967_slots": {
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0xcd617f984158a4f5d287ddee0e8eb0fed204916d": {
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "role": "exchange_linked_library_live",
+      "origin": {
+        "kind": "push20_linked_library",
+        "from": "exchange_implementation"
+      },
+      "code_present": true,
+      "runtime_bytes": 5790,
+      "sha256": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2",
+      "keccak256": "0x6dd521e90deaa283432285694770360cf42830025b2b1e6916a3c41799160792",
+      "runtime_file": "runtime/0xcd617f984158a4f5d287ddee0e8eb0fed204916d.hex",
+      "eip1967_slots": {
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262": {
+      "address": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "role": "batch_executor_implementation",
+      "origin": {
+        "kind": "deployer_creation",
+        "block": 47855137,
+        "tx": "0xc68a34be37d766c4f932bd3e867962069b98d38ef1138a4ad602ac6195adf775"
+      },
+      "code_present": true,
+      "runtime_bytes": 3451,
+      "sha256": "480375f798fccf20fd79fd4fedefdd3377dd44af4dd559a3310a87c5bc048ae8",
+      "keccak256": "0xe926c659aca61daaaf9e68267817be4dae5152f11320a6ba970549dfdd15f62a",
+      "runtime_file": "runtime/0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262.hex",
+      "eip1967_slots": {
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0xe40f17915daa230324030003a197cdaef2261c0e": {
+      "address": "0xe40f17915daa230324030003a197cdaef2261c0e",
+      "role": "paper_token_proxy",
+      "origin": {
+        "kind": "deployer_creation",
+        "block": 47855130,
+        "tx": "0x5e75d563d789f1007d03b187dd2f646b1912aeaf2ff43ac69f9bd2a77cabed74"
+      },
+      "code_present": true,
+      "runtime_bytes": 925,
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+      "keccak256": "0x93076ef48e1d48172af505f739606cf1fa8425dbf9dbc6bee6743307bd4bd63b",
+      "runtime_file": "runtime/0xe40f17915daa230324030003a197cdaef2261c0e.hex",
+      "eip1967_slots": {
+        "implementation": "0x000000000000000000000000433bd418ec92818a960585f4d5fae563e735bb4a",
+        "admin": "0x000000000000000000000000e79c91cc682f1bb401a9cab74c900470190f0f8f",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15": {
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "role": "staking_implementation",
+      "origin": {
+        "kind": "deployer_creation",
+        "block": 47855133,
+        "tx": "0xf3e8a793259ca557c5b297206d15cb29484710076124bcd0d551bea87e3a38d6"
+      },
+      "code_present": true,
+      "runtime_bytes": 6054,
+      "sha256": "3e006d0daee1fcbaa71c160a72291374783da5f720a33db0a51c8f84bde3aa04",
+      "keccak256": "0x54573c497e5109e353cf5330343323915e0c0f26e1b410fd3cb2cd8d1460f154",
+      "runtime_file": "runtime/0xe6e3519455170913c5c3bfe541dd918a2d0cbb15.hex",
+      "eip1967_slots": {
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0xe79c91cc682f1bb401a9cab74c900470190f0f8f": {
+      "address": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+      "role": "proxy_admin",
+      "origin": {
+        "kind": "deployer_creation",
+        "block": 47854475,
+        "tx": "0xe766e65a3f827ec843ac62a66c1f1b3665ccedf6ec480ac21fa39711d4a97682"
+      },
+      "code_present": true,
+      "runtime_bytes": 943,
+      "sha256": "238bb08777bab344b1e4090bd3a64fd26e48ef9ebaaf075234274e1c06129066",
+      "keccak256": "0xff475c0f38702282fc531a92b1d200a6672924ea0c8b211844da318ffa793d73",
+      "runtime_file": "runtime/0xe79c91cc682f1bb401a9cab74c900470190f0f8f.hex",
+      "eip1967_slots": {
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0xe991817199363046da0a28da6fbad0284e4aa492": {
+      "address": "0xe991817199363046da0a28da6fbad0284e4aa492",
+      "role": "paper_math_library",
+      "origin": {
+        "kind": "linked_library_from_tokenomics_trace"
+      },
+      "code_present": true,
+      "runtime_bytes": 585,
+      "sha256": "8f1de6ca76cfd6f0186e9f4472dd53fab6dfa1a53a7c3a2a3700d641fec7c5da",
+      "keccak256": "0xa13304bc6fdad736a3ee6ad77d713c6077f1b130501d577be1bf9487d005388d",
+      "runtime_file": "runtime/0xe991817199363046da0a28da6fbad0284e4aa492.hex",
+      "eip1967_slots": {
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce": {
+      "address": "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+      "role": "user_deposit_proxy_representative",
+      "origin": {
+        "kind": "factory_create2_representative",
+        "family_file": "deposit_proxy_family.json"
+      },
+      "code_present": true,
+      "runtime_bytes": 1646,
+      "sha256": "0c2f88b4bd4a6225e291a27e63601a50355f9f563c27da85d6df17c5431c3ffb",
+      "keccak256": "0xe8b46a7790b9711b544cf6a4388bb67f02ce596267045b33e7268ac32cc45c76",
+      "runtime_file": "runtime/0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce.hex",
+      "eip1967_slots": {
+        "implementation": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "admin": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "beacon": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    }
+  }
+}

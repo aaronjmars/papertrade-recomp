@@ -1,0 +1,9 @@
+# Signed trading nonce history
+
+The saved pinned-bytecode call corpus contains 58 signed opens in 13 transactions and 43 successful signed closes in 22 transactions. One transaction appears in both sets, giving 101 calls in 34 distinct transactions. The open calls include 30 successes, 27 hash-verified `OiCapExceeded()` (`0x40f92143`) rejections, and one `ExpiredDeadline()` (`0xf87d9271`) rejection. Their user and nonce arguments are distinct across this corpus.
+
+`atlas_trading_nonce_history.py` derives each SessionKeyManager bitmap slot from mapping base 6, the user, and `nonce >> 8`; it checks bit `nonce & 255`. The script checks the pinned block hash, uses saved transaction receipts plus two captured archive receipts for block numbers, and reads deployed storage at the block before each transaction, at that block's end, and at the pin. The [machine-readable ledger](trading_nonce_history.json) contains 250 distinct storage reads and every raw word. Run `python3 scripts/atlas_trading_nonce_history.py` to verify the saved evidence offline. Provide `PAPERTRADE_ARCHIVE_RPC` and use `--capture` to recapture it.
+
+All 43 successful closes and 30 successful opens have unset bits before their blocks, set bits after, and set bits at the pin. All 28 rejected opens have unset bits before and after their blocks and at the pin. The saved call traces show that the 27 `OiCapExceeded()` opens had a successful nested `consumeNonce` call before their parent open reverted, so the nonce write rolled back. The remaining `ExpiredDeadline()` open's nested nonce call itself reverted. All 34 saved transaction receipts succeeded; the rejected opens were inner calls.
+
+These are block-level storage observations, so they do not isolate a transaction index when other calls share a block. They cover only the saved open and close calls. Other trade accounting and signature encoding boundaries, plus all unsampled intents, require separate evidence.

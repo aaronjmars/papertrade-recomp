@@ -1,0 +1,163 @@
+{
+  "pin_block": 48902346,
+  "pin_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "case_count": 25,
+  "same_mock_count": 25,
+  "same_call_tree_count": 25,
+  "cases": [
+    {
+      "name": "bbo_crossed",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": true
+    },
+    {
+      "name": "bbo_good",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": true
+    },
+    {
+      "name": "bbo_short",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": false
+    },
+    {
+      "name": "bbo_zero",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": true
+    },
+    {
+      "name": "mark_empty",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": false
+    },
+    {
+      "name": "mark_good",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": true
+    },
+    {
+      "name": "mark_zero",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": false
+    },
+    {
+      "name": "mid_crossed",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": false
+    },
+    {
+      "name": "mid_good",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": true
+    },
+    {
+      "name": "mid_max",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": true
+    },
+    {
+      "name": "mid_odd",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": true
+    },
+    {
+      "name": "mid_zero",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": false
+    },
+    {
+      "name": "mid_zero_ask",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": false
+    },
+    {
+      "name": "mid_zero_bid",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": false
+    },
+    {
+      "name": "oracle_empty",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": false
+    },
+    {
+      "name": "oracle_good",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": true
+    },
+    {
+      "name": "oracle_out_of_range",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": false
+    },
+    {
+      "name": "oracle_revert",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": false
+    },
+    {
+      "name": "oracle_zero",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": false
+    },
+    {
+      "name": "snapshot_crossed",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": true
+    },
+    {
+      "name": "snapshot_good",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": true
+    },
+    {
+      "name": "snapshot_narrow",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": true
+    },
+    {
+      "name": "snapshot_zero_bbo",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": true
+    },
+    {
+      "name": "snapshots_empty",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": true
+    },
+    {
+      "name": "snapshots_two",
+      "same_mock_runtime_codes": true,
+      "same_call_tree": true,
+      "success": true
+    }
+  ],
+  "limits": [
+    "The 25 cases use synthetic HyperCore read precompile outputs and prove only their tested Oracle paths.",
+    "The earlier public-fork files did not record their upstream RPC URL; this comparison uses their saved traces."
+  ]
+}

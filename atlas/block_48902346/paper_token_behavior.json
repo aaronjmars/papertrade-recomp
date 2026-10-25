@@ -1,0 +1,142 @@
+{
+  "pin_block": 48902346,
+  "token_proxy": "0xe40f17915daa230324030003a197cdaef2261c0e",
+  "implementation": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+  "initializer": {
+    "signature": "initialize(string,string,address,address)",
+    "strings": [
+      "Paper",
+      "PAPER"
+    ],
+    "owner": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+    "minter": "0x75174549dbbd44497d31a47e2e2d7406408d63d9"
+  },
+  "admin_transactions": {
+    "slot5_setter": "0x3e080969215f85d41865c022dcad457d02c510aa100d9b737adf107fbb7cebab",
+    "staking_contract_setter": "0x8a64598fa90a06cdcd95f581db350c00da9cd829f8b5cb865c24118bee6fe0b0",
+    "ownership_transfer": "0x66c836fe26fbc6d8b4e66cf035cc9a831a1cd4af05b4861ef7e2174b01a30742"
+  },
+  "pinned_probe_count": 28,
+  "mutation_probe_count": 4,
+  "mutation_storage_field_checks": 3,
+  "mutation_events_verified": 2,
+  "historical_stake_transfer_count": 12,
+  "historical_unstake_transfer_count": 2,
+  "historical_mint_count": 25,
+  "selector_reconstructions": {
+    "0x06fdde03": "name()",
+    "0x07546172": "minter()",
+    "0x095ea7b3": "approve(address,uint256)",
+    "0x12bbf044": "autoApprovedSpender()",
+    "0x18160ddd": "totalSupply()",
+    "0x23b872dd": "transferFrom(address,address,uint256)",
+    "0x313ce567": "decimals()",
+    "0x40c10f19": "mint(address,uint256)",
+    "0x70a08231": "balanceOf(address)",
+    "0x8da5cb5b": "owner()",
+    "0x8f15b414": "initialize(string,string,address,address)",
+    "0x95d89b41": "symbol()",
+    "0x9dc29fac": "burn(address,uint256)",
+    "0x9dd373b9": "setStakingContract(address)",
+    "0xd311b1a9": "setAutoApprovedSpender(address)",
+    "0xa9059cbb": "transfer(address,uint256)",
+    "0xdd62ed3e": "allowance(address,address)",
+    "0xee99205c": "stakingContract()",
+    "0xf2fde38b": "transferOwnership(address)",
+    "0xfca3b5aa": "setMinter(address)"
+  },
+  "event_catalog": [
+    {
+      "topic0": "0x6e54fcdf080b1c188bfc8f26eb9386e78b6cb5428459a86cdd74357de82a33ae",
+      "reconstructed_signature": "AutoApprovedSpenderUpdated(address)",
+      "status": "observed_historical_topic"
+    },
+    {
+      "topic0": "0x6397f5b135542bb3f477cb346cfab5abdec1251d08dc8f8d4efb4ffe122ea0bf",
+      "reconstructed_signature": "StakingContractUpdated(address)",
+      "status": "observed_historical_topic"
+    },
+    {
+      "topic0": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+      "reconstructed_signature": "OwnerUpdated(address)",
+      "status": "observed_historical_topic"
+    },
+    {
+      "topic0": "0xad0f299ec81a386c98df0ac27dae11dd020ed1b56963c53a7292e7a3a314539a",
+      "reconstructed_signature": "MinterUpdated(address)",
+      "status": "observed_historical_topic"
+    },
+    {
+      "topic0": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+      "reconstructed_signature": "Transfer(address,address,uint256)",
+      "status": "observed_historical_topic"
+    },
+    {
+      "topic0": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+      "reconstructed_signature": "Approval(address,address,uint256)",
+      "status": "observed_historical_topic"
+    }
+  ],
+  "simulated_error_catalog": [
+    {
+      "selector": "0x0dc149f0",
+      "reconstructed_signature": "AlreadyInitialized()",
+      "probe_paths": [
+        "initializer_again"
+      ]
+    },
+    {
+      "selector": "0x13be252b",
+      "reconstructed_signature": "InsufficientAllowance()",
+      "probe_paths": [
+        "outsider_pull_without_allowance"
+      ]
+    },
+    {
+      "selector": "0x30cd7471",
+      "reconstructed_signature": "NotOwner()",
+      "probe_paths": [
+        "outsider_slot5_setter",
+        "outsider_staking_setter",
+        "outsider_set_minter"
+      ]
+    },
+    {
+      "selector": "0xe827105e",
+      "reconstructed_signature": "TransferRestricted()",
+      "probe_paths": [
+        "holder_transfer",
+        "holder_zero_transfer",
+        "staking_pull_elsewhere",
+        "outsider_pull_to_staking_with_allowance",
+        "outsider_pull_elsewhere_with_allowance",
+        "holder_transfer_with_slot9_zero",
+        "outsider_pull_with_slot9_zero_and_allowance",
+        "holder_transfer_to_new_staking_contract",
+        "old_staking_transfer_after_reassignment"
+      ]
+    },
+    {
+      "selector": "0xf4d678b8",
+      "reconstructed_signature": "InsufficientBalance()",
+      "probe_paths": [
+        "staking_overdraw"
+      ]
+    },
+    {
+      "selector": "0xf8d2906c",
+      "reconstructed_signature": "NotMinter()",
+      "probe_paths": [
+        "owner_mint",
+        "holder_burn"
+      ]
+    }
+  ],
+  "auto_approved_spender_storage_slot": 5,
+  "source_name_lead": "https://www.guardian.security/portfolio/papertrade/protocol-review-2026-10-09/",
+  "limitations": [
+    "The audit report is a source-name lead; no exact audited-source-to-runtime bytecode match has been established.",
+    "Pinned eth_call probes simulate execution and do not commit state.",
+    "State override results show one allowance branch, not every transfer boundary."
+  ]
+}

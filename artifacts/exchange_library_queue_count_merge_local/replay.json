@@ -1,0 +1,207 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "runtime_hashes": {
+    "Proxy": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "Implementation": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+    "Library": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2"
+  },
+  "test_names": [
+    "testQueueAutoHeadAll",
+    "testQueueAutoHeadFromSecond",
+    "testQueueAutoHeadInterleavedNoOp",
+    "testQueueAutoHeadOne",
+    "testQueueAutoHeadStartZero",
+    "testQueueAutoTailAll",
+    "testQueueAutoTailAtThreshold",
+    "testQueueAutoTailBelowThreshold",
+    "testQueueAutoTailContinuesBelowThreshold",
+    "testQueueAutoTailFromSecond",
+    "testQueueAutoTailInterleaved",
+    "testQueueAutoTailOne",
+    "testQueueAutoTailStartZero",
+    "testQueueAutoTailStopsAfterAccumulation",
+    "testQueueAutoTailStopsAtZeroNeighbor"
+  ],
+  "forge_result": "15 passed, 0 failed",
+  "test_source_sha256": "3f6f8fb2347f5374c875f58c4a12519c909112a7931bc4c2171477ac342d0d1c",
+  "cases": {
+    "count_and_direction": [
+      "head_one",
+      "head_all",
+      "head_from_second",
+      "tail_one",
+      "tail_all",
+      "tail_from_second",
+      "head_start_zero",
+      "tail_start_zero"
+    ],
+    "tail_threshold": [
+      "first_below_1e18",
+      "first_at_1e18",
+      "accumulation_stops",
+      "below_threshold_continues",
+      "zero_neighbor_stops"
+    ],
+    "interleaved": [
+      "head_noop_on_other_user",
+      "tail_follows_user_link"
+    ]
+  },
+  "measured_vectors": {
+    "head_start_101_count_1": {
+      "returned": [
+        1,
+        700,
+        101
+      ],
+      "node_amounts_after": [
+        1000,
+        0,
+        1100
+      ]
+    },
+    "head_start_101_count_0": {
+      "returned": [
+        2,
+        1800,
+        101
+      ],
+      "node_amounts_after": [
+        2100,
+        0,
+        0
+      ]
+    },
+    "tail_start_101_count_1": {
+      "returned": [
+        1,
+        300,
+        102
+      ],
+      "node_amounts_after": [
+        0,
+        1000,
+        1100
+      ]
+    },
+    "tail_start_101_count_0": {
+      "returned": [
+        2,
+        1000,
+        103
+      ],
+      "node_amounts_after": [
+        0,
+        0,
+        2100
+      ]
+    },
+    "tail_first_below_1e18": {
+      "input_amounts": [
+        999999999999999999,
+        2000000000000000000,
+        0
+      ],
+      "returned": [
+        1,
+        999999999999999999,
+        102
+      ],
+      "node_amounts_after": [
+        0,
+        2999999999999999999,
+        0
+      ]
+    },
+    "tail_first_at_1e18": {
+      "input_amounts": [
+        1000000000000000000,
+        2000000000000000000,
+        400000000000000000
+      ],
+      "returned": [
+        0,
+        0,
+        0
+      ],
+      "node_amounts_after": [
+        1000000000000000000,
+        2000000000000000000,
+        400000000000000000
+      ]
+    },
+    "tail_accumulation_stops": {
+      "input_amounts": [
+        600000000000000000,
+        600000000000000000,
+        600000000000000000
+      ],
+      "returned": [
+        1,
+        600000000000000000,
+        102
+      ],
+      "node_amounts_after": [
+        0,
+        1200000000000000000,
+        600000000000000000
+      ]
+    },
+    "tail_accumulation_continues": {
+      "input_amounts": [
+        400000000000000000,
+        400000000000000000,
+        400000000000000000
+      ],
+      "returned": [
+        2,
+        800000000000000000,
+        103
+      ],
+      "node_amounts_after": [
+        0,
+        0,
+        1200000000000000000
+      ]
+    },
+    "interleaved_head": {
+      "owners": [
+        "A",
+        "B",
+        "A"
+      ],
+      "returned": [
+        0,
+        0,
+        0
+      ],
+      "node_amounts_after": [
+        300,
+        700,
+        1100
+      ]
+    },
+    "interleaved_tail": {
+      "owners": [
+        "A",
+        "B",
+        "A"
+      ],
+      "returned": [
+        1,
+        300,
+        103
+      ],
+      "node_amounts_after": [
+        0,
+        700,
+        1400
+      ]
+    }
+  },
+  "limits": [
+    "Local synthetic two- and three-node states, plus one interleaved state built with the pinned library enqueue runtime.",
+    "No historical call of these wrappers is saved; original Solidity names and behavior for longer queues remain unresolved."
+  ]
+}

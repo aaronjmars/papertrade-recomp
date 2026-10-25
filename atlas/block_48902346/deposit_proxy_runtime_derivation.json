@@ -1,0 +1,36 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "factory": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+  "exchange": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "deployment_count": 22586,
+  "derived_runtime_count": 22586,
+  "runtime_bytes": 1646,
+  "constructor_bytes": 179,
+  "constructor_sha256": "ec9306ba34061baa4ca3a0d7cc650203d4702486293305fc15275a554e37d2a7",
+  "constructor_instruction_count": 127,
+  "creation_prefix_bytes": 1857,
+  "runtime_template_sha256": "554e7afb9eb3c11831c7aa6a11fd2170aae9d81e29a5940b234e1cea62611225",
+  "exchange_word_offsets": [
+    97,
+    222
+  ],
+  "user_word_offsets": [
+    891,
+    986
+  ],
+  "historical_create_output_exact_match": true,
+  "fetched_runtime_hash_matches": 41,
+  "fetched_representative_bytes_match": true,
+  "additional_unsampled_fetched_runtime_match": true,
+  "directly_fetched_distinct_runtime_count": 42,
+  "pinned_constructor_simulations_match": 2,
+  "all_create2_addresses_recomputed": 22586,
+  "runtime_has_no_selfdestruct_delegatecall_or_callcode": true,
+  "derived_runtime_map": "deposit_proxy_derived_runtime_map.json",
+  "limitations": [
+    "Only 42 distinct deployed runtimes were fetched at the pin.",
+    "The remaining pinned code bodies are derived from deterministic initcode and matching CREATE2 addresses, not individually fetched.",
+    "This does not prove every factory or user proxy function branch."
+  ]
+}

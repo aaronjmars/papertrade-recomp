@@ -1,0 +1,261 @@
+{
+  "source_tx": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+  "target_block": 48901631,
+  "target_hash": "0xc4ee9b9a002b0f2d7d3ad686ef129f8c6196edd477b3fb3f4e3937e9560d9ae9",
+  "case_count": 10,
+  "historical_baseline_logs_match": true,
+  "historical_baseline_contract_state_match": true,
+  "positive_fee_slot": 24,
+  "negative_fee_slot": 23,
+  "fee_denominator": "1000000000000000000",
+  "slot25_zero_same_logs_and_state": true,
+  "negative_user_credit_independent_of_fee": true,
+  "negative_loss_allocation": "trader loss = Exchange fee accrual + Tokenomics tracked LP credit; PAPER mint basis equals tracked LP credit",
+  "cases": {
+    "baseline": [
+      {
+        "position_id": 1392206,
+        "adjusted_pnl": "52361676010080092657",
+        "fee": "1047233520201601853",
+        "user_balance_credit": "5801314442489878490804",
+        "staker_fee": "523616760100800926",
+        "dev_fee": "523616760100800927",
+        "tokenomics_debit": "52361676010080092657",
+        "tokenomics_mint_basis": "0",
+        "tokenomics_tracked_credit": "0"
+      },
+      {
+        "position_id": 1392921,
+        "adjusted_pnl": "-33385885189650375591",
+        "fee": "667717703793007511",
+        "user_balance_credit": "966614114810349624409",
+        "staker_fee": "333858851896503755",
+        "dev_fee": "333858851896503756",
+        "tokenomics_debit": "0",
+        "tokenomics_mint_basis": "32718167485857368080",
+        "tokenomics_tracked_credit": "32718167485857368080"
+      }
+    ],
+    "slot23_zero": [
+      {
+        "position_id": 1392206,
+        "adjusted_pnl": "52361676010080092657",
+        "fee": "1047233520201601853",
+        "user_balance_credit": "5801314442489878490804",
+        "staker_fee": "523616760100800926",
+        "dev_fee": "523616760100800927",
+        "tokenomics_debit": "52361676010080092657",
+        "tokenomics_mint_basis": "0",
+        "tokenomics_tracked_credit": "0"
+      },
+      {
+        "position_id": 1392921,
+        "adjusted_pnl": "-33385885189650375591",
+        "fee": "0",
+        "user_balance_credit": "966614114810349624409",
+        "staker_fee": "0",
+        "dev_fee": "0",
+        "tokenomics_debit": "0",
+        "tokenomics_mint_basis": "33385885189650375591",
+        "tokenomics_tracked_credit": "33385885189650375591"
+      }
+    ],
+    "slot23_one": [
+      {
+        "position_id": 1392206,
+        "adjusted_pnl": "52361676010080092657",
+        "fee": "1047233520201601853",
+        "user_balance_credit": "5801314442489878490804",
+        "staker_fee": "523616760100800926",
+        "dev_fee": "523616760100800927",
+        "tokenomics_debit": "52361676010080092657",
+        "tokenomics_mint_basis": "0",
+        "tokenomics_tracked_credit": "0"
+      },
+      {
+        "position_id": 1392921,
+        "adjusted_pnl": "-33385885189650375591",
+        "fee": "33",
+        "user_balance_credit": "966614114810349624409",
+        "staker_fee": "16",
+        "dev_fee": "17",
+        "tokenomics_debit": "0",
+        "tokenomics_mint_basis": "33385885189650375558",
+        "tokenomics_tracked_credit": "33385885189650375558"
+      }
+    ],
+    "slot23_three": [
+      {
+        "position_id": 1392206,
+        "adjusted_pnl": "52361676010080092657",
+        "fee": "1047233520201601853",
+        "user_balance_credit": "5801314442489878490804",
+        "staker_fee": "523616760100800926",
+        "dev_fee": "523616760100800927",
+        "tokenomics_debit": "52361676010080092657",
+        "tokenomics_mint_basis": "0",
+        "tokenomics_tracked_credit": "0"
+      },
+      {
+        "position_id": 1392921,
+        "adjusted_pnl": "-33385885189650375591",
+        "fee": "100",
+        "user_balance_credit": "966614114810349624409",
+        "staker_fee": "50",
+        "dev_fee": "50",
+        "tokenomics_debit": "0",
+        "tokenomics_mint_basis": "33385885189650375491",
+        "tokenomics_tracked_credit": "33385885189650375491"
+      }
+    ],
+    "slot23_double": [
+      {
+        "position_id": 1392206,
+        "adjusted_pnl": "52361676010080092657",
+        "fee": "1047233520201601853",
+        "user_balance_credit": "5801314442489878490804",
+        "staker_fee": "523616760100800926",
+        "dev_fee": "523616760100800927",
+        "tokenomics_debit": "52361676010080092657",
+        "tokenomics_mint_basis": "0",
+        "tokenomics_tracked_credit": "0"
+      },
+      {
+        "position_id": 1392921,
+        "adjusted_pnl": "-33385885189650375591",
+        "fee": "1335435407586015023",
+        "user_balance_credit": "966614114810349624409",
+        "staker_fee": "667717703793007511",
+        "dev_fee": "667717703793007512",
+        "tokenomics_debit": "0",
+        "tokenomics_mint_basis": "32050449782064360568",
+        "tokenomics_tracked_credit": "32050449782064360568"
+      }
+    ],
+    "slot24_zero": [
+      {
+        "position_id": 1392206,
+        "adjusted_pnl": "52361676010080092657",
+        "fee": "0",
+        "user_balance_credit": "5802361676010080092657",
+        "staker_fee": "0",
+        "dev_fee": "0",
+        "tokenomics_debit": "52361676010080092657",
+        "tokenomics_mint_basis": "0",
+        "tokenomics_tracked_credit": "0"
+      },
+      {
+        "position_id": 1392921,
+        "adjusted_pnl": "-33385885189650375591",
+        "fee": "667717703793007511",
+        "user_balance_credit": "966614114810349624409",
+        "staker_fee": "333858851896503755",
+        "dev_fee": "333858851896503756",
+        "tokenomics_debit": "0",
+        "tokenomics_mint_basis": "32718167485857368080",
+        "tokenomics_tracked_credit": "32718167485857368080"
+      }
+    ],
+    "slot24_one": [
+      {
+        "position_id": 1392206,
+        "adjusted_pnl": "52361676010080092657",
+        "fee": "52",
+        "user_balance_credit": "5802361676010080092605",
+        "staker_fee": "26",
+        "dev_fee": "26",
+        "tokenomics_debit": "52361676010080092657",
+        "tokenomics_mint_basis": "0",
+        "tokenomics_tracked_credit": "0"
+      },
+      {
+        "position_id": 1392921,
+        "adjusted_pnl": "-33385885189650375591",
+        "fee": "667717703793007511",
+        "user_balance_credit": "966614114810349624409",
+        "staker_fee": "333858851896503755",
+        "dev_fee": "333858851896503756",
+        "tokenomics_debit": "0",
+        "tokenomics_mint_basis": "32718167485857368080",
+        "tokenomics_tracked_credit": "32718167485857368080"
+      }
+    ],
+    "slot24_three": [
+      {
+        "position_id": 1392206,
+        "adjusted_pnl": "52361676010080092657",
+        "fee": "157",
+        "user_balance_credit": "5802361676010080092500",
+        "staker_fee": "78",
+        "dev_fee": "79",
+        "tokenomics_debit": "52361676010080092657",
+        "tokenomics_mint_basis": "0",
+        "tokenomics_tracked_credit": "0"
+      },
+      {
+        "position_id": 1392921,
+        "adjusted_pnl": "-33385885189650375591",
+        "fee": "667717703793007511",
+        "user_balance_credit": "966614114810349624409",
+        "staker_fee": "333858851896503755",
+        "dev_fee": "333858851896503756",
+        "tokenomics_debit": "0",
+        "tokenomics_mint_basis": "32718167485857368080",
+        "tokenomics_tracked_credit": "32718167485857368080"
+      }
+    ],
+    "slot24_double": [
+      {
+        "position_id": 1392206,
+        "adjusted_pnl": "52361676010080092657",
+        "fee": "2094467040403203706",
+        "user_balance_credit": "5800267208969676888951",
+        "staker_fee": "1047233520201601853",
+        "dev_fee": "1047233520201601853",
+        "tokenomics_debit": "52361676010080092657",
+        "tokenomics_mint_basis": "0",
+        "tokenomics_tracked_credit": "0"
+      },
+      {
+        "position_id": 1392921,
+        "adjusted_pnl": "-33385885189650375591",
+        "fee": "667717703793007511",
+        "user_balance_credit": "966614114810349624409",
+        "staker_fee": "333858851896503755",
+        "dev_fee": "333858851896503756",
+        "tokenomics_debit": "0",
+        "tokenomics_mint_basis": "32718167485857368080",
+        "tokenomics_tracked_credit": "32718167485857368080"
+      }
+    ],
+    "slot25_zero": [
+      {
+        "position_id": 1392206,
+        "adjusted_pnl": "52361676010080092657",
+        "fee": "1047233520201601853",
+        "user_balance_credit": "5801314442489878490804",
+        "staker_fee": "523616760100800926",
+        "dev_fee": "523616760100800927",
+        "tokenomics_debit": "52361676010080092657",
+        "tokenomics_mint_basis": "0",
+        "tokenomics_tracked_credit": "0"
+      },
+      {
+        "position_id": 1392921,
+        "adjusted_pnl": "-33385885189650375591",
+        "fee": "667717703793007511",
+        "user_balance_credit": "966614114810349624409",
+        "staker_fee": "333858851896503755",
+        "dev_fee": "333858851896503756",
+        "tokenomics_debit": "0",
+        "tokenomics_mint_basis": "32718167485857368080",
+        "tokenomics_tracked_credit": "32718167485857368080"
+      }
+    ]
+  },
+  "limits": [
+    "The HyperCore BBO and balance precompiles were mocked with their archived responses.",
+    "The EVM accounting source of the loss fee is the LP share of the trader loss. HyperCore settlement is separate and was not verified here.",
+    "This verifies one historical mixed gain/loss batch and controlled local rate changes, not every close branch."
+  ]
+}

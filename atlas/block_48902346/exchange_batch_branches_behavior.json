@@ -1,0 +1,375 @@
+{
+  "pin_block": 48902346,
+  "pin_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "selector": "0x599dc539",
+  "signature": "liquidateBatch(uint256[])",
+  "raw_evidence": "../../artifacts/exchange_liquidation/pinned_batch_branches.json",
+  "case_count": 15,
+  "cases": [
+    {
+      "name": "empty",
+      "requested_ids": [],
+      "mock_price": 800000,
+      "liquidated_ids": [],
+      "return_count": 0,
+      "summary_counts": [
+        0,
+        0
+      ],
+      "oracle_instruments": [],
+      "tokenomics_call_count": 0,
+      "storage_write_contracts": []
+    },
+    {
+      "name": "inactive_only",
+      "requested_ids": [
+        0
+      ],
+      "mock_price": 800000,
+      "liquidated_ids": [],
+      "return_count": 0,
+      "summary_counts": [
+        1,
+        0
+      ],
+      "oracle_instruments": [],
+      "tokenomics_call_count": 0,
+      "storage_write_contracts": []
+    },
+    {
+      "name": "eligible_only",
+      "requested_ids": [
+        1394473
+      ],
+      "mock_price": 800000,
+      "liquidated_ids": [
+        1394473
+      ],
+      "return_count": 1,
+      "summary_counts": [
+        1,
+        1
+      ],
+      "oracle_instruments": [
+        0
+      ],
+      "tokenomics_call_count": 1,
+      "storage_write_contracts": [
+        "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "0xe40f17915daa230324030003a197cdaef2261c0e"
+      ]
+    },
+    {
+      "name": "inactive_first",
+      "requested_ids": [
+        0,
+        1394473
+      ],
+      "mock_price": 800000,
+      "liquidated_ids": [
+        1394473
+      ],
+      "return_count": 1,
+      "summary_counts": [
+        2,
+        1
+      ],
+      "oracle_instruments": [
+        0
+      ],
+      "tokenomics_call_count": 1,
+      "storage_write_contracts": [
+        "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "0xe40f17915daa230324030003a197cdaef2261c0e"
+      ]
+    },
+    {
+      "name": "inactive_last",
+      "requested_ids": [
+        1394473,
+        0
+      ],
+      "mock_price": 800000,
+      "liquidated_ids": [
+        1394473
+      ],
+      "return_count": 1,
+      "summary_counts": [
+        2,
+        1
+      ],
+      "oracle_instruments": [
+        0
+      ],
+      "tokenomics_call_count": 1,
+      "storage_write_contracts": [
+        "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "0xe40f17915daa230324030003a197cdaef2261c0e"
+      ]
+    },
+    {
+      "name": "duplicate_eligible",
+      "requested_ids": [
+        1394473,
+        1394473
+      ],
+      "mock_price": 800000,
+      "liquidated_ids": [
+        1394473
+      ],
+      "return_count": 1,
+      "summary_counts": [
+        2,
+        1
+      ],
+      "oracle_instruments": [
+        0
+      ],
+      "tokenomics_call_count": 1,
+      "storage_write_contracts": [
+        "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "0xe40f17915daa230324030003a197cdaef2261c0e"
+      ]
+    },
+    {
+      "name": "ineligible_only",
+      "requested_ids": [
+        1394473
+      ],
+      "mock_price": 802000,
+      "liquidated_ids": [],
+      "return_count": 0,
+      "summary_counts": [
+        1,
+        0
+      ],
+      "oracle_instruments": [
+        0
+      ],
+      "tokenomics_call_count": 0,
+      "storage_write_contracts": []
+    },
+    {
+      "name": "eligible_then_ineligible",
+      "requested_ids": [
+        1394473,
+        1394062
+      ],
+      "mock_price": 801700,
+      "liquidated_ids": [
+        1394473
+      ],
+      "return_count": 1,
+      "summary_counts": [
+        2,
+        1
+      ],
+      "oracle_instruments": [
+        0
+      ],
+      "tokenomics_call_count": 1,
+      "storage_write_contracts": [
+        "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "0xe40f17915daa230324030003a197cdaef2261c0e"
+      ]
+    },
+    {
+      "name": "ineligible_then_eligible",
+      "requested_ids": [
+        1394062,
+        1394473
+      ],
+      "mock_price": 801700,
+      "liquidated_ids": [
+        1394473
+      ],
+      "return_count": 1,
+      "summary_counts": [
+        2,
+        1
+      ],
+      "oracle_instruments": [
+        0
+      ],
+      "tokenomics_call_count": 1,
+      "storage_write_contracts": [
+        "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "0xe40f17915daa230324030003a197cdaef2261c0e"
+      ]
+    },
+    {
+      "name": "two_eligible",
+      "requested_ids": [
+        1394473,
+        1394062
+      ],
+      "mock_price": 801600,
+      "liquidated_ids": [
+        1394473,
+        1394062
+      ],
+      "return_count": 2,
+      "summary_counts": [
+        2,
+        2
+      ],
+      "oracle_instruments": [
+        0
+      ],
+      "tokenomics_call_count": 2,
+      "storage_write_contracts": [
+        "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "0xe40f17915daa230324030003a197cdaef2261c0e"
+      ]
+    },
+    {
+      "name": "long_only",
+      "requested_ids": [
+        1394058,
+        1394060
+      ],
+      "mock_price": 230400,
+      "liquidated_ids": [
+        1394058
+      ],
+      "return_count": 1,
+      "summary_counts": [
+        2,
+        1
+      ],
+      "oracle_instruments": [
+        1
+      ],
+      "tokenomics_call_count": 1,
+      "storage_write_contracts": [
+        "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "0xe40f17915daa230324030003a197cdaef2261c0e"
+      ]
+    },
+    {
+      "name": "short_only",
+      "requested_ids": [
+        1394058,
+        1394060
+      ],
+      "mock_price": 242100,
+      "liquidated_ids": [
+        1394060
+      ],
+      "return_count": 1,
+      "summary_counts": [
+        2,
+        1
+      ],
+      "oracle_instruments": [
+        1
+      ],
+      "tokenomics_call_count": 1,
+      "storage_write_contracts": [
+        "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "0xe40f17915daa230324030003a197cdaef2261c0e"
+      ]
+    },
+    {
+      "name": "short_first",
+      "requested_ids": [
+        1394060,
+        1394058
+      ],
+      "mock_price": 242100,
+      "liquidated_ids": [
+        1394060
+      ],
+      "return_count": 1,
+      "summary_counts": [
+        2,
+        1
+      ],
+      "oracle_instruments": [
+        1
+      ],
+      "tokenomics_call_count": 1,
+      "storage_write_contracts": [
+        "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "0xe40f17915daa230324030003a197cdaef2261c0e"
+      ]
+    },
+    {
+      "name": "mixed_instruments",
+      "requested_ids": [
+        1394473,
+        1394058
+      ],
+      "mock_price": 800000,
+      "liquidated_ids": [
+        1394473
+      ],
+      "return_count": 1,
+      "summary_counts": [
+        2,
+        1
+      ],
+      "oracle_instruments": [
+        0,
+        1
+      ],
+      "tokenomics_call_count": 1,
+      "storage_write_contracts": [
+        "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "0xe40f17915daa230324030003a197cdaef2261c0e"
+      ]
+    },
+    {
+      "name": "mixed_instruments_reversed",
+      "requested_ids": [
+        1394058,
+        1394473
+      ],
+      "mock_price": 800000,
+      "liquidated_ids": [
+        1394473
+      ],
+      "return_count": 1,
+      "summary_counts": [
+        2,
+        1
+      ],
+      "oracle_instruments": [
+        1,
+        0
+      ],
+      "tokenomics_call_count": 1,
+      "storage_write_contracts": [
+        "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "0xe40f17915daa230324030003a197cdaef2261c0e"
+      ]
+    }
+  ],
+  "observed_branches": [
+    "empty array succeeds and emits summary (0,0)",
+    "inactive ID is skipped without a revert",
+    "duplicate eligible ID is liquidated once",
+    "ineligible active ID is skipped without a revert",
+    "long and short positions each follow sampled price boundaries",
+    "mixed-instrument arrays cause one Oracle read per instrument in request order"
+  ],
+  "limits": [
+    "Cases are read-only simulations with fixed synthetic HyperCore BBO prices.",
+    "The mixed-instrument mock returns the same price for both instruments.",
+    "Large arrays, invalid ABI encoding, and all combinations of inactive and eligible IDs remain untested."
+  ]
+}

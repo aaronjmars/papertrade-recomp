@@ -1,0 +1,944 @@
+{
+  "pin_block": 48902346,
+  "staking_proxy": "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+  "implementation": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+  "sampled_transaction_count": 14,
+  "signed_call_count": 45,
+  "accounting_storage_field_checks": 177,
+  "accounting_claim_amount_checks": 26,
+  "pinned_nonce_getter_samples": 3,
+  "pinned_direct_probes": {
+    "count": 7,
+    "revert_selector": "0xa15ce1ba"
+  },
+  "pinned_reward_getter_samples": 3,
+  "distribution_without_tokenomics_adjustment": [
+    {
+      "tx": "0xb27bbadf830f5673211719cf6585d9929e91a446c3f46aee940e6e2e02888cdb",
+      "event_fields": [
+        5311975731078319996113293,
+        156371955769039150292,
+        156371955769039150292,
+        13480352547025239550020690
+      ],
+      "tokenomics_excess_getter_output": 0,
+      "tokenomics_adjustment_call_count": 0
+    }
+  ],
+  "deployment_initializer": {
+    "tx": "0xcd107566d243dc4984e0e157b5384018532e8f1b2b2495ebbc720c8e8aca955d",
+    "selector": "0x9ccae24e",
+    "arguments": [
+      "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "0xe40f17915daa230324030003a197cdaef2261c0e",
+      "0x6b9e773128f453f5c2c60935ee2de2cbc5390a24",
+      "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+      "0x0000000000000000000000000000000000000000"
+    ],
+    "event_count": 2
+  },
+  "selector_reconstructions": {
+    "0x83115825": "stakeBySig(address,uint256,uint256,uint64,uint8,bytes32,bytes32)",
+    "0xfa2871b5": "unstakeBySig(address,uint256,uint256,uint64,uint8,bytes32,bytes32)",
+    "0x9c96d4a1": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+    "0xf0355460": "distributeBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+    "0x5638b3e5": "DISTRIBUTE_TYPEHASH()",
+    "0xf2f59776": "nonceBitmapWord(address,uint256)",
+    "0xcab7e8eb": "isNonceUsed(address,uint256)"
+  },
+  "typehash_preimages": {
+    "0x83115825": "Stake(address user,uint256 amount,uint256 nonce,uint64 deadline)",
+    "0xfa2871b5": "Unstake(address user,uint256 amount,uint256 nonce,uint64 deadline)",
+    "0x9c96d4a1": "Claim(address user,uint256 nonce,uint64 deadline)",
+    "0xf0355460": "Distribute(address user,uint256 nonce,uint64 deadline)"
+  },
+  "event_catalog": [
+    {
+      "topic0": "0x3fde1edb52bbe023081a01c60e06e15396e067be4699a5044fdfa793f67bfc28",
+      "reconstructed_signature": "NonceUsed(address,uint256,uint256)",
+      "status": "observed_historical"
+    },
+    {
+      "topic0": "0x9e71bc8eea02a63969f509818f2dafb9254532904319f9dbda79b67bd34a5f3d",
+      "reconstructed_signature": "Staked(address,uint256)",
+      "status": "observed_historical"
+    },
+    {
+      "topic0": "0x0f5bb82176feb1b5e747e28471aa92156a04d9f3ab9f45f28e2d704232b93f75",
+      "reconstructed_signature": "Unstaked(address,uint256)",
+      "status": "observed_historical"
+    },
+    {
+      "topic0": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "reconstructed_signature": "Claimed(address,uint256)",
+      "status": "observed_historical"
+    },
+    {
+      "topic0": "0xf7576d8c2653e9d07af5ef229acf59b339e327d4e0eaddb4a96615534cf148f8",
+      "reconstructed_signature": "Distributed(uint256,uint256,uint256,uint256)",
+      "status": "observed_historical"
+    },
+    {
+      "topic0": "0x3cfda8ee6e20b237d2949c3d16b6f12822b6f1bc0580f188f932c0771cac729d",
+      "reconstructed_signature": "AuthorizedExecutorUpdated(address)",
+      "status": "observed_historical"
+    },
+    {
+      "topic0": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+      "reconstructed_signature": "OwnerUpdated(address)",
+      "status": "observed_historical"
+    }
+  ],
+  "call_counts": {
+    "0x83115825": 12,
+    "0xfa2871b5": 2,
+    "0x9c96d4a1": 26,
+    "0xf0355460": 5
+  },
+  "transactions": [
+    {
+      "tx": "0x23757e8ca58c9f544dacddedbd7be835020f5bc87e151ca7788dc0fd7613f4c6",
+      "block": 48902116,
+      "signed_call_count": 2,
+      "staked_delta": "-7923164195386727624080",
+      "reward_reserve_delta": "5642884882349719516703",
+      "accounting_replay": {
+        "storage_field_checks": 9,
+        "claim_amount_checks": 0,
+        "user_count": 2
+      },
+      "storage_checks": "passed"
+    },
+    {
+      "tx": "0x30639f82f9eb58fc815fb48b302ea732eed1bff5e755a92835b0b1f97c818acf",
+      "block": 48902090,
+      "signed_call_count": 1,
+      "staked_delta": "4444128292173035246410",
+      "reward_reserve_delta": "0",
+      "accounting_replay": {
+        "storage_field_checks": 6,
+        "claim_amount_checks": 0,
+        "user_count": 1
+      },
+      "storage_checks": "passed"
+    },
+    {
+      "tx": "0x44d34a2ac0a36042f6ecd850ebc63f738b708d0a27d5993f8b7d9250e77c88cb",
+      "block": 48902325,
+      "signed_call_count": 6,
+      "staked_delta": "9761399058825448140460",
+      "reward_reserve_delta": "-11963324988037893443",
+      "accounting_replay": {
+        "storage_field_checks": 21,
+        "claim_amount_checks": 4,
+        "user_count": 6
+      },
+      "storage_checks": "passed"
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "block": 48902264,
+      "signed_call_count": 25,
+      "staked_delta": "57437191704072983735047",
+      "reward_reserve_delta": "-130222497545723217193",
+      "accounting_replay": {
+        "storage_field_checks": 78,
+        "claim_amount_checks": 17,
+        "user_count": 25
+      },
+      "storage_checks": "passed"
+    },
+    {
+      "tx": "0x726340c233749d1bdb8bea903e4c8cc6ab17923527ed51abc77c91f0e7b3e22e",
+      "block": 48902204,
+      "signed_call_count": 1,
+      "staked_delta": "0",
+      "reward_reserve_delta": "-1128934403828262549",
+      "accounting_replay": {
+        "storage_field_checks": 6,
+        "claim_amount_checks": 1,
+        "user_count": 1
+      },
+      "storage_checks": "passed"
+    },
+    {
+      "tx": "0x94192d521e62d362196076f7b0e03ea403aca75f4ec40257ef6ce259bf563a4d",
+      "block": 48902295,
+      "signed_call_count": 2,
+      "staked_delta": "0",
+      "reward_reserve_delta": "-1892504856391231273",
+      "accounting_replay": {
+        "storage_field_checks": 9,
+        "claim_amount_checks": 2,
+        "user_count": 2
+      },
+      "storage_checks": "passed"
+    },
+    {
+      "tx": "0xa44fc9a0773a442541d3704bceec1d989a0db3a26e5b8faf8c3d1693a1352b4e",
+      "block": 48902156,
+      "signed_call_count": 1,
+      "staked_delta": "1106611498733159918282",
+      "reward_reserve_delta": "0",
+      "accounting_replay": {
+        "storage_field_checks": 6,
+        "claim_amount_checks": 0,
+        "user_count": 1
+      },
+      "storage_checks": "passed"
+    },
+    {
+      "tx": "0xa4beb0358ddb119f50f087a2bd293035751c479a06dda5bef2fb31529d985740",
+      "block": 48902330,
+      "signed_call_count": 1,
+      "staked_delta": "0",
+      "reward_reserve_delta": "8459440756047156820966",
+      "accounting_replay": {
+        "storage_field_checks": 6,
+        "claim_amount_checks": 0,
+        "user_count": 1
+      },
+      "storage_checks": "passed"
+    },
+    {
+      "tx": "0xac4e0883756cb4912c51f20d7d8ce84d798ccdda4e455c2c6242af5a8f139009",
+      "block": 48902124,
+      "signed_call_count": 1,
+      "staked_delta": "0",
+      "reward_reserve_delta": "-1247732696091412447",
+      "accounting_replay": {
+        "storage_field_checks": 6,
+        "claim_amount_checks": 1,
+        "user_count": 1
+      },
+      "storage_checks": "passed"
+    },
+    {
+      "tx": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+      "block": 48901631,
+      "signed_call_count": 1,
+      "staked_delta": "1152970945527299153609",
+      "reward_reserve_delta": "0",
+      "accounting_replay": {
+        "storage_field_checks": 6,
+        "claim_amount_checks": 0,
+        "user_count": 1
+      },
+      "storage_checks": "passed"
+    },
+    {
+      "tx": "0xb27bbadf830f5673211719cf6585d9929e91a446c3f46aee940e6e2e02888cdb",
+      "block": 48902299,
+      "signed_call_count": 1,
+      "staked_delta": "0",
+      "reward_reserve_delta": "156371955769039150292",
+      "accounting_replay": {
+        "storage_field_checks": 6,
+        "claim_amount_checks": 0,
+        "user_count": 1
+      },
+      "storage_checks": "passed"
+    },
+    {
+      "tx": "0xd5a907988c178cb4fe55b8f3a8b87080eb3869e16ac548a8b9f7aa4a871a17c0",
+      "block": 48902147,
+      "signed_call_count": 1,
+      "staked_delta": "0",
+      "reward_reserve_delta": "137694484665860080888",
+      "accounting_replay": {
+        "storage_field_checks": 6,
+        "claim_amount_checks": 0,
+        "user_count": 1
+      },
+      "storage_checks": "passed"
+    },
+    {
+      "tx": "0xe2e6318b494325c8ea46b79d450622a320ce43180286c4347b9405d7775b67e1",
+      "block": 48902177,
+      "signed_call_count": 1,
+      "staked_delta": "0",
+      "reward_reserve_delta": "1146707227711196414358",
+      "accounting_replay": {
+        "storage_field_checks": 6,
+        "claim_amount_checks": 0,
+        "user_count": 1
+      },
+      "storage_checks": "passed"
+    },
+    {
+      "tx": "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d",
+      "block": 48901640,
+      "signed_call_count": 1,
+      "staked_delta": "0",
+      "reward_reserve_delta": "-27928178134822247776",
+      "accounting_replay": {
+        "storage_field_checks": 6,
+        "claim_amount_checks": 1,
+        "user_count": 1
+      },
+      "storage_checks": "passed"
+    }
+  ],
+  "calls": [
+    {
+      "tx": "0x23757e8ca58c9f544dacddedbd7be835020f5bc87e151ca7788dc0fd7613f4c6",
+      "ordinal": 0,
+      "selector": "0xf0355460",
+      "reconstructed_signature": "distributeBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x89ab620bee7e1ec675eec5291cba3686d9e059bf",
+      "nonce": 1792357113865,
+      "deadline": 1792360713,
+      "digest": "0xda91f4dec84df9fbec7968ce8f8e990252a56d6f06d54f3137ee71fce9c67826",
+      "recovered_signer": "0x89ab620bee7e1ec675eec5291cba3686d9e059bf",
+      "nonce_counter_after": 1792357113866,
+      "event_topic": "0xf7576d8c2653e9d07af5ef229acf59b339e327d4e0eaddb4a96615534cf148f8",
+      "amount_or_distribution_fields": [
+        5311231381466383695434341,
+        5642884882349719516703,
+        5642884882349719516703,
+        13480184140478277542683339
+      ]
+    },
+    {
+      "tx": "0x23757e8ca58c9f544dacddedbd7be835020f5bc87e151ca7788dc0fd7613f4c6",
+      "ordinal": 1,
+      "selector": "0xfa2871b5",
+      "reconstructed_signature": "unstakeBySig(address,uint256,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x50652414f490853dc3ba30a25c49eb6ed7bdebc2",
+      "nonce": 2828969750,
+      "deadline": 1792360712,
+      "digest": "0x9d5668a56dac8a1fbc79bb901d6af8fcee473dd499c9c41c629fa06d0f072b6c",
+      "recovered_signer": "0x50652414f490853dc3ba30a25c49eb6ed7bdebc2",
+      "nonce_counter_after": 2828969751,
+      "event_topic": "0x0f5bb82176feb1b5e747e28471aa92156a04d9f3ab9f45f28e2d704232b93f75",
+      "amount_or_distribution_fields": 7923164195386727624080
+    },
+    {
+      "tx": "0x30639f82f9eb58fc815fb48b302ea732eed1bff5e755a92835b0b1f97c818acf",
+      "ordinal": 0,
+      "selector": "0x83115825",
+      "reconstructed_signature": "stakeBySig(address,uint256,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x59bbb293cd24c7a194035028aef7fe31a11ec0d7",
+      "nonce": 3790692889,
+      "deadline": 1792360686,
+      "digest": "0xd9dedb4eae82cd7be54a1c3fc7401cd7dedea0f0cb937471302cd71b25bef780",
+      "recovered_signer": "0x59bbb293cd24c7a194035028aef7fe31a11ec0d7",
+      "nonce_counter_after": 3790692890,
+      "event_topic": "0x9e71bc8eea02a63969f509818f2dafb9254532904319f9dbda79b67bd34a5f3d",
+      "amount_or_distribution_fields": 4444128292173035246410
+    },
+    {
+      "tx": "0x44d34a2ac0a36042f6ecd850ebc63f738b708d0a27d5993f8b7d9250e77c88cb",
+      "ordinal": 0,
+      "selector": "0x83115825",
+      "reconstructed_signature": "stakeBySig(address,uint256,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x055da853895932d13c1a8b47421017ca22bbb0a6",
+      "nonce": 1491171867,
+      "deadline": 1792360901,
+      "digest": "0xdc5e267c8c35a5a74f42856f7bdd9645ad12d5afe5c6b1c8bcf3b4e719c03c79",
+      "recovered_signer": "0x055da853895932d13c1a8b47421017ca22bbb0a6",
+      "nonce_counter_after": 1491171868,
+      "event_topic": "0x9e71bc8eea02a63969f509818f2dafb9254532904319f9dbda79b67bd34a5f3d",
+      "amount_or_distribution_fields": 8293760596165874581753
+    },
+    {
+      "tx": "0x44d34a2ac0a36042f6ecd850ebc63f738b708d0a27d5993f8b7d9250e77c88cb",
+      "ordinal": 1,
+      "selector": "0x83115825",
+      "reconstructed_signature": "stakeBySig(address,uint256,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x1d2dd6e12ef7f62bdb71cb1edbe1fa6e014a7993",
+      "nonce": 1506136074,
+      "deadline": 1792360901,
+      "digest": "0x3eb72f90812743ab0eb76b3b4e02ed6a78473816c43e4c8a5dc67721882470b3",
+      "recovered_signer": "0x1d2dd6e12ef7f62bdb71cb1edbe1fa6e014a7993",
+      "nonce_counter_after": 1506136075,
+      "event_topic": "0x9e71bc8eea02a63969f509818f2dafb9254532904319f9dbda79b67bd34a5f3d",
+      "amount_or_distribution_fields": 1467638462659573558707
+    },
+    {
+      "tx": "0x44d34a2ac0a36042f6ecd850ebc63f738b708d0a27d5993f8b7d9250e77c88cb",
+      "ordinal": 2,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x57e5539fc4a57e00ec1fbba7786d1f03e4fa7218",
+      "nonce": 2541179107642437746,
+      "deadline": 1792360905,
+      "digest": "0x0a7a01f5c03e7a6cfeeb1b63989c86283ab3a3a1fef950d0170195a77a67213d",
+      "recovered_signer": "0x57e5539fc4a57e00ec1fbba7786d1f03e4fa7218",
+      "nonce_counter_after": 18443720969643923539,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 7125590029467355
+    },
+    {
+      "tx": "0x44d34a2ac0a36042f6ecd850ebc63f738b708d0a27d5993f8b7d9250e77c88cb",
+      "ordinal": 3,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x1ac1b6a28bc325b7d23c9e180dd1a3c122893531",
+      "nonce": 1688961550,
+      "deadline": 1792360902,
+      "digest": "0x0898c4ece0d527e23e23033677ce521181516718815ef575623b1fc920a61cea",
+      "recovered_signer": "0x1ac1b6a28bc325b7d23c9e180dd1a3c122893531",
+      "nonce_counter_after": 1688961551,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 11861876135829050759
+    },
+    {
+      "tx": "0x44d34a2ac0a36042f6ecd850ebc63f738b708d0a27d5993f8b7d9250e77c88cb",
+      "ordinal": 4,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0xf3aa98af36a33ec940155a832a8cf120f0464710",
+      "nonce": 7509695289709505122,
+      "deadline": 1792360910,
+      "digest": "0xbe15b139d85dcb0cd45bc3d5ea5743504b6ff2d0e4484cf4f879016e74a808ce",
+      "recovered_signer": "0xf3aa98af36a33ec940155a832a8cf120f0464710",
+      "nonce_counter_after": 18305462928363416000,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 74931274492186053
+    },
+    {
+      "tx": "0x44d34a2ac0a36042f6ecd850ebc63f738b708d0a27d5993f8b7d9250e77c88cb",
+      "ordinal": 5,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x1eee2984a6d47324d8742dfb3df58ce7dbe7e495",
+      "nonce": 4067510537,
+      "deadline": 1792360906,
+      "digest": "0xdb3eb3bb0233e6f8a1ea54f569b1ab3e6d9db8c469f93e3011a0e8a03994aef0",
+      "recovered_signer": "0x1eee2984a6d47324d8742dfb3df58ce7dbe7e495",
+      "nonce_counter_after": 4067510538,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 19391987687189276
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 0,
+      "selector": "0x83115825",
+      "reconstructed_signature": "stakeBySig(address,uint256,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0xf417448e1e73d4b31610a6e23ade1437c1c99970",
+      "nonce": 1689376769,
+      "deadline": 1792360843,
+      "digest": "0x739f16e2db748d3e6bb117e14905a836ec49f138cdfafcead42437a00b68f452",
+      "recovered_signer": "0xf417448e1e73d4b31610a6e23ade1437c1c99970",
+      "nonce_counter_after": 4068903958,
+      "event_topic": "0x9e71bc8eea02a63969f509818f2dafb9254532904319f9dbda79b67bd34a5f3d",
+      "amount_or_distribution_fields": 39986753132734953366500
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 1,
+      "selector": "0x83115825",
+      "reconstructed_signature": "stakeBySig(address,uint256,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0xbbb9512a5843441a8435d8f745fce97eb6a9eebf",
+      "nonce": 2824723981,
+      "deadline": 1794783865,
+      "digest": "0x2ac4b2e32027960797805454cbfeac9e9f4a45ee9a2002b10b45e85cb17077ef",
+      "recovered_signer": "0xbbb9512a5843441a8435d8f745fce97eb6a9eebf",
+      "nonce_counter_after": 2824723982,
+      "event_topic": "0x9e71bc8eea02a63969f509818f2dafb9254532904319f9dbda79b67bd34a5f3d",
+      "amount_or_distribution_fields": 10000000000000000000000
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 2,
+      "selector": "0xfa2871b5",
+      "reconstructed_signature": "unstakeBySig(address,uint256,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x055da853895932d13c1a8b47421017ca22bbb0a6",
+      "nonce": 1491171866,
+      "deadline": 1792360808,
+      "digest": "0x1c3e8b940b91c3872b522a99d13544d0a6e358cf5cba10ba2bd2d384712c0652",
+      "recovered_signer": "0x055da853895932d13c1a8b47421017ca22bbb0a6",
+      "nonce_counter_after": 1491171867,
+      "event_topic": "0x0f5bb82176feb1b5e747e28471aa92156a04d9f3ab9f45f28e2d704232b93f75",
+      "amount_or_distribution_fields": 8121456244057930514881
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 3,
+      "selector": "0x83115825",
+      "reconstructed_signature": "stakeBySig(address,uint256,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x8191bed0d4d1352198ea4d0103c345a6a6156cd4",
+      "nonce": 2685741328,
+      "deadline": 1792360824,
+      "digest": "0x21372f06177debdc97500923244345e05bbfca04dd9a6d241f4f84132c2780d4",
+      "recovered_signer": "0x8191bed0d4d1352198ea4d0103c345a6a6156cd4",
+      "nonce_counter_after": 2685741329,
+      "event_topic": "0x9e71bc8eea02a63969f509818f2dafb9254532904319f9dbda79b67bd34a5f3d",
+      "amount_or_distribution_fields": 8506779666046493272412
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 4,
+      "selector": "0x83115825",
+      "reconstructed_signature": "stakeBySig(address,uint256,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x1335e4ede05f1674a922b070c9827020b3dc68fb",
+      "nonce": 2677238312,
+      "deadline": 1792360804,
+      "digest": "0x88bd66bbb22d0fa7a860396a88867cfdf425470910a139987ae1f356528bf3ab",
+      "recovered_signer": "0x1335e4ede05f1674a922b070c9827020b3dc68fb",
+      "nonce_counter_after": 2677238313,
+      "event_topic": "0x9e71bc8eea02a63969f509818f2dafb9254532904319f9dbda79b67bd34a5f3d",
+      "amount_or_distribution_fields": 1555814522526569318932
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 5,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0xff8b7e7217f73d84acb070e770d223126594db2f",
+      "nonce": 6699051554695072872,
+      "deadline": 1792360805,
+      "digest": "0xed24a7c7ca75987ef49227d57f0219949eab94a7c0958849e4ec0ad6741d1701",
+      "recovered_signer": "0xff8b7e7217f73d84acb070e770d223126594db2f",
+      "nonce_counter_after": 18440457420638013366,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 38961193421240642
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 6,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x2957e3eb7ec343cbb99ecdd932949c756657a33a",
+      "nonce": 1792357206570496469,
+      "deadline": 1792360506,
+      "digest": "0x73c3cfcac6f0e6397d04f1e1255bb8caaaf54fc877164b8f85d0ffcbf4112bba",
+      "recovered_signer": "0x2957e3eb7ec343cbb99ecdd932949c756657a33a",
+      "nonce_counter_after": 1792357206570496470,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 17687154099340418838
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 7,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0xa453716c1066033fb4fd76cc1fd6bbb1261c9413",
+      "nonce": 1792357206726104997,
+      "deadline": 1792360506,
+      "digest": "0xc94ae228c11e005f2b106becf06b09c34f69198f223840de28ea8a4d2fd3dc5c",
+      "recovered_signer": "0xa453716c1066033fb4fd76cc1fd6bbb1261c9413",
+      "nonce_counter_after": 1792357206726104998,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 6786520528715626275
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 8,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x140ce8ed2a187ac4199ef9b23f82a18e56e94c02",
+      "nonce": 1792357205637621323,
+      "deadline": 1792360505,
+      "digest": "0xb80a2f7cee09dfd5da3a19ff1ac8f39773f1b28ba2075d803e0d398844a2cff7",
+      "recovered_signer": "0x140ce8ed2a187ac4199ef9b23f82a18e56e94c02",
+      "nonce_counter_after": 1792357205637621324,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 6679743237795016388
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 9,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0xcec90125326c941c51ade6d0b44093ab1036df73",
+      "nonce": 101086895196847278748589783582484792892737546828433659183115696233300431056,
+      "deadline": 1792360819,
+      "digest": "0xdd43fa21f4beffe79c1dbed9948c7ddef46da769d8389be536ec8cd754bc5303",
+      "recovered_signer": "0xcec90125326c941c51ade6d0b44093ab1036df73",
+      "nonce_counter_after": 447518327912656672853725567526538234024044059946852715055146182843495073651,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 22714869833420743966
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 10,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x9a470cccf5c1501d9c06fcc63c71d2a3998f76bc",
+      "nonce": 1772466967,
+      "deadline": 1792360791,
+      "digest": "0x51a7114576239659e621e9899c25dfad384268dfe10777a72dbc3a847091cc69",
+      "recovered_signer": "0x9a470cccf5c1501d9c06fcc63c71d2a3998f76bc",
+      "nonce_counter_after": 1772466968,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 4647269044917668476
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 11,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x2d6a20a39b4ee15a5a4d07ef30dfe5854db8d1ac",
+      "nonce": 760580124,
+      "deadline": 1792360794,
+      "digest": "0x231ec0aa7fd21b2f7bce4c1e47c6a985de2e34d1ffbb87bff43133635194c507",
+      "recovered_signer": "0x2d6a20a39b4ee15a5a4d07ef30dfe5854db8d1ac",
+      "nonce_counter_after": 760580125,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 10787352222673836
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 12,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x97a25a2a9f284c1bebdebf18b3fe46d07bfe1513",
+      "nonce": 2187764744,
+      "deadline": 1792360823,
+      "digest": "0x3d62d166244590af7f5b04de0f16c6c3260ce154a8bc5c26a91ab60aa048bf96",
+      "recovered_signer": "0x97a25a2a9f284c1bebdebf18b3fe46d07bfe1513",
+      "nonce_counter_after": 3589939972,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 779515840277110899
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 13,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x5f602b21d88de0f8caa74e6c53ddd249ec6bfeb6",
+      "nonce": 1792357229227070850,
+      "deadline": 1792360529,
+      "digest": "0x8144f0110039c626168205cbe4446fd034269042c782d018ce3743c6022c63d2",
+      "recovered_signer": "0x5f602b21d88de0f8caa74e6c53ddd249ec6bfeb6",
+      "nonce_counter_after": 1792357229227070851,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 48222456720839227355
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 14,
+      "selector": "0x83115825",
+      "reconstructed_signature": "stakeBySig(address,uint256,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0xb9fc425bacde7f0f5b0f8e5db5ec9262e7304cc2",
+      "nonce": 4134198540,
+      "deadline": 1792360841,
+      "digest": "0x34b0d8c236bece91cba4846b5caed4914151ce7fc7cf348502800074df55aa61",
+      "recovered_signer": "0xb9fc425bacde7f0f5b0f8e5db5ec9262e7304cc2",
+      "nonce_counter_after": 4134198541,
+      "event_topic": "0x9e71bc8eea02a63969f509818f2dafb9254532904319f9dbda79b67bd34a5f3d",
+      "amount_or_distribution_fields": 3280845693570925002048
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 15,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x91057a092837b20e7c84222ffd125848fac89e1d",
+      "nonce": 1212673078,
+      "deadline": 1792360831,
+      "digest": "0x849c1932886d46bc68feb7c992b917e7717f7570a047825faf7a1a3ab9dcbf87",
+      "recovered_signer": "0x91057a092837b20e7c84222ffd125848fac89e1d",
+      "nonce_counter_after": 1212673079,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 3841064155984178466
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 16,
+      "selector": "0x83115825",
+      "reconstructed_signature": "stakeBySig(address,uint256,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x555d713541b1b69744bf878cae4171f75aabbdd9",
+      "nonce": 8490324921669815090,
+      "deadline": 1792360835,
+      "digest": "0x6ba4c7de413941a0aae3f5f0c0da4e17e0570c1a44ee56eb954820b634161fcc",
+      "recovered_signer": "0x555d713541b1b69744bf878cae4171f75aabbdd9",
+      "nonce_counter_after": 8490324921669815091,
+      "event_topic": "0x9e71bc8eea02a63969f509818f2dafb9254532904319f9dbda79b67bd34a5f3d",
+      "amount_or_distribution_fields": 1023446055098343478482
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 17,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x832526ea653762c0cf9d47b22b318ca04de17ac0",
+      "nonce": 181896395631564871,
+      "deadline": 1792360831,
+      "digest": "0x8ec14c6400ce8de77042aa48d61ac3d84f370cbdebe6042bd7a9ba85f50be1ca",
+      "recovered_signer": "0x832526ea653762c0cf9d47b22b318ca04de17ac0",
+      "nonce_counter_after": 18328171283483226659,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 144849606332949680
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 18,
+      "selector": "0x83115825",
+      "reconstructed_signature": "stakeBySig(address,uint256,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0xd52a59873e04bcb85f4145e4b483237647f55033",
+      "nonce": 1843999276,
+      "deadline": 1792360838,
+      "digest": "0x5d165487ddad1bd069319a9dbfa336dcbc458c3d11f4be4e444038edfd0f87f8",
+      "recovered_signer": "0xd52a59873e04bcb85f4145e4b483237647f55033",
+      "nonce_counter_after": 3390130691,
+      "event_topic": "0x9e71bc8eea02a63969f509818f2dafb9254532904319f9dbda79b67bd34a5f3d",
+      "amount_or_distribution_fields": 1205008878153629811554
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 19,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0xf8f581aa719b01e79068068c7ee406543a41bc51",
+      "nonce": 14929610722564932939,
+      "deadline": 1792360837,
+      "digest": "0x24086709b57be8a098eefbd7e56628cc17ce89a6f08297ad17402ae382dca183",
+      "recovered_signer": "0xf8f581aa719b01e79068068c7ee406543a41bc51",
+      "nonce_counter_after": 17502460160960928627,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 10684148948982785
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 20,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x0587d084d467c80512a182abd69079467b09a7a4",
+      "nonce": 16617102300530755575,
+      "deadline": 1792360839,
+      "digest": "0x4cfc2efb4f111522487bb049b24d5505281d7d4f835d85caee8a6debf0f7d15e",
+      "recovered_signer": "0x0587d084d467c80512a182abd69079467b09a7a4",
+      "nonce_counter_after": 18440184840917527195,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 25731175245449432
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 21,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x7ba6ba46d1bdacb999330a17e04e3ecfcb1228cf",
+      "nonce": 10015574993395330535,
+      "deadline": 1792360842,
+      "digest": "0x1dcfa526b8f5362fcfcd53935b6c352fae62a959cd0dc7148285f7ed62e8d7fa",
+      "recovered_signer": "0x7ba6ba46d1bdacb999330a17e04e3ecfcb1228cf",
+      "nonce_counter_after": 18412079282787538072,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 12517361692157927
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 22,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0xdde09aa0f5c06317b2130d0cf021fb618a1896ca",
+      "nonce": 1469958348612983968,
+      "deadline": 1792360843,
+      "digest": "0x7e2ddbcc7ce0b3122211b1b12501ebdd4f1f4d7bec3f0204b795cba26004cbc6",
+      "recovered_signer": "0xdde09aa0f5c06317b2130d0cf021fb618a1896ca",
+      "nonce_counter_after": 18432950819314393888,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 43813435637832057
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 23,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x500ada87c25260875f8045882b4b0fdc362ef449",
+      "nonce": 15130001792882993520,
+      "deadline": 1792360844,
+      "digest": "0x2669b70f63ff616219907d91b6434afee7793cd945cae90d391777ff66f62685",
+      "recovered_signer": "0x500ada87c25260875f8045882b4b0fdc362ef449",
+      "nonce_counter_after": 18411696587754207787,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 9253172818403917
+    },
+    {
+      "tx": "0x644027ab726d170cb459be3154fcaf2b74f52874484a45b781d268736f3c6c43",
+      "ordinal": 24,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0xce370ebcbc655f845df7dfb8c079e75b5ea17d93",
+      "nonce": 317952963795866500857408246682077012004438174424234221955767598207291894652,
+      "deadline": 1792360847,
+      "digest": "0x457d4bcb4f4d1ac6609be3e0412550f3a8d0c7d43d4eaf35a839f06c13e89164",
+      "recovered_signer": "0xce370ebcbc655f845df7dfb8c079e75b5ea17d93",
+      "nonce_counter_after": 451009974043381720652507365413613138917501701538163401452141120281839547239,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 18567306638113536254
+    },
+    {
+      "tx": "0x726340c233749d1bdb8bea903e4c8cc6ab17923527ed51abc77c91f0e7b3e22e",
+      "ordinal": 0,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x84378acede6b06259294a4b240ee363f172e0a0d",
+      "nonce": 3618294116,
+      "deadline": 1792360799,
+      "digest": "0x7c11cc8b3f2795c25951427720b141ce694b609f42311e1a2478204787a9257d",
+      "recovered_signer": "0x84378acede6b06259294a4b240ee363f172e0a0d",
+      "nonce_counter_after": 3618294117,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 1128934403828262549
+    },
+    {
+      "tx": "0x94192d521e62d362196076f7b0e03ea403aca75f4ec40257ef6ce259bf563a4d",
+      "ordinal": 0,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x4cdfb1352dbb17445dae82913cb5f92f540d0c1b",
+      "nonce": 3230524795447422454,
+      "deadline": 1792360869,
+      "digest": "0x62b24a09d2f60a18b6bb82b73c64f3679d610d32abea56b8d7bfffe2f9f0307c",
+      "recovered_signer": "0x4cdfb1352dbb17445dae82913cb5f92f540d0c1b",
+      "nonce_counter_after": 18433085910193687429,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 1303452546457362242
+    },
+    {
+      "tx": "0x94192d521e62d362196076f7b0e03ea403aca75f4ec40257ef6ce259bf563a4d",
+      "ordinal": 1,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0xca20413f12a2967d6bf70d072d07d406557f94a8",
+      "nonce": 4593062061316922683,
+      "deadline": 1792360875,
+      "digest": "0x8db26a504233bbf8b8606888d6a85da941c0db2d1716be0703d97bd5837143c5",
+      "recovered_signer": "0xca20413f12a2967d6bf70d072d07d406557f94a8",
+      "nonce_counter_after": 18431328011686540564,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 589052309933869031
+    },
+    {
+      "tx": "0xa44fc9a0773a442541d3704bceec1d989a0db3a26e5b8faf8c3d1693a1352b4e",
+      "ordinal": 0,
+      "selector": "0x83115825",
+      "reconstructed_signature": "stakeBySig(address,uint256,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0xc8ee7ff3ece9d2b62a6cf9fe68952b61ece86f1b",
+      "nonce": 3744650264,
+      "deadline": 1792360789,
+      "digest": "0xa44cc0eaa1c8deaf5fd6345c5de650fc169e57e11d7cb3deb032c716276ce774",
+      "recovered_signer": "0xc8ee7ff3ece9d2b62a6cf9fe68952b61ece86f1b",
+      "nonce_counter_after": 3744650265,
+      "event_topic": "0x9e71bc8eea02a63969f509818f2dafb9254532904319f9dbda79b67bd34a5f3d",
+      "amount_or_distribution_fields": 1106611498733159918282
+    },
+    {
+      "tx": "0xa4beb0358ddb119f50f087a2bd293035751c479a06dda5bef2fb31529d985740",
+      "ordinal": 0,
+      "selector": "0xf0355460",
+      "reconstructed_signature": "distributeBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x89ab620bee7e1ec675eec5291cba3686d9e059bf",
+      "nonce": 1792357323925,
+      "deadline": 1792360923,
+      "digest": "0xf38a82306ec2638da00848d26cf833831e6567737ff95bb78dcdaf84373e6f64",
+      "recovered_signer": "0x89ab620bee7e1ec675eec5291cba3686d9e059bf",
+      "nonce_counter_after": 1792357323926,
+      "event_topic": "0xf7576d8c2653e9d07af5ef229acf59b339e327d4e0eaddb4a96615534cf148f8",
+      "amount_or_distribution_fields": [
+        5320421399986263009764974,
+        8459440756047156820966,
+        8459440756047156820966,
+        13481341329666496407482852
+      ]
+    },
+    {
+      "tx": "0xac4e0883756cb4912c51f20d7d8ce84d798ccdda4e455c2c6242af5a8f139009",
+      "ordinal": 0,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x98438465100a198798b1add373784323c67a8a26",
+      "nonce": 3134092819,
+      "deadline": 1792360714,
+      "digest": "0xfcd9cd2d9b671edc17c8d9864cda29a3798812c50cc5564a09cb6ee45b77bfbc",
+      "recovered_signer": "0x98438465100a198798b1add373784323c67a8a26",
+      "nonce_counter_after": 3134092820,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 1247732696091412447
+    },
+    {
+      "tx": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+      "ordinal": 0,
+      "selector": "0x83115825",
+      "reconstructed_signature": "stakeBySig(address,uint256,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x20c22d5346fc0fc7251601db43aaf25cbaa181d9",
+      "nonce": 3133781862,
+      "deadline": 1792360235,
+      "digest": "0x01642fe6da13fdd3e799669e4d186423dee3045056985014ebbbdcb695939ff2",
+      "recovered_signer": "0x20c22d5346fc0fc7251601db43aaf25cbaa181d9",
+      "nonce_counter_after": 3133781863,
+      "event_topic": "0x9e71bc8eea02a63969f509818f2dafb9254532904319f9dbda79b67bd34a5f3d",
+      "amount_or_distribution_fields": 1152970945527299153609
+    },
+    {
+      "tx": "0xb27bbadf830f5673211719cf6585d9929e91a446c3f46aee940e6e2e02888cdb",
+      "ordinal": 0,
+      "selector": "0xf0355460",
+      "reconstructed_signature": "distributeBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x89ab620bee7e1ec675eec5291cba3686d9e059bf",
+      "nonce": 1792357293913,
+      "deadline": 1792360893,
+      "digest": "0xff20e2d7c77b13862dbe79d215ae5daa66aad7c55a043ff119fcc0a922d943c2",
+      "recovered_signer": "0x89ab620bee7e1ec675eec5291cba3686d9e059bf",
+      "nonce_counter_after": 1792357293914,
+      "event_topic": "0xf7576d8c2653e9d07af5ef229acf59b339e327d4e0eaddb4a96615534cf148f8",
+      "amount_or_distribution_fields": [
+        5311975731078319996113293,
+        156371955769039150292,
+        156371955769039150292,
+        13480352547025239550020690
+      ]
+    },
+    {
+      "tx": "0xd5a907988c178cb4fe55b8f3a8b87080eb3869e16ac548a8b9f7aa4a871a17c0",
+      "ordinal": 0,
+      "selector": "0xf0355460",
+      "reconstructed_signature": "distributeBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x89ab620bee7e1ec675eec5291cba3686d9e059bf",
+      "nonce": 1792357143879,
+      "deadline": 1792360743,
+      "digest": "0xd505004286e2e412a30858ce7e426e25560476fc41b516f88e5167d228627fb4",
+      "recovered_signer": "0x89ab620bee7e1ec675eec5291cba3686d9e059bf",
+      "nonce_counter_after": 1792357143880,
+      "event_topic": "0xf7576d8c2653e9d07af5ef229acf59b339e327d4e0eaddb4a96615534cf148f8",
+      "amount_or_distribution_fields": [
+        5311296759402108713312350,
+        137694484665860080888,
+        137694484665860080888,
+        13480200235105919415480168
+      ]
+    },
+    {
+      "tx": "0xe2e6318b494325c8ea46b79d450622a320ce43180286c4347b9405d7775b67e1",
+      "ordinal": 0,
+      "selector": "0xf0355460",
+      "reconstructed_signature": "distributeBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x89ab620bee7e1ec675eec5291cba3686d9e059bf",
+      "nonce": 1792357173890,
+      "deadline": 1792360773,
+      "digest": "0x73019c723d75635f43ba619f2ba3a98e2fd50e8eaf627b15b0526551f9782d69",
+      "recovered_signer": "0x89ab620bee7e1ec675eec5291cba3686d9e059bf",
+      "nonce_counter_after": 1792357173891,
+      "event_topic": "0xf7576d8c2653e9d07af5ef229acf59b339e327d4e0eaddb4a96615534cf148f8",
+      "amount_or_distribution_fields": [
+        5312155976215697760088915,
+        1146707227711196414358,
+        1146707227711196414358,
+        13480334269447046385225761
+      ]
+    },
+    {
+      "tx": "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d",
+      "ordinal": 0,
+      "selector": "0x9c96d4a1",
+      "reconstructed_signature": "claimBySig(address,uint256,uint64,uint8,bytes32,bytes32)",
+      "user": "0x4c58299685ce0f55e0cb8a1c8d03863f2594ff3d",
+      "nonce": 1178866434,
+      "deadline": 1792360243,
+      "digest": "0x3c541d31482fd61997a6f3a336ba0ea34961af8ca3bc97b9d4389bcf40fefd1f",
+      "recovered_signer": "0x4c58299685ce0f55e0cb8a1c8d03863f2594ff3d",
+      "nonce_counter_after": 1178866435,
+      "event_topic": "0xd8138f8a3f377c5259ca548e70e4c2de94f129f5a11036a15b69513cba2b426a",
+      "amount_or_distribution_fields": 27928178134822247776
+    }
+  ],
+  "limitations": [
+    "Signed call samples cover four active paths and do not prove all input boundaries.",
+    "Reward-debt and pending-reward equations match sampled calls; unusual states remain untested.",
+    "Both initializer names and one packed-state getter name remain open; the five-address initializer has one verified deployment trace."
+  ]
+}

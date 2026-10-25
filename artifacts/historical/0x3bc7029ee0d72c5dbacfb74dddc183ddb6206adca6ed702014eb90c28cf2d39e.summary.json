@@ -1,0 +1,177 @@
+{
+  "hash": "0x3bc7029ee0d72c5dbacfb74dddc183ddb6206adca6ed702014eb90c28cf2d39e",
+  "block": 48173881,
+  "status": 1,
+  "calls": [
+    {
+      "depth": 0,
+      "type": "CALL",
+      "from": "0xc916e55b1909be6582bf1b2f017aaf82ad8eb0b4",
+      "to": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "selector": "0x251fb27d",
+      "gas_used": "0x5917b",
+      "error": null
+    },
+    {
+      "depth": 1,
+      "type": "DELEGATECALL",
+      "from": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "to": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "selector": "0x251fb27d",
+      "gas_used": "0x552b2",
+      "error": null
+    },
+    {
+      "depth": 2,
+      "type": "CALL",
+      "from": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "selector": "0x2792e706",
+      "gas_used": "0x5194a",
+      "error": null
+    },
+    {
+      "depth": 3,
+      "type": "DELEGATECALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x2792e706",
+      "gas_used": "0x505ad",
+      "error": null
+    },
+    {
+      "depth": 4,
+      "type": "CALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "selector": "0xb002b9fa",
+      "gas_used": "0x47e5",
+      "error": null
+    },
+    {
+      "depth": 5,
+      "type": "DELEGATECALL",
+      "from": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "to": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "selector": "0xb002b9fa",
+      "gas_used": "0x346c",
+      "error": null
+    },
+    {
+      "depth": 4,
+      "type": "STATICCALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "selector": "0x7f608253",
+      "gas_used": "0x1d1a",
+      "error": null
+    },
+    {
+      "depth": 5,
+      "type": "DELEGATECALL",
+      "from": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "to": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "selector": "0x7f608253",
+      "gas_used": "0x1b26",
+      "error": null
+    },
+    {
+      "depth": 6,
+      "type": "STATICCALL",
+      "from": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+      "to": "0x0000000000000000000000000000000000000001",
+      "selector": "0x84cf8330",
+      "gas_used": "0xbb8",
+      "error": null
+    },
+    {
+      "depth": 4,
+      "type": "STATICCALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+      "selector": "0xc0182669",
+      "gas_used": "0x28c5",
+      "error": null
+    },
+    {
+      "depth": 5,
+      "type": "DELEGATECALL",
+      "from": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+      "to": "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+      "selector": "0xc0182669",
+      "gas_used": "0x1552",
+      "error": null
+    },
+    {
+      "depth": 6,
+      "type": "STATICCALL",
+      "from": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+      "to": "0x000000000000000000000000000000000000080e",
+      "selector": "0x00000000",
+      "gas_used": "0x1048",
+      "error": null
+    },
+    {
+      "depth": 4,
+      "type": "DELEGATECALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0x82296364",
+      "gas_used": "0xa2e",
+      "error": null
+    },
+    {
+      "depth": 4,
+      "type": "DELEGATECALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0xef1a27a9",
+      "gas_used": "0x27ac6",
+      "error": null
+    },
+    {
+      "depth": 4,
+      "type": "CALL",
+      "from": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "to": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+      "selector": "0xed722c96",
+      "gas_used": "0x80f3",
+      "error": null
+    },
+    {
+      "depth": 5,
+      "type": "DELEGATECALL",
+      "from": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+      "to": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "selector": "0xed722c96",
+      "gas_used": "0x6d74",
+      "error": null
+    }
+  ],
+  "logs": [
+    {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "topic0": "0xb2f6a0be3228032ab1a6e4d114ab0a4b8277ef32d9bd9b666e8537200aed4dc7"
+    },
+    {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "topic0": "0x87902ed2451849f465fc4d36a01d7f5c67b53af12f63ee85d2814a2d582f89bf"
+    },
+    {
+      "address": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+      "topic0": "0x620c26bf4591919d64df736a6afdfe2981d15eb343c50644b49456c6facb3ab2"
+    },
+    {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "topic0": "0xa32e4800a59f03b131f5fea90951bdf00d8d505ad98f48ece29d8620a0bf09b0"
+    },
+    {
+      "address": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "topic0": "0x8a23ef1120f3e42e722a0c0a599a66d55ab2650ecc39716f57e625684e349cad"
+    },
+    {
+      "address": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "topic0": "0x9d65322d939fd0a2d0032c87248c8e9f9b14cc177e27b2c049cb4b0356e5160b"
+    }
+  ]
+}

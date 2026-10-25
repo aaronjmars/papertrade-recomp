@@ -1,0 +1,2944 @@
+{
+  "pin": 48902346,
+  "unmatched_selector_candidates": [
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x1b7c1009",
+      "inferred_arguments": "",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_pair_params_behavior.json",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x2dcc7fce",
+      "inferred_arguments": "uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_unit_scales_behavior.json",
+      "observed_behavior": "40 pinned and storage-override calls match slot-3 and slot-5 unit scaling",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x31a39849",
+      "inferred_arguments": "",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_unit_scales_behavior.json",
+      "observed_behavior": "40 pinned and storage-override calls match slot-3 and slot-5 unit scaling",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x4a4d9eea",
+      "inferred_arguments": "address,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "queue_count_merge_evidence": "exchange_library_queue_count_merge_behavior.json",
+      "queue_count_merge_replay_evidence": "../../artifacts/exchange_library_queue_count_merge_local/replay.json",
+      "simulation_evidence": "exchange_library_adapters_behavior.json",
+      "observed_behavior": "Fifteen exact-runtime tests cover count-bounded headward or threshold-gated tailward consolidation, returns, storage, and events",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x50c23fab",
+      "inferred_arguments": "uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_liquidation_price_behavior.json",
+      "observed_behavior": "26 pinned outputs match a position and instrument maintenance-rate formula; 4 equal local fork liquidation boundaries",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x5ca4c0ea",
+      "inferred_arguments": "uint32,uint128,uint96,uint96,uint64",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_instrument_admin_behavior.json",
+      "simulation_evidence": "exchange_instrument_admin_behavior.json",
+      "observed_behavior": "9 read-only probes map owner control, adjacent upper bound, three packed instrument words, and an unnamed event",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open.",
+      "full_history_event_lookup": "../../artifacts/exchange_instrument_admin/full_history_event_query.json",
+      "local_replay_evidence": "../../artifacts/exchange_instrument_admin_local/replay.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x628a9fd6",
+      "inferred_arguments": "uint32,uint128,uint128",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_market_fields_behavior.json",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x6d60ae8e",
+      "inferred_arguments": "",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_small_views_behavior.json",
+      "observed_behavior": "pinned output and controlled storage behavior verified; source name unresolved",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x70f75ff5",
+      "inferred_arguments": "uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_unit_scales_behavior.json",
+      "observed_behavior": "40 pinned and storage-override calls match slot-3 and slot-5 unit scaling",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x753a369c",
+      "inferred_arguments": "address,uint256,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "queue_merge_evidence": "exchange_library_queue_merge_behavior.json",
+      "local_replay_evidence": "../../artifacts/exchange_library_queue_merge_local/replay.json",
+      "observed_behavior": "Ten exact-runtime local tests cover two- and three-node merges, a limit-one revert, unchanged queued totals, and two unnamed events; eleven subsequent exact-runtime harvest calls show empty global-head nodes use the node limit",
+      "queue_harvest_followup_evidence": "exchange_library_queue_harvest_followup_behavior.json",
+      "queue_harvest_followup_replay_evidence": "../../artifacts/exchange_library_queue_harvest_followup_local/replay.json",
+      "queue_interleaved_evidence": "exchange_library_queue_interleaved_behavior.json",
+      "queue_interleaved_replay_evidence": "../../artifacts/exchange_library_queue_interleaved_local/replay.json",
+      "simulation_evidence": "exchange_library_adapters_behavior.json",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x827ad94c",
+      "inferred_arguments": "address,uint256,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "queue_merge_evidence": "exchange_library_queue_merge_behavior.json",
+      "local_replay_evidence": "../../artifacts/exchange_library_queue_merge_local/replay.json",
+      "observed_behavior": "Ten exact-runtime local tests cover two- and three-node merges, a limit-one revert, unchanged queued totals, and two unnamed events; eleven subsequent exact-runtime harvest calls show empty global-head nodes use the node limit",
+      "queue_harvest_followup_evidence": "exchange_library_queue_harvest_followup_behavior.json",
+      "queue_harvest_followup_replay_evidence": "../../artifacts/exchange_library_queue_harvest_followup_local/replay.json",
+      "queue_interleaved_evidence": "exchange_library_queue_interleaved_behavior.json",
+      "queue_interleaved_replay_evidence": "../../artifacts/exchange_library_queue_interleaved_local/replay.json",
+      "simulation_evidence": "exchange_library_adapters_behavior.json",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x82f47a3f",
+      "inferred_arguments": "uint128,uint128",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_pair_params_behavior.json",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xae4daf4e",
+      "inferred_arguments": "address,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "queue_count_merge_evidence": "exchange_library_queue_count_merge_behavior.json",
+      "queue_count_merge_replay_evidence": "../../artifacts/exchange_library_queue_count_merge_local/replay.json",
+      "simulation_evidence": "exchange_library_adapters_behavior.json",
+      "observed_behavior": "Fifteen exact-runtime tests cover count-bounded headward or threshold-gated tailward consolidation, returns, storage, and events",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xaf210ecc",
+      "inferred_arguments": "",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_small_views_behavior.json",
+      "observed_behavior": "pinned output and controlled storage behavior verified; source name unresolved",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xbacd9ea0",
+      "inferred_arguments": "uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_unit_scales_behavior.json",
+      "observed_behavior": "40 pinned and storage-override calls match slot-3 and slot-5 unit scaling",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xc8372577",
+      "inferred_arguments": "uint32",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_mapping35_view_behavior.json",
+      "observed_behavior": "uint32 key -> bool and three uint64 fields packed in one mapping-35 word; source name and field meanings unresolved",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xc88bbcf3",
+      "inferred_arguments": "uint256,uint256,uint256,uint32,uint256,uint256,uint256,uint256,uint64",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_instrument_creation_behavior.json",
+      "local_replay_evidence": "../../artifacts/exchange_instrument_creation_local/replay.json",
+      "observed_behavior": "two successful nine-word registrations with saved receipts, traces, and state diffs; local replay checks owner guard, field packing, event input word 2, and sampled input bounds",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xcb163b03",
+      "inferred_arguments": "uint32",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_market_fields_behavior.json",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xd7c7e5fb",
+      "inferred_arguments": "uint32,uint32,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "simulation_evidence": "exchange_instrument_limit_behavior.json",
+      "observed_behavior": "10 exact pinned-runtime local tests map owner control, two packed instrument fields, validation errors, and an unnamed event",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open.",
+      "full_history_event_lookup": "../../artifacts/exchange_control_history/event_queries.json",
+      "event_absence_evidence": "exchange_control_event_history_behavior.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xf1a8786c",
+      "inferred_arguments": "",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_fee_rates_behavior.json",
+      "observed_behavior": "setFeeRates and event hash-verified; 7 read-only probes map three direct fee slots and inclusive upper bounds",
+      "negative_close_fee_effect_evidence": "exchange_negative_close_fee_behavior.json",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xf37d3c4f",
+      "inferred_arguments": "uint32",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_market_fields_behavior.json",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xf728fc98",
+      "inferred_arguments": "uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_position_index_behavior.json",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xfdfd905d",
+      "inferred_arguments": "",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_small_views_behavior.json",
+      "observed_behavior": "pinned output and controlled storage behavior verified; source name unresolved",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xff3bc415",
+      "inferred_arguments": "",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_small_views_behavior.json",
+      "observed_behavior": "pinned output and controlled storage behavior verified; source name unresolved",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "oracle_implementation",
+      "address": "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+      "selector": "0xa7f06462",
+      "inferred_arguments": "uint32[]",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "oracle_behavior.json",
+      "observed_behavior": "uint32[] assets -> five-word price snapshot array",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "oracle_implementation",
+      "address": "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+      "selector": "0xc0182669",
+      "inferred_arguments": "uint32",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "oracle_behavior.json",
+      "observed_behavior": "uint32 asset -> validated BBO midpoint uint64, floor((bid+ask)/2)",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "tokenomics_implementation",
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "selector": "0x3886cade",
+      "inferred_arguments": "",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "tokenomics_getter_alias_behavior.json",
+      "observed_storage_slot": 5,
+      "observed_behavior": "direct getter for pinned mint-parameter storage word; source name unverified",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "tokenomics_implementation",
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "selector": "0x7c7df7b4",
+      "inferred_arguments": "address,uint256,uint256,uint64,uint8",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "tokenomics_seven_word_stub_behavior.json",
+      "observed_behavior": "at least seven argument words required; canonical calls always revert with 0x32aa90b0",
+      "minimum_calldata_bytes": 228,
+      "validated_word_types": {
+        "0x04": "address",
+        "0x64": "uint64",
+        "0x84": "uint8"
+      },
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "session_key_manager_implementation",
+      "address": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "selector": "0x7f608253",
+      "inferred_arguments": "address,uint256,uint8,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "session_signer_expanded_behavior.json",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "session_key_manager_implementation",
+      "address": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "selector": "0xc1e6613d",
+      "inferred_arguments": "address,address",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "session_key_behavior.json",
+      "observed_behavior": "Pinned getter returns associated address from sessionKeys(user,key); matched registration calldata and raw slot 4 in ten samples",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "deposit_proxy_factory_implementation",
+      "address": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "selector": "0x0f71c8bc",
+      "inferred_arguments": "address,address",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "factory_behavior.json",
+      "observed_behavior": "Admin-only initialization: current state rejects; owner-zero override writes owner and deployer and emits both updates",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "deposit_proxy_factory_implementation",
+      "address": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "selector": "0x56e8d85b",
+      "inferred_arguments": "address,address,address",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "factory_behavior.json",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0x18958ce2",
+      "inferred_arguments": "uint256,address,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "queue_interleaved_evidence": "exchange_library_queue_interleaved_behavior.json",
+      "queue_interleaved_replay_evidence": "../../artifacts/exchange_library_queue_interleaved_local/replay.json",
+      "simulation_evidence": "exchange_library_remaining_behavior.json",
+      "observed_behavior": "Enqueue amount for user: zero is no-op; positive creates node, updates global/user totals, appends links, emits Enqueued",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0x2448a553",
+      "inferred_arguments": "uint256,address,uint256,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "queue_count_merge_evidence": "exchange_library_queue_count_merge_behavior.json",
+      "queue_count_merge_replay_evidence": "../../artifacts/exchange_library_queue_count_merge_local/replay.json",
+      "simulation_evidence": "exchange_library_adapters_behavior.json",
+      "observed_behavior": "Fifteen exact-runtime tests cover count-bounded headward or threshold-gated tailward consolidation, returns, storage, and events",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0x32db40c9",
+      "inferred_arguments": "uint256,address,uint256,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "queue_merge_evidence": "exchange_library_queue_merge_behavior.json",
+      "local_replay_evidence": "../../artifacts/exchange_library_queue_merge_local/replay.json",
+      "observed_behavior": "Ten exact-runtime local tests cover two- and three-node merges, a limit-one revert, unchanged queued totals, and two unnamed events; eleven subsequent exact-runtime harvest calls show empty global-head nodes use the node limit",
+      "queue_harvest_followup_evidence": "exchange_library_queue_harvest_followup_behavior.json",
+      "queue_harvest_followup_replay_evidence": "../../artifacts/exchange_library_queue_harvest_followup_local/replay.json",
+      "queue_interleaved_evidence": "exchange_library_queue_interleaved_behavior.json",
+      "queue_interleaved_replay_evidence": "../../artifacts/exchange_library_queue_interleaved_local/replay.json",
+      "simulation_evidence": "exchange_library_adapters_behavior.json",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0x3cf4208d",
+      "inferred_arguments": "uint256,address,uint256,uint256,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "queue_merge_evidence": "exchange_library_queue_merge_behavior.json",
+      "local_replay_evidence": "../../artifacts/exchange_library_queue_merge_local/replay.json",
+      "observed_behavior": "Ten exact-runtime local tests cover two- and three-node merges, a limit-one revert, unchanged queued totals, and two unnamed events; eleven subsequent exact-runtime harvest calls show empty global-head nodes use the node limit",
+      "queue_harvest_followup_evidence": "exchange_library_queue_harvest_followup_behavior.json",
+      "queue_harvest_followup_replay_evidence": "../../artifacts/exchange_library_queue_harvest_followup_local/replay.json",
+      "queue_interleaved_evidence": "exchange_library_queue_interleaved_behavior.json",
+      "queue_interleaved_replay_evidence": "../../artifacts/exchange_library_queue_interleaved_local/replay.json",
+      "simulation_evidence": "exchange_library_adapters_behavior.json",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0x3f4e3626",
+      "inferred_arguments": "uint256,address,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "simulation_evidence": "exchange_library_remaining_behavior.json",
+      "observed_behavior": "Remove requested amount from user queue tail: partial removal reduces newest node first; full removal clears node amount and advances head; emitted amount is request even if above queued balance in synthetic state",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0x79810ffe",
+      "inferred_arguments": "uint256,uint256,uint256,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_library_harvest_behavior.json",
+      "queue_harvest_followup_evidence": "exchange_library_queue_harvest_followup_behavior.json",
+      "queue_harvest_followup_replay_evidence": "../../artifacts/exchange_library_queue_harvest_followup_local/replay.json",
+      "queue_interleaved_evidence": "exchange_library_queue_interleaved_behavior.json",
+      "queue_interleaved_replay_evidence": "../../artifacts/exchange_library_queue_interleaved_local/replay.json",
+      "semantic_evidence": "exchange_library_behavior.json",
+      "observed_behavior": "One historical and thirteen read-only queue harvest calls reconcile both return words, event payments, queue debits, and user balance credits",
+      "simulation_evidence": "exchange_library_harvest_behavior.json",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0x82296364",
+      "inferred_arguments": "uint64,uint64,uint128,uint32,bool,uint256,uint256,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "semantic_evidence": "exchange_library_behavior.json",
+      "observed_behavior": "two-word signed raw and adjusted PnL calculation",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0xb67f3dd7",
+      "inferred_arguments": "uint256,uint64,uint64,uint256,uint256,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "simulation_evidence": "exchange_library_remaining_behavior.json",
+      "observed_behavior": "Seven-word arithmetic: 40 successful staticcall vectors and a pinned opcode trace match the reconstructed integer sequence; zero, nonzero, and input-dependent rate branches sampled",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0xca02ff91",
+      "inferred_arguments": "uint256,address,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "queue_count_merge_evidence": "exchange_library_queue_count_merge_behavior.json",
+      "queue_count_merge_replay_evidence": "../../artifacts/exchange_library_queue_count_merge_local/replay.json",
+      "simulation_evidence": "exchange_library_adapters_behavior.json",
+      "observed_behavior": "Fifteen exact-runtime tests cover count-bounded headward or threshold-gated tailward consolidation, returns, storage, and events",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0xef1a27a9",
+      "inferred_arguments": "uint256,address,uint128,int256,bool,uint256,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "semantic_evidence": "exchange_library_behavior.json",
+      "observed_behavior": "six-word close-settlement calculation using adjusted PnL",
+      "fee_rate_evidence": "exchange_library_fee_rates_behavior.json",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "batch_executor_implementation",
+      "address": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "selector": "0x0f71c8bc",
+      "inferred_arguments": "address,address",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "simulation_evidence": "batch_control_behavior.json",
+      "observed_behavior": "Initialized-state rejection and fresh-state control behavior checked with exact pinned proxy and implementation bytecode",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "batch_executor_implementation",
+      "address": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "selector": "0x6090cf16",
+      "inferred_arguments": "",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "batch_executor_implementation",
+      "address": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "selector": "0x9ccae24e",
+      "inferred_arguments": "address,address,address,address,address",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "simulation_evidence": "batch_control_behavior.json",
+      "observed_behavior": "Initialized-state rejection and fresh-state control behavior checked with exact pinned proxy and implementation bytecode",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "staking_implementation",
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "selector": "0x0f71c8bc",
+      "inferred_arguments": "address,address",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "staking_initializers_behavior.json",
+      "simulation_evidence": "staking_initializers_behavior.json",
+      "observed_behavior": "Two-address admin-only setup: outsider returns 0xc031a0df; proxy admin in fresh state writes owner to slot 15 and authorized executor plus initialization flag to slot 16, emits OwnerUpdated and AuthorizedExecutorUpdated; repeat returns 0x3f733c4f",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "staking_implementation",
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "selector": "0x6090cf16",
+      "inferred_arguments": "",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "staking_getters_behavior.json",
+      "observed_behavior": "slot-16 byte 20 nonzero flag, checked with off, on, and high-byte storage overrides; source name unknown",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "staking_implementation",
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "selector": "0x9ccae24e",
+      "inferred_arguments": "address,address,address,address,address",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "staking_behavior.json",
+      "observed_behavior": "Historical deployment five-address initializer sets Exchange, stake token, reward token, owner, and executor, with two update events; source name unknown",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    },
+    {
+      "role": "paper_math_library",
+      "address": "0xe991817199363046da0a28da6fbad0284e4aa492",
+      "selector": "0x7aac24ba",
+      "inferred_arguments": "int256,uint256,uint256,uint256,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "paper_math_behavior.json",
+      "observed_behavior": "27 successful historical math calls, 12 pinned direct probes, and four panic boundaries; source name unknown",
+      "public_name_gap_checks": "public_name_gap_checks.json"
+    }
+  ],
+  "ambiguous_public_signature_matches": [],
+  "state_changing_selectors_without_saved_historical_trace": [
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x01681a62",
+      "inferred_arguments": "address",
+      "candidate_signature": "sweep(address)",
+      "reconstructed_signature": "sweep(address)",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_sweep_behavior.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x2d2451d1",
+      "inferred_arguments": "uint32",
+      "candidate_signature": "pauseMarket(uint32)",
+      "reconstructed_signature": "pauseMarket(uint32)",
+      "evidence": "selector_catalog.json",
+      "simulation_evidence": "exchange_pause_behavior.json",
+      "observed_behavior": "Local pinned-runtime owner and pause-guardian controls, storage writes, events, and raw errors",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open.",
+      "full_history_event_lookup": "../../artifacts/exchange_control_history/event_queries.json",
+      "event_absence_evidence": "exchange_control_event_history_behavior.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x415f1240",
+      "inferred_arguments": "uint256",
+      "candidate_signature": "liquidate(uint256)",
+      "reconstructed_signature": "liquidate(uint256)",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_liquidation_behavior.json",
+      "simulation_evidence": "exchange_liquidation_behavior.json",
+      "fee_effect_evidence": "exchange_fee_effects_behavior.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x4a4d9eea",
+      "inferred_arguments": "address,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "queue_count_merge_evidence": "exchange_library_queue_count_merge_behavior.json",
+      "queue_count_merge_replay_evidence": "../../artifacts/exchange_library_queue_count_merge_local/replay.json",
+      "simulation_evidence": "exchange_library_adapters_behavior.json",
+      "observed_behavior": "Fifteen exact-runtime tests cover count-bounded headward or threshold-gated tailward consolidation, returns, storage, and events",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x5ca4c0ea",
+      "inferred_arguments": "uint32,uint128,uint96,uint96,uint64",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_instrument_admin_behavior.json",
+      "simulation_evidence": "exchange_instrument_admin_behavior.json",
+      "observed_behavior": "9 read-only probes map owner control, adjacent upper bound, three packed instrument words, and an unnamed event",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open.",
+      "full_history_event_lookup": "../../artifacts/exchange_instrument_admin/full_history_event_query.json",
+      "local_replay_evidence": "../../artifacts/exchange_instrument_admin_local/replay.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x6a3214c9",
+      "inferred_arguments": "address,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "reconcileSweepCredit(address,uint256)",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_sweep_behavior.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x753a369c",
+      "inferred_arguments": "address,uint256,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "queue_merge_evidence": "exchange_library_queue_merge_behavior.json",
+      "local_replay_evidence": "../../artifacts/exchange_library_queue_merge_local/replay.json",
+      "observed_behavior": "Ten exact-runtime local tests cover two- and three-node merges, a limit-one revert, unchanged queued totals, and two unnamed events; eleven subsequent exact-runtime harvest calls show empty global-head nodes use the node limit",
+      "queue_harvest_followup_evidence": "exchange_library_queue_harvest_followup_behavior.json",
+      "queue_harvest_followup_replay_evidence": "../../artifacts/exchange_library_queue_harvest_followup_local/replay.json",
+      "queue_interleaved_evidence": "exchange_library_queue_interleaved_behavior.json",
+      "queue_interleaved_replay_evidence": "../../artifacts/exchange_library_queue_interleaved_local/replay.json",
+      "simulation_evidence": "exchange_library_adapters_behavior.json",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0x827ad94c",
+      "inferred_arguments": "address,uint256,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "queue_merge_evidence": "exchange_library_queue_merge_behavior.json",
+      "local_replay_evidence": "../../artifacts/exchange_library_queue_merge_local/replay.json",
+      "observed_behavior": "Ten exact-runtime local tests cover two- and three-node merges, a limit-one revert, unchanged queued totals, and two unnamed events; eleven subsequent exact-runtime harvest calls show empty global-head nodes use the node limit",
+      "queue_harvest_followup_evidence": "exchange_library_queue_harvest_followup_behavior.json",
+      "queue_harvest_followup_replay_evidence": "../../artifacts/exchange_library_queue_harvest_followup_local/replay.json",
+      "queue_interleaved_evidence": "exchange_library_queue_interleaved_behavior.json",
+      "queue_interleaved_replay_evidence": "../../artifacts/exchange_library_queue_interleaved_local/replay.json",
+      "simulation_evidence": "exchange_library_adapters_behavior.json",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xae4daf4e",
+      "inferred_arguments": "address,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "queue_count_merge_evidence": "exchange_library_queue_count_merge_behavior.json",
+      "queue_count_merge_replay_evidence": "../../artifacts/exchange_library_queue_count_merge_local/replay.json",
+      "simulation_evidence": "exchange_library_adapters_behavior.json",
+      "observed_behavior": "Fifteen exact-runtime tests cover count-bounded headward or threshold-gated tailward consolidation, returns, storage, and events",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xae69b95b",
+      "inferred_arguments": "bool",
+      "candidate_signature": "setTradingPaused(bool)",
+      "reconstructed_signature": "setTradingPaused(bool)",
+      "evidence": "selector_catalog.json",
+      "simulation_evidence": "exchange_pause_behavior.json",
+      "observed_behavior": "Local pinned-runtime owner and pause-guardian controls, storage writes, events, and raw errors",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open.",
+      "full_history_event_lookup": "../../artifacts/exchange_control_history/event_queries.json",
+      "event_absence_evidence": "exchange_control_event_history_behavior.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xc0c53b8b",
+      "inferred_arguments": "address,address,address",
+      "candidate_signature": "initialize(address,address,address)",
+      "reconstructed_signature": "initialize(address,address,address)",
+      "evidence": "selector_catalog.json",
+      "simulation_evidence": "exchange_initializer_behavior.json",
+      "observed_behavior": "6 exact pinned-runtime local tests map fresh initialization, default slots, token decimal scaling, and initialized-state rejection",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xd7c7e5fb",
+      "inferred_arguments": "uint32,uint32,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "simulation_evidence": "exchange_instrument_limit_behavior.json",
+      "observed_behavior": "10 exact pinned-runtime local tests map owner control, two packed instrument fields, validation errors, and an unnamed event",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open.",
+      "full_history_event_lookup": "../../artifacts/exchange_control_history/event_queries.json",
+      "event_absence_evidence": "exchange_control_event_history_behavior.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xe538b280",
+      "inferred_arguments": "uint256,uint256,uint256",
+      "candidate_signature": "setFeeRates(uint256,uint256,uint256)",
+      "reconstructed_signature": "setFeeRates(uint256,uint256,uint256)",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "exchange_fee_rates_behavior.json",
+      "observed_behavior": "setFeeRates and event hash-verified; 7 read-only probes map three direct fee slots and inclusive upper bounds",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open.",
+      "full_history_event_lookup": "../../artifacts/exchange_control_history/event_queries.json",
+      "event_absence_evidence": "exchange_control_event_history_behavior.json"
+    },
+    {
+      "role": "paper_token_implementation",
+      "address": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+      "selector": "0x9dc29fac",
+      "inferred_arguments": "address,uint256",
+      "candidate_signature": "burn(address,uint256)",
+      "reconstructed_signature": "burn(address,uint256)",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "paper_token_behavior.json",
+      "event_absence_evidence": "paper_control_history_behavior.json",
+      "full_history_event_lookup": "../../artifacts/paper_control_history/event_queries.json",
+      "observed_behavior": "Full-range Transfer-to-zero query returned zero logs; pinned read-only burn mutation succeeds from minter",
+      "simulation_evidence": "../../artifacts/paper_token/pinned_mutation_traces.json",
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "paper_token_implementation",
+      "address": "0x433bd418ec92818a960585f4d5fae563e735bb4a",
+      "selector": "0xfca3b5aa",
+      "inferred_arguments": "address",
+      "candidate_signature": "setMinter(address)",
+      "reconstructed_signature": "setMinter(address)",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "paper_token_behavior.json",
+      "event_absence_evidence": "paper_control_history_behavior.json",
+      "full_history_event_lookup": "../../artifacts/paper_control_history/event_queries.json",
+      "observed_behavior": "Full-range MinterUpdated query found only the deployment initializer event; pinned read-only setMinter mutation succeeds from owner",
+      "simulation_evidence": "../../artifacts/paper_token/pinned_mutation_traces.json",
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "tokenomics_implementation",
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "selector": "0x12baae3b",
+      "inferred_arguments": "uint256,uint256,uint256,uint256",
+      "candidate_signature": "setMintParams(uint256,uint256,uint256,uint256)",
+      "reconstructed_signature": "setMintParams(uint256,uint256,uint256,uint256)",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "tokenomics_params_behavior.json",
+      "simulation_evidence": "tokenomics_params_behavior.json",
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "tokenomics_implementation",
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "selector": "0x485cc955",
+      "inferred_arguments": "address,address",
+      "candidate_signature": "initialize(address,address)|watch_tg_invmru_7bd442a(uint256,address,uint256)|watch_tg_invmru_10757d42(bool,bool)",
+      "reconstructed_signature": "initialize(address,address)",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "tokenomics_initializer_behavior.json",
+      "simulation_evidence": "tokenomics_initializer_behavior.json",
+      "observed_behavior": "Fresh state accepts either arbitrary user or proxy admin as caller, sets owner and second address, writes four default mint parameter words, emits OwnerUpdated and MintParamsUpdated; repeat returns AlreadyInitialized()",
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "session_key_manager_implementation",
+      "address": "0x8a5069fe303e8f81e91825436e956d595032e558",
+      "selector": "0xcf8fbec9",
+      "inferred_arguments": "address",
+      "candidate_signature": "setAuthorizedCaller(address)",
+      "reconstructed_signature": "setAuthorizedCaller(address)",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "session_key_behavior.json",
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "deposit_proxy_factory_implementation",
+      "address": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "selector": "0x0f71c8bc",
+      "inferred_arguments": "address,address",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "factory_behavior.json",
+      "observed_behavior": "Admin-only initialization: current state rejects; owner-zero override writes owner and deployer and emits both updates",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "deposit_proxy_factory_implementation",
+      "address": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "selector": "0xc6f881bc",
+      "inferred_arguments": "address",
+      "candidate_signature": "setAuthorizedDeployer(address)",
+      "reconstructed_signature": "setAuthorizedDeployer(address)",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "factory_selector_names_behavior.json",
+      "observed_behavior": "Owner sets authorized deployer in slot 4 and emits update; outsider reverts",
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "timelock",
+      "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "selector": "0x88aa4c12",
+      "inferred_arguments": "address,uint256,bytes,bytes32",
+      "candidate_signature": "execute(address,uint256,bytes,bytes32)",
+      "reconstructed_signature": "execute(address,uint256,bytes,bytes32)",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "timelock_behavior.json",
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "timelock",
+      "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "selector": "0x8a99d586",
+      "inferred_arguments": "uint256",
+      "candidate_signature": "updateMinDelay(uint256)",
+      "reconstructed_signature": "updateMinDelay(uint256)",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "timelock_behavior.json",
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "timelock",
+      "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "selector": "0x8b07f62b",
+      "inferred_arguments": "address[],uint256[],bytes[],bytes32",
+      "candidate_signature": "scheduleBatch(address[],uint256[],bytes[],bytes32)",
+      "reconstructed_signature": "scheduleBatch(address[],uint256[],bytes[],bytes32)",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "timelock_behavior.json",
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "timelock",
+      "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "selector": "0xa6cc2c8c",
+      "inferred_arguments": "address[],uint256[],bytes[],bytes32",
+      "candidate_signature": "executeBatch(address[],uint256[],bytes[],bytes32)",
+      "reconstructed_signature": "executeBatch(address[],uint256[],bytes[],bytes32)",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "timelock_behavior.json",
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "timelock",
+      "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "selector": "0xc4d252f5",
+      "inferred_arguments": "bytes32",
+      "candidate_signature": "cancel(bytes32)",
+      "reconstructed_signature": "cancel(bytes32)",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "timelock_behavior.json",
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "timelock",
+      "address": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "selector": "0xf2fde38b",
+      "inferred_arguments": "address",
+      "candidate_signature": "transferOwnership(address)|_SIMONdotBLACK_(int8[],uint256,address,bytes8,int96)",
+      "reconstructed_signature": "transferOwnership(address)",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "timelock_behavior.json",
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0x18958ce2",
+      "inferred_arguments": "uint256,address,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "queue_interleaved_evidence": "exchange_library_queue_interleaved_behavior.json",
+      "queue_interleaved_replay_evidence": "../../artifacts/exchange_library_queue_interleaved_local/replay.json",
+      "simulation_evidence": "exchange_library_remaining_behavior.json",
+      "observed_behavior": "Enqueue amount for user: zero is no-op; positive creates node, updates global/user totals, appends links, emits Enqueued",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0x2448a553",
+      "inferred_arguments": "uint256,address,uint256,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "queue_count_merge_evidence": "exchange_library_queue_count_merge_behavior.json",
+      "queue_count_merge_replay_evidence": "../../artifacts/exchange_library_queue_count_merge_local/replay.json",
+      "simulation_evidence": "exchange_library_adapters_behavior.json",
+      "observed_behavior": "Fifteen exact-runtime tests cover count-bounded headward or threshold-gated tailward consolidation, returns, storage, and events",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0x32db40c9",
+      "inferred_arguments": "uint256,address,uint256,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "queue_merge_evidence": "exchange_library_queue_merge_behavior.json",
+      "local_replay_evidence": "../../artifacts/exchange_library_queue_merge_local/replay.json",
+      "observed_behavior": "Ten exact-runtime local tests cover two- and three-node merges, a limit-one revert, unchanged queued totals, and two unnamed events; eleven subsequent exact-runtime harvest calls show empty global-head nodes use the node limit",
+      "queue_harvest_followup_evidence": "exchange_library_queue_harvest_followup_behavior.json",
+      "queue_harvest_followup_replay_evidence": "../../artifacts/exchange_library_queue_harvest_followup_local/replay.json",
+      "queue_interleaved_evidence": "exchange_library_queue_interleaved_behavior.json",
+      "queue_interleaved_replay_evidence": "../../artifacts/exchange_library_queue_interleaved_local/replay.json",
+      "simulation_evidence": "exchange_library_adapters_behavior.json",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0x3cf4208d",
+      "inferred_arguments": "uint256,address,uint256,uint256,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "queue_merge_evidence": "exchange_library_queue_merge_behavior.json",
+      "local_replay_evidence": "../../artifacts/exchange_library_queue_merge_local/replay.json",
+      "observed_behavior": "Ten exact-runtime local tests cover two- and three-node merges, a limit-one revert, unchanged queued totals, and two unnamed events; eleven subsequent exact-runtime harvest calls show empty global-head nodes use the node limit",
+      "queue_harvest_followup_evidence": "exchange_library_queue_harvest_followup_behavior.json",
+      "queue_harvest_followup_replay_evidence": "../../artifacts/exchange_library_queue_harvest_followup_local/replay.json",
+      "queue_interleaved_evidence": "exchange_library_queue_interleaved_behavior.json",
+      "queue_interleaved_replay_evidence": "../../artifacts/exchange_library_queue_interleaved_local/replay.json",
+      "simulation_evidence": "exchange_library_adapters_behavior.json",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0x3f4e3626",
+      "inferred_arguments": "uint256,address,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "simulation_evidence": "exchange_library_remaining_behavior.json",
+      "observed_behavior": "Remove requested amount from user queue tail: partial removal reduces newest node first; full removal clears node amount and advances head; emitted amount is request even if above queued balance in synthetic state",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0xb67f3dd7",
+      "inferred_arguments": "uint256,uint64,uint64,uint256,uint256,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "simulation_evidence": "exchange_library_remaining_behavior.json",
+      "observed_behavior": "Seven-word arithmetic: 40 successful staticcall vectors and a pinned opcode trace match the reconstructed integer sequence; zero, nonzero, and input-dependent rate branches sampled",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "exchange_linked_library_live",
+      "address": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "selector": "0xca02ff91",
+      "inferred_arguments": "uint256,address,uint256,uint256",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "queue_count_merge_evidence": "exchange_library_queue_count_merge_behavior.json",
+      "queue_count_merge_replay_evidence": "../../artifacts/exchange_library_queue_count_merge_local/replay.json",
+      "simulation_evidence": "exchange_library_adapters_behavior.json",
+      "observed_behavior": "Fifteen exact-runtime tests cover count-bounded headward or threshold-gated tailward consolidation, returns, storage, and events",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_exchange.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_exchange/replay.json",
+      "gap_static_evidence": "../../artifacts/selector_gap_exchange/static_analysis.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "batch_executor_implementation",
+      "address": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "selector": "0x0f71c8bc",
+      "inferred_arguments": "address,address",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "simulation_evidence": "batch_control_behavior.json",
+      "observed_behavior": "Initialized-state rejection and fresh-state control behavior checked with exact pinned proxy and implementation bytecode",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "batch_executor_implementation",
+      "address": "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262",
+      "selector": "0x9ccae24e",
+      "inferred_arguments": "address,address,address,address,address",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "simulation_evidence": "batch_control_behavior.json",
+      "observed_behavior": "Initialized-state rejection and fresh-state control behavior checked with exact pinned proxy and implementation bytecode",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "staking_implementation",
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "selector": "0x0f71c8bc",
+      "inferred_arguments": "address,address",
+      "candidate_signature": "",
+      "reconstructed_signature": "",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "staking_initializers_behavior.json",
+      "simulation_evidence": "staking_initializers_behavior.json",
+      "observed_behavior": "Two-address admin-only setup: outsider returns 0xc031a0df; proxy admin in fresh state writes owner to slot 15 and authorized executor plus initialization flag to slot 16, emits OwnerUpdated and AuthorizedExecutorUpdated; repeat returns 0x3f733c4f",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "proxy_admin",
+      "address": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+      "selector": "0x7eff275e",
+      "inferred_arguments": "address,address",
+      "candidate_signature": "changeProxyAdmin(address,address)",
+      "reconstructed_signature": "changeProxyAdmin(address,address)",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "proxy_admin_behavior.json",
+      "local_replay_evidence": "../../artifacts/proxy_admin_local/replay.json",
+      "observed_behavior": {
+        "upgrade": "sets proxy implementation slot without a log",
+        "upgradeAndCall": "sets proxy implementation slot and delegates setup call into proxy storage without a log",
+        "changeProxyAdmin": "sets proxy admin slot without a log",
+        "upgrade_to_no_code_address": "accepted in local pinned-runtime replay"
+      },
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "proxy_admin",
+      "address": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+      "selector": "0x9623609d",
+      "inferred_arguments": "address,address,bytes",
+      "candidate_signature": "upgradeAndCall(address,address,bytes)",
+      "reconstructed_signature": "upgradeAndCall(address,address,bytes)",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "proxy_admin_behavior.json",
+      "local_replay_evidence": "../../artifacts/proxy_admin_local/replay.json",
+      "observed_behavior": {
+        "upgrade": "sets proxy implementation slot without a log",
+        "upgradeAndCall": "sets proxy implementation slot and delegates setup call into proxy storage without a log",
+        "changeProxyAdmin": "sets proxy admin slot without a log",
+        "upgrade_to_no_code_address": "accepted in local pinned-runtime replay"
+      },
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "proxy_admin",
+      "address": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+      "selector": "0x99a88ec4",
+      "inferred_arguments": "address,address",
+      "candidate_signature": "upgrade(address,address)",
+      "reconstructed_signature": "upgrade(address,address)",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "proxy_admin_behavior.json",
+      "local_replay_evidence": "../../artifacts/proxy_admin_local/replay.json",
+      "observed_behavior": {
+        "upgrade": "sets proxy implementation slot without a log",
+        "upgradeAndCall": "sets proxy implementation slot and delegates setup call into proxy storage without a log",
+        "changeProxyAdmin": "sets proxy admin slot without a log",
+        "upgrade_to_no_code_address": "accepted in local pinned-runtime replay"
+      },
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "user_deposit_proxy_representative",
+      "address": "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+      "selector": "0x0c506e96",
+      "inferred_arguments": "address,uint256",
+      "candidate_signature": "withdrawStuckToken(address,uint256)",
+      "reconstructed_signature": "withdrawStuckToken(address,uint256)",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "deposit_proxy_behavior.json",
+      "local_replay_evidence": "../../artifacts/deposit_proxy_local/replay.json",
+      "observed_behavior": "Nineteen exact-runtime local tests cover access checks, token return shapes, sweep action bytes, and writer failure rollback",
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    },
+    {
+      "role": "user_deposit_proxy_representative",
+      "address": "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+      "selector": "0x925b3aad",
+      "inferred_arguments": "uint64,uint64,uint64",
+      "candidate_signature": "",
+      "reconstructed_signature": "sweepAllToExchange(uint64,uint64,uint64)",
+      "evidence": "selector_catalog.json",
+      "behavior_evidence": "deposit_proxy_behavior.json",
+      "local_replay_evidence": "../../artifacts/deposit_proxy_local/replay.json",
+      "observed_behavior": "Nineteen exact-runtime local tests cover access checks, token return shapes, sweep action bytes, and writer failure rollback",
+      "gap_behavior_evidence": "selector_gap_other.json",
+      "gap_local_replay_evidence": "../../artifacts/selector_gap_other/replay.json",
+      "gap_evidence_note": "Exact-runtime behavior record with recovered calldata shape, caller guard, state writes, emitted topics and at least one rejection case. No saved historical call exists for this selector, so the historical-trace gap itself remains open."
+    }
+  ],
+  "signed_intent_branch_gaps": [
+    {
+      "role": "exchange_implementation",
+      "selector": "0x8d09f23f",
+      "unresolved": "Local exact-runtime tests now cover invalid and tampered withdrawal signatures, a valid synthetic withdrawal, replay rejection, deadlines, and nonce rollback. All 103 sampled withdrawal nonce bits are checked before and after their blocks, and at the pin. Per-transaction storage diffs, unsampled withdrawals, and other signature encodings remain open.",
+      "evidence": "exchange_withdrawal_signature_behavior.json",
+      "local_evidence": "../../artifacts/audit_signed_intent_failures/replay.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "selector": "0x2792e706",
+      "unresolved": "Local tests cover invalid signatures, nonce and deadline failures, a four-ID close over empty slots with fourth-ID tampering, and a constructed four-active-position close cloned from one historical template. A full historical transaction replay matches two distinct signed closes. Two same-market and two cross-market four-ID gain/loss orders now reconcile balance, fees, locked margin, events, and nonce on exact runtime; all 16 library outputs in eight cross-market PnL and settlement call pairs match independent integer models and their close events. All 43 sampled close nonce bits persisted across their blocks and at the pin. Other rate, liquidity, queue, and margin boundaries plus historical session-key storage for every signer remain open.",
+      "evidence": "session_close_typehash_behavior.json",
+      "nonce_evidence": "trading_nonce_history.json",
+      "local_evidence": "../../artifacts/audit_signed_intent_failures/replay.json",
+      "historical_replay_evidence": "../../artifacts/audit_historical_close/replay.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "selector": "0xec6783f0",
+      "unresolved": "Synthetic local tests cover invalid open signatures, nonce and deadline failures, and a valid session-key signature reaching raw 0x0a4f5a07 in constructed state. One successful historical open replays from archived prestate with logs and storage writes matched. Eight one-field changes to that signed calldata reject with 0xc5045f22, no logs, and no nonce consumption; replay in the next block rejects with 0x756688fe. Archive storage confirms 30 successful open nonce bits persisted and 28 rejected open bits stayed unset, including 27 nested nonce calls rolled back by their parent. A separate local control copies the original signer authorization to the changed user and confirms the changed digest recovers a different signer; the call still rejects. This copied key is a storage override, not a historical registration. Other open business-rule branches and signature encodings remain open.",
+      "evidence": "session_open_typehash_behavior.json",
+      "nonce_evidence": "trading_nonce_history.json",
+      "local_evidence": "../../artifacts/audit_signed_intent_failures/replay.json",
+      "historical_replay_evidence": "../../artifacts/audit_historical_open/replay.json",
+      "tamper_replay_evidence": "../../artifacts/audit_historical_open_tamper/replay.json"
+    }
+  ],
+  "bytecode_proven_initializer_stubs": [
+    {
+      "role": "staking_implementation",
+      "selector": "0xc0c53b8b",
+      "error_selector": "0xb7b2509c",
+      "behavior_evidence": "legacy_initializer_stubs_behavior.json",
+      "linked_probe": "staking_initializers_behavior.json"
+    },
+    {
+      "role": "batch_executor_implementation",
+      "selector": "0xc0c53b8b",
+      "error_selector": "0xb7b2509c",
+      "behavior_evidence": "legacy_initializer_stubs_behavior.json",
+      "linked_probe": "batch_control_behavior.json"
+    },
+    {
+      "role": "deposit_proxy_factory_implementation",
+      "selector": "0xc4d66de8",
+      "error_selector": "0xb7b2509c",
+      "behavior_evidence": "legacy_initializer_stubs_behavior.json",
+      "linked_probe": "factory_behavior.json"
+    }
+  ],
+  "simulated_events_without_resolved_signature": [
+    {
+      "emitter_role": "exchange_proxy",
+      "topic0": "0xb8c6723c829f797c1498cb75af97462c6cb9f3784fe7c0c47bcd42cf42ca94fb",
+      "decoded_layout": "indexed user, source node ID, target node ID; unindexed moved amount",
+      "evidence": "exchange_library_queue_merge_behavior.json",
+      "local_replay_evidence": "../../artifacts/exchange_library_queue_merge_local/replay.json"
+    },
+    {
+      "emitter_role": "exchange_proxy",
+      "topic0": "0xf949f11686e63f08cadf672fb6db7f7b859cb0fe11f2bf80c57db5429453f0cc",
+      "decoded_layout": "indexed user, start node ID, resulting node ID; unindexed merged node count, moved amount",
+      "evidence": "exchange_library_queue_merge_behavior.json",
+      "local_replay_evidence": "../../artifacts/exchange_library_queue_merge_local/replay.json"
+    }
+  ],
+  "observed_events_without_resolved_signature": [
+    {
+      "emitter_role": "exchange_proxy",
+      "topic0": "0xa065d6ba54c5124cd73ce640fd3fbc0ce6eb8a4f4c9d5155347dcc461ad0cffe",
+      "count_last_256_blocks": 29,
+      "evidence": "event_catalog.json",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "behavior_evidence": "exchange_market_fields_behavior.json",
+      "decoded_layout": "indexed uint32 instrument; unindexed uint128 first, uint128 second"
+    },
+    {
+      "emitter_role": "tokenomics_proxy",
+      "topic0": "0x3050fba19ada85812db26b240c13c72cabec711cbf18c7c6b3554d511e2951ee",
+      "count_last_256_blocks": 67,
+      "evidence": "event_catalog.json",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "behavior_evidence": "tokenomics_observed_paths.json",
+      "decoded_layout": "indexed address recipient and uint256 position ID; unindexed bool flag, mint basis, tracked before, tracked after, tail delta, PAPER minted"
+    },
+    {
+      "emitter_role": "tokenomics_proxy",
+      "topic0": "0x620c26bf4591919d64df736a6afdfe2981d15eb343c50644b49456c6facb3ab2",
+      "count_last_256_blocks": 472,
+      "evidence": "event_catalog.json",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "behavior_evidence": "tokenomics_observed_paths.json",
+      "decoded_layout": "indexed address recipient; unindexed debit, mint basis, tracked after debit, tracked after credit, tail delta, PAPER minted"
+    },
+    {
+      "emitter_role": "exchange_proxy",
+      "topic0": "0x5bcf15b0a82479fbcfcb086707ad8be24c96d445448a1f625310e1c3fe491759",
+      "count_saved_receipts": 4,
+      "evidence": "historical_event_catalog.json",
+      "public_name_gap_checks": "public_name_gap_checks.json",
+      "behavior_evidence": "exchange_pair_params_behavior.json",
+      "decoded_layout": "unindexed uint128 first, uint128 second; matches packed slot 28"
+    }
+  ],
+  "unverified_decompiler_error_candidates": {
+    "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee": {
+      "role": "exchange_implementation",
+      "candidates": [
+        {
+          "selector": "0x02b874a6",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "TradingPaused()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x0576e005",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "NoProxy()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x0a4f5a07",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "LeverageTooHigh()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x1b7f36f3",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x25a1ddf3",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "TradeBelowMinimum()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x538ccdfd",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x543a6e10",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "PositionTooLarge()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x612a3522",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x641f87fc",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "LeverageTooLow()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x64cd1788",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x741df939",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "MarketIsPaused()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x75e52f4f",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "QueueEmpty()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x8431a15a",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "TooManyPositions()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x8e667356",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "InsufficientDebtBalance()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x967d697b",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x9f65ace4",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "NotionalBelowMinimum()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0xad0ef2c5",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0xc20280ea",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0xda96f0b6",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0xf4d678b8",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "InsufficientBalance()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        }
+      ]
+    },
+    "0x4f859b790d34767ea325b4888c8c420c34cf85af": {
+      "role": "exchange_implementation_variant_b",
+      "candidates": [
+        {
+          "selector": "0x02b874a6",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "TradingPaused()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x0576e005",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "NoProxy()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x0984a617",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "NoPendingSweep()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x0a4f5a07",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "LeverageTooHigh()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x0a9e0180",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x0d240815",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "MarketAlreadyPaused()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x0dc149f0",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "AlreadyInitialized()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x1b7f36f3",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x25a1ddf3",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "TradeBelowMinimum()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x28ef4314",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "SweepAlreadyPending()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x2d016ae6",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x30cd7471",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "NotOwner()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x40f92143",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "OiCapExceeded()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x49199fb6",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "NotPauseAuthority()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x4f57ffae",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x538ccdfd",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x543a6e10",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "PositionTooLarge()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x58f03bf7",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x612a3522",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x641f87fc",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "LeverageTooLow()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x64cd1788",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x67207a88",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "InvalidInstrumentId()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x6a426315",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "UnsupportedCollateralDecimals()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x741df939",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "MarketIsPaused()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x75e52f4f",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "QueueEmpty()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x8431a15a",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "TooManyPositions()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x8e667356",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "InsufficientDebtBalance()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x924d25e6",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x94e88a21",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "PositionNotOpen()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x967d697b",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x989c4c7c",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x9f65ace4",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "NotionalBelowMinimum()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0xad0ef2c5",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0xb0cb274d",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0xc20280ea",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0xcd4e6167",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "FeeTooHigh()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0xd26ffacb",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0xd9d193d3",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0xda96f0b6",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0xf4d678b8",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "InsufficientBalance()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0xfefe83a0",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        }
+      ]
+    },
+    "0x5a4bda2dcc82749258d9e5cdd49cd52c3cd16388": {
+      "role": "exchange_linked_library_variant_a",
+      "candidates": [
+        {
+          "selector": "0x5b6d2b7a",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0xea097be6",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        }
+      ]
+    },
+    "0x8a5069fe303e8f81e91825436e956d595032e558": {
+      "role": "session_key_manager_implementation",
+      "candidates": [
+        {
+          "selector": "0x276f9a65",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "ZeroAddressKey()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x8baa579f",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "InvalidSignature()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        }
+      ]
+    },
+    "0x93a8e8d647f6c1e7b0f9bf4bd86eff3a9f20c3fb": {
+      "role": "exchange_implementation_variant_a",
+      "candidates": [
+        {
+          "selector": "0x02b874a6",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "TradingPaused()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x0576e005",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "NoProxy()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x0984a617",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "NoPendingSweep()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x0a4f5a07",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "LeverageTooHigh()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x0a9e0180",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x0d240815",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "MarketAlreadyPaused()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x0dc149f0",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "AlreadyInitialized()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x1b7f36f3",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x25a1ddf3",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "TradeBelowMinimum()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x28ef4314",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "SweepAlreadyPending()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x2d016ae6",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x30cd7471",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "NotOwner()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x40f92143",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "OiCapExceeded()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x49199fb6",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "NotPauseAuthority()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x4f57ffae",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x538ccdfd",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x543a6e10",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "PositionTooLarge()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x58f03bf7",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x612a3522",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x641f87fc",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "LeverageTooLow()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x64cd1788",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x67207a88",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "InvalidInstrumentId()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x6a426315",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "UnsupportedCollateralDecimals()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x741df939",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "MarketIsPaused()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x75e52f4f",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "QueueEmpty()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x8431a15a",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "TooManyPositions()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x8e667356",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "InsufficientDebtBalance()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x924d25e6",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x94e88a21",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "PositionNotOpen()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x967d697b",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x989c4c7c",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x9f65ace4",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "NotionalBelowMinimum()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0xad0ef2c5",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0xb0cb274d",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0xc20280ea",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0xcd4e6167",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "FeeTooHigh()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0xd26ffacb",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0xd9d193d3",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0xda96f0b6",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0xf4d678b8",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "InsufficientBalance()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0xfefe83a0",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        }
+      ]
+    },
+    "0xcd617f984158a4f5d287ddee0e8eb0fed204916d": {
+      "role": "exchange_linked_library_live",
+      "candidates": [
+        {
+          "selector": "0xea097be6",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        }
+      ]
+    },
+    "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262": {
+      "role": "batch_executor_implementation",
+      "candidates": [
+        {
+          "selector": "0x904bc503",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        }
+      ]
+    },
+    "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15": {
+      "role": "staking_implementation",
+      "candidates": [
+        {
+          "selector": "0x0dc149f0",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "AlreadyInitialized()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x1f2a2005",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "ZeroAmount()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x30cd7471",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "NotOwner()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x756688fe",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "InvalidNonce()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x8baa579f",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "InvalidSignature()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0x904bc503",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0x90b8ec18",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "TransferFailed()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0xab143c06",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "Reentrancy()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0xda96f0b6",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [],
+          "status": "unverified_heimdall_candidate"
+        },
+        {
+          "selector": "0xf1bc94d2",
+          "runtime_contains_selector": false,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "InsufficientStake()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        },
+        {
+          "selector": "0xf87d9271",
+          "runtime_contains_selector": true,
+          "observed_revert_count": 0,
+          "simulated_revert_probe_count": 0,
+          "public_signature_candidates": [
+            "ExpiredDeadline()"
+          ],
+          "status": "unverified_heimdall_candidate",
+          "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+        }
+      ]
+    }
+  },
+  "observed_reverts_without_public_signature": [
+    {
+      "role": "staking_proxy",
+      "selector": "0xa15ce1ba",
+      "count": 1,
+      "evidence": "observed_reverts.json"
+    },
+    {
+      "role": "staking_implementation",
+      "selector": "0xa15ce1ba",
+      "count": 1,
+      "evidence": "observed_reverts.json"
+    }
+  ],
+  "reverted_view_probes": [
+    {
+      "role": "exchange_implementation",
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "selector": "0xfb9f1009",
+      "candidate_signature": "unpauseMarket(uint32)",
+      "sample_argument": 1,
+      "reason": "sampled call reverted",
+      "evidence": "storage_trace_catalog.json",
+      "behavior_evidence": "exchange_disabled_selector_behavior.json",
+      "behavior_status": "revert path explained by pinned opcode trace"
+    },
+    {
+      "role": "oracle_implementation",
+      "address": "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+      "selector": "0x2af78bd1",
+      "candidate_signature": "getOraclePrice(uint32)",
+      "sample_argument": 1,
+      "reason": "sampled call reverted",
+      "evidence": "storage_trace_catalog.json"
+    },
+    {
+      "role": "oracle_implementation",
+      "address": "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+      "selector": "0x766cd255",
+      "candidate_signature": "",
+      "sample_argument": 1,
+      "reason": "sampled call reverted",
+      "evidence": "storage_trace_catalog.json"
+    },
+    {
+      "role": "oracle_implementation",
+      "address": "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+      "selector": "0xa066fae9",
+      "candidate_signature": "getMarkPrice(uint32)",
+      "sample_argument": 1,
+      "reason": "sampled call reverted",
+      "evidence": "storage_trace_catalog.json"
+    },
+    {
+      "role": "oracle_implementation",
+      "address": "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+      "selector": "0xc0182669",
+      "candidate_signature": "",
+      "sample_argument": 1,
+      "reason": "sampled call reverted",
+      "evidence": "storage_trace_catalog.json"
+    },
+    {
+      "role": "oracle_implementation",
+      "address": "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+      "selector": "0xfb466481",
+      "candidate_signature": "",
+      "sample_argument": 1,
+      "reason": "sampled call reverted",
+      "evidence": "storage_trace_catalog.json"
+    },
+    {
+      "role": "tokenomics_implementation",
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "selector": "0xdb006a75",
+      "candidate_signature": "redeem(uint256)",
+      "sample_argument": null,
+      "reason": "sampled call reverted",
+      "evidence": "storage_trace_catalog.json"
+    },
+    {
+      "role": "tokenomics_implementation",
+      "address": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+      "selector": "0xfe16eae8",
+      "candidate_signature": "quoteRedemption(uint256)",
+      "sample_argument": null,
+      "reason": "sampled call reverted",
+      "evidence": "storage_trace_catalog.json"
+    },
+    {
+      "role": "deposit_proxy_factory_implementation",
+      "address": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "selector": "0xc4d66de8",
+      "candidate_signature": "initialize(address)",
+      "sample_argument": 1436275596337742491148292629605903846977595690234,
+      "reason": "sampled call reverted",
+      "evidence": "storage_trace_catalog.json"
+    },
+    {
+      "role": "staking_implementation",
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "selector": "0x2e17de78",
+      "candidate_signature": "unstake(uint256)",
+      "sample_argument": null,
+      "reason": "sampled call reverted",
+      "evidence": "storage_trace_catalog.json"
+    },
+    {
+      "role": "staking_implementation",
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "selector": "0x4e71d92d",
+      "candidate_signature": "claim()",
+      "sample_argument": null,
+      "reason": "sampled call reverted",
+      "evidence": "storage_trace_catalog.json"
+    },
+    {
+      "role": "staking_implementation",
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "selector": "0xa694fc3a",
+      "candidate_signature": "stake(uint256)",
+      "sample_argument": null,
+      "reason": "sampled call reverted",
+      "evidence": "storage_trace_catalog.json"
+    },
+    {
+      "role": "staking_implementation",
+      "address": "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15",
+      "selector": "0xe4fc6b6d",
+      "candidate_signature": "distribute()",
+      "sample_argument": null,
+      "reason": "sampled call reverted",
+      "evidence": "storage_trace_catalog.json"
+    }
+  ],
+  "fixed_revert_paths": [
+    {
+      "role": "session_key_manager_implementation",
+      "selector": "0x17a1678f",
+      "error_selector": "0xd2dd8531",
+      "source_name_status": "unresolved",
+      "public_signature_candidate": "",
+      "behavior_evidence": "session_disabled_selector_behavior.json",
+      "local_replay_evidence": "../../artifacts/fixed_revert_local/replay.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "selector": "0x1afd17e9",
+      "error_selector": "0x58f03bf7",
+      "source_name_status": "unresolved",
+      "public_signature_candidate": "",
+      "behavior_evidence": "exchange_disabled_paths_behavior.json",
+      "local_replay_evidence": "../../artifacts/fixed_revert_local/replay.json"
+    },
+    {
+      "role": "staking_implementation",
+      "selector": "0x2e17de78",
+      "error_selector": "0xa15ce1ba",
+      "source_name_status": "unresolved; public stake, unstake, claim, and distribute signatures remain candidates",
+      "public_signature_candidate": "",
+      "behavior_evidence": "staking_direct_stubs_behavior.json",
+      "local_replay_evidence": "../../artifacts/fixed_revert_local/replay.json"
+    },
+    {
+      "role": "staking_implementation",
+      "selector": "0x4e71d92d",
+      "error_selector": "0xa15ce1ba",
+      "source_name_status": "unresolved; public stake, unstake, claim, and distribute signatures remain candidates",
+      "public_signature_candidate": "",
+      "behavior_evidence": "staking_direct_stubs_behavior.json",
+      "local_replay_evidence": "../../artifacts/fixed_revert_local/replay.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "selector": "0x58d3ec6a",
+      "error_selector": "0x58f03bf7",
+      "source_name_status": "hash-matching candidate only",
+      "public_signature_candidate": "close(uint256[])",
+      "behavior_evidence": "exchange_disabled_paths_behavior.json",
+      "local_replay_evidence": "../../artifacts/fixed_revert_local/replay.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "selector": "0x63ca348f",
+      "error_selector": "0x58f03bf7",
+      "source_name_status": "unresolved",
+      "public_signature_candidate": "",
+      "behavior_evidence": "exchange_disabled_paths_behavior.json",
+      "local_replay_evidence": "../../artifacts/fixed_revert_local/replay.json"
+    },
+    {
+      "role": "tokenomics_implementation",
+      "selector": "0x7c7df7b4",
+      "error_selector": "0x32aa90b0",
+      "source_name_status": "unresolved",
+      "public_signature_candidate": "",
+      "behavior_evidence": "tokenomics_seven_word_stub_behavior.json",
+      "local_replay_evidence": "../../artifacts/fixed_revert_local/replay.json"
+    },
+    {
+      "role": "staking_implementation",
+      "selector": "0xa694fc3a",
+      "error_selector": "0xa15ce1ba",
+      "source_name_status": "unresolved; public stake, unstake, claim, and distribute signatures remain candidates",
+      "public_signature_candidate": "",
+      "behavior_evidence": "staking_direct_stubs_behavior.json",
+      "local_replay_evidence": "../../artifacts/fixed_revert_local/replay.json"
+    },
+    {
+      "role": "tokenomics_implementation",
+      "selector": "0xdb006a75",
+      "error_selector": "0x32aa90b0",
+      "source_name_status": "hash-matching selector preimages; original Solidity names unverified",
+      "public_signature_candidate": "redeem(uint256)",
+      "behavior_evidence": "tokenomics_redemption_stub_behavior.json",
+      "local_replay_evidence": "../../artifacts/fixed_revert_local/replay.json"
+    },
+    {
+      "role": "staking_implementation",
+      "selector": "0xe4fc6b6d",
+      "error_selector": "0xa15ce1ba",
+      "source_name_status": "unresolved; public stake, unstake, claim, and distribute signatures remain candidates",
+      "public_signature_candidate": "",
+      "behavior_evidence": "staking_direct_stubs_behavior.json",
+      "local_replay_evidence": "../../artifacts/fixed_revert_local/replay.json"
+    },
+    {
+      "role": "exchange_implementation",
+      "selector": "0xfb9f1009",
+      "error_selector": "0xd9d193d3",
+      "source_name_status": "unverified; selector hash match only",
+      "public_signature_candidate": "unpauseMarket(uint32)",
+      "behavior_evidence": "exchange_disabled_selector_behavior.json",
+      "local_replay_evidence": "../../artifacts/fixed_revert_local/replay.json"
+    },
+    {
+      "role": "tokenomics_implementation",
+      "selector": "0xfe16eae8",
+      "error_selector": "0x32aa90b0",
+      "source_name_status": "hash-matching selector preimages; original Solidity names unverified",
+      "public_signature_candidate": "quoteRedemption(uint256)",
+      "behavior_evidence": "tokenomics_redemption_stub_behavior.json",
+      "local_replay_evidence": "../../artifacts/fixed_revert_local/replay.json"
+    }
+  ],
+  "replay_storage_mismatches": [],
+  "limits": [
+    "The 25-address manifest and its selector coverage describe the newest suite only; 38 earlier direct creations and 38 older factory-created user proxies still have code at the pin, and the earlier suites are not behavior-audited. See deployer_scope.md.",
+    "No verified Solidity source was available for the 17 nonproxy runtimes checked.",
+    "The call graph is based on 139 sampled historical transactions, so unobserved calls and internal branches remain.",
+    "The HyperCore boundary ledger covers 482 calls in 170 saved traces, not every historical boundary call or selector.",
+    "CoreWriter action submission is visible in EVM traces, but later HyperCore settlement and the one-USD debit disposition are unverified.",
+    "Heimdall pseudocode and error candidates are hypotheses until checked against opcode traces.",
+    "Only 42 deposit proxy runtimes were fetched directly at the pin; the other 22,544 are derived from deterministic CREATE2 initcode and matching deployment addresses.",
+    "Unknown topics emitted by external contracts in saved receipts are retained in the historical event catalog but excluded from Papertrade-specific unresolved topics."
+  ]
+}

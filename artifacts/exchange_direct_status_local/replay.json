@@ -1,0 +1,26 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "runtime_hashes": {
+    "Proxy": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "Implementation": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1"
+  },
+  "test_source_sha256": "43fc29120f53a6ec7471c6aeaaa918b6f21d835c3ca5279c9f8aeb279bb53907",
+  "forge_result": "4 passed, 0 failed",
+  "test_names": [
+    "testStatusOneExactBalance",
+    "testStatusOneHeadroom",
+    "testStatusZeroExactBalanceRejected",
+    "testStatusZeroHeadroom"
+  ],
+  "same_state_raw_amount": 1581398913,
+  "historical_prestate_transaction": "0xd11efba2b91838576b957f7297677b46676ec7a27db60331377212f4de8ba771",
+  "historical_prestate_sha256": "b60c8b854aa734ea131ff9831a8d700c46e142f93340ef3c077290967be9c950",
+  "pinned_storage_sha256": "122c65632bb47b645428ae95ece2451bc28565c28e4ff993f1a769e3095444c7",
+  "status_zero_expected_debit": "1582398913000000000000",
+  "status_one_expected_debit": "1581398913000000000000",
+  "status_zero_exact_balance_reverts": "0xa3b9a36c",
+  "status_one_exact_balance_clears_user_balance": true
+}

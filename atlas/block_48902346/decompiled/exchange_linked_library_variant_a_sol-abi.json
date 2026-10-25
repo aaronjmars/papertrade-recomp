@@ -1,0 +1,338 @@
+[
+  {
+    "type": "function",
+    "name": "Unresolved_18958ce2",
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "uint256"
+      },
+      {
+        "name": "arg1",
+        "type": "address"
+      },
+      {
+        "name": "arg2",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "payable"
+  },
+  {
+    "type": "function",
+    "name": "Unresolved_2448a553",
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "uint256"
+      },
+      {
+        "name": "arg1",
+        "type": "address"
+      },
+      {
+        "name": "arg2",
+        "type": "uint256"
+      },
+      {
+        "name": "arg3",
+        "type": "uint256"
+      },
+      {
+        "name": "arg4",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "payable"
+  },
+  {
+    "type": "function",
+    "name": "Unresolved_32db40c9",
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "uint256"
+      },
+      {
+        "name": "arg1",
+        "type": "address"
+      },
+      {
+        "name": "arg2",
+        "type": "uint256"
+      },
+      {
+        "name": "arg3",
+        "type": "uint256"
+      },
+      {
+        "name": "arg4",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "payable"
+  },
+  {
+    "type": "function",
+    "name": "Unresolved_3cf4208d",
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "uint256"
+      },
+      {
+        "name": "arg1",
+        "type": "address"
+      },
+      {
+        "name": "arg2",
+        "type": "uint256"
+      },
+      {
+        "name": "arg3",
+        "type": "uint256"
+      },
+      {
+        "name": "arg4",
+        "type": "uint256"
+      },
+      {
+        "name": "arg5",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "payable"
+  },
+  {
+    "type": "function",
+    "name": "Unresolved_3f4e3626",
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "uint256"
+      },
+      {
+        "name": "arg1",
+        "type": "address"
+      },
+      {
+        "name": "arg2",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "payable"
+  },
+  {
+    "type": "function",
+    "name": "Unresolved_79810ffe",
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "uint256"
+      },
+      {
+        "name": "arg1",
+        "type": "uint256"
+      },
+      {
+        "name": "arg2",
+        "type": "uint256"
+      },
+      {
+        "name": "arg3",
+        "type": "uint256"
+      },
+      {
+        "name": "arg4",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "payable"
+  },
+  {
+    "type": "function",
+    "name": "Unresolved_82296364",
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "uint64"
+      },
+      {
+        "name": "arg1",
+        "type": "uint64"
+      },
+      {
+        "name": "arg2",
+        "type": "address"
+      },
+      {
+        "name": "arg3",
+        "type": "uint32"
+      },
+      {
+        "name": "arg4",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "pure"
+  },
+  {
+    "type": "function",
+    "name": "Unresolved_b67f3dd7",
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "uint256"
+      },
+      {
+        "name": "arg1",
+        "type": "uint64"
+      },
+      {
+        "name": "arg2",
+        "type": "uint64"
+      },
+      {
+        "name": "arg3",
+        "type": "uint256"
+      },
+      {
+        "name": "arg4",
+        "type": "uint256"
+      },
+      {
+        "name": "arg5",
+        "type": "uint256"
+      },
+      {
+        "name": "arg6",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "type": "function",
+    "name": "Unresolved_ca02ff91",
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "uint256"
+      },
+      {
+        "name": "arg1",
+        "type": "address"
+      },
+      {
+        "name": "arg2",
+        "type": "uint256"
+      },
+      {
+        "name": "arg3",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "payable"
+  },
+  {
+    "type": "function",
+    "name": "Unresolved_ef1a27a9",
+    "inputs": [
+      {
+        "name": "arg0",
+        "type": "uint256"
+      },
+      {
+        "name": "arg1",
+        "type": "address"
+      },
+      {
+        "name": "arg2",
+        "type": "address"
+      },
+      {
+        "name": "arg3",
+        "type": "uint256"
+      },
+      {
+        "name": "arg4",
+        "type": "uint256"
+      },
+      {
+        "name": "arg5",
+        "type": "uint256"
+      },
+      {
+        "name": "arg6",
+        "type": "uint256"
+      },
+      {
+        "name": "arg7",
+        "type": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "view"
+  },
+  {
+    "type": "event",
+    "name": "Event_4c672bd1e7444966ce521bc0f053d4f359f1fad9cfe6a43011c00baac6278e4d",
+    "inputs": [],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "Event_f949f11686e63f08cadf672fb6db7f7b859cb0fe11f2bf80c57db5429453f0cc",
+    "inputs": [],
+    "anonymous": false
+  },
+  {
+    "type": "error",
+    "name": "CustomError_000000000000000000000000000000000000000000000000000000005b6d2b7a",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CustomError_00000000000000000000000000000000000000000000000000000000ea097be6",
+    "inputs": []
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "controlled_mock": "HyperCore spot balance and CoreWriter code",
+  "maximum_failure_raw": 999999999,
+  "minimum_success_raw": 1000000000,
+  "maximum_failure_revert_selector": "0x329c2b0f",
+  "minimum_success_events": [
+    {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "topics": [
+        "0x02d61879cd72906e0951e3a96096407dd2b1f2cd2d063dae983bb20216cf3025",
+        "0x0000000000000000000000001730a930cfd0da43255081801bf1a3eb0b69ec83",
+        "0x0000000000000000000000002e38ce35e63bfae2a85bf6db885ffcedaa76e18e"
+      ],
+      "data": "0x000000000000000000000000000000000000000000000000000000003b9aca0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002ea30ca",
+      "position": "0x4",
+      "index": "0x0"
+    }
+  ]
+}

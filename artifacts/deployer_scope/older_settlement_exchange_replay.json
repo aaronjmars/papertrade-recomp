@@ -1,0 +1,109 @@
+{
+  "fork_block": 47721328,
+  "base_source_sha256": "b3578887ea86add0d0d20ff30291e848f1a73dc67650f46e508c586d6a5f9fa2",
+  "test_source_sha256": "556faf2c23d2301e67ee1d22baec5d4b4c200aa2e383eaaf863c3c264b40f483",
+  "trace_sha256": "a37a3e5261c609833665aa217d844548f403974d09c3c30c5acb738884296971",
+  "forge_result": "5 passed, 0 failed",
+  "cases": [
+    {
+      "test": "testTightAtFeeThresholdPaysFee",
+      "gas": 583959,
+      "available_argument": 337779183148735913,
+      "adjusted_pnl": 331156061910525405,
+      "credited_gain": 324532940672314897,
+      "queued_gain": 0,
+      "return_words": [
+        25000000000000000000,
+        324532940672314897,
+        0,
+        0,
+        3311560619105254,
+        3311560619105254
+      ],
+      "staker_fee_delta": 3311560619105254,
+      "dev_fee_delta": 3311560619105254,
+      "enqueued_event": false
+    },
+    {
+      "test": "testTightBelowFeeThresholdPaysWithoutFee",
+      "gas": 578176,
+      "available_argument": 337779183148735912,
+      "adjusted_pnl": 331156061910525405,
+      "credited_gain": 331156061910525405,
+      "queued_gain": 0,
+      "return_words": [
+        25000000000000000000,
+        331156061910525405,
+        0,
+        0,
+        0,
+        0
+      ],
+      "staker_fee_delta": 0,
+      "dev_fee_delta": 0,
+      "enqueued_event": false
+    },
+    {
+      "test": "testTightExactGainPaysWithoutFee",
+      "gas": 577874,
+      "available_argument": 331156061910525405,
+      "adjusted_pnl": 331156061910525405,
+      "credited_gain": 331156061910525405,
+      "queued_gain": 0,
+      "return_words": [
+        25000000000000000000,
+        331156061910525405,
+        0,
+        0,
+        0,
+        0
+      ],
+      "staker_fee_delta": 0,
+      "dev_fee_delta": 0,
+      "enqueued_event": false
+    },
+    {
+      "test": "testTightPartialQueuesRemainder",
+      "gas": 719268,
+      "available_argument": 331156061910525404,
+      "adjusted_pnl": 331156061910525405,
+      "credited_gain": 331156061910525404,
+      "queued_gain": 1,
+      "return_words": [
+        25000000000000000000,
+        331156061910525404,
+        1,
+        0,
+        0,
+        0
+      ],
+      "staker_fee_delta": 0,
+      "dev_fee_delta": 0,
+      "enqueued_event": true
+    },
+    {
+      "test": "testTightZeroQueuesGain",
+      "gas": 718742,
+      "available_argument": 0,
+      "adjusted_pnl": 331156061910525405,
+      "credited_gain": 0,
+      "queued_gain": 331156061910525405,
+      "return_words": [
+        25000000000000000000,
+        0,
+        331156061910525405,
+        0,
+        0,
+        0
+      ],
+      "staker_fee_delta": 0,
+      "dev_fee_delta": 0,
+      "enqueued_event": true
+    }
+  ],
+  "limits": [
+    "The historical fork state is retained, but signer authorization and the close price are locally constructed.",
+    "Treasury slot 14 is overridden to force selected LP bankroll values; this does not show that a user can cause those values on-chain.",
+    "The replay verifies internal balance, queue and fee storage, not HyperCore delivery or a profitable attack."
+  ]
+}

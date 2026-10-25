@@ -1,0 +1,2207 @@
+{
+  "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee": {
+    "role": "exchange_implementation",
+    "candidates": [
+      {
+        "selector": "0x02b874a6",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "TradingPaused()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x0576e005",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "NoProxy()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x0984a617",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 2,
+        "public_signature_candidates": [
+          "NoPendingSweep()"
+        ],
+        "reconstructed_signature": "NoPendingSweep()",
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x0a4f5a07",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "LeverageTooHigh()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x0a9e0180",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 6,
+        "public_signature_candidates": [
+          "NoCoreBalance()"
+        ],
+        "reconstructed_signature": "NoCoreBalance()",
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x0d240815",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "MarketAlreadyPaused()"
+        ],
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json",
+        "reconstructed_signature": "MarketAlreadyPaused()",
+        "signature_source": "artifacts/openchain_unverified_error_lookup.json",
+        "behavior_evidence": "exchange_pause_behavior.json"
+      },
+      {
+        "selector": "0x0dc149f0",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "AlreadyInitialized()"
+        ],
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json",
+        "reconstructed_signature": "AlreadyInitialized()",
+        "signature_source": "artifacts/openchain_unverified_error_lookup.json",
+        "behavior_evidence": "exchange_initializer_behavior.json"
+      },
+      {
+        "selector": "0x1b7f36f3",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x25a1ddf3",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "TradeBelowMinimum()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x28ef4314",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 2,
+        "public_signature_candidates": [
+          "SweepAlreadyPending()"
+        ],
+        "reconstructed_signature": "SweepAlreadyPending()",
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json",
+        "signature_source": "artifacts/openchain_unverified_error_lookup.json",
+        "behavior_evidence": "exchange_sweep_recovery_behavior.json"
+      },
+      {
+        "selector": "0x2d016ae6",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 3,
+        "public_signature_candidates": [],
+        "reconstructed_signature": "NotDevFeeRecipient()",
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x30cd7471",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 6,
+        "public_signature_candidates": [
+          "NotOwner()"
+        ],
+        "reconstructed_signature": "NotOwner()",
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x329c2b0f",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 6,
+        "public_signature_candidates": [
+          "SweepBelowMinimum()"
+        ],
+        "reconstructed_signature": "SweepBelowMinimum()",
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x40f92143",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 27,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "OiCapExceeded()"
+        ],
+        "status": "observed_revert_selector",
+        "reconstructed_signature": "OiCapExceeded()",
+        "signature_source": "artifacts/openchain_error_40f92143.json",
+        "behavior_evidence": "exchange_open_limit_full_behavior.json",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x49199fb6",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 3,
+        "public_signature_candidates": [
+          "NotPauseAuthority()"
+        ],
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json",
+        "reconstructed_signature": "NotPauseAuthority()",
+        "signature_source": "artifacts/openchain_unverified_error_lookup.json",
+        "behavior_evidence": "exchange_pause_behavior.json"
+      },
+      {
+        "selector": "0x4f57ffae",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x538ccdfd",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x543a6e10",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "PositionTooLarge()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x58f03bf7",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "bytecode_verified_revert_selector",
+        "bytecode_evidence": "exchange_disabled_paths_behavior.json"
+      },
+      {
+        "selector": "0x612a3522",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x641f87fc",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "LeverageTooLow()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x64cd1788",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x67207a88",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 3,
+        "public_signature_candidates": [
+          "InvalidInstrumentId()"
+        ],
+        "reconstructed_signature": "InvalidInstrumentId()",
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x6a426315",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "UnsupportedCollateralDecimals()"
+        ],
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json",
+        "reconstructed_signature": "UnsupportedCollateralDecimals()",
+        "signature_source": "artifacts/openchain_unverified_error_lookup.json",
+        "behavior_evidence": "exchange_initializer_behavior.json"
+      },
+      {
+        "selector": "0x741df939",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "MarketIsPaused()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x75e52f4f",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "QueueEmpty()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x8431a15a",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "TooManyPositions()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x8e667356",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "InsufficientDebtBalance()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x924d25e6",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x94e88a21",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "PositionNotOpen()"
+        ],
+        "reconstructed_signature": "PositionNotOpen()",
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x967d697b",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x989c4c7c",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x9f65ace4",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "NotionalBelowMinimum()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0xa3b9a36c",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xad0ef2c5",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0xad21c3fb",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 2,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xb0cb274d",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 4,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xc20280ea",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0xcd4e6167",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 3,
+        "public_signature_candidates": [
+          "FeeTooHigh()"
+        ],
+        "reconstructed_signature": "FeeTooHigh()",
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0xd26ffacb",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "SweepStillPending()"
+        ],
+        "reconstructed_signature": "SweepStillPending()",
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xd9d193d3",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 4,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xda96f0b6",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0xddeb79ba",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 4,
+        "public_signature_candidates": [],
+        "reconstructed_signature": "NotLiquidatable()",
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xf4d678b8",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "InsufficientBalance()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0xfefe83a0",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "SweepAlreadyRequestedThisBlock()"
+        ],
+        "reconstructed_signature": "SweepAlreadyRequestedThisBlock()",
+        "status": "simulated_revert_selector"
+      }
+    ]
+  },
+  "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a": {
+    "role": "oracle_implementation",
+    "candidates": [
+      {
+        "selector": "0x0dc149f0",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "AlreadyInitialized()"
+        ],
+        "reconstructed_signature": "AlreadyInitialized()",
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x30cd7471",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "NotOwner()"
+        ],
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json",
+        "reconstructed_signature": "NotOwner()",
+        "signature_source": "artifacts/openchain_unverified_error_lookup.json",
+        "behavior_evidence": "oracle_behavior.json"
+      }
+    ]
+  },
+  "0x433bd418ec92818a960585f4d5fae563e735bb4a": {
+    "role": "paper_token_implementation",
+    "candidates": [
+      {
+        "selector": "0x0dc149f0",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "AlreadyInitialized()"
+        ],
+        "reconstructed_signature": "AlreadyInitialized()",
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x13be252b",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [],
+        "reconstructed_signature": "InsufficientAllowance()",
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x30cd7471",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 3,
+        "public_signature_candidates": [
+          "NotOwner()"
+        ],
+        "reconstructed_signature": "NotOwner()",
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0xe827105e",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 1,
+        "simulated_revert_probe_count": 9,
+        "public_signature_candidates": [],
+        "reconstructed_signature": "TransferRestricted()",
+        "status": "observed_revert_selector"
+      },
+      {
+        "selector": "0xf4d678b8",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "InsufficientBalance()"
+        ],
+        "reconstructed_signature": "InsufficientBalance()",
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0xf8d2906c",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 2,
+        "public_signature_candidates": [],
+        "reconstructed_signature": "NotMinter()",
+        "status": "simulated_revert_selector"
+      }
+    ]
+  },
+  "0x4f859b790d34767ea325b4888c8c420c34cf85af": {
+    "role": "exchange_implementation_variant_b",
+    "candidates": [
+      {
+        "selector": "0x02b874a6",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "TradingPaused()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x0576e005",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "NoProxy()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x0984a617",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "NoPendingSweep()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x0a4f5a07",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "LeverageTooHigh()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x0a9e0180",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x0d240815",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "MarketAlreadyPaused()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x0dc149f0",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "AlreadyInitialized()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x1b7f36f3",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x25a1ddf3",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "TradeBelowMinimum()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x28ef4314",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "SweepAlreadyPending()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x2d016ae6",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x30cd7471",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "NotOwner()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x40f92143",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "OiCapExceeded()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x49199fb6",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "NotPauseAuthority()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x4f57ffae",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x538ccdfd",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x543a6e10",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "PositionTooLarge()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x58f03bf7",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x612a3522",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x641f87fc",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "LeverageTooLow()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x64cd1788",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x67207a88",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "InvalidInstrumentId()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x6a426315",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "UnsupportedCollateralDecimals()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x741df939",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "MarketIsPaused()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x75e52f4f",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "QueueEmpty()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x8431a15a",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "TooManyPositions()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x8e667356",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "InsufficientDebtBalance()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x924d25e6",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x94e88a21",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "PositionNotOpen()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x967d697b",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x989c4c7c",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x9f65ace4",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "NotionalBelowMinimum()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0xad0ef2c5",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0xb0cb274d",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0xc20280ea",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0xcd4e6167",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "FeeTooHigh()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0xd26ffacb",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0xd9d193d3",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0xda96f0b6",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0xf4d678b8",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "InsufficientBalance()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0xfefe83a0",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      }
+    ]
+  },
+  "0x5a4bda2dcc82749258d9e5cdd49cd52c3cd16388": {
+    "role": "exchange_linked_library_variant_a",
+    "candidates": [
+      {
+        "selector": "0x5b6d2b7a",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0xea097be6",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      }
+    ]
+  },
+  "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f": {
+    "role": "tokenomics_implementation",
+    "candidates": [
+      {
+        "selector": "0x0dc149f0",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "AlreadyInitialized()"
+        ],
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json",
+        "reconstructed_signature": "AlreadyInitialized()",
+        "signature_source": "artifacts/openchain_unverified_error_lookup.json",
+        "behavior_evidence": "tokenomics_initializer_behavior.json"
+      },
+      {
+        "selector": "0x30cd7471",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 2,
+        "public_signature_candidates": [
+          "NotOwner()"
+        ],
+        "reconstructed_signature": "NotOwner()",
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x32aa90b0",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 6,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector",
+        "bytecode_evidence": "tokenomics_redemption_stub_behavior.json",
+        "selector_constructed_in_runtime": true,
+        "additional_bytecode_evidence": "tokenomics_seven_word_stub_behavior.json"
+      },
+      {
+        "selector": "0x85c58396",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xbad8ef95",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 7,
+        "public_signature_candidates": [],
+        "reconstructed_signature": "InvalidMintParams()",
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xe247b81f",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xe343677f",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 3,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      }
+    ]
+  },
+  "0x696292762fd5ac3677a45edbe54eaece4194d1f6": {
+    "role": "one_of_two_multisig",
+    "candidates": [
+      {
+        "selector": "0x137b4559",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x15fcd675",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "ExecutionFailed(bytes)"
+        ],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x29c3b7ee",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "NotSelf()"
+        ],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x4e11f906",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "TransactionHashMismatch()"
+        ],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x500a07ce",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 2,
+        "public_signature_candidates": [
+          "InvalidTransaction()"
+        ],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x815e1d64",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 3,
+        "public_signature_candidates": [
+          "InvalidSigner()"
+        ],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x82235d53",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 2,
+        "public_signature_candidates": [
+          "TransactionNotPending()"
+        ],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xa1b035c8",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 3,
+        "public_signature_candidates": [
+          "NotSigner()"
+        ],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xc5446884",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "NotSubmitter()"
+        ],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xe1577073",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "StaleTransaction()"
+        ],
+        "status": "simulated_revert_selector"
+      }
+    ]
+  },
+  "0x8a5069fe303e8f81e91825436e956d595032e558": {
+    "role": "session_key_manager_implementation",
+    "candidates": [
+      {
+        "selector": "0x0dc149f0",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "AlreadyInitialized()"
+        ],
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json",
+        "reconstructed_signature": "AlreadyInitialized()",
+        "signature_source": "artifacts/openchain_unverified_error_lookup.json",
+        "behavior_evidence": "session_initializer_behavior.json"
+      },
+      {
+        "selector": "0x276f9a65",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "ZeroAddressKey()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x30cd7471",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 2,
+        "public_signature_candidates": [
+          "NotOwner()"
+        ],
+        "reconstructed_signature": "NotOwner()",
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x5c427cd9",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "UnauthorizedCaller()"
+        ],
+        "reconstructed_signature": "UnauthorizedCaller()",
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x756688fe",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 2,
+        "public_signature_candidates": [
+          "InvalidNonce()"
+        ],
+        "reconstructed_signature": "InvalidNonce()",
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x8baa579f",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "InvalidSignature()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x93b78c88",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "UnauthorizedSubmitter()"
+        ],
+        "reconstructed_signature": "UnauthorizedSubmitter()",
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xc5045f22",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 8,
+        "public_signature_candidates": [
+          "SessionKeyNotAuthorized()"
+        ],
+        "reconstructed_signature": "SessionKeyNotAuthorized()",
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xd2dd8531",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "bytecode_verified_revert_selector",
+        "bytecode_evidence": "session_disabled_selector_behavior.json"
+      },
+      {
+        "selector": "0xda0700a2",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "SessionKeyExpired()"
+        ],
+        "reconstructed_signature": "SessionKeyExpired()",
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xf50220aa",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 4,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xf87d9271",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "ExpiredDeadline()"
+        ],
+        "reconstructed_signature": "ExpiredDeadline()",
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      }
+    ]
+  },
+  "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0": {
+    "role": "deposit_proxy_factory_implementation",
+    "candidates": [
+      {
+        "selector": "0x0dc149f0",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "AlreadyInitialized()"
+        ],
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json",
+        "reconstructed_signature": "AlreadyInitialized()",
+        "signature_source": "artifacts/openchain_unverified_error_lookup.json",
+        "behavior_evidence": "factory_behavior.json"
+      },
+      {
+        "selector": "0x27fba80a",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x30cd7471",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 2,
+        "public_signature_candidates": [
+          "NotOwner()"
+        ],
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json",
+        "reconstructed_signature": "NotOwner()",
+        "signature_source": "artifacts/openchain_unverified_error_lookup.json",
+        "behavior_evidence": "factory_behavior.json"
+      },
+      {
+        "selector": "0x3f733c4f",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x40892c33",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "InvalidExchange()"
+        ],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x904bc503",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xb7b2509c",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xc031a0df",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      }
+    ]
+  },
+  "0x93a8e8d647f6c1e7b0f9bf4bd86eff3a9f20c3fb": {
+    "role": "exchange_implementation_variant_a",
+    "candidates": [
+      {
+        "selector": "0x02b874a6",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "TradingPaused()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x0576e005",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "NoProxy()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x0984a617",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "NoPendingSweep()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x0a4f5a07",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "LeverageTooHigh()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x0a9e0180",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x0d240815",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "MarketAlreadyPaused()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x0dc149f0",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "AlreadyInitialized()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x1b7f36f3",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x25a1ddf3",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "TradeBelowMinimum()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x28ef4314",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "SweepAlreadyPending()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x2d016ae6",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x30cd7471",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "NotOwner()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x40f92143",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "OiCapExceeded()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x49199fb6",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "NotPauseAuthority()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x4f57ffae",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x538ccdfd",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x543a6e10",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "PositionTooLarge()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x58f03bf7",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x612a3522",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x641f87fc",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "LeverageTooLow()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x64cd1788",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x67207a88",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "InvalidInstrumentId()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x6a426315",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "UnsupportedCollateralDecimals()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x741df939",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "MarketIsPaused()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x75e52f4f",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "QueueEmpty()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x8431a15a",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "TooManyPositions()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x8e667356",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "InsufficientDebtBalance()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x924d25e6",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x94e88a21",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "PositionNotOpen()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x967d697b",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x989c4c7c",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x9f65ace4",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "NotionalBelowMinimum()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0xad0ef2c5",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0xb0cb274d",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0xc20280ea",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0xcd4e6167",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "FeeTooHigh()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0xd26ffacb",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0xd9d193d3",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0xda96f0b6",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0xf4d678b8",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "InsufficientBalance()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0xfefe83a0",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      }
+    ]
+  },
+  "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f": {
+    "role": "timelock",
+    "candidates": [
+      {
+        "selector": "0x15fcd675",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 2,
+        "public_signature_candidates": [
+          "ExecutionFailed(bytes)"
+        ],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x18d96a80",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 4,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x27c0d610",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 2,
+        "public_signature_candidates": [
+          "OperationNotScheduled()"
+        ],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x29c3b7ee",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 2,
+        "public_signature_candidates": [
+          "NotSelf()"
+        ],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x30cd7471",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 6,
+        "public_signature_candidates": [
+          "NotOwner()"
+        ],
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json",
+        "reconstructed_signature": "NotOwner()",
+        "signature_source": "artifacts/openchain_unverified_error_lookup.json",
+        "behavior_evidence": "timelock_behavior.json"
+      },
+      {
+        "selector": "0x49e27cff",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "InvalidOwner()"
+        ],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x9b382476",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 2,
+        "public_signature_candidates": [
+          "OperationAlreadyScheduled()"
+        ],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xaa7feadc",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 3,
+        "public_signature_candidates": [
+          "InvalidValue()"
+        ],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xf800799b",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 3,
+        "public_signature_candidates": [
+          "OperationNotReady()"
+        ],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xff633a38",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 3,
+        "public_signature_candidates": [
+          "LengthMismatch()"
+        ],
+        "status": "simulated_revert_selector"
+      }
+    ]
+  },
+  "0xcd617f984158a4f5d287ddee0e8eb0fed204916d": {
+    "role": "exchange_linked_library_live",
+    "candidates": [
+      {
+        "selector": "0x5b6d2b7a",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 5,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector",
+        "behavior_evidence": "exchange_library_queue_merge_behavior.json",
+        "local_replay_evidence": "../../artifacts/exchange_library_queue_merge_local/replay.json",
+        "additional_behavior_evidence": "exchange_library_queue_interleaved_behavior.json",
+        "additional_local_replay_evidence": "../../artifacts/exchange_library_queue_interleaved_local/replay.json"
+      },
+      {
+        "selector": "0xea097be6",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      }
+    ]
+  },
+  "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262": {
+    "role": "batch_executor_implementation",
+    "candidates": [
+      {
+        "selector": "0x0dc149f0",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "AlreadyInitialized()"
+        ],
+        "reconstructed_signature": "AlreadyInitialized()",
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x17fb2066",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [],
+        "reconstructed_signature": "NotAuthorizedRelayer()",
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x30cd7471",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "NotOwner()"
+        ],
+        "reconstructed_signature": "NotOwner()",
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x3f733c4f",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x651ab1b3",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [],
+        "reconstructed_signature": "BatchCallFailed(uint256,bytes)",
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x904bc503",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0xb7b2509c",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 2,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xc031a0df",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      }
+    ]
+  },
+  "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15": {
+    "role": "staking_implementation",
+    "candidates": [
+      {
+        "selector": "0x0dc149f0",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "AlreadyInitialized()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x1f2a2005",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "ZeroAmount()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x30cd7471",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "NotOwner()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x3f733c4f",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0x756688fe",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "InvalidNonce()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x8baa579f",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "InvalidSignature()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x904bc503",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0x90b8ec18",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "TransferFailed()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0xa15ce1ba",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 1,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "observed_revert_selector",
+        "bytecode_evidence": "staking_direct_stubs_behavior.json"
+      },
+      {
+        "selector": "0xab143c06",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "Reentrancy()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0xb7b2509c",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 3,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xc031a0df",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [],
+        "status": "simulated_revert_selector"
+      },
+      {
+        "selector": "0xda96f0b6",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [],
+        "status": "unverified_heimdall_candidate"
+      },
+      {
+        "selector": "0xf1bc94d2",
+        "runtime_contains_selector": false,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "InsufficientStake()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0xf87d9271",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 0,
+        "public_signature_candidates": [
+          "ExpiredDeadline()"
+        ],
+        "status": "unverified_heimdall_candidate",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      }
+    ]
+  },
+  "0xe79c91cc682f1bb401a9cab74c900470190f0f8f": {
+    "role": "proxy_admin",
+    "candidates": [
+      {
+        "selector": "0x30cd7471",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [
+          "NotOwner()"
+        ],
+        "reconstructed_signature": "NotOwner()",
+        "status": "simulated_revert_selector",
+        "public_registry_evidence": "../../artifacts/openchain_unverified_error_lookup.json"
+      },
+      {
+        "selector": "0x49e27cff",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 1,
+        "public_signature_candidates": [],
+        "reconstructed_signature": "InvalidOwner()",
+        "status": "simulated_revert_selector"
+      }
+    ]
+  },
+  "0xe991817199363046da0a28da6fbad0284e4aa492": {
+    "role": "paper_math_library",
+    "candidates": []
+  },
+  "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce": {
+    "role": "user_deposit_proxy_representative",
+    "candidates": [
+      {
+        "selector": "0xfadaa871",
+        "runtime_contains_selector": true,
+        "observed_revert_count": 0,
+        "simulated_revert_probe_count": 2,
+        "public_signature_candidates": [
+          "CoreAmountOverflow()"
+        ],
+        "reconstructed_signature": "CoreAmountOverflow()",
+        "status": "simulated_revert_selector"
+      }
+    ]
+  }
+}

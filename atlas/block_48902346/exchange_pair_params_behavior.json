@@ -1,0 +1,79 @@
+{
+  "pin_block": 48902346,
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "setter_selector": "0x82f47a3f",
+  "getter_selector": "0x1b7c1009",
+  "event_topic0": "0x5bcf15b0a82479fbcfcb086707ad8be24c96d445448a1f625310e1c3fe491759",
+  "storage_slot": 28,
+  "layout": "first uint128 low; second uint128 high",
+  "historical_transaction": "0xacb4196d218190144cf1c12c5a2316e4e053cec274ac3981f79f733cb2857d1a",
+  "historical_pair": [
+    "1000000000000000000",
+    "5000000000000000000000"
+  ],
+  "historical_update_count": 4,
+  "historical_updates": [
+    {
+      "tx": "0xacb4196d218190144cf1c12c5a2316e4e053cec274ac3981f79f733cb2857d1a",
+      "block": 47925886,
+      "caller": "0x3721476de31190dc1af8908026abe20efe25cf99",
+      "pair": [
+        "1000000000000000000",
+        "5000000000000000000000"
+      ],
+      "pre_word": "0x0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+      "post_word": "0x000000000000010f0cf064dd5920000000000000000000000de0b6b3a7640000"
+    },
+    {
+      "tx": "0x71fa482279c4007bfbb28040314006e87200c5ce7c02eb9e72141f682c447b95",
+      "block": 48073909,
+      "caller": "0x3721476de31190dc1af8908026abe20efe25cf99",
+      "pair": [
+        "100000000000000000000",
+        "10000000000000000000000"
+      ],
+      "pre_word": "0x000000000000010f0cf064dd5920000000000000000000000de0b6b3a7640000",
+      "post_word": "0x000000000000021e19e0c9bab240000000000000000000056bc75e2d63100000"
+    },
+    {
+      "tx": "0x24ab0124a2abb12137304e89e8ebf97e966d44bfa4342cd6e315ee3d9dd91dd6",
+      "block": 48073990,
+      "caller": "0x3721476de31190dc1af8908026abe20efe25cf99",
+      "pair": [
+        "10000000000000000000",
+        "10000000000000000000000"
+      ],
+      "pre_word": "0x000000000000021e19e0c9bab240000000000000000000056bc75e2d63100000",
+      "post_word": "0x000000000000021e19e0c9bab240000000000000000000008ac7230489e80000"
+    },
+    {
+      "tx": "0xc4d6bf976719ff6a9b00417e6d2699d992092e3f3b0e4e282f6b8be141fd0ca1",
+      "block": 48329727,
+      "caller": "0x3721476de31190dc1af8908026abe20efe25cf99",
+      "pair": [
+        "10000000000000000000",
+        "1000000000000000000000"
+      ],
+      "pre_word": "0x000000000000021e19e0c9bab240000000000000000000008ac7230489e80000",
+      "post_word": "0x000000000000003635c9adc5dea0000000000000000000008ac7230489e80000"
+    }
+  ],
+  "historical_event_query": "../../artifacts/exchange_pair_params/full_history_event_query.json",
+  "pinned_pair": [
+    "10000000000000000000",
+    "1000000000000000000000"
+  ],
+  "probe_count": 5,
+  "authorized_callers_tested": [
+    "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "0x3721476de31190dc1af8908026abe20efe25cf99"
+  ],
+  "outsider_revert": "0x989c4c7c",
+  "evidence": "../../artifacts/exchange_pair_params/pinned_probes.json",
+  "limitations": [
+    "Economic field and event source names remain unresolved.",
+    "Pinned role and zero-value calls are read-only simulations.",
+    "The four returned logs account for the saved setter sequence through the pin, but provider completeness and unlogged writes cannot be proved from this query alone."
+  ]
+}

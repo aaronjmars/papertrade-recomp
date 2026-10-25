@@ -1,0 +1,52 @@
+{
+  "from": 48173500,
+  "to": 48175000,
+  "topic": "0xb2f6a0be3228032ab1a6e4d114ab0a4b8277ef32d9bd9b666e8537200aed4dc7",
+  "chunks": [
+    {
+      "from": 48173500,
+      "to": 48174499,
+      "queued_profit_events": 3
+    },
+    {
+      "from": 48174500,
+      "to": 48175000,
+      "queued_profit_events": 0
+    }
+  ],
+  "events": [
+    {
+      "block": 48173881,
+      "transaction_hash": "0x3bc7029ee0d72c5dbacfb74dddc183ddb6206adca6ed702014eb90c28cf2d39e",
+      "log_index": 0,
+      "queued_profit_usd_wei": "7623942182351823589",
+      "topics": [
+        "0xb2f6a0be3228032ab1a6e4d114ab0a4b8277ef32d9bd9b666e8537200aed4dc7",
+        "0x000000000000000000000000ecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+        "0x0000000000000000000000000000000000000000000000000000000000000001"
+      ]
+    },
+    {
+      "block": 48173885,
+      "transaction_hash": "0xc7ba4aaf1bdda8e24c2c8a228e315f39a879e7c9c87786eb260fa07c09b99940",
+      "log_index": 0,
+      "queued_profit_usd_wei": "7623942182351823589",
+      "topics": [
+        "0xb2f6a0be3228032ab1a6e4d114ab0a4b8277ef32d9bd9b666e8537200aed4dc7",
+        "0x000000000000000000000000177344b0f45102a5fb7b2dc72470650e84f3ef77",
+        "0x0000000000000000000000000000000000000000000000000000000000000002"
+      ]
+    },
+    {
+      "block": 48173887,
+      "transaction_hash": "0x1fc54a082055d35c0b79b6fc5f6c2a7004840531f5bcb9b6ec4450a93be2384f",
+      "log_index": 17,
+      "queued_profit_usd_wei": "7623942182351823589",
+      "topics": [
+        "0xb2f6a0be3228032ab1a6e4d114ab0a4b8277ef32d9bd9b666e8537200aed4dc7",
+        "0x00000000000000000000000010ec78af7c91799e48c93c3b0eff024fbe0fbeb0",
+        "0x0000000000000000000000000000000000000000000000000000000000000003"
+      ]
+    }
+  ]
+}

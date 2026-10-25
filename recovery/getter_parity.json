@@ -1,0 +1,1401 @@
+{
+  "added_selector_public_signatures": {
+    "69f9a5f0": {
+      "lookup": "public signature database (4byte); unverified name match",
+      "matches": [
+        "claimBuilderFees()"
+      ]
+    },
+    "9d346583": {
+      "lookup": "public signature database (4byte); unverified name match",
+      "matches": [
+        "builderFees(address)"
+      ]
+    },
+    "cbce7532": {
+      "lookup": "no public match",
+      "matches": []
+    },
+    "d970fad5": {
+      "lookup": "no public match",
+      "matches": []
+    },
+    "e6ac4a74": {
+      "lookup": "no public match",
+      "matches": []
+    },
+    "f009ac03": {
+      "lookup": "no public match",
+      "matches": []
+    }
+  },
+  "candidate": "0x560611d19c93fbcd3200557658a6f83c48b200ad",
+  "candidate_code_sha256": "a20ee31db1ffff1103c01d967f1b44fdcff84d7d023b389cc1784bb0e4579a6f",
+  "head": {
+    "hash": "0x2dd4024a62ecf3525427b03555903ec7105c2f3374953e0d5c1a8e186e4d96f9",
+    "number": "0x2efba80",
+    "timestamp": "0x6adaa655"
+  },
+  "implementation_word": "0x0000000000000000000000000a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+  "limits": [
+    "The candidate is installed only by a live eth_call state and code override.",
+    "Getter parity does not establish mutation, Core settlement, or production upgrade safety.",
+    "Selector names from public signature databases are unverified hints."
+  ],
+  "live_facts": "artifacts/recovery_redrive/live_facts.json",
+  "live_implementation": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+  "override_control": {
+    "with_override": {
+      "data": "0x000000000000000000000000560611d19c93fbcd3200557658a6f83c48b200ad",
+      "status": "success"
+    },
+    "without_override": {
+      "data": "0x0000000000000000000000000a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+      "status": "success"
+    }
+  },
+  "override_slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+  "pinned_implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "rows": [
+    {
+      "arguments": "",
+      "calldata": "0x01ad056f",
+      "candidate": {
+        "data": "0x000000000000000000000000000000000000000000051701246fdd1698fe4441",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x000000000000000000000000000000000000000000051701246fdd1698fe4441",
+        "status": "success"
+      },
+      "selector": "0x01ad056f",
+      "signature": "totalLockedMargin()"
+    },
+    {
+      "arguments": "",
+      "calldata": "0x0b826190",
+      "candidate": {
+        "data": "0x0000000000000000000000008326eb8896e358717f10502ec73ce8d28e37b108",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000008326eb8896e358717f10502ec73ce8d28e37b108",
+        "status": "success"
+      },
+      "selector": "0x0b826190",
+      "signature": "sessionKeyManager()"
+    },
+    {
+      "arguments": "",
+      "calldata": "0x0cdd5fc4",
+      "candidate": {
+        "data": "0x00000000000000000000000000000000000000000003ff944978deabda5b18e0",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x00000000000000000000000000000000000000000003ff944978deabda5b18e0",
+        "status": "success"
+      },
+      "selector": "0x0cdd5fc4",
+      "signature": "lpBankrollAvailable()"
+    },
+    {
+      "arguments": "",
+      "calldata": "0x138e9de2",
+      "candidate": {
+        "data": "0x00000000000000000000000000000000000000000003ff944978deabda5b18e0",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x00000000000000000000000000000000000000000003ff944978deabda5b18e0",
+        "status": "success"
+      },
+      "selector": "0x138e9de2",
+      "signature": "queueHarvestAvailable()"
+    },
+    {
+      "arguments": "",
+      "calldata": "0x13dd495b",
+      "candidate": {
+        "data": "0x000000000000000000000000233ff29b239abc1d7748605da9b205c3e008626e",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x000000000000000000000000233ff29b239abc1d7748605da9b205c3e008626e",
+        "status": "success"
+      },
+      "selector": "0x13dd495b",
+      "signature": "authorizedExecutor()"
+    },
+    {
+      "arguments": "",
+      "calldata": "0x18715c9a",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "selector": "0x18715c9a",
+      "signature": "stakerLpExcessToDistribute()"
+    },
+    {
+      "arguments": "",
+      "calldata": "0x1b7c1009",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000008ac7230489e8000000000000000000000000000000000000000000000000001b1ae4d6e2ef500000",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000008ac7230489e8000000000000000000000000000000000000000000000000001b1ae4d6e2ef500000",
+        "status": "success"
+      },
+      "selector": "0x1b7c1009",
+      "signature": ""
+    },
+    {
+      "arguments": "",
+      "calldata": "0x21f55a6c",
+      "candidate": {
+        "data": "0x0000000000000000000000003721476de31190dc1af8908026abe20efe25cf99",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000003721476de31190dc1af8908026abe20efe25cf99",
+        "status": "success"
+      },
+      "selector": "0x21f55a6c",
+      "signature": "marketKeeper()"
+    },
+    {
+      "arguments": "",
+      "calldata": "0x24a3d622",
+      "candidate": {
+        "data": "0x000000000000000000000000696292762fd5ac3677a45edbe54eaece4194d1f6",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x000000000000000000000000696292762fd5ac3677a45edbe54eaece4194d1f6",
+        "status": "success"
+      },
+      "selector": "0x24a3d622",
+      "signature": "pauseGuardian()"
+    },
+    {
+      "arguments": "address",
+      "calldata": "0x27e235e3000000000000000000000000e284a7f6bb1b157f9df589a0a7709d22f82e762b",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000127f939cff148fefee",
+        "status": "success"
+      },
+      "inputs": [
+        "0xe284a7f6bb1b157f9df589a0a7709d22f82e762b"
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000127f939cff148fefee",
+        "status": "success"
+      },
+      "selector": "0x27e235e3",
+      "signature": "balances(address)"
+    },
+    {
+      "arguments": "uint256",
+      "calldata": "0x2dcc7fce000000000000000000000000000000000000000000000000000000000015458f",
+      "candidate": {
+        "data": "0x00000000000000000000000000000000000000000000000000000000084f2bdc",
+        "status": "success"
+      },
+      "inputs": [
+        1394063
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x00000000000000000000000000000000000000000000000000000000084f2bdc",
+        "status": "success"
+      },
+      "selector": "0x2dcc7fce",
+      "signature": ""
+    },
+    {
+      "arguments": "",
+      "calldata": "0x31a39849",
+      "candidate": {
+        "data": "0x00000000000000000000000000000000000000000000000000000002540be400",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x00000000000000000000000000000000000000000000000000000002540be400",
+        "status": "success"
+      },
+      "selector": "0x31a39849",
+      "signature": ""
+    },
+    {
+      "arguments": "address",
+      "calldata": "0x31a4956c00000000000000000000000056cbe78a5cdfa10147927aec550aa7f2fb3d3d01",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000012a53a31000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002df9fbf",
+        "status": "success"
+      },
+      "inputs": [
+        "0x56cbe78a5cdfa10147927aec550aa7f2fb3d3d01"
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000012a53a31000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002df9fbf",
+        "status": "success"
+      },
+      "selector": "0x31a4956c",
+      "signature": "getPendingSweep(address)"
+    },
+    {
+      "arguments": "address",
+      "calldata": "0x31a4956c0000000000000000000000009c8599c32224d7d9956a7def18f7314162f77baf",
+      "candidate": {
+        "data": "0x000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000481f228000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002ddd166",
+        "status": "success"
+      },
+      "inputs": [
+        "0x9c8599c32224d7d9956a7def18f7314162f77baf"
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000481f228000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002ddd166",
+        "status": "success"
+      },
+      "selector": "0x31a4956c",
+      "signature": "getPendingSweep(address)"
+    },
+    {
+      "arguments": "address",
+      "calldata": "0x32faa570000000000000000000000000e284a7f6bb1b157f9df589a0a7709d22f82e762b",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "inputs": [
+        "0xe284a7f6bb1b157f9df589a0a7709d22f82e762b"
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "selector": "0x32faa570",
+      "signature": "lastCoreWithdrawalBlock(address)"
+    },
+    {
+      "arguments": "address",
+      "calldata": "0x3a21be03000000000000000000000000e284a7f6bb1b157f9df589a0a7709d22f82e762b",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "inputs": [
+        "0xe284a7f6bb1b157f9df589a0a7709d22f82e762b"
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "selector": "0x3a21be03",
+      "signature": "userQueueTail(address)"
+    },
+    {
+      "arguments": "",
+      "calldata": "0x48ee5e08",
+      "candidate": {
+        "data": "0x00000000000000000000000000000000000000000000000000470de4df820000",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x00000000000000000000000000000000000000000000000000470de4df820000",
+        "status": "success"
+      },
+      "selector": "0x48ee5e08",
+      "signature": "winFeeRate()"
+    },
+    {
+      "arguments": "uint256",
+      "calldata": "0x50c23fab000000000000000000000000000000000000000000000000000000000015458f",
+      "candidate": {
+        "data": "0x00000000000000000000000000000000000000000000000000000000000cf5eb",
+        "status": "success"
+      },
+      "inputs": [
+        1394063
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x00000000000000000000000000000000000000000000000000000000000cf5eb",
+        "status": "success"
+      },
+      "selector": "0x50c23fab",
+      "signature": ""
+    },
+    {
+      "arguments": "",
+      "calldata": "0x53ac4b66",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "selector": "0x53ac4b66",
+      "signature": "totalQueued()"
+    },
+    {
+      "arguments": "",
+      "calldata": "0x53e23e2e",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "selector": "0x53e23e2e",
+      "signature": "tradingPaused()"
+    },
+    {
+      "arguments": "address",
+      "calldata": "0x551306f3000000000000000000000000e284a7f6bb1b157f9df589a0a7709d22f82e762b",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "inputs": [
+        "0xe284a7f6bb1b157f9df589a0a7709d22f82e762b"
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "selector": "0x551306f3",
+      "signature": "userQueuedTotal(address)"
+    },
+    {
+      "arguments": "",
+      "calldata": "0x5fb3b1b5",
+      "candidate": {
+        "data": "0x00000000000000000000000000000000000000000000000000470de4df820000",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x00000000000000000000000000000000000000000000000000470de4df820000",
+        "status": "success"
+      },
+      "selector": "0x5fb3b1b5",
+      "signature": "liquidationFeeRate()"
+    },
+    {
+      "arguments": "",
+      "calldata": "0x61d027b3",
+      "candidate": {
+        "data": "0x000000000000000000000000000000000000000000206c79685d854564e53800",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x000000000000000000000000000000000000000000206c79685d854564e53800",
+        "status": "success"
+      },
+      "selector": "0x61d027b3",
+      "signature": "treasury()"
+    },
+    {
+      "arguments": "",
+      "calldata": "0x6d60ae8e",
+      "candidate": {
+        "data": "0x000000000000000000000000000000000000000000000000000000003b9aca00",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x000000000000000000000000000000000000000000000000000000003b9aca00",
+        "status": "success"
+      },
+      "selector": "0x6d60ae8e",
+      "signature": ""
+    },
+    {
+      "arguments": "uint256",
+      "calldata": "0x70f75ff5000000000000000000000000000000000000000000000000000000000015458f",
+      "candidate": {
+        "data": "0x000000000000000000000000000000000000000000000000003186eddb185c00",
+        "status": "success"
+      },
+      "inputs": [
+        1394063
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x000000000000000000000000000000000000000000000000003186eddb185c00",
+        "status": "success"
+      },
+      "selector": "0x70f75ff5",
+      "signature": ""
+    },
+    {
+      "arguments": "",
+      "calldata": "0x7d004aeb",
+      "candidate": {
+        "data": "0x00000000000000000000000000000000000000000000058f982e7ed8cbc8d269",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x00000000000000000000000000000000000000000000058f982e7ed8cbc8d269",
+        "status": "success"
+      },
+      "selector": "0x7d004aeb",
+      "signature": "devFeeAccumulator()"
+    },
+    {
+      "arguments": "",
+      "calldata": "0x7dc0d1d0",
+      "candidate": {
+        "data": "0x000000000000000000000000a9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x000000000000000000000000a9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+        "status": "success"
+      },
+      "selector": "0x7dc0d1d0",
+      "signature": "oracle()"
+    },
+    {
+      "arguments": "address",
+      "calldata": "0x7e4174fc00000000000000000000000056cbe78a5cdfa10147927aec550aa7f2fb3d3d01",
+      "candidate": {
+        "data": "0x00000000000000000000000002df9fbf0000000000000000000000012a53a310",
+        "status": "success"
+      },
+      "inputs": [
+        "0x56cbe78a5cdfa10147927aec550aa7f2fb3d3d01"
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x00000000000000000000000002df9fbf0000000000000000000000012a53a310",
+        "status": "success"
+      },
+      "selector": "0x7e4174fc",
+      "signature": "pendingSweepWord(address)"
+    },
+    {
+      "arguments": "address",
+      "calldata": "0x7e4174fc0000000000000000000000009c8599c32224d7d9956a7def18f7314162f77baf",
+      "candidate": {
+        "data": "0x00000000000000000000000002ddd166000000000000000000000000481f2280",
+        "status": "success"
+      },
+      "inputs": [
+        "0x9c8599c32224d7d9956a7def18f7314162f77baf"
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x00000000000000000000000002ddd166000000000000000000000000481f2280",
+        "status": "success"
+      },
+      "selector": "0x7e4174fc",
+      "signature": "pendingSweepWord(address)"
+    },
+    {
+      "arguments": "",
+      "calldata": "0x899346c7",
+      "candidate": {
+        "data": "0x00000000000000000000000000000000000000000000000000000000001b6ba4",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x00000000000000000000000000000000000000000000000000000000001b6ba4",
+        "status": "success"
+      },
+      "selector": "0x899346c7",
+      "signature": "nextPositionId()"
+    },
+    {
+      "arguments": "",
+      "calldata": "0x8da5cb5b",
+      "candidate": {
+        "data": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+        "status": "success"
+      },
+      "selector": "0x8da5cb5b",
+      "signature": "owner()"
+    },
+    {
+      "arguments": "",
+      "calldata": "0x9274682e",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "selector": "0x9274682e",
+      "signature": "sideBucket()"
+    },
+    {
+      "arguments": "",
+      "calldata": "0x96523644",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000004",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000004",
+        "status": "success"
+      },
+      "selector": "0x96523644",
+      "signature": "queueHead()"
+    },
+    {
+      "arguments": "uint256",
+      "calldata": "0x99fbab88000000000000000000000000000000000000000000000000000000000015458f",
+      "candidate": {
+        "data": "0x000000000000000000000000e284a7f6bb1b157f9df589a0a7709d22f82e762b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c596d00000000000000000000000000000000000000000000001043561a88293000000000000000000000000000000000000000000000000000000000000000000014000000000000000000000000000000000000000000000000000000006ad532f6000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "inputs": [
+        1394063
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x000000000000000000000000e284a7f6bb1b157f9df589a0a7709d22f82e762b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c596d00000000000000000000000000000000000000000000001043561a88293000000000000000000000000000000000000000000000000000000000000000000014000000000000000000000000000000000000000000000000000000006ad532f6000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "selector": "0x99fbab88",
+      "signature": "positions(uint256)"
+    },
+    {
+      "arguments": "",
+      "calldata": "0x9d47d4d3",
+      "candidate": {
+        "data": "0x0000000000000000000000000924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56",
+        "status": "success"
+      },
+      "selector": "0x9d47d4d3",
+      "signature": "authorizedKeeper()"
+    },
+    {
+      "arguments": "address",
+      "calldata": "0xa25dc87f000000000000000000000000e284a7f6bb1b157f9df589a0a7709d22f82e762b",
+      "candidate": {
+        "data": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "inputs": [
+        "0xe284a7f6bb1b157f9df589a0a7709d22f82e762b"
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "selector": "0xa25dc87f",
+      "signature": "getUserOpenPositionIds(address)"
+    },
+    {
+      "arguments": "",
+      "calldata": "0xa69a2ad1",
+      "candidate": {
+        "data": "0x000000000000000000000000000000000000000000174fe9defb9d073e9cd061",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x000000000000000000000000000000000000000000174fe9defb9d073e9cd061",
+        "status": "success"
+      },
+      "selector": "0xa69a2ad1",
+      "signature": "totalBalances()"
+    },
+    {
+      "arguments": "",
+      "calldata": "0xaf210ecc",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000019",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000019",
+        "status": "success"
+      },
+      "selector": "0xaf210ecc",
+      "signature": ""
+    },
+    {
+      "arguments": "",
+      "calldata": "0xafdf6702",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000035086d25ecbe9b815",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000035086d25ecbe9b815",
+        "status": "success"
+      },
+      "selector": "0xafdf6702",
+      "signature": "stakerFeeAccumulator()"
+    },
+    {
+      "arguments": "uint256",
+      "calldata": "0xb3060d36000000000000000000000000000000000000000000000000000000000015458f",
+      "candidate": {
+        "data": "0x000000000000000000000000e284a7f6bb1b157f9df589a0a7709d22f82e762b",
+        "status": "success"
+      },
+      "inputs": [
+        1394063
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x000000000000000000000000e284a7f6bb1b157f9df589a0a7709d22f82e762b",
+        "status": "success"
+      },
+      "selector": "0xb3060d36",
+      "signature": "positionOwner(uint256)"
+    },
+    {
+      "arguments": "uint256",
+      "calldata": "0xbacd9ea0000000000000000000000000000000000000000000000000000000000015458f",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000001358b4e99583f000",
+        "status": "success"
+      },
+      "inputs": [
+        1394063
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000001358b4e99583f000",
+        "status": "success"
+      },
+      "selector": "0xbacd9ea0",
+      "signature": ""
+    },
+    {
+      "arguments": "",
+      "calldata": "0xc10f1a75",
+      "candidate": {
+        "data": "0x0000000000000000000000001629b7d46bef6e13ff754174fc9f32dea309b38f",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000001629b7d46bef6e13ff754174fc9f32dea309b38f",
+        "status": "success"
+      },
+      "selector": "0xc10f1a75",
+      "signature": "proxyFactory()"
+    },
+    {
+      "arguments": "",
+      "calldata": "0xc43fbc8c",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000008",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000008",
+        "status": "success"
+      },
+      "selector": "0xc43fbc8c",
+      "signature": "coreCollateralDecimals()"
+    },
+    {
+      "arguments": "uint32",
+      "calldata": "0xc83725770000000000000000000000000000000000000000000000000000000000000000",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "inputs": [
+        0
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "selector": "0xc8372577",
+      "signature": ""
+    },
+    {
+      "arguments": "uint32",
+      "calldata": "0xc83725770000000000000000000000000000000000000000000000000000000000000001",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "inputs": [
+        1
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "selector": "0xc8372577",
+      "signature": ""
+    },
+    {
+      "arguments": "uint32",
+      "calldata": "0xcb163b030000000000000000000000000000000000000000000000000000000000000000",
+      "candidate": {
+        "data": "0x00000000000000000000000000000000000000000000004a56db610ab4fb03230000000000000000000000000000000000000000000000102e0f3e73b9defc7c000000000000000000000000000000000000000000000045b5880050cd82aa60000000000000000000000000000000000000000000000011ce44329e55163952000000000000000000000000000000000000000000000000000000000000000a",
+        "status": "success"
+      },
+      "inputs": [
+        0
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x00000000000000000000000000000000000000000000004a56db610ab4fb03230000000000000000000000000000000000000000000000102e0f3e73b9defc7c000000000000000000000000000000000000000000000045b5880050cd82aa60000000000000000000000000000000000000000000000011ce44329e55163952000000000000000000000000000000000000000000000000000000000000000a",
+        "status": "success"
+      },
+      "selector": "0xcb163b03",
+      "signature": ""
+    },
+    {
+      "arguments": "uint32",
+      "calldata": "0xcb163b030000000000000000000000000000000000000000000000000000000000000001",
+      "candidate": {
+        "data": "0x00000000000000000000000000000000000000000000026db107cb4d4612111f0000000000000000000000000000000000000000000001dc56a16326a6cfabc800000000000000000000000000000000000000000000028f23e61d97c373d2e50000000000000000000000000000000000000000000001fdd50a16f8e7af72420000000000000000000000000000000000000000000000000000000000000064",
+        "status": "success"
+      },
+      "inputs": [
+        1
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x00000000000000000000000000000000000000000000026db107cb4d4612111f0000000000000000000000000000000000000000000001dc56a16326a6cfabc800000000000000000000000000000000000000000000028f23e61d97c373d2e50000000000000000000000000000000000000000000001fdd50a16f8e7af72420000000000000000000000000000000000000000000000000000000000000064",
+        "status": "success"
+      },
+      "selector": "0xcb163b03",
+      "signature": ""
+    },
+    {
+      "arguments": "",
+      "calldata": "0xcbeb5f3d",
+      "candidate": {
+        "data": "0x000000000000000000000000eef651e381e04b5ae25393b1367c19bcfd575792",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x000000000000000000000000eef651e381e04b5ae25393b1367c19bcfd575792",
+        "status": "success"
+      },
+      "selector": "0xcbeb5f3d",
+      "signature": "devFeeRecipient()"
+    },
+    {
+      "arguments": "uint32",
+      "calldata": "0xdc8a47ef0000000000000000000000000000000000000000000000000000000000000000",
+      "candidate": {
+        "data": "0x00000000000000000000000000000000000000000000032d26d12e980b60000000000000000000000000000000000000000000000000002c28d1751327a70000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003e8000000000000000000000000000000000000000000084595161401484a0000000000000000000000000000000000000000000000000000000001b0f511478916000000000000000000000000000000000000000000000000016345785d8a000000000000000000000000000000000000000000000000152d02c7e14af6800000",
+        "status": "success"
+      },
+      "inputs": [
+        0
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x00000000000000000000000000000000000000000000032d26d12e980b60000000000000000000000000000000000000000000000000002c28d1751327a70000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003e8000000000000000000000000000000000000000000084595161401484a0000000000000000000000000000000000000000000000000000000001b0f511478916000000000000000000000000000000000000000000000000016345785d8a000000000000000000000000000000000000000000000000152d02c7e14af6800000",
+        "status": "success"
+      },
+      "selector": "0xdc8a47ef",
+      "signature": "instruments(uint32)"
+    },
+    {
+      "arguments": "uint32",
+      "calldata": "0xdc8a47ef0000000000000000000000000000000000000000000000000000000000000001",
+      "candidate": {
+        "data": "0x00000000000000000000000000000000000000000000032d26d12e980b60000000000000000000000000000000000000000000000000001a3c8ed044f4c78000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000003e8000000000000000000000000000000000000000000084595161401484a0000000000000000000000000000000000000000000000000000000001b5be54f0a022000000000000000000000000000000000000000000000000016345785d8a000000000000000000000000000000000000000000000000152d02c7e14af6800000",
+        "status": "success"
+      },
+      "inputs": [
+        1
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x00000000000000000000000000000000000000000000032d26d12e980b60000000000000000000000000000000000000000000000000001a3c8ed044f4c78000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000003e8000000000000000000000000000000000000000000084595161401484a0000000000000000000000000000000000000000000000000000000001b5be54f0a022000000000000000000000000000000000000000000000000016345785d8a000000000000000000000000000000000000000000000000152d02c7e14af6800000",
+        "status": "success"
+      },
+      "selector": "0xdc8a47ef",
+      "signature": "instruments(uint32)"
+    },
+    {
+      "arguments": "address",
+      "calldata": "0xdcab7f6a000000000000000000000000e284a7f6bb1b157f9df589a0a7709d22f82e762b",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "inputs": [
+        "0xe284a7f6bb1b157f9df589a0a7709d22f82e762b"
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "selector": "0xdcab7f6a",
+      "signature": "userQueueHead(address)"
+    },
+    {
+      "arguments": "",
+      "calldata": "0xe1f9209b",
+      "candidate": {
+        "data": "0x000000000000000000000000aad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x000000000000000000000000aad6c7b0cc3014fc80ffedae0ed7ce5967b0f016",
+        "status": "success"
+      },
+      "selector": "0xe1f9209b",
+      "signature": "stakerFeeRecipient()"
+    },
+    {
+      "arguments": "uint256",
+      "calldata": "0xe634384f000000000000000000000000000000000000000000000000000000000015458f",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "inputs": [
+        1394063
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "selector": "0xe634384f",
+      "signature": "queueNode(uint256)"
+    },
+    {
+      "arguments": "",
+      "calldata": "0xec0bdcfc",
+      "candidate": {
+        "data": "0x000000000000000000000000000000000000000000000000000000e8d4a51000",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x000000000000000000000000000000000000000000000000000000e8d4a51000",
+        "status": "success"
+      },
+      "selector": "0xec0bdcfc",
+      "signature": "collateralScale()"
+    },
+    {
+      "arguments": "",
+      "calldata": "0xed410ee1",
+      "candidate": {
+        "data": "0x00000000000000000000000075174549dbbd44497d31a47e2e2d7406408d63d9",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x00000000000000000000000075174549dbbd44497d31a47e2e2d7406408d63d9",
+        "status": "success"
+      },
+      "selector": "0xed410ee1",
+      "signature": "paperTokenomics()"
+    },
+    {
+      "arguments": "",
+      "calldata": "0xf1a8786c",
+      "candidate": {
+        "data": "0x00000000000000000000000000000000000000000000000000470de4df820000",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x00000000000000000000000000000000000000000000000000470de4df820000",
+        "status": "success"
+      },
+      "selector": "0xf1a8786c",
+      "signature": ""
+    },
+    {
+      "arguments": "",
+      "calldata": "0xf28bbdb2",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000002",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000002",
+        "status": "success"
+      },
+      "selector": "0xf28bbdb2",
+      "signature": "instrumentCount()"
+    },
+    {
+      "arguments": "uint32",
+      "calldata": "0xf37d3c4f0000000000000000000000000000000000000000000000000000000000000000",
+      "candidate": {
+        "data": "0x00000000000000000000000000000000000000000000004a56db610ab4fb03230000000000000000000000000000000000000000000000102e0f3e73b9defc7c000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000045b5880050cd82aa60000000000000000000000000000000000000000000000011ce44329e55163952",
+        "status": "success"
+      },
+      "inputs": [
+        0
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x00000000000000000000000000000000000000000000004a56db610ab4fb03230000000000000000000000000000000000000000000000102e0f3e73b9defc7c000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000045b5880050cd82aa60000000000000000000000000000000000000000000000011ce44329e55163952",
+        "status": "success"
+      },
+      "selector": "0xf37d3c4f",
+      "signature": ""
+    },
+    {
+      "arguments": "uint32",
+      "calldata": "0xf37d3c4f0000000000000000000000000000000000000000000000000000000000000001",
+      "candidate": {
+        "data": "0x00000000000000000000000000000000000000000000026db107cb4d4612111f0000000000000000000000000000000000000000000001dc56a16326a6cfabc8000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000028f23e61d97c373d2e50000000000000000000000000000000000000000000001fdd50a16f8e7af7242",
+        "status": "success"
+      },
+      "inputs": [
+        1
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x00000000000000000000000000000000000000000000026db107cb4d4612111f0000000000000000000000000000000000000000000001dc56a16326a6cfabc8000000000000000000000000000000000000000000000000000000000000006400000000000000000000000000000000000000000000028f23e61d97c373d2e50000000000000000000000000000000000000000000001fdd50a16f8e7af7242",
+        "status": "success"
+      },
+      "selector": "0xf37d3c4f",
+      "signature": ""
+    },
+    {
+      "arguments": "uint256",
+      "calldata": "0xf728fc98000000000000000000000000000000000000000000000000000000000015458f",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "inputs": [
+        1394063
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "selector": "0xf728fc98",
+      "signature": ""
+    },
+    {
+      "arguments": "address",
+      "calldata": "0xf84a74d30000000000000000000000001e8a704179cc6221592c362daa52a341ae20084d",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000002df9fbf",
+        "status": "success"
+      },
+      "inputs": [
+        "0x1e8a704179cc6221592c362daa52a341ae20084d"
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000002df9fbf",
+        "status": "success"
+      },
+      "selector": "0xf84a74d3",
+      "signature": "lastSweepBlock(address)"
+    },
+    {
+      "arguments": "address",
+      "calldata": "0xf84a74d3000000000000000000000000f6b60cdf359af5538495831a9f2bbcada23e10e6",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000002ddd166",
+        "status": "success"
+      },
+      "inputs": [
+        "0xf6b60cdf359af5538495831a9f2bbcada23e10e6"
+      ],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000002ddd166",
+        "status": "success"
+      },
+      "selector": "0xf84a74d3",
+      "signature": "lastSweepBlock(address)"
+    },
+    {
+      "arguments": "",
+      "calldata": "0xfdfd905d",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+        "status": "success"
+      },
+      "selector": "0xfdfd905d",
+      "signature": ""
+    },
+    {
+      "arguments": "",
+      "calldata": "0xff3bc415",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000040",
+        "status": "success"
+      },
+      "inputs": [],
+      "kind": "pinned_catalog",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000040",
+        "status": "success"
+      },
+      "selector": "0xff3bc415",
+      "signature": ""
+    },
+    {
+      "arguments": "address",
+      "calldata": "0x69f9a5f0000000000000000000000000e284a7f6bb1b157f9df589a0a7709d22f82e762b",
+      "candidate": {
+        "data": "0x",
+        "status": "success"
+      },
+      "inputs": [
+        "0xe284a7f6bb1b157f9df589a0a7709d22f82e762b"
+      ],
+      "kind": "added_selector",
+      "live": {
+        "data": "0x",
+        "status": "success"
+      },
+      "selector": "0x69f9a5f0",
+      "signature": "claimBuilderFees()"
+    },
+    {
+      "arguments": "address,uint256",
+      "calldata": "0x69f9a5f0000000000000000000000000e284a7f6bb1b157f9df589a0a7709d22f82e762b0000000000000000000000000000000000000000000000000000000000000000",
+      "candidate": {
+        "data": "0x",
+        "status": "success"
+      },
+      "inputs": [
+        "0xe284a7f6bb1b157f9df589a0a7709d22f82e762b",
+        0
+      ],
+      "kind": "added_selector",
+      "live": {
+        "data": "0x",
+        "status": "success"
+      },
+      "selector": "0x69f9a5f0",
+      "signature": "claimBuilderFees()"
+    },
+    {
+      "arguments": "address",
+      "calldata": "0x9d346583000000000000000000000000e284a7f6bb1b157f9df589a0a7709d22f82e762b",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "inputs": [
+        "0xe284a7f6bb1b157f9df589a0a7709d22f82e762b"
+      ],
+      "kind": "added_selector",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "selector": "0x9d346583",
+      "signature": "builderFees(address)"
+    },
+    {
+      "arguments": "address,uint256",
+      "calldata": "0x9d346583000000000000000000000000e284a7f6bb1b157f9df589a0a7709d22f82e762b0000000000000000000000000000000000000000000000000000000000000000",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "inputs": [
+        "0xe284a7f6bb1b157f9df589a0a7709d22f82e762b",
+        0
+      ],
+      "kind": "added_selector",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "selector": "0x9d346583",
+      "signature": "builderFees(address)"
+    },
+    {
+      "arguments": "address",
+      "calldata": "0xcbce7532000000000000000000000000e284a7f6bb1b157f9df589a0a7709d22f82e762b",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "inputs": [
+        "0xe284a7f6bb1b157f9df589a0a7709d22f82e762b"
+      ],
+      "kind": "added_selector",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "selector": "0xcbce7532",
+      "signature": ""
+    },
+    {
+      "arguments": "address,uint256",
+      "calldata": "0xcbce7532000000000000000000000000e284a7f6bb1b157f9df589a0a7709d22f82e762b0000000000000000000000000000000000000000000000000000000000000000",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "inputs": [
+        "0xe284a7f6bb1b157f9df589a0a7709d22f82e762b",
+        0
+      ],
+      "kind": "added_selector",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "status": "success"
+      },
+      "selector": "0xcbce7532",
+      "signature": ""
+    },
+    {
+      "arguments": "address",
+      "calldata": "0xd970fad5000000000000000000000000e284a7f6bb1b157f9df589a0a7709d22f82e762b",
+      "candidate": {
+        "code": 3,
+        "data": null,
+        "message": "execution reverted",
+        "status": "error"
+      },
+      "inputs": [
+        "0xe284a7f6bb1b157f9df589a0a7709d22f82e762b"
+      ],
+      "kind": "added_selector",
+      "live": {
+        "code": 3,
+        "data": null,
+        "message": "execution reverted",
+        "status": "error"
+      },
+      "selector": "0xd970fad5",
+      "signature": ""
+    },
+    {
+      "arguments": "address,uint256",
+      "calldata": "0xd970fad5000000000000000000000000e284a7f6bb1b157f9df589a0a7709d22f82e762b0000000000000000000000000000000000000000000000000000000000000000",
+      "candidate": {
+        "code": 3,
+        "data": "0x30cd7471",
+        "message": "execution reverted",
+        "status": "error"
+      },
+      "inputs": [
+        "0xe284a7f6bb1b157f9df589a0a7709d22f82e762b",
+        0
+      ],
+      "kind": "added_selector",
+      "live": {
+        "code": 3,
+        "data": "0x30cd7471",
+        "message": "execution reverted",
+        "status": "error"
+      },
+      "selector": "0xd970fad5",
+      "signature": ""
+    },
+    {
+      "arguments": "address",
+      "calldata": "0xe6ac4a74000000000000000000000000e284a7f6bb1b157f9df589a0a7709d22f82e762b",
+      "candidate": {
+        "code": 3,
+        "data": null,
+        "message": "execution reverted",
+        "status": "error"
+      },
+      "inputs": [
+        "0xe284a7f6bb1b157f9df589a0a7709d22f82e762b"
+      ],
+      "kind": "added_selector",
+      "live": {
+        "code": 3,
+        "data": null,
+        "message": "execution reverted",
+        "status": "error"
+      },
+      "selector": "0xe6ac4a74",
+      "signature": ""
+    },
+    {
+      "arguments": "address,uint256",
+      "calldata": "0xe6ac4a74000000000000000000000000e284a7f6bb1b157f9df589a0a7709d22f82e762b0000000000000000000000000000000000000000000000000000000000000000",
+      "candidate": {
+        "code": 3,
+        "data": null,
+        "message": "execution reverted",
+        "status": "error"
+      },
+      "inputs": [
+        "0xe284a7f6bb1b157f9df589a0a7709d22f82e762b",
+        0
+      ],
+      "kind": "added_selector",
+      "live": {
+        "code": 3,
+        "data": null,
+        "message": "execution reverted",
+        "status": "error"
+      },
+      "selector": "0xe6ac4a74",
+      "signature": ""
+    },
+    {
+      "arguments": "address",
+      "calldata": "0xf009ac03000000000000000000000000e284a7f6bb1b157f9df589a0a7709d22f82e762b",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+        "status": "success"
+      },
+      "inputs": [
+        "0xe284a7f6bb1b157f9df589a0a7709d22f82e762b"
+      ],
+      "kind": "added_selector",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+        "status": "success"
+      },
+      "selector": "0xf009ac03",
+      "signature": ""
+    },
+    {
+      "arguments": "address,uint256",
+      "calldata": "0xf009ac03000000000000000000000000e284a7f6bb1b157f9df589a0a7709d22f82e762b0000000000000000000000000000000000000000000000000000000000000000",
+      "candidate": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+        "status": "success"
+      },
+      "inputs": [
+        "0xe284a7f6bb1b157f9df589a0a7709d22f82e762b",
+        0
+      ],
+      "kind": "added_selector",
+      "live": {
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+        "status": "success"
+      },
+      "selector": "0xf009ac03",
+      "signature": ""
+    },
+    {
+      "arguments": "uint256",
+      "calldata": "0x415f1240000000000000000000000000000000000000000000000000000000000015458f",
+      "candidate": {
+        "code": 3,
+        "data": null,
+        "message": "execution reverted",
+        "status": "error"
+      },
+      "inputs": [
+        1394063
+      ],
+      "kind": "removed_selector",
+      "live": {
+        "code": 3,
+        "data": null,
+        "message": "execution reverted",
+        "status": "error"
+      },
+      "selector": "0x415f1240",
+      "signature": ""
+    }
+  ]
+}

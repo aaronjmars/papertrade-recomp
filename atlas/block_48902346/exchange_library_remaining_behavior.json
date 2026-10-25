@@ -1,0 +1,91 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "library": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+  "runtime_sha256": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2",
+  "delegatecall_storage_owner": "local harness with exact pinned library runtime",
+  "mapping_base": 15,
+  "local_replay": "../../artifacts/exchange_library_remaining_local/replay.json",
+  "selector_behaviors": {
+    "0x18958ce2": "Enqueue amount for user: zero is no-op; positive creates node, updates global/user totals, appends links, emits Enqueued",
+    "0x3f4e3626": "Remove requested amount from user queue tail: partial removal reduces newest node first; full removal clears node amount and advances head; emitted amount is request even if above queued balance in synthetic state",
+    "0xb67f3dd7": "Seven-word arithmetic: 40 successful staticcall vectors and a pinned opcode trace match the reconstructed integer sequence; zero, nonzero, and input-dependent rate branches sampled"
+  },
+  "observed_abi_arguments": {
+    "0x3f4e3626": "uint256,address,uint256"
+  },
+  "event_topics": {
+    "enqueue": "0xb2f6a0be3228032ab1a6e4d114ab0a4b8277ef32d9bd9b666e8537200aed4dc7",
+    "remove": "0x4c672bd1e7444966ce521bc0f053d4f359f1fad9cfe6a43011c00baac6278e4d"
+  },
+  "state_examples": {
+    "enqueue_500": {
+      "head": 1,
+      "next_id": 2,
+      "global_total": 500,
+      "user_total": 500,
+      "user_head": 1,
+      "user_tail": 1
+    },
+    "append_300": {
+      "head": 1,
+      "next_id": 3,
+      "global_total": 800,
+      "user_total": 800,
+      "user_head": 1,
+      "user_tail": 2
+    },
+    "remove_tail_200": {
+      "head": 1,
+      "next_id": 3,
+      "global_total": 600,
+      "user_total": 600,
+      "node_1_amount": 500,
+      "node_2_amount": 100
+    },
+    "remove_501_from_500": {
+      "head": 2,
+      "next_id": 2,
+      "global_total": 0,
+      "user_total": 0,
+      "event_amount": 501
+    }
+  },
+  "math_vector_count": 40,
+  "math_nonzero_count": 25,
+  "math_formula": "delta=abs(end-start); r=floor(delta*1e18/start); m=floor(r*factor/1e18); inverse=floor(1e36/m); a=floor((1e6*r)*denominator/1e18); adjustment_term=floor(adjustment*1e18/a); D=1e18+inverse+adjustment_term; rate=floor((1e18-prior)*1e18/D); output=floor(amount*rate/1e18)",
+  "math_formula_branch_conditions": "Equal prices, zero factor, zero denominator, or prior==1e18 return zero in tested states; falling prices use absolute delta; start==0 panics with code 0x12 and prior>1e18 panics with code 0x11. Extreme uint256 arithmetic remains uncharacterized",
+  "math_formula_exact_vectors": 40,
+  "math_formula_mismatches": [],
+  "math_opcode_trace": "../../artifacts/exchange_library_remaining_local/opcode_trace17.json",
+  "math_panic_branches": [
+    {
+      "input": "start=0,end=110",
+      "selector": "0x4e487b71",
+      "code": "0x12"
+    },
+    {
+      "input": "prior=1e18+1",
+      "selector": "0x4e487b71",
+      "code": "0x11"
+    }
+  ],
+  "math_opcode_checkpoints": {
+    "0x1123": {
+      "0": 100000000000000000
+    },
+    "0x1161": {
+      "0": 10000000000000000000,
+      "1": 10000000000000
+    },
+    "0x11b6": {
+      "0": 11000010000000000000,
+      "1": 999999999999999999000000000000000000
+    },
+    "0x11bc": {
+      "0": 90909008264537941
+    }
+  },
+  "source_names": "unresolved",
+  "historical_calls_for_these_selectors": 0
+}

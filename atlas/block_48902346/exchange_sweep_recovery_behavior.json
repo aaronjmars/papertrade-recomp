@@ -1,0 +1,38 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "selector_reconstructions": {
+    "0x6a3214c9": "reconcileSweepCredit(address,uint256)"
+  },
+  "report_clear_signature": "clearPendingSweep(address)",
+  "report_clear_selector": "0x2362f4de",
+  "report_clear_selector_in_runtime": false,
+  "other_one_address_mutator_count": 13,
+  "pending_reconcile_error": "0x28ef4314",
+  "pending_reconcile_error_signature": "SweepAlreadyPending()",
+  "simulated_error_catalog": [
+    {
+      "selector": "0x28ef4314",
+      "reconstructed_signature": "SweepAlreadyPending()",
+      "probe_paths": [
+        "testOwnerReconcilePendingRejected",
+        "testSecondPendingReconcileRejected"
+      ]
+    }
+  ],
+  "owner_reconcile_requires_simulated_clear": true,
+  "owner_reconcile_credit_scale": 1000000000000,
+  "pending_words_after_failed_reconcile": [
+    "0x2df9fbf0000000000000000000000012a53a310",
+    "0x2ddd166000000000000000000000000481f2280"
+  ],
+  "local_replay_evidence": "../../artifacts/audit_sweep_recovery_local/replay.json",
+  "limits": [
+    "Local state uses the pinned pending word but constructed owner, accounting, and user-balance slots.",
+    "The successful owner reconciliation uses a simulated direct storage clear; no deployed clear transaction was executed.",
+    "No HyperCore transfer executes in this port-free replay; Core delivery and later governance actions are not tested.",
+    "Absence is established for clearPendingSweep(address), not for every possible alternative recovery selector."
+  ]
+}

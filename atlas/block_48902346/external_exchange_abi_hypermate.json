@@ -1,0 +1,1163 @@
+{
+ "_note": "Papertrade Exchange (proxy 0x6cd5661646289fb6e65ea5c032310fded797d0a2, implementation 0x0f3febfc94876b0c895f7acecdc8f5c863b549ee, unverified). No ABI in the exchange or docs frontend bundles (2026-10-15): events brute-forced against topic0s, functions from 4byte/openchain lookups of the PUSH4 constants in the implementation bytecode, outputs inferred from live eth_call. Every topic0/selector here is the keccak of its signature (scripts/probe_papertrade.py abi).",
+ "abi": [
+  {
+   "type": "event",
+   "name": "PositionOpened",
+   "anonymous": false,
+   "inputs": [
+    {
+     "name": "positionId",
+     "type": "uint256",
+     "indexed": true
+    },
+    {
+     "name": "user",
+     "type": "address",
+     "indexed": true
+    },
+    {
+     "name": "instrumentId",
+     "type": "uint32",
+     "indexed": false
+    },
+    {
+     "name": "isLong",
+     "type": "bool",
+     "indexed": false
+    },
+    {
+     "name": "fromQueue",
+     "type": "bool",
+     "indexed": false
+    },
+    {
+     "name": "entryPrice",
+     "type": "uint64",
+     "indexed": false
+    },
+    {
+     "name": "margin",
+     "type": "uint128",
+     "indexed": false
+    },
+    {
+     "name": "leverage",
+     "type": "uint32",
+     "indexed": false
+    }
+   ],
+   "_note": "signature brute-forced against topic0; param names inferred from /query (fromQueue [?]: 0 in every sample; docs mention positions opened from the queued balance). entryPrice in instrument priceScale, margin 1e18 USD, notional = margin x leverage",
+   "topic0": "0x88451ea1189f73b554f0bf39c09868560ed149b3d788fcc933ff66ba926827f3"
+  },
+  {
+   "type": "event",
+   "name": "PositionClosed",
+   "anonymous": false,
+   "inputs": [
+    {
+     "name": "positionId",
+     "type": "uint256",
+     "indexed": true
+    },
+    {
+     "name": "user",
+     "type": "address",
+     "indexed": true
+    },
+    {
+     "name": "exitPrice",
+     "type": "uint64",
+     "indexed": false
+    },
+    {
+     "name": "rawPnl",
+     "type": "int256",
+     "indexed": false
+    },
+    {
+     "name": "adjustedPnl",
+     "type": "int256",
+     "indexed": false
+    },
+    {
+     "name": "flag",
+     "type": "bool",
+     "indexed": false
+    },
+    {
+     "name": "fee",
+     "type": "uint256",
+     "indexed": false
+    }
+   ],
+   "_note": "signature brute-forced; adjustedPnl = /query pnlUsd and adjustedPnlRaw (win haircut applied, before the 2% win fee); fee = userPaidFeeRaw; flag [?] 0 in 2,028 closes over 1,000 blocks (queued payout?)",
+   "topic0": "0x87902ed2451849f465fc4d36a01d7f5c67b53af12f63ee85d2814a2d582f89bf"
+  },
+  {
+   "type": "event",
+   "name": "Liquidated",
+   "anonymous": false,
+   "inputs": [
+    {
+     "name": "positionId",
+     "type": "uint256",
+     "indexed": true
+    },
+    {
+     "name": "user",
+     "type": "address",
+     "indexed": true
+    },
+    {
+     "name": "price",
+     "type": "uint64",
+     "indexed": false
+    },
+    {
+     "name": "bustPrice",
+     "type": "uint64",
+     "indexed": false
+    },
+    {
+     "name": "flag",
+     "type": "bool",
+     "indexed": false
+    },
+    {
+     "name": "feeA",
+     "type": "uint256",
+     "indexed": false
+    },
+    {
+     "name": "feeB",
+     "type": "uint256",
+     "indexed": false
+    }
+   ],
+   "_note": "signature brute-forced from a keeper liquidateBatch tx (not among the implementation PUSH32 constants: emitted through a library); feeA = feeB = 1% of margin each (docs: 2% liquidation fee to stakers and dev), names [?]; full margin lost, /query adjustedPnlRaw = -margin",
+   "topic0": "0x0c859bc5db091ba3b9dc10c00f8dfc78b1f0b7e2566d107253ae67c069ae5de8"
+  },
+  {
+   "type": "event",
+   "name": "PositionsClosed",
+   "anonymous": false,
+   "inputs": [
+    {
+     "name": "user",
+     "type": "address",
+     "indexed": true
+    },
+    {
+     "name": "a0",
+     "type": "uint256",
+     "indexed": false
+    },
+    {
+     "name": "a1",
+     "type": "uint256",
+     "indexed": false
+    },
+    {
+     "name": "a2",
+     "type": "uint256",
+     "indexed": false
+    },
+    {
+     "name": "a3",
+     "type": "uint256",
+     "indexed": false
+    }
+   ],
+   "_note": "openchain match (hasVerifiedContract elsewhere); one per user per close batch; a2, a3 = half the batch fee each in samples; a0, a1 [?]",
+   "topic0": "0xa32e4800a59f03b131f5fea90951bdf00d8d505ad98f48ece29d8620a0bf09b0"
+  },
+  {
+   "type": "event",
+   "name": "StakingRewardCredited",
+   "anonymous": false,
+   "inputs": [
+    {
+     "name": "user",
+     "type": "address",
+     "indexed": true
+    },
+    {
+     "name": "amount",
+     "type": "uint256",
+     "indexed": false
+    }
+   ],
+   "_note": "brute-forced",
+   "topic0": "0xe7fd56edb8bf641db0dc0a89a9d7d3a10da1fedab015ab0c51f1c418d2bc15b0"
+  },
+  {
+   "type": "event",
+   "name": "Swept",
+   "anonymous": false,
+   "inputs": [
+    {
+     "name": "user",
+     "type": "address",
+     "indexed": true
+    },
+    {
+     "name": "amount",
+     "type": "uint256",
+     "indexed": false
+    }
+   ],
+   "_note": "openchain",
+   "topic0": "0xc36b5179cb9c303b200074996eab2b3473eac370fdd7eba3bec636fe35109696"
+  },
+  {
+   "type": "event",
+   "name": "InstrumentAdded",
+   "anonymous": false,
+   "inputs": [
+    {
+     "name": "instrumentId",
+     "type": "uint32",
+     "indexed": false
+    },
+    {
+     "name": "assetIndex",
+     "type": "uint32",
+     "indexed": false
+    }
+   ],
+   "_note": "brute-forced, not observed",
+   "topic0": "0x443c80f61da46228681c9b23ea9ae79b1a6f01ccf004b523675849bdfac11e20"
+  },
+  {
+   "type": "event",
+   "name": "FeeRatesUpdated",
+   "anonymous": false,
+   "inputs": [
+    {
+     "name": "a",
+     "type": "uint256",
+     "indexed": false
+    },
+    {
+     "name": "b",
+     "type": "uint256",
+     "indexed": false
+    },
+    {
+     "name": "c",
+     "type": "uint256",
+     "indexed": false
+    }
+   ],
+   "_note": "openchain, not observed",
+   "topic0": "0xe4af0531d4ba8c578b5076b042e4505372fb4f4986aea8ebf77f4ff1585e3e75"
+  },
+  {
+   "type": "event",
+   "name": "DevFeesClaimed",
+   "anonymous": false,
+   "inputs": [
+    {
+     "name": "recipient",
+     "type": "address",
+     "indexed": false
+    },
+    {
+     "name": "a",
+     "type": "uint256",
+     "indexed": false
+    },
+    {
+     "name": "b",
+     "type": "uint256",
+     "indexed": false
+    }
+   ],
+   "_note": "openchain, not observed, indexing unknown",
+   "topic0": "0x8163d4e6d566c87ca3ced41f12809febe576911226e4d7165eb7178e74557a6f"
+  },
+  {
+   "type": "event",
+   "name": "TradingPausedUpdated",
+   "anonymous": false,
+   "inputs": [
+    {
+     "name": "paused",
+     "type": "bool",
+     "indexed": false
+    }
+   ],
+   "_note": "openchain, not observed",
+   "topic0": "0xa4abec9259618fb7d014c89824b2887f61e3ab2b382d4a48a42dfde43cec5d6e"
+  },
+  {
+   "type": "event",
+   "name": "ProxyFactoryUpdated",
+   "anonymous": false,
+   "inputs": [
+    {
+     "name": "proxyFactory",
+     "type": "address",
+     "indexed": false
+    }
+   ],
+   "_note": "openchain, not observed",
+   "topic0": "0x06fb15b3928ea45c766cc3b08212ecc978647d51cf9551cdd13a70d6a00197c7"
+  },
+  {
+   "type": "event",
+   "name": "SessionKeyManagerUpdated",
+   "anonymous": false,
+   "inputs": [
+    {
+     "name": "sessionKeyManager",
+     "type": "address",
+     "indexed": false
+    }
+   ],
+   "_note": "openchain, not observed",
+   "topic0": "0x4d57218e59793e6845c36a961c3af7acfce8c54b13a697da231466fc265fdb61"
+  },
+  {
+   "type": "event",
+   "name": "PauseGuardianUpdated",
+   "anonymous": false,
+   "inputs": [
+    {
+     "name": "pauseGuardian",
+     "type": "address",
+     "indexed": false
+    }
+   ],
+   "_note": "openchain, not observed",
+   "topic0": "0x6b3ffd50ed0810416007b5dbbae587b9d8801c50bf8065cda8eb82011bed314e"
+  },
+  {
+   "type": "event",
+   "name": "AuthorizedKeeperUpdated",
+   "anonymous": false,
+   "inputs": [
+    {
+     "name": "keeper",
+     "type": "address",
+     "indexed": false
+    }
+   ],
+   "_note": "openchain, not observed",
+   "topic0": "0xabf32d7cef1e07c4d0e9f8a6e1af1ac77dff1a5f0e0b04263a53e8f0d0660083"
+  },
+  {
+   "type": "event",
+   "name": "AuthorizedExecutorUpdated",
+   "anonymous": false,
+   "inputs": [
+    {
+     "name": "executor",
+     "type": "address",
+     "indexed": false
+    }
+   ],
+   "_note": "brute-forced, not observed",
+   "topic0": "0x3cfda8ee6e20b237d2949c3d16b6f12822b6f1bc0580f188f932c0771cac729d"
+  },
+  {
+   "type": "event",
+   "name": "DevFeeRecipientUpdated",
+   "anonymous": false,
+   "inputs": [
+    {
+     "name": "recipient",
+     "type": "address",
+     "indexed": false
+    }
+   ],
+   "_note": "brute-forced, not observed",
+   "topic0": "0x7de91f014f26c8762e7854629fd45ddaa8fb621e8b83288a6bcf371a1dd6fbc5"
+  },
+  {
+   "type": "event",
+   "name": "PaperTokenomicsUpdated",
+   "anonymous": false,
+   "inputs": [
+    {
+     "name": "paperTokenomics",
+     "type": "address",
+     "indexed": false
+    }
+   ],
+   "_note": "brute-forced, not observed",
+   "topic0": "0xaf80993709a0eea3136bd8cf21081dcc85e10d1df039a9267406920306fd0781"
+  },
+  {
+   "type": "event",
+   "name": "MarketKeeperUpdated",
+   "anonymous": false,
+   "inputs": [
+    {
+     "name": "keeper",
+     "type": "address",
+     "indexed": false
+    }
+   ],
+   "_note": "brute-forced, not observed",
+   "topic0": "0xc76a9da20bd06b6b26d0826dab481a66785c609c15fae99817a557e61229e9c5"
+  },
+  {
+   "type": "function",
+   "name": "getUserOpenPositionIds",
+   "stateMutability": "view",
+   "inputs": [
+    {
+     "name": "user",
+     "type": "address"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "ids",
+     "type": "uint256[]"
+    }
+   ],
+   "_note": "snapshot and resolve",
+   "selector": "0xa25dc87f"
+  },
+  {
+   "type": "function",
+   "name": "positions",
+   "stateMutability": "view",
+   "inputs": [
+    {
+     "name": "positionId",
+     "type": "uint256"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "owner",
+     "type": "address"
+    },
+    {
+     "name": "instrumentId",
+     "type": "uint32"
+    },
+    {
+     "name": "entryPrice",
+     "type": "uint64"
+    },
+    {
+     "name": "margin",
+     "type": "uint128"
+    },
+    {
+     "name": "leverage",
+     "type": "uint32"
+    },
+    {
+     "name": "openedAt",
+     "type": "uint64"
+    },
+    {
+     "name": "isLong",
+     "type": "bool"
+    },
+    {
+     "name": "fromQueue",
+     "type": "bool"
+    },
+    {
+     "name": "isOpen",
+     "type": "bool"
+    }
+   ],
+   "_note": "outputs inferred from live calls: openedAt in seconds, isOpen 0 after close or liquidation (the row stays), fromQueue [?]",
+   "selector": "0x99fbab88"
+  },
+  {
+   "type": "function",
+   "name": "positionOwner",
+   "stateMutability": "view",
+   "inputs": [
+    {
+     "name": "positionId",
+     "type": "uint256"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "owner",
+     "type": "address"
+    }
+   ],
+   "selector": "0xb3060d36"
+  },
+  {
+   "type": "function",
+   "name": "balances",
+   "stateMutability": "view",
+   "inputs": [
+    {
+     "name": "user",
+     "type": "address"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "balance",
+     "type": "uint256"
+    }
+   ],
+   "_note": "available USD balance, 1e18",
+   "selector": "0x27e235e3"
+  },
+  {
+   "type": "function",
+   "name": "userQueueHead",
+   "stateMutability": "view",
+   "inputs": [
+    {
+     "name": "user",
+     "type": "address"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "value",
+     "type": "uint256"
+    }
+   ],
+   "_note": "outputs [?]",
+   "selector": "0xdcab7f6a"
+  },
+  {
+   "type": "function",
+   "name": "instruments",
+   "stateMutability": "view",
+   "inputs": [
+    {
+     "name": "instrumentId",
+     "type": "uint32"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "rateMultiplier",
+     "type": "uint256"
+    },
+    {
+     "name": "positionMultiplier",
+     "type": "uint256"
+    },
+    {
+     "name": "assetIndex",
+     "type": "uint256"
+    },
+    {
+     "name": "maxLeverage",
+     "type": "uint256"
+    },
+    {
+     "name": "oiCap",
+     "type": "uint256"
+    },
+    {
+     "name": "w5",
+     "type": "uint256"
+    },
+    {
+     "name": "baseRate",
+     "type": "uint256"
+    },
+    {
+     "name": "referenceNotional",
+     "type": "uint256"
+    }
+   ],
+   "_note": "outputs inferred: w0 15,000e18 = docs rateMultiplier 15,000; w2 = HyperCore perp assetIndex (0 BTC, 1 ETH); w3 1000 = max leverage; w6 0.1e18 = baseRate 10%; w7 100,000e18 = referenceNotional; w1, w4, w5 names [?]. No symbol and no priceScale",
+   "selector": "0xdc8a47ef"
+  },
+  {
+   "type": "function",
+   "name": "instrumentCount",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "count",
+     "type": "uint256"
+    }
+   ],
+   "_note": "2 on 2026-10-15",
+   "selector": "0xf28bbdb2"
+  },
+  {
+   "type": "function",
+   "name": "nextPositionId",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "id",
+     "type": "uint256"
+    }
+   ],
+   "selector": "0x899346c7"
+  },
+  {
+   "type": "function",
+   "name": "tradingPaused",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "paused",
+     "type": "bool"
+    }
+   ],
+   "selector": "0x53e23e2e"
+  },
+  {
+   "type": "function",
+   "name": "totalQueued",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "amount",
+     "type": "uint256"
+    }
+   ],
+   "selector": "0x53ac4b66"
+  },
+  {
+   "type": "function",
+   "name": "queueHead",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "value",
+     "type": "uint256"
+    }
+   ],
+   "_note": "outputs [?]",
+   "selector": "0x96523644"
+  },
+  {
+   "type": "function",
+   "name": "queueNode",
+   "stateMutability": "view",
+   "inputs": [
+    {
+     "name": "index",
+     "type": "uint256"
+    }
+   ],
+   "outputs": [],
+   "_note": "outputs [?]",
+   "selector": "0xe634384f"
+  },
+  {
+   "type": "function",
+   "name": "sideBucket",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "amount",
+     "type": "uint256"
+    }
+   ],
+   "selector": "0x9274682e"
+  },
+  {
+   "type": "function",
+   "name": "totalBalances",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "amount",
+     "type": "uint256"
+    }
+   ],
+   "selector": "0xa69a2ad1"
+  },
+  {
+   "type": "function",
+   "name": "totalLockedMargin",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "amount",
+     "type": "uint256"
+    }
+   ],
+   "selector": "0x01ad056f"
+  },
+  {
+   "type": "function",
+   "name": "lpBankrollAvailable",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "amount",
+     "type": "uint256"
+    }
+   ],
+   "selector": "0x0cdd5fc4"
+  },
+  {
+   "type": "function",
+   "name": "stakerFeeAccumulator",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "amount",
+     "type": "uint256"
+    }
+   ],
+   "selector": "0xafdf6702"
+  },
+  {
+   "type": "function",
+   "name": "devFeeAccumulator",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "amount",
+     "type": "uint256"
+    }
+   ],
+   "selector": "0x7d004aeb"
+  },
+  {
+   "type": "function",
+   "name": "liquidationFeeRate",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "rate",
+     "type": "uint256"
+    }
+   ],
+   "selector": "0x5fb3b1b5"
+  },
+  {
+   "type": "function",
+   "name": "collateralScale",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "scale",
+     "type": "uint256"
+    }
+   ],
+   "_note": "1e12 (6-decimal USDC to 1e18)",
+   "selector": "0xec0bdcfc"
+  },
+  {
+   "type": "function",
+   "name": "oracle",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "oracle",
+     "type": "address"
+    }
+   ],
+   "selector": "0x7dc0d1d0"
+  },
+  {
+   "type": "function",
+   "name": "treasury",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "treasury",
+     "type": "address"
+    }
+   ],
+   "selector": "0x61d027b3"
+  },
+  {
+   "type": "function",
+   "name": "owner",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "owner",
+     "type": "address"
+    }
+   ],
+   "selector": "0x8da5cb5b"
+  },
+  {
+   "type": "function",
+   "name": "authorizedExecutor",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "executor",
+     "type": "address"
+    }
+   ],
+   "selector": "0x13dd495b"
+  },
+  {
+   "type": "function",
+   "name": "authorizedKeeper",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "keeper",
+     "type": "address"
+    }
+   ],
+   "selector": "0x9d47d4d3"
+  },
+  {
+   "type": "function",
+   "name": "marketKeeper",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "keeper",
+     "type": "address"
+    }
+   ],
+   "selector": "0x21f55a6c"
+  },
+  {
+   "type": "function",
+   "name": "pauseGuardian",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "guardian",
+     "type": "address"
+    }
+   ],
+   "selector": "0x24a3d622"
+  },
+  {
+   "type": "function",
+   "name": "sessionKeyManager",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "manager",
+     "type": "address"
+    }
+   ],
+   "selector": "0x0b826190"
+  },
+  {
+   "type": "function",
+   "name": "proxyFactory",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "factory",
+     "type": "address"
+    }
+   ],
+   "selector": "0xc10f1a75"
+  },
+  {
+   "type": "function",
+   "name": "paperTokenomics",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "paperTokenomics",
+     "type": "address"
+    }
+   ],
+   "selector": "0xed410ee1"
+  },
+  {
+   "type": "function",
+   "name": "devFeeRecipient",
+   "stateMutability": "view",
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "recipient",
+     "type": "address"
+    }
+   ],
+   "selector": "0xcbeb5f3d"
+  },
+  {
+   "type": "function",
+   "name": "liquidate",
+   "stateMutability": "nonpayable",
+   "inputs": [
+    {
+     "name": "positionId",
+     "type": "uint256"
+    }
+   ],
+   "outputs": [],
+   "selector": "0x415f1240"
+  },
+  {
+   "type": "function",
+   "name": "liquidateBatch",
+   "stateMutability": "nonpayable",
+   "inputs": [
+    {
+     "name": "positionIds",
+     "type": "uint256[]"
+    }
+   ],
+   "outputs": [],
+   "_note": "keeper (observed: 0xdead89a2...)",
+   "selector": "0x599dc539"
+  },
+  {
+   "type": "function",
+   "name": "close",
+   "stateMutability": "nonpayable",
+   "inputs": [
+    {
+     "name": "positionIds",
+     "type": "uint256[]"
+    }
+   ],
+   "outputs": [],
+   "selector": "0x58d3ec6a"
+  },
+  {
+   "type": "function",
+   "name": "harvest",
+   "stateMutability": "nonpayable",
+   "inputs": [
+    {
+     "name": "maxEntries",
+     "type": "uint256"
+    }
+   ],
+   "outputs": [],
+   "selector": "0xddc63262"
+  },
+  {
+   "type": "function",
+   "name": "pushStakerFees",
+   "stateMutability": "nonpayable",
+   "inputs": [],
+   "outputs": [],
+   "selector": "0x7b9f5264"
+  },
+  {
+   "type": "function",
+   "name": "setTradingPaused",
+   "stateMutability": "nonpayable",
+   "inputs": [
+    {
+     "name": "paused",
+     "type": "bool"
+    }
+   ],
+   "outputs": [],
+   "selector": "0xae69b95b"
+  },
+  {
+   "type": "function",
+   "name": "pauseMarket",
+   "stateMutability": "nonpayable",
+   "inputs": [
+    {
+     "name": "instrumentId",
+     "type": "uint32"
+    }
+   ],
+   "outputs": [],
+   "selector": "0x2d2451d1"
+  },
+  {
+   "type": "function",
+   "name": "unpauseMarket",
+   "stateMutability": "nonpayable",
+   "inputs": [
+    {
+     "name": "instrumentId",
+     "type": "uint32"
+    }
+   ],
+   "outputs": [],
+   "selector": "0xfb9f1009"
+  },
+  {
+   "type": "function",
+   "name": "requestSweep",
+   "stateMutability": "nonpayable",
+   "inputs": [
+    {
+     "name": "user",
+     "type": "address"
+    }
+   ],
+   "outputs": [],
+   "selector": "0xe0189108"
+  },
+  {
+   "type": "function",
+   "name": "sweep",
+   "stateMutability": "nonpayable",
+   "inputs": [
+    {
+     "name": "user",
+     "type": "address"
+    }
+   ],
+   "outputs": [],
+   "selector": "0x01681a62"
+  }
+ ],
+ "observed_topic0": {
+  "0x88451ea1189f73b554f0bf39c09868560ed149b3d788fcc933ff66ba926827f3": "PositionOpened",
+  "0x87902ed2451849f465fc4d36a01d7f5c67b53af12f63ee85d2814a2d582f89bf": "PositionClosed",
+  "0x0c859bc5db091ba3b9dc10c00f8dfc78b1f0b7e2566d107253ae67c069ae5de8": "Liquidated",
+  "0xa32e4800a59f03b131f5fea90951bdf00d8d505ad98f48ece29d8620a0bf09b0": "PositionsClosed",
+  "0xe7fd56edb8bf641db0dc0a89a9d7d3a10da1fedab015ab0c51f1c418d2bc15b0": "StakingRewardCredited",
+  "0xc36b5179cb9c303b200074996eab2b3473eac370fdd7eba3bec636fe35109696": "Swept"
+ },
+ "unknown_topic0": {
+  "0x95d1a93901f24eeaa294588802f66fa008f9f3741060c9f79e5dab4709de5e75": "topics [user]; data [amount 1e18, same amount 8-dec]: withdrawal to HyperCore",
+  "0x02d61879cd72906e0951e3a96096407dd2b1f2cd2d063dae983bb20216cf3025": "topics [user, deposit proxy?]; data [amount 8-dec, 0, block]: deposit",
+  "0xa065d6ba54c5124cd73ce640fd3fbc0ce6eb8a4f4c9d5155347dcc461ad0cffe": "topics [instrumentId]; data 2 words: open interest long/short?",
+  "0x0bb3f42f9fe304326ba30302693425c1db2e2f6a4675df44372fc0af5ce73706": "no indexed; data 2 small ints: queue harvest counters?",
+  "0x18d8b7951a20bbcb2b5f45b29bb62a81963f4b1f75dac5e2493a885a6de74291": "topics [PaperStaking]; data [amount, amount]: staker fees pushed",
+  "0x17d88d5ce12b7103190340ee5304ff19dbf970a0289bb2684460e4a87a7b66f9": "topics [PaperStaking]; data 3 words: LP excess to stakers",
+  "0x28f3adb5fa23ae5c83c811e67caf2ec192a816e4ef898c7f90d1484f65a9717e": "in implementation bytecode, not observed in about 6,000 blocks (2026-10-15)",
+  "0x5bcf15b0a82479fbcfcb086707ad8be24c96d445448a1f625310e1c3fe491759": "in implementation bytecode, not observed in about 6,000 blocks (2026-10-15)",
+  "0x62db1b2b923b6f20043c492d3586df1a823e447c63e44d15dbc90c1a3bc9fcc5": "in implementation bytecode, not observed in about 6,000 blocks (2026-10-15)",
+  "0x76a319771459e5329ebc7830ef30b80fc54d20327f8b4946a9539e53c46018c9": "in implementation bytecode, not observed in about 6,000 blocks (2026-10-15)",
+  "0x8da9931e615ce9dfd2d7914e0cee3246839757203d34810cde64e0d0026f75c3": "in implementation bytecode, not observed in about 6,000 blocks (2026-10-15)",
+  "0x9cc23a52214afa42e1ae53cdb2e79dc2d0cd33c33faca383ed3b149300adcb13": "in implementation bytecode, not observed in about 6,000 blocks (2026-10-15)",
+  "0xac4ddb8d63e9d7a862c5d61ce47517623a448262414a7eef6797102104b31214": "in implementation bytecode, not observed in about 6,000 blocks (2026-10-15)",
+  "0xbcd09d92c26e8078d8be2b8380bb7d1ab324d0a9ae6743e158ad8d7f734a84ba": "in implementation bytecode, not observed in about 6,000 blocks (2026-10-15)",
+  "0xfce2fb41f9ff0457a0f012e62cfd6a7cff4e8439ae20008ab6979c740ba5a983": "in implementation bytecode, not observed in about 6,000 blocks (2026-10-15)"
+ },
+ "unresolved_selectors": {
+  "_note": "PUSH4 constants of the implementation with no 4byte/openchain name (includes custom errors and functions with struct args such as openPositionBySig, reconcileSweepCredit, sweepAllToExchange)",
+  "selectors": [
+   "0x015c3a53",
+   "0x01dfbf07",
+   "0x0543a6e1",
+   "0x060447aa",
+   "0x07f7f41d",
+   "0x0a3bd0c5",
+   "0x0c4ac671",
+   "0x0c99a2f1",
+   "0x0ce40f51",
+   "0x0d45167d",
+   "0x138e9de2",
+   "0x1680b573",
+   "0x183534a1",
+   "0x18715c9a",
+   "0x1907e1ff",
+   "0x1afd17e9",
+   "0x1b7c1009",
+   "0x1b7f36f3",
+   "0x1e9acf17",
+   "0x1fa71b13",
+   "0x208a58d9",
+   "0x2448a553",
+   "0x248ccfdb",
+   "0x2627131f",
+   "0x2792e706",
+   "0x27abffd7",
+   "0x27d96b39",
+   "0x28ee68db",
+   "0x2dcc7fce",
+   "0x30951a91",
+   "0x31a39849",
+   "0x31a4956c",
+   "0x32db40c9",
+   "0x32faa570",
+   "0x3a21be03",
+   "0x3b9aca00",
+   "0x3cc087ff",
+   "0x3cf4208d",
+   "0x4218d0ad",
+   "0x473339ab",
+   "0x48ee5e08",
+   "0x492692f3",
+   "0x4a4d9eea",
+   "0x50c23fab",
+   "0x538ccdfd",
+   "0x551306f3",
+   "0x58015cfd",
+   "0x58f03bf7",
+   "0x5ca4c0ea",
+   "0x61014075",
+   "0x610c633b",
+   "0x628a9fd6",
+   "0x63ca348f",
+   "0x6a3214c9",
+   "0x6d142da1",
+   "0x6d4b785b",
+   "0x6d60ae8e",
+   "0x6ef5bcdd",
+   "0x70f75ff5",
+   "0x753a369c",
+   "0x76b9164b",
+   "0x7e4174fc",
+   "0x7f608253",
+   "0x7f99545a",
+   "0x827ad94c",
+   "0x82f47a3f",
+   "0x8d09f23f",
+   "0x925b3aad",
+   "0x967d697b",
+   "0xad0ef2c5",
+   "0xad21c3fb",
+   "0xae4daf4e",
+   "0xae745703",
+   "0xaf210ecc",
+   "0xb0cb274d",
+   "0xbacd9ea0",
+   "0xc0182669",
+   "0xc43fbc8c",
+   "0xc8372577",
+   "0xc88bbcf3",
+   "0xca02ff91",
+   "0xcb163b03",
+   "0xcd2d3811",
+   "0xd26ffacb",
+   "0xd7c7e5fb",
+   "0xd9d193d3",
+   "0xdc8a47ef",
+   "0xe1f9209b",
+   "0xec6783f0",
+   "0xef1a27a9",
+   "0xf1a8786c",
+   "0xf37d3c4f",
+   "0xf728fc98",
+   "0xf84a74d3",
+   "0xfadaa871",
+   "0xfb466481",
+   "0xfdfd905d",
+   "0xff3bc415"
+  ]
+ }
+}

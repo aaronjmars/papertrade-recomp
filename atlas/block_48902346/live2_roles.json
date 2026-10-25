@@ -1,0 +1,518 @@
+{
+ "audit": "semi-trusted roles (keeper, market keeper, relayer, pause guardian, builder)",
+ "pin": 48902346,
+ "pin_block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+ "generated_by": "audit_live2_roles.py",
+ "scope": "set-2 runtimes behind the live proxies, compared against the pinned behaviour where the pinned runtime is needed; the pinned Exchange is never the target of a role attack",
+ "live_set": {
+  "exchange_implementation": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+  "session_key_manager_implementation": "0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946",
+  "exchange_linked_library": "0x583d0bd818c991c5830fea93aef04e474b272459",
+  "builder_registry": "0xfdc6550436dd75ce8a0b145f935b7d3a64f53248",
+  "runtime_sha256": {
+   "exchange_implementation": "fc7374f3969381160732fe98c5e3145e00c3f167f168d61d65bb4972e9a6b268",
+   "session_key_manager_implementation": "7df05c33597c04820a314fae015aab01b5566aff53e9bded8446962cfd4ad2c9",
+   "exchange_linked_library": "ced8e434ebd5379c4acc1fba809a5b18f531c676a264308c9a0a1a76d9641440",
+   "builder_registry": "f459de55cb0463912417650fbca7e18109f3820551e4071234109e1e72801d2f"
+  }
+ },
+ "roles_at_head": {
+  "owner": {
+   "exchange_session_tokenomics_paper_staking_registry_proxyadmin": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f"
+  },
+  "pause_guardian": "0x696292762fd5ac3677a45edbe54eaece4194d1f6",
+  "authorized_executor_slot_88": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+  "authorized_keeper_slot_89": "0x0924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56",
+  "market_keeper_slot_37": "0x3721476de31190dc1af8908026abe20efe25cf99",
+  "builder_registry_fee_rate_raw": "5e15 (0.5 %)",
+  "builder_registry_fee_rate_cap_raw": "1e16 (1 %)"
+ },
+ "error_names": {
+  "0x30cd7471": "NotOwner()",
+  "0x49199fb6": "NotPauseAuthority()",
+  "0xda96f0b6": "unnamed (not the authorized executor)",
+  "0x756688fe": "InvalidNonce()",
+  "0xc5045f22": "SessionKeyNotAuthorized()",
+  "0xc20280ea": "unnamed (signed-field mismatch)",
+  "0x2c49223e": "NotOwnerOrGuardian()",
+  "0xddeb79ba": "NotLiquidatable()"
+ },
+ "observations": {
+  "role_builder_approved": {
+   "name": "role_builder_approved",
+   "ok": true,
+   "selector": 0,
+   "reads": 39,
+   "writes": 6,
+   "approved": true,
+   "slot39_read_bits": 0,
+   "slot39_write_bits": 0,
+   "credited_value": 0,
+   "shared_counter": 0,
+   "registry_accesses": 0
+  },
+  "role_builder_id7": {
+   "name": "role_builder_id7",
+   "ok": true,
+   "selector": 0,
+   "reads": 39,
+   "writes": 6,
+   "approved": false,
+   "slot39_read_bits": 0,
+   "slot39_write_bits": 0,
+   "credited_value": 0,
+   "shared_counter": 0,
+   "registry_accesses": 0
+  },
+  "role_builder_loss": {
+   "name": "role_builder_loss",
+   "ok": true,
+   "selector": 0,
+   "reads": 35,
+   "writes": 4,
+   "approved": true,
+   "slot39_read_bits": 0,
+   "slot39_write_bits": 0,
+   "credited_value": 0,
+   "shared_counter": 0,
+   "registry_accesses": 0
+  },
+  "role_builder_plain": {
+   "name": "role_builder_plain",
+   "ok": true,
+   "selector": 0,
+   "reads": 39,
+   "writes": 6,
+   "approved": false,
+   "slot39_read_bits": 0,
+   "slot39_write_bits": 0,
+   "credited_value": 0,
+   "shared_counter": 0,
+   "registry_accesses": 0
+  },
+  "role_builder_trailing": {
+   "name": "role_builder_trailing",
+   "ok": true,
+   "selector": 0,
+   "reads": 39,
+   "writes": 6,
+   "approved": false,
+   "slot39_read_bits": 0,
+   "slot39_write_bits": 0,
+   "credited_value": 0,
+   "shared_counter": 0,
+   "registry_accesses": 0
+  },
+  "role_global_pause_gates": {
+   "name": "role_global_pause_gates",
+   "close_ok": true,
+   "close_selector": 0,
+   "close_writes": 6,
+   "close_flags_after": 0,
+   "liquidate_batch_ok": true,
+   "liquidate_batch_selector": 0
+  },
+  "role_global_pause_open": {
+   "name": "role_global_pause_open",
+   "flag0_ok": true,
+   "flag0_selector": 0,
+   "flag1_ok": false,
+   "flag1_selector": 45642918
+  },
+  "role_keeper_cap_effect": {
+   "name": "role_keeper_cap_effect",
+   "live_1e20": 1090068803,
+   "live_1e22": 1090068803,
+   "live_1e24": 1413115408,
+   "maxed_1e20": 0,
+   "maxed_1e22": 0,
+   "maxed_1e24": 1413115408
+  },
+  "role_keeper_flag_gates": {
+   "name": "role_keeper_flag_gates",
+   "flip_ok": true,
+   "flag_word_before": "2",
+   "flag_byte_after": 0,
+   "active_before": 1,
+   "close_ok": true,
+   "close_selector": 0,
+   "close_reads": 39,
+   "close_writes": 6,
+   "active_after": 0
+  },
+  "role_keeper_liquidation": {
+   "name": "role_keeper_liquidation",
+   "healthy_ok": true,
+   "healthy_selector": 0,
+   "healthy_events": 0,
+   "healthy_active_after": 1,
+   "ill_ok": true,
+   "ill_events": 1,
+   "ill_active_after": 0
+  },
+  "role_keeper_surface": {
+   "name": "role_keeper_surface",
+   "keeper_flag": 0,
+   "keeper_setFeeRates": 818771057,
+   "keeper_close": 3667325110,
+   "keeper_setFeeRates_again": 818771057,
+   "marketKeeper_oiCap": 0,
+   "marketKeeper_slot28": 0,
+   "marketKeeper_instrument": 818771057,
+   "slot24_after": 20000000000000000,
+   "slot28_after": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  },
+  "role_pause_surface": {
+   "name": "role_pause_surface",
+   "keeper_global_pause": 1226416054,
+   "marketKeeper_global_pause": 1226416054,
+   "outsider_global_pause": 1226416054,
+   "guardian_global_pause": 0,
+   "guardian_set_pause_byte": 1,
+   "guardian_global_resume": 1226416054,
+   "owner_global_resume": 0,
+   "keeper_market_pause": 1226416054,
+   "marketKeeper_market_pause": 1226416054
+  },
+  "role_relayer_batch": {
+   "name": "role_relayer_batch",
+   "dup_first_ok": true,
+   "dup_second_sel": 1969654014,
+   "dup_second_ok": false,
+   "wrongids_first_ok": false,
+   "wrongids_first_sel": 3305398050,
+   "wrongids_second_ok": true,
+   "retarget_first_sel": 3305398050,
+   "retarget_second_ok": true
+  },
+  "role_relayer_order": {
+   "name": "role_relayer_order",
+   "order12_price_a": 150,
+   "order12_price_b": 150,
+   "order21_price_b": 150,
+   "order21_price_a": 150
+  },
+  "role_relayer_withdraw": {
+   "name": "role_relayer_withdraw",
+   "ok": true,
+   "selector": 0,
+   "recipient_is_signed_user": true,
+   "retarget_selector": 3254943978
+  }
+ },
+ "role_ranking": {
+  "note": "RL-07 is an informational ranking, not a finding; this workstream's findings are RL-02 (medium) and RL-05 (high) only",
+  "rows": [
+   {
+    "role": "authorizedKeeper",
+    "worst_action": "flip the slot-8 byte",
+    "worst_case_loss": "0",
+    "bound": "owner sets slot 89",
+    "repeats": "every call, no effect"
+   },
+   {
+    "role": "marketKeeper",
+    "worst_action": "max both per-side open caps",
+    "worst_case_loss": "opens the configured cap rejects succeed; up to the LP bankroll",
+    "bound": "the per-position size limit only, nothing on payout",
+    "repeats": "every open"
+   },
+   {
+    "role": "relayer",
+    "worst_action": "delay or drop a sealed intent",
+    "worst_case_loss": "0 on chain",
+    "bound": "the signed deadline",
+    "repeats": "every intent"
+   },
+   {
+    "role": "pause guardian",
+    "worst_action": "pause a market then close",
+    "worst_case_loss": "margin x leverage, up to the LP bankroll",
+    "bound": "the LP bankroll; one shot per instrument",
+    "repeats": "once per instrument"
+   },
+   {
+    "role": "builder",
+    "worst_action": "none found",
+    "worst_case_loss": "0",
+    "bound": "n/a",
+    "repeats": "n/a"
+   }
+  ],
+  "unbounded_action": "the guardian's pauseMarket followed by a close (RL-05): not bounded by a cap, a user signature or an owner gate"
+ },
+ "harness": {
+  "source_sha256": "875e1e30afbf79637b7691dda2977289dcd7816b326adeafc3cf68b966e8bcfb",
+  "tests": "role arms plus the pass-one set-2 cases",
+  "offline_rebuild": "python3 scripts/audit_live2_roles.py --from-saved re-emits this ledger and doc from the saved forge replay, no Forge run",
+  "forge_replay": "artifacts/live2_roles/replay.json",
+  "generated_solidity": "artifacts/live2_roles/RoleLocal.t.sol"
+ },
+ "rows": [
+  {
+   "id": "RL-01",
+   "title": "The authorized keeper is boxed in: it can flip one opaque byte and nothing else",
+   "angle": "Keeper (authorizedKeeper, Exchange slot 89)",
+   "invariant": "A5 + proposed A8 (role scope)",
+   "actor": "whoever holds Exchange slot 89 (live: 0x0924736b5ef2f50d3dbb82b4b9e85b4c5a4b9d56)",
+   "precondition": "Exchange slot 89 equals the caller; the live value was wired by the 2026-10-21 batch",
+   "trigger": "0xe6ac4a74(bool) from the keeper; and every other selector a keeper might try",
+   "impact": "The keeper's only accepted write is the slot-8 byte above bits 0..31 (instrumentCount is preserved). It cannot submit an intent (close reverts 0xDA96F0B6 as a non-executor), cannot set fees (setFeeRates reverts NotOwner 0x30CD7471 with slot 24 unchanged at 2e16), cannot pause a market or the venue (both revert NotPauseAuthority 0x49199FB6), and cannot liquidate a healthy position (an eligible check skips it: 0 events, active bit kept). Clearing the flag does not change the signed close (it still closes, same 6 writes).",
+   "affected": "set2",
+   "severity": "none",
+   "status": "disproved",
+   "evidence_tier": "exact-runtime replay, set 2 runtimes, plus a first-party negative control",
+   "evidence": {
+    "observation": "role_keeper_surface, role_keeper_flag_gates, role_pause_surface, role_keeper_liquidation",
+    "artifact": "artifacts/live2_roles/replay.json",
+    "harness": "artifacts/live2_roles/RoleLocal.t.sol",
+    "keeper_flag_ok": 0,
+    "setFeeRates": "0x30cd7471",
+    "keeper_close": "0xda96f0b6",
+    "slot24_unchanged": 20000000000000000,
+    "flag_byte_after": 0,
+    "close_writes_with_flag_cleared": 6,
+    "healthy_liquidated_events": 0,
+    "healthy_active_after": 1
+   },
+   "missing_observation": "whether the slot-8 byte gates the open, settlement or a front-end consumer; the open path reverts post-signer (0x0a4f5a07) on set 2 so it could not be driven, and the close is inert",
+   "citations": [
+    "atlas/block_48902346/live2_authority.md L2A-02, L2A-10",
+    "atlas/block_48902346/exchange_admin_setters.md",
+    "atlas/block_48902346/exchange_liquidation_pseudocode.md"
+   ]
+  },
+  {
+   "id": "RL-02",
+   "title": "The market keeper can raise both per-side open caps to maximum, and an exact-runtime open the configured cap rejects then succeeds",
+   "angle": "Keeper (marketKeeper, Exchange slot 37)",
+   "invariant": "A4 (eligibility bounds) + proposed A8",
+   "actor": "whoever holds Exchange slot 37 (live: 0x3721476de31190dc1af8908026abe20efe25cf99)",
+   "precondition": "Exchange slot 37 equals the caller",
+   "trigger": "0x628a9fd6(uint32,uint128,uint128) with both values at type(uint128).max, and 0x82f47a3f(uint128,uint128) likewise",
+   "impact": "Both writes succeed (selector 0, slot 28 reads 2**256-1 afterwards), and the per-side cap write changes a live open outcome: a signed open of size 1e20 and another of 1e22 both revert OiCapExceeded 0x40f92143 under the configured caps and both succeed (selector 0, a position is opened) after the keeper sets both caps to type(uint128).max. The cap write therefore removes the configured aggregate per-side open-interest bound, which is the sole guard on 57 saved opens. It does not remove every bound: a 1e24 open still fails with the public candidate PositionTooLarge() 0x543a6e10, which the keeper cannot change, so the keeper widens the aggregate exposure rather than creating an unbounded single position. Because the per-side limit bounds notional rather than payout (pass-one LP-05), the revenue at risk beyond it is a payout that can credit the whole LP bankroll and queue the remainder. Neither setter has any bound or gate beyond the slot-37 (or owner) check: no timelock, no upper bound below the uint128 type ceiling, no rate or delta limit, and the only record is the setter's own event (topic 0xa065d6ba for the cap setter, 0x5bcf15b0 for slot 28), so a maxed cap leaves no state a monitoring job can use beyond that event. The change is not retroactive in either direction: the per-side limit is compared only on the signed-open path (all 57 saved comparisons are opens), and the close updates the market's aggregate OI word without ever reading the limit (the close arms write the position word, the market word, the balance word and the fee word). A raised cap therefore admits new opens and does not change how an existing position settles, so the incremental exposure is bounded by what is opened after the change, not by the pre-change book. The economic meaning of slot 28's two fields is still unnamed, so its max-write is a scope observation. Fee rates, instruments and both pause surfaces stay owner or guardian gated.",
+   "affected": "both",
+   "severity": "medium",
+   "status": "confirmed_simulation",
+   "evidence_tier": "exact-runtime replay (the write) on top of pass-one open-path evidence",
+   "evidence": {
+    "observation": "role_keeper_surface, role_keeper_cap_effect",
+    "artifact": "artifacts/live2_roles/replay.json",
+    "harness": "artifacts/live2_roles/RoleLocal.t.sol",
+    "oi_cap_selector": 0,
+    "slot28_selector": 0,
+    "slot28_after": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+    "instrument_setter": "0x30cd7471",
+    "cap_effect": {
+     "name": "role_keeper_cap_effect",
+     "live_1e20": 1090068803,
+     "live_1e22": 1090068803,
+     "live_1e24": 1413115408,
+     "maxed_1e20": 0,
+     "maxed_1e22": 0,
+     "maxed_1e24": 1413115408
+    }
+   },
+   "missing_observation": "whether the widened aggregate OI is bounded by anything other than the per-position limit and the LP bankroll (the payout itself is not cap-bounded), and the economic names of the slot-28 fields",
+   "citations": [
+    "atlas/block_48902346/exchange_open_limit.md",
+    "atlas/block_48902346/exchange_market_fields.md",
+    "atlas/block_48902346/exchange_pair_params.md",
+    "atlas/block_48902346/live2_pricing.md LP-05"
+   ]
+  },
+  {
+   "id": "RL-03",
+   "title": "The relayer cannot duplicate, re-target or re-price an intent, and in-block ordering leaves every settlement price identical",
+   "angle": "Relayer (BatchExecutor submitter)",
+   "invariant": "A2 + A10",
+   "actor": "an address in the BatchExecutor authorizedRelayers mapping (mapping base 4, owner-set)",
+   "precondition": "the relayer is authorised; the Exchange sees only the BatchExecutor as msg.sender, so no Exchange state can key on the relayer",
+   "trigger": "submit one signed close twice; submit the same signature with a different positionIds element or a different user word; submit two closes in both orders",
+   "impact": "Duplication is rejected: the first call closes, the second reverts InvalidNonce 0x756688FE. Re-targeting is rejected: a signature over id 1 with calldata id 2, and a signature over USER with calldata OUTSIDER, both revert SessionKeyNotAuthorized 0xC5045F22 while the correct payload still succeeds. The withdrawal path binds its Core recipient to the signed user (decoded from the CoreWriter payload) and re-targets to 0xC20280EA. Reordering two closes in one batch leaves both settlement prices at the same Oracle midpoint (150), because the price is read per call from a per-block HyperCore value. The allowlist admits only the three Exchange signed selectors, the SessionKeyManager registration and four Staking selectors.",
+   "affected": "both",
+   "severity": "none",
+   "status": "disproved",
+   "evidence_tier": "exact-runtime replay, set 2 runtimes",
+   "evidence": {
+    "observation": "role_relayer_batch, role_relayer_order, role_relayer_withdraw",
+    "artifact": "artifacts/live2_roles/replay.json",
+    "harness": "artifacts/live2_roles/RoleLocal.t.sol",
+    "duplicate_second": "0x756688fe",
+    "wrong_ids": "0xc5045f22",
+    "re_target_user": "0xc5045f22",
+    "order12": 150,
+    "order21": 150,
+    "withdraw_recipient_is_signed_user": true,
+    "withdraw_re_target": "0xc20280ea"
+   },
+   "missing_observation": "cross-block selective inclusion and delay: the relayer can hold or drop an intent, so its residual power is latency and censorship, bounded by the signed deadline and not by a cap; no on-chain value transfer was found",
+   "citations": [
+    "atlas/block_48902346/batch_executor_pseudocode.md",
+    "atlas/block_48902346/live2_intents.md L2-D2-01, L2-D2-02"
+   ]
+  },
+  {
+   "id": "RL-04",
+   "title": "No signed-close shape credits a builder fee: the credit site is unreachable and the registry is never consulted, so the per-close builder skim is zero",
+   "angle": "Builder (BuilderRegistry fee) plus the relayer quote on it",
+   "invariant": "A10",
+   "actor": "any builder, relayer, frontend or the closing user",
+   "precondition": "the 0.5 percent registry rate and an approved builder; the signed close struct has no builder field (five-field CLOSE_TYPEHASH, unchanged)",
+   "trigger": "five exact-runtime fee-paying closes on the set-2 Exchange: plain; a second position id; an appended unsigned 8th calldata word naming the keeper; every one of fourteen candidate addresses approved in the registry; and a loss close",
+   "impact": "Every arm closes successfully with a real fee charged (slot 26 rises, so the close is fee-paying) and every one shows zero slot-39 reads, zero slot-39 writes, a credited value of zero, an unchanged slot-38 counter and zero BuilderRegistry accesses (vm.accesses on the registry is empty). So a gain close, a loss close, an other-id close and three more shapes cannot credit any builder: a relayer or frontend cannot steer a builder fee, and the maximum a malicious builder can skim per close through this path is 0. The 0.5 percent rate and the registry itself are inert for trading, which matches pass-one L2A-07 (no feeRateOf selector bytes in the Exchange or library).",
+   "affected": "set2",
+   "severity": "none",
+   "status": "disproved",
+   "evidence_tier": "exact-runtime replay, set 2 runtimes; the pass-one concern is resolved",
+   "evidence": {
+    "observation": "role_builder_plain, role_builder_id7, role_builder_trailing, role_builder_approved, role_builder_loss",
+    "artifact": "artifacts/live2_roles/replay.json",
+    "harness": "artifacts/live2_roles/RoleLocal.t.sol",
+    "arms": 5,
+    "slot39_reads": 0,
+    "slot39_writes": 0,
+    "registry_accesses": 0,
+    "slot38_after": [
+     0,
+     0,
+     0
+    ],
+    "exchange_writes_per_close": 6
+   },
+   "missing_observation": "which entry does reach the pass-one credit block at 0x32b6 inside the 0x2792e706 region; its only exercised slot-39 touchers remain claimBuilderFees (the caller's own key) and the owner-only 0xd970fad5",
+   "citations": [
+    "atlas/block_48902346/live2_authority.md L2A-07, L2A-08, L2A-09",
+    "atlas/block_48902346/live2_intents.md L2-D1-06"
+   ]
+  },
+  {
+   "id": "RL-05",
+   "title": "The pause guardian's market pause is a free exit option written by the LP: a zero or crossed frozen quote lets a holder close at a fake price with no cap",
+   "angle": "Guardian (pauseMarket and setTradingPaused)",
+   "invariant": "A9 + A4",
+   "actor": "the pause guardian (live: the newest 2-of-3 multisig 0x696292...) acting with a trading address, or any pre-existing holder who acts on the same knowledge",
+   "precondition": "at least two of the three multisig signers; the trader already holds a position in the market to be paused (opens are blocked after the pause)",
+   "trigger": "pauseMarket(uint32) at a moment when the raw HyperCore BBO the pause stores is zero or crossed, then close the position; the close settles from the stored snapshot, not from a fresh oracle read",
+   "impact": "A pause taken on a zero book makes the next close or liquidation settle at price 0 (PT-02, measured on both implementations), so a short close credits raw = margin x leverage x (entry - 0) / entry = margin x leverage, a payout the LP funds (pass-one LP-05: one cap-legal close can credit the whole available LP bankroll and queue the remainder); a paused market also rejects new opens while closes still settle. My own arms confirm the channel: a paused venue still closes (close succeeds and clears the active bit), still liquidates, and the close settles from the Oracle midpoint. Because the guardian chooses the moment and the pause cannot be cleared (PT-02), the guardian holds a free American option on its own exit price: it can wait for the most favourable snapshot and exercise it once per instrument. The counter-party is the single protocol LP, and no fee cap, signature or owner gate bounds the gain; it is bounded only by the position's payout and the LP bankroll.",
+   "affected": "both",
+   "severity": "high",
+   "status": "confirmed_simulation",
+   "evidence_tier": "exact-runtime replay for the settlement channel; the latency of the live trigger rests on pass-one PT-02",
+   "evidence": {
+    "observation": "role_global_pause_gates + PT-02",
+    "artifact": "artifacts/live2_roles/replay.json",
+    "harness": "artifacts/live2_roles/RoleLocal.t.sol",
+    "paused_close_ok": true,
+    "paused_close_cleared_active": 0,
+    "paused_liquidation_ok": true,
+    "zero_snapshot_settles_at_0": "PT-02",
+    "guardian_can_clear": "no (unpauseMarket reverts 0xd9d193d3 for every caller)"
+   },
+   "missing_observation": "an archive trace of a liquidation or a close executed while a market was paused, and whether HyperCore has ever returned a zero or crossed raw BBO for a live instrument (raw getBBO accepts both without a check); no market is paused on chain today",
+   "citations": [
+    "FINDINGS.md PT-02",
+    "AUDIT.md A9",
+    "atlas/block_48902346/exchange_pause_pseudocode.md",
+    "atlas/block_48902346/live2_pricing.md LP-02, LP-09"
+   ]
+  },
+  {
+   "id": "RL-06",
+   "title": "The guardian's other powers are bounded: the global pause freezes opens only and is guardian-irreversible, and the registry guardian can only deny an accrual",
+   "angle": "Guardian (setTradingPaused, BuilderRegistry removeBuilder)",
+   "invariant": "A1 + A5",
+   "actor": "pause guardian (multisig) / BuilderRegistry guardian",
+   "precondition": "Exchange slot 1 = guardian; BuilderRegistry slot 1 bits 0..159 = guardian",
+   "trigger": "setTradingPaused(true) from the guardian; the same signed open with and without the pause byte; removeBuilder(address) from the guardian",
+   "impact": "The guardian can set the venue-wide pause byte but is denied every other pause action: the keeper and the market keeper both get NotPauseAuthority 0x49199FB6 on setTradingPaused and on pauseMarket, and the guardian itself is denied on clearing (resume) while the owner can. With the pause byte set and the session address preserved in the upper bits, a signed open that succeeds while unpaused reverts with the public-registry candidate TradingPaused() 0x02b874a6, while closes and liquidations still settle, so the global pause is an open-side freeze, not an exit freeze, and it cannot be undone by the guardian. The BuilderRegistry guardian can remove an approved builder but not add one or change the rate (pass-one L2A-06), and no registry-approval path reaches the Exchange (RL-04), so that power has no trade effect today.",
+   "affected": "both",
+   "severity": "low",
+   "status": "confirmed_simulation",
+   "evidence_tier": "exact-runtime replay plus first-party negative controls",
+   "evidence": {
+    "observation": "role_pause_surface, role_global_pause_gates, role_global_pause_open",
+    "artifact": "artifacts/live2_roles/replay.json",
+    "harness": "artifacts/live2_roles/RoleLocal.t.sol",
+    "guardian_pause": 0,
+    "guardian_resume": "0x49199fb6",
+    "owner_resume": 0,
+    "outsider_pause": "0x49199fb6",
+    "keeper_market_pause": "0x49199fb6",
+    "close_while_paused": true,
+    "open_unpaused": 0,
+    "open_paused": 45642918
+   },
+   "missing_observation": "the source name behind 0x02b874a6 (public-registry candidate TradingPaused(), unverified); and no TradingPausedUpdated log exists in history, so the pause has never been used live",
+   "citations": [
+    "atlas/block_48902346/exchange_pause_pseudocode.md",
+    "atlas/block_48902346/live2_authority.md L2A-06, L2A-10"
+   ]
+  },
+  {
+   "id": "RL-07",
+   "title": "Role ranking: worst-case loss per action, its bound, and whether it repeats",
+   "angle": "Ranking across all four roles",
+   "invariant": "A4 + A9 + proposed A8",
+   "actor": "keeper, market keeper, relayer, pause guardian, builder",
+   "precondition": "the live role holders above",
+   "trigger": "n/a (consolidated ranking of RL-01..RL-06)",
+   "impact": "authorizedKeeper: worst case is flipping one opaque byte, loss 0 (no fee, no pause, no intent, no healthy liquidation), bounded by the owner's slot-89 set, repeatable per call with no effect. marketKeeper: worst case is maxing the per-side open caps so opens the configured cap rejects succeed, loss up to the LP bankroll plus an unfunded queue claim, bounded by the per-position size limit but by nothing on payout and repeatable on every open. relayer: worst case is delay or censorship of a signed intent, loss 0 on chain, bounded by the signed deadline, repeatable. pause guardian: worst case is one free exit per instrument at a frozen fake price, loss up to margin x leverage (and the LP bankroll at a zero snapshot), bounded only by the LP bankroll and by the position having to pre-exist, not repeatable within one instrument. builder: worst case is 0 through every tested close shape. The single action not bounded by a cap, a user signature or an owner gate is the guardian's pauseMarket combined with a close.",
+   "affected": "both",
+   "severity": "info",
+   "status": "confirmed_simulation",
+   "evidence_tier": "consolidated from the rows above",
+   "evidence": {
+    "observation": "RL-01..RL-06 plus pass-one LP-05 and PT-02",
+    "artifact": "artifacts/live2_roles/replay.json",
+    "harness": "artifacts/live2_roles/RoleLocal.t.sol",
+    "unbounded_action": "guardian pauseMarket then close (RL-05)",
+    "keeper_writes": "1 opaque byte",
+    "relayer_value_transfer": 0,
+    "builder_per_close_skim": 0,
+    "market_keeper_cap_maximum": "340282366920938463463374607431768211455"
+   },
+   "missing_observation": "the LP bankroll and queue state at the moment of any such action (both are live reads, not pinned), and whether the paused-market case has ever occurred",
+   "citations": [
+    "FINDINGS.md PT-02",
+    "atlas/block_48902346/live2_pricing.md LP-05",
+    "atlas/block_48902346/live2_authority.md L2A-10"
+   ]
+  }
+ ],
+ "coverage": {
+  "keeper": [
+   "RL-01",
+   "RL-02",
+   "RL-07"
+  ],
+  "relayer": [
+   "RL-03",
+   "RL-04",
+   "RL-07"
+  ],
+  "guardian": [
+   "RL-05",
+   "RL-06",
+   "RL-07"
+  ],
+  "builder": [
+   "RL-04",
+   "RL-07"
+  ],
+  "ranking": [
+   "RL-07"
+  ]
+ },
+ "limits": [
+  "Every row is bytecode-level evidence: the closes, liquidations and the registry view are exact-runtime simulations of the pinned storage with a mocked HyperCore BBO and a stubbed Tokenomics, so they are simulations, not live observations.",
+  "The Tokenomics side contract is replaced by a zero-returning stub so a fee-paying close can complete; the Exchange-side writes and the absence of any slot-39 or registry access are the measured facts, and a real Tokenomics cannot make an Exchange-side mapping entry appear.",
+  "The open path reverts post-signer (0x0a4f5a07) on the set-2 runtime under synthetic state, so the keeper-flag and global-pause effects on opens, and the capped-open consequence in RL-02, rest on pass-one's 57 saved opens rather than on new arms.",
+  "A role address could itself be a contract with more code; the head reads in atlas/block_48902346/live2_authority.md do not settle that, and nothing here assumes it.",
+  "Nothing here was disclosed, filed or executed; no transaction, upgrade or governance action was performed and no market was paused."
+ ],
+ "reduce": [
+  "python3 scripts/audit_live2_roles.py",
+  "the orchestrator's atlas_verify.py covers the consolidated ledger, not this workstream file"
+ ]
+}

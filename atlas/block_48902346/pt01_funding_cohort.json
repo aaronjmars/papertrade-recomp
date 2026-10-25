@@ -1,0 +1,93 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "proxy_count": 67,
+  "first_funding_fee_counts": [
+    {
+      "group": "newest",
+      "fee_usdc": "0.0",
+      "count": 2
+    },
+    {
+      "group": "newest",
+      "fee_usdc": "1.0",
+      "count": 27
+    },
+    {
+      "group": "older",
+      "fee_usdc": "0.0",
+      "count": 2
+    },
+    {
+      "group": "older",
+      "fee_usdc": "1.0",
+      "count": 36
+    }
+  ],
+  "first_outgoing_fee_counts": [
+    {
+      "group": "newest",
+      "fee_usdc": "0.0",
+      "count": 27
+    },
+    {
+      "group": "newest",
+      "fee_usdc": "none",
+      "count": 2
+    },
+    {
+      "group": "older",
+      "fee_usdc": "0.0",
+      "count": 36
+    },
+    {
+      "group": "older",
+      "fee_usdc": "1.0",
+      "count": 2
+    }
+  ],
+  "system_first_funding_sender": "0x6b9e773128f453f5c2c60935ee2de2cbc5390a24",
+  "system_first_funding": [
+    {
+      "group": "older",
+      "proxy": "0x07d38b03587edade651ee1520dfb619809992337",
+      "funding_hash": "0x708c3193dd650953720504463e17860000c74979786828251454dce69c68e33e",
+      "funding_amount_usdc": "0.5",
+      "funding_fee_usdc": "0.0",
+      "first_outgoing_hash": "0xc025caf52fd47ee2c19f04463e2b2c010100e2dacad79db463ee7647eed858cd",
+      "first_outgoing_fee_usdc": "1.0"
+    },
+    {
+      "group": "newest",
+      "proxy": "0x1e8a704179cc6221592c362daa52a341ae20084d",
+      "funding_hash": "0x4c0aef8f342c070f4d8404464923620000460774cf2f25e1efd39ae1f32fe0f9",
+      "funding_amount_usdc": "39.888558",
+      "funding_fee_usdc": "0.0",
+      "first_outgoing_hash": null,
+      "first_outgoing_fee_usdc": null
+    },
+    {
+      "group": "older",
+      "proxy": "0x5fa0a115d5f6f56d1b1c7f1df51d88adcb860a6d",
+      "funding_hash": "0x269be1641a95d3b7281504463136550000d6f949b598f289ca648cb6d999ada1",
+      "funding_amount_usdc": "0.5",
+      "funding_fee_usdc": "0.0",
+      "first_outgoing_hash": "0xb82ae0d5623603bbb9a40446313757000065f8bafd39228d5bf38c282139dda6",
+      "first_outgoing_fee_usdc": "1.0"
+    },
+    {
+      "group": "newest",
+      "proxy": "0xf6b60cdf359af5538495831a9f2bbcada23e10e6",
+      "funding_hash": "0x08bd582ed0d1688c0a3704462e33890000f870146bd4875eac8603818fd54276",
+      "funding_amount_usdc": "2.0",
+      "funding_fee_usdc": "0.0",
+      "first_outgoing_hash": null,
+      "first_outgoing_fee_usdc": null
+    }
+  ],
+  "sources": {
+    "older_ledgers": "../../artifacts/deployer_scope/older_proxy_core.json.gz",
+    "newest_ledgers": "../../artifacts/pt01_newest_fee_controls/full_core_ledgers.json.gz",
+    "explorer": "../../artifacts/pt01_funding_cohort/system_first_funding.json.gz"
+  }
+}

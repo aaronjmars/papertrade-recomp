@@ -1,0 +1,65 @@
+{
+  "pin_block": 48902346,
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "selector_reconstructions": {
+    "0x8d09f23f": "withdrawToCoreBySig(address,uint256,uint256,uint64,uint8,bytes32,bytes32)"
+  },
+  "event_catalog": [
+    {
+      "topic0": "0x95d1a93901f24eeaa294588802f66fa008f9f3741060c9f79e5dab4709de5e75",
+      "reconstructed_signature": "CoreWithdrawal(address,uint256,uint256)",
+      "status": "observed_historical_and_recent_topic"
+    }
+  ],
+  "transaction_count": 3,
+  "transactions": [
+    {
+      "tx": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+      "block": 48901631,
+      "user": "0x7a5a61a05a0bd2d1723d595803c47e494304f791",
+      "signed_raw_amount": "199000000",
+      "event_internal_debit": "200000000000000000000",
+      "event_core_amount": "19900000000",
+      "core_payload_amount": "19900000000",
+      "user_balance_pre": "907148819370494381004",
+      "user_balance_post": "707148819370494381004",
+      "same_tx_reward_credits": [],
+      "debit_less_sent_18_decimals": "1000000000000000000"
+    },
+    {
+      "tx": "0xe3b515b06932d1f98867772b645367f3924ec239ae2e047fa0a15e3f11152e45",
+      "block": 48902098,
+      "user": "0xefc6f5f22d802e489d45dc7743713285bfa66eae",
+      "signed_raw_amount": "11429048",
+      "event_internal_debit": "11429048000000000000",
+      "event_core_amount": "1142904800",
+      "core_payload_amount": "1142904800",
+      "user_balance_pre": "11429048124733568219",
+      "user_balance_post": "124733568219",
+      "same_tx_reward_credits": [],
+      "debit_less_sent_18_decimals": "0"
+    },
+    {
+      "tx": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+      "block": 48902137,
+      "user": "0x5554e4d307e6f24ee868e31fcf3effedba20e457",
+      "signed_raw_amount": "18270000",
+      "event_internal_debit": "18270000000000000000",
+      "event_core_amount": "1827000000",
+      "core_payload_amount": "1827000000",
+      "user_balance_pre": "18278608220499150309",
+      "user_balance_post": "2609366662357831937",
+      "same_tx_reward_credits": [
+        "2600758441858681628"
+      ],
+      "debit_less_sent_18_decimals": "0"
+    }
+  ],
+  "observed_path": "signed raw amount times 100 is CoreWriter payload and event core amount; event internal debit reconciles with user balance and same-transaction staking reward credits",
+  "limitations": [
+    "Three successful withdrawal calls do not establish every fee or queue branch.",
+    "The sampled extra debit correlates with a false HyperCore account-existence read; downstream fee disposition is unverified.",
+    "The reconstructed EIP-712 signature hashes cover selected successful calls; failed signature branches remain untested here."
+  ]
+}

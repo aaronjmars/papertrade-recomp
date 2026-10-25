@@ -1,0 +1,69 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "local_replay": "../../artifacts/remaining_initializers_local/replay.json",
+  "session_proxy": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+  "implementation": "0x8a5069fe303e8f81e91825436e956d595032e558",
+  "runtime_sha256": "630c02b0c693c47760554a3f0fed68b72db5df601f887d2edaaa3106e6308e63",
+  "selector_behaviors": {
+    "0x747b8a1c": "Historical deployment calldata initializes slot 0, domain separator slot 1, owner slot 2, authorized caller slot 3, and emits OwnerUpdated and AuthorizedCallerUpdated. In fresh state, changing name String (including same-length StrinG) or version 1 reverts with 0xf50220aa, while changing sender, owner, authorized caller, or domain chain ID succeeds. A repeat returns AlreadyInitialized()"
+  },
+  "simulated_error_catalog": [
+    {
+      "selector": "0xf50220aa",
+      "probe_paths": [
+        "session-user",
+        "session-admin",
+        "session-contract-args",
+        "session-zero-args"
+      ]
+    },
+    {
+      "selector": "0x0dc149f0",
+      "probe_paths": [
+        "session-initialized"
+      ],
+      "public_signature_candidates": [
+        "AlreadyInitialized()"
+      ]
+    }
+  ],
+  "selector_reconstructions": {
+    "0x747b8a1c": "initialize(address,string,string,uint256,address)"
+  },
+  "historical_creation": {
+    "transaction_hash": "0xe055509195f0ea1b9e30c366c3350d10470d8c1d145bfa51686b49134d36ffbe",
+    "block": 47855066,
+    "trace": "../../artifacts/session_creation/0xe055509195f0ea1b9e30c366c3350d10470d8c1d145bfa51686b49134d36ffbe.calls.json",
+    "receipt": "../../artifacts/session_creation/0xe055509195f0ea1b9e30c366c3350d10470d8c1d145bfa51686b49134d36ffbe.receipt.json",
+    "transaction": "../../artifacts/session_creation/0xe055509195f0ea1b9e30c366c3350d10470d8c1d145bfa51686b49134d36ffbe.transaction.json",
+    "decoded_arguments": {
+      "owner": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+      "name": "String",
+      "version": "1",
+      "chain_id": 999,
+      "authorized_caller": "0x6cd5661646289fb6e65ea5c032310fded797d0a2"
+    }
+  },
+  "fresh_state": {
+    "initialized_flag_slot": 0,
+    "domain_separator_slot": 1,
+    "domain_separator_historical": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+    "owner_slot": 2,
+    "authorized_caller_slot": 3
+  },
+  "event_catalog": [
+    {
+      "topic0": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+      "reconstructed_signature": "OwnerUpdated(address)",
+      "status": "historical_creation_and_local_replay"
+    },
+    {
+      "topic0": "0xfe60173cc964bc674632fcf67031bba24c8a99a4a7d6518c726586978b7e30d3",
+      "reconstructed_signature": "AuthorizedCallerUpdated(address)",
+      "status": "historical_creation_and_local_replay"
+    }
+  ],
+  "source_name_status": "selector hash, archive creation call, and exact-runtime replay verified; source unavailable",
+  "historical_creation_calls_for_selector": 1
+}

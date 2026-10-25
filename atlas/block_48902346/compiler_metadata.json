@@ -1,0 +1,177 @@
+{
+  "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee": {
+    "role": "exchange_implementation",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmX46b3W8qXKJWqiheKCwQaeyY1AhJK88ct7FQwezQiGyE",
+    "solc_version": "0.8.24"
+  },
+  "0x1629b7d46bef6e13ff754174fc9f32dea309b38f": {
+    "role": "deposit_proxy_factory_proxy",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmSJpFZFC9Yi9cnuTU6RK98faiGSwKfb5K6pBmWcEKDBaC",
+    "solc_version": "0.8.24"
+  },
+  "0x233ff29b239abc1d7748605da9b205c3e008626e": {
+    "role": "batch_executor_proxy",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmSJpFZFC9Yi9cnuTU6RK98faiGSwKfb5K6pBmWcEKDBaC",
+    "solc_version": "0.8.24"
+  },
+  "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a": {
+    "role": "oracle_implementation",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmQ4M1bWwdR7kd87K7RUxKAkyKY4LxEM7ohptyxqG52LVf",
+    "solc_version": "0.8.24"
+  },
+  "0x433bd418ec92818a960585f4d5fae563e735bb4a": {
+    "role": "paper_token_implementation",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmaVaqWSfTTojgwEGNoxx6fwcb4HHfxLgEZHMnyypTDimW",
+    "solc_version": "0.8.24"
+  },
+  "0x4f859b790d34767ea325b4888c8c420c34cf85af": {
+    "role": "exchange_implementation_variant_b",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmPeD6XpkpPzGFfikMtSp6mBZEiDUsMMGoTz1JwRR3HHXy",
+    "solc_version": "0.8.24"
+  },
+  "0x5a4bda2dcc82749258d9e5cdd49cd52c3cd16388": {
+    "role": "exchange_linked_library_variant_a",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmcSfXmp4MbStt8YcY2urKoXKPoNhcNwVeYVvWbotdR7N4",
+    "solc_version": "0.8.24"
+  },
+  "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f": {
+    "role": "tokenomics_implementation",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmTzAufKD1E4sr8hrGJmBDhGFrfoqbY8uaojfXwj2kz4zh",
+    "solc_version": "0.8.24"
+  },
+  "0x696292762fd5ac3677a45edbe54eaece4194d1f6": {
+    "role": "one_of_two_multisig",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmPApVzbvoPrmdR3woTG97b8rjFfNB3RjVFQJQ4wXpPXSL",
+    "solc_version": "0.8.24"
+  },
+  "0x6cd5661646289fb6e65ea5c032310fded797d0a2": {
+    "role": "exchange_proxy",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmSJpFZFC9Yi9cnuTU6RK98faiGSwKfb5K6pBmWcEKDBaC",
+    "solc_version": "0.8.24"
+  },
+  "0x75174549dbbd44497d31a47e2e2d7406408d63d9": {
+    "role": "tokenomics_proxy",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmSJpFZFC9Yi9cnuTU6RK98faiGSwKfb5K6pBmWcEKDBaC",
+    "solc_version": "0.8.24"
+  },
+  "0x8326eb8896e358717f10502ec73ce8d28e37b108": {
+    "role": "session_key_manager_proxy",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmSJpFZFC9Yi9cnuTU6RK98faiGSwKfb5K6pBmWcEKDBaC",
+    "solc_version": "0.8.24"
+  },
+  "0x8a5069fe303e8f81e91825436e956d595032e558": {
+    "role": "session_key_manager_implementation",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "Qmb7JMRfihfJtQQb7TyKX7XCRyYqTv6cJ5gu9zjaNAoRCz",
+    "solc_version": "0.8.24"
+  },
+  "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0": {
+    "role": "deposit_proxy_factory_implementation",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmXzpjtPZvHohaykjmN8vfiEXPDop6Q4PUQzxxv7wDp5cE",
+    "solc_version": "0.8.24"
+  },
+  "0x93a8e8d647f6c1e7b0f9bf4bd86eff3a9f20c3fb": {
+    "role": "exchange_implementation_variant_a",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmVnr48gMBaEgmibAWDbNBHsSpwj49QLzQePTgiNF1FX65",
+    "solc_version": "0.8.24"
+  },
+  "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e": {
+    "role": "oracle_proxy",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmSJpFZFC9Yi9cnuTU6RK98faiGSwKfb5K6pBmWcEKDBaC",
+    "solc_version": "0.8.24"
+  },
+  "0xaad6c7b0cc3014fc80ffedae0ed7ce5967b0f016": {
+    "role": "staking_proxy",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmSJpFZFC9Yi9cnuTU6RK98faiGSwKfb5K6pBmWcEKDBaC",
+    "solc_version": "0.8.24"
+  },
+  "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f": {
+    "role": "timelock",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmQM4AHqXnbZK11sGgQaBng8vEX1zis4CJVqrqiyRpqVz4",
+    "solc_version": "0.8.24"
+  },
+  "0xcd617f984158a4f5d287ddee0e8eb0fed204916d": {
+    "role": "exchange_linked_library_live",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmcSfXmp4MbStt8YcY2urKoXKPoNhcNwVeYVvWbotdR7N4",
+    "solc_version": "0.8.24"
+  },
+  "0xe0bc9cc7b067060aafccbaa3e250700c9cdd7262": {
+    "role": "batch_executor_implementation",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmTiKErBBVePcUG4H1B7v5RUjsNhC8GErCosgsgW27Qkoj",
+    "solc_version": "0.8.24"
+  },
+  "0xe40f17915daa230324030003a197cdaef2261c0e": {
+    "role": "paper_token_proxy",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmSJpFZFC9Yi9cnuTU6RK98faiGSwKfb5K6pBmWcEKDBaC",
+    "solc_version": "0.8.24"
+  },
+  "0xe6e3519455170913c5c3bfe541dd918a2d0cbb15": {
+    "role": "staking_implementation",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmfQfc7F2GkFqT2erj6Y4wSjv3aGmKvqVeJAhHphTU443j",
+    "solc_version": "0.8.24"
+  },
+  "0xe79c91cc682f1bb401a9cab74c900470190f0f8f": {
+    "role": "proxy_admin",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmUMq9qx1Aiq6zkMx8iLgTExAgVygqwWp1CQd9f2pKNQ4P",
+    "solc_version": "0.8.24"
+  },
+  "0xe991817199363046da0a28da6fbad0284e4aa492": {
+    "role": "paper_math_library",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmWbggQoWXpDrvvTTPXYZBvwV2Uq4iyeTSKvnFu7Ep5nvv",
+    "solc_version": "0.8.24"
+  },
+  "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce": {
+    "role": "user_deposit_proxy_representative",
+    "metadata_present": true,
+    "metadata_bytes": 51,
+    "ipfs_cid_v0": "QmbBDGFfP8axkKCggfoAjiMFp4W7XwmSBkJwbGa238FKc7",
+    "solc_version": "0.8.24"
+  }
+}

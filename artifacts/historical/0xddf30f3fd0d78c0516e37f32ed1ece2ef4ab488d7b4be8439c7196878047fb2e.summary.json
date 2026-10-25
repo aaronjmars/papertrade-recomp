@@ -1,0 +1,40 @@
+{
+  "hash": "0xddf30f3fd0d78c0516e37f32ed1ece2ef4ab488d7b4be8439c7196878047fb2e",
+  "block": 48902107,
+  "status": 1,
+  "calls": [
+    {
+      "depth": 0,
+      "type": "CALL",
+      "from": "0xdf1bda875c9393a663ce69bf6a7fbaa73dfd053d",
+      "to": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+      "selector": "0xcbd433f4",
+      "gas_used": "0x6c10c",
+      "error": null
+    },
+    {
+      "depth": 1,
+      "type": "DELEGATECALL",
+      "from": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+      "to": "0x8f22a73a23a2de0dbfdf6729f4d8c07dbdc69cf0",
+      "selector": "0xcbd433f4",
+      "gas_used": "0x659e1",
+      "error": null
+    },
+    {
+      "depth": 2,
+      "type": "CREATE2",
+      "from": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+      "to": "0xed4b12504ee1d173d8fb25cf312314f8056bd5d2",
+      "selector": "0x60c03461",
+      "gas_used": "0x508ee",
+      "error": null
+    }
+  ],
+  "logs": [
+    {
+      "address": "0x1629b7d46bef6e13ff754174fc9f32dea309b38f",
+      "topic0": "0x3d2489efb661e8b1c3679865db649ca1de61d76a71184a1234de2e55786a6aad"
+    }
+  ]
+}

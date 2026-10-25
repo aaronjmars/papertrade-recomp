@@ -1,0 +1,148 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "selector_reconstructions": {
+    "0x7f99545a": "withdrawToCore(uint256)"
+  },
+  "raw_evidence": "../../artifacts/exchange_direct_withdrawal/local_probes.json",
+  "probe_count": 9,
+  "successful_cases": 3,
+  "historical_direct_call_count": 2,
+  "historical_direct_calls": [
+    {
+      "tx": "0x7c69ba558b4076ef20f880f89d910168cbd92e3cc0a2f70a564b2117f46fa6ac",
+      "block": 48014383,
+      "caller": "0xa90f96b5fcd5bdc0aae788c0485786b0e546d950",
+      "raw_amount": "10000000",
+      "internal_debit": "11000000000000000000",
+      "core_amount": "1000000000",
+      "extra_debit": "1000000000000000000",
+      "core_user_status_word": 0,
+      "changed_exchange_slots": [
+        "0x000000000000000000000000000000000000000000000000000000000000000e",
+        "0x0000000000000000000000000000000000000000000000000000000000000016",
+        "0x91f05cc8d358d8df7e00efbd90d3708ba8f33fd7a0b07c5fb5312ad3b216b0db",
+        "0xadb499e322b10d4bafcb526d4e71217c61a69c8024fed7c6c89710d9a1027b94"
+      ],
+      "internal_balance_pre": "1592398913000000000000",
+      "internal_balance_post": "1581398913000000000000",
+      "internal_balance_mapping_changed": true,
+      "internal_balance_slot_cleared": false,
+      "last_withdrawal_block": 48014383
+    },
+    {
+      "tx": "0xd11efba2b91838576b957f7297677b46676ec7a27db60331377212f4de8ba771",
+      "block": 48014628,
+      "caller": "0xa90f96b5fcd5bdc0aae788c0485786b0e546d950",
+      "raw_amount": "1581398913",
+      "internal_debit": "1581398913000000000000",
+      "core_amount": "158139891300",
+      "extra_debit": "0",
+      "core_user_status_word": 1,
+      "changed_exchange_slots": [
+        "0x000000000000000000000000000000000000000000000000000000000000000e",
+        "0x0000000000000000000000000000000000000000000000000000000000000016",
+        "0x91f05cc8d358d8df7e00efbd90d3708ba8f33fd7a0b07c5fb5312ad3b216b0db",
+        "0xadb499e322b10d4bafcb526d4e71217c61a69c8024fed7c6c89710d9a1027b94"
+      ],
+      "internal_balance_pre": "1581398913000000000000",
+      "internal_balance_post": "0",
+      "internal_balance_mapping_changed": true,
+      "internal_balance_slot_cleared": true,
+      "last_withdrawal_block": 48014628
+    }
+  ],
+  "local_status_replay": "../../artifacts/exchange_direct_status_local/replay.json",
+  "local_status_test_count": 4,
+  "status_branch_observed": {
+    "status_zero_debit": "(rawAmount + 1000000) * 10^12",
+    "status_one_debit": "rawAmount * 10^12",
+    "both_debit_internal_balance": true,
+    "status_zero_exact_balance_reverts": true
+  },
+  "strict_minimum_raw_amount": 1000000,
+  "case_results": {
+    "zero": {
+      "raw_amount": 0,
+      "revert_selector": "0x0a9e0180"
+    },
+    "one_raw_unit": {
+      "raw_amount": 1,
+      "revert_selector": "0xad21c3fb"
+    },
+    "at_one_usd": {
+      "raw_amount": 1000000,
+      "revert_selector": "0xad21c3fb"
+    },
+    "above_one_usd": {
+      "raw_amount": 1000001,
+      "internal_debit": "2000001000000000000",
+      "core_amount": "100000100",
+      "extra_debit": "1000000000000000000",
+      "last_withdrawal_block": 48902346
+    },
+    "two_usd": {
+      "raw_amount": 2000000,
+      "internal_debit": "3000000000000000000",
+      "core_amount": "200000000",
+      "extra_debit": "1000000000000000000",
+      "last_withdrawal_block": 48902346
+    },
+    "near_user_balance": {
+      "raw_amount": 42000000,
+      "internal_debit": "43000000000000000000",
+      "core_amount": "4200000000",
+      "extra_debit": "1000000000000000000",
+      "last_withdrawal_block": 48902346
+    },
+    "above_user_balance": {
+      "raw_amount": 43000000,
+      "revert_selector": "0xa3b9a36c"
+    },
+    "same_block": {
+      "raw_amount": 2000000,
+      "revert_selector": "0x4f57ffae"
+    },
+    "zero_core_balance": {
+      "raw_amount": 2000000,
+      "revert_selector": "0x0a9e0180"
+    }
+  },
+  "simulated_error_catalog": [
+    {
+      "selector": "0x0a9e0180",
+      "reconstructed_signature": "NoCoreBalance()",
+      "probe_paths": [
+        "zero",
+        "zero_core_balance"
+      ]
+    },
+    {
+      "selector": "0xad21c3fb",
+      "probe_paths": [
+        "one_raw_unit",
+        "at_one_usd"
+      ]
+    },
+    {
+      "selector": "0xa3b9a36c",
+      "probe_paths": [
+        "above_user_balance"
+      ]
+    },
+    {
+      "selector": "0x4f57ffae",
+      "probe_paths": [
+        "same_block"
+      ]
+    }
+  ],
+  "limits": [
+    "The success path is a read-only local fork simulation using two historical HyperCore precompile responses.",
+    "Three tested direct withdrawals debit one extra internal USD. Two recent signed withdrawals in the historical ledger did not, so this result is not generalized to every withdrawal path.",
+    "The three new raw revert selectors are tied to observed branches but their Solidity error names remain unknown.",
+    "Two successful historical direct calls from the same Safe have Core user-status words 0 then 1. The second clears the internal user-balance slot to zero, which prestateTracer diffMode omits from the post map. Four same-state exact-runtime tests show status 0 charges one extra USD and rejects an exact-balance withdrawal, while status 1 debits exactly the requested amount and accepts exact balance. Other status values and downstream HyperCore settlement remain unverified."
+  ]
+}

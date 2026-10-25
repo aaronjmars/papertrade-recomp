@@ -1,0 +1,39 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "session_proxy": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+  "implementation": "0x8a5069fe303e8f81e91825436e956d595032e558",
+  "selector_reconstructions": {
+    "0x0b4c3a82": "WITHDRAW_TO_CORE_TYPEHASH()",
+    "0x208e24fc": "CLOSE_TYPEHASH()",
+    "0x6525a680": "OPEN_POSITION_TYPEHASH()"
+  },
+  "constant_getters": {
+    "0x0b4c3a82": {
+      "pinned_return": "0xac4ddb8d63e9d7a862c5d61ce47517623a448262414a7eef6797102104b31214",
+      "runtime_push32_offset": 2805,
+      "candidate_signature": "WITHDRAW_TO_CORE_TYPEHASH()",
+      "verified_type_string": "WithdrawToCore(address user,uint256 amount,uint256 nonce,uint64 deadline)",
+      "name_status": "hash_checked_type_string"
+    },
+    "0x208e24fc": {
+      "pinned_return": "0x9cc23a52214afa42e1ae53cdb2e79dc2d0cd33c33faca383ed3b149300adcb13",
+      "runtime_push32_offset": 2675,
+      "candidate_signature": "CLOSE_TYPEHASH()",
+      "verified_type_string": "Close(address user,uint256[] positionIds,uint256 nonce,uint64 deadline)",
+      "name_status": "hash_checked_type_string"
+    },
+    "0x6525a680": {
+      "pinned_return": "0xfce2fb41f9ff0457a0f012e62cfd6a7cff4e8439ae20008ab6979c740ba5a983",
+      "runtime_push32_offset": 1876,
+      "candidate_signature": "OPEN_POSITION_TYPEHASH()",
+      "verified_type_string": "OpenPosition(address user,uint32 instrumentId,bool isLong,uint128 size,uint32 leverage,bool useDebt,uint256 nonce,uint64 deadline)",
+      "name_status": "hash_checked_type_string"
+    }
+  },
+  "open_position_type_source": "https://github.com/nirholas/papertrade-sdk/blob/483a760ef596564e5ad799357a92e5726dada9ba/src/typed-data.ts",
+  "limits": [
+    "The independent SDK supplied the open-position field names; the exact type string was then checked against the pinned on-chain constant.",
+    "A hash-checked type string supports a reconstructed getter name; original contract source is unavailable."
+  ]
+}

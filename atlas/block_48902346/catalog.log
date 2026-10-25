@@ -1,0 +1,19 @@
+exchange_implementation 98
+deposit_proxy_factory_proxy 4
+oracle_implementation 9
+paper_token_implementation 20
+exchange_implementation_variant_b 98
+exchange_linked_library_variant_a 10
+tokenomics_implementation 21
+one_of_two_multisig 13
+session_key_manager_implementation 24
+deposit_proxy_factory_implementation 12
+exchange_implementation_variant_a 98
+timelock 15
+exchange_linked_library_live 10
+batch_executor_implementation 12
+staking_implementation 36
+proxy_admin 5
+paper_math_library 1
+user_deposit_proxy_representative 4
+atlas/block_48902346/selector_catalog.json

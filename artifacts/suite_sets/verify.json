@@ -1,0 +1,31 @@
+{
+  "earlier_2_moved_proxies": [
+    "exchange_proxy",
+    "session_key_manager_proxy",
+    "tokenomics_proxy"
+  ],
+  "head": {
+    "block": 49255838,
+    "hash": "0x8c221971a92fa2dc15969e32ba2fade7810dc16e58b21361a6a6ec6b3971b70c",
+    "timestamp": 1792705038,
+    "timestamp_utc": "2026-10-22T21:37:18Z"
+  },
+  "newest_moved_proxies": [
+    "exchange_proxy",
+    "session_key_manager_proxy",
+    "tokenomics_proxy"
+  ],
+  "pin": 48902346,
+  "postpin_contracts": 7,
+  "pt01": {
+    "0x56cbe78a5cdfa10147927aec550aa7f2fb3d3d01": "0x00000000000000000000000002df9fbf0000000000000000000000012a53a310",
+    "0x9c8599c32224d7d9956a7def18f7314162f77baf": "0x00000000000000000000000002ddd166000000000000000000000000481f2280"
+  },
+  "set_2_execute_block": 49169385,
+  "sets": [
+    "earlier_1",
+    "earlier_2",
+    "newest",
+    "postpin_refresh"
+  ]
+}

@@ -1,0 +1,457 @@
+{
+  "pin": 48902346,
+  "pin_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_implementation": "0x557c853e100600e0ee91e0df88fcf4af0097ff89",
+  "library": "0xac8ba1307815f74bd13d4d039c96f7b97e81aa49",
+  "batch_proxy": "0x4041882573028cb177847c46f82e242024ebde66",
+  "sampled_batch_transactions": 20,
+  "sampled_close_frames": 22,
+  "sampled_positions": 136,
+  "library_call_counts": {
+    "0x82296364": 136,
+    "0xaa31b143": 136,
+    "0xacbc814f": 0
+  },
+  "pnl_branches": {
+    "flat": 35,
+    "loss": 33,
+    "profit": 68
+  },
+  "settlement_rate_pairs": [
+    {
+      "positive": "20000000000000000",
+      "negative": "20000000000000000",
+      "calls": 136
+    }
+  ],
+  "queue_branch": {
+    "caller_entry_pc": "0x36ad",
+    "helper_entry_pc": "0x549d",
+    "condition_pc": "0x54a7",
+    "queue_destination_pc": "0x57a8",
+    "sampled_position_id": 398819,
+    "sampled_storage_slot": "0xb8575e462d5631b52eab6fa5977795c319d8eee884237776cdcc97c9d6d4997a",
+    "source_word_in_sample": "0x10001000000006ac13ef8000003e8000000000000003635c9adc5dea00000",
+    "sampled_branch_byte_at_bits_232_to_239": 0,
+    "sampled_jumppi_condition": 0,
+    "interpretation": "The sampled close reads the packed word from keccak256(abi.encode(position_id, 10)) + 1. Its byte at bits 232 to 239 is zero, so the settlement path runs. A nonzero byte reaches the older-only queue delegatecall by bytecode control flow. A separate signed-open fork replay sets this byte from useDebt=true; no sampled historical close has it set."
+  },
+  "cases": [
+    {
+      "tx": "0x3959528af2533bfbd9334ccebfc633a5ac7dd6f566f15f5915b0559c9b992c04",
+      "block": 47721622,
+      "close_frames": 1,
+      "library_selectors": [
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143"
+      ]
+    },
+    {
+      "tx": "0x0cb225ed02f55def281bc3376a4e272627a70d4bc56565d6ab96ccadfb5b5b6e",
+      "block": 47721151,
+      "close_frames": 1,
+      "library_selectors": [
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143"
+      ]
+    },
+    {
+      "tx": "0x2a52deb80fcacdcfdc239dd4cdd86562d3cbc97955321ba4705dcc4c4213cba1",
+      "block": 47720343,
+      "close_frames": 1,
+      "library_selectors": [
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143"
+      ]
+    },
+    {
+      "tx": "0x0134844d82e4e418d0d4a47b83a68668293cc10ccb71d094f90f6354e9cc1bd0",
+      "block": 47720155,
+      "close_frames": 1,
+      "library_selectors": [
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143"
+      ]
+    },
+    {
+      "tx": "0x1746f6f339a02d2f9eb832a0b3acce8c6a81944bbd643880d5410d8f459e192c",
+      "block": 47717974,
+      "close_frames": 1,
+      "library_selectors": [
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143"
+      ]
+    },
+    {
+      "tx": "0x336baaadeb08c19dfd1b0a7fc16e22172ee54c031dec4c12d0a4437d5b6b071f",
+      "block": 47716520,
+      "close_frames": 1,
+      "library_selectors": [
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143"
+      ]
+    },
+    {
+      "tx": "0x9c1e760e36ee75d6774d6c238331d1636207732ff46f30cc4089976ee5dc9175",
+      "block": 47633814,
+      "close_frames": 1,
+      "library_selectors": [
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143"
+      ]
+    },
+    {
+      "tx": "0x0caa451b8a46690af1ce2a147517395bc0e263b9211d937ce4206d0e05f6320e",
+      "block": 47633804,
+      "close_frames": 1,
+      "library_selectors": [
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143"
+      ]
+    },
+    {
+      "tx": "0x4fd706021f4ef1a2817115408c6c9ae7df27b8b7ce9b74a811bf70a31543a9f1",
+      "block": 47632621,
+      "close_frames": 1,
+      "library_selectors": [
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143"
+      ]
+    },
+    {
+      "tx": "0x19ba6c468d103db737f8346624694761ddcb67e8e8971f252e3260a2baca17ed",
+      "block": 47589311,
+      "close_frames": 1,
+      "library_selectors": [
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143"
+      ]
+    },
+    {
+      "tx": "0x311a2ca6ac77b90500c27e9467a27965aa0af28519228ebffb7ebe9f9a40d347",
+      "block": 47589076,
+      "close_frames": 1,
+      "library_selectors": [
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143"
+      ]
+    },
+    {
+      "tx": "0xad95519b15a8e6e24433e5deaaca9c314d6e9c445a3738c42a1558d99502621d",
+      "block": 47572946,
+      "close_frames": 1,
+      "library_selectors": [
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143"
+      ]
+    },
+    {
+      "tx": "0xe1d903a527ed571e938719d6c16a6580ba699dd9afbc6ca5bf4c1f651ae1be27",
+      "block": 47572843,
+      "close_frames": 1,
+      "library_selectors": [
+        "0x82296364",
+        "0xaa31b143"
+      ]
+    },
+    {
+      "tx": "0x455b172167cea02c8ce4db88b23118e48fa9ba9f922f2c41ebae9396d1a0172c",
+      "block": 47572842,
+      "close_frames": 2,
+      "library_selectors": [
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143"
+      ]
+    },
+    {
+      "tx": "0x0b9e31206e6f2866e12cf44cc9254c0982df90b99c1085a542ef06a2269544a1",
+      "block": 47572760,
+      "close_frames": 1,
+      "library_selectors": [
+        "0x82296364",
+        "0xaa31b143"
+      ]
+    },
+    {
+      "tx": "0x9b374eb55b4ee8698e73830424be8a772d5f7abaca96e82e5a4fd8ecca004fbf",
+      "block": 47572759,
+      "close_frames": 2,
+      "library_selectors": [
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143"
+      ]
+    },
+    {
+      "tx": "0xa26bb302e4926ec15901ccf1d2fcc31bde3e272079324263c66957bd9cf89de7",
+      "block": 47572737,
+      "close_frames": 1,
+      "library_selectors": [
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143"
+      ]
+    },
+    {
+      "tx": "0x946d0c7a7716df7d0a2bee3a66d8cb45d0f450fee0282dd238ba56a643f43b0d",
+      "block": 47572714,
+      "close_frames": 1,
+      "library_selectors": [
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143"
+      ]
+    },
+    {
+      "tx": "0x8513f04ab50b13e31f8b655598f609f5fa081c79c86717146d0080e1711fa979",
+      "block": 47505103,
+      "close_frames": 1,
+      "library_selectors": [
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143"
+      ]
+    },
+    {
+      "tx": "0x6d79e15b1efc016458e0973038a6006edf8baefdebdc9d89fec37293bc983162",
+      "block": 47503223,
+      "close_frames": 1,
+      "library_selectors": [
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143",
+        "0x82296364",
+        "0xaa31b143"
+      ]
+    }
+  ],
+  "limits": [
+    "This is a 20-transaction census of close-containing inputs within the first 100 older BatchExecutor transactions before the pin, not a census of all historical closes.",
+    "All sampled closes take the settlement path. A separate exact Exchange caller replay covers constructed nonzero position bytes, but no historical invocation of that queue branch is known."
+  ]
+}

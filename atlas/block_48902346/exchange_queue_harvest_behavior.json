@@ -1,0 +1,91 @@
+{
+  "pin_block": 48902346,
+  "probe_block": 48173889,
+  "probe_block_hash": "0xe53bc96266e8aaeb4ef7bc6e4ab3c9d8529f5aae989d7bb815c242914d78efa8",
+  "historical_harvest_tx": "0x4214fa14d9c5bf46fade1c7f3ca8d242baefaa52426395b1840f43b626ee8a99",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "enqueued_history": {
+    "from_block": 47854719,
+    "to_block": 48902346,
+    "complete_first_page_count": 3,
+    "all_three_users_distinct": true,
+    "evidence": "../../artifacts/exchange_queue/enqueued_page1.json"
+  },
+  "event_catalog": [
+    {
+      "topic0": "0x81ca9b2c230070eaa84787556b1aaf18bf1e2f07ea5d3dae4819db77a1a5b224",
+      "reconstructed_signature": "Harvested(address,uint256,uint256)",
+      "decoded_layout": "indexed user; unindexed amount paid, node amount remaining"
+    },
+    {
+      "topic0": "0xc2a40711b646c786b80242364fa8e26da64c5a4dfb2bf8fff83692db43600d89",
+      "reconstructed_signature": "SideBucketUpdated(uint256)"
+    }
+  ],
+  "partial_harvest_probes": [
+    {
+      "max_entries": 0,
+      "returned_amount": "0",
+      "head_after": 1,
+      "queued_after": "22871826547055470767",
+      "processed_users": [],
+      "logs": 0
+    },
+    {
+      "max_entries": 1,
+      "returned_amount": "7623942182351823589",
+      "head_after": 2,
+      "queued_after": "15247884364703647178",
+      "total_balances_delta": "7623942182351823589",
+      "side_bucket_after": "392672277019857811540",
+      "processed_users": [
+        "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93"
+      ],
+      "logs": 2
+    },
+    {
+      "max_entries": 2,
+      "returned_amount": "15247884364703647178",
+      "head_after": 3,
+      "queued_after": "7623942182351823589",
+      "total_balances_delta": "15247884364703647178",
+      "side_bucket_after": "385048334837505987951",
+      "processed_users": [
+        "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+        "0x177344b0f45102a5fb7b2dc72470650e84f3ef77"
+      ],
+      "logs": 3
+    },
+    {
+      "max_entries": 3,
+      "returned_amount": "22871826547055470767",
+      "head_after": 4,
+      "queued_after": "0",
+      "total_balances_delta": "22871826547055470767",
+      "side_bucket_after": "0",
+      "processed_users": [
+        "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+        "0x177344b0f45102a5fb7b2dc72470650e84f3ef77",
+        "0x10ec78af7c91799e48c93c3b0eff024fbe0fbeb0"
+      ],
+      "logs": 4
+    }
+  ],
+  "partial_node_with_side_bucket": {
+    "available": "3000000000000000000",
+    "returned_amount": "3000000000000000000",
+    "node_remaining": "4623942182351823589",
+    "side_bucket_after": "397296219202209635129",
+    "global_head_unchanged": true,
+    "evidence": "../../artifacts/exchange_queue/partial_node_historical_state.json"
+  },
+  "full_harvest_replay": {
+    "storage_diff_equal": true,
+    "ordered_logs_equal": true
+  },
+  "limitations": [
+    "No same-user queue append occurred in complete observed history through the pin.",
+    "Partial harvest results are read-only simulations at an archived state.",
+    "The underfunded node payout uses a treasury storage override; larger queues remain untested."
+  ]
+}

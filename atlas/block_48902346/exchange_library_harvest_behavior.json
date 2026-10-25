@@ -1,0 +1,516 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "library": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "exchange_parent_implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "exchange_parent_selector_reconstructions": {
+    "0xddc63262": "harvest(uint256)"
+  },
+  "selector": "0x79810ffe",
+  "parent_selector": "0xddc63262",
+  "historical_count": 1,
+  "read_only_simulation_count": 13,
+  "argument_semantics": {
+    "0": "queue node mapping base 15",
+    "1": "maximum nodes to process",
+    "2": "payment cap supplied by Exchange",
+    "3": "user balance mapping base 9",
+    "4": "running amount whose returned value increases by the payment; economic name unresolved"
+  },
+  "return_semantics": {
+    "0": "total amount credited to users",
+    "1": "argument 4 plus total amount credited"
+  },
+  "observed_branches": [
+    "zero node limit",
+    "one to three different-user nodes",
+    "same-user two-node queue",
+    "underfunded first node",
+    "underfunded second node"
+  ],
+  "cases": [
+    {
+      "label": "historical_harvest_32",
+      "kind": "historical",
+      "source": "../../artifacts/historical/0x4214fa14d9c5bf46fade1c7f3ca8d242baefaa52426395b1840f43b626ee8a99.calls.json",
+      "arguments": [
+        "15",
+        "32",
+        "400296219202209635129",
+        "9",
+        "136555767282873451612902920"
+      ],
+      "returns": [
+        "22871826547055470767",
+        "136555790154699998668373687"
+      ],
+      "harvested_events": [
+        {
+          "user": "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+          "paid": "7623942182351823589",
+          "node_remaining": "0"
+        },
+        {
+          "user": "0x177344b0f45102a5fb7b2dc72470650e84f3ef77",
+          "paid": "7623942182351823589",
+          "node_remaining": "0"
+        },
+        {
+          "user": "0x10ec78af7c91799e48c93c3b0eff024fbe0fbeb0",
+          "paid": "7623942182351823589",
+          "node_remaining": "0"
+        }
+      ],
+      "checks": {
+        "limit_matches_parent": true,
+        "paid_within_funding_cap": true,
+        "second_return_equals_fifth_argument_plus_paid": true,
+        "parent_return_equals_paid": true,
+        "queued_total_debit_equals_paid": true,
+        "event_amounts_equal_paid": true,
+        "user_balance_credits_equal_events": true
+      }
+    },
+    {
+      "label": "harvest_0_probe.json:0",
+      "kind": "read_only_simulation",
+      "source": "../../artifacts/exchange_queue/harvest_0_probe.json",
+      "arguments": [
+        "15",
+        "0",
+        "400296219202209635129",
+        "9",
+        "136555767282873451612902920"
+      ],
+      "returns": [
+        "0",
+        "136555767282873451612902920"
+      ],
+      "harvested_events": [],
+      "checks": {
+        "limit_matches_parent": true,
+        "paid_within_funding_cap": true,
+        "second_return_equals_fifth_argument_plus_paid": true,
+        "parent_return_equals_paid": true,
+        "queued_total_debit_equals_paid": true,
+        "event_amounts_equal_paid": true,
+        "user_balance_credits_equal_events": true
+      }
+    },
+    {
+      "label": "harvest_1_probe.json:0",
+      "kind": "read_only_simulation",
+      "source": "../../artifacts/exchange_queue/harvest_1_probe.json",
+      "arguments": [
+        "15",
+        "1",
+        "400296219202209635129",
+        "9",
+        "136555767282873451612902920"
+      ],
+      "returns": [
+        "7623942182351823589",
+        "136555774906815633964726509"
+      ],
+      "harvested_events": [
+        {
+          "user": "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+          "paid": "7623942182351823589",
+          "node_remaining": "0"
+        }
+      ],
+      "checks": {
+        "limit_matches_parent": true,
+        "paid_within_funding_cap": true,
+        "second_return_equals_fifth_argument_plus_paid": true,
+        "parent_return_equals_paid": true,
+        "queued_total_debit_equals_paid": true,
+        "event_amounts_equal_paid": true,
+        "user_balance_credits_equal_events": true
+      }
+    },
+    {
+      "label": "harvest_2_probe.json:0",
+      "kind": "read_only_simulation",
+      "source": "../../artifacts/exchange_queue/harvest_2_probe.json",
+      "arguments": [
+        "15",
+        "2",
+        "400296219202209635129",
+        "9",
+        "136555767282873451612902920"
+      ],
+      "returns": [
+        "15247884364703647178",
+        "136555782530757816316550098"
+      ],
+      "harvested_events": [
+        {
+          "user": "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+          "paid": "7623942182351823589",
+          "node_remaining": "0"
+        },
+        {
+          "user": "0x177344b0f45102a5fb7b2dc72470650e84f3ef77",
+          "paid": "7623942182351823589",
+          "node_remaining": "0"
+        }
+      ],
+      "checks": {
+        "limit_matches_parent": true,
+        "paid_within_funding_cap": true,
+        "second_return_equals_fifth_argument_plus_paid": true,
+        "parent_return_equals_paid": true,
+        "queued_total_debit_equals_paid": true,
+        "event_amounts_equal_paid": true,
+        "user_balance_credits_equal_events": true
+      }
+    },
+    {
+      "label": "harvest_3_probe.json:0",
+      "kind": "read_only_simulation",
+      "source": "../../artifacts/exchange_queue/harvest_3_probe.json",
+      "arguments": [
+        "15",
+        "3",
+        "400296219202209635129",
+        "9",
+        "136555767282873451612902920"
+      ],
+      "returns": [
+        "22871826547055470767",
+        "136555790154699998668373687"
+      ],
+      "harvested_events": [
+        {
+          "user": "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+          "paid": "7623942182351823589",
+          "node_remaining": "0"
+        },
+        {
+          "user": "0x177344b0f45102a5fb7b2dc72470650e84f3ef77",
+          "paid": "7623942182351823589",
+          "node_remaining": "0"
+        },
+        {
+          "user": "0x10ec78af7c91799e48c93c3b0eff024fbe0fbeb0",
+          "paid": "7623942182351823589",
+          "node_remaining": "0"
+        }
+      ],
+      "checks": {
+        "limit_matches_parent": true,
+        "paid_within_funding_cap": true,
+        "second_return_equals_fifth_argument_plus_paid": true,
+        "parent_return_equals_paid": true,
+        "queued_total_debit_equals_paid": true,
+        "event_amounts_equal_paid": true,
+        "user_balance_credits_equal_events": true
+      }
+    },
+    {
+      "label": "partial_node_historical_state.json:0",
+      "kind": "read_only_simulation",
+      "source": "../../artifacts/exchange_queue/partial_node_historical_state.json",
+      "arguments": [
+        "15",
+        "1",
+        "3000000000000000000",
+        "9",
+        "136555767282873451612902920"
+      ],
+      "returns": [
+        "3000000000000000000",
+        "136555770282873451612902920"
+      ],
+      "harvested_events": [
+        {
+          "user": "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+          "paid": "3000000000000000000",
+          "node_remaining": "4623942182351823589"
+        }
+      ],
+      "checks": {
+        "limit_matches_parent": true,
+        "paid_within_funding_cap": true,
+        "second_return_equals_fifth_argument_plus_paid": true,
+        "parent_return_equals_paid": true,
+        "queued_total_debit_equals_paid": true,
+        "event_amounts_equal_paid": true,
+        "user_balance_credits_equal_events": true
+      }
+    },
+    {
+      "label": "partial_node_probes.json:2",
+      "kind": "read_only_simulation",
+      "source": "../../artifacts/exchange_queue/partial_node_probes.json",
+      "arguments": [
+        "15",
+        "1",
+        "3000000000000000000",
+        "9",
+        "136436167579092653822538049"
+      ],
+      "returns": [
+        "3000000000000000000",
+        "136436170579092653822538049"
+      ],
+      "harvested_events": [
+        {
+          "user": "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+          "paid": "3000000000000000000",
+          "node_remaining": "2000000000000000000"
+        }
+      ],
+      "checks": {
+        "limit_matches_parent": true,
+        "paid_within_funding_cap": true,
+        "second_return_equals_fifth_argument_plus_paid": true,
+        "parent_return_equals_paid": true,
+        "queued_total_debit_equals_paid": true,
+        "event_amounts_equal_paid": true,
+        "user_balance_credits_equal_events": true
+      }
+    },
+    {
+      "label": "partial_node_probes.json:3",
+      "kind": "read_only_simulation",
+      "source": "../../artifacts/exchange_queue/partial_node_probes.json",
+      "arguments": [
+        "15",
+        "2",
+        "3000000000000000000",
+        "9",
+        "136436167579092653822538049"
+      ],
+      "returns": [
+        "3000000000000000000",
+        "136436170579092653822538049"
+      ],
+      "harvested_events": [
+        {
+          "user": "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+          "paid": "3000000000000000000",
+          "node_remaining": "2000000000000000000"
+        }
+      ],
+      "checks": {
+        "limit_matches_parent": true,
+        "paid_within_funding_cap": true,
+        "second_return_equals_fifth_argument_plus_paid": true,
+        "parent_return_equals_paid": true,
+        "queued_total_debit_equals_paid": true,
+        "event_amounts_equal_paid": true,
+        "user_balance_credits_equal_events": true
+      }
+    },
+    {
+      "label": "partial_node_probes.json:4",
+      "kind": "read_only_simulation",
+      "source": "../../artifacts/exchange_queue/partial_node_probes.json",
+      "arguments": [
+        "15",
+        "1",
+        "5000000000000000000",
+        "9",
+        "136436167579092653822538049"
+      ],
+      "returns": [
+        "5000000000000000000",
+        "136436172579092653822538049"
+      ],
+      "harvested_events": [
+        {
+          "user": "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+          "paid": "5000000000000000000",
+          "node_remaining": "0"
+        }
+      ],
+      "checks": {
+        "limit_matches_parent": true,
+        "paid_within_funding_cap": true,
+        "second_return_equals_fifth_argument_plus_paid": true,
+        "parent_return_equals_paid": true,
+        "queued_total_debit_equals_paid": true,
+        "event_amounts_equal_paid": true,
+        "user_balance_credits_equal_events": true
+      }
+    },
+    {
+      "label": "partial_node_probes.json:5",
+      "kind": "read_only_simulation",
+      "source": "../../artifacts/exchange_queue/partial_node_probes.json",
+      "arguments": [
+        "15",
+        "2",
+        "5000000000000000000",
+        "9",
+        "136436167579092653822538049"
+      ],
+      "returns": [
+        "5000000000000000000",
+        "136436172579092653822538049"
+      ],
+      "harvested_events": [
+        {
+          "user": "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+          "paid": "5000000000000000000",
+          "node_remaining": "0"
+        }
+      ],
+      "checks": {
+        "limit_matches_parent": true,
+        "paid_within_funding_cap": true,
+        "second_return_equals_fifth_argument_plus_paid": true,
+        "parent_return_equals_paid": true,
+        "queued_total_debit_equals_paid": true,
+        "event_amounts_equal_paid": true,
+        "user_balance_credits_equal_events": true
+      }
+    },
+    {
+      "label": "partial_node_probes.json:6",
+      "kind": "read_only_simulation",
+      "source": "../../artifacts/exchange_queue/partial_node_probes.json",
+      "arguments": [
+        "15",
+        "1",
+        "7000000000000000000",
+        "9",
+        "136436167579092653822538049"
+      ],
+      "returns": [
+        "5000000000000000000",
+        "136436172579092653822538049"
+      ],
+      "harvested_events": [
+        {
+          "user": "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+          "paid": "5000000000000000000",
+          "node_remaining": "0"
+        }
+      ],
+      "checks": {
+        "limit_matches_parent": true,
+        "paid_within_funding_cap": true,
+        "second_return_equals_fifth_argument_plus_paid": true,
+        "parent_return_equals_paid": true,
+        "queued_total_debit_equals_paid": true,
+        "event_amounts_equal_paid": true,
+        "user_balance_credits_equal_events": true
+      }
+    },
+    {
+      "label": "partial_node_probes.json:7",
+      "kind": "read_only_simulation",
+      "source": "../../artifacts/exchange_queue/partial_node_probes.json",
+      "arguments": [
+        "15",
+        "2",
+        "7000000000000000000",
+        "9",
+        "136436167579092653822538049"
+      ],
+      "returns": [
+        "7000000000000000000",
+        "136436174579092653822538049"
+      ],
+      "harvested_events": [
+        {
+          "user": "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+          "paid": "5000000000000000000",
+          "node_remaining": "0"
+        },
+        {
+          "user": "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+          "paid": "2000000000000000000",
+          "node_remaining": "5623942182351823589"
+        }
+      ],
+      "checks": {
+        "limit_matches_parent": true,
+        "paid_within_funding_cap": true,
+        "second_return_equals_fifth_argument_plus_paid": true,
+        "parent_return_equals_paid": true,
+        "queued_total_debit_equals_paid": true,
+        "event_amounts_equal_paid": true,
+        "user_balance_credits_equal_events": true
+      }
+    },
+    {
+      "label": "append_harvest_1_local_probe.json:0",
+      "kind": "read_only_simulation",
+      "source": "../../artifacts/exchange_queue/append_harvest_1_local_probe.json",
+      "arguments": [
+        "15",
+        "1",
+        "112623942182351823589",
+        "9",
+        "136436167579092653822538049"
+      ],
+      "returns": [
+        "5000000000000000000",
+        "136436172579092653822538049"
+      ],
+      "harvested_events": [
+        {
+          "user": "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+          "paid": "5000000000000000000",
+          "node_remaining": "0"
+        }
+      ],
+      "checks": {
+        "limit_matches_parent": true,
+        "paid_within_funding_cap": true,
+        "second_return_equals_fifth_argument_plus_paid": true,
+        "parent_return_equals_paid": true,
+        "queued_total_debit_equals_paid": true,
+        "event_amounts_equal_paid": true,
+        "user_balance_credits_equal_events": true
+      }
+    },
+    {
+      "label": "append_harvest_2_local_probe.json:0",
+      "kind": "read_only_simulation",
+      "source": "../../artifacts/exchange_queue/append_harvest_2_local_probe.json",
+      "arguments": [
+        "15",
+        "2",
+        "112623942182351823589",
+        "9",
+        "136436167579092653822538049"
+      ],
+      "returns": [
+        "12623942182351823589",
+        "136436180203034836174361638"
+      ],
+      "harvested_events": [
+        {
+          "user": "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+          "paid": "5000000000000000000",
+          "node_remaining": "0"
+        },
+        {
+          "user": "0xecba25a6b7cb7dfbe08a1ddf49873e3a6ff49f93",
+          "paid": "7623942182351823589",
+          "node_remaining": "0"
+        }
+      ],
+      "checks": {
+        "limit_matches_parent": true,
+        "paid_within_funding_cap": true,
+        "second_return_equals_fifth_argument_plus_paid": true,
+        "parent_return_equals_paid": true,
+        "queued_total_debit_equals_paid": true,
+        "event_amounts_equal_paid": true,
+        "user_balance_credits_equal_events": true
+      }
+    }
+  ],
+  "limits": [
+    "Only one of the 14 calls executed on-chain; thirteen are read-only archive-backed simulations.",
+    "A zero-availability Exchange call bypasses the library in two saved simulations.",
+    "All tested queues have at most three nodes; authorization, extreme values, and concurrent changes remain open."
+  ]
+}

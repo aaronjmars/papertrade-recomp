@@ -1,0 +1,51 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "method": "port-free Forge EVM with exact pinned ProxyAdmin, Exchange proxy, and Exchange implementation runtimes injected; pinned owner and EIP-1967 slots set locally; mock new implementation used only as upgrade target",
+  "runtime_hashes": {
+    "ProxyAdmin": {
+      "address": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+      "sha256": "238bb08777bab344b1e4090bd3a64fd26e48ef9ebaaf075234274e1c06129066"
+    },
+    "ExchangeProxy": {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f"
+    },
+    "ExchangeImplementation": {
+      "address": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+      "sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1"
+    }
+  },
+  "test_names": [
+    "testAllowsNoCodeImplementation",
+    "testChangeProxyAdmin",
+    "testPinnedOwnerAndOutsider",
+    "testProxyAdminViews",
+    "testProxyNonAdminSelectors",
+    "testRejectZeroOwner",
+    "testRejectZeroProxyAdmin",
+    "testTransferOwnership",
+    "testUpgrade",
+    "testUpgradeAndCall"
+  ],
+  "forge_result": "10 passed, 0 failed",
+  "test_source_sha256": "7aec1bfeb025f0a6c0ae4660bc46b257fdbcbe743f1feecc2964635f8b40e55a",
+  "observed_paths": [
+    "owner getter",
+    "outsider owner checks",
+    "proxy admin views",
+    "proxy NotAdmin checks",
+    "zero proxy admin rejection",
+    "upgrade",
+    "upgradeAndCall delegatecall",
+    "changeProxyAdmin",
+    "transferOwnership",
+    "zero-owner rejection",
+    "no-code implementation accepted",
+    "eventless proxy upgrades"
+  ],
+  "limits": [
+    "The mock implementation is a local test target, not a Papertrade deployment.",
+    "The saved historical call-graph sample contains no ProxyAdmin upgrade transaction."
+  ]
+}

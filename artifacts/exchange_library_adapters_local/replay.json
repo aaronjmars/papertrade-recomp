@@ -1,0 +1,27 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "adapters": {
+    "0x4a4d9eea": "0xca02ff91",
+    "0xae4daf4e": "0x2448a553",
+    "0x753a369c": "0x3cf4208d",
+    "0x827ad94c": "0x32db40c9"
+  },
+  "test_names": [
+    "testForwardAndReturn",
+    "testLibraryErrorBubbles",
+    "testLiveLibraryDefaultCalls",
+    "testLiveLibrarySyntheticNode",
+    "testMalformedAddress",
+    "testReturnWidth",
+    "testTooShort"
+  ],
+  "forge_result": "7 passed, 0 failed",
+  "runtime_hashes": {
+    "Proxy": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "Implementation": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+    "Library": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2"
+  },
+  "test_source_sha256": "f364758e2ae3fa5fbc04be886c9068b5b345cac36f9145314f8317dc5f457c00",
+  "spy_library_scope": "Forwarding and return tests use spy bytecode at linked library address; default and synthetic node tests use exact pinned library runtime"
+}

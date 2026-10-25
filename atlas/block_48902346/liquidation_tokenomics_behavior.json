@@ -1,0 +1,1535 @@
+{
+  "pin_block": 48902346,
+  "pin_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "sample_window": "last 256 blocks ending at pin",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "tokenomics_proxy": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+  "paper_proxy": "0xe40f17915daa230324030003a197cdaef2261c0e",
+  "paper_math_library": "0xe991817199363046da0a28da6fbad0284e4aa492",
+  "selector": "0x0efdf838",
+  "signature_status": "exact source name unresolved",
+  "transaction_count": 26,
+  "liquidation_call_count": 67,
+  "tokenomics_event_count": 67,
+  "paper_math_call_count": 67,
+  "paper_mint_count": 67,
+  "storage_reconciled_transaction_count": 26,
+  "overlap_with_prior_tokenomics_liquidations": 3,
+  "new_distinct_liquidation_calls": 64,
+  "unique_liquidation_calls_across_both_ledgers": 70,
+  "raw_call_receipt_header_pattern": "../../artifacts/exchange_batch_thresholds/<tx>.(calls|receipt|block).json",
+  "raw_state_diff_pattern": "../../artifacts/liquidation_tokenomics/<tx>.state_diff.json",
+  "transactions": [
+    {
+      "tx": "0x0b09da790c989d9647d641dbcdf9777bba34fa64a17c0fa25e887ccd2a1990c2",
+      "block_number": 48902308,
+      "call_count": 1,
+      "tracked_credit": "14161000000000000000",
+      "exchange_fee_total": "289000000000000000",
+      "tail_delta": "14450000000000000000",
+      "paper_minted": "163363575415973038753",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0x180178cbca597058b00f476fa7b7b5d463f5c23424e18e525a3b5572250af8b3",
+      "block_number": 48902278,
+      "call_count": 1,
+      "tracked_credit": "196000000000000000000",
+      "exchange_fee_total": "4000000000000000000",
+      "tail_delta": "200000000000000000000",
+      "paper_minted": "2261147235145672899400",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0x1aa2f887dd77157660463ffe279b687f92b5377ad16a7dda1f5a02b93cc19661",
+      "block_number": 48902305,
+      "call_count": 1,
+      "tracked_credit": "176249663351330752192",
+      "exchange_fee_total": "3596931905129199024",
+      "tail_delta": "179846595256459951216",
+      "paper_minted": "2033263734649721022708",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0x1c46255f00fde041b7c43c6b639fd233db049feb3f6bed88d7fe9047b699a974",
+      "block_number": 48902313,
+      "call_count": 2,
+      "tracked_credit": "607600000000000000000",
+      "exchange_fee_total": "12400000000000000000",
+      "tail_delta": "620000000000000000000",
+      "paper_minted": "7009045974185140375780",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0x2bdbd80e58d8c7d4745c82e489baf781d183d5142cc9e6ca00599cd607c5a387",
+      "block_number": 48902219,
+      "call_count": 2,
+      "tracked_credit": "195519800000000000000",
+      "exchange_fee_total": "3990200000000000000",
+      "tail_delta": "199510000000000000000",
+      "paper_minted": "2255643580667279141660",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0x34b7ae5b487e74118446994402ec8f4651a1414ad1de75dcfe1f8267cc9854b9",
+      "block_number": 48902104,
+      "call_count": 3,
+      "tracked_credit": "5008094000000000000000",
+      "exchange_fee_total": "102206000000000000000",
+      "tail_delta": "5110300000000000000000",
+      "paper_minted": "57779002479404486938308",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0x3a2a9b4eb904a7f7e5de8030dc139ab33a1190295d5e6b80c3095aebd97561a2",
+      "block_number": 48902313,
+      "call_count": 4,
+      "tracked_credit": "127400000000000000000",
+      "exchange_fee_total": "2600000000000000000",
+      "tail_delta": "130000000000000000000",
+      "paper_minted": "1469633397557785935250",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0x3eb17867ffaefb3de1f5c3e77e01441f4c14064a4d3b628d5c743c50344e737b",
+      "block_number": 48902305,
+      "call_count": 4,
+      "tracked_credit": "69580000000000000000",
+      "exchange_fee_total": "1420000000000000000",
+      "tail_delta": "71000000000000000000",
+      "paper_minted": "802694242953593359862",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0x50c326eff20754763dc2a62b9c1aff02d2d94c651b03eed9274f6056075f3299",
+      "block_number": 48902278,
+      "call_count": 1,
+      "tracked_credit": "9800000000000000000",
+      "exchange_fee_total": "200000000000000000",
+      "tail_delta": "10000000000000000000",
+      "paper_minted": "113057428282524061910",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0x5a7351bf8dab4ba6b95f17962817bc89a04515a089f8b56b81b288e8495842a4",
+      "block_number": 48902314,
+      "call_count": 7,
+      "tracked_credit": "2597980000000000000000",
+      "exchange_fee_total": "53020000000000000000",
+      "tail_delta": "2651000000000000000000",
+      "paper_minted": "29968982917581096055116",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0x5d3fb74ca39636fd81419b81f3bce624b569248cc4953a77835d8a6f6bc06774",
+      "block_number": 48902308,
+      "call_count": 1,
+      "tracked_credit": "108780000000000000000",
+      "exchange_fee_total": "2220000000000000000",
+      "tail_delta": "111000000000000000000",
+      "paper_minted": "1254912933369776330310",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0x60957a96fc6189c76d787a30e103643b1229752fe4bbc34ee207ea1438a9d6c1",
+      "block_number": 48902219,
+      "call_count": 1,
+      "tracked_credit": "142158800000000000000",
+      "exchange_fee_total": "2901200000000000000",
+      "tail_delta": "145060000000000000000",
+      "paper_minted": "1640034794742003754945",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0x60a48ba6928156bb1055cc59fe52243668c1e8c2fd2a923432f8a91871f8fe44",
+      "block_number": 48902313,
+      "call_count": 2,
+      "tracked_credit": "108780000000000000000",
+      "exchange_fee_total": "2220000000000000000",
+      "tail_delta": "111000000000000000000",
+      "paper_minted": "1254842757480716639902",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0x64148136dcd1a3e0e009c5a922bb9b1b33c2ab04cf1b6253cd9395cd9ecb1f2d",
+      "block_number": 48902311,
+      "call_count": 4,
+      "tracked_credit": "49264600000000000000",
+      "exchange_fee_total": "1005400000000000000",
+      "tail_delta": "50270000000000000000",
+      "paper_minted": "568299960378179235252",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0x679c4f03d95174f89035101897d09fbb009a61b162250c11f6cdc47c83ef8d18",
+      "block_number": 48902308,
+      "call_count": 12,
+      "tracked_credit": "1240611400000000000000",
+      "exchange_fee_total": "25318600000000000000",
+      "tail_delta": "1265930000000000000000",
+      "paper_minted": "14311944149803157759723",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0x871466bf1e2a505662da4b3eb001206516f1658a8592cbc59892151328e24cc4",
+      "block_number": 48902280,
+      "call_count": 1,
+      "tracked_credit": "48804000000000000000",
+      "exchange_fee_total": "996000000000000000",
+      "tail_delta": "49800000000000000000",
+      "paper_minted": "563025267467439526287",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0x89e740983c78db4384ea4d3c194367f18b63ac5d5c3ce0f0e8b3e2ed8752a6b4",
+      "block_number": 48902308,
+      "call_count": 1,
+      "tracked_credit": "81271400000000000000",
+      "exchange_fee_total": "1658600000000000000",
+      "tail_delta": "82930000000000000000",
+      "paper_minted": "937567442473876377761",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0xaaa0f6de77f83f5861b55b729816fd8a6426b30483127a960d44fa208a3d5453",
+      "block_number": 48902313,
+      "call_count": 2,
+      "tracked_credit": "58800000000000000000",
+      "exchange_fee_total": "1200000000000000000",
+      "tail_delta": "60000000000000000000",
+      "paper_minted": "678292698430005645980",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0xacf79a672a9e8acb78f1b6f1e78c5935ec797975204479fd7f4f55d5a28be574",
+      "block_number": 48902313,
+      "call_count": 2,
+      "tracked_credit": "225400000000000000000",
+      "exchange_fee_total": "4600000000000000000",
+      "tail_delta": "230000000000000000000",
+      "paper_minted": "2600136150679517956800",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0xb5d5ed8df5d4056c5ee09de10980a8f1c793fa8bb5fd0f7af8911861929bc7af",
+      "block_number": 48902310,
+      "call_count": 4,
+      "tracked_credit": "186200000000000000000",
+      "exchange_fee_total": "3800000000000000000",
+      "tail_delta": "190000000000000000000",
+      "paper_minted": "2147971393996233859570",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0xbebcd3fc913440b40ca824dc66cd8ac031286e58d92d5d52348c17f2d7b4b9e0",
+      "block_number": 48902308,
+      "call_count": 1,
+      "tracked_credit": "980000000000000000000",
+      "exchange_fee_total": "20000000000000000000",
+      "tail_delta": "1000000000000000000000",
+      "paper_minted": "11305405609980130539000",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0xc4e6f7dec48e377576e0d1f47cd01c57b596de1e6c750dbbf958b25c2a52a486",
+      "block_number": 48902313,
+      "call_count": 2,
+      "tracked_credit": "58800000000000000000",
+      "exchange_fee_total": "1200000000000000000",
+      "tail_delta": "60000000000000000000",
+      "paper_minted": "678296938284781784480",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0xdf0b9c2f1e051a4bab7cbc05557dd996ef5949e22e0de3eee892840a41f9de32",
+      "block_number": 48902313,
+      "call_count": 5,
+      "tracked_credit": "92561000000000000000",
+      "exchange_fee_total": "1889000000000000000",
+      "tail_delta": "94450000000000000000",
+      "paper_minted": "1067746218181735692490",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0xdfe4d997bd2d8ee4d5a96d0759e38a6b24e9719c40545eae6ea406b43ed119f9",
+      "block_number": 48902280,
+      "call_count": 1,
+      "tracked_credit": "196000000000000000000",
+      "exchange_fee_total": "4000000000000000000",
+      "tail_delta": "200000000000000000000",
+      "paper_minted": "2261144069815675416800",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0xe584ff1e6a4cc0aa8fd52cd3398642c3f6d7e0b77562e2658484967f0c257856",
+      "block_number": 48902300,
+      "call_count": 1,
+      "tracked_credit": "49000000000000000000",
+      "exchange_fee_total": "1000000000000000000",
+      "tail_delta": "50000000000000000000",
+      "paper_minted": "565278235412050715000",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    },
+    {
+      "tx": "0xe629f49b4cb1f6d8e5841571b1e8a2298cda2b8588f4693337a116cb2432f81d",
+      "block_number": 48902310,
+      "call_count": 1,
+      "tracked_credit": "2450000000000000000000",
+      "exchange_fee_total": "50000000000000000000",
+      "tail_delta": "2500000000000000000000",
+      "paper_minted": "28262994522971198167500",
+      "storage_checks": {
+        "tracked_lp_usd_slot_3": true,
+        "tail_progress_usd_slot_4": true,
+        "paper_total_supply_slot_6": true
+      }
+    }
+  ],
+  "calls": [
+    {
+      "tx": "0x0b09da790c989d9647d641dbcdf9777bba34fa64a17c0fa25e887ccd2a1990c2",
+      "ordinal": 0,
+      "position_id": 1389976,
+      "recipient": "0xdb7b4932ac447b41f5fd5408b553b8e746cb2a6f",
+      "mint_basis": "14450000000000000000",
+      "tracked_credit": "14161000000000000000",
+      "exchange_fee_fields": [
+        "144500000000000000",
+        "144500000000000000"
+      ],
+      "tracked_before": "4998779365353153787897642",
+      "tracked_after": "4998793526353153787897642",
+      "tail_before": "236892602204335046642490247",
+      "tail_delta": "14450000000000000000",
+      "paper_minted": "163363575415973038753"
+    },
+    {
+      "tx": "0x180178cbca597058b00f476fa7b7b5d463f5c23424e18e525a3b5572250af8b3",
+      "ordinal": 0,
+      "position_id": 1391546,
+      "recipient": "0xf39e1e2dd85ca64105e921b6f857a2f4fc565cb9",
+      "mint_basis": "200000000000000000000",
+      "tracked_credit": "196000000000000000000",
+      "exchange_fee_fields": [
+        "2000000000000000000",
+        "2000000000000000000"
+      ],
+      "tracked_before": "4998376138839645806282344",
+      "tracked_after": "4998572138839645806282344",
+      "tail_before": "236887799059111671893894931",
+      "tail_delta": "200000000000000000000",
+      "paper_minted": "2261147235145672899400"
+    },
+    {
+      "tx": "0x1aa2f887dd77157660463ffe279b687f92b5377ad16a7dda1f5a02b93cc19661",
+      "ordinal": 0,
+      "position_id": 1390441,
+      "recipient": "0xe6ae3d496de8eee60f0597acf60c232b56cba741",
+      "mint_basis": "179846595256459951216",
+      "tracked_credit": "176249663351330752192",
+      "exchange_fee_fields": [
+        "1798465952564599512",
+        "1798465952564599512"
+      ],
+      "tracked_before": "4997145277276900486292259",
+      "tracked_after": "4997321526940251817044451",
+      "tail_before": "236890830202591875836704151",
+      "tail_delta": "179846595256459951216",
+      "paper_minted": "2033263734649721022708"
+    },
+    {
+      "tx": "0x1c46255f00fde041b7c43c6b639fd233db049feb3f6bed88d7fe9047b699a974",
+      "ordinal": 0,
+      "position_id": 1392071,
+      "recipient": "0x169d0806f10636f5b13d1bc26119d77d2fff142b",
+      "mint_basis": "600000000000000000000",
+      "tracked_credit": "588000000000000000000",
+      "exchange_fee_fields": [
+        "6000000000000000000",
+        "6000000000000000000"
+      ],
+      "tracked_before": "5002384850886594571857704",
+      "tracked_after": "5002972850886594571857704",
+      "tail_before": "236900584537724718670126395",
+      "tail_delta": "600000000000000000000",
+      "paper_minted": "6782948097055642666800"
+    },
+    {
+      "tx": "0x1c46255f00fde041b7c43c6b639fd233db049feb3f6bed88d7fe9047b699a974",
+      "ordinal": 1,
+      "position_id": 1392222,
+      "recipient": "0x0d09ce732e1330f258bd41efd6429d1c999cc560",
+      "mint_basis": "20000000000000000000",
+      "tracked_credit": "19600000000000000000",
+      "exchange_fee_fields": [
+        "200000000000000000",
+        "200000000000000000"
+      ],
+      "tracked_before": "5002972850886594571857704",
+      "tracked_after": "5002992450886594571857704",
+      "tail_before": "236901184537724718670126395",
+      "tail_delta": "20000000000000000000",
+      "paper_minted": "226097877129497708980"
+    },
+    {
+      "tx": "0x2bdbd80e58d8c7d4745c82e489baf781d183d5142cc9e6ca00599cd607c5a387",
+      "ordinal": 0,
+      "position_id": 1391711,
+      "recipient": "0xbbc26b73973cc8e0f6c8b1137c485beb346de22f",
+      "mint_basis": "189510000000000000000",
+      "tracked_credit": "185719800000000000000",
+      "exchange_fee_fields": [
+        "1895100000000000000",
+        "1895100000000000000"
+      ],
+      "tracked_before": "4996353291470621816918646",
+      "tracked_after": "4996539011270621816918646",
+      "tail_before": "236884938972119341047195318",
+      "tail_delta": "189510000000000000000",
+      "paper_minted": "2142584466693279004740"
+    },
+    {
+      "tx": "0x2bdbd80e58d8c7d4745c82e489baf781d183d5142cc9e6ca00599cd607c5a387",
+      "ordinal": 1,
+      "position_id": 1393634,
+      "recipient": "0xdb7b4932ac447b41f5fd5408b553b8e746cb2a6f",
+      "mint_basis": "10000000000000000000",
+      "tracked_credit": "9800000000000000000",
+      "exchange_fee_fields": [
+        "100000000000000000",
+        "100000000000000000"
+      ],
+      "tracked_before": "4996539011270621816918646",
+      "tracked_after": "4996548811270621816918646",
+      "tail_before": "236885128482119341047195318",
+      "tail_delta": "10000000000000000000",
+      "paper_minted": "113059113974000136920"
+    },
+    {
+      "tx": "0x34b7ae5b487e74118446994402ec8f4651a1414ad1de75dcfe1f8267cc9854b9",
+      "ordinal": 0,
+      "position_id": 1393078,
+      "recipient": "0x1e48c2f130a95d75b01d1caf4cec7c49c5eb2aab",
+      "mint_basis": "5000000000000000000000",
+      "tracked_credit": "4900000000000000000000",
+      "exchange_fee_fields": [
+        "50000000000000000000",
+        "50000000000000000000"
+      ],
+      "tracked_before": "5000308083501420788742241",
+      "tracked_after": "5005208083501420788742241",
+      "tail_before": "236875155489471650529879969",
+      "tail_delta": "5000000000000000000000",
+      "paper_minted": "56531926048379775630000"
+    },
+    {
+      "tx": "0x34b7ae5b487e74118446994402ec8f4651a1414ad1de75dcfe1f8267cc9854b9",
+      "ordinal": 1,
+      "position_id": 1390821,
+      "recipient": "0x49d109e1e1b1c514a6b4c36083b223f7c7269540",
+      "mint_basis": "100000000000000000000",
+      "tracked_credit": "98000000000000000000",
+      "exchange_fee_fields": [
+        "1000000000000000000",
+        "1000000000000000000"
+      ],
+      "tracked_before": "5005208083501420788742241",
+      "tracked_after": "5005306083501420788742241",
+      "tail_before": "236880155489471650529879969",
+      "tail_delta": "100000000000000000000",
+      "paper_minted": "1130622363569229422400"
+    },
+    {
+      "tx": "0x34b7ae5b487e74118446994402ec8f4651a1414ad1de75dcfe1f8267cc9854b9",
+      "ordinal": 2,
+      "position_id": 1393750,
+      "recipient": "0xe66fbc8be19bd6b60a7fdc743a1019435ee0a04f",
+      "mint_basis": "10300000000000000000",
+      "tracked_credit": "10094000000000000000",
+      "exchange_fee_fields": [
+        "103000000000000000",
+        "103000000000000000"
+      ],
+      "tracked_before": "5005306083501420788742241",
+      "tracked_after": "5005316177501420788742241",
+      "tail_before": "236880255489471650529879969",
+      "tail_delta": "10300000000000000000",
+      "paper_minted": "116454067455481885908"
+    },
+    {
+      "tx": "0x3a2a9b4eb904a7f7e5de8030dc139ab33a1190295d5e6b80c3095aebd97561a2",
+      "ordinal": 0,
+      "position_id": 1389287,
+      "recipient": "0x1814650de595e6b2a0bc6fb13aa358923161a46a",
+      "mint_basis": "100000000000000000000",
+      "tracked_credit": "98000000000000000000",
+      "exchange_fee_fields": [
+        "1000000000000000000",
+        "1000000000000000000"
+      ],
+      "tracked_before": "5003252591886594571857704",
+      "tracked_after": "5003350591886594571857704",
+      "tail_before": "236901469987724718670126395",
+      "tail_delta": "100000000000000000000",
+      "paper_minted": "1130487323915731151500"
+    },
+    {
+      "tx": "0x3a2a9b4eb904a7f7e5de8030dc139ab33a1190295d5e6b80c3095aebd97561a2",
+      "ordinal": 1,
+      "position_id": 1394422,
+      "recipient": "0x5609cec701025490e3cb840cb4dedf939a20d773",
+      "mint_basis": "10000000000000000000",
+      "tracked_credit": "9800000000000000000",
+      "exchange_fee_fields": [
+        "100000000000000000",
+        "100000000000000000"
+      ],
+      "tracked_before": "5003350591886594571857704",
+      "tracked_after": "5003360391886594571857704",
+      "tail_before": "236901569987724718670126395",
+      "tail_delta": "10000000000000000000",
+      "paper_minted": "113048697549024747800"
+    },
+    {
+      "tx": "0x3a2a9b4eb904a7f7e5de8030dc139ab33a1190295d5e6b80c3095aebd97561a2",
+      "ordinal": 2,
+      "position_id": 1383940,
+      "recipient": "0xdd1049e1abfbc7b1fa0270cc578178505fb4cc93",
+      "mint_basis": "10000000000000000000",
+      "tracked_credit": "9800000000000000000",
+      "exchange_fee_fields": [
+        "100000000000000000",
+        "100000000000000000"
+      ],
+      "tracked_before": "5003360391886594571857704",
+      "tracked_after": "5003370191886594571857704",
+      "tail_before": "236901579987724718670126395",
+      "tail_delta": "10000000000000000000",
+      "paper_minted": "113048691214018083620"
+    },
+    {
+      "tx": "0x3a2a9b4eb904a7f7e5de8030dc139ab33a1190295d5e6b80c3095aebd97561a2",
+      "ordinal": 3,
+      "position_id": 1383799,
+      "recipient": "0xd55ba4916c789c8e2fe0cc107710c8c657c3fa9b",
+      "mint_basis": "10000000000000000000",
+      "tracked_credit": "9800000000000000000",
+      "exchange_fee_fields": [
+        "100000000000000000",
+        "100000000000000000"
+      ],
+      "tracked_before": "5003370191886594571857704",
+      "tracked_after": "5003379991886594571857704",
+      "tail_before": "236901589987724718670126395",
+      "tail_delta": "10000000000000000000",
+      "paper_minted": "113048684879011952330"
+    },
+    {
+      "tx": "0x3eb17867ffaefb3de1f5c3e77e01441f4c14064a4d3b628d5c743c50344e737b",
+      "ordinal": 0,
+      "position_id": 1394187,
+      "recipient": "0x763f9b19a37311189e31023dc0660299fa0d3ef3",
+      "mint_basis": "25000000000000000000",
+      "tracked_credit": "24500000000000000000",
+      "exchange_fee_fields": [
+        "250000000000000000",
+        "250000000000000000"
+      ],
+      "tracked_before": "4997075697276900486292259",
+      "tracked_after": "4997100197276900486292259",
+      "tail_before": "236890759202591875836704151",
+      "tail_delta": "25000000000000000000",
+      "paper_minted": "282638854370998024150"
+    },
+    {
+      "tx": "0x3eb17867ffaefb3de1f5c3e77e01441f4c14064a4d3b628d5c743c50344e737b",
+      "ordinal": 1,
+      "position_id": 1394076,
+      "recipient": "0xdae0424fd265b683ef1a2525aceba37d001565b7",
+      "mint_basis": "18000000000000000000",
+      "tracked_credit": "17640000000000000000",
+      "exchange_fee_fields": [
+        "180000000000000000",
+        "180000000000000000"
+      ],
+      "tracked_before": "4997100197276900486292259",
+      "tracked_after": "4997117837276900486292259",
+      "tail_before": "236890784202591875836704151",
+      "tail_delta": "18000000000000000000",
+      "paper_minted": "203499950628417401916"
+    },
+    {
+      "tx": "0x3eb17867ffaefb3de1f5c3e77e01441f4c14064a4d3b628d5c743c50344e737b",
+      "ordinal": 2,
+      "position_id": 1394080,
+      "recipient": "0xdae0424fd265b683ef1a2525aceba37d001565b7",
+      "mint_basis": "18000000000000000000",
+      "tracked_credit": "17640000000000000000",
+      "exchange_fee_fields": [
+        "180000000000000000",
+        "180000000000000000"
+      ],
+      "tracked_before": "4997117837276900486292259",
+      "tracked_after": "4997135477276900486292259",
+      "tail_before": "236890802202591875836704151",
+      "tail_delta": "18000000000000000000",
+      "paper_minted": "203499930101136205446"
+    },
+    {
+      "tx": "0x3eb17867ffaefb3de1f5c3e77e01441f4c14064a4d3b628d5c743c50344e737b",
+      "ordinal": 3,
+      "position_id": 1394496,
+      "recipient": "0x531a609ee92addd3aaa5bf7208c9e85fc690293b",
+      "mint_basis": "10000000000000000000",
+      "tracked_credit": "9800000000000000000",
+      "exchange_fee_fields": [
+        "100000000000000000",
+        "100000000000000000"
+      ],
+      "tracked_before": "4997135477276900486292259",
+      "tracked_after": "4997145277276900486292259",
+      "tail_before": "236890820202591875836704151",
+      "tail_delta": "10000000000000000000",
+      "paper_minted": "113055507853041728350"
+    },
+    {
+      "tx": "0x50c326eff20754763dc2a62b9c1aff02d2d94c651b03eed9274f6056075f3299",
+      "ordinal": 0,
+      "position_id": 1394435,
+      "recipient": "0x531a609ee92addd3aaa5bf7208c9e85fc690293b",
+      "mint_basis": "10000000000000000000",
+      "tracked_credit": "9800000000000000000",
+      "exchange_fee_fields": [
+        "100000000000000000",
+        "100000000000000000"
+      ],
+      "tracked_before": "4998366338839645806282344",
+      "tracked_after": "4998376138839645806282344",
+      "tail_before": "236887789059111671893894931",
+      "tail_delta": "10000000000000000000",
+      "paper_minted": "113057428282524061910"
+    },
+    {
+      "tx": "0x5a7351bf8dab4ba6b95f17962817bc89a04515a089f8b56b81b288e8495842a4",
+      "ordinal": 0,
+      "position_id": 1394229,
+      "recipient": "0x2b667b8abc61d8bf25c3770861ff0971779f1b06",
+      "mint_basis": "2500000000000000000000",
+      "tracked_credit": "2450000000000000000000",
+      "exchange_fee_fields": [
+        "25000000000000000000",
+        "25000000000000000000"
+      ],
+      "tracked_before": "5003379991886594571857704",
+      "tracked_after": "5005829991886594571857704",
+      "tail_before": "236901599987724718670126395",
+      "tail_delta": "2500000000000000000000",
+      "paper_minted": "28261972460339005460000"
+    },
+    {
+      "tx": "0x5a7351bf8dab4ba6b95f17962817bc89a04515a089f8b56b81b288e8495842a4",
+      "ordinal": 1,
+      "position_id": 1382283,
+      "recipient": "0x25217b4a6138350350a2ce1f97a6b0111bbfdb56",
+      "mint_basis": "100000000000000000000",
+      "tracked_credit": "98000000000000000000",
+      "exchange_fee_fields": [
+        "1000000000000000000",
+        "1000000000000000000"
+      ],
+      "tracked_before": "5005829991886594571857704",
+      "tracked_after": "5005927991886594571857704",
+      "tail_before": "236904099987724718670126395",
+      "tail_delta": "100000000000000000000",
+      "paper_minted": "1130470663023962737500"
+    },
+    {
+      "tx": "0x5a7351bf8dab4ba6b95f17962817bc89a04515a089f8b56b81b288e8495842a4",
+      "ordinal": 2,
+      "position_id": 1394178,
+      "recipient": "0x9e815e00e7f8a43c76338f8abaea769c67ca25be",
+      "mint_basis": "10000000000000000000",
+      "tracked_credit": "9800000000000000000",
+      "exchange_fee_fields": [
+        "100000000000000000",
+        "100000000000000000"
+      ],
+      "tracked_before": "5005927991886594571857704",
+      "tracked_after": "5005937791886594571857704",
+      "tail_before": "236904199987724718670126395",
+      "tail_delta": "10000000000000000000",
+      "paper_minted": "113047031460618156970"
+    },
+    {
+      "tx": "0x5a7351bf8dab4ba6b95f17962817bc89a04515a089f8b56b81b288e8495842a4",
+      "ordinal": 3,
+      "position_id": 1383810,
+      "recipient": "0xd55ba4916c789c8e2fe0cc107710c8c657c3fa9b",
+      "mint_basis": "10000000000000000000",
+      "tracked_credit": "9800000000000000000",
+      "exchange_fee_fields": [
+        "100000000000000000",
+        "100000000000000000"
+      ],
+      "tracked_before": "5005937791886594571857704",
+      "tracked_after": "5005947591886594571857704",
+      "tail_before": "236904209987724718670126395",
+      "tail_delta": "10000000000000000000",
+      "paper_minted": "113047025125751538500"
+    },
+    {
+      "tx": "0x5a7351bf8dab4ba6b95f17962817bc89a04515a089f8b56b81b288e8495842a4",
+      "ordinal": 4,
+      "position_id": 1383813,
+      "recipient": "0xd55ba4916c789c8e2fe0cc107710c8c657c3fa9b",
+      "mint_basis": "10000000000000000000",
+      "tracked_credit": "9800000000000000000",
+      "exchange_fee_fields": [
+        "100000000000000000",
+        "100000000000000000"
+      ],
+      "tracked_before": "5005947591886594571857704",
+      "tracked_after": "5005957391886594571857704",
+      "tail_before": "236904219987724718670126395",
+      "tail_delta": "10000000000000000000",
+      "paper_minted": "113047018790885452590"
+    },
+    {
+      "tx": "0x5a7351bf8dab4ba6b95f17962817bc89a04515a089f8b56b81b288e8495842a4",
+      "ordinal": 5,
+      "position_id": 1383825,
+      "recipient": "0xd55ba4916c789c8e2fe0cc107710c8c657c3fa9b",
+      "mint_basis": "10000000000000000000",
+      "tracked_credit": "9800000000000000000",
+      "exchange_fee_fields": [
+        "100000000000000000",
+        "100000000000000000"
+      ],
+      "tracked_before": "5005957391886594571857704",
+      "tracked_after": "5005967191886594571857704",
+      "tail_before": "236904229987724718670126395",
+      "tail_delta": "10000000000000000000",
+      "paper_minted": "113047012456019899220"
+    },
+    {
+      "tx": "0x5a7351bf8dab4ba6b95f17962817bc89a04515a089f8b56b81b288e8495842a4",
+      "ordinal": 6,
+      "position_id": 1388367,
+      "recipient": "0xb2d04b20672d0804095a17e1b6088deda257fa04",
+      "mint_basis": "11000000000000000000",
+      "tracked_credit": "10780000000000000000",
+      "exchange_fee_fields": [
+        "110000000000000000",
+        "110000000000000000"
+      ],
+      "tracked_before": "5005967191886594571857704",
+      "tracked_after": "5005977971886594571857704",
+      "tail_before": "236904239987724718670126395",
+      "tail_delta": "11000000000000000000",
+      "paper_minted": "124351706384852810336"
+    },
+    {
+      "tx": "0x5d3fb74ca39636fd81419b81f3bce624b569248cc4953a77835d8a6f6bc06774",
+      "ordinal": 0,
+      "position_id": 1391799,
+      "recipient": "0x3199b3fe3e5702b212459e763eac85669d7f6851",
+      "mint_basis": "111000000000000000000",
+      "tracked_credit": "108780000000000000000",
+      "exchange_fee_fields": [
+        "1110000000000000000",
+        "1110000000000000000"
+      ],
+      "tracked_before": "4997429973953153787897642",
+      "tracked_after": "4997538753953153787897642",
+      "tail_before": "236891225274335046642490247",
+      "tail_delta": "111000000000000000000",
+      "paper_minted": "1254912933369776330310"
+    },
+    {
+      "tx": "0x60957a96fc6189c76d787a30e103643b1229752fe4bbc34ee207ea1438a9d6c1",
+      "ordinal": 0,
+      "position_id": 1393675,
+      "recipient": "0x796042c9684671464e5639b245313cdf57c9f054",
+      "mint_basis": "145060000000000000000",
+      "tracked_credit": "142158800000000000000",
+      "exchange_fee_fields": [
+        "1450600000000000000",
+        "1450600000000000000"
+      ],
+      "tracked_before": "4996548811270621816918646",
+      "tracked_after": "4996690970070621816918646",
+      "tail_before": "236885138482119341047195318",
+      "tail_delta": "145060000000000000000",
+      "paper_minted": "1640034794742003754945"
+    },
+    {
+      "tx": "0x60a48ba6928156bb1055cc59fe52243668c1e8c2fd2a923432f8a91871f8fe44",
+      "ordinal": 0,
+      "position_id": 1385685,
+      "recipient": "0x18d76ebbb7d3362fd70baa51a7d2d249266548b8",
+      "mint_basis": "101000000000000000000",
+      "tracked_credit": "98980000000000000000",
+      "exchange_fee_fields": [
+        "1010000000000000000",
+        "1010000000000000000"
+      ],
+      "tracked_before": "5002992450886594571857704",
+      "tracked_after": "5003091430886594571857704",
+      "tail_before": "236901204537724718670126395",
+      "tail_delta": "101000000000000000000",
+      "paper_minted": "1141793892402247421132"
+    },
+    {
+      "tx": "0x60a48ba6928156bb1055cc59fe52243668c1e8c2fd2a923432f8a91871f8fe44",
+      "ordinal": 1,
+      "position_id": 1393784,
+      "recipient": "0xd3302fae1b7ad09d7bb73cdfa7d63efa6e910192",
+      "mint_basis": "10000000000000000000",
+      "tracked_credit": "9800000000000000000",
+      "exchange_fee_fields": [
+        "100000000000000000",
+        "100000000000000000"
+      ],
+      "tracked_before": "5003091430886594571857704",
+      "tracked_after": "5003101230886594571857704",
+      "tail_before": "236901305537724718670126395",
+      "tail_delta": "10000000000000000000",
+      "paper_minted": "113048865078469218770"
+    },
+    {
+      "tx": "0x64148136dcd1a3e0e009c5a922bb9b1b33c2ab04cf1b6253cd9395cd9ecb1f2d",
+      "ordinal": 0,
+      "position_id": 1394277,
+      "recipient": "0xba62710cd36b5f801f9717af89055eccaf261045",
+      "mint_basis": "10000000000000000000",
+      "tracked_credit": "9800000000000000000",
+      "exchange_fee_fields": [
+        "100000000000000000",
+        "100000000000000000"
+      ],
+      "tracked_before": "5002051386286594571857704",
+      "tracked_after": "5002061186286594571857704",
+      "tail_before": "236900244267724718670126395",
+      "tail_delta": "10000000000000000000",
+      "paper_minted": "113049537398242970380"
+    },
+    {
+      "tx": "0x64148136dcd1a3e0e009c5a922bb9b1b33c2ab04cf1b6253cd9395cd9ecb1f2d",
+      "ordinal": 1,
+      "position_id": 1392020,
+      "recipient": "0x0d3131ec2622dd01771b5980d9501424a1b6d3bd",
+      "mint_basis": "20270000000000000000",
+      "tracked_credit": "19864600000000000000",
+      "exchange_fee_fields": [
+        "202700000000000000",
+        "202700000000000000"
+      ],
+      "tracked_before": "5002061186286594571857704",
+      "tracked_after": "5002081050886594571857704",
+      "tail_before": "236900254267724718670126395",
+      "tail_delta": "20270000000000000000",
+      "paper_minted": "229151392871080432032"
+    },
+    {
+      "tx": "0x64148136dcd1a3e0e009c5a922bb9b1b33c2ab04cf1b6253cd9395cd9ecb1f2d",
+      "ordinal": 2,
+      "position_id": 1391482,
+      "recipient": "0x39e236071e62c8afc13aba077137bfaabf1b79b3",
+      "mint_basis": "10000000000000000000",
+      "tracked_credit": "9800000000000000000",
+      "exchange_fee_fields": [
+        "100000000000000000",
+        "100000000000000000"
+      ],
+      "tracked_before": "5002081050886594571857704",
+      "tracked_after": "5002090850886594571857704",
+      "tail_before": "236900274537724718670126395",
+      "tail_delta": "10000000000000000000",
+      "paper_minted": "113049518221965740170"
+    },
+    {
+      "tx": "0x64148136dcd1a3e0e009c5a922bb9b1b33c2ab04cf1b6253cd9395cd9ecb1f2d",
+      "ordinal": 3,
+      "position_id": 1388345,
+      "recipient": "0x9d3b2006278929a971dab329fb7f9a5899f59505",
+      "mint_basis": "10000000000000000000",
+      "tracked_credit": "9800000000000000000",
+      "exchange_fee_fields": [
+        "100000000000000000",
+        "100000000000000000"
+      ],
+      "tracked_before": "5002090850886594571857704",
+      "tracked_after": "5002100650886594571857704",
+      "tail_before": "236900284537724718670126395",
+      "tail_delta": "10000000000000000000",
+      "paper_minted": "113049511886890092670"
+    },
+    {
+      "tx": "0x679c4f03d95174f89035101897d09fbb009a61b162250c11f6cdc47c83ef8d18",
+      "ordinal": 0,
+      "position_id": 1387997,
+      "recipient": "0x169d0806f10636f5b13d1bc26119d77d2fff142b",
+      "mint_basis": "600000000000000000000",
+      "tracked_credit": "588000000000000000000",
+      "exchange_fee_fields": [
+        "6000000000000000000",
+        "6000000000000000000"
+      ],
+      "tracked_before": "4997538753953153787897642",
+      "tracked_after": "4998126753953153787897642",
+      "tail_before": "236891336274335046642490247",
+      "tail_delta": "600000000000000000000",
+      "paper_minted": "6783299639635872445800"
+    },
+    {
+      "tx": "0x679c4f03d95174f89035101897d09fbb009a61b162250c11f6cdc47c83ef8d18",
+      "ordinal": 1,
+      "position_id": 1389872,
+      "recipient": "0xe8e411fc334adeca27f50b229c17172400a6fdc8",
+      "mint_basis": "75000000000000000000",
+      "tracked_credit": "73500000000000000000",
+      "exchange_fee_fields": [
+        "750000000000000000",
+        "750000000000000000"
+      ],
+      "tracked_before": "4998126753953153787897642",
+      "tracked_after": "4998200253953153787897642",
+      "tail_before": "236891936274335046642490247",
+      "tail_delta": "75000000000000000000",
+      "paper_minted": "847910851273569341925"
+    },
+    {
+      "tx": "0x679c4f03d95174f89035101897d09fbb009a61b162250c11f6cdc47c83ef8d18",
+      "ordinal": 2,
+      "position_id": 1390661,
+      "recipient": "0xf39e1e2dd85ca64105e921b6f857a2f4fc565cb9",
+      "mint_basis": "200000000000000000000",
+      "tracked_credit": "196000000000000000000",
+      "exchange_fee_fields": [
+        "2000000000000000000",
+        "2000000000000000000"
+      ],
+      "tracked_before": "4998200253953153787897642",
+      "tracked_after": "4998396253953153787897642",
+      "tail_before": "236892011274335046642490247",
+      "tail_delta": "200000000000000000000",
+      "paper_minted": "2261093861129833084600"
+    },
+    {
+      "tx": "0x679c4f03d95174f89035101897d09fbb009a61b162250c11f6cdc47c83ef8d18",
+      "ordinal": 3,
+      "position_id": 1389538,
+      "recipient": "0x6070df765cb0794d5bdfd4510fa6a3c36127c68d",
+      "mint_basis": "100000000000000000000",
+      "tracked_credit": "98000000000000000000",
+      "exchange_fee_fields": [
+        "1000000000000000000",
+        "1000000000000000000"
+      ],
+      "tracked_before": "4998396253953153787897642",
+      "tracked_after": "4998494253953153787897642",
+      "tail_before": "236892211274335046642490247",
+      "tail_delta": "100000000000000000000",
+      "paper_minted": "1130545980238814088700"
+    },
+    {
+      "tx": "0x679c4f03d95174f89035101897d09fbb009a61b162250c11f6cdc47c83ef8d18",
+      "ordinal": 4,
+      "position_id": 1389551,
+      "recipient": "0x6070df765cb0794d5bdfd4510fa6a3c36127c68d",
+      "mint_basis": "100000000000000000000",
+      "tracked_credit": "98000000000000000000",
+      "exchange_fee_fields": [
+        "1000000000000000000",
+        "1000000000000000000"
+      ],
+      "tracked_before": "4998494253953153787897642",
+      "tracked_after": "4998592253953153787897642",
+      "tail_before": "236892311274335046642490247",
+      "tail_delta": "100000000000000000000",
+      "paper_minted": "1130545346688789193400"
+    },
+    {
+      "tx": "0x679c4f03d95174f89035101897d09fbb009a61b162250c11f6cdc47c83ef8d18",
+      "ordinal": 5,
+      "position_id": 1387984,
+      "recipient": "0xc813a21cc0d6cd4545bcdb0f4d9831490cd097eb",
+      "mint_basis": "82930000000000000000",
+      "tracked_credit": "81271400000000000000",
+      "exchange_fee_fields": [
+        "829300000000000000",
+        "829300000000000000"
+      ],
+      "tracked_before": "4998592253953153787897642",
+      "tracked_after": "4998673525353153787897642",
+      "tail_before": "236892411274335046642490247",
+      "tail_delta": "82930000000000000000",
+      "paper_minted": "937560775449507292990"
+    },
+    {
+      "tx": "0x679c4f03d95174f89035101897d09fbb009a61b162250c11f6cdc47c83ef8d18",
+      "ordinal": 6,
+      "position_id": 1394528,
+      "recipient": "0xdae0424fd265b683ef1a2525aceba37d001565b7",
+      "mint_basis": "18000000000000000000",
+      "tracked_credit": "17640000000000000000",
+      "exchange_fee_fields": [
+        "180000000000000000",
+        "180000000000000000"
+      ],
+      "tracked_before": "4998673525353153787897642",
+      "tracked_after": "4998691165353153787897642",
+      "tail_before": "236892494204335046642490247",
+      "tail_delta": "18000000000000000000",
+      "paper_minted": "203498000548583707134"
+    },
+    {
+      "tx": "0x679c4f03d95174f89035101897d09fbb009a61b162250c11f6cdc47c83ef8d18",
+      "ordinal": 7,
+      "position_id": 1394529,
+      "recipient": "0xdae0424fd265b683ef1a2525aceba37d001565b7",
+      "mint_basis": "18000000000000000000",
+      "tracked_credit": "17640000000000000000",
+      "exchange_fee_fields": [
+        "180000000000000000",
+        "180000000000000000"
+      ],
+      "tracked_before": "4998691165353153787897642",
+      "tracked_after": "4998708805353153787897642",
+      "tail_before": "236892512204335046642490247",
+      "tail_delta": "18000000000000000000",
+      "paper_minted": "203497980021597570678"
+    },
+    {
+      "tx": "0x679c4f03d95174f89035101897d09fbb009a61b162250c11f6cdc47c83ef8d18",
+      "ordinal": 8,
+      "position_id": 1394561,
+      "recipient": "0xdae0424fd265b683ef1a2525aceba37d001565b7",
+      "mint_basis": "18000000000000000000",
+      "tracked_credit": "17640000000000000000",
+      "exchange_fee_fields": [
+        "180000000000000000",
+        "180000000000000000"
+      ],
+      "tracked_before": "4998708805353153787897642",
+      "tracked_after": "4998726445353153787897642",
+      "tail_before": "236892530204335046642490247",
+      "tail_delta": "18000000000000000000",
+      "paper_minted": "203497959494614539978"
+    },
+    {
+      "tx": "0x679c4f03d95174f89035101897d09fbb009a61b162250c11f6cdc47c83ef8d18",
+      "ordinal": 9,
+      "position_id": 1394562,
+      "recipient": "0xdae0424fd265b683ef1a2525aceba37d001565b7",
+      "mint_basis": "18000000000000000000",
+      "tracked_credit": "17640000000000000000",
+      "exchange_fee_fields": [
+        "180000000000000000",
+        "180000000000000000"
+      ],
+      "tracked_before": "4998726445353153787897642",
+      "tracked_after": "4998744085353153787897642",
+      "tail_before": "236892548204335046642490247",
+      "tail_delta": "18000000000000000000",
+      "paper_minted": "203497938967634615034"
+    },
+    {
+      "tx": "0x679c4f03d95174f89035101897d09fbb009a61b162250c11f6cdc47c83ef8d18",
+      "ordinal": 10,
+      "position_id": 1394564,
+      "recipient": "0xdae0424fd265b683ef1a2525aceba37d001565b7",
+      "mint_basis": "18000000000000000000",
+      "tracked_credit": "17640000000000000000",
+      "exchange_fee_fields": [
+        "180000000000000000",
+        "180000000000000000"
+      ],
+      "tracked_before": "4998744085353153787897642",
+      "tracked_after": "4998761725353153787897642",
+      "tail_before": "236892566204335046642490247",
+      "tail_delta": "18000000000000000000",
+      "paper_minted": "203497918440657796458"
+    },
+    {
+      "tx": "0x679c4f03d95174f89035101897d09fbb009a61b162250c11f6cdc47c83ef8d18",
+      "ordinal": 11,
+      "position_id": 1394565,
+      "recipient": "0xdae0424fd265b683ef1a2525aceba37d001565b7",
+      "mint_basis": "18000000000000000000",
+      "tracked_credit": "17640000000000000000",
+      "exchange_fee_fields": [
+        "180000000000000000",
+        "180000000000000000"
+      ],
+      "tracked_before": "4998761725353153787897642",
+      "tracked_after": "4998779365353153787897642",
+      "tail_before": "236892584204335046642490247",
+      "tail_delta": "18000000000000000000",
+      "paper_minted": "203497897913684083026"
+    },
+    {
+      "tx": "0x871466bf1e2a505662da4b3eb001206516f1658a8592cbc59892151328e24cc4",
+      "ordinal": 0,
+      "position_id": 1393810,
+      "recipient": "0x34e58ebb6c75c8f24b63f16cb7b0d541dc527724",
+      "mint_basis": "49800000000000000000",
+      "tracked_credit": "48804000000000000000",
+      "exchange_fee_fields": [
+        "498000000000000000",
+        "498000000000000000"
+      ],
+      "tracked_before": "4998572138839645806282344",
+      "tracked_after": "4998620942839645806282344",
+      "tail_before": "236887999059111671893894931",
+      "tail_delta": "49800000000000000000",
+      "paper_minted": "563025267467439526287"
+    },
+    {
+      "tx": "0x89e740983c78db4384ea4d3c194367f18b63ac5d5c3ce0f0e8b3e2ed8752a6b4",
+      "ordinal": 0,
+      "position_id": 1388213,
+      "recipient": "0xc813a21cc0d6cd4545bcdb0f4d9831490cd097eb",
+      "mint_basis": "82930000000000000000",
+      "tracked_credit": "81271400000000000000",
+      "exchange_fee_fields": [
+        "829300000000000000",
+        "829300000000000000"
+      ],
+      "tracked_before": "4997348702553153787897642",
+      "tracked_after": "4997429973953153787897642",
+      "tail_before": "236891142344335046642490247",
+      "tail_delta": "82930000000000000000",
+      "paper_minted": "937567442473876377761"
+    },
+    {
+      "tx": "0xaaa0f6de77f83f5861b55b729816fd8a6426b30483127a960d44fa208a3d5453",
+      "ordinal": 0,
+      "position_id": 1383309,
+      "recipient": "0xa66e7dff68279fe9da42680bbf7ca7ce7723f9d6",
+      "mint_basis": "50000000000000000000",
+      "tracked_credit": "49000000000000000000",
+      "exchange_fee_fields": [
+        "500000000000000000",
+        "500000000000000000"
+      ],
+      "tracked_before": "5003193791886594571857704",
+      "tracked_after": "5003242791886594571857704",
+      "tail_before": "236901409987724718670126395",
+      "tail_delta": "50000000000000000000",
+      "paper_minted": "565243931195872448500"
+    },
+    {
+      "tx": "0xaaa0f6de77f83f5861b55b729816fd8a6426b30483127a960d44fa208a3d5453",
+      "ordinal": 1,
+      "position_id": 1393850,
+      "recipient": "0x985ac83806bfca7bf4c968df2032cb0827c4d457",
+      "mint_basis": "10000000000000000000",
+      "tracked_credit": "9800000000000000000",
+      "exchange_fee_fields": [
+        "100000000000000000",
+        "100000000000000000"
+      ],
+      "tracked_before": "5003242791886594571857704",
+      "tracked_after": "5003252591886594571857704",
+      "tail_before": "236901459987724718670126395",
+      "tail_delta": "10000000000000000000",
+      "paper_minted": "113048767234133197480"
+    },
+    {
+      "tx": "0xacf79a672a9e8acb78f1b6f1e78c5935ec797975204479fd7f4f55d5a28be574",
+      "ordinal": 0,
+      "position_id": 1382907,
+      "recipient": "0x1e65ae41747ae8038b673517b7583d25a1d938c8",
+      "mint_basis": "200000000000000000000",
+      "tracked_credit": "196000000000000000000",
+      "exchange_fee_fields": [
+        "2000000000000000000",
+        "2000000000000000000"
+      ],
+      "tracked_before": "5002159450886594571857704",
+      "tracked_after": "5002355450886594571857704",
+      "tail_before": "236900354537724718670126395",
+      "tail_delta": "200000000000000000000",
+      "paper_minted": "2260988147164552924800"
+    },
+    {
+      "tx": "0xacf79a672a9e8acb78f1b6f1e78c5935ec797975204479fd7f4f55d5a28be574",
+      "ordinal": 1,
+      "position_id": 1389810,
+      "recipient": "0xa93746dbbb18c41c91d36228a1ef4217ba4f7a55",
+      "mint_basis": "30000000000000000000",
+      "tracked_credit": "29400000000000000000",
+      "exchange_fee_fields": [
+        "300000000000000000",
+        "300000000000000000"
+      ],
+      "tracked_before": "5002355450886594571857704",
+      "tracked_after": "5002384850886594571857704",
+      "tail_before": "236900554537724718670126395",
+      "tail_delta": "30000000000000000000",
+      "paper_minted": "339148003514965032000"
+    },
+    {
+      "tx": "0xb5d5ed8df5d4056c5ee09de10980a8f1c793fa8bb5fd0f7af8911861929bc7af",
+      "ordinal": 0,
+      "position_id": 1389841,
+      "recipient": "0xdae0424fd265b683ef1a2525aceba37d001565b7",
+      "mint_basis": "60000000000000000000",
+      "tracked_credit": "58800000000000000000",
+      "exchange_fee_fields": [
+        "600000000000000000",
+        "600000000000000000"
+      ],
+      "tracked_before": "5001542371259971015535188",
+      "tracked_after": "5001601171259971015535188",
+      "tail_before": "236897646666512176000623674",
+      "tail_delta": "60000000000000000000",
+      "paper_minted": "678307003072066229760"
+    },
+    {
+      "tx": "0xb5d5ed8df5d4056c5ee09de10980a8f1c793fa8bb5fd0f7af8911861929bc7af",
+      "ordinal": 1,
+      "position_id": 1389857,
+      "recipient": "0xdae0424fd265b683ef1a2525aceba37d001565b7",
+      "mint_basis": "60000000000000000000",
+      "tracked_credit": "58800000000000000000",
+      "exchange_fee_fields": [
+        "600000000000000000",
+        "600000000000000000"
+      ],
+      "tracked_before": "5001601171259971015535188",
+      "tracked_after": "5001659971259971015535188",
+      "tail_before": "236897706666512176000623674",
+      "tail_delta": "60000000000000000000",
+      "paper_minted": "678306775004401002000"
+    },
+    {
+      "tx": "0xb5d5ed8df5d4056c5ee09de10980a8f1c793fa8bb5fd0f7af8911861929bc7af",
+      "ordinal": 2,
+      "position_id": 1389858,
+      "recipient": "0xdae0424fd265b683ef1a2525aceba37d001565b7",
+      "mint_basis": "60000000000000000000",
+      "tracked_credit": "58800000000000000000",
+      "exchange_fee_fields": [
+        "600000000000000000",
+        "600000000000000000"
+      ],
+      "tracked_before": "5001659971259971015535188",
+      "tracked_after": "5001718771259971015535188",
+      "tail_before": "236897766666512176000623674",
+      "tail_delta": "60000000000000000000",
+      "paper_minted": "678306546936850798800"
+    },
+    {
+      "tx": "0xb5d5ed8df5d4056c5ee09de10980a8f1c793fa8bb5fd0f7af8911861929bc7af",
+      "ordinal": 3,
+      "position_id": 1394217,
+      "recipient": "0xb39e7020300c93e30c9e13f6ef89a16537bd3191",
+      "mint_basis": "10000000000000000000",
+      "tracked_credit": "9800000000000000000",
+      "exchange_fee_fields": [
+        "100000000000000000",
+        "100000000000000000"
+      ],
+      "tracked_before": "5001718771259971015535188",
+      "tracked_after": "5001728571259971015535188",
+      "tail_before": "236897826666512176000623674",
+      "tail_delta": "10000000000000000000",
+      "paper_minted": "113051068982915829010"
+    },
+    {
+      "tx": "0xbebcd3fc913440b40ca824dc66cd8ac031286e58d92d5d52348c17f2d7b4b9e0",
+      "ordinal": 0,
+      "position_id": 1390541,
+      "recipient": "0x756e1d965114fdb4759abc914521f9f4fb1db369",
+      "mint_basis": "1000000000000000000000",
+      "tracked_credit": "980000000000000000000",
+      "exchange_fee_fields": [
+        "10000000000000000000",
+        "10000000000000000000"
+      ],
+      "tracked_before": "4998793526353153787897642",
+      "tracked_after": "4999773526353153787897642",
+      "tail_before": "236892616654335046642490247",
+      "tail_delta": "1000000000000000000000",
+      "paper_minted": "11305405609980130539000"
+    },
+    {
+      "tx": "0xc4e6f7dec48e377576e0d1f47cd01c57b596de1e6c750dbbf958b25c2a52a486",
+      "ordinal": 0,
+      "position_id": 1382903,
+      "recipient": "0xd65dee23b9f4a34c2c82c111d366237720d9dda5",
+      "mint_basis": "50000000000000000000",
+      "tracked_credit": "49000000000000000000",
+      "exchange_fee_fields": [
+        "500000000000000000",
+        "500000000000000000"
+      ],
+      "tracked_before": "5002100650886594571857704",
+      "tracked_after": "5002149650886594571857704",
+      "tail_before": "236900294537724718670126395",
+      "tail_delta": "50000000000000000000",
+      "paper_minted": "565247464408334392700"
+    },
+    {
+      "tx": "0xc4e6f7dec48e377576e0d1f47cd01c57b596de1e6c750dbbf958b25c2a52a486",
+      "ordinal": 1,
+      "position_id": 1384045,
+      "recipient": "0x4d5993e3bc2ba7592461c17aeb471047a6efc8c0",
+      "mint_basis": "10000000000000000000",
+      "tracked_credit": "9800000000000000000",
+      "exchange_fee_fields": [
+        "100000000000000000",
+        "100000000000000000"
+      ],
+      "tracked_before": "5002149650886594571857704",
+      "tracked_after": "5002159450886594571857704",
+      "tail_before": "236900344537724718670126395",
+      "tail_delta": "10000000000000000000",
+      "paper_minted": "113049473876447391780"
+    },
+    {
+      "tx": "0xdf0b9c2f1e051a4bab7cbc05557dd996ef5949e22e0de3eee892840a41f9de32",
+      "ordinal": 0,
+      "position_id": 1394138,
+      "recipient": "0xe32058676c3a5f192e07fb14955508b9cc4349a3",
+      "mint_basis": "50000000000000000000",
+      "tracked_credit": "49000000000000000000",
+      "exchange_fee_fields": [
+        "500000000000000000",
+        "500000000000000000"
+      ],
+      "tracked_before": "5003101230886594571857704",
+      "tracked_after": "5003150230886594571857704",
+      "tail_before": "236901315537724718670126395",
+      "tail_delta": "50000000000000000000",
+      "paper_minted": "565244230367045552450"
+    },
+    {
+      "tx": "0xdf0b9c2f1e051a4bab7cbc05557dd996ef5949e22e0de3eee892840a41f9de32",
+      "ordinal": 1,
+      "position_id": 1389956,
+      "recipient": "0xdb7b4932ac447b41f5fd5408b553b8e746cb2a6f",
+      "mint_basis": "14450000000000000000",
+      "tracked_credit": "14161000000000000000",
+      "exchange_fee_fields": [
+        "144500000000000000",
+        "144500000000000000"
+      ],
+      "tracked_before": "5003150230886594571857704",
+      "tracked_after": "5003164391886594571857704",
+      "tail_before": "236901365537724718670126395",
+      "tail_delta": "14450000000000000000",
+      "paper_minted": "163355553076982332820"
+    },
+    {
+      "tx": "0xdf0b9c2f1e051a4bab7cbc05557dd996ef5949e22e0de3eee892840a41f9de32",
+      "ordinal": 2,
+      "position_id": 1394403,
+      "recipient": "0x1de4594cddb7c6c9c67796cb1e4afc450fd964d4",
+      "mint_basis": "10000000000000000000",
+      "tracked_credit": "9800000000000000000",
+      "exchange_fee_fields": [
+        "100000000000000000",
+        "100000000000000000"
+      ],
+      "tracked_before": "5003164391886594571857704",
+      "tracked_after": "5003174191886594571857704",
+      "tail_before": "236901379987724718670126395",
+      "tail_delta": "10000000000000000000",
+      "paper_minted": "113048817914252539850"
+    },
+    {
+      "tx": "0xdf0b9c2f1e051a4bab7cbc05557dd996ef5949e22e0de3eee892840a41f9de32",
+      "ordinal": 3,
+      "position_id": 1384056,
+      "recipient": "0x2c711cb3155a6828bdff3c77c07af65f0f599a6b",
+      "mint_basis": "10000000000000000000",
+      "tracked_credit": "9800000000000000000",
+      "exchange_fee_fields": [
+        "100000000000000000",
+        "100000000000000000"
+      ],
+      "tracked_before": "5003174191886594571857704",
+      "tracked_after": "5003183991886594571857704",
+      "tail_before": "236901389987724718670126395",
+      "tail_delta": "10000000000000000000",
+      "paper_minted": "113048811579235758110"
+    },
+    {
+      "tx": "0xdf0b9c2f1e051a4bab7cbc05557dd996ef5949e22e0de3eee892840a41f9de32",
+      "ordinal": 4,
+      "position_id": 1384058,
+      "recipient": "0xb919e09bb077013d5f93c898dafcc1d0c75559fe",
+      "mint_basis": "10000000000000000000",
+      "tracked_credit": "9800000000000000000",
+      "exchange_fee_fields": [
+        "100000000000000000",
+        "100000000000000000"
+      ],
+      "tracked_before": "5003183991886594571857704",
+      "tracked_after": "5003193791886594571857704",
+      "tail_before": "236901399987724718670126395",
+      "tail_delta": "10000000000000000000",
+      "paper_minted": "113048805244219509260"
+    },
+    {
+      "tx": "0xdfe4d997bd2d8ee4d5a96d0759e38a6b24e9719c40545eae6ea406b43ed119f9",
+      "ordinal": 0,
+      "position_id": 1392363,
+      "recipient": "0x91dba498df1a85e9ee2fb008f1fd87eb330246d0",
+      "mint_basis": "200000000000000000000",
+      "tracked_credit": "196000000000000000000",
+      "exchange_fee_fields": [
+        "2000000000000000000",
+        "2000000000000000000"
+      ],
+      "tracked_before": "4998620942839645806282344",
+      "tracked_after": "4998816942839645806282344",
+      "tail_before": "236888048859111671893894931",
+      "tail_delta": "200000000000000000000",
+      "paper_minted": "2261144069815675416800"
+    },
+    {
+      "tx": "0xe584ff1e6a4cc0aa8fd52cd3398642c3f6d7e0b77562e2658484967f0c257856",
+      "ordinal": 0,
+      "position_id": 1390694,
+      "recipient": "0xf81e0f5255fe39389468f567be306201cb4874bf",
+      "mint_basis": "50000000000000000000",
+      "tracked_credit": "49000000000000000000",
+      "exchange_fee_fields": [
+        "500000000000000000",
+        "500000000000000000"
+      ],
+      "tracked_before": "4996900230502968506668380",
+      "tracked_after": "4996949230502968506668380",
+      "tail_before": "236890580444885929084337476",
+      "tail_delta": "50000000000000000000",
+      "paper_minted": "565278235412050715000"
+    },
+    {
+      "tx": "0xe629f49b4cb1f6d8e5841571b1e8a2298cda2b8588f4693337a116cb2432f81d",
+      "ordinal": 0,
+      "position_id": 1382623,
+      "recipient": "0x5998c7ef0330735b69daacddc1c706c264637889",
+      "mint_basis": "2500000000000000000000",
+      "tracked_credit": "2450000000000000000000",
+      "exchange_fee_fields": [
+        "25000000000000000000",
+        "25000000000000000000"
+      ],
+      "tracked_before": "4999092371259971015535188",
+      "tracked_after": "5001542371259971015535188",
+      "tail_before": "236895146666512176000623674",
+      "tail_delta": "2500000000000000000000",
+      "paper_minted": "28262994522971198167500"
+    }
+  ],
+  "checked_behavior": "liquidation mint basis less the two Exchange fee fields equals tracked LP credit; Tokenomics event, PaperMath output, PAPER mint and Transfer, and slots 3,4,6 reconcile",
+  "limits": [
+    "The 26 direct-batch transactions contain active short liquidations only.",
+    "All 67 sampled calls take the positive tail-mint branch; zero, flat, and alternate input branches rely on separate probes.",
+    "The exact Tokenomics function and mint event source names remain unresolved."
+  ]
+}

@@ -1,0 +1,57 @@
+Compiling 2 files with Solc 0.8.28
+Solc 0.8.28 finished in 582.66ms
+Compiler run successful with warnings:
+Warning (2072): Unused local variable.
+   --> test/Ledger.t.sol:218:19:
+    |
+218 |         (bool ok, bytes memory out) = EXCHANGE.call(abi.encodeWithSelector(bytes4(0x7f99545a), uint256(1000e6)));
+    |                   ^^^^^^^^^^^^^^^^
+
+
+Ran 5 tests for test/Ledger.t.sol:LedgerTest
+[PASS] testDebtCycle() (gas: 1971731)
+[PASS] testOutsiderWithdrawRejected() (gas: 530756)
+[PASS] testPlainCloseFee() (gas: 938253)
+[PASS] testTwoNodeExactConsumption() (gas: 2111585)
+[PASS] testUserWithdrawDebitBeforeDelivery() (gas: 645284)
+Suite result: ok. 5 passed; 0 failed; 0 skipped; finished in 10.69s (17.97s CPU time)
+
+Ran 6 tests for test/OlderFork.t.sol:NegativeControl
+[PASS] testDebtCycle() (gas: 1971687)
+[PASS] testOutsiderWithdrawRejected() (gas: 530734)
+[PASS] testPlainCloseFee() (gas: 938209)
+[PASS] testReversedLinkageUnderConsumes() (gas: 509142)
+[PASS] testTwoNodeExactConsumption() (gas: 2111608)
+[PASS] testUserWithdrawDebitBeforeDelivery() (gas: 645307)
+Suite result: ok. 6 passed; 0 failed; 0 skipped; finished in 10.69s (16.02s CPU time)
+
+Ran 7 tests for test/Ledger.t.sol:BankTest
+[PASS] testDebtCloseNoBankGate() (gas: 1780147)
+[PASS] testDebtCycle() (gas: 1971687)
+[PASS] testDebtOpenAccounting() (gas: 1946559)
+[PASS] testOutsiderWithdrawRejected() (gas: 530734)
+[PASS] testPlainCloseFee() (gas: 938231)
+[PASS] testTwoNodeExactConsumption() (gas: 2111630)
+[PASS] testUserWithdrawDebitBeforeDelivery() (gas: 645307)
+Suite result: ok. 7 passed; 0 failed; 0 skipped; finished in 10.69s (24.11s CPU time)
+
+Ran 6 tests for test/OlderFork.t.sol:LinkageTest
+[PASS] testDebtCycle() (gas: 1971687)
+[PASS] testLibraryCreatedLinkage() (gas: 1979065)
+[PASS] testOutsiderWithdrawRejected() (gas: 530734)
+[PASS] testPlainCloseFee() (gas: 938209)
+[PASS] testTwoNodeExactConsumption() (gas: 2111608)
+[PASS] testUserWithdrawDebitBeforeDelivery() (gas: 645307)
+Suite result: ok. 6 passed; 0 failed; 0 skipped; finished in 10.69s (29.78s CPU time)
+
+Ran 6 tests for test/Ledger.t.sol:HarvestTest
+[PASS] testDebtCycle() (gas: 1971709)
+[PASS] testHarvestGate() (gas: 1983272)
+[PASS] testOutsiderWithdrawRejected() (gas: 530734)
+[PASS] testPlainCloseFee() (gas: 938231)
+[PASS] testTwoNodeExactConsumption() (gas: 2111563)
+[PASS] testUserWithdrawDebitBeforeDelivery() (gas: 645307)
+Suite result: ok. 6 passed; 0 failed; 0 skipped; finished in 10.69s (27.83s CPU time)
+
+Ran 5 test suites in 10.89s (53.43s CPU time): 30 tests passed, 0 failed, 0 skipped (30 total tests)
+

@@ -1,0 +1,68 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "selector": "0xc0c53b8b",
+  "candidate_signature": "initialize(address,address,address)",
+  "source_name_status": "unverified_candidate",
+  "local_replay": "../../artifacts/exchange_initializer_local/replay.json",
+  "fresh_state": "synthetic proxy with slot 0 reset to zero",
+  "argument_roles": [
+    "new owner and guardian",
+    "oracle address",
+    "token queried for decimals()"
+  ],
+  "initial_storage": {
+    "0": "(owner << 16) | 1",
+    "1": "owner",
+    "2": "oracle",
+    "3": "1000000000000",
+    "17": "1",
+    "23": "20000000000000000",
+    "24": "20000000000000000",
+    "25": "20000000000000000",
+    "28": "1000000000000000000"
+  },
+  "tested_decimal_pairs": [
+    {
+      "token_decimals": 6,
+      "slot4_low_byte": 8,
+      "slot5": "10000000000"
+    },
+    {
+      "token_decimals": 8,
+      "slot4_low_byte": 10,
+      "slot5": "100000000"
+    },
+    {
+      "token_decimals": 18,
+      "slot4_low_byte": 18,
+      "slot5": "1"
+    }
+  ],
+  "owner_event": {
+    "topic0": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+    "signature": "OwnerUpdated(address)",
+    "indexed_argument": "owner"
+  },
+  "tested_reverts": {
+    "initialized": "0x0dc149f0",
+    "token_decimals_19": "0x6a426315",
+    "noncontract_token": "0x"
+  },
+  "simulated_error_catalog": [
+    {
+      "selector": "0x0dc149f0",
+      "probe_paths": [
+        "testInitializedCall"
+      ]
+    },
+    {
+      "selector": "0x6a426315",
+      "probe_paths": [
+        "testFreshNineteenDecimals"
+      ]
+    }
+  ]
+}

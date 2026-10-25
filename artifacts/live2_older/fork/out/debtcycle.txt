@@ -1,0 +1,1 @@
+open_ok=1 open_userQueued=0 open_global=0 open_head=0 open_tail=0 open_nodeAmount=0 open_balance_delta=0 debt_close_queued=25331156061910525405 bank_at_harvest=0 harvest_ok=1 harvest_paid=25331156061910525405 harvest_balance_delta=25331156061910525405 

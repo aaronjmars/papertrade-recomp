@@ -1,0 +1,179 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "runtime_hashes": {
+    "Proxy": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "Implementation": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+    "Library": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2"
+  },
+  "exchange_selectors": {
+    "forward": "0x753a369c",
+    "reverse": "0x827ad94c"
+  },
+  "linked_library_selectors": {
+    "forward": "0x3cf4208d",
+    "reverse": "0x32db40c9"
+  },
+  "node_mapping_base": 15,
+  "user_total_mapping_base": 19,
+  "user_head_mapping_base": 20,
+  "user_tail_mapping_base": 21,
+  "local_cases": [
+    {
+      "test": "testQueueMergeForwardEqual",
+      "first_amount": 500,
+      "second_amount": 500,
+      "limit": 1,
+      "returned": [
+        1,
+        500,
+        102
+      ]
+    },
+    {
+      "test": "testQueueMergeReverseEqual",
+      "first_amount": 500,
+      "second_amount": 500,
+      "limit": 1,
+      "returned": [
+        1,
+        500,
+        101
+      ]
+    },
+    {
+      "test": "testQueueMergeForwardUnequal",
+      "first_amount": 300,
+      "second_amount": 700,
+      "limit": 2,
+      "returned": [
+        1,
+        300,
+        102
+      ]
+    },
+    {
+      "test": "testQueueMergeReverseUnequal",
+      "first_amount": 300,
+      "second_amount": 700,
+      "limit": 2,
+      "returned": [
+        1,
+        700,
+        101
+      ]
+    },
+    {
+      "test": "testQueueMergeThreeForwardLowLimit",
+      "node_amounts": [
+        300,
+        700,
+        1100
+      ],
+      "limit": 1,
+      "revert_selector": "0x5b6d2b7a",
+      "writes": 0,
+      "logs": 0
+    },
+    {
+      "test": "testQueueMergeThreeForwardExactLimit",
+      "node_amounts": [
+        300,
+        700,
+        1100
+      ],
+      "limit": 2,
+      "returned": [
+        2,
+        1000,
+        103
+      ],
+      "writes": 9,
+      "logs": 3
+    },
+    {
+      "test": "testQueueMergeThreeForwardHigherLimit",
+      "node_amounts": [
+        300,
+        700,
+        1100
+      ],
+      "limit": 3,
+      "returned": [
+        2,
+        1000,
+        103
+      ],
+      "writes": 9,
+      "logs": 3
+    },
+    {
+      "test": "testQueueMergeThreeReverseLowLimit",
+      "node_amounts": [
+        300,
+        700,
+        1100
+      ],
+      "limit": 1,
+      "revert_selector": "0x5b6d2b7a",
+      "writes": 0,
+      "logs": 0
+    },
+    {
+      "test": "testQueueMergeThreeReverseExactLimit",
+      "node_amounts": [
+        300,
+        700,
+        1100
+      ],
+      "limit": 2,
+      "returned": [
+        2,
+        1800,
+        101
+      ],
+      "writes": 10,
+      "logs": 3
+    },
+    {
+      "test": "testQueueMergeThreeReverseHigherLimit",
+      "node_amounts": [
+        300,
+        700,
+        1100
+      ],
+      "limit": 3,
+      "returned": [
+        2,
+        1800,
+        101
+      ],
+      "writes": 10,
+      "logs": 3
+    }
+  ],
+  "per_case_storage_checks": "Two-node success writes five slots; three-node success writes nine slots forward or ten reverse. Amounts and user head/tail match the surviving node, with global and user queued totals unchanged. Three-node limit-one failures leave storage unchanged.",
+  "per_case_event_topics": [
+    "0xb8c6723c829f797c1498cb75af97462c6cb9f3784fe7c0c47bcd42cf42ca94fb",
+    "0xf949f11686e63f08cadf672fb6db7f7b859cb0fe11f2bf80c57db5429453f0cc"
+  ],
+  "test_names": [
+    "testQueueMergeForwardEqual",
+    "testQueueMergeForwardUnequal",
+    "testQueueMergeReverseEqual",
+    "testQueueMergeReverseUnequal",
+    "testQueueMergeThreeForwardExactLimit",
+    "testQueueMergeThreeForwardHigherLimit",
+    "testQueueMergeThreeForwardLowLimit",
+    "testQueueMergeThreeReverseExactLimit",
+    "testQueueMergeThreeReverseHigherLimit",
+    "testQueueMergeThreeReverseLowLimit"
+  ],
+  "forge_result": "10 passed, 0 failed",
+  "test_source_sha256": "07d695a728d7713e8c7a33774162d079137d230605b67aee5acedfccdf89cde1",
+  "limits": [
+    "Synthetic two-node and three-node queues for one user, with limits 1, 2, and 3.",
+    "No historical invocation of these wrappers is in the saved call graph.",
+    "Solidity source names, ranges over three nodes, caller permissions, and other argument meanings remain unresolved."
+  ]
+}

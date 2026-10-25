@@ -1,0 +1,80 @@
+{
+  "added_selectors": [
+    "69f9a5f0",
+    "9d346583",
+    "cbce7532",
+    "d970fad5",
+    "e6ac4a74",
+    "f009ac03"
+  ],
+  "compiled_code_sha256": "a20ee31db1ffff1103c01d967f1b44fdcff84d7d023b389cc1784bb0e4579a6f",
+  "first_send_raw_spot": [
+    4905091600,
+    1110000000
+  ],
+  "forge_result": "23 passed, 0 failed",
+  "input_runtime_sha256": {
+    "ExchangeProxy": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "LiveImplementation": "fc7374f3969381160732fe98c5e3145e00c3f167f168d61d65bb4972e9a6b268",
+    "Multisig": "25c3204acbd096d8407b2253cc2d59b920e89be24be8fd897ad299db09f8f513",
+    "OldImplementation": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+    "ProxyAdmin": "238bb08777bab344b1e4090bd3a64fd26e48ef9ebaaf075234274e1c06129066",
+    "Timelock": "f391dcb36b34b4b2fb1ffd42015cd4832a56ed8b40545eb3df41b58d7b38443e",
+    "UserProxy1": "405e5bfee919c2dcb84ca0854ec56966a8212b322aae41c610e05de235b6b68f",
+    "UserProxy2": "07f9f589f271f1fa58e8a5990bec257eac46c8e0e7b44577d73666ac0a26511d"
+  },
+  "limits": [
+    "The Core-balance precompile and CoreWriter execution are mocked in local tests.",
+    "No Core acceptance, exact fee predicate, real delivery, or mainnet upgrade is demonstrated.",
+    "Only sampled fallback parity is tested; this code requires independent review before any deployment.",
+    "The owner must verify Core execution and both ledgers before finalization."
+  ],
+  "live_facts": "artifacts/recovery_redrive/live_facts.json",
+  "live_head": "0x2efb812",
+  "live_implementation": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+  "live_implementation_code_sha256": "fc7374f3969381160732fe98c5e3145e00c3f167f168d61d65bb4972e9a6b268",
+  "pin": 48902346,
+  "pin_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "possible_residual_send_raw_spot": 100000000,
+  "proxies": [
+    "0x1e8a704179cc6221592c362daa52a341ae20084d",
+    "0xf6b60cdf359af5538495831a9f2bbcada23e10e6"
+  ],
+  "requested_raw_spot": [
+    5005091600,
+    1210000000
+  ],
+  "source_hashes": {
+    "Pt01Recovery.sol": "df222386e3db2f5fd6298aae6b2496a648999cd868e27dee3dcbce6861b2eb5c",
+    "Pt01Recovery.t.sol": "fa9ac65ee6e15336dd18a5b2f1ff9ef2549ac1984c23a545990303b0a3ecca64"
+  },
+  "test_names": [
+    "testBothUsersThenRestoreOriginal",
+    "testChangedBalanceCannotEnqueue",
+    "testDelegatesToLiveImplementation",
+    "testEnqueueFirst",
+    "testEnqueueSecond",
+    "testFallbackGetterParity",
+    "testFirstDeliveredWithFee",
+    "testFirstDeliveredWithoutFee",
+    "testGovernedUpgradeAndRecovery",
+    "testLiveAddedSelectorsLeaveRecoveryStateAlone",
+    "testLiveDustBranchCannotClearWhileActive",
+    "testLiveImplementationHasNoPendingSweepClearRoute",
+    "testLiveImplementationIsTheDelegateTarget",
+    "testLivePendingLayoutMatchesGetPendingSweep",
+    "testLiveReconcileCreditsExactlyThePinnedDeltas",
+    "testRejectedCoreSendCannotCredit",
+    "testResidualCannotBeCreditedEarly",
+    "testResidualWriterFailureRollsBack",
+    "testSecondDeliveredWithFee",
+    "testSecondDeliveredWithoutFee",
+    "testSweeperBlockedWhileActive",
+    "testUnauthorizedAndUnknownUser",
+    "testWriterFailureRollsBack"
+  ],
+  "users": [
+    "0x56cbe78a5cdfa10147927aec550aa7f2fb3d3d01",
+    "0x9c8599c32224d7d9956a7def18f7314162f77baf"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "precompile": "0x0000000000000000000000000000000000000810",
+  "external_name": "coreUserExists(address)",
+  "return_semantics": {
+    "0": "user does not exist on HyperCore",
+    "1": "user exists on HyperCore"
+  },
+  "external_protocol_source": {
+    "project": "Circle HyperEVM contracts",
+    "commit": "ffcc978810fa88884c150ad2d6418aa02c576670",
+    "url": "https://github.com/circlefin/hyperevm-circle-contracts/blob/ffcc978810fa88884c150ad2d6418aa02c576670/src/CoreDepositWallet.sol",
+    "sha256": "3d8689ea027fd959d0865a1d9744bbfb5733008b6f6fc6afe4ff5173436f089d",
+    "new_account_fee_core_8_decimals": 100000000,
+    "core_to_evm_scale": 100
+  },
+  "papertrade_evidence": {
+    "stratified_signed_call_status_zero": 16,
+    "stratified_signed_call_status_one": 16,
+    "historical_direct_call_status_zero": 1,
+    "historical_direct_call_status_one": 1,
+    "status_zero_internal_extra_debit_18_decimals": "1000000000000000000",
+    "status_one_internal_extra_debit_18_decimals": "0"
+  },
+  "limit": "Circle source specifies the HyperCore precompile and a separate integration's new-account fee; it is not Papertrade source and does not prove downstream CoreWriter settlement or fee disposition. Papertrade debit correlation is established by saved traces and local runtime tests."
+}

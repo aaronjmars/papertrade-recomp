@@ -1,0 +1,178 @@
+{
+  "pin": 48902346,
+  "source_tx": "0xe1d903a527ed571e938719d6c16a6580ba699dd9afbc6ca5bf4c1f651ae1be27",
+  "runtime_sha256": "86184c390d6f62a8bd0e97080a0959ba7a3860b1358635994f82f61e81ceac8c",
+  "test_source_sha256": "24c7ea5875661a9118518efd5be1be486f3f0d965dc9e956ac53eaf23af42027",
+  "test_names": [
+    "testFlatNoLiquidity",
+    "testLossFeeIndependentOfLiquidity",
+    "testLossUsesLossRate",
+    "testProfitAtFeeThresholdPaysFee",
+    "testProfitBelowFeeThresholdPaysWithoutFee",
+    "testProfitExactLiquidityPaysWithoutFee",
+    "testProfitNoLiquidityQueuesAll",
+    "testProfitPartialLiquidityQueuesRemainder",
+    "testProfitUsesGainRate"
+  ],
+  "forge_result": "9 passed, 0 failed",
+  "cases": [
+    {
+      "name": "profit_no_liquidity",
+      "margin": 500,
+      "adjusted_pnl": 101,
+      "gain_rate_percent": 3,
+      "loss_rate_percent": 7,
+      "available": 0,
+      "return_words": [
+        500,
+        0,
+        101,
+        0,
+        0,
+        0
+      ],
+      "queued": 101
+    },
+    {
+      "name": "profit_partial",
+      "margin": 500,
+      "adjusted_pnl": 101,
+      "gain_rate_percent": 3,
+      "loss_rate_percent": 7,
+      "available": 100,
+      "return_words": [
+        500,
+        100,
+        1,
+        0,
+        0,
+        0
+      ],
+      "queued": 1
+    },
+    {
+      "name": "profit_exact",
+      "margin": 500,
+      "adjusted_pnl": 101,
+      "gain_rate_percent": 3,
+      "loss_rate_percent": 7,
+      "available": 101,
+      "return_words": [
+        500,
+        101,
+        0,
+        0,
+        0,
+        0
+      ],
+      "queued": 0
+    },
+    {
+      "name": "profit_below_fee_threshold",
+      "margin": 500,
+      "adjusted_pnl": 101,
+      "gain_rate_percent": 3,
+      "loss_rate_percent": 7,
+      "available": 103,
+      "return_words": [
+        500,
+        101,
+        0,
+        0,
+        0,
+        0
+      ],
+      "queued": 0
+    },
+    {
+      "name": "profit_at_fee_threshold",
+      "margin": 500,
+      "adjusted_pnl": 101,
+      "gain_rate_percent": 3,
+      "loss_rate_percent": 7,
+      "available": 104,
+      "return_words": [
+        500,
+        98,
+        0,
+        0,
+        1,
+        2
+      ],
+      "queued": 0
+    },
+    {
+      "name": "profit_unequal_rates",
+      "margin": 500,
+      "adjusted_pnl": 101,
+      "gain_rate_percent": 1,
+      "loss_rate_percent": 9,
+      "available": 200,
+      "return_words": [
+        500,
+        100,
+        0,
+        0,
+        0,
+        1
+      ],
+      "queued": 0
+    },
+    {
+      "name": "loss_no_liquidity",
+      "margin": 500,
+      "adjusted_pnl": -101,
+      "gain_rate_percent": 3,
+      "loss_rate_percent": 7,
+      "available": 0,
+      "return_words": [
+        399,
+        0,
+        0,
+        0,
+        3,
+        4
+      ],
+      "queued": 0
+    },
+    {
+      "name": "loss_unequal_rates",
+      "margin": 500,
+      "adjusted_pnl": -101,
+      "gain_rate_percent": 1,
+      "loss_rate_percent": 9,
+      "available": 200,
+      "return_words": [
+        399,
+        0,
+        0,
+        0,
+        4,
+        5
+      ],
+      "queued": 0
+    },
+    {
+      "name": "flat_no_liquidity",
+      "margin": 500,
+      "adjusted_pnl": 0,
+      "gain_rate_percent": 3,
+      "loss_rate_percent": 7,
+      "available": 0,
+      "return_words": [
+        500,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "queued": 0
+    }
+  ],
+  "limits": [
+    "The sampled 47,572,843 transaction identifies the argument; a separate 42,770,131 trace proves a zero-available enqueue during a queue backlog.",
+    "The nine exact-runtime tests use a constructed 500-unit margin and an empty queue in a delegatecall harness.",
+    "Exchange caller reachability, real fee avoidance, and Core delivery are not proved by this replay."
+  ]
+}

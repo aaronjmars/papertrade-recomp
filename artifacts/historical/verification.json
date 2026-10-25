@@ -1,0 +1,37 @@
+{
+  "bytecode_match_before_launch_and_now": true,
+  "queued_wins": {
+    "count": 3,
+    "queued_total_usd_wei": "22871826547055470767",
+    "cursor_delta_usd_wei": "-22871826547055470767",
+    "harvest_double_debit": false
+  },
+  "solvent_wins": [
+    {
+      "tx": "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d",
+      "gross_win_usd": "1014451343462700068",
+      "fee_usd": "20289026869254001",
+      "cursor_debit_usd": "1014451343462700068"
+    },
+    {
+      "tx": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+      "gross_win_usd": "52361676010080092657",
+      "fee_usd": "1047233520201601853",
+      "cursor_debit_usd": "52361676010080092657"
+    }
+  ],
+  "queue_live_liquidation_replay": {
+    "forfeited_margin_usd_wei": "60000000000000000000",
+    "lp_credit_usd_wei": "60000000000000000000",
+    "side_bucket_delta_usd_wei": "60000000000000000000"
+  },
+  "staker_push": {
+    "real_queue_allocated_usd_wei": "0",
+    "surplus_lp_usd_wei": "2056911227408759981977",
+    "fee_reserve_usd_wei": "70393845681577034461",
+    "total_allocated_usd_wei": "2127305073090337016438",
+    "cursor_debit_usd_wei": "2056911227408759981977",
+    "synthetic_queue_allocation_is_queued": true,
+    "valid_queue_synthetic_surplus_queued_usd_wei": "100000000000000000000"
+  }
+}

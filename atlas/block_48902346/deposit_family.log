@@ -1,0 +1,14 @@
+{
+  "sample_count": 41,
+  "sample_runtime_bytes": 1646,
+  "varying_byte_ranges": [
+    [
+      903,
+      923
+    ],
+    [
+      998,
+      1018
+    ]
+  ]
+}

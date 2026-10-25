@@ -1,0 +1,1679 @@
+{
+  "pin": 48902346,
+  "pin_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "prestate_block": 48901631,
+  "exchange": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "pinned_implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "pinned_library": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+  "instrument_id": 1,
+  "instrument_record_words": [
+    15000000000000000000000,
+    483979000000000000000,
+    1,
+    1000,
+    10000000000000000000000000,
+    481304050180130,
+    100000000000000000,
+    100000000000000000000000
+  ],
+  "market_fields": [
+    627710175572691847439004655744200167001992828653091023450437,
+    9492859143431843657776146996611930535266536621671015222893898
+  ],
+  "instrument_parameter_sources": {
+    "base_rate": "instrument record word 6",
+    "rate_multiplier": "instrument record word 0",
+    "position_multiplier": "instrument record word 1",
+    "reference_notional": "instrument record word 7"
+  },
+  "documented_formula": {
+    "scale": "(1 - baseRate) / (1 + term1 + term2)",
+    "term1": "1 / (move * rateMultiplier)",
+    "term2": "referenceNotional / (1e6 * move * positionMultiplier)",
+    "move": "(|exit - entry| - floor(entry / 50000)) / entry",
+    "note": "the pinned library's riskInverse/WAD and liquidityInverse/WAD equal term1 and term2 exactly"
+  },
+  "certik_claim_reproduction": {
+    "raw_pnl_1e18": "17355223523309860559755",
+    "adjusted_pnl_1e18": "13494728986365670576511",
+    "win_fee_1e18": "269894579727313411530",
+    "net_1e18": "13224834406638357164981",
+    "haircut_ppm": 222439,
+    "certik_haircut_ppm": 222440,
+    "notional_sweep": {
+      "10000000": {
+        "raw_pnl": "17355223523309860559755",
+        "adjusted_pnl": "13494728986365670634307",
+        "fee": "269894579727313412686",
+        "net": "13224834406638357221621",
+        "haircut_ppm": "222439"
+      },
+      "500000": {
+        "raw_pnl": "867761176165493027987",
+        "adjusted_pnl": "674736449318283531714",
+        "fee": "13494728986365670634",
+        "net": "661241720331917861080",
+        "haircut_ppm": "222439"
+      },
+      "50000": {
+        "raw_pnl": "86776117616549302798",
+        "adjusted_pnl": "67473644931828353170",
+        "fee": "1349472898636567063",
+        "net": "66124172033191786107",
+        "haircut_ppm": "222439"
+      },
+      "25000000": {
+        "raw_pnl": "43388058808274651399389",
+        "adjusted_pnl": "33736822465914176585769",
+        "fee": "674736449318283531715",
+        "net": "33062086016595893054054",
+        "haircut_ppm": "222439"
+      },
+      "250000000": {
+        "raw_pnl": "433880588082746513993895",
+        "adjusted_pnl": "337368224659141765857698",
+        "fee": "6747364493182835317153",
+        "net": "330620860165958930540545",
+        "haircut_ppm": "222439"
+      }
+    },
+    "notional_sweep_basis": "exact rational evaluation of the published formula; the Forge replay rows carry the runtime's own integer values",
+    "verdict": "reproduced the numbers: the pinned runtime, driven with the pinned instrument constants at the CertiK entry and exit prices and the recorded size, returns CertiK's raw PnL, adjusted PnL, win fee, net payout and 22.243992% haircut exactly, and its $500,000 hypothetical net exactly"
+  },
+  "provenance": {
+    "saved_pnl_calls": 74,
+    "transactions": 32,
+    "blocks_min": 48173881,
+    "blocks_max": 48902330,
+    "returns_match_reconstructed_model": 74,
+    "returns_mismatched": [],
+    "argument_5_base_rate_values": [
+      100000000000000000
+    ],
+    "argument_6_rate_multiplier_values": [
+      15000000000000000000000
+    ],
+    "argument_7_position_multiplier_values": [
+      483979000000000000000,
+      814598000000000000000
+    ],
+    "argument_8_reference_notional_values": [
+      100000000000000000000000
+    ],
+    "instrument_record_words": [
+      15000000000000000000000,
+      483979000000000000000,
+      1,
+      1000,
+      10000000000000000000000000,
+      481304050180130,
+      100000000000000000,
+      100000000000000000000000
+    ],
+    "pinned_market_fields": [
+      627710175572691847439004655744200167001992828653091023450437,
+      9492859143431843657776146996611930535266536621671015222893898
+    ],
+    "per_market": {
+      "483979000000000000000": {
+        "calls": 26,
+        "position_multiplier_arg": 483979000000000000000,
+        "base_rate_args": [
+          100000000000000000
+        ],
+        "rate_multiplier_args": [
+          15000000000000000000000
+        ],
+        "reference_notional_args": [
+          100000000000000000000000
+        ],
+        "notional_min": 2500,
+        "notional_max": 10000000,
+        "distinct_notionals": 18
+      },
+      "814598000000000000000": {
+        "calls": 48,
+        "position_multiplier_arg": 814598000000000000000,
+        "base_rate_args": [
+          100000000000000000
+        ],
+        "rate_multiplier_args": [
+          15000000000000000000000
+        ],
+        "reference_notional_args": [
+          100000000000000000000000
+        ],
+        "notional_min": 1000,
+        "notional_max": 3549444,
+        "distinct_notionals": 36
+      }
+    },
+    "profit_calls": [
+      {
+        "transaction": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+        "block": 48902137,
+        "notional": 1000000,
+        "position_multiplier_arg": 814598000000000000000,
+        "raw_pnl": 1700337221173777186523,
+        "adjusted_pnl": 1376908565777242611685,
+        "haircut_ppm": 190214
+      },
+      {
+        "transaction": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+        "block": 48902137,
+        "notional": 76473,
+        "position_multiplier_arg": 814598000000000000000,
+        "raw_pnl": 11716845914805547833,
+        "adjusted_pnl": 4715339913440111746,
+        "haircut_ppm": 597558
+      },
+      {
+        "transaction": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+        "block": 48902137,
+        "notional": 38236,
+        "position_multiplier_arg": 814598000000000000000,
+        "raw_pnl": 5858422957402773916,
+        "adjusted_pnl": 2357669956720055873,
+        "haircut_ppm": 597558
+      },
+      {
+        "transaction": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+        "block": 48902137,
+        "notional": 4777,
+        "position_multiplier_arg": 814598000000000000000,
+        "raw_pnl": 731958904024959070,
+        "adjusted_pnl": 294570318688367713,
+        "haircut_ppm": 597558
+      },
+      {
+        "transaction": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+        "block": 48902137,
+        "notional": 6052,
+        "position_multiplier_arg": 814598000000000000000,
+        "raw_pnl": 927369696969696969,
+        "adjusted_pnl": 373211645730569068,
+        "haircut_ppm": 597558
+      },
+      {
+        "transaction": "0xe3b515b06932d1f98867772b645367f3924ec239ae2e047fa0a15e3f11152e45",
+        "block": 48902098,
+        "notional": 87800,
+        "position_multiplier_arg": 814598000000000000000,
+        "raw_pnl": 10198515918962502548,
+        "adjusted_pnl": 3488936072136121240,
+        "haircut_ppm": 657897
+      },
+      {
+        "transaction": "0xe3b515b06932d1f98867772b645367f3924ec239ae2e047fa0a15e3f11152e45",
+        "block": 48902098,
+        "notional": 22362,
+        "position_multiplier_arg": 814598000000000000000,
+        "raw_pnl": 2597566109344220184,
+        "adjusted_pnl": 888633421829407204,
+        "haircut_ppm": 657897
+      },
+      {
+        "transaction": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+        "block": null,
+        "notional": 1000000,
+        "position_multiplier_arg": 814598000000000000000,
+        "raw_pnl": 1700337221173777186523,
+        "adjusted_pnl": 1376908565777242611685,
+        "haircut_ppm": 190214
+      },
+      {
+        "transaction": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+        "block": null,
+        "notional": 76473,
+        "position_multiplier_arg": 814598000000000000000,
+        "raw_pnl": 11716845914805547833,
+        "adjusted_pnl": 4715339913440111746,
+        "haircut_ppm": 597558
+      },
+      {
+        "transaction": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+        "block": null,
+        "notional": 38236,
+        "position_multiplier_arg": 814598000000000000000,
+        "raw_pnl": 5858422957402773916,
+        "adjusted_pnl": 2357669956720055873,
+        "haircut_ppm": 597558
+      },
+      {
+        "transaction": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+        "block": null,
+        "notional": 4777,
+        "position_multiplier_arg": 814598000000000000000,
+        "raw_pnl": 731958904024959070,
+        "adjusted_pnl": 294570318688367713,
+        "haircut_ppm": 597558
+      },
+      {
+        "transaction": "0x0f15e1a5d5bcaf5764df51439680fa8b3f748b47240d5c89c31be8d487a49a90",
+        "block": null,
+        "notional": 6052,
+        "position_multiplier_arg": 814598000000000000000,
+        "raw_pnl": 927369696969696969,
+        "adjusted_pnl": 373211645730569068,
+        "haircut_ppm": 597558
+      },
+      {
+        "transaction": "0x28f7a6185ab0663f1c524e7b609f772c1f17e0b2f26c2b7e9fb7b9ce1e080586",
+        "block": null,
+        "notional": 204179,
+        "position_multiplier_arg": 814598000000000000000,
+        "raw_pnl": 276787928311830037368,
+        "adjusted_pnl": 218567595933535857362,
+        "haircut_ppm": 210342
+      },
+      {
+        "transaction": "0x28f7a6185ab0663f1c524e7b609f772c1f17e0b2f26c2b7e9fb7b9ce1e080586",
+        "block": null,
+        "notional": 100000,
+        "position_multiplier_arg": 483979000000000000000,
+        "raw_pnl": 61897250564063654333,
+        "adjusted_pnl": 38645056318063186068,
+        "haircut_ppm": 375657
+      },
+      {
+        "transaction": "0x2d41b17f1f3c5e3e26a89fb79f8732bc5fb2b06b488eb01adbf6c61892b13904",
+        "block": null,
+        "notional": 3549444,
+        "position_multiplier_arg": 814598000000000000000,
+        "raw_pnl": 105291551254241059013,
+        "adjusted_pnl": 12830542025405994070,
+        "haircut_ppm": 878142
+      },
+      {
+        "transaction": "0x4b4e6da83b03b908df85556de8160678ae3eddb02b975407f8bfc0c8b926c71a",
+        "block": null,
+        "notional": 43610,
+        "position_multiplier_arg": 483979000000000000000,
+        "raw_pnl": 9983688653598511947,
+        "adjusted_pnl": 4095867304365084711,
+        "haircut_ppm": 589744
+      },
+      {
+        "transaction": "0x8400eb05258979dcff691d5bcb3207cc806affac78e0e9e6b8a26398e41ae739",
+        "block": null,
+        "notional": 12223,
+        "position_multiplier_arg": 814598000000000000000,
+        "raw_pnl": 938109999220544060,
+        "adjusted_pnl": 243439139948707330,
+        "haircut_ppm": 740500
+      },
+      {
+        "transaction": "0x8c8a4400aa287556f97a72ef204e5bf476640e85a364e5b47ef27c4bae6d764d",
+        "block": null,
+        "notional": 24076,
+        "position_multiplier_arg": 483979000000000000000,
+        "raw_pnl": 10838040436067563071,
+        "adjusted_pnl": 6069503412094776889,
+        "haircut_ppm": 439981
+      },
+      {
+        "transaction": "0xcb9750a8c4a2c468898a217aae0509aa2f79b3cb4a6d8111993f45fedd50fdec",
+        "block": null,
+        "notional": 11111,
+        "position_multiplier_arg": 483979000000000000000,
+        "raw_pnl": 1188708980557555807,
+        "adjusted_pnl": 300985801681483204,
+        "haircut_ppm": 746796
+      },
+      {
+        "transaction": "0xcb9750a8c4a2c468898a217aae0509aa2f79b3cb4a6d8111993f45fedd50fdec",
+        "block": null,
+        "notional": 11111,
+        "position_multiplier_arg": 483979000000000000000,
+        "raw_pnl": 1188708980557555807,
+        "adjusted_pnl": 300985801681483204,
+        "haircut_ppm": 746796
+      },
+      {
+        "transaction": "0xcb9750a8c4a2c468898a217aae0509aa2f79b3cb4a6d8111993f45fedd50fdec",
+        "block": null,
+        "notional": 11111,
+        "position_multiplier_arg": 483979000000000000000,
+        "raw_pnl": 1188708980557555807,
+        "adjusted_pnl": 300985801681483204,
+        "haircut_ppm": 746796
+      },
+      {
+        "transaction": "0xcb9750a8c4a2c468898a217aae0509aa2f79b3cb4a6d8111993f45fedd50fdec",
+        "block": null,
+        "notional": 11111,
+        "position_multiplier_arg": 483979000000000000000,
+        "raw_pnl": 1188708980557555807,
+        "adjusted_pnl": 300985801681483204,
+        "haircut_ppm": 746796
+      },
+      {
+        "transaction": "0x1fc54a082055d35c0b79b6fc5f6c2a7004840531f5bcb9b6ec4450a93be2384f",
+        "block": 48173887,
+        "notional": 4455000,
+        "position_multiplier_arg": 483979000000000000000,
+        "raw_pnl": 106999179392750635470,
+        "adjusted_pnl": 7779532839134513866,
+        "haircut_ppm": 927293
+      },
+      {
+        "transaction": "0x30639f82f9eb58fc815fb48b302ea732eed1bff5e755a92835b0b1f97c818acf",
+        "block": 48902090,
+        "notional": 1000000,
+        "position_multiplier_arg": 814598000000000000000,
+        "raw_pnl": 42022259438014077456,
+        "adjusted_pnl": 6866671242413173194,
+        "haircut_ppm": 836594
+      },
+      {
+        "transaction": "0x3bc7029ee0d72c5dbacfb74dddc183ddb6206adca6ed702014eb90c28cf2d39e",
+        "block": 48173881,
+        "notional": 4455000,
+        "position_multiplier_arg": 483979000000000000000,
+        "raw_pnl": 106999179392750635470,
+        "adjusted_pnl": 7779532839134513866,
+        "haircut_ppm": 927293
+      },
+      {
+        "transaction": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+        "block": 48901631,
+        "notional": 3340750,
+        "position_multiplier_arg": 814598000000000000000,
+        "raw_pnl": 223161612350550789537,
+        "adjusted_pnl": 52361676010080092657,
+        "haircut_ppm": 765364
+      },
+      {
+        "transaction": "0xc7ba4aaf1bdda8e24c2c8a228e315f39a879e7c9c87786eb260fa07c09b99940",
+        "block": 48173885,
+        "notional": 4455000,
+        "position_multiplier_arg": 483979000000000000000,
+        "raw_pnl": 106999179392750635470,
+        "adjusted_pnl": 7779532839134513866,
+        "haircut_ppm": 927293
+      },
+      {
+        "transaction": "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d",
+        "block": 48901640,
+        "notional": 48317,
+        "position_multiplier_arg": 814598000000000000000,
+        "raw_pnl": 3824587938338724988,
+        "adjusted_pnl": 1014451343462700068,
+        "haircut_ppm": 734755
+      },
+      {
+        "transaction": "0x04b0da9f141aba59584b82b6f41fb4362734e35010374008db08e634bbf993e9",
+        "block": 48902126,
+        "notional": 5453,
+        "position_multiplier_arg": 483979000000000000000,
+        "raw_pnl": 12699958369766896286,
+        "adjusted_pnl": 10229565746095307745,
+        "haircut_ppm": 194519
+      },
+      {
+        "transaction": "0x1b19ea2e3ff121d620a728a0a88564c318a9615fe902b464b998cd9cfb92f186",
+        "block": 48902143,
+        "notional": 5000,
+        "position_multiplier_arg": 483979000000000000000,
+        "raw_pnl": 5238835530378857252,
+        "adjusted_pnl": 3739567373518613043,
+        "haircut_ppm": 286183
+      },
+      {
+        "transaction": "0x44d34a2ac0a36042f6ecd850ebc63f738b708d0a27d5993f8b7d9250e77c88cb",
+        "block": 48902325,
+        "notional": 14000,
+        "position_multiplier_arg": 483979000000000000000,
+        "raw_pnl": 80497234028919882953,
+        "adjusted_pnl": 69160331010842974085,
+        "haircut_ppm": 140835
+      },
+      {
+        "transaction": "0x44d34a2ac0a36042f6ecd850ebc63f738b708d0a27d5993f8b7d9250e77c88cb",
+        "block": 48902325,
+        "notional": 12961,
+        "position_multiplier_arg": 483979000000000000000,
+        "raw_pnl": 100750569218191546281,
+        "adjusted_pnl": 87595828083417150173,
+        "haircut_ppm": 130567
+      },
+      {
+        "transaction": "0xd5a907988c178cb4fe55b8f3a8b87080eb3869e16ac548a8b9f7aa4a871a17c0",
+        "block": 48902147,
+        "notional": 498643,
+        "position_multiplier_arg": 814598000000000000000,
+        "raw_pnl": 76399237903737139794,
+        "adjusted_pnl": 30746190439244762616,
+        "haircut_ppm": 597558
+      },
+      {
+        "transaction": "0xd5a907988c178cb4fe55b8f3a8b87080eb3869e16ac548a8b9f7aa4a871a17c0",
+        "block": 48902147,
+        "notional": 300728,
+        "position_multiplier_arg": 814598000000000000000,
+        "raw_pnl": 46075842728186785806,
+        "adjusted_pnl": 18542811080844888849,
+        "haircut_ppm": 597558
+      },
+      {
+        "transaction": "0xd5a907988c178cb4fe55b8f3a8b87080eb3869e16ac548a8b9f7aa4a871a17c0",
+        "block": 48902147,
+        "notional": 240579,
+        "position_multiplier_arg": 814598000000000000000,
+        "raw_pnl": 36860204997084388829,
+        "adjusted_pnl": 14834060045179077667,
+        "haircut_ppm": 597558
+      },
+      {
+        "transaction": "0xd5a907988c178cb4fe55b8f3a8b87080eb3869e16ac548a8b9f7aa4a871a17c0",
+        "block": 48902147,
+        "notional": 97150,
+        "position_multiplier_arg": 814598000000000000000,
+        "raw_pnl": 14884823693814972149,
+        "adjusted_pnl": 5990264255269899146,
+        "haircut_ppm": 597558
+      },
+      {
+        "transaction": "0xe2e6318b494325c8ea46b79d450622a320ce43180286c4347b9405d7775b67e1",
+        "block": 48902177,
+        "notional": 722376,
+        "position_multiplier_arg": 483979000000000000000,
+        "raw_pnl": 2238301797656900194191,
+        "adjusted_pnl": 1851197624823037351837,
+        "haircut_ppm": 172945
+      }
+    ]
+  },
+  "pinned_replay": {
+    "block": 48901631,
+    "timestamp": 1792356638,
+    "bbo_mock": "0x080e instrument 1 -> 251080/251090, midpoint 251085",
+    "entry_price": 250645,
+    "source_sha256": "52675bc705055f575cc941af987658b69a65ea76f610c37c836f8ae38ac1c162",
+    "forge_result": "15 passed, 0 failed",
+    "rows": [
+      {
+        "case": "certik_10m",
+        "note": "CertiK position 72098 size: 20,000 margin at 500x",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "pinned",
+        "notional_usdc": 10000000,
+        "margin_1e18": "20000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "17355223523309860559755",
+        "adjusted_pnl_1e18": "13494728986365670576511",
+        "win_fee_1e18": "269894579727313411530",
+        "net_payout_1e18": "13224834406638357164981",
+        "entry": 250645,
+        "exit": 251085,
+        "haircut_ppm": 222439,
+        "haircut_nano_percent": 222439920,
+        "haircut_percent": "22.243992",
+        "balance_delta_1e18": "33224834406638357164981",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "certik_500k",
+        "note": "CertiK hypothetical $500,000 notional position",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "pinned",
+        "notional_usdc": 500000,
+        "margin_1e18": "1000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "867761176165493027987",
+        "adjusted_pnl_1e18": "674736449318283528825",
+        "win_fee_1e18": "13494728986365670576",
+        "net_payout_1e18": "661241720331917858249",
+        "entry": 250645,
+        "exit": 251085,
+        "haircut_ppm": 222439,
+        "haircut_nano_percent": 222439920,
+        "haircut_percent": "22.243992",
+        "balance_delta_1e18": "1661241720331917858249",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "certik_50k",
+        "note": "one hundredth of the recorded notional",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "pinned",
+        "notional_usdc": 50000,
+        "margin_1e18": "100000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "86776117616549302798",
+        "adjusted_pnl_1e18": "67473644931828352881",
+        "win_fee_1e18": "1349472898636567057",
+        "net_payout_1e18": "66124172033191785824",
+        "entry": 250645,
+        "exit": 251085,
+        "haircut_ppm": 222439,
+        "haircut_nano_percent": 222439920,
+        "haircut_percent": "22.243992",
+        "balance_delta_1e18": "166124172033191785824",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "certik_2m_lev100",
+        "note": "margin held fixed, leverage cut 5x",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "pinned",
+        "notional_usdc": 2000000,
+        "margin_1e18": "20000000000000000000000",
+        "leverage": 100,
+        "raw_pnl_1e18": "3471044704661972111951",
+        "adjusted_pnl_1e18": "2698945797273134115302",
+        "win_fee_1e18": "53978915945462682306",
+        "net_payout_1e18": "2644966881327671432996",
+        "entry": 250645,
+        "exit": 251085,
+        "haircut_ppm": 222439,
+        "haircut_nano_percent": 222439920,
+        "haircut_percent": "22.243992",
+        "balance_delta_1e18": "22644966881327671432996",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "certik_500k_lev250",
+        "note": "same 500,000 notional as certik_500k from a different margin/leverage pair",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "pinned",
+        "notional_usdc": 500000,
+        "margin_1e18": "2000000000000000000000",
+        "leverage": 250,
+        "raw_pnl_1e18": "867761176165493027987",
+        "adjusted_pnl_1e18": "674736449318283528825",
+        "win_fee_1e18": "13494728986365670576",
+        "net_payout_1e18": "661241720331917858249",
+        "entry": 250645,
+        "exit": 251085,
+        "haircut_ppm": 222439,
+        "haircut_nano_percent": 222439920,
+        "haircut_percent": "22.243992",
+        "balance_delta_1e18": "2661241720331917858249",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "certik_250m",
+        "note": "25x the recorded notional",
+        "constructed": "the market side aggregates are set to their 96-bit maximum; with the pinned aggregate the close release underflows",
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "pinned",
+        "notional_usdc": 250000000,
+        "margin_1e18": "500000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "433880588082746513993895",
+        "adjusted_pnl_1e18": "337368224659141764412814",
+        "win_fee_1e18": "6747364493182835288256",
+        "net_payout_1e18": "330620860165958929124558",
+        "entry": 250645,
+        "exit": 251085,
+        "haircut_ppm": 222439,
+        "haircut_nano_percent": 222439920,
+        "haircut_percent": "22.243992",
+        "balance_delta_1e18": "830620860165958929124558",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "base_rate_20pct",
+        "note": "baseRate doubled from the pinned 10%",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 200000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "pinned",
+        "notional_usdc": 10000000,
+        "margin_1e18": "20000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "17355223523309860559755",
+        "adjusted_pnl_1e18": "11995314654547262738534",
+        "win_fee_1e18": "239906293090945254770",
+        "net_payout_1e18": "11755408361456317483764",
+        "entry": 250645,
+        "exit": 251085,
+        "haircut_ppm": 308835,
+        "haircut_nano_percent": 308835484,
+        "haircut_percent": "30.883548",
+        "balance_delta_1e18": "31755408361456317483764",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "rate_multiplier_30k",
+        "note": "rateMultiplier doubled from the pinned 15,000",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 30000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "pinned",
+        "notional_usdc": 10000000,
+        "margin_1e18": "20000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "17355223523309860559755",
+        "adjusted_pnl_1e18": "13722433220310501081808",
+        "win_fee_1e18": "274448664406210021636",
+        "net_payout_1e18": "13447984555904291060172",
+        "entry": 250645,
+        "exit": 251085,
+        "haircut_ppm": 209319,
+        "haircut_nano_percent": 209319707,
+        "haircut_percent": "20.931971",
+        "balance_delta_1e18": "33447984555904291060172",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "reference_notional_1m",
+        "note": "referenceNotional raised 10x from the pinned 100,000",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 1000000000000000000000000
+        },
+        "tag": "pinned",
+        "notional_usdc": 10000000,
+        "margin_1e18": "20000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "17355223523309860559755",
+        "adjusted_pnl_1e18": "7007646563392727953679",
+        "win_fee_1e18": "140152931267854559073",
+        "net_payout_1e18": "6867493632124873394606",
+        "entry": 250645,
+        "exit": 251085,
+        "haircut_ppm": 596222,
+        "haircut_nano_percent": 596222626,
+        "haircut_percent": "59.622263",
+        "balance_delta_1e18": "26867493632124873394606",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "counterfactual_ref_is_notional_500k",
+        "note": null,
+        "constructed": "referenceNotional set to this position's own notional",
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 500000000000000000000000
+        },
+        "tag": "pinned",
+        "notional_usdc": 500000,
+        "margin_1e18": "1000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "867761176165493027987",
+        "adjusted_pnl_1e18": "478052056642729768137",
+        "win_fee_1e18": "9561041132854595362",
+        "net_payout_1e18": "468491015509875172775",
+        "entry": 250645,
+        "exit": 251085,
+        "haircut_ppm": 449097,
+        "haircut_nano_percent": 449097205,
+        "haircut_percent": "44.909720",
+        "balance_delta_1e18": "1468491015509875172775",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "counterfactual_ref_is_notional_10m",
+        "note": null,
+        "constructed": "referenceNotional set to this position's own notional",
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 10000000000000000000000000
+        },
+        "tag": "pinned",
+        "notional_usdc": 10000000,
+        "margin_1e18": "20000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "17355223523309860559755",
+        "adjusted_pnl_1e18": "1206732898885465142332",
+        "win_fee_1e18": "24134657977709302846",
+        "net_payout_1e18": "1182598240907755839486",
+        "entry": 250645,
+        "exit": 251085,
+        "haircut_ppm": 930468,
+        "haircut_nano_percent": 930468605,
+        "haircut_percent": "93.046860",
+        "balance_delta_1e18": "21182598240907755839486",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "holdback_4bp",
+        "note": "3.99 bps move, inside both documented holdback bands",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "pinned",
+        "notional_usdc": 10000000,
+        "margin_1e18": "20000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "3790221229228590237188",
+        "adjusted_pnl_1e18": "1982065682449817842765",
+        "win_fee_1e18": "39641313648996356855",
+        "net_payout_1e18": "1942424368800821485910",
+        "entry": 250645,
+        "exit": 250745,
+        "haircut_ppm": 477058,
+        "haircut_nano_percent": 477058049,
+        "haircut_percent": "47.705805",
+        "balance_delta_1e18": "21942424368800821485910",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "holdback_05bp",
+        "note": "0.52 bps move, inside the off-hours band only",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "pinned",
+        "notional_usdc": 10000000,
+        "margin_1e18": "20000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "319176524566618125236",
+        "adjusted_pnl_1e18": "30040901104836698278",
+        "win_fee_1e18": "600818022096733965",
+        "net_payout_1e18": "29440083082739964313",
+        "entry": 250645,
+        "exit": 250658,
+        "haircut_ppm": 905879,
+        "haircut_nano_percent": 905879979,
+        "haircut_percent": "90.587998",
+        "balance_delta_1e18": "20029440083082739964313",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "holdback_4bp_500k",
+        "note": "same 3.99 bps move at one twentieth of the notional",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "pinned",
+        "notional_usdc": 500000,
+        "margin_1e18": "1000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "189511061461429511859",
+        "adjusted_pnl_1e18": "99103284122490892138",
+        "win_fee_1e18": "1982065682449817842",
+        "net_payout_1e18": "97121218440041074296",
+        "entry": 250645,
+        "exit": 250745,
+        "haircut_ppm": 477058,
+        "haircut_nano_percent": 477058049,
+        "haircut_percent": "47.705805",
+        "balance_delta_1e18": "1097121218440041074296",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "holdback_4bp_2m",
+        "note": "same 3.99 bps move at one fifth of the notional",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "pinned",
+        "notional_usdc": 2000000,
+        "margin_1e18": "4000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "758044245845718047437",
+        "adjusted_pnl_1e18": "396413136489963568552",
+        "win_fee_1e18": "7928262729799271371",
+        "net_payout_1e18": "388484873760164297181",
+        "entry": 250645,
+        "exit": 250745,
+        "haircut_ppm": 477058,
+        "haircut_nano_percent": 477058049,
+        "haircut_percent": "47.705805",
+        "balance_delta_1e18": "4388484873760164297181",
+        "queue_delta_1e18": "0"
+      }
+    ],
+    "math_call_arguments_checked": 15,
+    "math_call_example": {
+      "test": "test_pinned_certik_10m",
+      "case": "certik_10m",
+      "selector": "0x82296364",
+      "arguments": [
+        "250645",
+        "251085",
+        "20000000000000000000000",
+        "500",
+        "1",
+        "100000000000000000",
+        "15000000000000000000000",
+        "483979000000000000000",
+        "100000000000000000000000"
+      ],
+      "returns": [
+        "17355223523309860559755",
+        "13494728986365670576511"
+      ]
+    },
+    "market_aggregate_control": "pinned market field words except the 25x case, whose 96-bit side aggregates are set to their maximum"
+  },
+  "live_capture": {
+    "chain_id": 999,
+    "head_block": 49258776,
+    "head_hash": "0x094ffbf5b4786fa3a5a9b2ec7b8de3c2f29af76a8ca70a425df267ab5cd692fe",
+    "head_timestamp": 1792707928,
+    "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+    "eip1967_implementation_slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+    "implementation": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+    "implementation_runtime_bytes": 23959,
+    "implementation_sha256": "fc7374f3969381160732fe98c5e3145e00c3f167f168d61d65bb4972e9a6b268",
+    "proxy_runtime_bytes": 925,
+    "proxy_sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "linked_libraries": {
+      "0x583d0bd818c991c5830fea93aef04e474b272459": {
+        "runtime_bytes": 6286,
+        "sha256": "ced8e434ebd5379c4acc1fba809a5b18f531c676a264308c9a0a1a76d9641440",
+        "push20_offsets": [
+          2721,
+          2809,
+          7249,
+          8997,
+          9335,
+          10801,
+          16268,
+          19148,
+          21872,
+          22043
+        ],
+        "selector_set": [
+          "0x06c5308a",
+          "0x18958ce2",
+          "0x2448a553",
+          "0x32db40c9",
+          "0x3cf4208d",
+          "0x3f4e3626",
+          "0x79810ffe",
+          "0xb67f3dd7",
+          "0xb9370332",
+          "0xca02ff91"
+        ]
+      },
+      "0x3333333333333333333333333333333333333333": {
+        "runtime_bytes": 544,
+        "sha256": "fd053fae53aa5ff797c8de9d38f5180d3c280228ae2d669ef9a83ab7834dac83",
+        "push20_offsets": [
+          21166
+        ],
+        "selector_set": [
+          "0x17938e13"
+        ]
+      }
+    },
+    "linked_library": "0x583d0bd818c991c5830fea93aef04e474b272459",
+    "session_key_manager_proxy": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+    "session_key_manager_implementation": "0x04b5ea4cdd8d6de4bd6e0ef3865266947f043946",
+    "session_key_manager_implementation_bytes": 4521,
+    "session_manager_implementation_sha256": "7df05c33597c04820a314fae015aab01b5566aff53e9bded8446962cfd4ad2c9",
+    "raw_files": [
+      "exchange_proxy_code.json",
+      "implementation_code.json",
+      "linked_3333333333333333333333333333333333333333_code.json",
+      "linked_583d0bd818c991c5830fea93aef04e474b272459_code.json",
+      "session_manager_implementation_code.json",
+      "storage_probes.json"
+    ],
+    "method": "single-poll eth_blockNumber/eth_getBlockByNumber/eth_getStorageAt/eth_getCode at latest; the public RPC ignores block parameters"
+  },
+  "live_comparison": {
+    "pinned_library_bytes": 5790,
+    "live_library_bytes": 6286,
+    "pinned_library_sha256": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2",
+    "live_library_sha256": "ced8e434ebd5379c4acc1fba809a5b18f531c676a264308c9a0a1a76d9641440",
+    "pinned_library_metadata": "a2646970667358221220d18e07f4ff455fb2061dcdef6066e1a831478761f1570892ea45d974836a67fd64736f6c63430008180033",
+    "live_library_metadata": "a2646970667358221220fb830833749989c56b7dcff966a968636d5497fc85d848885d564bc1d00bbe3a64736f6c63430008180033",
+    "pinned_library_normalized_sha256": "ebc1f4ddd1f3caa3e46e22e90474962a393fce6848e4e4169e0ba70726155060",
+    "live_library_normalized_sha256": "f565a561f5d5cec8780736a35dfd8eea63d7a4863bd11d2009ccac6626582d01",
+    "library_byte_identical_after_normalization": false,
+    "pinned_library_selectors": [
+      "0x18958ce2",
+      "0x2448a553",
+      "0x32db40c9",
+      "0x3cf4208d",
+      "0x3f4e3626",
+      "0x79810ffe",
+      "0x82296364",
+      "0xb67f3dd7",
+      "0xca02ff91",
+      "0xef1a27a9"
+    ],
+    "live_library_selectors": [
+      "0x06c5308a",
+      "0x18958ce2",
+      "0x2448a553",
+      "0x32db40c9",
+      "0x3cf4208d",
+      "0x3f4e3626",
+      "0x79810ffe",
+      "0xb67f3dd7",
+      "0xb9370332",
+      "0xca02ff91"
+    ],
+    "selectors_removed": [
+      "0x82296364",
+      "0xef1a27a9"
+    ],
+    "selectors_added": [
+      "0x06c5308a",
+      "0xb9370332"
+    ],
+    "pnl_selector_in_pinned": true,
+    "pnl_selector_in_live": false,
+    "settlement_selector_in_pinned": true,
+    "settlement_selector_in_live": false,
+    "pinned_implementation_bytes": 23052,
+    "live_implementation_bytes": 23959,
+    "pinned_implementation_push20": [
+      "0x3333333333333333333333333333333333333333",
+      "0x4a84ba8280a280f35b6040516330951a9160e11b",
+      "0x58221220817b91b6770c85191a1df35debf9950c",
+      "0x60e11b8152600490fd5b6004356001600160601b",
+      "0xb554f0bf39c09868560ed149b3d788fcc933ff66",
+      "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+      "0xeac370fdd7eba3bec636fe351096969161433061"
+    ],
+    "live_implementation_push20": [
+      "0x3333333333333333333333333333333333333333",
+      "0x4a84ba8280a280f35b6040516330951a9160e11b",
+      "0x565b6133689082614b4c565b5f61305a565b6016",
+      "0x582212201e6fd08ffbca961fc3509d9fb4b2ae99",
+      "0x583d0bd818c991c5830fea93aef04e474b272459",
+      "0x60e11b8152600490fd5b6004356001600160601b",
+      "0x91613c14565b9116906139e7565b600160016060",
+      "0xb554f0bf39c09868560ed149b3d788fcc933ff66",
+      "0xeac370fdd7eba3bec636fe351096969495506143"
+    ],
+    "live_library_address": "0x583d0bd818c991c5830fea93aef04e474b272459",
+    "instrument_record_equal": true,
+    "live_instrument_words": [
+      15000000000000000000000,
+      483979000000000000000,
+      1,
+      1000,
+      10000000000000000000000000,
+      481304050180130,
+      100000000000000000,
+      100000000000000000000000
+    ],
+    "live_market_fields": [
+      627710174222086598594923665323461500299565124881288346239432,
+      3216553777000522345179807436219222353792935654744473789380572
+    ],
+    "config_slots": [
+      {
+        "slot": "8",
+        "prestate": "0x0000000000000000000000000000000000000000000000000000000000000002",
+        "live": "0x0000000000000000000000000000000000000000000000000000000100000002",
+        "equal": false
+      },
+      {
+        "slot": "14",
+        "prestate": "0x00000000000000000000000000000000000000000035d96453ebd242f9b44800",
+        "live": "0x000000000000000000000000000000000000000000205ef7ec4497c7463de800",
+        "equal": false
+      },
+      {
+        "slot": "16",
+        "prestate": null,
+        "live": "0x0000000000000000000000000000000000000000000000000000000000000004",
+        "equal": false
+      },
+      {
+        "slot": "18",
+        "prestate": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "live": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "equal": true
+      },
+      {
+        "slot": "22",
+        "prestate": "0x00000000000794fcff327cf4d045a35500000000002a08e22de4c293a9678c16",
+        "live": "0x000000000004f71f43916e8cf187a41a000000000017663cab5bedb447a9351f",
+        "equal": false
+      },
+      {
+        "slot": "23",
+        "prestate": "0x00000000000000000000000000000000000000000000000000470de4df820000",
+        "live": "0x00000000000000000000000000000000000000000000000000470de4df820000",
+        "equal": true
+      },
+      {
+        "slot": "24",
+        "prestate": "0x00000000000000000000000000000000000000000000000000470de4df820000",
+        "live": "0x00000000000000000000000000000000000000000000000000470de4df820000",
+        "equal": true
+      },
+      {
+        "slot": "25",
+        "prestate": null,
+        "live": "0x00000000000000000000000000000000000000000000000000470de4df820000",
+        "equal": false
+      },
+      {
+        "slot": "26",
+        "prestate": "0x000000000000184c646a76a13aae0b2500000000000000011d4dcc3fe4d5f966",
+        "live": "0x000000000000056825aa169c4f0e638f000000000000000093f089371c8ab45d",
+        "equal": false
+      },
+      {
+        "slot": "27",
+        "prestate": null,
+        "live": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "equal": false
+      },
+      {
+        "slot": "29",
+        "prestate": "0x00000000000000000000008326eb8896e358717f10502ec73ce8d28e37b10800",
+        "live": "0x00000000000000000000008326eb8896e358717f10502ec73ce8d28e37b10800",
+        "equal": true
+      }
+    ]
+  },
+  "live_replay": {
+    "block": 49258776,
+    "implementation": "0x0a44049dbbb6b4762a6ba37aa0f7548c0b4a3723",
+    "library": "0x583d0bd818c991c5830fea93aef04e474b272459",
+    "source_sha256": "dc72b60f395cfa6bb135955dfcba7e6182791f37154537bf0f2ffa0d0c5fbe99",
+    "forge_result": "15 passed, 0 failed",
+    "rows": [
+      {
+        "case": "certik_10m",
+        "note": "CertiK position 72098 size: 20,000 margin at 500x",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "live",
+        "notional_usdc": 10000000,
+        "margin_1e18": "20000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "17355223523309860559755",
+        "adjusted_pnl_1e18": "13494728986365670576511",
+        "win_fee_1e18": "269894579727313411530",
+        "net_payout_1e18": "13224834406638357164981",
+        "entry": 250645,
+        "exit": 251085,
+        "haircut_ppm": 222439,
+        "haircut_nano_percent": 222439920,
+        "haircut_percent": "22.243992",
+        "balance_delta_1e18": "33224834406638357164981",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "certik_500k",
+        "note": "CertiK hypothetical $500,000 notional position",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "live",
+        "notional_usdc": 500000,
+        "margin_1e18": "1000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "867761176165493027987",
+        "adjusted_pnl_1e18": "674736449318283528825",
+        "win_fee_1e18": "13494728986365670576",
+        "net_payout_1e18": "661241720331917858249",
+        "entry": 250645,
+        "exit": 251085,
+        "haircut_ppm": 222439,
+        "haircut_nano_percent": 222439920,
+        "haircut_percent": "22.243992",
+        "balance_delta_1e18": "1661241720331917858249",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "certik_50k",
+        "note": "one hundredth of the recorded notional",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "live",
+        "notional_usdc": 50000,
+        "margin_1e18": "100000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "86776117616549302798",
+        "adjusted_pnl_1e18": "67473644931828352881",
+        "win_fee_1e18": "1349472898636567057",
+        "net_payout_1e18": "66124172033191785824",
+        "entry": 250645,
+        "exit": 251085,
+        "haircut_ppm": 222439,
+        "haircut_nano_percent": 222439920,
+        "haircut_percent": "22.243992",
+        "balance_delta_1e18": "166124172033191785824",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "certik_2m_lev100",
+        "note": "margin held fixed, leverage cut 5x",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "live",
+        "notional_usdc": 2000000,
+        "margin_1e18": "20000000000000000000000",
+        "leverage": 100,
+        "raw_pnl_1e18": "3471044704661972111951",
+        "adjusted_pnl_1e18": "2698945797273134115302",
+        "win_fee_1e18": "53978915945462682306",
+        "net_payout_1e18": "2644966881327671432996",
+        "entry": 250645,
+        "exit": 251085,
+        "haircut_ppm": 222439,
+        "haircut_nano_percent": 222439920,
+        "haircut_percent": "22.243992",
+        "balance_delta_1e18": "22644966881327671432996",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "certik_500k_lev250",
+        "note": "same 500,000 notional as certik_500k from a different margin/leverage pair",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "live",
+        "notional_usdc": 500000,
+        "margin_1e18": "2000000000000000000000",
+        "leverage": 250,
+        "raw_pnl_1e18": "867761176165493027987",
+        "adjusted_pnl_1e18": "674736449318283528825",
+        "win_fee_1e18": "13494728986365670576",
+        "net_payout_1e18": "661241720331917858249",
+        "entry": 250645,
+        "exit": 251085,
+        "haircut_ppm": 222439,
+        "haircut_nano_percent": 222439920,
+        "haircut_percent": "22.243992",
+        "balance_delta_1e18": "2661241720331917858249",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "certik_250m",
+        "note": "25x the recorded notional",
+        "constructed": "the market side aggregates are set to their 96-bit maximum; with the pinned aggregate the close release underflows",
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "live",
+        "notional_usdc": 250000000,
+        "margin_1e18": "500000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "433880588082746513993895",
+        "adjusted_pnl_1e18": "337368224659141764412814",
+        "win_fee_1e18": "6747364493182835288256",
+        "net_payout_1e18": "330620860165958929124558",
+        "entry": 250645,
+        "exit": 251085,
+        "haircut_ppm": 222439,
+        "haircut_nano_percent": 222439920,
+        "haircut_percent": "22.243992",
+        "balance_delta_1e18": "830620860165958929124558",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "base_rate_20pct",
+        "note": "baseRate doubled from the pinned 10%",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 200000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "live",
+        "notional_usdc": 10000000,
+        "margin_1e18": "20000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "17355223523309860559755",
+        "adjusted_pnl_1e18": "11995314654547262738534",
+        "win_fee_1e18": "239906293090945254770",
+        "net_payout_1e18": "11755408361456317483764",
+        "entry": 250645,
+        "exit": 251085,
+        "haircut_ppm": 308835,
+        "haircut_nano_percent": 308835484,
+        "haircut_percent": "30.883548",
+        "balance_delta_1e18": "31755408361456317483764",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "rate_multiplier_30k",
+        "note": "rateMultiplier doubled from the pinned 15,000",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 30000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "live",
+        "notional_usdc": 10000000,
+        "margin_1e18": "20000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "17355223523309860559755",
+        "adjusted_pnl_1e18": "13722433220310501081808",
+        "win_fee_1e18": "274448664406210021636",
+        "net_payout_1e18": "13447984555904291060172",
+        "entry": 250645,
+        "exit": 251085,
+        "haircut_ppm": 209319,
+        "haircut_nano_percent": 209319707,
+        "haircut_percent": "20.931971",
+        "balance_delta_1e18": "33447984555904291060172",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "reference_notional_1m",
+        "note": "referenceNotional raised 10x from the pinned 100,000",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 1000000000000000000000000
+        },
+        "tag": "live",
+        "notional_usdc": 10000000,
+        "margin_1e18": "20000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "17355223523309860559755",
+        "adjusted_pnl_1e18": "7007646563392727953679",
+        "win_fee_1e18": "140152931267854559073",
+        "net_payout_1e18": "6867493632124873394606",
+        "entry": 250645,
+        "exit": 251085,
+        "haircut_ppm": 596222,
+        "haircut_nano_percent": 596222626,
+        "haircut_percent": "59.622263",
+        "balance_delta_1e18": "26867493632124873394606",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "counterfactual_ref_is_notional_500k",
+        "note": null,
+        "constructed": "referenceNotional set to this position's own notional",
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 500000000000000000000000
+        },
+        "tag": "live",
+        "notional_usdc": 500000,
+        "margin_1e18": "1000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "867761176165493027987",
+        "adjusted_pnl_1e18": "478052056642729768137",
+        "win_fee_1e18": "9561041132854595362",
+        "net_payout_1e18": "468491015509875172775",
+        "entry": 250645,
+        "exit": 251085,
+        "haircut_ppm": 449097,
+        "haircut_nano_percent": 449097205,
+        "haircut_percent": "44.909720",
+        "balance_delta_1e18": "1468491015509875172775",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "counterfactual_ref_is_notional_10m",
+        "note": null,
+        "constructed": "referenceNotional set to this position's own notional",
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 10000000000000000000000000
+        },
+        "tag": "live",
+        "notional_usdc": 10000000,
+        "margin_1e18": "20000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "17355223523309860559755",
+        "adjusted_pnl_1e18": "1206732898885465142332",
+        "win_fee_1e18": "24134657977709302846",
+        "net_payout_1e18": "1182598240907755839486",
+        "entry": 250645,
+        "exit": 251085,
+        "haircut_ppm": 930468,
+        "haircut_nano_percent": 930468605,
+        "haircut_percent": "93.046860",
+        "balance_delta_1e18": "21182598240907755839486",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "holdback_4bp",
+        "note": "3.99 bps move, inside both documented holdback bands",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "live",
+        "notional_usdc": 10000000,
+        "margin_1e18": "20000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "3790221229228590237188",
+        "adjusted_pnl_1e18": "619249464167583371907",
+        "win_fee_1e18": "12384989283351667438",
+        "net_payout_1e18": "606864474884231704469",
+        "entry": 250645,
+        "exit": 250745,
+        "haircut_ppm": 836619,
+        "haircut_nano_percent": 836619176,
+        "haircut_percent": "83.661918",
+        "balance_delta_1e18": "20606864474884231704469",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "holdback_05bp",
+        "note": "0.52 bps move, inside the off-hours band only",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "live",
+        "notional_usdc": 10000000,
+        "margin_1e18": "20000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "319176524566618125236",
+        "adjusted_pnl_1e18": "24354380559007444384",
+        "win_fee_1e18": "487087611180148887",
+        "net_payout_1e18": "23867292947827295497",
+        "entry": 250645,
+        "exit": 250658,
+        "haircut_ppm": 923696,
+        "haircut_nano_percent": 923696203,
+        "haircut_percent": "92.369620",
+        "balance_delta_1e18": "20023867292947827295497",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "holdback_4bp_500k",
+        "note": "same 3.99 bps move at one twentieth of the notional",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "live",
+        "notional_usdc": 500000,
+        "margin_1e18": "1000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "189511061461429511859",
+        "adjusted_pnl_1e18": "30962473208379168595",
+        "win_fee_1e18": "619249464167583371",
+        "net_payout_1e18": "30343223744211585224",
+        "entry": 250645,
+        "exit": 250745,
+        "haircut_ppm": 836619,
+        "haircut_nano_percent": 836619176,
+        "haircut_percent": "83.661918",
+        "balance_delta_1e18": "1030343223744211585224",
+        "queue_delta_1e18": "0"
+      },
+      {
+        "case": "holdback_4bp_2m",
+        "note": "same 3.99 bps move at one fifth of the notional",
+        "constructed": null,
+        "haircut_inputs": {
+          "base_rate": 100000000000000000,
+          "rate_multiplier": 15000000000000000000000,
+          "position_multiplier": 483979000000000000000,
+          "reference_notional": 100000000000000000000000
+        },
+        "tag": "live",
+        "notional_usdc": 2000000,
+        "margin_1e18": "4000000000000000000000",
+        "leverage": 500,
+        "raw_pnl_1e18": "758044245845718047437",
+        "adjusted_pnl_1e18": "123849892833516674381",
+        "win_fee_1e18": "2476997856670333487",
+        "net_payout_1e18": "121372894976846340894",
+        "entry": 250645,
+        "exit": 250745,
+        "haircut_ppm": 836619,
+        "haircut_nano_percent": 836619176,
+        "haircut_percent": "83.661918",
+        "balance_delta_1e18": "4121372894976846340894",
+        "queue_delta_1e18": "0"
+      }
+    ],
+    "cases_matching_pinned_model": 11,
+    "cases_total": 15,
+    "deltas_vs_pinned_model": [
+      {
+        "case": "holdback_4bp",
+        "observed_adjusted": 619249464167583371907,
+        "pinned_model_adjusted": 1982065682449817842765,
+        "observed_raw": 3790221229228590237188,
+        "pinned_model_raw": 3790221229228590237188
+      },
+      {
+        "case": "holdback_05bp",
+        "observed_adjusted": 24354380559007444384,
+        "pinned_model_adjusted": 30040901104836698278,
+        "observed_raw": 319176524566618125236,
+        "pinned_model_raw": 319176524566618125236
+      },
+      {
+        "case": "holdback_4bp_500k",
+        "observed_adjusted": 30962473208379168595,
+        "pinned_model_adjusted": 99103284122490892138,
+        "observed_raw": 189511061461429511859,
+        "pinned_model_raw": 189511061461429511859
+      },
+      {
+        "case": "holdback_4bp_2m",
+        "observed_adjusted": 123849892833516674381,
+        "pinned_model_adjusted": 396413136489963568552,
+        "observed_raw": 758044245845718047437,
+        "pinned_model_raw": 758044245845718047437
+      }
+    ],
+    "size_sweep_haircut_ppm": [
+      222439920
+    ],
+    "size_sweep_single_haircut": true,
+    "holdback_cases": [
+      "holdback_4bp",
+      "holdback_05bp",
+      "holdback_4bp_500k",
+      "holdback_4bp_2m"
+    ],
+    "holdback_size_sweep_labels": [
+      "holdback_4bp",
+      "holdback_4bp_500k",
+      "holdback_4bp_2m"
+    ],
+    "holdback_size_sweep_haircut_ppm": [
+      836619176
+    ],
+    "holdback_size_sweep_single_haircut": true,
+    "library_selectors_reached": [
+      "0x06c5308a",
+      "0xb9370332"
+    ],
+    "math_call_example": {
+      "test": "test_live_base_rate_20pct",
+      "selector": "0x06c5308a",
+      "kind": "delegatecall",
+      "arguments": [
+        "250645",
+        "251085",
+        "20000000000000000000000",
+        "500",
+        "1",
+        "200000000000000000",
+        "15000000000000000000000",
+        "483979000000000000000",
+        "100000000000000000000000",
+        "1"
+      ],
+      "returns": [
+        "17355223523309860559755",
+        "11995314654547262738534"
+      ]
+    },
+    "math_call_selectors": [
+      "0x06c5308a",
+      "0xb9370332"
+    ],
+    "satellite_note": "unchecked: the live run records the observed event values instead of asserting the pinned model's numbers",
+    "conclusion": "The live implementation matched the pinned model's raw PnL, adjusted PnL and fee in 11 of 15 cases. Every case at the incident's 17.55 bps move matched, and the size sweep from 50,000 to 250,000,000 USDC notional returned one single haircut value (22.243992%), so the haircut percentage is still independent of position size in the deployed code. The differences are confined to holdback_4bp, holdback_05bp, holdback_4bp_500k, holdback_4bp_2m: moves inside the holdback bands the contract-set-2 docs describe, where the deployed library holds the move back and pays less (3.99 bps: 1,942.424369 pinned vs 606.864475 deployed; 0.52 bps: 29.440083 pinned vs 23.867293 deployed). The holdback sweep at 3.99 bps also returns one single haircut value (83.661918%) across 500,000, 2,000,000 and 10,000,000 USDC notional, so size independence holds inside the band as well. The call-shape change is a tenth argument (value 1) on the deployed math selector 0x06c5308a, matching the curve selector the instrument-count word carries; the other four instrument constants are unchanged."
+  },
+  "bounds": {
+    "open_interest_caps": {
+      "enforcement": "market field word 1 holds two 128-bit per-side opening limits for the ETH market; the keeper selector 0x628a9fd6 writes them and the signed-open path compares the updated side value against them",
+      "saved_open_sample": {
+        "signed_open_selector": "0xec6783f0",
+        "signed_opens_compared": 57,
+        "cap_reverts": 27,
+        "successes_below_limit": 30,
+        "error": "OiCapExceeded()",
+        "error_hash_verified": true
+      },
+      "eth_limits_pinned": [
+        "31013441209990090349898",
+        "27897005740639578295875"
+      ],
+      "eth_limits_live": [
+        "13898826154954597185500",
+        "9452601984950514883362"
+      ],
+      "eth_limit_tightening": [
+        2.2313712585673677,
+        2.9512514950967357
+      ],
+      "units": "the atlas records the compared values and the increments but leaves the unit unresolved, so no USDC notional conversion is claimed here"
+    },
+    "lp_bankroll": {
+      "formula": "lpBankrollAvailable = 0 if totalQueued > 0 else max(treasury - totalBalances - totalLockedMargin - stakerFeeAccumulator - devFeeAccumulator, 0)",
+      "prestate_block": 48901631,
+      "treasury_1e18": "65099672687923540000000000",
+      "reserved_1e18": "60097660114168421041648630",
+      "available_1e18": "5002012573755118958351370",
+      "available_usdc": 5002012.573755119,
+      "largest_replay_credit": {
+        "notional_usdc": 250000000,
+        "balance_credit_1e18": "830620860165958929124558",
+        "queue_delta_1e18": "0"
+      }
+    },
+    "queue": {
+      "prestate_total_queued": "0",
+      "note": "every replay row credited the payout directly with a zero queue delta, and the pinned suite also has a queued-profit close branch, so a payout beyond the available bankroll is deferred rather than paid"
+    },
+    "reachability": "the haircut path has no position-size term, so a larger admissible notional raises the payout at an unchanged percentage. CertiK reports the examined account using notionals from 500,000 to 10,000,000 USDC across 296 profitable closes, and the pinned instrument record allows leverage up to 1000. Whether a given notional is admissible at a given cap cannot be decided offline because the cap unit is unresolved; the live caps are lower than the pinned ones.",
+    "certik_did_not_establish": [
+      "that the quotes it read were distorted or deliberately influenced: its own text says timestamp overlap alone is insufficient and that ordered market-wide quotes plus an independent reference would be needed",
+      "that position 72098 needed anything beyond ordinary leveraged trading: it states the example is consistent with the recorded settlement rules",
+      "the project's post-incident cap changes and recovery through other accounts, which CertiK records as not independently verified"
+    ],
+    "documented_admission": "the paid docs state the curve 'is not a deviation check ... and does not guarantee that a manipulation strategy is unprofitable', and that the protocol reads BBO without a deviation breaker"
+  },
+  "limits": [
+    "Only the winning-close profit path is measured. Losing closes bypass the scale factor entirely (both saved and replayed loss cases return adjustedPnl == rawPnl), so the haircut finding does not apply to them.",
+    "The offline comparison of the live implementation is a live-code capture plus an offline diff and local replay. The public RPC ignores block parameters and exposes no debug tracer, and no archive endpoint is configured, so the incident-era runtime at block 48,202,386 cannot be fetched; the pinned suite is used as the incident-era proxy on the strength of its deployer creation block and the absence of any recorded Upgraded log through the pin, not of a fetched historical bytecode read.",
+    "The live replay restores pinned storage for the Exchange accounting fields and overrides only the configuration the live capture shows changed: the implementation pointer, the implementation and library code, the instrument record, the market fields and the instrument-count/curve word. Live accounting (treasury, totalBalances, totalLockedMargin, fee accumulators) is at its block-48,901,631 value, so the balance credit and queue columns are local-scenario values, not current chain values.",
+    "The per-side open-interest caps in market field word 1 act as limits in the sampled signed-open paths, but their unit is unresolved, so this document does not convert a cap into a maximum notional and does not claim that any particular size is reachable at a given cap.",
+    "CertiK's account-level net withdrawal of 1,279,106.191184 USDC, its Hyperliquid fill sample and its quote-overlap table were not re-derived here; this document only tests the haircut and reference-notional claim and the payout it produces.",
+    "The holdback delta is a measured difference between two runtimes. That it is the documented holdback band is an inference from the documented band ranges and the curve-selector argument, not a source-level mapping: the deployed library's argument semantics are established by the replay's numbers, not by recovered source.",
+    "The deployed session-key manager is restored so the real signed-close authorization runs; its own registry layout is outside this document, and no session-manager behavior is claimed beyond the two selectors the close path uses."
+  ],
+  "sources": [
+    "CertiK, PaperTrade BBO Pricing Incident, 2026-10-20: https://www.certik.com/blog/papertrade-bbo-pricing-incident (position 72098 numbers, the fixed 100,000 USDC reference notional, the 22.243992% haircut and the $500,000 hypothetical).",
+    "Papertrade docs, Asymmetric impact PnL (contract set 2, updated 2026-10-21): https://docs.papertrade.xyz/how/asymmetric-impact and the contract-set-1 page https://docs.papertrade.xyz/v1/how/asymmetric-impact (identical formula for both sets).",
+    "atlas/block_48902346/exchange_library_pseudocode.md and exchange_library_behavior.json (the pinned library model, 49 historical settlement pairs, 74 saved math calls).",
+    "atlas/block_48902346/exchange_instruments_getter.md, exchange_instrument_creation.md and exchange_market_fields.md (instrument record packing, keeper market fields, instrument-count and market-keeper reads).",
+    "atlas/block_48902346/exchange_close_paths.md, exchange_close_fee_effects.md and exchange_negative_close_fee.md (the signed-close branches and the 2% positive-PnL fee on Exchange slot 24).",
+    "atlas/block_48902346/exchange_storage_behavior.md (lpBankrollAvailable formula), exchange_availability_behavior.json (the queue gate on that formula), exchange_open_limit.md and exchange_open_limit_full_behavior.json (per-side open limit guard at signed open, 57 sampled opens with 27 cap reverts) and exchange_market_fields.md (the keeper writes to those limits).",
+    "Papertrade docs, Pricing: BBO precompile and the no-deviation-breaker note: https://docs.papertrade.xyz/how/pricing-bbo (quoted as the protocol's own limitation).",
+    "artifacts/exchange_negative_close/original_prestate.json (the replay prestate) and artifacts/audit_certik_haircut/live/ (the live implementation, linked library, session-key-manager implementation and storage captures at latest)."
+  ]
+}

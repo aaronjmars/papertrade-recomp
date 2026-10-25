@@ -1,0 +1,111 @@
+{
+  "chain_id": 999,
+  "liquidation_transaction": "0xff619c8c3758e4a04ea9fbf0b16fabbdf503244418c3bdc5e82c70081d9b2ce6",
+  "queue_slot": "0x0000000000000000000000000000000000000000000000000000000000000012",
+  "queue_override_value": "0x0000000000000000000000000000000000000000000000000000000000000001",
+  "replays": [
+    {
+      "label": "liquidation_baseline",
+      "block": 48901563,
+      "call": {
+        "from": "0x07626d8137ede6b922bcecf3b67f82a21100a612",
+        "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "input": "0x599dc53900000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000015377e00000000000000000000000000000000000000000000000000000000001539a7",
+        "value": "0x0",
+        "gas": "0xf4240"
+      },
+      "state_overrides": {},
+      "call_trace": "liquidation_baseline.calls.json",
+      "state_diff": "liquidation_baseline.state_diff.json"
+    },
+    {
+      "label": "liquidation_queue_override",
+      "block": 48901563,
+      "call": {
+        "from": "0x07626d8137ede6b922bcecf3b67f82a21100a612",
+        "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "input": "0x599dc53900000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000015377e00000000000000000000000000000000000000000000000000000000001539a7",
+        "value": "0x0",
+        "gas": "0xf4240"
+      },
+      "state_overrides": {
+        "0x6cd5661646289fb6e65ea5c032310fded797d0a2": {
+          "stateDiff": {
+            "0x0000000000000000000000000000000000000000000000000000000000000012": "0x0000000000000000000000000000000000000000000000000000000000000001"
+          }
+        }
+      },
+      "call_trace": "liquidation_queue_override.calls.json",
+      "state_diff": "liquidation_queue_override.state_diff.json"
+    },
+    {
+      "label": "push_during_real_queue",
+      "block": 48173887,
+      "call": {
+        "from": "0x89ab620bee7e1ec675eec5291cba3686d9e059bf",
+        "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "input": "0x7b9f5264",
+        "gas": "0x1e8480",
+        "value": "0x0"
+      },
+      "state_overrides": {},
+      "call_trace": "push_during_real_queue.calls.json",
+      "state_diff": "push_during_real_queue.state_diff.json"
+    },
+    {
+      "label": "push_real_queue_with_surplus_cursor",
+      "block": 48173887,
+      "call": {
+        "from": "0x89ab620bee7e1ec675eec5291cba3686d9e059bf",
+        "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "input": "0x7b9f5264",
+        "gas": "0x1e8480",
+        "value": "0x0"
+      },
+      "state_overrides": {
+        "0x75174549dbbd44497d31a47e2e2d7406408d63d9": {
+          "stateDiff": {
+            "0x0000000000000000000000000000000000000000000000000000000000000003": "0x0000000000000000000000000000000000000000000422cff6d15ed188100000"
+          }
+        }
+      },
+      "call_trace": "push_real_queue_with_surplus_cursor.calls.json",
+      "state_diff": "push_real_queue_with_surplus_cursor.state_diff.json"
+    },
+    {
+      "label": "push_surplus_baseline",
+      "block": 48899300,
+      "call": {
+        "from": "0x89ab620bee7e1ec675eec5291cba3686d9e059bf",
+        "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "input": "0x7b9f5264",
+        "gas": "0x1e8480",
+        "value": "0x0"
+      },
+      "state_overrides": {},
+      "call_trace": "push_surplus_baseline.calls.json",
+      "state_diff": "push_surplus_baseline.state_diff.json"
+    },
+    {
+      "label": "push_surplus_queue_override",
+      "block": 48899300,
+      "call": {
+        "from": "0x89ab620bee7e1ec675eec5291cba3686d9e059bf",
+        "to": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "input": "0x7b9f5264",
+        "gas": "0x1e8480",
+        "value": "0x0"
+      },
+      "state_overrides": {
+        "0x6cd5661646289fb6e65ea5c032310fded797d0a2": {
+          "stateDiff": {
+            "0x0000000000000000000000000000000000000000000000000000000000000012": "0x0000000000000000000000000000000000000000000000000000000000000001"
+          }
+        }
+      },
+      "call_trace": "push_surplus_queue_override.calls.json",
+      "state_diff": "push_surplus_queue_override.state_diff.json"
+    }
+  ],
+  "note": "debug_traceCall is read-only. Each override changes only the named storage slot for that simulated call. The launch queue replay retains its real queue nodes and overrides only the Tokenomics LP cursor."
+}

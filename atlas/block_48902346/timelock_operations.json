@@ -1,0 +1,48 @@
+{
+  "pin": 48902346,
+  "min_delay_seconds": 604800,
+  "operations": [
+    {
+      "operation_id": "0x51142366b8d5ae8d41322de14a7627f265e2ab54ee65828bbbaa14f6090cb578",
+      "scheduled_block": 48191335,
+      "schedule_tx": "0xad38ffd14ec3032301199d3af3388599c483c963b1ce478e9e78d3bb36ac2f3d",
+      "target": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+      "target_role": "tokenomics_proxy",
+      "value": 0,
+      "predecessor": "0xa03fa922a8a4d9781c3c74ece5e4b12827eecd4f12aa7f5b9981bc3657bb2332",
+      "ready_timestamp_from_event": 1792262786,
+      "call_selector": "0x12baae3b",
+      "candidate_signature": "setMintParams(uint256,uint256,uint256,uint256)",
+      "call_arguments_uint256_words": [
+        2000000000000000000000000,
+        10000000000000000000000000,
+        100000000000000000000,
+        120000000000000000000000000
+      ],
+      "pinned_timestamp": 1792262786,
+      "is_done_at_pin": false,
+      "is_pending_at_pin": false,
+      "is_ready_at_pin": true
+    },
+    {
+      "operation_id": "0xc616b8d5f1fccaae8952fd5832306ef7d181cdbf7b3e81fa331593abc6d6a6cb",
+      "scheduled_block": 48378920,
+      "schedule_tx": "0x24519c5ccf89b6e194379e57ee8fc84a4171b953987d89dac1b969ce3233b2e7",
+      "target": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+      "target_role": "timelock",
+      "value": 0,
+      "predecessor": "0x4f6334bb72dc6434598f27bdd8a884e83553a871b874434dba529b894e0b1bc3",
+      "ready_timestamp_from_event": 1792447296,
+      "call_selector": "0x8a99d586",
+      "candidate_signature": "updateMinDelay(uint256)",
+      "call_arguments_uint256_words": [
+        86400
+      ],
+      "pinned_timestamp": 1792447296,
+      "is_done_at_pin": false,
+      "is_pending_at_pin": true,
+      "is_ready_at_pin": false
+    }
+  ],
+  "source": "timelock_all_logs.json and pinned eth_call getters"
+}

@@ -1,0 +1,417 @@
+{
+ "forge": "forge",
+ "tests_passed": [
+  "testBadCloseSignatureRollsBackNonce",
+  "testBadOpenSignatureRollsBackNonce",
+  "testBadSignatureRollsBackNonce",
+  "testCloseBatchCallerDependsOnSlot88",
+  "testDeadlineAtTimestampReachesSignatureCheck",
+  "testExpiredCloseDeadlineLeavesNonceUnused",
+  "testExpiredDeadlineLeavesNonceUnused",
+  "testExpiredOpenDeadlineLeavesNonceUnused",
+  "testFourPositionCloseDigestAcceptsSessionSigner",
+  "testFourthCloseIdMutationRejectsSessionSignature",
+  "testOutsiderCloseRejectedBeforeNonce",
+  "testOutsiderOpenRejectedBeforeNonce",
+  "testOutsiderWithdrawalReachesSignatureCheck",
+  "testReusedCloseNonceRejected",
+  "testReusedNonceRejected",
+  "testReusedOpenNonceRejected",
+  "testRoleBuilderApprovedCandidates",
+  "testRoleBuilderKeyFeePayingClose",
+  "testRoleBuilderKeyOtherPositionId",
+  "testRoleBuilderLossClose",
+  "testRoleBuilderTrailingWord",
+  "testRoleGlobalPauseGates",
+  "testRoleGlobalPauseOpenGate",
+  "testRoleKeeperCapEffect",
+  "testRoleKeeperFlagGates",
+  "testRoleKeeperLiquidationBoundary",
+  "testRoleKeeperSurface",
+  "testRolePauseSurface",
+  "testRoleRelayerBatch",
+  "testRoleRelayerOrder",
+  "testRoleRelayerWithdrawRecipient",
+  "testSet2BatchAllowlistAgainstAddedSelectors",
+  "testSet2ClaimBuilderFeesScope",
+  "testSet2CloseBuilderWordCandidates",
+  "testSet2CloseBuilderWordIsNotSigned",
+  "testSet2DepositProxySurface",
+  "testSet2FinalizeControls",
+  "testSet2FinalizeCreditsTheStoredSnapshot",
+  "testSet2KeeperIsNotASignedIntentCaller",
+  "testSet2NonceBitmapSharedAcrossIntentClasses",
+  "testSet2NonceIsPerUser",
+  "testSet2OutsiderDrivesVictimSweep",
+  "testSet2OwnerBuilderSweepEntry",
+  "testSet2RecoveryGuards",
+  "testSet2RegistrationByBatchExecutor",
+  "testSet2RetryReservesOneUsdc",
+  "testSet2SessionKeyLifecycleAndAssociatedAddress",
+  "testSet2SweepFamilyBuilderReads",
+  "testSet2WithdrawalExtraUnitWhenStatusFalse",
+  "testSignedAmountMismatchRollsBack",
+  "testSignedDeadlineMismatchRollsBack",
+  "testSignedNonceMismatchRollsBack",
+  "testSignedUserMismatchRollsBack",
+  "testValidOpenSignatureReachesPostSignerRevert",
+  "testValidSignatureAllowsOutsiderRelayer",
+  "testValidWithdrawalPersistsNonceAndDebits",
+  "testValidWithdrawalReplayRejectedNextBlock",
+  "testWrongDomainWithdrawalSignatureRollsBack",
+  "testWrongValidWithdrawalSignerRollsBackNonce"
+ ],
+ "tests_failed": [],
+ "observations": {
+  "role_builder_approved": {
+   "name": "role_builder_approved",
+   "ok": true,
+   "selector": 0,
+   "reads": 39,
+   "writes": 6,
+   "approved": true,
+   "slot39_read_bits": 0,
+   "slot39_write_bits": 0,
+   "credited_value": 0,
+   "shared_counter": 0,
+   "registry_accesses": 0
+  },
+  "role_builder_id7": {
+   "name": "role_builder_id7",
+   "ok": true,
+   "selector": 0,
+   "reads": 39,
+   "writes": 6,
+   "approved": false,
+   "slot39_read_bits": 0,
+   "slot39_write_bits": 0,
+   "credited_value": 0,
+   "shared_counter": 0,
+   "registry_accesses": 0
+  },
+  "role_builder_loss": {
+   "name": "role_builder_loss",
+   "ok": true,
+   "selector": 0,
+   "reads": 35,
+   "writes": 4,
+   "approved": true,
+   "slot39_read_bits": 0,
+   "slot39_write_bits": 0,
+   "credited_value": 0,
+   "shared_counter": 0,
+   "registry_accesses": 0
+  },
+  "role_builder_plain": {
+   "name": "role_builder_plain",
+   "ok": true,
+   "selector": 0,
+   "reads": 39,
+   "writes": 6,
+   "approved": false,
+   "slot39_read_bits": 0,
+   "slot39_write_bits": 0,
+   "credited_value": 0,
+   "shared_counter": 0,
+   "registry_accesses": 0
+  },
+  "role_builder_trailing": {
+   "name": "role_builder_trailing",
+   "ok": true,
+   "selector": 0,
+   "reads": 39,
+   "writes": 6,
+   "approved": false,
+   "slot39_read_bits": 0,
+   "slot39_write_bits": 0,
+   "credited_value": 0,
+   "shared_counter": 0,
+   "registry_accesses": 0
+  },
+  "role_global_pause_gates": {
+   "name": "role_global_pause_gates",
+   "close_ok": true,
+   "close_selector": 0,
+   "close_writes": 6,
+   "close_flags_after": 0,
+   "liquidate_batch_ok": true,
+   "liquidate_batch_selector": 0
+  },
+  "role_global_pause_open": {
+   "name": "role_global_pause_open",
+   "flag0_ok": true,
+   "flag0_selector": 0,
+   "flag1_ok": false,
+   "flag1_selector": 45642918
+  },
+  "role_keeper_cap_effect": {
+   "name": "role_keeper_cap_effect",
+   "live_1e20": 1090068803,
+   "live_1e22": 1090068803,
+   "live_1e24": 1413115408,
+   "maxed_1e20": 0,
+   "maxed_1e22": 0,
+   "maxed_1e24": 1413115408
+  },
+  "role_keeper_flag_gates": {
+   "name": "role_keeper_flag_gates",
+   "flip_ok": true,
+   "flag_word_before": "2",
+   "flag_byte_after": 0,
+   "active_before": 1,
+   "close_ok": true,
+   "close_selector": 0,
+   "close_reads": 39,
+   "close_writes": 6,
+   "active_after": 0
+  },
+  "role_keeper_liquidation": {
+   "name": "role_keeper_liquidation",
+   "healthy_ok": true,
+   "healthy_selector": 0,
+   "healthy_events": 0,
+   "healthy_active_after": 1,
+   "ill_ok": true,
+   "ill_events": 1,
+   "ill_active_after": 0
+  },
+  "role_keeper_surface": {
+   "name": "role_keeper_surface",
+   "keeper_flag": 0,
+   "keeper_setFeeRates": 818771057,
+   "keeper_close": 3667325110,
+   "keeper_setFeeRates_again": 818771057,
+   "marketKeeper_oiCap": 0,
+   "marketKeeper_slot28": 0,
+   "marketKeeper_instrument": 818771057,
+   "slot24_after": 20000000000000000,
+   "slot28_after": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+  },
+  "role_pause_surface": {
+   "name": "role_pause_surface",
+   "keeper_global_pause": 1226416054,
+   "marketKeeper_global_pause": 1226416054,
+   "outsider_global_pause": 1226416054,
+   "guardian_global_pause": 0,
+   "guardian_set_pause_byte": 1,
+   "guardian_global_resume": 1226416054,
+   "owner_global_resume": 0,
+   "keeper_market_pause": 1226416054,
+   "marketKeeper_market_pause": 1226416054
+  },
+  "role_relayer_batch": {
+   "name": "role_relayer_batch",
+   "dup_first_ok": true,
+   "dup_second_sel": 1969654014,
+   "dup_second_ok": false,
+   "wrongids_first_ok": false,
+   "wrongids_first_sel": 3305398050,
+   "wrongids_second_ok": true,
+   "retarget_first_sel": 3305398050,
+   "retarget_second_ok": true
+  },
+  "role_relayer_order": {
+   "name": "role_relayer_order",
+   "order12_price_a": 150,
+   "order12_price_b": 150,
+   "order21_price_b": 150,
+   "order21_price_a": 150
+  },
+  "role_relayer_withdraw": {
+   "name": "role_relayer_withdraw",
+   "ok": true,
+   "selector": 0,
+   "recipient_is_signed_user": true,
+   "retarget_selector": 3254943978
+  },
+  "set2_batch_allowlist": {
+   "name": "set2_batch_allowlist",
+   "added_rejected": 9,
+   "allowlisted_close_ok": true,
+   "dropped_rejected": true,
+   "dropped_direct_selector": 0,
+   "slot_88_is_batch": true
+  },
+  "set2_batch_close_debug": {
+   "name": "set2_batch_close_debug",
+   "ok": true,
+   "rejected": false,
+   "executed": true,
+   "inner_ok": true,
+   "inner_selector": 0,
+   "inner_bytes": 0
+  },
+  "set2_builder_claim_a": {
+   "name": "set2_builder_claim_a",
+   "ok": true,
+   "selector": 0,
+   "paid": 5000000000000000000,
+   "entry_a_after": 0,
+   "entry_b_after_a": 7000000000000000000
+  },
+  "set2_builder_claim_others": {
+   "name": "set2_builder_claim_others",
+   "caller_b_ok": true,
+   "caller_b_selector": 0,
+   "entry_b_after_b": 88000000000000000000,
+   "paid_b": 7000000000000000000,
+   "outsider_ok": true,
+   "outsider_selector": 0,
+   "paid_outsider": 0
+  },
+  "set2_builder_close_candidates": {
+   "malformed": "{\"name\":\"set2_builder_close_candidates\",\"ok\":true,\"selector\":0,\"length\":6\"ids_read_bitmap\":,\"ids_read_bitmap\":0,\"ids_write_bitmap\":0,\"read_count\":16,\"write_count\":0}\n",
+   "error": "Expecting ',' delimiter: line 1 column 74 (char 73)"
+  },
+  "set2_builder_close_plain": {
+   "name": "set2_builder_close_plain",
+   "ok": true,
+   "selector": 0,
+   "reads_zero_builder": false,
+   "writes_zero_builder": false,
+   "read_count": 11,
+   "write_count": 0
+  },
+  "set2_builder_close_trailing": {
+   "name": "set2_builder_close_trailing",
+   "a_ok": true,
+   "a_reads_builderA": false,
+   "a_writes_builderA": false,
+   "b_ok": true,
+   "b_selector": 0,
+   "b_reads_builderB": false,
+   "b_reads_builderA": false,
+   "b_writes_builderB": false
+  },
+  "set2_builder_sweep_entry": {
+   "name": "set2_builder_sweep_entry",
+   "outsider_ok": false,
+   "outsider_selector": 818771057,
+   "owner_ok": true,
+   "owner_selector": 0,
+   "entry_a": 0,
+   "entry_b": 12000000000000000000,
+   "shared": 100000000000000000000,
+   "key_bits": 15
+  },
+  "set2_deposit_proxy_surface": {
+   "name": "set2_deposit_proxy_surface",
+   "native_funding": false,
+   "fallback": false,
+   "outsider_sweep": false,
+   "outsider_rescue": false,
+   "user_rescue_no_code": true
+  },
+  "set2_finalize_controls": {
+   "name": "set2_finalize_controls",
+   "unchanged_selector": 0,
+   "below_minimum_selector": 0,
+   "no_pending_selector": 159688215,
+   "same_block_selector": 3530554059
+  },
+  "set2_finalize_controls_below": {
+   "name": "set2_finalize_controls_below",
+   "ok": true,
+   "selector": 0,
+   "bytes": 0,
+   "stored_spot": 0,
+   "stored_block": 0,
+   "writer_bytes": 196
+  },
+  "set2_finalize_controls_debug": {
+   "name": "set2_finalize_controls_debug",
+   "unchanged_ok": true,
+   "unchanged_selector": 0,
+   "unchanged_bytes": 0
+  },
+  "set2_finalize_credit": {
+   "name": "set2_finalize_credit",
+   "one_unit_left": 1000000000000000000,
+   "half_left": 1000000000000000000,
+   "stored_snapshot": 1000000000000000000
+  },
+  "set2_keeper": {
+   "name": "set2_keeper",
+   "written_slots": 1,
+   "first_written_slot": 89,
+   "close_selector": 3667325110,
+   "open_selector": 3667325110,
+   "withdraw_selector": 3254943978
+  },
+  "set2_nonce_per_user": {
+   "name": "set2_nonce_per_user",
+   "other_user_selector": 3305398050
+  },
+  "set2_nonce_shared": {
+   "name": "set2_nonce_shared",
+   "open_selector": 1969654014,
+   "withdraw_selector": 1969654014,
+   "register_selector": 1969654014,
+   "adjacent_word_accepted": true,
+   "close_selector": 0
+  },
+  "set2_open_post_signer": {
+   "name": "set2_open_post_signer",
+   "ok": false,
+   "selector": 172972551
+  },
+  "set2_outsider_sweep": {
+   "name": "set2_outsider_sweep",
+   "queued_total": 10000000000,
+   "pending_spot": 10000000000,
+   "below_minimum_selector": 849095439
+  },
+  "set2_recovery_guards": {
+   "name": "set2_recovery_guards",
+   "outsider_selector": 818771057,
+   "owner_selector": 686768916,
+   "clear_returndata_bytes": 0
+  },
+  "set2_registration": {
+   "name": "set2_registration",
+   "expiry_stored": 1792364541,
+   "nonce_bit": 4398046511104,
+   "outsider_selector": 2478279816,
+   "session_key_signature_selector": 2343196575
+  },
+  "set2_retry_reserve": {
+   "name": "set2_retry_reserve",
+   "stored_spot": 9900000000,
+   "queued_total": 9900000000,
+   "observed_balance": 10000000000
+  },
+  "set2_session_lifecycle": {
+   "name": "set2_session_lifecycle",
+   "expiry_at_timestamp_ok": true,
+   "expiry_at_timestamp_selector": 0,
+   "associated_set_key_ok": true,
+   "associated_set_key_selector": 0,
+   "associated_signer_ok": false,
+   "associated_signer_selector": 3305398050,
+   "associated_address": 1402402230564801881840782179186293279750436966564
+  },
+  "set2_sweep_builder_bits": {
+   "name": "set2_sweep_builder_bits",
+   "sweep_pending": 0,
+   "sweep_fresh": 0,
+   "request": 0,
+   "finalize": 0,
+   "layout": "bit0 failed, bits1..8 are (read,write) of seeded builderFees entries for USER, address(0), a, proxy"
+  },
+  "set2_withdrawal_gap": {
+   "name": "set2_withdrawal_gap",
+   "status_false_debit": 3000000000000000000,
+   "status_false_core_amount": 200000000,
+   "status_false_outsider_debit": 3000000000000000000,
+   "status_true_debit": 2000000000000000000
+  }
+ },
+ "source_sha256": "875e1e30afbf79637b7691dda2977289dcd7816b326adeafc3cf68b966e8bcfb",
+ "runtimes": {
+  "Library2": "ced8e434ebd5379c4acc1fba809a5b18f531c676a264308c9a0a1a76d9641440",
+  "ExchangeImpl2": "fc7374f3969381160732fe98c5e3145e00c3f167f168d61d65bb4972e9a6b268",
+  "SessionImpl2": "7df05c33597c04820a314fae015aab01b5566aff53e9bded8446962cfd4ad2c9",
+  "BuilderRegistry": "f459de55cb0463912417650fbca7e18109f3820551e4071234109e1e72801d2f"
+ },
+ "tail": " ^^^^^^^^^^^^^\n\nWarning (2072): Unused local variable.\n    --> test/Live2Intents.t.sol:1099:20:\n     |\n1099 |         (bool okB, bytes memory outB) =\n     |                    ^^^^^^^^^^^^^^^^^\n\nWarning (2072): Unused local variable.\n    --> test/Live2Intents.t.sol:1230:9:\n     |\n1230 |         address a = vm.addr(0xaa11);\n     |         ^^^^^^^^^\n\nWarning (2072): Unused local variable.\n    --> test/Live2Intents.t.sol:1516:10:\n     |\n1516 |         (bytes32[] memory closeReads, bytes32[] memory closeWrites) = vm.accesses(EXCHANGE);\n     |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nWarning (5667): Unused function parameter. Remove or comment out the variable name to silence this warning.\n    --> test/Live2Intents.t.sol:1610:74:\n     |\n1610 |     function closePayload(uint256 id, uint64 deadline, bytes memory sig, bytes32 idsHash, uint256 nonce)\n     |                                                                          ^^^^^^^^^^^^^^^\n\nWarning (2072): Unused local variable.\n    --> test/Live2Intents.t.sol:1668:21:\n     |\n1668 |         (bool dup1, uint256 dup1sel, bool dup2, uint256 dup2sel) = runTwo(payloadA, payloadA);\n     |                     ^^^^^^^^^^^^^^^\n\nWarning (2072): Unused local variable.\n    --> test/Live2Intents.t.sol:1672:43:\n     |\n1672 |         (bool w1, uint256 w1sel, bool w2, uint256 w2sel) = runTwo(wrong, payloadB);\n     |                                           ^^^^^^^^^^^^^\n\nWarning (2072): Unused local variable.\n    --> test/Live2Intents.t.sol:1678:10:\n     |\n1678 |         (bool rt1, uint256 rt1sel, bool rt2, uint256 rt2sel) = runTwo(retarget, payloadC);\n     |          ^^^^^^^^\n\nWarning (2072): Unused local variable.\n    --> test/Live2Intents.t.sol:1678:46:\n     |\n1678 |         (bool rt1, uint256 rt1sel, bool rt2, uint256 rt2sel) = runTwo(retarget, payloadC);\n     |                                              ^^^^^^^^^^^^^^\n\nWarning (2072): Unused local variable.\n    --> test/Live2Intents.t.sol:1817:20:\n     |\n1817 |         (bool iOk, bytes memory iOut) = EXCHANGE.call(\n     |                    ^^^^^^^^^^^^^^^^^\n\nWarning (2018): Function state mutability can be restricted to pure\n    --> test/Live2Intents.t.sol:1395:5:\n     |\n1395 |     function builderCandidates(uint256 id) internal returns (address[14] memory c) {\n     |     ^ (Relevant source part starts here and spans across multiple lines).\n\n\nRan 59 tests for test/Live2Intents.t.sol:Live2IntentsTest\n[PASS] testBadCloseSignatureRollsBackNonce() (gas: 130147)\n[PASS] testBadOpenSignatureRollsBackNonce() (gas: 131328)\n[PASS] testBadSignatureRollsBackNonce() (gas: 221325)\n[PASS] testCloseBatchCallerDependsOnSlot88() (gas: 157005)\n[PASS] testDeadlineAtTimestampReachesSignatureCheck() (gas: 111785)\n[PASS] testExpiredCloseDeadlineLeavesNonceUnused() (gas: 61877)\n[PASS] testExpiredDeadlineLeavesNonceUnused() (gas: 62003)\n[PASS] testExpiredOpenDeadlineLeavesNonceUnused() (gas: 63573)\n[PASS] testFourPositionCloseDigestAcceptsSessionSigner() (gas: 240123)\n[PASS] testFourthCloseIdMutationRejectsSessionSignature() (gas: 145913)\n[PASS] testOutsiderCloseRejectedBeforeNonce() (gas: 56458)\n[PASS] testOutsiderOpenRejectedBeforeNonce() (gas: 57803)\n[PASS] testOutsiderWithdrawalReachesSignatureCheck() (gas: 121390)\n[PASS] testReusedCloseNonceRejected() (gas: 144030)\n[PASS] testReusedNonceRejected() (gas: 142637)\n[PASS] testReusedOpenNonceRejected() (gas: 145066)\n[PASS] testRoleBuilderApprovedCandidates() (gas: 831297)\n[PASS] testRoleBuilderKeyFeePayingClose() (gas: 779905)\n[PASS] testRoleBuilderKeyOtherPositionId() (gas: 778871)\n[PASS] testRoleBuilderLossClose() (gas: 782615)\n[PASS] testRoleBuilderTrailingWord() (gas: 780501)\n[PASS] testRoleGlobalPauseGates() (gas: 418563)\n[PASS] testRoleGlobalPauseOpenGate() (gas: 517597)\n[PASS] testRoleKeeperCapEffect() (gas: 1232817)\n[PASS] testRoleKeeperFlagGates() (gas: 433381)\n[PASS] testRoleKeeperLiquidationBoundary() (gas: 336562)\n[PASS] testRoleKeeperSurface() (gas: 439202)\n[PASS] testRolePauseSurface() (gas: 451340)\n[PASS] testRoleRelayerBatch() (gas: 1394763)\n[PASS] testRoleRelayerOrder() (gas: 825658)\n[PASS] testRoleRelayerWithdrawRecipient() (gas: 786919)\n[PASS] testSet2BatchAllowlistAgainstAddedSelectors() (gas: 944845)\n[PASS] testSet2ClaimBuilderFeesScope() (gas: 327297)\n[PASS] testSet2CloseBuilderWordCandidates() (gas: 303466)\n[PASS] testSet2CloseBuilderWordIsNotSigned() (gas: 477232)\n[PASS] testSet2DepositProxySurface() (gas: 215024)\n[PASS] testSet2FinalizeControls() (gas: 687954)\n[PASS] testSet2FinalizeCreditsTheStoredSnapshot() (gas: 482792)\n[PASS] testSet2KeeperIsNotASignedIntentCaller() (gas: 302133)\n[PASS] testSet2NonceBitmapSharedAcrossIntentClasses() (gas: 434283)\n[PASS] testSet2NonceIsPerUser() (gas: 207154)\n[PASS] testSet2OutsiderDrivesVictimSweep() (gas: 812211)\n[PASS] testSet2OwnerBuilderSweepEntry() (gas: 194480)\n[PASS] testSet2RecoveryGuards() (gas: 128669)\n[PASS] testSet2RegistrationByBatchExecutor() (gas: 281633)\n[PASS] testSet2RetryReservesOneUsdc() (gas: 582428)\n[PASS] testSet2SessionKeyLifecycleAndAssociatedAddress() (gas: 711204)\n[PASS] testSet2SweepFamilyBuilderReads() (gas: 911379)\n[PASS] testSet2WithdrawalExtraUnitWhenStatusFalse() (gas: 649261)\n[PASS] testSignedAmountMismatchRollsBack() (gas: 141095)\n[PASS] testSignedDeadlineMismatchRollsBack() (gas: 142068)\n[PASS] testSignedNonceMismatchRollsBack() (gas: 141989)\n[PASS] testSignedUserMismatchRollsBack() (gas: 141052)\n[PASS] testValidOpenSignatureReachesPostSignerRevert() (gas: 206398)\n[PASS] testValidSignatureAllowsOutsiderRelayer() (gas: 335016)\n[PASS] testValidWithdrawalPersistsNonceAndDebits() (gas: 358034)\n[PASS] testValidWithdrawalReplayRejectedNextBlock() (gas: 377922)\n[PASS] testWrongDomainWithdrawalSignatureRollsBack() (gas: 141526)\n[PASS] testWrongValidWithdrawalSignerRollsBackNonce() (gas: 142718)\nSuite result: ok. 59 passed; 0 failed; 0 skipped; finished in 81.77ms (375.43ms CPU time)\n\nRan 1 test suite in 119.05ms (81.77ms CPU time): 59 tests passed, 0 failed, 0 skipped (59 total tests)\n\n"
+}

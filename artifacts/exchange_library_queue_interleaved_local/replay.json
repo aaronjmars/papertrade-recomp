@@ -1,0 +1,84 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "runtime_hashes": {
+    "Proxy": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "Implementation": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+    "Library": "622ed31d6eeea7efb834d32e4f2199b718af1ece2280f4d22cdd1f8769aa4fe2"
+  },
+  "setup": "Pinned library enqueue selector 0x18958ce2 builds nodes 101-103 through a temporary delegatecall shim at the proxy address; the pinned proxy runtime is restored before merge and harvest.",
+  "test_names": [
+    "testQueueInterleavedContiguousReverseControl",
+    "testQueueInterleavedForwardHarvestOne",
+    "testQueueInterleavedForwardHarvestThree",
+    "testQueueInterleavedForwardHarvestTwo",
+    "testQueueInterleavedReverseLimitOne",
+    "testQueueInterleavedReverseLimitThree",
+    "testQueueInterleavedReverseLimitTwo"
+  ],
+  "forge_result": "7 passed, 0 failed",
+  "test_source_sha256": "7ff26ad6500df5a8978dd19b613c8c072e9356f79931c1651a008d3737aa3861",
+  "cases": [
+    {
+      "test": "testQueueInterleavedForwardHarvestOne",
+      "merge": "forward_success",
+      "harvest_limit": 1,
+      "paid_A": 0,
+      "paid_B": 0,
+      "global_head": 102
+    },
+    {
+      "test": "testQueueInterleavedForwardHarvestTwo",
+      "merge": "forward_success",
+      "harvest_limit": 2,
+      "paid_A": 0,
+      "paid_B": 700,
+      "global_head": 103
+    },
+    {
+      "test": "testQueueInterleavedForwardHarvestThree",
+      "merge": "forward_success",
+      "harvest_limit": 3,
+      "paid_A": 1400,
+      "paid_B": 700,
+      "global_head": 104
+    },
+    {
+      "test": "testQueueInterleavedReverseLimitOne",
+      "merge": "reverse_revert",
+      "merge_limit": 1,
+      "error_selector": "0x5b6d2b7a"
+    },
+    {
+      "test": "testQueueInterleavedReverseLimitTwo",
+      "merge": "reverse_revert",
+      "merge_limit": 2,
+      "error_selector": "0x5b6d2b7a"
+    },
+    {
+      "test": "testQueueInterleavedReverseLimitThree",
+      "merge": "reverse_revert",
+      "merge_limit": 3,
+      "error_selector": "0x5b6d2b7a"
+    },
+    {
+      "test": "testQueueInterleavedContiguousReverseControl",
+      "merge": "reverse_success",
+      "node_order": [
+        "A",
+        "A",
+        "B"
+      ],
+      "returned": [
+        1,
+        700,
+        101
+      ]
+    }
+  ],
+  "limits": [
+    "Synthetic two-user interleaving is reachable through the pinned library but was not observed on chain at the pin.",
+    "The reverse rejection is supported by exact runtime and storage reads; the original source-level precondition is unknown.",
+    "More than three queue nodes, partial funding, and interleaved users with other orderings remain open."
+  ]
+}

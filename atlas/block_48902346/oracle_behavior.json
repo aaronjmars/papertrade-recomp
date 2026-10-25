@@ -1,0 +1,273 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "oracle_proxy": "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e",
+  "implementation": "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a",
+  "owner": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+  "initial_owner": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+  "slot0": "0x00000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f0001",
+  "owner_field_bits": [
+    16,
+    175
+  ],
+  "initialized_low_byte": 1,
+  "selector_reconstructions": {
+    "0x2af78bd1": "getOraclePrice(uint32)",
+    "0x766cd255": "getPriceSnapshot(uint32)",
+    "0x8da5cb5b": "owner()",
+    "0xa066fae9": "getMarkPrice(uint32)",
+    "0xc4d66de8": "initialize(address)",
+    "0xf2fde38b": "transferOwnership(address)",
+    "0xfb466481": "getBBO(uint32)"
+  },
+  "unresolved_selector_semantics": {
+    "0xc0182669": "uint32 asset -> validated BBO midpoint uint64, floor((bid+ask)/2)",
+    "0xa7f06462": "uint32[] assets -> five-word price snapshot array"
+  },
+  "precompile_paths": {
+    "getOraclePrice": "0x0000000000000000000000000000000000000807",
+    "getMarkPrice": "0x0000000000000000000000000000000000000806",
+    "getBBO": "0x000000000000000000000000000000000000080e"
+  },
+  "snapshot_fields": [
+    "oracle",
+    "mark",
+    "bid",
+    "ask",
+    "max(ask-bid,0)"
+  ],
+  "snapshot_probe_outputs": {
+    "snapshot_good": [
+      150,
+      155,
+      100,
+      200,
+      100
+    ],
+    "snapshot_narrow": [
+      125,
+      75,
+      20,
+      30,
+      10
+    ],
+    "snapshot_crossed": [
+      150,
+      155,
+      200,
+      100,
+      0
+    ],
+    "snapshot_zero_bbo": [
+      150,
+      155,
+      0,
+      0,
+      0
+    ],
+    "snapshots_empty": [
+      32,
+      0
+    ],
+    "snapshots_two": [
+      32,
+      2,
+      150,
+      155,
+      100,
+      200,
+      100,
+      150,
+      155,
+      100,
+      200,
+      100
+    ]
+  },
+  "historical_midpoint_count": 20,
+  "historical_midpoints": [
+    {
+      "tx": "0x18da697c130733e097aac9bba5457949c1aa2f275fe1b292538d873c4cab1cd7",
+      "asset": 0,
+      "bid": 808450,
+      "ask": 808460,
+      "midpoint": 808455
+    },
+    {
+      "tx": "0x18da697c130733e097aac9bba5457949c1aa2f275fe1b292538d873c4cab1cd7",
+      "asset": 0,
+      "bid": 808450,
+      "ask": 808460,
+      "midpoint": 808455
+    },
+    {
+      "tx": "0x18da697c130733e097aac9bba5457949c1aa2f275fe1b292538d873c4cab1cd7",
+      "asset": 1,
+      "bid": 234450,
+      "ask": 234460,
+      "midpoint": 234455
+    },
+    {
+      "tx": "0x1fc54a082055d35c0b79b6fc5f6c2a7004840531f5bcb9b6ec4450a93be2384f",
+      "asset": 1,
+      "bid": 249820,
+      "ask": 249830,
+      "midpoint": 249825
+    },
+    {
+      "tx": "0x20ee69d9f4191bff17d45a850a584d5803ca477986fd1684af985765d64d794b",
+      "asset": 1,
+      "bid": 249820,
+      "ask": 249830,
+      "midpoint": 249825
+    },
+    {
+      "tx": "0x30639f82f9eb58fc815fb48b302ea732eed1bff5e755a92835b0b1f97c818acf",
+      "asset": 0,
+      "bid": 809140,
+      "ask": 809150,
+      "midpoint": 809145
+    },
+    {
+      "tx": "0x34b7ae5b487e74118446994402ec8f4651a1414ad1de75dcfe1f8267cc9854b9",
+      "asset": 1,
+      "bid": 235010,
+      "ask": 235020,
+      "midpoint": 235015
+    },
+    {
+      "tx": "0x3bc7029ee0d72c5dbacfb74dddc183ddb6206adca6ed702014eb90c28cf2d39e",
+      "asset": 1,
+      "bid": 249820,
+      "ask": 249830,
+      "midpoint": 249825
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "asset": 0,
+      "bid": 809140,
+      "ask": 809150,
+      "midpoint": 809145
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "asset": 0,
+      "bid": 809140,
+      "ask": 809150,
+      "midpoint": 809145
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "asset": 0,
+      "bid": 809140,
+      "ask": 809150,
+      "midpoint": 809145
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "asset": 0,
+      "bid": 809140,
+      "ask": 809150,
+      "midpoint": 809145
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "asset": 0,
+      "bid": 809140,
+      "ask": 809150,
+      "midpoint": 809145
+    },
+    {
+      "tx": "0x7214a0b5c029bb2982a3c1a00641715674d27ddd304977a8503b3b697cb3d539",
+      "asset": 1,
+      "bid": 234920,
+      "ask": 234940,
+      "midpoint": 234930
+    },
+    {
+      "tx": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+      "asset": 0,
+      "bid": 808450,
+      "ask": 808460,
+      "midpoint": 808455
+    },
+    {
+      "tx": "0xb1eb49f49a19b7a786773e4be3b4fc20f201b53a8e98bac16b77902a9b0b1cd5",
+      "asset": 0,
+      "bid": 808450,
+      "ask": 808460,
+      "midpoint": 808455
+    },
+    {
+      "tx": "0xc7ba4aaf1bdda8e24c2c8a228e315f39a879e7c9c87786eb260fa07c09b99940",
+      "asset": 1,
+      "bid": 249820,
+      "ask": 249830,
+      "midpoint": 249825
+    },
+    {
+      "tx": "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d",
+      "asset": 0,
+      "bid": 808450,
+      "ask": 808460,
+      "midpoint": 808455
+    },
+    {
+      "tx": "0xe3a26c590c7b0be9e26e25b2e8fdf797be800b92131c229b5148c7405f69e33d",
+      "asset": 0,
+      "bid": 808450,
+      "ask": 808460,
+      "midpoint": 808455
+    },
+    {
+      "tx": "0xfd38402f39c844a944aa8a9aa8b3b7d89fb45a101593273b17b14a2f8b0fdc04",
+      "asset": 0,
+      "bid": 808450,
+      "ask": 808460,
+      "midpoint": 808455
+    }
+  ],
+  "creation_tx": "0x9b66014c5dfeb4d4fe9bd45bbc681f8628edbbbd8a3a2dbe19d155ed5de63f9d",
+  "historical_owner_transfer_tx": "0xac56a54f03ee74fcdefca55f69a680f39856c5f5730fc1045fd591aa68e8a290",
+  "event_catalog": [
+    {
+      "topic0": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+      "reconstructed_signature": "OwnerUpdated(address)",
+      "indexed_fields": [
+        "newOwner"
+      ],
+      "data_fields": [],
+      "status": "observed_historical"
+    }
+  ],
+  "simulated_error_catalog": [
+    {
+      "selector": "0x0dc149f0",
+      "reconstructed_signature": "AlreadyInitialized()",
+      "probe_paths": [
+        "initialize_proxy_current"
+      ],
+      "public_signature_candidates": [
+        "AlreadyInitialized()"
+      ]
+    },
+    {
+      "selector": "0x30cd7471",
+      "reconstructed_signature": null,
+      "probe_paths": [
+        "transfer_owner_outsider"
+      ],
+      "public_signature_candidates": []
+    }
+  ],
+  "pinned_probe_count": 20,
+  "local_replay_count": 25,
+  "local_replay_source": "archive-backed Anvil fork; baseline slot 0 checked against pinned archive capture",
+  "fork_comparison": "oracle_fork_comparison.json",
+  "limitations": [
+    "The archive RPC does not reproduce historical HyperCore read precompile output in debug_traceCall.",
+    "Local Anvil uses mock precompile code on the pinned EVM fork; these branches are simulations.",
+    "Historical trading transactions independently verify the BBO midpoint path only.",
+    "Exact source names for selectors 0xc0182669 and 0xa7f06462 remain unknown."
+  ]
+}

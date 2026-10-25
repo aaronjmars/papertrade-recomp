@@ -1,0 +1,346 @@
+{
+  "pin_block": 48902346,
+  "pin_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "raw_evidence": "../../artifacts/exchange_liquidation/invalid_prices.json",
+  "case_count": 18,
+  "invalid_case_count": 16,
+  "runtime_sha256": {
+    "0x6cd5661646289fb6e65ea5c032310fded797d0a2": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+    "0xa9b4c7b7ca5835652d81e25739c870d49f39cc2e": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "0x3997ffc8cbd281d4fc8d0548e505ae2fbbbd985a": "8e452a76ac1b28c05d220451d837c3758bd41180526940752f89047bc0dd22ed",
+    "0x75174549dbbd44497d31a47e2e2d7406408d63d9": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f": "ed9d18151a9365c347ac7a9da7e83b53ecedac235d9e67c4b2699503a6bd4a97",
+    "0xe40f17915daa230324030003a197cdaef2261c0e": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "0x433bd418ec92818a960585f4d5fae563e735bb4a": "f77b91537421a0092f1c068f85af316caf7fd8d8461e8b0305022ee6f5f0faae",
+    "0xe991817199363046da0a28da6fbad0284e4aa492": "8f1de6ca76cfd6f0186e9f4472dd53fab6dfa1a53a7c3a2a3700d641fec7c5da"
+  },
+  "watched_slots": {
+    "0x000000000000000000000000000000000000000000000000000000000000000e": "treasury",
+    "0x0000000000000000000000000000000000000000000000000000000000000012": "total_queued",
+    "0x0000000000000000000000000000000000000000000000000000000000000016": "total_balances_and_locked_margin",
+    "0x0000000000000000000000000000000000000000000000000000000000000019": "liquidation_fee_rate",
+    "0x000000000000000000000000000000000000000000000000000000000000001a": "staker_and_dev_fees",
+    "0x20fbbd790718f575ee2f828a3b0052c58354260e5f19b5cf02be22a5e604c3aa": "position_1394473_word_0",
+    "0x20fbbd790718f575ee2f828a3b0052c58354260e5f19b5cf02be22a5e604c3ab": "position_1394473_flags",
+    "0x37a7cf4208e71d0e3bcc356116ff9d0436609b2cd380019d5adb4ccf576490af": "user_1394473_balance",
+    "0x583b4039ff40342b1b8f768e02c7dc3be942b56e9ae422450116517e6e899308": "position_1394058_word_0",
+    "0x583b4039ff40342b1b8f768e02c7dc3be942b56e9ae422450116517e6e899309": "position_1394058_flags",
+    "0xd59f55435d8d5cef713cf5b98773b523bb6832028ea744e70d4762c08cd984f4": "user_1394058_balance"
+  },
+  "cases": [
+    {
+      "name": "single_valid",
+      "entrypoint": "single",
+      "requested_ids": [
+        1394473
+      ],
+      "oracle_assets_read": [
+        0
+      ],
+      "settlement_calls_before_result": 1,
+      "revert_reason": null,
+      "receipt_status": "0x1",
+      "committed_log_count": 3,
+      "storage_change_contracts": [
+        "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "0xe40f17915daa230324030003a197cdaef2261c0e"
+      ],
+      "watched_exchange_slots_unchanged": false
+    },
+    {
+      "name": "batch_valid_two_assets",
+      "entrypoint": "batch",
+      "requested_ids": [
+        1394473,
+        1394058
+      ],
+      "oracle_assets_read": [
+        0,
+        1
+      ],
+      "settlement_calls_before_result": 2,
+      "revert_reason": null,
+      "receipt_status": "0x1",
+      "committed_log_count": 7,
+      "storage_change_contracts": [
+        "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+        "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+        "0xe40f17915daa230324030003a197cdaef2261c0e"
+      ],
+      "watched_exchange_slots_unchanged": false
+    },
+    {
+      "name": "single_missing",
+      "entrypoint": "single",
+      "requested_ids": [
+        1394473
+      ],
+      "oracle_assets_read": [
+        0
+      ],
+      "settlement_calls_before_result": 0,
+      "revert_reason": "BBO read failed",
+      "receipt_status": "0x0",
+      "committed_log_count": 0,
+      "storage_change_contracts": [],
+      "watched_exchange_slots_unchanged": true
+    },
+    {
+      "name": "single_reverted",
+      "entrypoint": "single",
+      "requested_ids": [
+        1394473
+      ],
+      "oracle_assets_read": [
+        0
+      ],
+      "settlement_calls_before_result": 0,
+      "revert_reason": "BBO read failed",
+      "receipt_status": "0x0",
+      "committed_log_count": 0,
+      "storage_change_contracts": [],
+      "watched_exchange_slots_unchanged": true
+    },
+    {
+      "name": "single_zero",
+      "entrypoint": "single",
+      "requested_ids": [
+        1394473
+      ],
+      "oracle_assets_read": [
+        0
+      ],
+      "settlement_calls_before_result": 0,
+      "revert_reason": "BBO unavailable",
+      "receipt_status": "0x0",
+      "committed_log_count": 0,
+      "storage_change_contracts": [],
+      "watched_exchange_slots_unchanged": true
+    },
+    {
+      "name": "single_zero_bid",
+      "entrypoint": "single",
+      "requested_ids": [
+        1394473
+      ],
+      "oracle_assets_read": [
+        0
+      ],
+      "settlement_calls_before_result": 0,
+      "revert_reason": "BBO unavailable",
+      "receipt_status": "0x0",
+      "committed_log_count": 0,
+      "storage_change_contracts": [],
+      "watched_exchange_slots_unchanged": true
+    },
+    {
+      "name": "single_zero_ask",
+      "entrypoint": "single",
+      "requested_ids": [
+        1394473
+      ],
+      "oracle_assets_read": [
+        0
+      ],
+      "settlement_calls_before_result": 0,
+      "revert_reason": "BBO unavailable",
+      "receipt_status": "0x0",
+      "committed_log_count": 0,
+      "storage_change_contracts": [],
+      "watched_exchange_slots_unchanged": true
+    },
+    {
+      "name": "single_crossed",
+      "entrypoint": "single",
+      "requested_ids": [
+        1394473
+      ],
+      "oracle_assets_read": [
+        0
+      ],
+      "settlement_calls_before_result": 0,
+      "revert_reason": "BBO crossed",
+      "receipt_status": "0x0",
+      "committed_log_count": 0,
+      "storage_change_contracts": [],
+      "watched_exchange_slots_unchanged": true
+    },
+    {
+      "name": "batch_missing",
+      "entrypoint": "batch",
+      "requested_ids": [
+        1394473
+      ],
+      "oracle_assets_read": [
+        0
+      ],
+      "settlement_calls_before_result": 0,
+      "revert_reason": "BBO read failed",
+      "receipt_status": "0x0",
+      "committed_log_count": 0,
+      "storage_change_contracts": [],
+      "watched_exchange_slots_unchanged": true
+    },
+    {
+      "name": "batch_reverted",
+      "entrypoint": "batch",
+      "requested_ids": [
+        1394473
+      ],
+      "oracle_assets_read": [
+        0
+      ],
+      "settlement_calls_before_result": 0,
+      "revert_reason": "BBO read failed",
+      "receipt_status": "0x0",
+      "committed_log_count": 0,
+      "storage_change_contracts": [],
+      "watched_exchange_slots_unchanged": true
+    },
+    {
+      "name": "batch_zero",
+      "entrypoint": "batch",
+      "requested_ids": [
+        1394473
+      ],
+      "oracle_assets_read": [
+        0
+      ],
+      "settlement_calls_before_result": 0,
+      "revert_reason": "BBO unavailable",
+      "receipt_status": "0x0",
+      "committed_log_count": 0,
+      "storage_change_contracts": [],
+      "watched_exchange_slots_unchanged": true
+    },
+    {
+      "name": "batch_crossed",
+      "entrypoint": "batch",
+      "requested_ids": [
+        1394473
+      ],
+      "oracle_assets_read": [
+        0
+      ],
+      "settlement_calls_before_result": 0,
+      "revert_reason": "BBO crossed",
+      "receipt_status": "0x0",
+      "committed_log_count": 0,
+      "storage_change_contracts": [],
+      "watched_exchange_slots_unchanged": true
+    },
+    {
+      "name": "mixed_good_then_missing",
+      "entrypoint": "batch",
+      "requested_ids": [
+        1394473,
+        1394058
+      ],
+      "oracle_assets_read": [
+        0,
+        1
+      ],
+      "settlement_calls_before_result": 1,
+      "revert_reason": "BBO read failed",
+      "receipt_status": "0x0",
+      "committed_log_count": 0,
+      "storage_change_contracts": [],
+      "watched_exchange_slots_unchanged": true
+    },
+    {
+      "name": "mixed_good_then_zero",
+      "entrypoint": "batch",
+      "requested_ids": [
+        1394473,
+        1394058
+      ],
+      "oracle_assets_read": [
+        0,
+        1
+      ],
+      "settlement_calls_before_result": 1,
+      "revert_reason": "BBO unavailable",
+      "receipt_status": "0x0",
+      "committed_log_count": 0,
+      "storage_change_contracts": [],
+      "watched_exchange_slots_unchanged": true
+    },
+    {
+      "name": "mixed_good_then_crossed",
+      "entrypoint": "batch",
+      "requested_ids": [
+        1394473,
+        1394058
+      ],
+      "oracle_assets_read": [
+        0,
+        1
+      ],
+      "settlement_calls_before_result": 1,
+      "revert_reason": "BBO crossed",
+      "receipt_status": "0x0",
+      "committed_log_count": 0,
+      "storage_change_contracts": [],
+      "watched_exchange_slots_unchanged": true
+    },
+    {
+      "name": "mixed_missing_then_good",
+      "entrypoint": "batch",
+      "requested_ids": [
+        1394058,
+        1394473
+      ],
+      "oracle_assets_read": [
+        1
+      ],
+      "settlement_calls_before_result": 0,
+      "revert_reason": "BBO read failed",
+      "receipt_status": "0x0",
+      "committed_log_count": 0,
+      "storage_change_contracts": [],
+      "watched_exchange_slots_unchanged": true
+    },
+    {
+      "name": "mixed_zero_then_good",
+      "entrypoint": "batch",
+      "requested_ids": [
+        1394058,
+        1394473
+      ],
+      "oracle_assets_read": [
+        1
+      ],
+      "settlement_calls_before_result": 0,
+      "revert_reason": "BBO unavailable",
+      "receipt_status": "0x0",
+      "committed_log_count": 0,
+      "storage_change_contracts": [],
+      "watched_exchange_slots_unchanged": true
+    },
+    {
+      "name": "mixed_crossed_then_good",
+      "entrypoint": "batch",
+      "requested_ids": [
+        1394058,
+        1394473
+      ],
+      "oracle_assets_read": [
+        1
+      ],
+      "settlement_calls_before_result": 0,
+      "revert_reason": "BBO crossed",
+      "receipt_status": "0x0",
+      "committed_log_count": 0,
+      "storage_change_contracts": [],
+      "watched_exchange_slots_unchanged": true
+    }
+  ],
+  "limits": [
+    "HyperCore BBO returns are synthetic; the calls are local simulations at the pinned EVM state.",
+    "The mock supplies prices or failures but has no update timestamp. These cases cannot establish data freshness or whether stale yet nonzero prices are rejected.",
+    "Transaction receipts come from the next local block; read-only traces use the exact pinned block.",
+    "Two active positions and six contract runtimes are checked, not every position or upgrade variant."
+  ]
+}

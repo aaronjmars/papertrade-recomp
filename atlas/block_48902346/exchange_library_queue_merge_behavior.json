@@ -1,0 +1,95 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "linked_library": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+  "selectors": {
+    "forward": {
+      "exchange": "0x753a369c",
+      "library": "0x3cf4208d"
+    },
+    "reverse": {
+      "exchange": "0x827ad94c",
+      "library": "0x32db40c9"
+    }
+  },
+  "local_replay": "../../artifacts/exchange_library_queue_merge_local/replay.json",
+  "case_count": 10,
+  "node_ids": [
+    101,
+    102,
+    103
+  ],
+  "tested_amount_pairs": [
+    [
+      500,
+      500
+    ],
+    [
+      300,
+      700
+    ]
+  ],
+  "tested_three_node_amounts": [
+    300,
+    700,
+    1100
+  ],
+  "tested_limits": [
+    1,
+    2,
+    3
+  ],
+  "three_node_limit_boundary": {
+    "needed_merges": 2,
+    "limit_one_revert_selector": "0x5b6d2b7a",
+    "limit_two_or_three_forward_return": [
+      2,
+      1000,
+      103
+    ],
+    "limit_two_or_three_reverse_return": [
+      2,
+      1800,
+      101
+    ]
+  },
+  "forward_result": "move node 101 amount into node 102; clear node 101; user head and tail become 102; return (1,moved,102)",
+  "reverse_result": "move node 102 amount into node 101; clear node 102; user head and tail become 101; return (1,moved,101)",
+  "unchanged_totals": [
+    "global queue total slot 18",
+    "user queued total mapping slot 19"
+  ],
+  "simulated_error_catalog": [
+    {
+      "selector": "0x5b6d2b7a",
+      "probe_paths": [
+        "testQueueMergeThreeForwardLowLimit",
+        "testQueueMergeThreeReverseLowLimit"
+      ],
+      "public_signature_candidates": [],
+      "reconstructed_signature": "",
+      "local_replay_evidence": "../../artifacts/exchange_library_queue_merge_local/replay.json"
+    }
+  ],
+  "event_catalog": [
+    {
+      "topic0": "0xb8c6723c829f797c1498cb75af97462c6cb9f3784fe7c0c47bcd42cf42ca94fb",
+      "status": "local_replay_only",
+      "decoded_layout": "indexed user, source node ID, target node ID; unindexed moved amount",
+      "reconstructed_signature": ""
+    },
+    {
+      "topic0": "0xf949f11686e63f08cadf672fb6db7f7b859cb0fe11f2bf80c57db5429453f0cc",
+      "status": "local_replay_only",
+      "decoded_layout": "indexed user, start node ID, resulting node ID; unindexed merged node count, moved amount",
+      "reconstructed_signature": ""
+    }
+  ],
+  "limits": [
+    "Synthetic two-node and three-node queues for one user, with limits 1, 2, and 3.",
+    "No historical invocation of these wrappers is in the saved call graph.",
+    "Solidity source names, ranges over three nodes, caller permissions, and other argument meanings remain unresolved."
+  ]
+}

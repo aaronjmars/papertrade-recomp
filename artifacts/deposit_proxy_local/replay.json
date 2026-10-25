@@ -1,0 +1,30 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "address": "0xf1c374b6a93ebdd1f1ff0ccd0ebbe8a7ab3840ce",
+  "runtime_sha256": "0c2f88b4bd4a6225e291a27e63601a50355f9f563c27da85d6df17c5431c3ffb",
+  "source_sha256": "0431be4e5a5844f608cda7333849a5ef671d3aab83c11b35276b73c4f20bf339",
+  "test_count": 19,
+  "passed_tests": [
+    "testGetters",
+    "testPerpOnlySweep",
+    "testPerpSweep",
+    "testRescueBoolFalse",
+    "testRescueBoolMalformed",
+    "testRescueBoolTrue",
+    "testRescueNoCode",
+    "testRescueNoReturn",
+    "testRescueShortReturn",
+    "testRescueTokenRevert",
+    "testSpotSweep",
+    "testSweepOverflowMultiply",
+    "testSweepOverflowSum",
+    "testUnauthorizedRescue",
+    "testUnauthorizedSweep",
+    "testWriterRejectsFirstAction",
+    "testWriterRejectsSecondAction",
+    "testZeroRescue",
+    "testZeroSweep"
+  ],
+  "scope": "exact pinned proxy runtime with local mock ERC20 and CoreWriter; no HyperCore settlement"
+}

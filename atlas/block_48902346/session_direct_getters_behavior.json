@@ -1,0 +1,63 @@
+{
+  "pin_block": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "session_proxy": "0x8326eb8896e358717f10502ec73ce8d28e37b108",
+  "implementation": "0x8a5069fe303e8f81e91825436e956d595032e558",
+  "selector_reconstructions": {
+    "0x3644e515": "DOMAIN_SEPARATOR()",
+    "0x78e890ba": "domainSeparatorV4()",
+    "0x7f6e9d4b": "authorizedSubmitters(address)",
+    "0x8da5cb5b": "owner()",
+    "0x97dc97cb": "authorizedCaller()"
+  },
+  "direct_storage": {
+    "1": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+    "2": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "3": "0x0000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a2"
+  },
+  "direct_getters": {
+    "0x3644e515": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+    "0x78e890ba": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+    "0x8da5cb5b": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "0x97dc97cb": "0x0000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a2"
+  },
+  "submitter_samples": [
+    {
+      "address": "0x233ff29b239abc1d7748605da9b205c3e008626e",
+      "slot": "0x8dd2974c144ae85c27d092a2414cda846fa10011ff7e06811ae60fd21fddd35c",
+      "storage_value": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "getter_output": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    },
+    {
+      "address": "0x3333333333333333333333333333333333333333",
+      "slot": "0xa1ebf0776d3d29a5dde99e98737924923536f26a36de07de6309faa00e97f077",
+      "storage_value": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "getter_output": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "domain_formula": "keccak256(EIP712Domain typehash, keccak256(name), keccak256(version), chainId, authorizedCaller)",
+  "domain_overrides": {
+    "replace_slot1": {
+      "slot": 1,
+      "replacement": "0x1111111111111111111111111111111111111111111111111111111111111111",
+      "domain_separator": "0x1111111111111111111111111111111111111111111111111111111111111111",
+      "domain_separator_v4": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77"
+    },
+    "clear_slot3": {
+      "slot": 3,
+      "replacement": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "domain_separator": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+      "domain_separator_v4": "0x8a481a53002379816b6e6242159a09def5a5c71f557f13f2274729fe8c11208a"
+    }
+  },
+  "registration_domain_replay": {
+    "source_tx": "0xe14a79ff975269d0edfe9ac85d84b4f081016f70a55e47727cd084189eb18ac9",
+    "source_block": 48902111,
+    "baseline_succeeded": true,
+    "changed_caller_error": "InvalidSignature()"
+  },
+  "limits": [
+    "The signed registration replay uses the block before its source transaction; other same-block state and changed-caller signature paths remain untested.",
+    "The two typehash constant selector names remain public candidates until their trade struct preimages are independently checked."
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "runtime_hashes": {
+    "ExchangeProxy": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "ExchangeImpl": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+    "SessionProxy": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+    "SessionImpl": "630c02b0c693c47760554a3f0fed68b72db5df601f887d2edaaa3106e6308e63"
+  },
+  "session_direct_slots": {
+    "0": "0x0000000000000000000000000000000000000000000000000000000000000001",
+    "1": "0x53a2ab5a64b3239d36b108fb4cd035ebb40ed3f71dec28e37966622670147e77",
+    "2": "0x000000000000000000000000b915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "3": "0x0000000000000000000000006cd5661646289fb6e65ea5c032310fded797d0a2"
+  },
+  "session_direct_slots_source": "eth_getStorageAt at pinned block",
+  "exchange_batch_caller_slot_88": "0x000000000000000000000000233ff29b239abc1d7748605da9b205c3e008626e",
+  "exchange_batch_caller_slot_88_source": "eth_getStorageAt at pinned block",
+  "exchange_direct_slots_sha256": "122c65632bb47b645428ae95ece2451bc28565c28e4ff993f1a769e3095444c7",
+  "synthetic_user": "0xe05fcc23807536bee418f142d19fa0d21bb0cff7",
+  "synthetic_session_signer": "0x0376aac07ad725e01357b1725b5cec61ae10473c",
+  "synthetic_nonce": 42,
+  "synthetic_signature": "zeroed failure cases plus locally generated ECDSA signatures; no saved user signature exported",
+  "mock_hypercore": "status one; spot balance 10^12 Core raw units; recording CoreWriter",
+  "source_sha256": "7479ce00ff034309e65ed3e5a6a782ebace83ecdbe956ed552768a7981e0d6d9",
+  "forge_result": "26 passed, 0 failed",
+  "test_names": [
+    "testBadCloseSignatureRollsBackNonce",
+    "testBadOpenSignatureRollsBackNonce",
+    "testBadSignatureRollsBackNonce",
+    "testCloseBatchCallerDependsOnSlot88",
+    "testDeadlineAtTimestampReachesSignatureCheck",
+    "testExpiredCloseDeadlineLeavesNonceUnused",
+    "testExpiredDeadlineLeavesNonceUnused",
+    "testExpiredOpenDeadlineLeavesNonceUnused",
+    "testFourPositionCloseDigestAcceptsSessionSigner",
+    "testFourthCloseIdMutationRejectsSessionSignature",
+    "testOutsiderCloseRejectedBeforeNonce",
+    "testOutsiderOpenRejectedBeforeNonce",
+    "testOutsiderWithdrawalReachesSignatureCheck",
+    "testReusedCloseNonceRejected",
+    "testReusedNonceRejected",
+    "testReusedOpenNonceRejected",
+    "testSignedAmountMismatchRollsBack",
+    "testSignedDeadlineMismatchRollsBack",
+    "testSignedNonceMismatchRollsBack",
+    "testSignedUserMismatchRollsBack",
+    "testValidOpenSignatureReachesPostSignerRevert",
+    "testValidSignatureAllowsOutsiderRelayer",
+    "testValidWithdrawalPersistsNonceAndDebits",
+    "testValidWithdrawalReplayRejectedNextBlock",
+    "testWrongDomainWithdrawalSignatureRollsBack",
+    "testWrongValidWithdrawalSignerRollsBackNonce"
+  ],
+  "test_count": 26,
+  "tested_exchange_selectors": {
+    "open": "0xec6783f0",
+    "close": "0x2792e706",
+    "withdrawal": "0x8d09f23f"
+  },
+  "observed_errors": {
+    "invalid_withdrawal_signature": "0xc20280ea",
+    "invalid_open_or_close_session_signer": "0xc5045f22",
+    "expired_deadline": "0xf87d9271",
+    "reused_nonce": "0x756688fe",
+    "unauthorized_open_or_close_caller": "0xda96f0b6"
+  },
+  "observed_nonce_rollback_after_bad_signature": [
+    "open",
+    "close",
+    "withdrawal"
+  ],
+  "wrong_valid_withdrawal_signer_rejected_and_nonce_rolled_back": true,
+  "outsider_signed_withdrawal_reaches_signature_check": true,
+  "close_batch_caller_controlled_by_exchange_slot_88": true,
+  "deadline_equal_to_timestamp_reaches_signature_check": true,
+  "valid_withdrawal_persists_nonce_and_debits_balances": true,
+  "valid_withdrawal_replay_rejected_after_next_block": true,
+  "valid_withdrawal_outsider_relayer_allowed": true,
+  "withdrawal_field_mismatches_rejected": [
+    "user",
+    "amount",
+    "nonce",
+    "deadline",
+    "domain"
+  ],
+  "four_position_close_call_succeeds_with_empty_synthetic_positions": true,
+  "fourth_close_id_mutation_rejected_and_nonce_rolled_back": true,
+  "valid_open_signature_post_signer_error": "0x0a4f5a07"
+}

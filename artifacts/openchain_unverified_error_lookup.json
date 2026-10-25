@@ -1,0 +1,303 @@
+{
+  "url": "https://api.openchain.xyz/signature-database/v1/lookup?function=0x02b874a6%2C0x0576e005%2C0x0984a617%2C0x0a4f5a07%2C0x0a9e0180%2C0x0d240815%2C0x0dc149f0%2C0x1b7f36f3%2C0x1f2a2005%2C0x25a1ddf3%2C0x276f9a65%2C0x28ef4314%2C0x2d016ae6%2C0x30cd7471%2C0x40f92143%2C0x49199fb6%2C0x4f57ffae%2C0x538ccdfd%2C0x543a6e10%2C0x58f03bf7%2C0x5b6d2b7a%2C0x612a3522%2C0x641f87fc%2C0x64cd1788%2C0x67207a88%2C0x6a426315%2C0x741df939%2C0x756688fe%2C0x75e52f4f%2C0x8431a15a%2C0x8baa579f%2C0x8e667356%2C0x904bc503%2C0x90b8ec18%2C0x924d25e6%2C0x94e88a21%2C0x967d697b%2C0x989c4c7c%2C0x9f65ace4%2C0xab143c06%2C0xad0ef2c5%2C0xb0cb274d%2C0xc20280ea%2C0xcd4e6167%2C0xd26ffacb%2C0xd9d193d3%2C0xda96f0b6%2C0xea097be6%2C0xf1bc94d2%2C0xf4d678b8%2C0xf87d9271%2C0xfefe83a0",
+  "selectors": [
+    "0x02b874a6",
+    "0x0576e005",
+    "0x0984a617",
+    "0x0a4f5a07",
+    "0x0a9e0180",
+    "0x0d240815",
+    "0x0dc149f0",
+    "0x1b7f36f3",
+    "0x1f2a2005",
+    "0x25a1ddf3",
+    "0x276f9a65",
+    "0x28ef4314",
+    "0x2d016ae6",
+    "0x30cd7471",
+    "0x40f92143",
+    "0x49199fb6",
+    "0x4f57ffae",
+    "0x538ccdfd",
+    "0x543a6e10",
+    "0x58f03bf7",
+    "0x5b6d2b7a",
+    "0x612a3522",
+    "0x641f87fc",
+    "0x64cd1788",
+    "0x67207a88",
+    "0x6a426315",
+    "0x741df939",
+    "0x756688fe",
+    "0x75e52f4f",
+    "0x8431a15a",
+    "0x8baa579f",
+    "0x8e667356",
+    "0x904bc503",
+    "0x90b8ec18",
+    "0x924d25e6",
+    "0x94e88a21",
+    "0x967d697b",
+    "0x989c4c7c",
+    "0x9f65ace4",
+    "0xab143c06",
+    "0xad0ef2c5",
+    "0xb0cb274d",
+    "0xc20280ea",
+    "0xcd4e6167",
+    "0xd26ffacb",
+    "0xd9d193d3",
+    "0xda96f0b6",
+    "0xea097be6",
+    "0xf1bc94d2",
+    "0xf4d678b8",
+    "0xf87d9271",
+    "0xfefe83a0"
+  ],
+  "response": {
+    "ok": true,
+    "result": {
+      "function": {
+        "0x0a9e0180": null,
+        "0x02b874a6": [
+          {
+            "name": "TradingPaused()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x0576e005": [
+          {
+            "name": "NoProxy()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x0984a617": [
+          {
+            "name": "NoPendingSweep()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x0d240815": [
+          {
+            "name": "MarketAlreadyPaused()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x0a4f5a07": [
+          {
+            "name": "LeverageTooHigh()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x0dc149f0": [
+          {
+            "name": "AlreadyInitialized()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x1b7f36f3": null,
+        "0x1f2a2005": [
+          {
+            "name": "ZeroAmount()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x30cd7471": [
+          {
+            "name": "NotOwner()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x25a1ddf3": [
+          {
+            "name": "TradeBelowMinimum()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x2d016ae6": null,
+        "0x28ef4314": [
+          {
+            "name": "SweepAlreadyPending()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x276f9a65": [
+          {
+            "name": "ZeroAddressKey()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x40f92143": [
+          {
+            "name": "OiCapExceeded()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x4f57ffae": null,
+        "0x58f03bf7": null,
+        "0x538ccdfd": null,
+        "0x5b6d2b7a": null,
+        "0x543a6e10": [
+          {
+            "name": "PositionTooLarge()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x612a3522": null,
+        "0x49199fb6": [
+          {
+            "name": "NotPauseAuthority()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x641f87fc": [
+          {
+            "name": "LeverageTooLow()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x64cd1788": null,
+        "0x67207a88": [
+          {
+            "name": "InvalidInstrumentId()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x6a426315": [
+          {
+            "name": "UnsupportedCollateralDecimals()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x741df939": [
+          {
+            "name": "MarketIsPaused()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x75e52f4f": [
+          {
+            "name": "QueueEmpty()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x756688fe": [
+          {
+            "name": "InvalidNonce()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x8baa579f": [
+          {
+            "name": "InvalidSignature()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x904bc503": null,
+        "0x8431a15a": [
+          {
+            "name": "TooManyPositions()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x924d25e6": null,
+        "0x90b8ec18": [
+          {
+            "name": "TransferFailed()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x8e667356": [
+          {
+            "name": "InsufficientDebtBalance()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x94e88a21": [
+          {
+            "name": "PositionNotOpen()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0x989c4c7c": null,
+        "0x967d697b": null,
+        "0x9f65ace4": [
+          {
+            "name": "NotionalBelowMinimum()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0xad0ef2c5": null,
+        "0xab143c06": [
+          {
+            "name": "Reentrancy()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0xb0cb274d": null,
+        "0xc20280ea": null,
+        "0xcd4e6167": [
+          {
+            "name": "FeeTooHigh()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0xd26ffacb": null,
+        "0xd9d193d3": null,
+        "0xda96f0b6": null,
+        "0xea097be6": null,
+        "0xf4d678b8": [
+          {
+            "name": "InsufficientBalance()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0xfefe83a0": null,
+        "0xf87d9271": [
+          {
+            "name": "ExpiredDeadline()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ],
+        "0xf1bc94d2": [
+          {
+            "name": "InsufficientStake()",
+            "filtered": false,
+            "hasVerifiedContract": true
+          }
+        ]
+      },
+      "event": {}
+    }
+  }
+}

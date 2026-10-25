@@ -1,0 +1,17 @@
+{
+  "source_tx": "0xe1d903a527ed571e938719d6c16a6580ba699dd9afbc6ca5bf4c1f651ae1be27",
+  "source_block": 47572843,
+  "source_transaction_index": 0,
+  "prestate_block": 47572842,
+  "prestate_block_hash": "0xba2e0757fb22ee53fbd2367fb77ac57564a9ef6dbd9c81f06ea98abf4f83f683",
+  "exchange": "0x1b534e482b92bb6daff452cd12f2e35219e13493",
+  "getter_selector": "0x0cdd5fc4",
+  "getter_output": "0x00000000000000000000000000000000000000000003eb660b290c9d892b5c42",
+  "settlement_selector": "0xaa31b143",
+  "settlement_argument_7": "4738415954401651736665154",
+  "fee_slot_26": "0x0000000000002681e6f3ff8b92ac546a0000000000000001143746444f89c935",
+  "staker_fee_getter_selector": "0xafdf6702",
+  "staker_fee_getter_output": "0x000000000000000000000000000000000000000000000001143746444f89c935",
+  "dev_fee_getter_selector": "0x7d004aeb",
+  "dev_fee_getter_output": "0x000000000000000000000000000000000000000000002681e6f3ff8b92ac546a"
+}

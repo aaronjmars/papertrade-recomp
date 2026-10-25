@@ -1,0 +1,66 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "selector": "0x0efdf838",
+  "proxy": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+  "evidence": "six read-only archive debug_traceCall cases at the pinned block",
+  "pairs": [
+    {
+      "true": "true_positive",
+      "false": "false_positive",
+      "same_call_shape": true,
+      "same_storage_diff": true,
+      "same_error_and_output": true
+    },
+    {
+      "true": "true_zero",
+      "false": "false_zero",
+      "same_call_shape": true,
+      "same_storage_diff": true,
+      "same_error_and_output": true
+    },
+    {
+      "true": "true_credit_only",
+      "false": "false_credit_only",
+      "same_call_shape": true,
+      "same_storage_diff": true,
+      "same_error_and_output": true
+    }
+  ],
+  "positive_opcode_steps_per_case": 1268,
+  "positive_opcode_paths_identical": true,
+  "positive_event_words_true": [
+    "1",
+    "1000000000000000000",
+    "5000968649731559005181671",
+    "5000969629731559005181671",
+    "1000000000000000000",
+    "11303568816826005791"
+  ],
+  "positive_event_words_false": [
+    "0",
+    "1000000000000000000",
+    "5000968649731559005181671",
+    "5000969629731559005181671",
+    "1000000000000000000",
+    "11303568816826005791"
+  ],
+  "positive_paper_minted": "11303568816826005791",
+  "positive_tokenomics_tracked_delta": "980000000000000000",
+  "positive_tokenomics_tail_delta": "1000000000000000000",
+  "zero_cases_no_logs_or_tokenomics_writes": true,
+  "credit_without_basis_error": "0x85c58396",
+  "raw_artifacts": [
+    "artifacts/tokenomics_liquidation_flag/true_positive.json",
+    "artifacts/tokenomics_liquidation_flag/false_positive.json",
+    "artifacts/tokenomics_liquidation_flag/true_zero.json",
+    "artifacts/tokenomics_liquidation_flag/false_zero.json",
+    "artifacts/tokenomics_liquidation_flag/true_credit_only.json",
+    "artifacts/tokenomics_liquidation_flag/false_credit_only.json"
+  ],
+  "limitations": [
+    "Synthetic pinned calls, not historical false-flag execution.",
+    "Identical opcode paths proved for the sampled positive inputs only.",
+    "The source function and event names remain unresolved."
+  ]
+}

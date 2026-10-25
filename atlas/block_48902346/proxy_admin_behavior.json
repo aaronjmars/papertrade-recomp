@@ -1,0 +1,76 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "address": "0xe79c91cc682f1bb401a9cab74c900470190f0f8f",
+  "runtime_sha256": "238bb08777bab344b1e4090bd3a64fd26e48ef9ebaaf075234274e1c06129066",
+  "owner_at_pin": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+  "owner_storage_slot": 0,
+  "selector_reconstructions": {
+    "0x7eff275e": "changeProxyAdmin(address,address)",
+    "0x8da5cb5b": "owner()",
+    "0x9623609d": "upgradeAndCall(address,address,bytes)",
+    "0x99a88ec4": "upgrade(address,address)",
+    "0xf2fde38b": "transferOwnership(address)"
+  },
+  "historical_owner_transfer": {
+    "tx": "0xd0e33b23f464c5ae6089ad86d9c2bb1cd8f627dc5eef5f756ae598225f93e145",
+    "from": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+    "to": "0xb915fa41e824d6aa31bb833ee81220c0f2c8ea0f",
+    "event_topic0": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+    "receipt_evidence": "../../artifacts/historical/0xd0e33b23f464c5ae6089ad86d9c2bb1cd8f627dc5eef5f756ae598225f93e145.receipt.json",
+    "state_diff_evidence": "../../artifacts/historical/0xd0e33b23f464c5ae6089ad86d9c2bb1cd8f627dc5eef5f756ae598225f93e145.state_diff.json"
+  },
+  "event_catalog": [
+    {
+      "topic0": "0x4ffd725fc4a22075e9ec71c59edf9c38cdeb588a91b24fc5b61388c5be41282b",
+      "reconstructed_signature": "OwnerUpdated(address)",
+      "status": "observed_historical_topic"
+    }
+  ],
+  "simulated_error_catalog": [
+    {
+      "selector": "0x30cd7471",
+      "reconstructed_signature": "NotOwner()",
+      "probe_paths": [
+        "testPinnedOwnerAndOutsider"
+      ]
+    },
+    {
+      "selector": "0x49e27cff",
+      "reconstructed_signature": "InvalidOwner()",
+      "probe_paths": [
+        "testRejectZeroOwner"
+      ]
+    }
+  ],
+  "proxy_runtime_sha256": "ee856dd4cb5ef8e82c77c3bd05afc71600cc41b7ed41bb609c148dc75714c17f",
+  "shared_proxy_count": 8,
+  "proxy_executable_log_instruction_count": 0,
+  "proxy_admin_slot": "0xb53127684a568b3173ae13b9f8a6016e243e63b6e8ee1178d6a717850b5d6103",
+  "proxy_implementation_slot": "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc",
+  "local_replay_evidence": "../../artifacts/proxy_admin_local/replay.json",
+  "tested_effects": {
+    "upgrade": "sets proxy implementation slot without a log",
+    "upgradeAndCall": "sets proxy implementation slot and delegates setup call into proxy storage without a log",
+    "changeProxyAdmin": "sets proxy admin slot without a log",
+    "upgrade_to_no_code_address": "accepted in local pinned-runtime replay"
+  },
+  "administrative_history_evidence": {
+    "proxy_admin_direct_transaction_pages": [
+      2,
+      2
+    ],
+    "direct_call_selectors": [
+      "0xf2fde38b"
+    ],
+    "saved_timelock_log_count": 4,
+    "saved_timelock_execution_event_count": 0,
+    "direct_transaction_source": "direct_transaction_samples.json",
+    "timelock_event_source": "timelock_all_logs.json"
+  },
+  "upgrade_history_limit": "All eight proxies have zero Upgraded logs and creation/pin slots match, but the shared runtime emits no upgrade log. The saved direct ProxyAdmin pages contain only an owner transfer and the saved timelock logs contain no execution. Those additional records make an intermediate upgrade less likely, but their completeness is not independently proven here.",
+  "limits": [
+    "Successful upgrade targets and setup calldata in local tests are synthetic; no upgrade transaction is in the saved historical trace sample.",
+    "Source identifiers are hash-matching behavioral reconstructions, not verified Solidity source."
+  ]
+}

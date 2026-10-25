@@ -1,0 +1,468 @@
+{
+  "pin_block": 48902346,
+  "pin_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "selector": "0x599dc539",
+  "selector_reconstructions": {
+    "0x599dc539": "liquidateBatch(uint256[])"
+  },
+  "signature_evidence": "Exact hash, pinned public ABI fixture, and 26 archived direct ABI inputs",
+  "summary_topic0": "0x0bb3f42f9fe304326ba30302693425c1db2e2f6a4675df44372fc0af5ce73706",
+  "liquidated_topic0": "0x0c859bc5db091ba3b9dc10c00f8dfc78b1f0b7e2566d107253ae67c069ae5de8",
+  "summary_signature": "LiquidationBatchProcessed(uint256,uint256)",
+  "summary_layout": "unindexed uint256 requestedCount, uint256 completedCount",
+  "event_catalog": [
+    {
+      "topic0": "0x0bb3f42f9fe304326ba30302693425c1db2e2f6a4675df44372fc0af5ce73706",
+      "reconstructed_signature": "LiquidationBatchProcessed(uint256,uint256)",
+      "status": "observed_historical"
+    }
+  ],
+  "transaction_count": 26,
+  "requested_position_count": 69,
+  "completed_position_count": 67,
+  "partial_batch": {
+    "tx": "0xdfe4d997bd2d8ee4d5a96d0759e38a6b24e9719c40545eae6ea406b43ed119f9",
+    "block_number": 48902280,
+    "requested_ids": [
+      1392363,
+      1394076,
+      1394080
+    ],
+    "liquidated_ids": [
+      1392363
+    ],
+    "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000001",
+    "requested_count": 3,
+    "completed_count": 1
+  },
+  "rows": [
+    {
+      "tx": "0x0b09da790c989d9647d641dbcdf9777bba34fa64a17c0fa25e887ccd2a1990c2",
+      "block_number": 48902308,
+      "requested_ids": [
+        1389976
+      ],
+      "liquidated_ids": [
+        1389976
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001",
+      "requested_count": 1,
+      "completed_count": 1
+    },
+    {
+      "tx": "0x180178cbca597058b00f476fa7b7b5d463f5c23424e18e525a3b5572250af8b3",
+      "block_number": 48902278,
+      "requested_ids": [
+        1391546
+      ],
+      "liquidated_ids": [
+        1391546
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001",
+      "requested_count": 1,
+      "completed_count": 1
+    },
+    {
+      "tx": "0x1aa2f887dd77157660463ffe279b687f92b5377ad16a7dda1f5a02b93cc19661",
+      "block_number": 48902305,
+      "requested_ids": [
+        1390441
+      ],
+      "liquidated_ids": [
+        1390441
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001",
+      "requested_count": 1,
+      "completed_count": 1
+    },
+    {
+      "tx": "0x1c46255f00fde041b7c43c6b639fd233db049feb3f6bed88d7fe9047b699a974",
+      "block_number": 48902313,
+      "requested_ids": [
+        1392071,
+        1392222
+      ],
+      "liquidated_ids": [
+        1392071,
+        1392222
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000002",
+      "requested_count": 2,
+      "completed_count": 2
+    },
+    {
+      "tx": "0x2bdbd80e58d8c7d4745c82e489baf781d183d5142cc9e6ca00599cd607c5a387",
+      "block_number": 48902219,
+      "requested_ids": [
+        1391711,
+        1393634
+      ],
+      "liquidated_ids": [
+        1391711,
+        1393634
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000002",
+      "requested_count": 2,
+      "completed_count": 2
+    },
+    {
+      "tx": "0x34b7ae5b487e74118446994402ec8f4651a1414ad1de75dcfe1f8267cc9854b9",
+      "block_number": 48902104,
+      "requested_ids": [
+        1393078,
+        1390821,
+        1393750
+      ],
+      "liquidated_ids": [
+        1393078,
+        1390821,
+        1393750
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000003",
+      "requested_count": 3,
+      "completed_count": 3
+    },
+    {
+      "tx": "0x3a2a9b4eb904a7f7e5de8030dc139ab33a1190295d5e6b80c3095aebd97561a2",
+      "block_number": 48902313,
+      "requested_ids": [
+        1389287,
+        1394422,
+        1383940,
+        1383799
+      ],
+      "liquidated_ids": [
+        1389287,
+        1394422,
+        1383940,
+        1383799
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000004",
+      "requested_count": 4,
+      "completed_count": 4
+    },
+    {
+      "tx": "0x3eb17867ffaefb3de1f5c3e77e01441f4c14064a4d3b628d5c743c50344e737b",
+      "block_number": 48902305,
+      "requested_ids": [
+        1394187,
+        1394076,
+        1394080,
+        1394496
+      ],
+      "liquidated_ids": [
+        1394187,
+        1394076,
+        1394080,
+        1394496
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000004",
+      "requested_count": 4,
+      "completed_count": 4
+    },
+    {
+      "tx": "0x50c326eff20754763dc2a62b9c1aff02d2d94c651b03eed9274f6056075f3299",
+      "block_number": 48902278,
+      "requested_ids": [
+        1394435
+      ],
+      "liquidated_ids": [
+        1394435
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001",
+      "requested_count": 1,
+      "completed_count": 1
+    },
+    {
+      "tx": "0x5a7351bf8dab4ba6b95f17962817bc89a04515a089f8b56b81b288e8495842a4",
+      "block_number": 48902314,
+      "requested_ids": [
+        1394229,
+        1382283,
+        1394178,
+        1383810,
+        1383813,
+        1383825,
+        1388367
+      ],
+      "liquidated_ids": [
+        1394229,
+        1382283,
+        1394178,
+        1383810,
+        1383813,
+        1383825,
+        1388367
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000070000000000000000000000000000000000000000000000000000000000000007",
+      "requested_count": 7,
+      "completed_count": 7
+    },
+    {
+      "tx": "0x5d3fb74ca39636fd81419b81f3bce624b569248cc4953a77835d8a6f6bc06774",
+      "block_number": 48902308,
+      "requested_ids": [
+        1391799
+      ],
+      "liquidated_ids": [
+        1391799
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001",
+      "requested_count": 1,
+      "completed_count": 1
+    },
+    {
+      "tx": "0x60957a96fc6189c76d787a30e103643b1229752fe4bbc34ee207ea1438a9d6c1",
+      "block_number": 48902219,
+      "requested_ids": [
+        1393675
+      ],
+      "liquidated_ids": [
+        1393675
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001",
+      "requested_count": 1,
+      "completed_count": 1
+    },
+    {
+      "tx": "0x60a48ba6928156bb1055cc59fe52243668c1e8c2fd2a923432f8a91871f8fe44",
+      "block_number": 48902313,
+      "requested_ids": [
+        1385685,
+        1393784
+      ],
+      "liquidated_ids": [
+        1385685,
+        1393784
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000002",
+      "requested_count": 2,
+      "completed_count": 2
+    },
+    {
+      "tx": "0x64148136dcd1a3e0e009c5a922bb9b1b33c2ab04cf1b6253cd9395cd9ecb1f2d",
+      "block_number": 48902311,
+      "requested_ids": [
+        1394277,
+        1392020,
+        1391482,
+        1388345
+      ],
+      "liquidated_ids": [
+        1394277,
+        1392020,
+        1391482,
+        1388345
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000004",
+      "requested_count": 4,
+      "completed_count": 4
+    },
+    {
+      "tx": "0x679c4f03d95174f89035101897d09fbb009a61b162250c11f6cdc47c83ef8d18",
+      "block_number": 48902308,
+      "requested_ids": [
+        1387997,
+        1389872,
+        1390661,
+        1389538,
+        1389551,
+        1387984,
+        1394528,
+        1394529,
+        1394561,
+        1394562,
+        1394564,
+        1394565
+      ],
+      "liquidated_ids": [
+        1387997,
+        1389872,
+        1390661,
+        1389538,
+        1389551,
+        1387984,
+        1394528,
+        1394529,
+        1394561,
+        1394562,
+        1394564,
+        1394565
+      ],
+      "summary_data": "0x000000000000000000000000000000000000000000000000000000000000000c000000000000000000000000000000000000000000000000000000000000000c",
+      "requested_count": 12,
+      "completed_count": 12
+    },
+    {
+      "tx": "0x871466bf1e2a505662da4b3eb001206516f1658a8592cbc59892151328e24cc4",
+      "block_number": 48902280,
+      "requested_ids": [
+        1393810
+      ],
+      "liquidated_ids": [
+        1393810
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001",
+      "requested_count": 1,
+      "completed_count": 1
+    },
+    {
+      "tx": "0x89e740983c78db4384ea4d3c194367f18b63ac5d5c3ce0f0e8b3e2ed8752a6b4",
+      "block_number": 48902308,
+      "requested_ids": [
+        1388213
+      ],
+      "liquidated_ids": [
+        1388213
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001",
+      "requested_count": 1,
+      "completed_count": 1
+    },
+    {
+      "tx": "0xaaa0f6de77f83f5861b55b729816fd8a6426b30483127a960d44fa208a3d5453",
+      "block_number": 48902313,
+      "requested_ids": [
+        1383309,
+        1393850
+      ],
+      "liquidated_ids": [
+        1383309,
+        1393850
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000002",
+      "requested_count": 2,
+      "completed_count": 2
+    },
+    {
+      "tx": "0xacf79a672a9e8acb78f1b6f1e78c5935ec797975204479fd7f4f55d5a28be574",
+      "block_number": 48902313,
+      "requested_ids": [
+        1382907,
+        1389810
+      ],
+      "liquidated_ids": [
+        1382907,
+        1389810
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000002",
+      "requested_count": 2,
+      "completed_count": 2
+    },
+    {
+      "tx": "0xb5d5ed8df5d4056c5ee09de10980a8f1c793fa8bb5fd0f7af8911861929bc7af",
+      "block_number": 48902310,
+      "requested_ids": [
+        1389841,
+        1389857,
+        1389858,
+        1394217
+      ],
+      "liquidated_ids": [
+        1389841,
+        1389857,
+        1389858,
+        1394217
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000004",
+      "requested_count": 4,
+      "completed_count": 4
+    },
+    {
+      "tx": "0xbebcd3fc913440b40ca824dc66cd8ac031286e58d92d5d52348c17f2d7b4b9e0",
+      "block_number": 48902308,
+      "requested_ids": [
+        1390541
+      ],
+      "liquidated_ids": [
+        1390541
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001",
+      "requested_count": 1,
+      "completed_count": 1
+    },
+    {
+      "tx": "0xc4e6f7dec48e377576e0d1f47cd01c57b596de1e6c750dbbf958b25c2a52a486",
+      "block_number": 48902313,
+      "requested_ids": [
+        1382903,
+        1384045
+      ],
+      "liquidated_ids": [
+        1382903,
+        1384045
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000002",
+      "requested_count": 2,
+      "completed_count": 2
+    },
+    {
+      "tx": "0xdf0b9c2f1e051a4bab7cbc05557dd996ef5949e22e0de3eee892840a41f9de32",
+      "block_number": 48902313,
+      "requested_ids": [
+        1394138,
+        1389956,
+        1394403,
+        1384056,
+        1384058
+      ],
+      "liquidated_ids": [
+        1394138,
+        1389956,
+        1394403,
+        1384056,
+        1384058
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000050000000000000000000000000000000000000000000000000000000000000005",
+      "requested_count": 5,
+      "completed_count": 5
+    },
+    {
+      "tx": "0xdfe4d997bd2d8ee4d5a96d0759e38a6b24e9719c40545eae6ea406b43ed119f9",
+      "block_number": 48902280,
+      "requested_ids": [
+        1392363,
+        1394076,
+        1394080
+      ],
+      "liquidated_ids": [
+        1392363
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000001",
+      "requested_count": 3,
+      "completed_count": 1
+    },
+    {
+      "tx": "0xe584ff1e6a4cc0aa8fd52cd3398642c3f6d7e0b77562e2658484967f0c257856",
+      "block_number": 48902300,
+      "requested_ids": [
+        1390694
+      ],
+      "liquidated_ids": [
+        1390694
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001",
+      "requested_count": 1,
+      "completed_count": 1
+    },
+    {
+      "tx": "0xe629f49b4cb1f6d8e5841571b1e8a2298cda2b8588f4693337a116cb2432f81d",
+      "block_number": 48902310,
+      "requested_ids": [
+        1382623
+      ],
+      "liquidated_ids": [
+        1382623
+      ],
+      "summary_data": "0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001",
+      "requested_count": 1,
+      "completed_count": 1
+    }
+  ],
+  "limits": [
+    "All 26 sampled batch outcomes are checked against transaction-prestate price thresholds in exchange_batch_thresholds_behavior.json; inactive and mixed-instrument paths remain untested.",
+    "The 256-block sample does not establish all liquidation batch branches."
+  ]
+}

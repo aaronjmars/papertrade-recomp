@@ -1,0 +1,76 @@
+{
+  "block": 49308582,
+  "chain_id": 999,
+  "core_spot_usdc": "36286540.2696878463",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "identity": "treasury == total_balances + total_locked_margin + total_queued + staker_fee_accumulator + dev_fee_accumulator + tracked_lp_usd",
+  "note": "A negative residual means the measured book claims more than the treasury holds. The prior SQ-L2-02 explanation was disproved. Read-only; no credential, no writes.",
+  "raw": {
+    "dev_fee_accumulator": {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "selector": "0x7d004aeb",
+      "word": "0x00000000000000000000000000000000000000000000070bd2c7376b3bb7ba8e"
+    },
+    "lp_bankroll_available": {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "selector": "0x0cdd5fc4",
+      "word": "0x00000000000000000000000000000000000000000003fce70f7f45cedea919d1"
+    },
+    "queue_harvest_available": {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "selector": "0x138e9de2",
+      "word": "0x00000000000000000000000000000000000000000003fce70f7f45cedea919d1"
+    },
+    "side_bucket": {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "selector": "0x9274682e",
+      "word": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "staker_fee_accumulator": {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "selector": "0xafdf6702",
+      "word": "0x000000000000000000000000000000000000000000000003cccd820f09aa5720"
+    },
+    "total_balances": {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "selector": "0xa69a2ad1",
+      "word": "0x000000000000000000000000000000000000000000149f1cc0f39c9cdba60fc6"
+    },
+    "total_locked_margin": {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "selector": "0x01ad056f",
+      "word": "0x0000000000000000000000000000000000000000000560e5cc3c24807e17e8bb"
+    },
+    "total_queued": {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "selector": "0x53ac4b66",
+      "word": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "tracked_lp_usd": {
+      "address": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+      "selector": "0x8cf554a7",
+      "word": "0x00000000000000000000000000000000000000000003fce70f7f45cedea919d1"
+    },
+    "treasury": {
+      "address": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+      "selector": "0x61d027b3",
+      "word": "0x0000000000000000000000000000000000000000001e03f93c43c0667dc92400"
+    }
+  },
+  "residual_raw": "0",
+  "residual_usd": 0.0,
+  "side_bucket_is_a_claim": false,
+  "tokenomics_proxy": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+  "values": {
+    "dev_fee_accumulator": "33274667734100354775694",
+    "lp_bankroll_available": "4821076127096052436769233",
+    "queue_harvest_available": "4821076127096052436769233",
+    "side_bucket": "0",
+    "staker_fee_accumulator": "70097826776189916960",
+    "total_balances": "24929903075531593087324102",
+    "total_locked_margin": "6502215301499327931214011",
+    "total_queued": "0",
+    "tracked_lp_usd": "4821076127096052436769233",
+    "treasury": "36286539269687850000000000"
+  }
+}

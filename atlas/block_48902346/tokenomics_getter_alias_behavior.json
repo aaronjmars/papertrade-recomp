@@ -1,0 +1,33 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "tokenomics_proxy": "0x75174549dbbd44497d31a47e2e2d7406408d63d9",
+  "implementation": "0x600d1b9653fd47fc1543d1cc87f33ba2d2fdf48f",
+  "runtime_sha256": "ed9d18151a9365c347ac7a9da7e83b53ecedac235d9e67c4b2699503a6bd4a97",
+  "selector_behaviors": {
+    "0x3886cade": {
+      "direct_slot": 5,
+      "same_entry_as": "0xe9ed73e9",
+      "source_name_status": "unresolved"
+    },
+    "0xe9ed73e9": {
+      "direct_slot": 5,
+      "candidate_signature": "lpFlatThresholdUsd()",
+      "source_name_status": "hash-matching candidate only"
+    },
+    "0xc16017ca": {
+      "direct_slot": 6,
+      "source_name_status": "unresolved"
+    }
+  },
+  "pinned_slot_values": {
+    "5": "0x00000000000000000000000000000000000000000001a784379d99db42000000",
+    "6": "0x0000000000000000000000000000000000000000000422ca8b0a00a425000000"
+  },
+  "archived_trace_evidence": "storage_trace_catalog.json",
+  "local_replay_evidence": "../../artifacts/tokenomics_getter_alias/replay.json",
+  "limits": [
+    "Function names for selectors 0x3886cade and 0xc16017ca remain unknown.",
+    "These direct getters expose mint-parameter slots; their future values can change through governance."
+  ]
+}

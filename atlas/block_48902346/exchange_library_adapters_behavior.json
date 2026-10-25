@@ -1,0 +1,39 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "linked_library": "0xcd617f984158a4f5d287ddee0e8eb0fed204916d",
+  "adapters": {
+    "0x4a4d9eea": "0xca02ff91",
+    "0xae4daf4e": "0x2448a553",
+    "0x753a369c": "0x3cf4208d",
+    "0x827ad94c": "0x32db40c9"
+  },
+  "prepend_word": 15,
+  "append_word": {
+    "0xae4daf4e": "1000000000000000000",
+    "0x753a369c": "1000000000000000000"
+  },
+  "parent_result_words": 3,
+  "return_adapter_tests": "four library words truncate to first three; two words revert empty; four-byte library error bubbles unchanged",
+  "live_library_default_inputs": {
+    "user": "0x0000000000000000000000000000000000001234",
+    "node_id": 101,
+    "other_words": [
+      202,
+      303
+    ]
+  },
+  "live_library_default_results": {
+    "0x4a4d9eea": "three zero words",
+    "0xae4daf4e": "three zero words",
+    "0x753a369c": "revert 0x5b6d2b7a",
+    "0x827ad94c": "revert 0x5b6d2b7a"
+  },
+  "node_mapping_base_slot": 15,
+  "synthetic_node_amount": 500,
+  "synthetic_node_results": "same four outputs as empty state, with no storage writes",
+  "local_replay": "../../artifacts/exchange_library_adapters_local/replay.json",
+  "source_name_status": "unresolved"
+}

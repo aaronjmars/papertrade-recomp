@@ -1,0 +1,131 @@
+{
+  "pin": 48902346,
+  "block_hash": "0xd92ca32fdafb483c8e83f71c0abdfe4fcb89235b4191d78751f29371340530ab",
+  "exchange_proxy": "0x6cd5661646289fb6e65ea5c032310fded797d0a2",
+  "implementation": "0x0f3febfc94876b0c895f7acecdc8f5c863b549ee",
+  "selector": "0xc88bbcf3",
+  "source_name_status": "unresolved",
+  "selector_reconstructions": {
+    "0xf28bbdb2": "instrumentCount()"
+  },
+  "behavior_label": "register instrument",
+  "historical_tx": "0xab0322e685e608455d03f0f3a4eeabafee85785f0bcaf0a91ef7d8ae6728c115",
+  "historical_block": 47855385,
+  "historical_caller": "0xa1763a5ff94ebddd417cccb906622ec762ab2e29",
+  "input_words": [
+    "15000000000000000000000",
+    "814598000000000000000",
+    "0",
+    "1000",
+    "10000000000000000000000000",
+    "476041580087574",
+    "100000000000000000",
+    "100000000000000000000000",
+    "10"
+  ],
+  "second_registration_tx": "0xa527dea1cef73784e42ba989c8763f103fce30432b25c423921cb8f04d3d71c5",
+  "second_registration_block": 47855387,
+  "second_input_words": [
+    "15000000000000000000000",
+    "483979000000000000000",
+    "1",
+    "1000",
+    "10000000000000000000000000",
+    "481304050180130",
+    "100000000000000000",
+    "100000000000000000000000",
+    "100"
+  ],
+  "second_evidence": "saved receipt, call trace, and state diff match deployer transaction list and pinned instrument words",
+  "second_returned_instrument_id": 1,
+  "second_instrument_mapping_entry_slot": "0xb39221ace053465ec3453ce2b36430bd138b997ecea25c1043da0c366812b828",
+  "second_instrument_storage_words": [
+    "0x3e8000000010000001a3c8ed044f4c780000000032d26d12e980b600000",
+    "0x16345785d8a00000001b5be54f0a02200000000084595161401484a000000",
+    "0x152d02c7e14af6800000"
+  ],
+  "second_market_fields_entry_slot": "0xbbbb3b1da0cb0951f34c5e9db4606f934b7367b5284f29163e9e6fe67e1e97d6",
+  "second_market_fields_storage_words": [
+    "0x64000000000000000000000000000000000000000000000000",
+    "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+  ],
+  "second_event_indexed_id": 1,
+  "second_event_data_value": 1,
+  "historical_registration_count": 2,
+  "local_replay": "../../artifacts/exchange_instrument_creation_local/replay.json",
+  "word7_observed_width_bits": 128,
+  "sampled_owner_guard_order": "words 0 through 7: owner guard before sampled width rejection; word 8: width rejection before owner guard",
+  "second_trace_artifacts": {
+    "summary": "../../artifacts/historical/0xa527dea1cef73784e42ba989c8763f103fce30432b25c423921cb8f04d3d71c5.summary.json",
+    "calls": "../../artifacts/historical/0xa527dea1cef73784e42ba989c8763f103fce30432b25c423921cb8f04d3d71c5.calls.json",
+    "receipt": "../../artifacts/historical/0xa527dea1cef73784e42ba989c8763f103fce30432b25c423921cb8f04d3d71c5.receipt.json",
+    "state_diff": "../../artifacts/historical/0xa527dea1cef73784e42ba989c8763f103fce30432b25c423921cb8f04d3d71c5.state_diff.json"
+  },
+  "returned_instrument_id": 0,
+  "instrument_mapping_base_slot": 7,
+  "instrument_mapping_entry_slot": "0x6d5257204ebe7d88fd91ae87941cb2dd9d8062b64ae5a2bd2d28ec40b9fbf6df",
+  "instrument_storage_words": [
+    "0x3e8000000000000002c28d1751327a700000000032d26d12e980b600000",
+    "0x16345785d8a00000001b0f51147891600000000084595161401484a000000",
+    "0x152d02c7e14af6800000"
+  ],
+  "market_fields_mapping_base_slot": 36,
+  "market_fields_entry_slot": "0xb7634ec2165a7280a285aac3ec10cf370eca86d8aa9d3243c90b2151434091ad",
+  "market_fields_storage_words": [
+    "0xa000000000000000000000000000000000000000000000000",
+    "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+  ],
+  "count_slot": 8,
+  "count_after": 1,
+  "pinned_count": 2,
+  "event_catalog": [
+    {
+      "topic0": "0x443c80f61da46228681c9b23ea9ae79b1a6f01ccf004b523675849bdfac11e20",
+      "reconstructed_signature": "InstrumentAdded(uint32,uint32)",
+      "status": "observed_historical_topic",
+      "indexed_arguments": [
+        "uint32 instrumentId"
+      ],
+      "observed_indexed_value": 0,
+      "observed_data_value": 0,
+      "second_observed_indexed_value": 1,
+      "second_observed_data_value": 1,
+      "local_divergent_case": "id 0 with input word 2 equal to 7 emits indexed 0 and unindexed 7"
+    }
+  ],
+  "simulated_error_catalog": [
+    {
+      "selector": "0x30cd7471",
+      "probe_paths": [
+        "registration_outsider"
+      ]
+    },
+    {
+      "selector": "0xb0cb274d",
+      "probe_paths": [
+        "zero_input_words_0_3_4_7"
+      ]
+    },
+    {
+      "selector": "0x924d25e6",
+      "probe_paths": [
+        "zero_input_word_8"
+      ]
+    }
+  ],
+  "runtime_sha256": "2f2e20ca683b70511fe62178b8090c93df24208b13dbdfa6407f38946fcef0b1",
+  "dispatcher_entry_pc": 5358,
+  "owner_check_pc": 19027,
+  "observed_success_formula": {
+    "instrument_word0": "arg0 | arg1 << 96 | arg2 << 192 | arg3 << 224",
+    "instrument_word1": "arg4 | arg5 << 120 | arg6 << 184",
+    "instrument_word2": "arg7",
+    "market_word0": "arg8 << 192",
+    "market_word1": "2^256 - 1"
+  },
+  "limits": [
+    "The two historical registrations have saved full call traces, receipts, and state diffs; no later successful registration was found in the deployer list through the pin.",
+    "The exact source function name, field meanings, return-type declaration, and untested rejection boundaries remain unresolved.",
+    "Owner and sampled input-boundary rejections come from exact pinned-runtime local replay, not historical transactions."
+  ]
+}
